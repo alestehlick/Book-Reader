@@ -174,10 +174,10 @@
 
     nowReadingTitleEl.textContent = sectionLabel;
 
-    currentParagraphTextEl.innerHTML = current.text
-      .split(/\n+/)
-      .map((line) => `<p>${escapeHtml(line)}</p>`)
-      .join("");
+currentParagraphTextEl.innerHTML = current.text
+  .split(/\n\s*\n+/)
+  .map((para) => `<p>${escapeHtml(para).replace(/\n+/g, " ")}</p>`)
+  .join("");
 
     previousParagraphTextEl.textContent = previous ? previous.text : "—";
     nextParagraphTextEl.textContent = next ? next.text : "—";
