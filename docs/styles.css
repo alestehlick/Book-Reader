@@ -397,18 +397,28 @@ button {
 }
 
 .current-paragraph-text {
-  margin-top: 14px;
+  margin-top: 18px;
+  max-width: 44em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: "Times New Roman", Times, serif;
-  font-size: clamp(20px, 4vw, 20px);
-  line-height: 1.62;
+  font-size: clamp(24px, 3.2vw, 33px);
+  line-height: 1.72;
   letter-spacing: 0;
-  color: var(--text);
+  font-weight: 400;
+  color: var(--text-soft);
+
   text-align: justify;
   text-justify: inter-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .current-paragraph-text p {
-  margin: 3 3 3em;
+  margin: 0;
   text-align: justify;
 }
 
@@ -502,9 +512,12 @@ body.sidebar-collapsed .main-panel {
     grid-template-columns: 1fr;
   }
 
-  .current-card {
-    min-height: auto;
-  }
+.current-card {
+  padding: 34px 42px 38px;
+  min-height: 34dvh;
+  display: grid;
+  align-content: start;
+}
 
   .current-paragraph-text {
     font-size: clamp(22px, 5vw, 30px);
