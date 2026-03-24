@@ -261,7 +261,7 @@ button {
   color: var(--accent-2);
 }
 
-.player-paragraph-label {
+.player-ph-label {
   margin: 8px 0 6px;
   font-family: var(--font-serif);
   font-size: clamp(28px, 4vw, 40px);
@@ -399,7 +399,7 @@ button {
 .current-paragraph-text {
   margin-top: 14px;
   font-family: var(--font-serif);
-  font-size: clamp(15px, 4vw, 15px);
+  font-size: clamp(19px, 3vw, 19px);
   line-height: 1.62;
   letter-spacing: 0.01em;
   color: var(--text);
