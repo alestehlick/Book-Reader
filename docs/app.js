@@ -55,11 +55,21 @@
     });
   });
 
+  const DEFAULT_AUDIO_DIRS = [
+    "audio/paragraphs/s", // your current screenshot suggests this is the real folder
+    "audio/paragraphs",   // fallback in case you remove the extra /s later
+  ];
+
   const state = {
     currentIndex: 0,
     continuous: true,
     oneParagraphMode: true,
     activeSectionId: book.sections[0]?.id ?? null,
+
+    currentAudioCandidates: [],
+    currentAudioCandidateIndex: -1,
+    currentAudioPath: "",
+    autoplayRequested: false,
   };
 
   function formatTime(seconds) {
@@ -67,6 +77,26 @@
     const mins = Math.floor(value / 60);
     const secs = Math.floor(value % 60);
     return `${mins}:${secs.toString().padStart(2, "0")}`;
+  }
+
+  function normalizePath(path) {
+    return String(path || "")
+      .trim()
+      .replace(/\\/g, "/")
+      .replace(/^\.?\//, "");
+  }
+
+  function resolveAudioCandidates(paragraph) {
+    if (!paragraph) return [];
+
+    const explicit = normalizePath(paragraph.audio);
+    if (explicit) return [explicit];
+
+    if (!paragraph.id || paragraph.id.startsWith("00.00")) {
+      return [];
+    }
+
+    return DEFAULT_AUDIO_DIRS.map((dir) => `${dir}/${paragraph.id}.mp3`);
   }
 
   function getCurrentParagraph() {
@@ -109,6 +139,13 @@
     });
   }
 
+  function escapeHtml(text) {
+    return String(text || "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;");
+  }
+
   function renderText() {
     const current = getCurrentParagraph();
     const previous = getParagraph(state.currentIndex - 1);
@@ -126,10 +163,14 @@
 
     playerSectionLabelEl.textContent = sectionLabel;
     playerParagraphLabelEl.textContent = paragraphLabel;
+
+    const candidates = resolveAudioCandidates(current);
     playerTimeRangeEl.textContent =
-      current.duration && current.duration > 0
-        ? `Duration: ${formatTime(current.duration)}`
-        : "Duration: —";
+      candidates.length > 0
+        ? (current.duration && current.duration > 0
+            ? `Duration: ${formatTime(current.duration)}`
+            : "Audio ready")
+        : "No audio";
 
     nowReadingTitleEl.textContent = sectionLabel;
 
@@ -144,13 +185,6 @@
     contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
   }
 
-  function escapeHtml(text) {
-    return text
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;");
-  }
-
   function renderMeta() {
     const current = getCurrentParagraph();
     if (!current) return;
@@ -160,52 +194,90 @@
     renderText();
   }
 
-  async function loadParagraph(index, autoplay = false) {
-    if (index < 0 || index >= flatParagraphs.length) return;
+  function clearAudioElement() {
+    audio.pause();
+    audio.removeAttribute("src");
+    audio.load();
+    state.currentAudioPath = "";
+    state.currentAudioCandidateIndex = -1;
+  }
 
-    state.currentIndex = index;
+  async function loadAudioCandidate(candidateIndex, autoplay = false) {
     const paragraph = getCurrentParagraph();
-    renderMeta();
+    if (!paragraph) return;
 
-    progressBar.value = 0;
-    currentTimeLabel.textContent = "0:00";
-    durationLabel.textContent = paragraph?.duration ? formatTime(paragraph.duration) : "0:00";
-
-    if (!paragraph || !paragraph.audio) {
-      playPauseBtn.textContent = "Play";
-      console.warn("Paragraph has no audio:", paragraph);
+    const candidates = state.currentAudioCandidates;
+    if (candidateIndex < 0 || candidateIndex >= candidates.length) {
+      clearAudioElement();
+      updatePlayPauseButton();
+      console.warn("No working audio source found for paragraph:", paragraph.id);
       return;
     }
 
+    state.currentAudioCandidateIndex = candidateIndex;
+    state.currentAudioPath = candidates[candidateIndex];
+    state.autoplayRequested = autoplay;
+
     audio.pause();
-    audio.src = paragraph.audio;
+    audio.src = state.currentAudioPath;
     audio.load();
 
     if (autoplay) {
       try {
         await audio.play();
       } catch (err) {
-        console.warn("Autoplay was blocked:", err);
+        console.warn("Autoplay was blocked or source is not ready yet:", err);
       }
     }
 
     updatePlayPauseButton();
   }
 
+  async function loadParagraph(index, autoplay = false) {
+    if (index < 0 || index >= flatParagraphs.length) return;
+
+    state.currentIndex = index;
+    const paragraph = getCurrentParagraph();
+
+    renderMeta();
+
+    progressBar.value = 0;
+    currentTimeLabel.textContent = "0:00";
+    durationLabel.textContent =
+      paragraph?.duration ? formatTime(paragraph.duration) : "0:00";
+
+    state.currentAudioCandidates = resolveAudioCandidates(paragraph);
+    state.currentAudioCandidateIndex = -1;
+    state.currentAudioPath = "";
+    state.autoplayRequested = autoplay;
+
+    if (state.currentAudioCandidates.length === 0) {
+      clearAudioElement();
+      playPauseBtn.textContent = "Play";
+      console.warn("Paragraph has no audio:", paragraph?.id);
+      return;
+    }
+
+    await loadAudioCandidate(0, autoplay);
+  }
+
   function updatePlayPauseButton() {
-    playPauseBtn.textContent = audio.paused ? "Play" : "Pause";
+    const current = getCurrentParagraph();
+    const hasAudio = resolveAudioCandidates(current).length > 0;
+    playPauseBtn.textContent = hasAudio && !audio.paused ? "Pause" : "Play";
   }
 
   async function togglePlayPause() {
     const current = getCurrentParagraph();
     if (!current) return;
 
-    if (!current.audio) {
+    const candidates = resolveAudioCandidates(current);
+    if (candidates.length === 0) {
       console.warn("Current paragraph has no audio.");
       return;
     }
 
-    if (!audio.src || !audio.src.endsWith(current.audio)) {
+    if (!state.currentAudioPath) {
       await loadParagraph(state.currentIndex, true);
       return;
     }
@@ -233,6 +305,11 @@
     if (state.currentIndex > 0) {
       await loadParagraph(state.currentIndex - 1, autoplay);
     }
+  }
+
+  function findFirstPlayableIndex() {
+    const index = flatParagraphs.findIndex((p) => resolveAudioCandidates(p).length > 0);
+    return index >= 0 ? index : 0;
   }
 
   audio.addEventListener("loadedmetadata", () => {
@@ -265,6 +342,24 @@
     }
   });
 
+  audio.addEventListener("error", async () => {
+    const paragraph = getCurrentParagraph();
+    if (!paragraph) return;
+
+    const nextCandidateIndex = state.currentAudioCandidateIndex + 1;
+
+    if (nextCandidateIndex < state.currentAudioCandidates.length) {
+      console.warn(
+        `Audio failed for ${state.currentAudioPath}. Trying fallback: ${state.currentAudioCandidates[nextCandidateIndex]}`
+      );
+      await loadAudioCandidate(nextCandidateIndex, state.autoplayRequested);
+      return;
+    }
+
+    console.warn("All audio candidates failed for paragraph:", paragraph.id, state.currentAudioCandidates);
+    updatePlayPauseButton();
+  });
+
   progressBar.addEventListener("input", () => {
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
     if (duration <= 0) return;
@@ -295,6 +390,10 @@
 
   toggleSidebarBtn.addEventListener("click", () => {
     document.body.classList.toggle("sidebar-collapsed");
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar) {
+      sidebar.classList.toggle("open");
+    }
   });
 
   themeToggleBtn.addEventListener("click", () => {
@@ -304,8 +403,9 @@
   function init() {
     bookTitleEl.textContent = book.title || "Untitled";
     buildSectionNav();
-    renderMeta();
-    loadParagraph(0, false);
+
+    const startIndex = findFirstPlayableIndex();
+    loadParagraph(startIndex, false);
   }
 
   init();
