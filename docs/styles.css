@@ -389,7 +389,7 @@ button {
   font-size: 13px;
 }
 
-.current-card {
+.-card {
   padding: 26px 26px 28px;
   min-height: 34dvh;
   display: grid;
@@ -398,15 +398,18 @@ button {
 
 .current-paragraph-text {
   margin-top: 14px;
-  font-family: var(--font-serif);
-  font-size: clamp(19px, 3vw, 19px);
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(20px, 4vw, 30px);
   line-height: 1.62;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   color: var(--text);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .current-paragraph-text p {
-  margin: 0 0 0.9em;
+  margin: 0 0 1em;
+  text-align: justify;
 }
 
 .current-paragraph-text p:last-child {
