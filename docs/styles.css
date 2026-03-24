@@ -399,7 +399,7 @@ button {
 .current-paragraph-text {
   margin-top: 14px;
   font-family: "Times New Roman", Times, serif;
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: clamp(20px, 4vw, 20px);
   line-height: 1.62;
   letter-spacing: 0;
   color: var(--text);
@@ -408,7 +408,7 @@ button {
 }
 
 .current-paragraph-text p {
-  margin: 0 0 1em;
+  margin: 3 3 3em;
   text-align: justify;
 }
 
