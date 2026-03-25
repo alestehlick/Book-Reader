@@ -136,6 +136,27 @@
     return state.flatParagraphs[index];
   }
 
+  function getSectionById(sectionId) {
+    return state.book?.sections?.find((section) => section.id === sectionId) || null;
+  }
+
+  function getSectionParagraphCount(sectionId) {
+    const section = getSectionById(sectionId);
+    return Array.isArray(section?.paragraphs) ? section.paragraphs.length : 0;
+  }
+
+  function getParagraphPreview(text, maxLength = 78) {
+    const clean = collapseWhitespace(text);
+    if (clean.length <= maxLength) return clean;
+    return `${clean.slice(0, maxLength).trimEnd()}…`;
+  }
+
+  function getParagraphCode(paragraph) {
+    if (paragraph?.id) return paragraph.id;
+    const n = String(paragraph?.paragraphNumber || 1).padStart(3, "0");
+    return `${paragraph?.sectionNumber || paragraph?.sectionId || "00.00"}-p${n}`;
+  }
+
   function setLoadError(message) {
     bookTitleEl.textContent = "Loading failed";
     nowReadingTitleEl.textContent = "—";
@@ -350,80 +371,141 @@
     return null;
   }
 
-  function resolveVideoEntry(rawEntry, index) {
-    if (!rawEntry) return null;
+function resolveVideoEntry(rawEntry, index) {
+  if (!rawEntry) return null;
 
-    if (typeof rawEntry === "string") {
-      const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.webm`);
+  if (typeof rawEntry === "string") {
+    const cleaned = normalizePath(rawEntry);
+    const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
+      ? cleaned
+      : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.mp4`);
 
-      return {
-        src,
-        title: `Clip ${index + 1}`,
-        caption: "",
-        poster: "",
-      };
-    }
-
-    if (typeof rawEntry === "object") {
-      const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
-      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-      const poster = normalizePath(rawEntry.poster || "");
-
-      const explicitPath = normalizePath(
-        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
-      );
-
-      let src = "";
-      if (explicitPath) {
-        if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
-          src = explicitPath;
-        } else {
-          src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.webm`);
-        }
-      }
-
-      return {
-        src,
-        title,
-        caption,
-        poster,
-      };
-    }
-
-    return null;
+    return {
+      src,
+      title: cleaned || `Clip ${index + 1}`,
+      caption: "",
+      poster: "",
+    };
   }
+
+  if (typeof rawEntry === "object") {
+    const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
+    const caption = String(rawEntry.caption || rawEntry.description || "").trim();
+    const posterRaw = normalizePath(rawEntry.poster || "");
+
+    const explicitPath = normalizePath(
+      rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
+    );
+
+    let src = "";
+    if (explicitPath) {
+      if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
+        src = explicitPath;
+      } else {
+        src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.mp4`);
+      }
+    }
+
+    let poster = "";
+    if (posterRaw) {
+      poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
+        ? posterRaw
+        : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
+    }
+
+    return {
+      src,
+      title,
+      caption,
+      poster,
+    };
+  }
+
+  return null;
+}
 
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
 
     state.book.sections.forEach((section) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "section-link";
-      btn.dataset.sectionId = section.id;
-      btn.innerHTML = `
+      const sectionStartIndex = state.sectionStartIndexById.get(section.id);
+      const sectionParagraphs = Array.isArray(section.paragraphs) ? section.paragraphs : [];
+
+      const sectionBlock = document.createElement("section");
+      sectionBlock.className = "section-block";
+      sectionBlock.dataset.sectionId = section.id;
+
+      const sectionBtn = document.createElement("button");
+      sectionBtn.type = "button";
+      sectionBtn.className = "section-link";
+      sectionBtn.dataset.sectionId = section.id;
+      sectionBtn.innerHTML = `
         <span class="section-number">${escapeHtml(section.number || section.id || "")}</span>
         <span class="section-title">${escapeHtml(section.title || "")}</span>
       `;
 
-      btn.addEventListener("click", () => {
-        const index = state.sectionStartIndexById.get(section.id);
-        if (typeof index === "number") {
-          loadParagraph(index, false);
-          closeSidebar();
+      sectionBtn.addEventListener("click", async () => {
+        if (typeof sectionStartIndex === "number") {
+          await loadParagraph(sectionStartIndex, false);
         }
+
+        document.querySelectorAll(".section-block").forEach((block) => {
+          if (block !== sectionBlock) block.classList.remove("expanded");
+        });
+
+        sectionBlock.classList.toggle("expanded");
+        closeSidebar();
       });
 
-      sectionsNavEl.appendChild(btn);
+      const paragraphNav = document.createElement("div");
+      paragraphNav.className = "paragraph-nav";
+
+      sectionParagraphs.forEach((paragraph, pIndex) => {
+        const globalIndex = sectionStartIndex + pIndex;
+        const paragraphBtn = document.createElement("button");
+        paragraphBtn.type = "button";
+        paragraphBtn.className = "paragraph-link";
+        paragraphBtn.dataset.paragraphIndex = String(globalIndex);
+
+        const paragraphId =
+          paragraph?.id || `${section.number || section.id || "00.00"}-p${String(pIndex + 1).padStart(3, "0")}`;
+
+        paragraphBtn.innerHTML = `
+          <span class="paragraph-code">${escapeHtml(paragraphId)}</span>
+          <span class="paragraph-link-text">${escapeHtml(getParagraphPreview(paragraph.text || ""))}</span>
+        `;
+
+        paragraphBtn.addEventListener("click", async () => {
+          await loadParagraph(globalIndex, false);
+          closeSidebar();
+        });
+
+        paragraphNav.appendChild(paragraphBtn);
+      });
+
+      sectionBlock.appendChild(sectionBtn);
+      sectionBlock.appendChild(paragraphNav);
+      sectionsNavEl.appendChild(sectionBlock);
     });
   }
 
   function updateSectionHighlight() {
+    document.querySelectorAll(".section-block").forEach((block) => {
+      const isActiveSection = block.dataset.sectionId === state.activeSectionId;
+      block.classList.toggle("active", isActiveSection);
+
+      if (isActiveSection) {
+        block.classList.add("expanded");
+      }
+    });
+
     document.querySelectorAll(".section-link").forEach((el) => {
       el.classList.toggle("active", el.dataset.sectionId === state.activeSectionId);
+    });
+
+    document.querySelectorAll(".paragraph-link").forEach((el) => {
+      const index = Number(el.dataset.paragraphIndex);
+      el.classList.toggle("active", index === state.currentIndex);
     });
   }
 
@@ -510,59 +592,63 @@
     });
   }
 
-  function renderVideos(entries) {
-    paragraphVideosEl.innerHTML = "";
+function renderVideos(entries) {
+  paragraphVideosEl.innerHTML = "";
 
-    entries.forEach((entry, index) => {
-      const videoData = resolveVideoEntry(entry, index);
-      if (!videoData || !videoData.src) return;
+  entries.forEach((entry, index) => {
+    const videoData = resolveVideoEntry(entry, index);
+    if (!videoData || !videoData.src) return;
 
-      const wrapper = document.createElement("article");
-      wrapper.className = "media-video-card";
+    const wrapper = document.createElement("article");
+    wrapper.className = "media-video-card";
 
-      const video = document.createElement("video");
-      video.className = "media-video";
-      video.controls = true;
-      video.preload = "metadata";
-      video.playsInline = true;
-      video.src = toSafeUrl(videoData.src);
+    const video = document.createElement("video");
+    video.className = "media-video";
+    video.controls = true;
+    video.preload = "metadata";
+    video.playsInline = true;
 
-      if (videoData.poster) {
-        video.poster = toSafeUrl(videoData.poster);
-      }
+    const source = document.createElement("source");
+    source.src = toSafeUrl(videoData.src);
+    source.type = "video/mp4";
+    video.appendChild(source);
 
-      video.addEventListener("error", () => {
-        wrapper.replaceWith(
-          createMissingMediaCard(`Could not load video file: ${videoData.src}`)
-        );
-      });
+    if (videoData.poster) {
+      video.poster = toSafeUrl(videoData.poster);
+    }
 
-      wrapper.appendChild(video);
-
-      if (videoData.title || videoData.caption) {
-        const meta = document.createElement("div");
-        meta.className = "media-video-meta";
-
-        if (videoData.title) {
-          const title = document.createElement("div");
-          title.className = "media-video-title";
-          title.textContent = videoData.title;
-          meta.appendChild(title);
-        }
-
-        if (videoData.caption) {
-          const caption = document.createElement("div");
-          caption.className = "media-video-caption";
-          caption.textContent = videoData.caption;
-          meta.appendChild(caption);
-        }
-
-        wrapper.appendChild(meta);
-      }
-
-      paragraphVideosEl.appendChild(wrapper);
+    video.addEventListener("error", () => {
+      wrapper.replaceWith(
+        createMissingMediaCard(`Could not load video file: ${videoData.src}`)
+      );
     });
-  }
+
+    wrapper.appendChild(video);
+
+    if (videoData.title || videoData.caption) {
+      const meta = document.createElement("div");
+      meta.className = "media-video-meta";
+
+      if (videoData.title) {
+        const title = document.createElement("div");
+        title.className = "media-video-title";
+        title.textContent = videoData.title;
+        meta.appendChild(title);
+      }
+
+      if (videoData.caption) {
+        const caption = document.createElement("div");
+        caption.className = "media-video-caption";
+        caption.textContent = videoData.caption;
+        meta.appendChild(caption);
+      }
+
+      wrapper.appendChild(meta);
+    }
+
+    paragraphVideosEl.appendChild(wrapper);
+  });
+}
 
   function renderMedia() {
     const current = getCurrentParagraph();
@@ -612,18 +698,21 @@
     }
 
     const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
-    const paragraphLabel = `Paragraph ${current.paragraphNumber}`;
+    const paragraphCode = getParagraphCode(current);
+    const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
+    const candidates = resolveAudioCandidates(current);
 
     playerSectionLabelEl.textContent = sectionLabel;
-    playerParagraphLabelEl.textContent = paragraphLabel;
+    playerParagraphLabelEl.textContent = paragraphCode;
 
-    const candidates = resolveAudioCandidates(current);
+    const paragraphMeta = `Paragraph ${current.paragraphNumber} of ${sectionParagraphCount}`;
+
     playerTimeRangeEl.textContent =
       candidates.length > 0
         ? (current.duration && current.duration > 0
-            ? `Duration: ${formatTime(current.duration)}`
-            : "Audio ready")
-        : "No audio";
+            ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
+            : `${paragraphMeta} • Audio ready`)
+        : `${paragraphMeta} • No audio`;
 
     nowReadingTitleEl.textContent = sectionLabel;
 
