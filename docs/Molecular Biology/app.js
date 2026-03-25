@@ -88,9 +88,11 @@
     return /^(https?:)?\/\//i.test(path) || path.startsWith("/") || path.startsWith("data:") || path.startsWith("blob:");
   }
 
-  function hasExtension(path) {
-    return /\.[a-z0-9]+$/i.test(String(path || "").split(/[?#]/)[0]);
-  }
+function hasExtension(path) {
+  const value = String(path || "").split(/[?#]/)[0].trim();
+  const lastSegment = value.split("/").pop() || "";
+  return /\.(png|jpg|jpeg|gif|webp|svg|mp4|webm|mp3|wav|ogg|m4a|json|js|css|html)$/i.test(lastSegment);
+}
 
   function joinPath(base, leaf) {
     const cleanBase = normalizePath(base).replace(/\/+$/, "");
