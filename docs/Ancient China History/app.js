@@ -37,8 +37,10 @@
   const figureGroupEl = document.getElementById("figureGroup");
   const paragraphFiguresEl = document.getElementById("paragraphFigures");
 
-  const DEFAULT_AUDIO_DIRS = ["audio/paragraphs/s", "audio/paragraphs"];
+  const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
+  const DEFAULT_VIDEOS_DIR = "videos";
+  const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
 
   const state = {
@@ -144,18 +146,6 @@
     return Array.isArray(section?.paragraphs) ? section.paragraphs.length : 0;
   }
 
-  function getParagraphPreview(text, maxLength = 78) {
-    const clean = collapseWhitespace(text);
-    if (clean.length <= maxLength) return clean;
-    return `${clean.slice(0, maxLength).trimEnd()}…`;
-  }
-
-  function getParagraphCode(paragraph) {
-    if (paragraph?.id) return paragraph.id;
-    const n = String(paragraph?.paragraphNumber || 1).padStart(3, "0");
-    return `${paragraph?.sectionNumber || paragraph?.sectionId || "00.00"}-p${n}`;
-  }
-
   function setLoadError(message) {
     bookTitleEl.textContent = "Loading failed";
     nowReadingTitleEl.textContent = "—";
@@ -163,50 +153,63 @@
     previousParagraphTextEl.textContent = "—";
     nextParagraphTextEl.textContent = "—";
     mediaSectionEl.hidden = true;
+    figureGroupEl.hidden = true;
     contextGridEl.style.display = "none";
   }
 
-  function scriptAlreadyLoaded(url) {
-    const wanted = normalizePath(url);
-    return [...document.scripts].some((script) => {
-      const src = script.getAttribute("src");
-      if (!src) return false;
-      const normalizedSrc = normalizePath(src);
-      return normalizedSrc === wanted || normalizedSrc.endsWith(`/${wanted}`);
-    });
-  }
+  function getGlobalBookData() {
+    if (typeof BOOK_DATA !== "undefined" && BOOK_DATA && typeof BOOK_DATA === "object") {
+      return BOOK_DATA;
+    }
 
-  function loadScriptOnce(url) {
-    return new Promise((resolve, reject) => {
-      if (!url) {
-        reject(new Error("No JS book-data path provided."));
-        return;
-      }
-
-      if (scriptAlreadyLoaded(url)) {
-        resolve();
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = url;
-      script.async = true;
-
-      script.onload = () => resolve();
-      script.onerror = () => reject(new Error(`Failed to load script: ${url}`));
-
-      document.head.appendChild(script);
-    });
-  }
-
-  async function loadBookData() {
     if (window.BOOK_DATA && typeof window.BOOK_DATA === "object") {
       return window.BOOK_DATA;
     }
 
+    return null;
+  }
+
+  async function fetchJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
+    }
+    return response.json();
+  }
+
+  async function readBookDataFromJsFile(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JS data: ${response.status} ${response.statusText}`);
+    }
+
+    const source = await response.text();
+
+    const factory = new Function(
+      `${source}\n;return (typeof BOOK_DATA !== "undefined" ? BOOK_DATA : (typeof window !== "undefined" && window.BOOK_DATA && typeof window.BOOK_DATA === "object" ? window.BOOK_DATA : null));`
+    );
+
+    const data = factory();
+
+    if (!data || typeof data !== "object") {
+      throw new Error(`The JS data file did not expose BOOK_DATA: ${url}`);
+    }
+
+    window.BOOK_DATA = data;
+    return data;
+  }
+
+  async function loadBookData() {
+    const globalData = getGlobalBookData();
+    if (globalData) {
+      return globalData;
+    }
+
     const inlineJsonEl = document.getElementById("bookDataInline");
     if (inlineJsonEl && inlineJsonEl.textContent.trim()) {
-      return JSON.parse(inlineJsonEl.textContent);
+      const data = JSON.parse(inlineJsonEl.textContent);
+      window.BOOK_DATA = data;
+      return data;
     }
 
     const config = getDataConfig();
@@ -215,10 +218,7 @@
     for (const mode of modes) {
       if (mode === "js" && config.jsUrl) {
         try {
-          await loadScriptOnce(config.jsUrl);
-          if (window.BOOK_DATA && typeof window.BOOK_DATA === "object") {
-            return window.BOOK_DATA;
-          }
+          return await readBookDataFromJsFile(config.jsUrl);
         } catch (error) {
           console.warn(error);
         }
@@ -226,11 +226,9 @@
 
       if (mode === "json" && config.jsonUrl) {
         try {
-          const response = await fetch(config.jsonUrl, { cache: "no-store" });
-          if (!response.ok) {
-            throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
-          }
-          return await response.json();
+          const data = await fetchJson(config.jsonUrl);
+          window.BOOK_DATA = data;
+          return data;
         } catch (error) {
           console.warn(error);
         }
@@ -238,18 +236,20 @@
     }
 
     throw new Error(
-      "No book data could be loaded. Provide window.BOOK_DATA via a JS file, or set data-book-json / data-book-js on the HTML root or body."
+      "No book data could be loaded. Provide BOOK_DATA via JS or JSON, or set data-book-json / data-book-js on the HTML root or body."
     );
   }
 
   function normalizeParagraph(paragraph, section, paragraphIndex) {
     const figures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
+    const videos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
 
     return {
       ...paragraph,
-      id: String(paragraph?.id || ""),
+      id: String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`),
       text: String(paragraph?.text || ""),
       figures,
+      videos,
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -258,10 +258,18 @@
   }
 
   function indexBookData(book) {
+    const rawSections = Array.isArray(book?.sections) ? book.sections : [];
+
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
-      sections: Array.isArray(book?.sections) ? book.sections : [],
+      sections: rawSections.map((section, index) => ({
+        ...section,
+        id: String(section?.id || section?.number || `section-${index + 1}`),
+        number: String(section?.number || section?.id || `Section ${index + 1}`),
+        title: String(section?.title || ""),
+        paragraphs: Array.isArray(section?.paragraphs) ? section.paragraphs : [],
+      })),
     };
 
     state.flatParagraphs = [];
@@ -271,8 +279,7 @@
       const startIndex = state.flatParagraphs.length;
       state.sectionStartIndexById.set(section.id, startIndex);
 
-      const paragraphs = Array.isArray(section.paragraphs) ? section.paragraphs : [];
-      paragraphs.forEach((paragraph, pIndex) => {
+      section.paragraphs.forEach((paragraph, pIndex) => {
         state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex));
       });
     });
@@ -368,12 +375,53 @@
     return null;
   }
 
+  function resolveNamedMediaSources(rawValue, baseDir, defaultExtensions) {
+    const cleaned = normalizePath(rawValue);
+    if (!cleaned) return [];
+
+    if (cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)) {
+      return [cleaned];
+    }
+
+    return defaultExtensions.map((ext) => joinPath(baseDir, `${cleaned}.${ext}`));
+  }
+
+  function resolveVideoEntry(rawEntry, index) {
+    if (!rawEntry) return null;
+
+    if (typeof rawEntry === "string") {
+      return {
+        sources: resolveNamedMediaSources(rawEntry, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS),
+        label: `Clip ${index + 1}`,
+        caption: "",
+      };
+    }
+
+    if (typeof rawEntry === "object") {
+      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || `Clip ${index + 1}`).trim();
+      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
+
+      const explicitPath = rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || "";
+      const sources = explicitPath
+        ? resolveNamedMediaSources(explicitPath, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS)
+        : resolveNamedMediaSources(label, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS);
+
+      return {
+        sources,
+        label,
+        caption,
+      };
+    }
+
+    return null;
+  }
+
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
 
     state.book.sections.forEach((section) => {
       const sectionStartIndex = state.sectionStartIndexById.get(section.id);
-      const sectionParagraphs = Array.isArray(section.paragraphs) ? section.paragraphs : [];
+      if (typeof sectionStartIndex !== "number") return;
 
       const sectionBlock = document.createElement("section");
       sectionBlock.className = "section-block";
@@ -389,67 +437,22 @@
       `;
 
       sectionBtn.addEventListener("click", async () => {
-        if (typeof sectionStartIndex === "number") {
-          await loadParagraph(sectionStartIndex, false);
-        }
-
-        document.querySelectorAll(".section-block").forEach((block) => {
-          if (block !== sectionBlock) block.classList.remove("expanded");
-        });
-
-        sectionBlock.classList.toggle("expanded");
+        await loadParagraph(sectionStartIndex, false);
         closeSidebar();
       });
 
-      const paragraphNav = document.createElement("div");
-      paragraphNav.className = "paragraph-nav";
-
-      sectionParagraphs.forEach((paragraph, pIndex) => {
-        const globalIndex = sectionStartIndex + pIndex;
-        const paragraphBtn = document.createElement("button");
-        paragraphBtn.type = "button";
-        paragraphBtn.className = "paragraph-link";
-        paragraphBtn.dataset.paragraphIndex = String(globalIndex);
-
-        const paragraphId =
-          paragraph?.id || `${section.number || section.id || "00.00"}-p${String(pIndex + 1).padStart(3, "0")}`;
-
-        paragraphBtn.innerHTML = `
-          <span class="paragraph-code">${escapeHtml(paragraphId)}</span>
-          <span class="paragraph-link-text">${escapeHtml(getParagraphPreview(paragraph.text || ""))}</span>
-        `;
-
-        paragraphBtn.addEventListener("click", async () => {
-          await loadParagraph(globalIndex, false);
-          closeSidebar();
-        });
-
-        paragraphNav.appendChild(paragraphBtn);
-      });
-
       sectionBlock.appendChild(sectionBtn);
-      sectionBlock.appendChild(paragraphNav);
       sectionsNavEl.appendChild(sectionBlock);
     });
   }
 
   function updateSectionHighlight() {
     document.querySelectorAll(".section-block").forEach((block) => {
-      const isActiveSection = block.dataset.sectionId === state.activeSectionId;
-      block.classList.toggle("active", isActiveSection);
-
-      if (isActiveSection) {
-        block.classList.add("expanded");
-      }
+      block.classList.toggle("active", block.dataset.sectionId === state.activeSectionId);
     });
 
     document.querySelectorAll(".section-link").forEach((el) => {
       el.classList.toggle("active", el.dataset.sectionId === state.activeSectionId);
-    });
-
-    document.querySelectorAll(".paragraph-link").forEach((el) => {
-      const index = Number(el.dataset.paragraphIndex);
-      el.classList.toggle("active", index === state.currentIndex);
     });
   }
 
@@ -481,9 +484,31 @@
     return card;
   }
 
-  function renderFigures(entries) {
-    paragraphFiguresEl.innerHTML = "";
+  function appendMediaCaption(figureEl, label, caption) {
+    if (!label && !caption) return;
 
+    const figcaption = document.createElement("figcaption");
+    figcaption.className = "media-caption";
+
+    if (label) {
+      const labelSpan = document.createElement("span");
+      labelSpan.className = "media-caption-label";
+      labelSpan.textContent = label;
+      figcaption.appendChild(labelSpan);
+
+      if (caption) {
+        figcaption.appendChild(document.createTextNode(". "));
+      }
+    }
+
+    if (caption) {
+      figcaption.appendChild(document.createTextNode(caption));
+    }
+
+    figureEl.appendChild(figcaption);
+  }
+
+  function renderFigures(entries) {
     entries.forEach((entry, index) => {
       const figureData = resolveFigureEntry(entry, index);
       if (!figureData || !figureData.src) return;
@@ -502,38 +527,66 @@
       img.src = toSafeUrl(figureData.src);
 
       img.addEventListener("error", () => {
-        wrapper.replaceWith(
-          createMissingMediaCard(`Could not load figure file: ${figureData.src}`)
-        );
+        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${figureData.src}`));
       });
 
       figure.appendChild(img);
-
-      if (figureData.label || figureData.caption) {
-        const caption = document.createElement("figcaption");
-        caption.className = "media-caption";
-
-        if (figureData.label) {
-          const labelSpan = document.createElement("span");
-          labelSpan.className = "media-caption-label";
-          labelSpan.textContent = figureData.label;
-          caption.appendChild(labelSpan);
-
-          if (figureData.caption) {
-            caption.appendChild(document.createTextNode(". "));
-          }
-        }
-
-        if (figureData.caption) {
-          caption.appendChild(document.createTextNode(figureData.caption));
-        }
-
-        figure.appendChild(caption);
-      }
+      appendMediaCaption(figure, figureData.label, figureData.caption);
 
       wrapper.appendChild(figure);
       paragraphFiguresEl.appendChild(wrapper);
     });
+  }
+
+  function renderVideos(entries) {
+    entries.forEach((entry, index) => {
+      const videoData = resolveVideoEntry(entry, index);
+      if (!videoData || videoData.sources.length === 0) return;
+
+      const wrapper = document.createElement("article");
+      wrapper.className = "media-figure-card";
+
+      const figure = document.createElement("figure");
+      figure.className = "media-figure";
+
+      const video = document.createElement("video");
+      video.className = "media-video";
+      video.controls = true;
+      video.preload = "metadata";
+      video.playsInline = true;
+
+      videoData.sources.forEach((src) => {
+        const source = document.createElement("source");
+        source.src = toSafeUrl(src);
+        video.appendChild(source);
+      });
+
+      video.appendChild(document.createTextNode("Your browser does not support embedded video playback."));
+
+      video.addEventListener("error", () => {
+        wrapper.replaceWith(createMissingMediaCard(`Could not load video file: ${videoData.sources[0]}`));
+      });
+
+      figure.appendChild(video);
+      appendMediaCaption(figure, videoData.label, videoData.caption);
+
+      wrapper.appendChild(figure);
+      paragraphFiguresEl.appendChild(wrapper);
+    });
+  }
+
+  function formatMediaSummary(figureCount, videoCount) {
+    const parts = [];
+
+    if (figureCount > 0) {
+      parts.push(`${figureCount} figure${figureCount === 1 ? "" : "s"}`);
+    }
+
+    if (videoCount > 0) {
+      parts.push(`${videoCount} clip${videoCount === 1 ? "" : "s"}`);
+    }
+
+    return parts.join(" • ");
   }
 
   function renderMedia() {
@@ -549,14 +602,21 @@
     }
 
     const rawFigures = Array.isArray(current.figures) ? current.figures : [];
+    const rawVideos = Array.isArray(current.videos) ? current.videos : [];
 
     const validFigures = rawFigures
       .map((entry, index) => resolveFigureEntry(entry, index))
       .filter((item) => item && item.src);
 
-    const figureCount = validFigures.length;
+    const validVideos = rawVideos
+      .map((entry, index) => resolveVideoEntry(entry, index))
+      .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0);
 
-    if (figureCount === 0) {
+    const figureCount = validFigures.length;
+    const videoCount = validVideos.length;
+    const totalCount = figureCount + videoCount;
+
+    if (totalCount === 0) {
       mediaSectionEl.hidden = true;
       figureGroupEl.hidden = true;
       return;
@@ -564,9 +624,10 @@
 
     mediaSectionEl.hidden = false;
     figureGroupEl.hidden = false;
-    mediaSummaryEl.textContent = `${figureCount} figure${figureCount === 1 ? "" : "s"}`;
+    mediaSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
 
-    renderFigures(validFigures);
+    renderFigures(rawFigures);
+    renderVideos(rawVideos);
   }
 
   function renderTextAndMedia() {
@@ -736,15 +797,24 @@
     return index >= 0 ? index : 0;
   }
 
+  function applyTheme(theme, persist = false) {
+    const useDark = theme !== "light";
+    document.body.classList.toggle("dark", useDark);
+    document.documentElement.style.colorScheme = useDark ? "dark" : "light";
+
+    if (persist) {
+      localStorage.setItem(THEME_STORAGE_KEY, useDark ? "dark" : "light");
+    }
+  }
+
   function applySavedTheme() {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    document.body.classList.toggle("dark", savedTheme !== "light");
+    applyTheme(savedTheme === "light" ? "light" : "dark", false);
   }
 
   function toggleTheme() {
     const willBeDark = !document.body.classList.contains("dark");
-    document.body.classList.toggle("dark", willBeDark);
-    localStorage.setItem(THEME_STORAGE_KEY, willBeDark ? "dark" : "light");
+    applyTheme(willBeDark ? "dark" : "light", true);
   }
 
   function isMobileLayout() {
