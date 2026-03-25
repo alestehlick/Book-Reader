@@ -371,58 +371,58 @@
     return null;
   }
 
-function resolveVideoEntry(rawEntry, index) {
-  if (!rawEntry) return null;
+  function resolveVideoEntry(rawEntry, index) {
+    if (!rawEntry) return null;
 
-  if (typeof rawEntry === "string") {
-    const cleaned = normalizePath(rawEntry);
-    const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-      ? cleaned
-      : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.mp4`);
+    if (typeof rawEntry === "string") {
+      const cleaned = normalizePath(rawEntry);
+      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
+        ? cleaned
+        : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.webm`);
 
-    return {
-      src,
-      title: cleaned || `Clip ${index + 1}`,
-      caption: "",
-      poster: "",
-    };
-  }
+      return {
+        src,
+        title: cleaned || `Clip ${index + 1}`,
+        caption: "",
+        poster: "",
+      };
+    }
 
-  if (typeof rawEntry === "object") {
-    const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
-    const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-    const posterRaw = normalizePath(rawEntry.poster || "");
+    if (typeof rawEntry === "object") {
+      const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
+      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
+      const posterRaw = normalizePath(rawEntry.poster || "");
 
-    const explicitPath = normalizePath(
-      rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
-    );
+      const explicitPath = normalizePath(
+        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
+      );
 
-    let src = "";
-    if (explicitPath) {
-      if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
-        src = explicitPath;
-      } else {
-        src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.mp4`);
+      let src = "";
+      if (explicitPath) {
+        if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
+          src = explicitPath;
+        } else {
+          src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.webm`);
+        }
       }
+
+      let poster = "";
+      if (posterRaw) {
+        poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
+          ? posterRaw
+          : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
+      }
+
+      return {
+        src,
+        title,
+        caption,
+        poster,
+      };
     }
 
-    let poster = "";
-    if (posterRaw) {
-      poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
-        ? posterRaw
-        : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
-    }
-
-    return {
-      src,
-      title,
-      caption,
-      poster,
-    };
+    return null;
   }
-
-  return null;
-}
 
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
@@ -592,63 +592,59 @@ function resolveVideoEntry(rawEntry, index) {
     });
   }
 
-function renderVideos(entries) {
-  paragraphVideosEl.innerHTML = "";
+  function renderVideos(entries) {
+    paragraphVideosEl.innerHTML = "";
 
-  entries.forEach((entry, index) => {
-    const videoData = resolveVideoEntry(entry, index);
-    if (!videoData || !videoData.src) return;
+    entries.forEach((entry, index) => {
+      const videoData = resolveVideoEntry(entry, index);
+      if (!videoData || !videoData.src) return;
 
-    const wrapper = document.createElement("article");
-    wrapper.className = "media-video-card";
+      const wrapper = document.createElement("article");
+      wrapper.className = "media-video-card";
 
-    const video = document.createElement("video");
-    video.className = "media-video";
-    video.controls = true;
-    video.preload = "metadata";
-    video.playsInline = true;
+      const video = document.createElement("video");
+      video.className = "media-video";
+      video.controls = true;
+      video.preload = "metadata";
+      video.playsInline = true;
+      video.src = toSafeUrl(videoData.src);
 
-    const source = document.createElement("source");
-    source.src = toSafeUrl(videoData.src);
-    source.type = "video/mp4";
-    video.appendChild(source);
+      if (videoData.poster) {
+        video.poster = toSafeUrl(videoData.poster);
+      }
 
-    if (videoData.poster) {
-      video.poster = toSafeUrl(videoData.poster);
-    }
+      video.addEventListener("error", () => {
+        wrapper.replaceWith(
+          createMissingMediaCard(`Could not load video file: ${videoData.src}`)
+        );
+      });
 
-    video.addEventListener("error", () => {
-      wrapper.replaceWith(
-        createMissingMediaCard(`Could not load video file: ${videoData.src}`)
-      );
+      wrapper.appendChild(video);
+
+      if (videoData.title || videoData.caption) {
+        const meta = document.createElement("div");
+        meta.className = "media-video-meta";
+
+        if (videoData.title) {
+          const title = document.createElement("div");
+          title.className = "media-video-title";
+          title.textContent = videoData.title;
+          meta.appendChild(title);
+        }
+
+        if (videoData.caption) {
+          const caption = document.createElement("div");
+          caption.className = "media-video-caption";
+          caption.textContent = videoData.caption;
+          meta.appendChild(caption);
+        }
+
+        wrapper.appendChild(meta);
+      }
+
+      paragraphVideosEl.appendChild(wrapper);
     });
-
-    wrapper.appendChild(video);
-
-    if (videoData.title || videoData.caption) {
-      const meta = document.createElement("div");
-      meta.className = "media-video-meta";
-
-      if (videoData.title) {
-        const title = document.createElement("div");
-        title.className = "media-video-title";
-        title.textContent = videoData.title;
-        meta.appendChild(title);
-      }
-
-      if (videoData.caption) {
-        const caption = document.createElement("div");
-        caption.className = "media-video-caption";
-        caption.textContent = videoData.caption;
-        meta.appendChild(caption);
-      }
-
-      wrapper.appendChild(meta);
-    }
-
-    paragraphVideosEl.appendChild(wrapper);
-  });
-}
+  }
 
   function renderMedia() {
     const current = getCurrentParagraph();
