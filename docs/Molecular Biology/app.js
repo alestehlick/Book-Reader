@@ -371,58 +371,58 @@
     return null;
   }
 
-  function resolveVideoEntry(rawEntry, index) {
-    if (!rawEntry) return null;
+function resolveVideoEntry(rawEntry, index) {
+  if (!rawEntry) return null;
 
-    if (typeof rawEntry === "string") {
-      const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.webm`);
+  if (typeof rawEntry === "string") {
+    const cleaned = normalizePath(rawEntry);
+    const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
+      ? cleaned
+      : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.mp4`);
 
-      return {
-        src,
-        title: cleaned || `Clip ${index + 1}`,
-        caption: "",
-        poster: "",
-      };
-    }
-
-    if (typeof rawEntry === "object") {
-      const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
-      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-      const posterRaw = normalizePath(rawEntry.poster || "");
-
-      const explicitPath = normalizePath(
-        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
-      );
-
-      let src = "";
-      if (explicitPath) {
-        if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
-          src = explicitPath;
-        } else {
-          src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.webm`);
-        }
-      }
-
-      let poster = "";
-      if (posterRaw) {
-        poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
-          ? posterRaw
-          : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
-      }
-
-      return {
-        src,
-        title,
-        caption,
-        poster,
-      };
-    }
-
-    return null;
+    return {
+      src,
+      title: cleaned || `Clip ${index + 1}`,
+      caption: "",
+      poster: "",
+    };
   }
+
+  if (typeof rawEntry === "object") {
+    const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
+    const caption = String(rawEntry.caption || rawEntry.description || "").trim();
+    const posterRaw = normalizePath(rawEntry.poster || "");
+
+    const explicitPath = normalizePath(
+      rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
+    );
+
+    let src = "";
+    if (explicitPath) {
+      if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
+        src = explicitPath;
+      } else {
+        src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.mp4`);
+      }
+    }
+
+    let poster = "";
+    if (posterRaw) {
+      poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
+        ? posterRaw
+        : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
+    }
+
+    return {
+      src,
+      title,
+      caption,
+      poster,
+    };
+  }
+
+  return null;
+}
 
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
@@ -592,7 +592,7 @@
     });
   }
 
-  function renderVideos(entries) {
+function renderVideos(entries) {
   paragraphVideosEl.innerHTML = "";
 
   entries.forEach((entry, index) => {
@@ -610,7 +610,7 @@
 
     const source = document.createElement("source");
     source.src = toSafeUrl(videoData.src);
-    source.type = "video/webm";
+    source.type = "video/mp4";
     video.appendChild(source);
 
     if (videoData.poster) {
@@ -645,16 +645,6 @@
 
       wrapper.appendChild(meta);
     }
-
-    const fallbackLink = document.createElement("a");
-    fallbackLink.href = toSafeUrl(videoData.src);
-    fallbackLink.target = "_blank";
-    fallbackLink.rel = "noopener noreferrer";
-    fallbackLink.className = "media-video-caption";
-    fallbackLink.style.display = "inline-block";
-    fallbackLink.style.marginTop = "8px";
-    fallbackLink.textContent = "Open clip directly";
-    wrapper.appendChild(fallbackLink);
 
     paragraphVideosEl.appendChild(wrapper);
   });
