@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-book-js="chapter1-data.js" data-book-json="chapter1-data.json" data-book-data-preference="js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Audio Reader</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="dark">
   <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar" aria-label="Sections panel">
       <div class="sidebar-header">
         <div class="eyebrow">Audio Reader</div>
         <h1 id="bookTitle">Loading…</h1>
@@ -19,6 +19,8 @@
         <nav id="sectionsNav" class="sections-nav"></nav>
       </div>
     </aside>
+
+    <div id="sidebarBackdrop" class="sidebar-backdrop" hidden></div>
 
     <main class="main-panel">
       <header class="topbar card">
@@ -75,6 +77,18 @@
         <div id="currentParagraphText" class="current-paragraph-text">Loading…</div>
       </section>
 
+      <section id="mediaSection" class="card media-card" hidden>
+        <div class="media-header">
+          <div class="eyebrow">Figures</div>
+          <div id="mediaSummary" class="media-summary"></div>
+        </div>
+
+        <section id="figureGroup" class="media-group" hidden>
+          <div class="media-group-title">Figures</div>
+          <div id="paragraphFigures" class="media-stack"></div>
+        </section>
+      </section>
+
       <section id="contextGrid" class="context-grid">
         <article class="card context-card">
           <div class="eyebrow">Previous</div>
@@ -91,8 +105,7 @@
 
   <audio id="audioPlayer" preload="metadata"></audio>
 
-  <!-- IMPORTANT: data file must be loaded before app.js -->
-  <script src="chapter1-data.js"></script>
+  <!-- app.js can now load either the JS or JSON book file based on the html data attributes above -->
   <script src="app.js"></script>
 </body>
 </html>

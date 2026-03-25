@@ -655,26 +655,28 @@ function renderVideos(entries) {
 
 function renderMedia() {
   const current = getCurrentParagraph();
+
+  paragraphFiguresEl.innerHTML = "";
+  paragraphVideosEl.innerHTML = "";
+  mediaSummaryEl.textContent = "";
+
   if (!current) {
     mediaSectionEl.hidden = true;
-    paragraphFiguresEl.innerHTML = "";
-    paragraphVideosEl.innerHTML = "";
-    mediaSummaryEl.textContent = "";
+    figureGroupEl.hidden = true;
+    videoGroupEl.hidden = true;
     return;
   }
 
   const rawFigures = Array.isArray(current.figures) ? current.figures : [];
   const rawVideos = Array.isArray(current.videos) ? current.videos : [];
 
-  const validFigures = rawFigures.filter((entry, index) => {
-    const figureData = resolveFigureEntry(entry, index);
-    return figureData && figureData.src;
-  });
+  const validFigures = rawFigures
+    .map((entry, index) => resolveFigureEntry(entry, index))
+    .filter((item) => item && item.src);
 
-  const validVideos = rawVideos.filter((entry, index) => {
-    const videoData = resolveVideoEntry(entry, index);
-    return videoData && videoData.src;
-  });
+  const validVideos = rawVideos
+    .map((entry, index) => resolveVideoEntry(entry, index))
+    .filter((item) => item && item.src);
 
   const figureCount = validFigures.length;
   const videoCount = validVideos.length;
@@ -684,9 +686,6 @@ function renderMedia() {
     mediaSectionEl.hidden = true;
     figureGroupEl.hidden = true;
     videoGroupEl.hidden = true;
-    paragraphFiguresEl.innerHTML = "";
-    paragraphVideosEl.innerHTML = "";
-    mediaSummaryEl.textContent = "";
     return;
   }
 
