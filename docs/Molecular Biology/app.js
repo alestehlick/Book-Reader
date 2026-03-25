@@ -35,13 +35,12 @@
   const mediaSectionEl = document.getElementById("mediaSection");
   const mediaSummaryEl = document.getElementById("mediaSummary");
   const figureGroupEl = document.getElementById("figureGroup");
-  const videoGroupEl = document.getElementById("videoGroup");
   const paragraphFiguresEl = document.getElementById("paragraphFigures");
-  const paragraphVideosEl = document.getElementById("paragraphVideos");
 
-  const DEFAULT_AUDIO_DIRS = ["audio/paragraphs/s", "audio/paragraphs"];
+  const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
   const DEFAULT_VIDEOS_DIR = "videos";
+  const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
 
   const state = {
@@ -58,17 +57,6 @@
     currentAudioPath: "",
     autoplayRequested: false,
   };
-
-  function getDataConfig() {
-    const root = document.documentElement;
-    const body = document.body;
-
-    return {
-      jsUrl: body.dataset.bookJs || root.dataset.bookJs || "",
-      jsonUrl: body.dataset.bookJson || root.dataset.bookJson || "",
-      prefer: (body.dataset.bookDataPreference || root.dataset.bookDataPreference || "js").toLowerCase(),
-    };
-  }
 
   function formatTime(seconds) {
     const value = Number.isFinite(seconds) ? Math.max(0, seconds) : 0;
@@ -88,11 +76,11 @@
     return /^(https?:)?\/\//i.test(path) || path.startsWith("/") || path.startsWith("data:") || path.startsWith("blob:");
   }
 
-function hasExtension(path) {
-  const value = String(path || "").split(/[?#]/)[0].trim();
-  const lastSegment = value.split("/").pop() || "";
-  return /\.(png|jpg|jpeg|gif|webp|svg|mp4|webm|mp3|wav|ogg|m4a|json|js|css|html)$/i.test(lastSegment);
-}
+  function hasExtension(path) {
+    const value = String(path || "").split(/[?#]/)[0].trim();
+    const lastSegment = value.split("/").pop() || "";
+    return /\.(png|jpg|jpeg|gif|webp|svg|mp4|webm|mp3|wav|ogg|m4a|json|js|css|html)$/i.test(lastSegment);
+  }
 
   function joinPath(base, leaf) {
     const cleanBase = normalizePath(base).replace(/\/+$/, "");
@@ -129,6 +117,59 @@ function hasExtension(path) {
     return isAbsoluteLike(path) ? path : encodeURI(path).replace(/#/g, "%23");
   }
 
+  function replaceBaseNameKeepingExtension(path, newBaseName) {
+    const clean = normalizePath(path);
+    if (!clean) return "";
+    const match = clean.match(/^(.*\/)?([^/]+?)(\.[^.]+)$/);
+    if (!match) return "";
+    const dir = match[1] || "";
+    const ext = match[3] || "";
+    return `${dir}${newBaseName}${ext}`;
+  }
+
+  function inferFallbackDataPaths(configuredPath, desiredKind) {
+    const results = [];
+    const clean = normalizePath(configuredPath);
+
+    if (clean) results.push(clean);
+
+    const expectedExt = desiredKind === "js" ? ".js" : ".json";
+
+    if (clean) {
+      if (clean.includes("chapter1-data")) {
+        results.push(replaceBaseNameKeepingExtension(clean, "ch1-data"));
+      }
+      if (clean.includes("ch1-data")) {
+        results.push(replaceBaseNameKeepingExtension(clean, "chapter1-data"));
+      }
+    }
+
+    if (desiredKind === "js") {
+      results.push("ch1-data.js", "chapter1-data.js");
+    } else {
+      results.push("ch1-data.json", "chapter1-data.json");
+    }
+
+    return uniqueStrings(
+      results.filter((item) => item && item.toLowerCase().endsWith(expectedExt))
+    );
+  }
+
+  function getDataConfig() {
+    const root = document.documentElement;
+    const body = document.body;
+
+    const jsUrl = body.dataset.bookJs || root.dataset.bookJs || "";
+    const jsonUrl = body.dataset.bookJson || root.dataset.bookJson || "";
+    const prefer = (body.dataset.bookDataPreference || root.dataset.bookDataPreference || "js").toLowerCase();
+
+    return {
+      jsCandidates: inferFallbackDataPaths(jsUrl, "js"),
+      jsonCandidates: inferFallbackDataPaths(jsonUrl, "json"),
+      prefer,
+    };
+  }
+
   function getCurrentParagraph() {
     return state.flatParagraphs[state.currentIndex] || null;
   }
@@ -147,18 +188,6 @@ function hasExtension(path) {
     return Array.isArray(section?.paragraphs) ? section.paragraphs.length : 0;
   }
 
-  function getParagraphPreview(text, maxLength = 78) {
-    const clean = collapseWhitespace(text);
-    if (clean.length <= maxLength) return clean;
-    return `${clean.slice(0, maxLength).trimEnd()}…`;
-  }
-
-  function getParagraphCode(paragraph) {
-    if (paragraph?.id) return paragraph.id;
-    const n = String(paragraph?.paragraphNumber || 1).padStart(3, "0");
-    return `${paragraph?.sectionNumber || paragraph?.sectionId || "00.00"}-p${n}`;
-  }
-
   function setLoadError(message) {
     bookTitleEl.textContent = "Loading failed";
     nowReadingTitleEl.textContent = "—";
@@ -166,82 +195,94 @@ function hasExtension(path) {
     previousParagraphTextEl.textContent = "—";
     nextParagraphTextEl.textContent = "—";
     mediaSectionEl.hidden = true;
+    figureGroupEl.hidden = true;
     contextGridEl.style.display = "none";
   }
 
-  function scriptAlreadyLoaded(url) {
-    const wanted = normalizePath(url);
-    return [...document.scripts].some((script) => {
-      const src = script.getAttribute("src");
-      if (!src) return false;
-      const normalizedSrc = normalizePath(src);
-      return normalizedSrc === wanted || normalizedSrc.endsWith(`/${wanted}`);
-    });
-  }
+  function getGlobalBookData() {
+    if (typeof BOOK_DATA !== "undefined" && BOOK_DATA && typeof BOOK_DATA === "object") {
+      return BOOK_DATA;
+    }
 
-  function loadScriptOnce(url) {
-    return new Promise((resolve, reject) => {
-      if (!url) {
-        reject(new Error("No JS book-data path provided."));
-        return;
-      }
-
-      if (scriptAlreadyLoaded(url)) {
-        resolve();
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = url;
-      script.async = true;
-
-      script.onload = () => resolve();
-      script.onerror = () => reject(new Error(`Failed to load script: ${url}`));
-
-      document.head.appendChild(script);
-    });
-  }
-
-  async function loadBookData() {
     if (window.BOOK_DATA && typeof window.BOOK_DATA === "object") {
       return window.BOOK_DATA;
     }
 
+    return null;
+  }
+
+  async function fetchJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
+    }
+    return response.json();
+  }
+
+  async function readBookDataFromJsFile(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JS data: ${response.status} ${response.statusText}`);
+    }
+
+    const source = await response.text();
+
+    const factory = new Function(
+      `${source}\n;return (typeof BOOK_DATA !== "undefined" ? BOOK_DATA : (typeof window !== "undefined" && window.BOOK_DATA && typeof window.BOOK_DATA === "object" ? window.BOOK_DATA : null));`
+    );
+
+    const data = factory();
+
+    if (!data || typeof data !== "object") {
+      throw new Error(`The JS data file did not expose BOOK_DATA: ${url}`);
+    }
+
+    window.BOOK_DATA = data;
+    return data;
+  }
+
+  async function loadBookData() {
+    const globalData = getGlobalBookData();
+    if (globalData) {
+      return globalData;
+    }
+
     const inlineJsonEl = document.getElementById("bookDataInline");
     if (inlineJsonEl && inlineJsonEl.textContent.trim()) {
-      return JSON.parse(inlineJsonEl.textContent);
+      const data = JSON.parse(inlineJsonEl.textContent);
+      window.BOOK_DATA = data;
+      return data;
     }
 
     const config = getDataConfig();
     const modes = config.prefer === "json" ? ["json", "js"] : ["js", "json"];
 
     for (const mode of modes) {
-      if (mode === "js" && config.jsUrl) {
-        try {
-          await loadScriptOnce(config.jsUrl);
-          if (window.BOOK_DATA && typeof window.BOOK_DATA === "object") {
-            return window.BOOK_DATA;
+      if (mode === "js") {
+        for (const url of config.jsCandidates) {
+          try {
+            return await readBookDataFromJsFile(url);
+          } catch (error) {
+            console.warn(error);
           }
-        } catch (error) {
-          console.warn(error);
         }
       }
 
-      if (mode === "json" && config.jsonUrl) {
-        try {
-          const response = await fetch(config.jsonUrl, { cache: "no-store" });
-          if (!response.ok) {
-            throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
+      if (mode === "json") {
+        for (const url of config.jsonCandidates) {
+          try {
+            const data = await fetchJson(url);
+            window.BOOK_DATA = data;
+            return data;
+          } catch (error) {
+            console.warn(error);
           }
-          return await response.json();
-        } catch (error) {
-          console.warn(error);
         }
       }
     }
 
     throw new Error(
-      "No book data could be loaded. Provide window.BOOK_DATA via a JS file, or set data-book-json / data-book-js on the HTML root or body."
+      "No book data could be loaded. Checked both configured paths and fallback aliases such as ch1-data.js / ch1-data.json."
     );
   }
 
@@ -251,7 +292,10 @@ function hasExtension(path) {
 
     return {
       ...paragraph,
-      id: String(paragraph?.id || ""),
+      id: String(
+        paragraph?.id ||
+        `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`
+      ),
       text: String(paragraph?.text || ""),
       figures,
       videos,
@@ -263,10 +307,18 @@ function hasExtension(path) {
   }
 
   function indexBookData(book) {
+    const rawSections = Array.isArray(book?.sections) ? book.sections : [];
+
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
-      sections: Array.isArray(book?.sections) ? book.sections : [],
+      sections: rawSections.map((section, index) => ({
+        ...section,
+        id: String(section?.id || section?.number || `section-${index + 1}`),
+        number: String(section?.number || section?.id || `Section ${index + 1}`),
+        title: String(section?.title || ""),
+        paragraphs: Array.isArray(section?.paragraphs) ? section.paragraphs : [],
+      })),
     };
 
     state.flatParagraphs = [];
@@ -276,8 +328,7 @@ function hasExtension(path) {
       const startIndex = state.flatParagraphs.length;
       state.sectionStartIndexById.set(section.id, startIndex);
 
-      const paragraphs = Array.isArray(section.paragraphs) ? section.paragraphs : [];
-      paragraphs.forEach((paragraph, pIndex) => {
+      section.paragraphs.forEach((paragraph, pIndex) => {
         state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex));
       });
     });
@@ -373,53 +424,41 @@ function hasExtension(path) {
     return null;
   }
 
+  function resolveNamedMediaSources(rawValue, baseDir, defaultExtensions) {
+    const cleaned = normalizePath(rawValue);
+    if (!cleaned) return [];
+
+    if (cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)) {
+      return [cleaned];
+    }
+
+    return defaultExtensions.map((ext) => joinPath(baseDir, `${cleaned}.${ext}`));
+  }
+
   function resolveVideoEntry(rawEntry, index) {
     if (!rawEntry) return null;
 
     if (typeof rawEntry === "string") {
-      const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(DEFAULT_VIDEOS_DIR, `${cleaned}.webm`);
-
       return {
-        src,
-        title: cleaned || `Clip ${index + 1}`,
+        sources: resolveNamedMediaSources(rawEntry, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS),
+        label: `Clip ${index + 1}`,
         caption: "",
-        poster: "",
       };
     }
 
     if (typeof rawEntry === "object") {
-      const title = String(rawEntry.title || rawEntry.label || rawEntry.name || `Clip ${index + 1}`).trim();
+      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || `Clip ${index + 1}`).trim();
       const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-      const posterRaw = normalizePath(rawEntry.poster || "");
 
-      const explicitPath = normalizePath(
-        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || ""
-      );
-
-      let src = "";
-      if (explicitPath) {
-        if (explicitPath.includes("/") || isAbsoluteLike(explicitPath)) {
-          src = explicitPath;
-        } else {
-          src = joinPath(DEFAULT_VIDEOS_DIR, hasExtension(explicitPath) ? explicitPath : `${explicitPath}.webm`);
-        }
-      }
-
-      let poster = "";
-      if (posterRaw) {
-        poster = posterRaw.includes("/") || isAbsoluteLike(posterRaw)
-          ? posterRaw
-          : joinPath(DEFAULT_VIDEOS_DIR, posterRaw);
-      }
+      const explicitPath = rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || "";
+      const sources = explicitPath
+        ? resolveNamedMediaSources(explicitPath, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS)
+        : resolveNamedMediaSources(label, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS);
 
       return {
-        src,
-        title,
+        sources,
+        label,
         caption,
-        poster,
       };
     }
 
@@ -431,7 +470,7 @@ function hasExtension(path) {
 
     state.book.sections.forEach((section) => {
       const sectionStartIndex = state.sectionStartIndexById.get(section.id);
-      const sectionParagraphs = Array.isArray(section.paragraphs) ? section.paragraphs : [];
+      if (typeof sectionStartIndex !== "number") return;
 
       const sectionBlock = document.createElement("section");
       sectionBlock.className = "section-block";
@@ -447,67 +486,22 @@ function hasExtension(path) {
       `;
 
       sectionBtn.addEventListener("click", async () => {
-        if (typeof sectionStartIndex === "number") {
-          await loadParagraph(sectionStartIndex, false);
-        }
-
-        document.querySelectorAll(".section-block").forEach((block) => {
-          if (block !== sectionBlock) block.classList.remove("expanded");
-        });
-
-        sectionBlock.classList.toggle("expanded");
+        await loadParagraph(sectionStartIndex, false);
         closeSidebar();
       });
 
-      const paragraphNav = document.createElement("div");
-      paragraphNav.className = "paragraph-nav";
-
-      sectionParagraphs.forEach((paragraph, pIndex) => {
-        const globalIndex = sectionStartIndex + pIndex;
-        const paragraphBtn = document.createElement("button");
-        paragraphBtn.type = "button";
-        paragraphBtn.className = "paragraph-link";
-        paragraphBtn.dataset.paragraphIndex = String(globalIndex);
-
-        const paragraphId =
-          paragraph?.id || `${section.number || section.id || "00.00"}-p${String(pIndex + 1).padStart(3, "0")}`;
-
-        paragraphBtn.innerHTML = `
-          <span class="paragraph-code">${escapeHtml(paragraphId)}</span>
-          <span class="paragraph-link-text">${escapeHtml(getParagraphPreview(paragraph.text || ""))}</span>
-        `;
-
-        paragraphBtn.addEventListener("click", async () => {
-          await loadParagraph(globalIndex, false);
-          closeSidebar();
-        });
-
-        paragraphNav.appendChild(paragraphBtn);
-      });
-
       sectionBlock.appendChild(sectionBtn);
-      sectionBlock.appendChild(paragraphNav);
       sectionsNavEl.appendChild(sectionBlock);
     });
   }
 
   function updateSectionHighlight() {
     document.querySelectorAll(".section-block").forEach((block) => {
-      const isActiveSection = block.dataset.sectionId === state.activeSectionId;
-      block.classList.toggle("active", isActiveSection);
-
-      if (isActiveSection) {
-        block.classList.add("expanded");
-      }
+      block.classList.toggle("active", block.dataset.sectionId === state.activeSectionId);
     });
 
     document.querySelectorAll(".section-link").forEach((el) => {
       el.classList.toggle("active", el.dataset.sectionId === state.activeSectionId);
-    });
-
-    document.querySelectorAll(".paragraph-link").forEach((el) => {
-      const index = Number(el.dataset.paragraphIndex);
-      el.classList.toggle("active", index === state.currentIndex);
     });
   }
 
@@ -539,9 +533,31 @@ function hasExtension(path) {
     return card;
   }
 
-  function renderFigures(entries) {
-    paragraphFiguresEl.innerHTML = "";
+  function appendMediaCaption(figureEl, label, caption) {
+    if (!label && !caption) return;
 
+    const figcaption = document.createElement("figcaption");
+    figcaption.className = "media-caption";
+
+    if (label) {
+      const labelSpan = document.createElement("span");
+      labelSpan.className = "media-caption-label";
+      labelSpan.textContent = label;
+      figcaption.appendChild(labelSpan);
+
+      if (caption) {
+        figcaption.appendChild(document.createTextNode(". "));
+      }
+    }
+
+    if (caption) {
+      figcaption.appendChild(document.createTextNode(caption));
+    }
+
+    figureEl.appendChild(figcaption);
+  }
+
+  function renderFigures(entries) {
     entries.forEach((entry, index) => {
       const figureData = resolveFigureEntry(entry, index);
       if (!figureData || !figureData.src) return;
@@ -560,188 +576,149 @@ function hasExtension(path) {
       img.src = toSafeUrl(figureData.src);
 
       img.addEventListener("error", () => {
-        wrapper.replaceWith(
-          createMissingMediaCard(`Could not load figure file: ${figureData.src}`)
-        );
+        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${figureData.src}`));
       });
 
       figure.appendChild(img);
-
-      if (figureData.label || figureData.caption) {
-        const caption = document.createElement("figcaption");
-        caption.className = "media-caption";
-
-        if (figureData.label) {
-          const labelSpan = document.createElement("span");
-          labelSpan.className = "media-caption-label";
-          labelSpan.textContent = figureData.label;
-          caption.appendChild(labelSpan);
-
-          if (figureData.caption) {
-            caption.appendChild(document.createTextNode(". "));
-          }
-        }
-
-        if (figureData.caption) {
-          caption.appendChild(document.createTextNode(figureData.caption));
-        }
-
-        figure.appendChild(caption);
-      }
+      appendMediaCaption(figure, figureData.label, figureData.caption);
 
       wrapper.appendChild(figure);
       paragraphFiguresEl.appendChild(wrapper);
     });
   }
 
-function renderVideos(entries) {
-  paragraphVideosEl.innerHTML = "";
+  function renderVideos(entries) {
+    entries.forEach((entry, index) => {
+      const videoData = resolveVideoEntry(entry, index);
+      if (!videoData || videoData.sources.length === 0) return;
 
-  entries.forEach((entry, index) => {
-    const videoData = resolveVideoEntry(entry, index);
-    if (!videoData || !videoData.src) return;
+      const wrapper = document.createElement("article");
+      wrapper.className = "media-figure-card";
 
-    const wrapper = document.createElement("article");
-    wrapper.className = "media-video-card";
+      const figure = document.createElement("figure");
+      figure.className = "media-figure";
 
-    const video = document.createElement("video");
-    video.className = "media-video";
-    video.controls = true;
-    video.preload = "metadata";
-    video.playsInline = true;
+      const video = document.createElement("video");
+      video.className = "media-video";
+      video.controls = true;
+      video.preload = "metadata";
+      video.playsInline = true;
 
-    const source = document.createElement("source");
-    source.src = toSafeUrl(videoData.src);
-    source.type = "video/webm";
-    video.appendChild(source);
+      videoData.sources.forEach((src) => {
+        const source = document.createElement("source");
+        source.src = toSafeUrl(src);
+        video.appendChild(source);
+      });
 
-    if (videoData.poster) {
-      video.poster = toSafeUrl(videoData.poster);
-    }
+      video.appendChild(document.createTextNode("Your browser does not support embedded video playback."));
 
-    video.addEventListener("error", () => {
-      wrapper.replaceWith(
-        createMissingMediaCard(`Could not load video file: ${videoData.src}`)
-      );
+      video.addEventListener("error", () => {
+        wrapper.replaceWith(createMissingMediaCard(`Could not load video file: ${videoData.sources[0]}`));
+      });
+
+      figure.appendChild(video);
+      appendMediaCaption(figure, videoData.label, videoData.caption);
+
+      wrapper.appendChild(figure);
+      paragraphFiguresEl.appendChild(wrapper);
     });
+  }
 
-    wrapper.appendChild(video);
+  function formatMediaSummary(figureCount, videoCount) {
+    const parts = [];
 
-    if (videoData.title || videoData.caption) {
-      const meta = document.createElement("div");
-      meta.className = "media-video-meta";
-
-      if (videoData.title) {
-        const title = document.createElement("div");
-        title.className = "media-video-title";
-        title.textContent = videoData.title;
-        meta.appendChild(title);
-      }
-
-      if (videoData.caption) {
-        const caption = document.createElement("div");
-        caption.className = "media-video-caption";
-        caption.textContent = videoData.caption;
-        meta.appendChild(caption);
-      }
-
-      wrapper.appendChild(meta);
+    if (figureCount > 0) {
+      parts.push(`${figureCount} figure${figureCount === 1 ? "" : "s"}`);
     }
 
-    paragraphVideosEl.appendChild(wrapper);
-    video.load();
-  });
-}
+    if (videoCount > 0) {
+      parts.push(`${videoCount} clip${videoCount === 1 ? "" : "s"}`);
+    }
 
-function renderMedia() {
-  const current = getCurrentParagraph();
-
-  paragraphFiguresEl.innerHTML = "";
-  paragraphVideosEl.innerHTML = "";
-  mediaSummaryEl.textContent = "";
-
-  if (!current) {
-    mediaSectionEl.hidden = true;
-    figureGroupEl.hidden = true;
-    videoGroupEl.hidden = true;
-    return;
+    return parts.join(" • ");
   }
 
-  const rawFigures = Array.isArray(current.figures) ? current.figures : [];
-  const rawVideos = Array.isArray(current.videos) ? current.videos : [];
+  function renderMedia() {
+    const current = getCurrentParagraph();
 
-  const validFigures = rawFigures
-    .map((entry, index) => resolveFigureEntry(entry, index))
-    .filter((item) => item && item.src);
+    paragraphFiguresEl.innerHTML = "";
+    mediaSummaryEl.textContent = "";
 
-  const validVideos = rawVideos
-    .map((entry, index) => resolveVideoEntry(entry, index))
-    .filter((item) => item && item.src);
+    if (!current) {
+      mediaSectionEl.hidden = true;
+      figureGroupEl.hidden = true;
+      return;
+    }
 
-  const figureCount = validFigures.length;
-  const videoCount = validVideos.length;
-  const totalCount = figureCount + videoCount;
+    const rawFigures = Array.isArray(current.figures) ? current.figures : [];
+    const rawVideos = Array.isArray(current.videos) ? current.videos : [];
 
-  if (totalCount === 0) {
-    mediaSectionEl.hidden = true;
-    figureGroupEl.hidden = true;
-    videoGroupEl.hidden = true;
-    return;
+    const validFigures = rawFigures
+      .map((entry, index) => resolveFigureEntry(entry, index))
+      .filter((item) => item && item.src);
+
+    const validVideos = rawVideos
+      .map((entry, index) => resolveVideoEntry(entry, index))
+      .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0);
+
+    const figureCount = validFigures.length;
+    const videoCount = validVideos.length;
+    const totalCount = figureCount + videoCount;
+
+    if (totalCount === 0) {
+      mediaSectionEl.hidden = true;
+      figureGroupEl.hidden = true;
+      return;
+    }
+
+    mediaSectionEl.hidden = false;
+    figureGroupEl.hidden = false;
+    mediaSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
+
+    renderFigures(rawFigures);
+    renderVideos(rawVideos);
   }
 
-  mediaSectionEl.hidden = false;
-  figureGroupEl.hidden = figureCount === 0;
-  videoGroupEl.hidden = videoCount === 0;
+  function renderTextAndMedia() {
+    const current = getCurrentParagraph();
+    const previous = getParagraph(state.currentIndex - 1);
+    const next = getParagraph(state.currentIndex + 1);
 
-  const summaryParts = [];
-  if (figureCount > 0) summaryParts.push(`${figureCount} figure${figureCount === 1 ? "" : "s"}`);
-  if (videoCount > 0) summaryParts.push(`${videoCount} clip${videoCount === 1 ? "" : "s"}`);
-  mediaSummaryEl.textContent = summaryParts.join(" • ");
+    if (!current) {
+      currentParagraphTextEl.textContent = "No paragraph found.";
+      previousParagraphTextEl.textContent = "—";
+      nextParagraphTextEl.textContent = "—";
+      mediaSectionEl.hidden = true;
+      return;
+    }
 
-  renderFigures(validFigures);
-  renderVideos(validVideos);
-}
+    const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
+    const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
+    const candidates = resolveAudioCandidates(current);
 
-function renderTextAndMedia() {
-  const current = getCurrentParagraph();
-  const previous = getParagraph(state.currentIndex - 1);
-  const next = getParagraph(state.currentIndex + 1);
+    playerSectionLabelEl.textContent = sectionLabel;
+    playerParagraphLabelEl.textContent = `Paragraph ${current.paragraphNumber}`;
 
-  if (!current) {
-    currentParagraphTextEl.textContent = "No paragraph found.";
-    previousParagraphTextEl.textContent = "—";
-    nextParagraphTextEl.textContent = "—";
-    mediaSectionEl.hidden = true;
-    return;
+    const paragraphMeta = `Paragraph ${current.paragraphNumber} of ${sectionParagraphCount}`;
+
+    playerTimeRangeEl.textContent =
+      candidates.length > 0
+        ? (current.duration && current.duration > 0
+            ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
+            : `${paragraphMeta} • Audio ready`)
+        : `${paragraphMeta} • No audio`;
+
+    nowReadingTitleEl.textContent = sectionLabel;
+
+    renderParagraphText(current);
+
+    previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
+    nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
+
+    contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
+
+    renderMedia();
   }
-
-  const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
-  const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
-  const candidates = resolveAudioCandidates(current);
-
-  playerSectionLabelEl.textContent = sectionLabel;
-  playerParagraphLabelEl.textContent = `Paragraph ${current.paragraphNumber}`;
-
-  const paragraphMeta = `Paragraph ${current.paragraphNumber} of ${sectionParagraphCount}`;
-
-  playerTimeRangeEl.textContent =
-    candidates.length > 0
-      ? (current.duration && current.duration > 0
-          ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
-          : `${paragraphMeta} • Audio ready`)
-      : `${paragraphMeta} • No audio`;
-
-  nowReadingTitleEl.textContent = sectionLabel;
-
-  renderParagraphText(current);
-
-  previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
-  nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
-
-  contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
-
-  renderMedia();
-}
 
   function renderMeta() {
     const current = getCurrentParagraph();
@@ -869,15 +846,24 @@ function renderTextAndMedia() {
     return index >= 0 ? index : 0;
   }
 
+  function applyTheme(theme, persist = false) {
+    const useDark = theme !== "light";
+    document.body.classList.toggle("dark", useDark);
+    document.documentElement.style.colorScheme = useDark ? "dark" : "light";
+
+    if (persist) {
+      localStorage.setItem(THEME_STORAGE_KEY, useDark ? "dark" : "light");
+    }
+  }
+
   function applySavedTheme() {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    document.body.classList.toggle("dark", savedTheme !== "light");
+    applyTheme(savedTheme === "light" ? "light" : "dark", false);
   }
 
   function toggleTheme() {
     const willBeDark = !document.body.classList.contains("dark");
-    document.body.classList.toggle("dark", willBeDark);
-    localStorage.setItem(THEME_STORAGE_KEY, willBeDark ? "dark" : "light");
+    applyTheme(willBeDark ? "dark" : "light", true);
   }
 
   function isMobileLayout() {
