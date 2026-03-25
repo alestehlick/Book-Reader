@@ -592,59 +592,64 @@
     });
   }
 
-  function renderVideos(entries) {
-    paragraphVideosEl.innerHTML = "";
+function renderVideos(entries) {
+  paragraphVideosEl.innerHTML = "";
 
-    entries.forEach((entry, index) => {
-      const videoData = resolveVideoEntry(entry, index);
-      if (!videoData || !videoData.src) return;
+  entries.forEach((entry, index) => {
+    const videoData = resolveVideoEntry(entry, index);
+    if (!videoData || !videoData.src) return;
 
-      const wrapper = document.createElement("article");
-      wrapper.className = "media-video-card";
+    const wrapper = document.createElement("article");
+    wrapper.className = "media-video-card";
 
-      const video = document.createElement("video");
-      video.className = "media-video";
-      video.controls = true;
-      video.preload = "metadata";
-      video.playsInline = true;
-      video.src = toSafeUrl(videoData.src);
+    const video = document.createElement("video");
+    video.className = "media-video";
+    video.controls = true;
+    video.preload = "metadata";
+    video.playsInline = true;
 
-      if (videoData.poster) {
-        video.poster = toSafeUrl(videoData.poster);
-      }
+    const source = document.createElement("source");
+    source.src = toSafeUrl(videoData.src);
+    source.type = "video/webm";
+    video.appendChild(source);
 
-      video.addEventListener("error", () => {
-        wrapper.replaceWith(
-          createMissingMediaCard(`Could not load video file: ${videoData.src}`)
-        );
-      });
+    if (videoData.poster) {
+      video.poster = toSafeUrl(videoData.poster);
+    }
 
-      wrapper.appendChild(video);
-
-      if (videoData.title || videoData.caption) {
-        const meta = document.createElement("div");
-        meta.className = "media-video-meta";
-
-        if (videoData.title) {
-          const title = document.createElement("div");
-          title.className = "media-video-title";
-          title.textContent = videoData.title;
-          meta.appendChild(title);
-        }
-
-        if (videoData.caption) {
-          const caption = document.createElement("div");
-          caption.className = "media-video-caption";
-          caption.textContent = videoData.caption;
-          meta.appendChild(caption);
-        }
-
-        wrapper.appendChild(meta);
-      }
-
-      paragraphVideosEl.appendChild(wrapper);
+    video.addEventListener("error", () => {
+      wrapper.replaceWith(
+        createMissingMediaCard(`Could not load video file: ${videoData.src}`)
+      );
     });
-  }
+
+    wrapper.appendChild(video);
+
+    if (videoData.title || videoData.caption) {
+      const meta = document.createElement("div");
+      meta.className = "media-video-meta";
+
+      if (videoData.title) {
+        const title = document.createElement("div");
+        title.className = "media-video-title";
+        title.textContent = videoData.title;
+        meta.appendChild(title);
+      }
+
+      if (videoData.caption) {
+        const caption = document.createElement("div");
+        caption.className = "media-video-caption";
+        caption.textContent = videoData.caption;
+        meta.appendChild(caption);
+      }
+
+      wrapper.appendChild(meta);
+    }
+
+    paragraphVideosEl.appendChild(wrapper);
+    video.load();
+  });
+}
 
   function renderMedia() {
     const current = getCurrentParagraph();
