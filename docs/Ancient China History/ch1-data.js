@@ -1,0 +1,635 @@
+const BOOK_DATA = {
+  "title": "Ancient China — Chapter 1",
+  "language": "en",
+  "sections": [
+    {
+      "id": "01.01",
+      "number": "01.01",
+      "title": "Before \"China\"",
+      "paragraphs": [
+        {
+          "id": "01.01-p001",
+          "text": "When we speak of ancient China at this early stage, we must begin with a small correction.\nThe China of modern maps did not yet exist.\nEven the word is, for this remote period, a convenience rather than a fact.\nWhat we are really speaking of is a broad region of East Asia, lying east of the Altai Mountains and the Tibetan Plateau.\nWithin that region, over immense stretches of time, early human populations settled, adapted, wandered, survived, and gradually laid down the human foundation upon which a later and recognizable Chinese civilization would be built.\nThat civilization, in any distinct sense, begins to emerge only after the adoption of agriculture, roughly ten thousand years ago.\nBefore that threshold, the story cannot honestly be told as a purely Chinese one.\nIt still belongs to the wider human story.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.02",
+      "number": "01.02",
+      "title": "The Deep Human Background",
+      "paragraphs": [
+        {
+          "id": "01.02-p001",
+          "text": "The chapter therefore opens before history in the strict sense.\nIt opens in that dim and disputed zone where geology, fossil evidence, genetics, archaeology, and a fair amount of scholarly argument must all be made to speak together.\nEver since Darwin published his theory of evolution by natural selection in 1859, the antiquity of humankind has been one of the great questions.\nThe evidence has multiplied enormously since then.\nThe confidence has not always kept pace.\nEven now, the story is still partly sketch, partly reconstruction, and partly debate.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p002",
+          "text": "The order of animals to which human beings belong, the primates, separated from other mammals somewhere between ninety and sixty-five million years ago.\nWell-documented fossils, however, only begin much later, in the early Eocene, about fifty-seven million years ago.\nA common ancestor of the higher primates, the line that would eventually give rise to monkeys and apes, appeared in Africa at least forty to fifty million years ago.\nMonkeys and apes then seem to have separated in the early Miocene, roughly between twenty-three and seventeen million years ago.\nSo far, the deepest roots of the story lie in Africa.\nThat is where the earliest major stages unfolded.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p003",
+          "text": "By the middle Miocene, between seventeen and eleven million years ago, hominoid fossils begin to appear beyond Africa, in eastern Europe and across Asia as far as China.\nThen, between eleven and seven million years ago, at least one genus of large ape lived in what is now southwestern China.\nThis was Lufengpithecus, discovered at Lufeng in Yunnan.\nAfter that came further branchings in the primate tree.\nThe gorilla line probably split off between ten and six million years ago.\nThe closest living relative of humans, according to genetic studies, is the chimpanzee.\nIts divergence from the human line is usually placed between eight and six million years ago, though one study pushed the figure down to about 4.9 million years ago.\nSuch numbers matter, but they also remind us of something humbling.\nPrehistory is not a neat corridor lined with labels.\nIt is more like a landscape glimpsed in flashes.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.03",
+      "number": "01.03",
+      "title": "The Earliest Human Ancestors",
+      "paragraphs": [
+        {
+          "id": "01.03-p001",
+          "text": "The earliest beings that can properly be called human in the broad ancestral sense are usually grouped into two genera, Australopithecus and Paranthropus.\nThey begin to appear sometime between the late Miocene and the Pliocene, and certainly by about 4.5 million years ago.\nThey are called human rather than ape for specific anatomical reasons.\nTheir canine teeth are reduced and more chisel-like, and they had already adopted bipedal walking.\nThat is no small change.\nOnce a creature has committed itself to walking upright, the whole drama of its body begins to be rewritten.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p002",
+          "text": "Of these two early genera, Australopithecus was earlier and more ape-like.\nParanthropus, in some forms, may have been capable of making and using crude stone tools.\nYet these beings, too, are known only from Africa.\nThe same is true of the first fossil widely assigned to the genus Homo, Homo habilis, dated to about 2.5 million years ago.\nThis new genus is marked by finer dentition, sturdier bipedalism, and a larger brain.\nDiet improves, locomotion stabilizes, the head enlarges, and one can almost feel evolution tightening its grip on a new possibility.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p003",
+          "text": "Up to this point, then, the story of human emergence remains overwhelmingly African.\nMost of it unfolded in tropical East and South Africa.\nThere was an earlier Eurasian appearance of some primates during the middle and late Miocene, but the great apes closest to Homo, chimpanzees and gorillas, have never been found outside Africa.\nUnless future discoveries overturn the picture, the implication is striking.\nThe earliest human ancestors, like those apes, were probably so closely fitted to the tropical forest environments of East and South Africa that they could not at first move beyond them.\nThey belonged to a habitat before they belonged to the world.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.04",
+      "number": "01.04",
+      "title": "Homo erectus and the East Asian Record",
+      "paragraphs": [
+        {
+          "id": "01.04-p001",
+          "text": "The first humans to achieve a truly broad distribution were members of Homo erectus.\nThis species spread across Africa and into much of Eurasia, including the eastern parts of Asia.\nIndeed, some of the earliest and most famous human fossils ever found belong to Homo erectus.\nThe first of them were discovered in Java in 1890 by the Dutch military doctor Eugène Dubois.\nAt that time, the Neanderthals were essentially the only ancient human fossils known to scholars.\nDubois found something different.\nA tooth and skullcap in 1890, and later a femur in 1892, seemed even more primitive than the Neanderthal remains.\nConvinced that he had found the long-sought “missing link,” he named the new creature Pithecanthropus erectus, the Upright Ape-Man.\nOne can hear, behind the Latin, the excitement of an age that felt it was about to catch evolution in the act.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p002",
+          "text": "About thirty years later, another great site entered the story.\nThe Swedish geologist J. G. Andersson identified the fossil-bearing locality at Zhoukoudian, southwest of Beijing.\nBeginning in 1927, excavations at what became known as Locality 1, the Ape-Man’s Cave, produced a remarkable series of skulls and other skeletal remains.\nThese were studied by Davidson Black and Franz Weidenreich.\nBlack gave the Zhoukoudian population a new name, Sinanthropus pekinensis, the Chinese Man at Peking.\nLater scholars, with a broader comparative record from Java, China, Africa, and Europe, concluded that these various finds all belonged to a single species.\nThe separate names were folded into one.\nThey became Homo erectus.",
+          "figures": [
+            {
+              "label": "Figure 1.1",
+              "caption": "The Zhoukoudian site near Beijing, with the Ape Man's Cave marked for excavation. It grounds the discussion of Peking Man in the actual landscape and dig setting."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.04-p003",
+          "text": "For a long time, the standard account ran as follows.\nHomo erectus first emerged in East Africa.\nA Kenyan specimen was securely dated to about 1.75 million years ago.\nComparable fossils then appeared in South Africa and later in Ethiopia.\nThe Java fossils were thought to be about one million years old.\nThe Zhoukoudian fossils seemed later still, around half a million years old.\nThe resulting picture was straightforward.\nHomo erectus arose in Africa and then spread outward, carrying with it a new technological complex, often associated with Acheulean hand-axes, that allowed these humans to break out of their earlier ecological limits and move into the subtropical and temperate zones of Eurasia.\nJava Man and Peking Man, on that reading, were descendants of African pioneers.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p004",
+          "text": "Yet prehistory has a way of refusing tidy triumphs.\nTwo major difficulties appeared.\nFirst, China yielded many Homo erectus fossils, but none of them came with an Acheulean industry.\nSecond, new and more secure dates pushed the Java fossils back to nearly two million years ago, making them roughly contemporary with the Kenyan Homo erectus populations.\nIf those dates hold, and specialists generally believe that they do, then Homo erectus must have spread out of Africa with astonishing speed, perhaps even before the Acheulean hand-axe tradition had fully developed.\nThe old neat sequence begins to wobble.\nAnd once it wobbles, everything becomes more interesting.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.05",
+      "number": "01.05",
+      "title": "How Modern Humans Reached East Asia",
+      "paragraphs": [
+        {
+          "id": "01.05-p001",
+          "text": "A similar debate surrounds the origin of Homo sapiens, anatomically modern humans.\nHere two major models confront one another.\nThe first is the African hypothesis.\nDrawing especially on mitochondrial DNA studies, it argues that all modern humans descend from a relatively small population in eastern or southern Africa.\nDifferent studies have proposed somewhat different dates for this founding population, ranging roughly from 290,000 to 140,000 years ago, or around 143,000 years ago, or about 270,000 years ago.\nThe second model is the multiregional hypothesis.\nOriginally formulated by Franz Weidenreich and later defended most forcefully by M. H. Wolpoff, it proposes that Homo sapiens evolved in parallel from regional Homo erectus populations across the Old World, while gene flow among those regions preserved the unity of the species.\nIn one view, modern humanity spreads out from a single center.\nIn the other, it ripens across a connected world.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p002",
+          "text": "For East Asia, and especially for the area later called China, this debate is of special importance.\nSome scholars, Geoffrey Pope among them, have argued that the African replacement model was advanced with insufficient attention to the fossil and archaeological record of the Far East.\nThe East Asian evidence, he suggests, does not fit comfortably with a model of sudden replacement.\nThere is no clear sign of a rapid technological break, no dramatic introduction of entirely new adaptive strategies.\nInstead, regional archaeological patterns may go back to the earliest human colonization of the region and continue, with only modest changes, deep into the late Pleistocene.\nEven certain facial features, he argues, seem to link early Asian Homo erectus with later and even living populations of the Far East.\nWhether or not one accepts the whole argument, the point is important.\nChina is not a passive corner waiting to be populated by someone else’s history.\nIt is one of the crucial theaters in which human history itself must be thought through.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p003",
+          "text": "For the purposes of this chapter, however, one conclusion holds under either theory.\nBy the end of the Pleistocene, East Asia, including the region we are calling China, was inhabited by highly capable human populations.\nThey made sophisticated lithic and microlithic blade tools.\nTheir intelligence and technical competence were on a level comparable to those Late Palaeolithic peoples of western Europe who produced the famous cave art of the Magdalenian and Perigordian traditions.\nIn other words, when the long prelude gives way to the beginnings of civilization, we are not dealing with half-formed minds stumbling into culture.\nWe are dealing with fully human communities, already skilled, observant, inventive, and deeply acquainted with their environments.\nThe question is how their descendants, in this particular part of East Asia, began to build the civilization that would eventually become Chinese.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.06",
+      "number": "01.06",
+      "title": "The Threshold of Agriculture",
+      "paragraphs": [
+        {
+          "id": "01.06-p001",
+          "text": "That next step was the adoption of agriculture.\nHere again, China must be placed within a wider human setting.\nThe cultivation of plants and the domestication of animals were not isolated local oddities.\nThey were among the great turning points in world history.\nYet from this stage onward, the story becomes more regional in a meaningful sense.\nPlants and animals belong to ecosystems.\nThey are not abstract inventions.\nWhat can be cultivated, and what can be domesticated, depends upon the flora and fauna of a given landscape.\nSo from now on, geography begins to matter in a more intimate way.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p002",
+          "text": "Toward the end of the Pleistocene, and for several thousand years on either side of the boundary between the Pleistocene and the Holocene, East Asia appears to have been warmer and wetter than it is now.\nVegetation was denser.\nIn the river valleys and lowlands of North China, where one now often sees loess surfaces, scrub, or open ground, there were once thick forests, bogs, marshes, and lakes.\nAnimals such as tapir, elephant, water deer, elaphure, and crocodile ranged there, creatures now associated more with South China and Southeast Asia than with the north.\nPollen cores tell much the same story.\nTrees that now belong to the deciduous forests of South China once grew far to the north.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p003",
+          "text": "Around the waters and woodlands there were also many grasses, including members of the millet family, especially Panicum and Setaria, as well as species of rice, Oryza.\nIn and near ponds and lakes grew water plants and wet-soil plants such as taro and yam.\nThis was not a barren or meager world.\nIt was rich in edible resources.\nThe Late Palaeolithic peoples who lived in it, hunting, fishing, gathering, and harvesting with nets, bows and arrows, spears, harpoons, and other implements fitted with microliths, must have known its rhythms intimately.\nThey knew animals not as pictures in a handbook, but as presences.\nThey knew plants not as abstract species, but as things one touched, prepared, carried, boiled, wove, dried, or feared.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.07",
+      "number": "01.07",
+      "title": "Learning Plants Before Farming Them",
+      "paragraphs": [
+        {
+          "id": "01.07-p001",
+          "text": "Carl Sauer made a simple and powerful remark.\nHuman beings, he said, learned to plant before they grew crops by seeding.\nThat is to say, the practical and observational knowledge came first.\nBefore plants were cultivated as staple food, they were already being gathered for many other purposes.\nSome provided fiber.\nSome served as fuel.\nSome were used as poisons in hunting and fishing.\nMany were valued as medicinal herbs.\nIn the Chinese case, medicine may well have been especially important.\nIt is not accidental that the legendary culture hero Shen Nong, the Divine Farmer, was remembered not only as a bringer of agriculture but also as a founder of pharmacology.\nThe old memory preserves a real intuition.\nTo know plants is already to stand on the threshold of agriculture.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p002",
+          "text": "Then, around ten thousand years ago, something changed, not only in China but in many parts of the world.\nSome combination of forces, still debated, seems to have pushed human communities toward a more systematic use of plants as food.\nPerhaps population increased.\nPerhaps climatic conditions became especially favorable.\nPerhaps mutations in certain plants made them more suitable for cultivation.\nNo single explanation has won universal assent.\nGordon Childe famously called this transformation the Neolithic Revolution, and whatever one thinks of the phrase, the scale of the change justifies the drama.\nWhat scholars do generally agree on is this.\nBy the beginning of the Holocene, Late Palaeolithic peoples already possessed both the knowledge of useful plants and the tools needed to manipulate them.\nWhat was required was a spark.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.08",
+      "number": "01.08",
+      "title": "Millet in the North",
+      "paragraphs": [
+        {
+          "id": "01.08-p001",
+          "text": "Once that spark was struck, agriculture in the form of seed cultivation seems to have appeared in both North and South China at roughly this early horizon.\nIn the north, the earliest cultivated millets yet known in the world have been found at sites of the Cishan and Peiligang cultural horizon.\nAmong them, the site of Nanzhuangtou, in southern Hebei, is especially important.\nExcavated in 1986, it yielded radiocarbon dates close to ten thousand years ago.\nNo preserved crop remains were recovered there, but the site did produce seed-processing tools, including pestles and mortars, like those found elsewhere in association with millet remains identified as Setaria italica.\nAt slightly later sites another millet, Panicum miliaceum, also appears.\nThese two became the twin pillars of Old World millet agriculture.",
+          "figures": [
+            {
+              "label": "Figure 1.2",
+              "caption": "Ripened foxtail millet, common millet, and rice. The important point is to see the cereals that stand behind the early agricultural worlds of North and South China."
+            },
+            {
+              "label": "Figure 1.3",
+              "caption": "Pottery vessels, grinding tools, and small animal figures from the Cishan and Peiligang horizon. Together they evoke the material world of the first millet farmers in North China."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.08-p002",
+          "text": "Since wild species of both genera occur widely across Eurasia, and since the earliest stages of millet cultivation have not yet been fully reconstructed by paleobotanical research, absolute certainty is still out of reach.\nEven so, given the great antiquity of the known millet remains in North China, there is strong reason to suspect that both were first cultivated in the Yellow River valley.\nAt Nanzhuangtou, moreover, dogs and pigs had already been domesticated.\nYet the site also yielded many bones and shells from wild animals, including crane, wolf, elaphure, several species of deer, turtle, clam, and snail.\nSo this was not yet a world of pure farming.\nHunting and gathering still mattered a great deal.\nThe transition was real, but it was not abrupt.\nAgriculture entered human life by entangling itself with older habits, not by abolishing them overnight.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p003",
+          "text": "And one should not imagine these early communities as crude merely because they stood near the beginning.\nAt Jiahu in central Henan, archaeologists discovered a seven-hole bone flute and two pieces of turtle shell each marked with a single incised symbol.\nBoth symbols closely resemble graphs known from the oracle-bone inscriptions of the Shang dynasty, some six thousand years later.\nOne must be cautious here.\nNo one should casually announce that writing has suddenly leapt backward by millennia.\nStill, the find is evocative.\nMusic is there.\nMarking is there.\nThe impulse to pattern sound and sign was already present.\nCivilization, one might say, was rehearsing before it stepped onto the formal stage.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.09",
+      "number": "01.09",
+      "title": "Rice in the South",
+      "paragraphs": [
+        {
+          "id": "01.09-p001",
+          "text": "In the south, the story centers on rice, Oryza sativa.\nRice remains found at Hemudu in Zhejiang were securely dated to the early sixth millennium B.C.\nLater excavations in the 1980s brought to light even earlier material from cave sites in Guangxi and Jiangxi, including Zengpiyan and Xianrendong, with dates ranging from 9000 to 5000 B.C.\nThese early dates, however, were not universally accepted.\nBecause the remains came from limestone cave deposits, some archaeologists suspected contamination and hesitated to push southern agriculture so far back.\nThe skepticism is understandable.\nArchaeology, like any serious discipline, has learned to distrust miracles.\nBut sometimes the miracle is simply that the south was early too.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p002",
+          "text": "That possibility gained strength in 1988, when archaeologists excavated the site of Pengtoushan in northwestern Hunan, in the middle Yangzi valley.\nThis was not a cave, but an open site on a small rise above the plain.\nIt contained both residential remains and burials.\nThe pottery was coarse and cord-marked, with many round-bottomed urns and bowls.\nInside the urns were very large quantities of carbonized rice.\nOn the basis of size and shape, the rice was clearly domesticated.\nA series of radiocarbon dates places the site roughly between 8200 and 7800 B.C.\nThat is early enough to lend real credibility to the disputed cave dates farther south.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.10",
+      "number": "01.10",
+      "title": "A Closing Perspective",
+      "paragraphs": [
+        {
+          "id": "01.10-p001",
+          "text": "More recent joint research by Chinese and American teams in Wannian County, in northern Jiangxi, has pushed the question still closer to resolution.\nIn two caves there, archaeologists recovered rice pollen and phytoliths from Oryza sativa, including both wild and domesticated forms, in layers tentatively dated by radiocarbon to just under ten thousand years ago.\nIf these results continue to hold, then the long argument over the origins of rice cultivation in China may be nearing an answer.\nAnd it would be a fitting answer.\nFor what emerges from this chapter is not a civilization dropped suddenly into existence, but a slow gathering of capacities.\nDeep African beginnings.\nLong adaptation across East Asia.\nLate Palaeolithic skill.\nA rich postglacial environment.\nThen, at last, the deliberate tending of seeds.\nOut of that patient intimacy between human beings and the living world, the first unmistakable outlines of Chinese civilization begin to appear.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.11",
+      "number": "01.11",
+      "title": "Regional Cultures of the Early Farmers",
+      "paragraphs": [
+        {
+          "id": "01.11-p001",
+          "text": "Once agriculture appears, human life begins to sit still in a new way.\nHunters may range widely.\nFarmers, by contrast, are drawn back again and again to the same patch of ground.\nFor that reason, across much of the world, farming communities adopted pottery as their preferred container: for seeds, grain, stored foods, and cooking.\nThey also needed sturdier tools, above all axes capable of clearing woodland.\nSo their stone implements were often polished and ground rather than merely flaked.\nThis is why archaeology so often finds agriculture, pottery, and polished stone traveling together.\nIndeed, many archaeologists have treated the presence of pottery or polished stone as sufficient evidence for a Neolithic farming life.\nBut the matter is not always so simple.\nPrehistoric Japan used pottery for thousands of years before agriculture became the main basis of subsistence.\nIn the prehistoric Levant, the sequence ran the other way: farming came first, pottery later.\nChina seems, at least from present evidence, to belong to a third pattern.\nThere the transition from hunting to farming remains imperfectly known, yet it appears that agriculture, pottery, and stone polishing emerged at roughly the same time, in both north and south, around ten thousand years ago.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.11-p002",
+          "text": "With pottery, one can begin to distinguish human groups more clearly.\nIt is one of those durable traces by which vanished communities still make themselves legible.\nEven so, pottery alone never tells the whole story.\nIn northern China the early wares tend to show fine cord marks and rocker impressions made with shell edges, and one especially characteristic form is a round-bottomed bowl fitted with three small legs.\nIn the south, cord marking and shell-edge impressions also appear, but the cord marks are usually coarser, the shell impressions less often rocker-stamped, and the round-bottomed bowls generally lack those three little legs.\nOne might be tempted to draw a clean line and announce two neatly separated cultures.\nArchaeology rarely rewards such impatience.\nThe northern and southern potteries may well go back to a common source, sharing major features while differing in others, and the societies behind them may have varied in ways that pottery alone cannot reveal.\nStill, by about 5000 B.C., the record does allow us to recognize a number of distinct regional cultures.\nAt that point, the old early farming world begins to break into visible provinces.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.12",
+      "number": "01.12",
+      "title": "The Liao Valley and the Northeastern Horizon",
+      "paragraphs": [
+        {
+          "id": "01.12-p001",
+          "text": "These regional cultures are usually bounded first by nature before they are bounded by theory.\nRiver valleys, mountain corridors, coastal plains, ecological pockets: such settings gather human communities into patterns of exchange, kinship, subsistence, and style.\nYet cultures also relate hierarchically.\nSeveral local cultures may coexist within one small zone, while larger river systems bind many such zones together.\nFor the sake of clarity, the author chooses six large geographical areas, moving from north to south.\nThe first lies in the valley of the Liao River.\nRising in the eastern Mongolian plateau, the Liao flows east into the southern Manchurian plain and then turns sharply south toward the Bohai Gulf.\nIn the early Holocene it was not the dry margin one sees today.\nIt was much richer in vegetation, animals, and possibilities.\nMillet farming was established there, and cattle and sheep were already domesticated.\nOnly later, especially since around Han times, did increasing desiccation make the region much barer.\nToday it stands as a mixed farming and herding zone, one of the great contact edges between northern nomads and Han agrarians.\nBut earlier it supported a succession of notable cultures: Xinglongwa, then Xinle, then Hongshan.",
+          "figures": [
+            {
+              "label": "Map 1.1",
+              "caption": "A geographical overview of the major regional cultures recognized around 5000 B C. It helps the learner see that early China was not a single cradle, but a field of distinct cultural zones spread across different landscapes."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.12-p002",
+          "text": "These cultures matter not only because they were early, but because some of their art seems to anticipate themes that later appear farther south in unmistakably Chinese contexts.\nJade appears here.\nSo does the dragon motif.\nThat alone should give pause to any easy habit of imagining all refinement flowing outward from a single center.\nIn pottery, the earlier phases are marked especially by rocker-stamped flat-bottomed vessels.\nThe later Hongshan horizon is known for red-striped red bowls and tubular forms.\nHere, in a region many older narratives treated as marginal, one already sees materials and images that would later become charged symbols of Chinese civilization.\nThe margin, it seems, had ideas of its own.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.13",
+      "number": "01.13",
+      "title": "Yangshao and the Millet Heartland",
+      "paragraphs": [
+        {
+          "id": "01.13-p001",
+          "text": "If Hongshan opens the northern horizon, Yangshao remains the great classic of the early Neolithic in North China.\nDiscovered in 1920 by the Swedish geologist J. G. Andersson at Yangshao village in Henan, it was the first Neolithic culture identified in China and, for that reason as much as for its richness, it long dominated the imagination of Chinese prehistory.\nEven now it remains the best known.\nMore than a thousand Yangshao sites have been found across the Yellow River valley, stretching from the Zhengzhou region westward into Gansu and Qinghai.\nWithin that immense zone archaeologists distinguish several phases on ceramic grounds, but the family resemblance remains clear.\nThe pottery is generally reddish and painted with designs in black or dark brown.\nFigure 1.4, if one glances at it, gives the eye the point at once.\nThese are not accidental marks.\nThey are choices.\nTypical vessel forms include bowls, bottles, jars, and urns.\nTripods, the later famous ding, and ring-stand bowls known as dou appear chiefly in the eastern zone and may have been introduced from the coastal regions.",
+          "figures": [
+            {
+              "label": "Figure 1.4",
+              "caption": "Painted Yangshao vessels. What matters is the deliberate order of the shapes and painted surfaces, already showing a mature visual culture."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.13-p002",
+          "text": "The Yangshao people were millet farmers, cultivating both Setaria and Panicum.\nThey lived in villages laid out in a fairly regular way and organized around lineage groups.\nBut the most suggestive feature of Yangshao may be neither its ceramics nor its agriculture.\nIt is the cluster of remains that point toward shamanistic beliefs and practices.\nAmong them are skeletal or X-ray-style artistic forms, traces of bisexual symbolism in ceramic imagery, and most striking of all a tomb in which an important figure, plausibly a religious specialist, lay flanked by a dragon on the left and a tiger on the right, both arranged with clam shells.\nFigure 1.5 shows the arrangement, and it is difficult not to feel that one is standing before a symbolic grammar already mature.\nLater Daoist sources, such as the Baopuzi, speak of adepts who traveled to Heaven with the aid of dragons, tigers, or deer, meeting deities and ancestors to seek wisdom, healing, and power.\nOne should not force a direct historical identity across millennia.\nStill, the echo is striking.\nAnd Yangshao is not alone.\nLarge dragon designs laid out on the ground have also been found in Xinglongwa and in Daxi.\nSince these cultures differ greatly in their ordinary material assemblages, shamanism may represent something deeper than local fashion, a substratal layer within the wider religious life of Neolithic China.",
+          "figures": [
+            {
+              "label": "Figure 1.5",
+              "caption": "The Puyang burial with a central figure flanked by dragon and tiger forms. The image matters because it reveals an early symbolic and probably shamanic cosmology."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.14",
+      "number": "01.14",
+      "title": "Dawenkou and the Eastern Littoral",
+      "paragraphs": [
+        {
+          "id": "01.14-p001",
+          "text": "To the east, on the low hills and lakeshores of the Shandong highlands, another millet-farming culture flourished: Dawenkou.\nIf Yangshao is remembered above all for painted pottery and village life, Dawenkou leaves one of its strongest impressions in the realm of burial.\nMany Dawenkou sites are cemeteries.\nTheir graves are elongated pits, often deepened at the center to form a smaller chamber at the bottom.\nThe body, placed in a coffin, rested in that lower cavity.\nThe offerings were then arranged beside the coffin on a ledge at the base of the larger pit, what archaeologists call the \"second level ledge.\"\nThe expression is technical, but the practice is vivid enough.\nThe dead were not merely interred.\nThey were furnished, arranged, and equipped.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.14-p002",
+          "text": "And equipped lavishly, in many cases.\nDawenkou burials often contain abundant grave goods: pottery vessels, bone and ivory implements for eating and drinking, rattles made from turtle shells, and carved bone objects.\nThe pottery is commonly buff or reddish.\nAmong its characteristic forms are ding tripods, dou stands, water jars, some shaped like animals or birds, and extraordinarily tall cups set on thin pedestals.\nOne senses in Dawenkou a taste for display, ceremony, and crafted gesture.\nThe dead, as so often, tell us how the living wished the world to be ordered.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.15",
+      "number": "01.15",
+      "title": "Rice Worlds of the Lower and Middle Yangzi",
+      "paragraphs": [
+        {
+          "id": "01.15-p001",
+          "text": "Farther south, along the lower Yangzi in Jiangsu and northern Zhejiang, the Majiabang and Hemudu cultures transformed the picture of early China.\nBefore their discovery, it was easy, perhaps too easy, to assume that whatever was early and refined in Chinese civilization must have sprung chiefly from the Yellow River basin.\nThese southern rice-growing cultures upset that convenience.\nThey showed that sophistication had more than one home.\nRice was central to their economy, but it was by no means the only resource.\nThe wetlands and freshwater environments of the region offered a whole repertoire of edible plants: water caltrop, fox nut, lotus, arrowhead, water chestnut, wild rice, water dropwort, water shield, water spinach, cattail, rush, and more.\nThis was not a society reduced to a single crop.\nIt was a wetland civilization learning to use abundance with discrimination.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.15-p002",
+          "text": "Many dwellings were timber structures raised on piles along lakeshores and riverbanks, with floors lifted above the water.\nThat architectural choice alone tells a whole environmental story.\nThe kitchen middens are full of fish, shellfish, and animal bones, including those of dog, pig, and water buffalo.\nThe pottery differs between the two cultures, predominantly brown in Majiabang and black in Hemudu, but both show cord marking and incised designs of birds and other motifs, some realistic, some likely ritual.\nA particularly distinctive vessel is a round-bottomed cooker with a ridge around the neck so that it could be suspended from a ring in an oven.\nThat is the kind of detail one loves in archaeology.\nA whole domestic choreography becomes suddenly visible.\nAnd some of the incised designs, shown in Figure 1.6, have been read as bearing shamanistic significance.\nIf that reading is right, then the south too was woven into the same deeper religious fabric glimpsed in Yangshao and elsewhere.",
+          "figures": [
+            {
+              "label": "Figure 1.6",
+              "caption": "Incised designs on Hemudu pottery. The useful point is the link between everyday vessels and a symbolic visual language that may carry ritual meaning."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.15-p003",
+          "text": "The Daxi culture, another rice-growing culture of the Yangzi valley, adds a more visibly developed agricultural profile.\nIt yields abundant storage facilities, finely polished stone tools, perforated slate sickles, and even, on occasion, village walls.\nAll this suggests a more intensified and organized agrarian life.\nIts characteristic ceramics are tall and thin-stemmed, painted in black or dark brown zoned bands, and probably served as stands for flat dishes in ritual contexts.\nDaxi too is one of the cultures in which dragon imagery appears at a substratal level.\nSo once again, across differing regional material worlds, certain symbolic motifs continue to surface, like old thoughts rising through new local forms.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.16",
+      "number": "01.16",
+      "title": "The Southeastern Coast and the Dapenkeng Horizon",
+      "paragraphs": [
+        {
+          "id": "01.16-p001",
+          "text": "South China in the sixth and fifth millennia B.C. must have contained many regional cultures.\nThe wild plants of the area, numerous and potentially cultivable, make that almost certain.\nBut archaeology there is still comparatively young, and the map remains incomplete.\nBeyond Daxi and the Majiabang-Hemudu complex, the best defined culture is Dapenkeng, named after a site near Taipei excavated in 1964.\nRelated, though by no means identical, sites stretch widely along the western side of the Formosa Strait, from southern Zhejiang through Fujian and Guangdong and on toward Guangxi and Vietnam.\nThis is already a hint that we are dealing not with an isolated pocket but with a broad coastal world.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.16-p002",
+          "text": "The material assemblage suits that world.\nThe pottery is coarse and cord-marked, often also shell-impressed, comb-impressed, or incised.\nStone tools include chipped and polished axes and adzes, perforated triangular arrowheads, and grooved tapa beaters.\nThe middens are thick with shell, fish bone, and animal bone.\nThis was a coastal culture sustained by a mixed life: farming, hunting, fishing, boating, and diverse plant uses.\nThe author notes that in many respects it recalls the kind of early plant-domesticating hearth that Carl Sauer once imagined.\nThat comparison is apt.\nDapenkeng belongs to a world in which cultivation had not yet narrowed human life into rigid agricultural monotony.\nIt still retained the broad opportunism of shore, estuary, and sea.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.16-p003",
+          "text": "Dapenkeng is also of major importance for the wider Pacific.\nTaiwan today is home to a substantial Austronesian-speaking population, and archaeology, together with linguistic reconstruction, has suggested a long continuity from the Dapenkeng horizon, if not earlier, down to the ethnographic present.\nWhen one adds that continuity to the resemblance between Dapenkeng material culture and what linguists reconstruct for Proto-Austronesian society, it becomes understandable why many scholars have looked to Taiwan and the adjacent southeastern Chinese coast as the homeland of the Austronesian language family.\nIf that is right, then this coastal horizon belongs not only to the prehistory of China, but to one of the great outward-moving human worlds of the Pacific.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.17",
+      "number": "01.17",
+      "title": "From Cradle to Constellation",
+      "paragraphs": [
+        {
+          "id": "01.17-p001",
+          "text": "Once these regional cultures are set side by side, a larger question presses itself forward.\nHow, exactly, did Chinese civilization emerge from them?\nAnd perhaps more pointedly, where?\nFor a long time, the answer seemed obvious.\nTraditional Chinese historiography, supported by the simple fact that writing survived most abundantly in the Yellow River valley, treated the Central Plain as the unquestioned cradle.\nThe oracle bones of the Shang, the bronze inscriptions, the bamboo and wooden strips, and later the long paper record all reinforced the same impression.\nThe Zhongyuan, the Central Plain, appeared as the natural center of gravity.\nTraditional narratives placed the Three Sovereigns, the Five Emperors, and the first dynasties, Xia, Shang, and Zhou, in that zone between the Yellow and Luo rivers.\nThe center was not merely central.\nIt was sacralized by memory.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.17-p002",
+          "text": "This view inevitably colored early archaeology.\nWhen Andersson discovered Yangshao in 1920, he went so far as to declare its painted pottery and polished celts to be imports from western Asia.\nChinese scholars, attached to a center-to-periphery understanding of civilization, found this deeply uncongenial.\nThen in 1930 and 1931 excavations at Chengziyai in Shandong uncovered what came to be called the Black Pottery culture, with scapulimancy and rammed-earth construction, both features closely associated with later Shang civilization.\nThis seemed to offer evidence that key traits of Chinese civilization were native after all.\nIn 1933 Fu Sinian, in a brilliant essay, proposed that ancient China had been broadly divided into an eastern Yi sphere along the coast and a western Xia sphere in the interior loess zones.\nScholars then linked the archaeological Yangshao culture with the Xia and the eastern Longshan culture with the Yi.\nFor several decades this two-culture model shaped the interpretation of Chinese prehistory.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.17-p003",
+          "text": "The next turn came in 1959 with the excavation of Miaodigou in Henan.\nThere archaeologists found a stratified sequence running from Yangshao to early Longshan and then to Eastern Zhou.\nThis seemed to show that Longshan in this region had grown directly out of Yangshao.\nThe implication was powerful.\nInstead of two separate Neolithic worlds, one might imagine a single \"nuclear area\" in the Central Plain from which both agricultural life and early civilization radiated outward.\nK. C. Chang, drawing in part on Robert Braidwood's notion of nuclear zones in the ancient Near East, proposed such a core in northwestern Henan, southwestern Shanxi, and eastern Shaanxi.\nMainland archaeologists advanced similar views.\nFor roughly twenty years this nuclear-area hypothesis held great authority.\nIt was, in its way, a modern archaeological version of the old sinocentric instinct.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.17-p004",
+          "text": "Yet evidence has a habit of inconveniencing piety.\nBy the mid-1970s the archaeological record had grown much richer.\nRadiocarbon dates were now available from many laboratories, and a significant number from the so-called peripheries proved as early as, or earlier than, those from the supposed core.\nAssemblages outside the Central Plain also yielded art objects equal or superior in quality to those from the center.\nThe older view became harder and harder to sustain.\nNot long after archaeological publication resumed following the Cultural Revolution, the nuclear-area hypothesis gave way to a regional approach.\nSu Bingqi gave this approach its classic formulation in terms of \"regional systems and cultural types.\"\nThe point was simple, though its consequences were large.\nThe Yellow River valley had indeed played an enormous role, often a leading one in historical times, but it was not the sole womb of civilization.\nOther regions had developed along their own lines, with their own characteristics, and influence had always flowed both ways.\nThe center gave to the regions.\nThe regions gave to the center.\nThe old cradle had become a constellation.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.18",
+      "number": "01.18",
+      "title": "The Chinese Interaction Sphere",
+      "paragraphs": [
+        {
+          "id": "01.18-p001",
+          "text": "Su Bingqi identified six broad regional systems: the meeting zone of Shaanxi, Henan, and Shanxi; Shandong and adjoining areas; Hubei and neighboring regions; the lower Yangzi; the southern zone centered on Lake Boyang and the Pearl River delta; and the northern lands along the Great Wall.\nThe classification was provisional and remains so.\nAs archaeological data accumulate, the scheme can only grow more nuanced.\nYet its intellectual importance is hard to exaggerate.\nIt legitimated a view once treated almost as heresy: that Chinese civilization had multiple origins, that diversity and interaction, not simple diffusion from a single center, lay at the root of the whole.\nIn modern Chinese archaeology, words such as pluralism, diversity, multiple origins, and interaction have accordingly become common.\nThey mark not a fashionable whim, but a genuine shift in how the past is imagined.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.18-p002",
+          "text": "The author illustrates this change through the successive editions of his own Archaeology of Ancient China.\nThe first edition, published in 1963, necessarily worked with data concentrated in the Central Plain and therefore leaned toward the inherited sinocentric framework.\nBy 1968 the south had entered the picture more clearly, though the old structure still held.\nBy 1977 the nuclear hypothesis had become untenable.\nBy 1985 the book had to be rewritten almost entirely.\nAnd in that rewriting a new concept took pride of place: the interaction sphere.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.18-p003",
+          "text": "That concept is crucial.\nBy around 4000 B.C., some neighboring regional cultures had expanded enough to come into regular contact.\nAs they did so, certain ceramic types and styles began to circulate not just within one region but across a much wider arc.\nThe ding tripod and the dou stand, for instance, appear broadly across regions and seem to reflect the spread of cooking and serving styles that had once been more localized, especially in Dawenkou and Daxi.\nPerforated slate knives, both rectangular and semilunar, form another horizon marker.\nSo do certain pottery and jade motifs, some of which may reflect much older, deeper commonalities rather than only recent contact.\nThis is the point at which archaeology begins to justify a stronger use of the word \"China.\"\nOnce the regions are visibly linked, once their similarities increase and their interaction becomes constitutive, one may speak of a Chinese interaction sphere.\nBy 3000 B.C., the author argues, that sphere can properly be called China.\nNot because it was already a state, nor because a single people had erased all local distinctions, but because the stage had now been assembled on which Chinese history, in the recognizable sense, could begin.\nThe actors were not yet unified, but they were now in the same drama.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.19",
+      "number": "01.19",
+      "title": "The Longshan Threshold",
+      "paragraphs": [
+        {
+          "id": "01.19-p001",
+          "text": "If the earlier Neolithic cultures give us the wide background, the Longshan cultures bring us to the brink of history.\nThey are among the most important archaeological discoveries made in twentieth-century China, not only because they are rich in themselves, but because they show with unusual clarity how Chinese societies of the third millennium B.C. were moving toward stratification, political competition, and state formation.\nThe culture first came to light in 1931 and 1932 at Chengziyai, near the old Longshan district in Shandong.\nIts features were striking.\nThere were town enclosures built with rammed earth.\nThere was the famous thin, polished black pottery, wheel-made and probably reserved in part for ritual use.\nThere were burned deer scapulas, unmistakable predecessors of the Shang oracle bones.\nAll this placed Longshan unmistakably between the older village world of Yangshao and the fully historical civilization of the Shang.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.19-p002",
+          "text": "Yet the real meaning of Longshan only emerged gradually, as discoveries multiplied across many provinces.\nSettlement patterns from Shandong and Henan, cemeteries from Shanxi, Shandong, Jiangsu, and Zhejiang, and above all the ritual remains of the Liangzhu culture in the Lake Taihu region together revealed something fundamental.\nBy the Longshan period, Chinese societies had plainly become stratified.\nWealth was no longer distributed in the older village manner.\nIt had begun to gather itself into the hands, and finally into the graves, of a small number of special people.\nAnd once this happens, one is no longer looking merely at villages that differ in size or local custom.\nOne is looking at a political world in formation.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.20",
+      "number": "01.20",
+      "title": "Stratification, Tombs, and Ritual Power",
+      "paragraphs": [
+        {
+          "id": "01.20-p001",
+          "text": "The clearest evidence lies in the cemeteries.\nAt Taosi in southern Shanxi, a major Longshan site, the settlement covered a large area, and within the excavated zone archaeologists uncovered an enormous cemetery with several thousand graves.\nBut the dead were not treated equally.\nThere were only a handful of large graves, a modest number of medium-sized ones, and hundreds upon hundreds of small burials.\nThe small graves contained little or nothing.\nThe medium graves had painted wooden coffins, pottery vessels, ornaments of wood, stone, and jade, and ritual items such as cong tubes and pig mandibles.\nThe large graves were richer still.\nThey contained sets of ritual pottery vessels, musical instruments of wood, crocodile skin, and even copper bells, as well as painted murals on the walls of the grave chambers.\nThe hierarchy is unmistakable.\nAnd because similar ordering appears within individual grave clusters, the author suggests a segmentary lineage organization, each lineage internally stratified according to distance from its stem.",
+          "figures": [
+            {
+              "label": "Figure 1.7",
+              "caption": "A large Longshan grave at Taosi. It makes social hierarchy visible in the cemetery itself by showing the scale and formal structure of elite burial."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.20-p002",
+          "text": "In the Liangzhu culture of southern Jiangsu and northern Zhejiang, the same concentration of wealth appears in an even more specialized form.\nHere the graves of the elite are crowded not merely with valuables, but with ritual objects, especially jades.\nAt Fanshan, for example, one burial yielded hundreds of artifacts, including more than five hundred individual pieces of jade.\nAt nearby Yaoshan, where a square altar of layered earth stood beside a small cemetery, certain burials produced large quantities of jades, stone axes, pottery vessels, lacquerware, and shark's teeth.\nMost of the jades belonged to the category later called ritual jades.\nThe excavator's suggestion that these were the tombs of shamans, or religious leaders, is a sensible one.\nAnd since no separate graves of political or military leaders appear beside them, the implication is hard to avoid.\nThese ritual specialists were probably political and military leaders as well.\nIn early China, these powers had not yet gone their separate ways.\nThey still sat in the same hands.",
+          "figures": [
+            {
+              "label": "Figure 1.8",
+              "caption": "A Liangzhu burial furnished with many ritual jades. The figure shows how wealth and sacred authority were concentrated in a small elite."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.21",
+      "number": "01.21",
+      "title": "Jades, Shamans, and the Ten Thousand States",
+      "paragraphs": [
+        {
+          "id": "01.21-p001",
+          "text": "The Liangzhu jades help us see more deeply into this early structure of power.\nThe most famous are the bi discs and cong tubes.\nMany scholars now interpret them as shamanic paraphernalia, objects through which the bearer could move symbolically from earth to heaven.\nThe square form of the cong was associated with earth, the round form of the bi and of the cong's inner opening with heaven, and the engraved animal figures with the assisting creatures of the shaman's ascent.\nOne may or may not accept every detail of that interpretation, but the larger point is persuasive.\nThese were not ornaments in the trivial sense.\nThey were instruments of access, status, and sacred authority.",
+          "figures": [
+            {
+              "label": "Figure 1.9",
+              "caption": "Liangzhu jades engraved with human and animal imagery. These objects matter because they embody the shamanic and cosmological symbolism of ritual power."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.21-p002",
+          "text": "That is why the author insists that in ancient China political power was rooted above all in control over ritual power.\nJade was rare.\nIt had to be quarried, transported, worked, and monopolized.\nOnly organized authority could do that.\nAnd this authority showed itself above all in two domains that later Chinese texts would continue to join together: ritual and war.\nThe old formula in the Zuo zhuan says it plainly.\nRitual and war are the great affairs of the state.\nArchaeology now shows how early that conjunction was already in place.\nAmong the Longshan elite, the most conspicuous material expressions of power are precisely ritual objects and instruments of coercion.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.21-p003",
+          "text": "These elites did not live simply in villages.\nThey lived in networks of centers, large and small, woven across the landscape.\nThe Liangzhu site itself is not a single compact settlement but a cluster of localities spread over several square kilometers.\nSurveys in Shandong and Henan have revealed hierarchies of walled Longshan towns of different sizes, organized into clusters extending over hundreds of square kilometers.\nFrom such evidence the author infers a landscape once covered with hundreds, perhaps thousands, of competing polities.\nThis is the world later classical texts remembered under the phrase wan guo, the \"ten thousand states.\"\nThe late Longshan period, in the later third and early second millennium B.C., was thus not a quiet prelude.\nIt was already an intensely active political world.\nChiefdoms, settlement hierarchies, high shamanism, and perhaps even the earliest true writing all belong to it.\nThe stage was no longer being built.\nIt was already full of actors.",
+          "figures": [
+            {
+              "label": "Figure 1.10",
+              "caption": "Pottery inscriptions from Longshan contexts. The figure is important because it suggests experimentation with writing before the fully historical script of the Shang."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.22",
+      "number": "01.22",
+      "title": "When Myth Begins to Speak",
+      "paragraphs": [
+        {
+          "id": "01.22-p001",
+          "text": "Before moving into the historical dynasties proper, the author pauses to ask how traditional Chinese culture itself imagined these beginnings.\nAnd that pause is well placed.\nArchaeology gives one kind of past.\nMyth, legend, and early historiography give another.\nThey are not the same, but neither do they simply cancel one another.\nVery often they preserve, in altered and symbolic form, memories of thresholds that archaeology detects by other means.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.22-p002",
+          "text": "China, it is often said, lacks a creation myth in the familiar Biblical sense.\nNo divine craftsman creates the world out of nothing.\nNo Chinese Genesis opens with an absolute beginning.\nBut this does not mean that ancient China lacked cosmogony.\nWhat it had, rather, were myths of transformation.\nIn primordial time the world passes through catastrophic change.\nAn older condition closes, and the world we know begins to take shape.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.22-p003",
+          "text": "The best known of these myths is that of Pan Gu.\nIn one version, the world was at first like the inside of an egg.\nWithin it Pan Gu was born.\nAfter eighteen thousand years, heaven and earth separated.\nThe clear and light rose to become heaven.\nThe heavy and turbid sank to become earth.\nPan Gu stood between them, growing as they parted, until heaven was immensely high, earth immensely deep, and the distance between them enormous.\nIn another version, it is Pan Gu's own body that becomes the world.\nHis breath turns into wind and cloud, his voice into thunder, his eyes into sun and moon, his limbs into the poles and mountains, his blood into rivers, his hair into stars and plants, his bones into minerals and jades, and even the creatures in his body into human beings.\nThis is not creation out of nothing.\nIt is metamorphosis on a cosmic scale.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.22-p004",
+          "text": "Whether Pan Gu belonged from the beginning to the northern tradition or entered the central Chinese world from southern peoples is still debated.\nBut the author rightly resists too hasty a separation.\nThe symbolic structure of these myths may be very old.\nIndeed, the image of heaven and earth parting, of a round heaven above and a square earth below, recalls not only later textual cosmology but also much earlier archaeological evidence, including the famous burial at Puyang that many scholars interpret as a cosmogram.\nThe myth may have been written down late.\nIts imagination may be much older.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.23",
+      "number": "01.23",
+      "title": "Catastrophe, Cosmos, and the Heroic Age",
+      "paragraphs": [
+        {
+          "id": "01.23-p001",
+          "text": "Other myths reinforce this same sense of a world repeatedly reordered.\nThere is the story of the ten suns, all rising at once and scorching the earth until the archer Yi shot down nine of them.\nThere is the story of Gong Gong, who, after losing a struggle for power, smashed his head against Mount Buzhou, one of the pillars supporting the sky, breaking the northwestern corner of heaven and causing waters to flood the earth.\nThen Nü Wa repaired the damage by melting stones of five colors and mending the sky.\nThese myths are already found in texts of the late pre-imperial or early imperial age, but the author suggests, and plausibly, that their roots may go much deeper, perhaps into Upper Paleolithic cosmology shared across broad northern and eastern Asian worlds.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.23-p002",
+          "text": "The underlying image is remarkably coherent.\nHeaven is domed.\nEarth is square.\nThe four directions are named and colored.\nSacred trees, mountains, animals, music, dance, and hallucinogenic means all belong to a shamanic cosmos in which passage between levels of the world is possible.\nIn such a world, shamans are not mere sorcerers in a folktale sense.\nThey are mediators between realms.\nThey ascend.\nThey return.\nAnd by doing so they help maintain the structure of the world.\nOne begins to see why later Chinese civilization, for all its love of order and hierarchy, never entirely lost the deeper memory of ecstatic mediation.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.23-p003",
+          "text": "The same underlying memory appears again in the old tales of culture heroes.\nAncient Chinese sources, especially the Shi ben, preserve lists of figures to whom major inventions were ascribed.\nSui Ren first used fire.\nFu Xi is associated with hunting and fishing nets, with the wedding rite, and with stringed instruments.\nShen Nong brought agriculture and medicinal herbs.\nThe Yellow Emperor and his officials are credited with cooked food, crowns, divination by sun, moon, and stars, musical notes, arithmetic, calendars, writing, and graphic signs.\nOther heroes are said to have invented bows, arrows, weapons, markets, pottery, walls, palaces, and music.\nThe lists are dry on the surface.\nYet their dryness almost makes them more revealing.\nThey preserve, in compressed form, a memory of civilization as a chain of threshold-crossings.\nFire.\nHunting.\nFarming.\nRule.\nWriting.\nMusic.\nCalculation.\nThe world becomes human not all at once, but by a succession of decisive acquisitions.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.24",
+      "number": "01.24",
+      "title": "Legendary Kings and the Closing of Heaven",
+      "paragraphs": [
+        {
+          "id": "01.24-p001",
+          "text": "At some point these heroes shade into legendary rulers.\nIn later historiography they were arranged into the Three August Ones and the Five Emperors.\nIn the author's scheme, the distinction is clear enough.\nThe earliest figures remain closer to gods and culture heroes.\nThe later ones belong to the threshold of political history.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.24-p002",
+          "text": "Among them, Zhuan Xu is especially important because of a myth that, in symbolic terms, marks a decisive social change.\nAccording to early texts, disorder had spread among the people, and the supreme power commanded Chong and Li to cut communication between heaven and earth so that there would no longer be easy ascending and descending between the two.\nOrder was thereby restored.\nSeveral Chinese scholars, and the author agrees with them, read this not as a quaint tale alone, but as the mythic reflection of a historical transformation.\nIn earlier periods, access to the sacred may have been relatively open.\nHouseholds could keep or hire shamans.\nBut by the Longshan age, as the graves and ritual jades suggest, the means of ascent had been concentrated in the hands of a few.\nHeaven had, in effect, been closed.\nOr more precisely, it had become monopolized.\nThe myth of Zhuan Xu thus marks the threshold of stratified society.\nIt is a myth of separation, but also of political appropriation.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.24-p003",
+          "text": "After Zhuan Xu come Yao, Shun, and Yu, those celebrated rulers whose stories later moralists loved because they seemed to show virtue triumphing over heredity.\nEach ruler wished to abdicate in favor of the worthiest man.\nEach in turn was succeeded not by his own preferred heir, but by the one whom the people judged most virtuous.\nThere is grandeur in the story, though also a certain didactic neatness.\nLater historians have not always trusted it and have sometimes detected darker struggles beneath the polished moral surface.\nThat suspicion is understandable.\nAncient political virtue, like modern political virtue, has a way of arriving accompanied by intrigue.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.25",
+      "number": "01.25",
+      "title": "Yu, Xia, and the Problem of the First Dynasty",
+      "paragraphs": [
+        {
+          "id": "01.25-p001",
+          "text": "Yu stands at the hinge between myth and dynasty.\nHe is still a hero in the old style, remembered above all for mastering the flood where his father Gun had failed.\nGun tried to block the waters with dikes.\nYu, more wisely, opened channels and guided the waters outward to the sea.\nControl, in other words, was achieved not by simple resistance, but by disciplined redirection.\nThe Chinese imagination never forgot the lesson.\nBecause of this achievement, Yu became the figure from whom traditional historiography began the Xia dynasty.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.25-p002",
+          "text": "Here we arrive at one of the classic problems of early Chinese history.\nWas there really a Xia dynasty?\nTraditional historiography never doubted it.\nThe sequence of the Three Sovereigns, Five Emperors, and Three Dynasties formed the backbone of educated memory for centuries.\nBut in the twentieth century the Doubting Antiquity scholars subjected this inherited structure to severe criticism.\nYu himself was shown to bear unmistakably mythic features, and some scholars concluded that the Xia dynasty was entirely fictitious.\nYet the matter did not rest there.\nThe genealogy of the Shang given by Sima Qian was later confirmed in large measure by oracle-bone inscriptions.\nThat fact alone made it harder to dismiss his treatment of Xia out of hand.",
+          "figures": [],
+          "videos": []
+        },
+        {
+          "id": "01.25-p003",
+          "text": "The more important change, however, has been conceptual.\nInstead of imagining Xia, Shang, and Zhou as a simple linear succession descending from one another in a single chain, many historians now prefer a horizontal view.\nEarly Shang, early Zhou, and Xia were not solitary actors in an empty field.\nThey were among the many states distributed across the Yellow River world during the long centuries before imperial unification.\nFrom this perspective, Sima Qian's decision to single out Xia appears not as naivete, but as historical selection.\nAnd archaeology has given that selection increasing support.\nSince 1959, remains of the Erlitou culture, centered east of Luoyang and spread across southern Shanxi and northwestern Henan, have been dated to roughly 1900 to 1350 B.C.\nThis places them in the right time and region for the Xia of the textual tradition.\nThe identification is not beyond dispute, and one should not pretend otherwise.\nStill, the convergence is strong enough that the author judges the existence of a Xia polity highly likely.\nIf Erlitou is Xia, then Xia was not a fantasy placed at the head of history.\nIt was one of the most powerful of the many states that emerged from the Longshan world and entered the early Bronze Age.\nAnd from that world, with bronze, ritual, warfare, and finally full writing, the historical dynasties would rise.",
+          "figures": [],
+          "videos": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sectionCount": 25,
+    "paragraphCount": 66
+  }
+};
