@@ -771,3 +771,8 @@ body.sidebar-collapsed .main-panel {
   line-height: 1.35;
   color: var(--text-soft);
 }
+
+
+[hidden] {
+  display: none !important;
+}
