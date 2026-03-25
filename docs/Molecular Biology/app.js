@@ -653,81 +653,96 @@ function renderVideos(entries) {
   });
 }
 
-  function renderMedia() {
-    const current = getCurrentParagraph();
-    if (!current) {
-      mediaSectionEl.hidden = true;
-      return;
-    }
-
-    const figures = Array.isArray(current.figures) ? current.figures : [];
-    const videos = Array.isArray(current.videos) ? current.videos : [];
-
-    const figureCount = figures.length;
-    const videoCount = videos.length;
-    const totalCount = figureCount + videoCount;
-
-    mediaSectionEl.hidden = totalCount === 0;
-    figureGroupEl.hidden = figureCount === 0;
-    videoGroupEl.hidden = videoCount === 0;
-
-    if (totalCount === 0) {
-      paragraphFiguresEl.innerHTML = "";
-      paragraphVideosEl.innerHTML = "";
-      mediaSummaryEl.textContent = "";
-      return;
-    }
-
-    const summaryParts = [];
-    if (figureCount > 0) summaryParts.push(`${figureCount} figure${figureCount === 1 ? "" : "s"}`);
-    if (videoCount > 0) summaryParts.push(`${videoCount} clip${videoCount === 1 ? "" : "s"}`);
-    mediaSummaryEl.textContent = summaryParts.join(" • ");
-
-    renderFigures(figures);
-    renderVideos(videos);
+function renderMedia() {
+  const current = getCurrentParagraph();
+  if (!current) {
+    mediaSectionEl.hidden = true;
+    paragraphFiguresEl.innerHTML = "";
+    paragraphVideosEl.innerHTML = "";
+    mediaSummaryEl.textContent = "";
+    return;
   }
 
-  function renderTextAndMedia() {
-    const current = getCurrentParagraph();
-    const previous = getParagraph(state.currentIndex - 1);
-    const next = getParagraph(state.currentIndex + 1);
+  const rawFigures = Array.isArray(current.figures) ? current.figures : [];
+  const rawVideos = Array.isArray(current.videos) ? current.videos : [];
 
-    if (!current) {
-      currentParagraphTextEl.textContent = "No paragraph found.";
-      previousParagraphTextEl.textContent = "—";
-      nextParagraphTextEl.textContent = "—";
-      mediaSectionEl.hidden = true;
-      return;
-    }
+  const validFigures = rawFigures.filter((entry, index) => {
+    const figureData = resolveFigureEntry(entry, index);
+    return figureData && figureData.src;
+  });
 
-    const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
-    const paragraphCode = getParagraphCode(current);
-    const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
-    const candidates = resolveAudioCandidates(current);
+  const validVideos = rawVideos.filter((entry, index) => {
+    const videoData = resolveVideoEntry(entry, index);
+    return videoData && videoData.src;
+  });
 
-    playerSectionLabelEl.textContent = sectionLabel;
-    playerParagraphLabelEl.textContent = paragraphCode;
+  const figureCount = validFigures.length;
+  const videoCount = validVideos.length;
+  const totalCount = figureCount + videoCount;
 
-    const paragraphMeta = `Paragraph ${current.paragraphNumber} of ${sectionParagraphCount}`;
-
-    playerTimeRangeEl.textContent =
-      candidates.length > 0
-        ? (current.duration && current.duration > 0
-            ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
-            : `${paragraphMeta} • Audio ready`)
-        : `${paragraphMeta} • No audio`;
-
-    nowReadingTitleEl.textContent = sectionLabel;
-
-    renderParagraphText(current);
-
-    previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
-    nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
-
-    contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
-
-    renderMedia();
+  if (totalCount === 0) {
+    mediaSectionEl.hidden = true;
+    figureGroupEl.hidden = true;
+    videoGroupEl.hidden = true;
+    paragraphFiguresEl.innerHTML = "";
+    paragraphVideosEl.innerHTML = "";
+    mediaSummaryEl.textContent = "";
+    return;
   }
+
+  mediaSectionEl.hidden = false;
+  figureGroupEl.hidden = figureCount === 0;
+  videoGroupEl.hidden = videoCount === 0;
+
+  const summaryParts = [];
+  if (figureCount > 0) summaryParts.push(`${figureCount} figure${figureCount === 1 ? "" : "s"}`);
+  if (videoCount > 0) summaryParts.push(`${videoCount} clip${videoCount === 1 ? "" : "s"}`);
+  mediaSummaryEl.textContent = summaryParts.join(" • ");
+
+  renderFigures(validFigures);
+  renderVideos(validVideos);
+}
+
+function renderTextAndMedia() {
+  const current = getCurrentParagraph();
+  const previous = getParagraph(state.currentIndex - 1);
+  const next = getParagraph(state.currentIndex + 1);
+
+  if (!current) {
+    currentParagraphTextEl.textContent = "No paragraph found.";
+    previousParagraphTextEl.textContent = "—";
+    nextParagraphTextEl.textContent = "—";
+    mediaSectionEl.hidden = true;
+    return;
+  }
+
+  const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
+  const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
+  const candidates = resolveAudioCandidates(current);
+
+  playerSectionLabelEl.textContent = sectionLabel;
+  playerParagraphLabelEl.textContent = `Paragraph ${current.paragraphNumber}`;
+
+  const paragraphMeta = `Paragraph ${current.paragraphNumber} of ${sectionParagraphCount}`;
+
+  playerTimeRangeEl.textContent =
+    candidates.length > 0
+      ? (current.duration && current.duration > 0
+          ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
+          : `${paragraphMeta} • Audio ready`)
+      : `${paragraphMeta} • No audio`;
+
+  nowReadingTitleEl.textContent = sectionLabel;
+
+  renderParagraphText(current);
+
+  previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
+  nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
+
+  contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
+
+  renderMedia();
+}
 
   function renderMeta() {
     const current = getCurrentParagraph();
