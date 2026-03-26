@@ -10,42 +10,27 @@ const BOOK_DATA = {
         {
           "id": "02.01-p001",
           "text": "Language is one of the deepest and most durable elements in the life of any society.\nTo follow its history is not a narrow exercise.\nIt is a way of recovering the lives of real people moving through a real world.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.01-p001.mp3",
-          "duration": 16.482
+          "figures": []
         },
         {
           "id": "02.01-p002",
           "text": "This chapter looks at the Chinese language and at the rise of Chinese writing across roughly a thousand years, from about 1200 BC to the beginning of the imperial age around 200 BC.\nThe subject is linguistic, but never merely technical.\nLanguage history is woven into cultural history at every point.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.01-p002.mp3",
-          "duration": 24.013
+          "figures": []
         },
         {
           "id": "02.01-p003",
           "text": "For the historian, changes in speech can preserve clues about migration, contact, memory, and even prehistory.\nFor the linguist, language history is built from painstaking analysis of sounds, words, and grammatical structures.\nBecause that work can often proceed without depending heavily on other kinds of evidence, it provides a valuable body of testimony of its own.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.01-p003.mp3",
-          "duration": 28.141
+          "figures": []
         },
         {
           "id": "02.01-p004",
           "text": "There is, however, a basic limit.\nBefore writing appears, language leaves no direct record.\nThat is one reason why history is conventionally said to begin with writing.\nOnce words can be written down, what we can know about the past changes dramatically.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.01-p004.mp3",
-          "duration": 17.933
+          "figures": []
         },
         {
           "id": "02.01-p005",
           "text": "For early China this is especially important.\nIn what follows, the first task is to consider the nature of the Chinese language in the pre-imperial period.\nThe second, which belongs to the next part of the chapter, is to examine the origin and development of the Chinese script itself.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.01-p005.mp3",
-          "duration": 20.066
+          "figures": []
         }
       ]
     },
@@ -57,34 +42,22 @@ const BOOK_DATA = {
         {
           "id": "02.02-p001",
           "text": "Chinese is securely documented no earlier than the late Shang, around 1200 BC.\nThe earliest written texts now known are the oracle-bone inscriptions from Anyang in modern Henan, the site of the last Shang capital.\nThey are difficult documents, but the language in them is plainly ancestral to later Chinese.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.02-p001.mp3",
-          "duration": 24.343
+          "figures": []
         },
         {
           "id": "02.02-p002",
           "text": "In that sense, the record of written Chinese begins there.\nFrom that point onward, one may speak with confidence of a language that stands in direct continuity with both classical and modern Chinese.\nThe people who spoke and wrote it are accordingly taken to be the ancestors of the historical Chinese.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.02-p002.mp3",
-          "duration": 20.855
+          "figures": []
         },
         {
           "id": "02.02-p003",
           "text": "That does not mean that the Chinese language or the Chinese people suddenly appeared in the second millennium BC.\nBoth must have existed earlier in North China, and perhaps more widely across central China as well.\nBut without earlier linguistic artifacts, one cannot say much with confidence about that earlier presence.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.02-p003.mp3",
-          "duration": 24.887
+          "figures": []
         },
         {
           "id": "02.02-p004",
           "text": "So if the word Chinese is to mean more than a loose taxonomic label, Chinese history begins here only in a limited sense.\nIt begins around 1200 BC.\nAnd it begins from the comparatively narrow region around Anyang where the first firm written evidence survives.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.02-p004.mp3",
-          "duration": 21.367
+          "figures": []
         }
       ]
     },
@@ -96,58 +69,37 @@ const BOOK_DATA = {
         {
           "id": "02.03-p001",
           "text": "The word Chinese is both useful and misleading.\nIt is useful because it gives a single name for all forms of the language across time, whether ancient or modern.\nBut it is misleading because it can hide very great internal diversity.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p001.mp3",
-          "duration": 17.133
+          "figures": []
         },
         {
           "id": "02.03-p002",
           "text": "Modern China, even if one considers only varieties usually called Chinese and leaves minority languages aside, is enormously diverse linguistically.\nThe comparison Boltz gives is telling.\nThe range of Chinese speech is, in this respect, comparable to the Romance speaking arc of Europe from Iberia to Moldavia.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p002.mp3",
-          "duration": 23.042
+          "figures": []
         },
         {
           "id": "02.03-p003",
           "text": "Ancient China presents a different problem.\nFor the earliest historical period, we do not possess records of a richly varied landscape of written languages comparable to the early linguistic world of Europe or the Near East.\nEven so, it would be naive to imagine that Chinese developed in isolation.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p003.mp3",
-          "duration": 23.533
+          "figures": []
         },
         {
           "id": "02.03-p004",
           "text": "It is much more reasonable to suppose that Chinese was in contact with neighboring non-Chinese languages throughout its early history.\nThe difficulty is that direct records of those other languages are missing.\nEither they had no writing system, or their records did not survive the later dominance of Chinese culture.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p004.mp3",
-          "duration": 21.591
+          "figures": []
         },
         {
           "id": "02.03-p005",
           "text": "Nor did early Chinese texts preserve much substantial information about those languages.\nWhat remains instead is indirect evidence.\nSome foreign words and names entered Chinese texts, and a few became normal vocabulary items in the language itself.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p005.mp3",
-          "duration": 18.391
+          "figures": []
         },
         {
           "id": "02.03-p006",
           "text": "When such items can be shown to come from another language, linguists call them loanwords.\nThey testify to contact between the speakers of Chinese and the speakers of some other tongue.\nBut resemblance does not always prove borrowing.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p006.mp3",
-          "duration": 16.247
+          "figures": []
         },
         {
           "id": "02.03-p007",
           "text": "Sometimes a word resembles a term in another language and yet also seems deeply native to Chinese itself.\nIn such cases one must ask whether the resemblance comes not from borrowing, but from common descent.\nThat is what linguists mean when they speak of a genetic or cognate relation between languages.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.03-p007.mp3",
-          "duration": 22.157
+          "figures": []
         }
       ]
     },
@@ -159,42 +111,27 @@ const BOOK_DATA = {
         {
           "id": "02.04-p001",
           "text": "To say that languages are genetically related is to say that they ultimately descend from the same earlier source.\nLinguists therefore speak of language families, parent languages, and related branches.\nThe vocabulary is biological by design.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.04-p001.mp3",
-          "duration": 19.543
+          "figures": []
         },
         {
           "id": "02.04-p002",
           "text": "Yet Boltz warns that this model can mislead if taken too literally.\nThe old family tree image suggests a clean sequence of descent, as though each language were simply the pure child of one predecessor.\nReal language history is rarely that neat.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.04-p002.mp3",
-          "duration": 18.253
+          "figures": []
         },
         {
           "id": "02.04-p003",
           "text": "Languages are constantly shaped not only by vertical inheritance through time, but also by lateral influence across boundaries.\nNeighbors borrow from one another.\nSounds, words, and habits of expression cross from one speech community into another.\nAny account of language history that ignores this will be artificially tidy.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.04-p003.mp3",
-          "duration": 24.333
+          "figures": []
         },
         {
           "id": "02.04-p004",
           "text": "The danger is not only oversimplification.\nOlder evolutionary ways of thinking could even tempt people to imagine that some languages are more perfect than others.\nBoltz rejects that completely.\nThere is no meaningful sense in which one language is more perfect or less perfect than another.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.04-p004.mp3",
-          "duration": 21.741
+          "figures": []
         },
         {
           "id": "02.04-p005",
           "text": "Once lateral influence becomes strong enough, the neat family tree becomes even less adequate.\nOne must ask whether a language is still best defined chiefly by inherited kinship, or whether prolonged contact with noncognate neighbors has altered it too deeply for that simple picture.\nFor Boltz, family trees remain useful only as idealized approximations.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.04-p005.mp3",
-          "duration": 25.453
+          "figures": []
         }
       ]
     },
@@ -206,82 +143,52 @@ const BOOK_DATA = {
         {
           "id": "02.05-p001",
           "text": "With those cautions in place, Chinese is commonly placed within what is called the Sino-Tibetan language family.\nIn its usual form, that family has two main branches, Chinese and Tibeto-Burman.\nTai was once often grouped with Chinese, but that view has largely been abandoned.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p001.mp3",
-          "duration": 21.954
+          "figures": []
         },
         {
           "id": "02.05-p002",
           "text": "On the current understanding, similarities between Tai and Chinese are treated mainly as borrowings or as areal features.\nThat means traits shared by languages spoken in the same broad region, whether or not they are close relatives.\nGeography can produce likeness without common descent.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p002.mp3",
-          "duration": 21.741
+          "figures": []
         },
         {
           "id": "02.05-p003",
           "text": "Boltz then presses a more unsettling point.\nPeople often speak of Sino-Tibetan as though it were an established fact, yet in his view it remains a hypothesis, and an imperfectly demonstrated one.\nThe case rests overwhelmingly on lexical comparison.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p003.mp3",
-          "duration": 18.626
+          "figures": []
         },
         {
           "id": "02.05-p004",
           "text": "That is, scholars assemble sets of Chinese words and compare them with words in Tibetan, Burmese, and other Tibeto-Burman languages that seem phonetically similar.\nThe table in the source gives many examples of this kind, often using reconstructed forms of older Chinese.\nBut morphology and syntax have contributed much less to the argument, because the differences there are harder to explain away.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p004.mp3",
-          "duration": 28.898
+          "figures": []
         },
         {
           "id": "02.05-p005",
           "text": "This leaves the hypothesis standing on a single strong leg rather than on two.\nIt may well be right.\nBoltz does not deny that.\nBut he insists that confidence here outruns proof.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p005.mp3",
-          "duration": 15.565
+          "figures": []
         },
         {
           "id": "02.05-p006",
           "text": "He notes that even Jerry Norman, while calling the hypothesis virtually sufficient on lexical grounds, also admitted that detailed phonological correspondences between Chinese and Tibeto-Burman had never been fully worked out.\nUnder such conditions, belief in Sino-Tibetan is not pure demonstration.\nIt has something of the character of faith.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p006.mp3",
-          "duration": 26.242
+          "figures": []
         },
         {
           "id": "02.05-p007",
           "text": "There is a further complication.\nThe earliest written records of any Tibeto-Burman language are much later than the first Chinese texts.\nOld Tibetan documents do not appear before the eighth century AD, many of them known from the finds at Dunhuang.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p007.mp3",
-          "duration": 18.253
+          "figures": []
         },
         {
           "id": "02.05-p008",
           "text": "If Chinese and Tibeto-Burman are truly cognate, then the similarity between them points back to a very remote common source.\nThat would suggest a relationship older than the historical period treated here.\nAnd because language difference usually grows when communities separate, the degree of difference between Chinese and Tibeto-Burman may itself imply a long interval without close contact.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p008.mp3",
-          "duration": 27.863
+          "figures": []
         },
         {
           "id": "02.05-p009",
           "text": "From that point of view, the Sino-Tibetan hypothesis actually weakens the case for direct contact between Chinese and Tibeto-Burman speakers during the first millennium of recorded Chinese history.\nIf, however, one rejects the hypothesis, then many of the apparent cognates must instead be explained as borrowings.\nThat would make contact between the groups in this period more likely, though still not strictly proven.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p009.mp3",
-          "duration": 31.255
+          "figures": []
         },
         {
           "id": "02.05-p010",
           "text": "So the same body of evidence can be read in two very different ways.\nAccept the hypothesis, and much of the lexical resemblance becomes inheritance from a remote past.\nReject it, and the resemblance begins to imply historical contact.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.05-p010.mp3",
-          "duration": 17.602
+          "figures": []
         }
       ]
     },
@@ -293,90 +200,57 @@ const BOOK_DATA = {
         {
           "id": "02.06-p001",
           "text": "Apart from Tibeto-Burman, Boltz identifies two other linguistic zones that can be recognized with some confidence around ancient China.\nIn the south and east there were Austroasiatic languages.\nIn the northwest there were Indo-European languages.\nThis batch turns first to the Austroasiatic side.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p001.mp3",
-          "duration": 22.947
+          "figures": []
         },
         {
           "id": "02.06-p002",
           "text": "Austroasiatic is a large family extending from the Munda languages of India across mainland Southeast Asia to Vietnamese and Muong.\nWithin that wide field, Jerry Norman and Mei Tsu-lin argued that Chinese preserves an early layer of Austroasiatic loanwords.\nIf they are right, Chinese and Austroasiatic speakers were in contact between about 1000 and 500 BC, especially in the region of the old state of Chu.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p002.mp3",
-          "duration": 33.069
+          "figures": []
         },
         {
           "id": "02.06-p003",
           "text": "The southern setting is supported in several ways.\nFirst, Austroasiatic languages are historically concentrated in the south, both in southern China and farther into Southeast Asia.\nThat makes the south the most natural place to locate early contact, even if one should not exclude a wider spread into south central China or the eastern coast.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p003.mp3",
-          "duration": 24.098
+          "figures": []
         },
         {
           "id": "02.06-p004",
           "text": "Second, the peoples called Yue in early Chinese texts, or more broadly the bai yue, were probably Austroasiatic speakers.\nChinese historical records consistently place them in the south.\nMei and Norman support this by pointing to words identified in Han sources as belonging to the Yue language and matching words in modern Austroasiatic languages.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p004.mp3",
-          "duration": 25.591
+          "figures": []
         },
         {
           "id": "02.06-p005",
           "text": "One example is a Yue word for to die that resembles forms in Vietnamese and Mon.\nAnother is a Yue word for dog, likewise paralleled in Austroasiatic languages.\nThese are not ordinary loanwords into Chinese.\nThey are native foreign words preserved inside Chinese texts.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p005.mp3",
-          "duration": 22.989
+          "figures": []
         },
         {
           "id": "02.06-p006",
           "text": "A third line of argument comes from words that did become part of Chinese vocabulary and that seem to have entered from southern contact.\nBoltz highlights several examples discussed by Mei and Norman.\nAmong them are the word jiang, especially associated with the Yangzi and great southern rivers, the word for crossbow, and the word for tiger.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p006.mp3",
-          "duration": 25.357
+          "figures": []
         },
         {
           "id": "02.06-p007",
           "text": "The pattern is suggestive.\nThese are not random items.\nThey are tied to landscapes, animals, and technologies that fit a southern setting.\nThat gives the borrowing hypothesis a certain geographical weight.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p007.mp3",
-          "duration": 16.632
+          "figures": []
         },
         {
           "id": "02.06-p008",
           "text": "There is also dialect evidence.\nSome likely Austroasiatic loans appear only in southern Chinese, especially Min, and not in the north.\nExamples include colloquial southern words for child, to know, and duckweed.\nSuch forms strengthen the impression that this contact was regional and enduring.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p008.mp3",
-          "duration": 24.76
+          "figures": []
         },
         {
           "id": "02.06-p009",
           "text": "Yet the story may not belong to the south alone.\nPulleyblank proposed that the ancient Yi of the eastern seaboard, perhaps as far north as Shandong, also spoke a non-Chinese language related to Austroasiatic.\nThat claim is more speculative, because the Yi language is not directly attested.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p009.mp3",
-          "duration": 20.61
+          "figures": []
         },
         {
           "id": "02.06-p010",
           "text": "Even so, he tried to support it through place names written in Chinese.\nIn one striking case, the same name appears in one text as a Yi place name and in another as a place name in Yue territory.\nIf that identification is right, it links the Yi of the east with the Yue of the south and extends the Austroasiatic zone much farther up the coast.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p010.mp3",
-          "duration": 26.839
+          "figures": []
         },
         {
           "id": "02.06-p011",
           "text": "Taken together, the evidence does not give us a fully visible map of the ancient linguistic landscape.\nBut it does make one thing hard to deny.\nEarly Chinese did not grow in silence.\nIt developed amid contact, borrowing, and pressure from neighboring languages whose own voices survive only in fragments.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.06-p011.mp3",
-          "duration": 23.416
+          "figures": []
         }
       ]
     },
@@ -388,10 +262,7 @@ const BOOK_DATA = {
         {
           "id": "02.07-p001",
           "text": "The linguistic world around early China did not stop with the south.\nIn the far northwest there is strong evidence for an Indo-European presence deep inside what later became the Chinese sphere.\nThat evidence comes above all from the language now called Tocharian.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p001.mp3",
-          "duration": 18.349
+          "figures": []
         },
         {
           "id": "02.07-p002",
@@ -401,42 +272,27 @@ const BOOK_DATA = {
               "label": "Map 2.1",
               "caption": "Map 2.1 locates the Tarim Basin corridor, including Turfan, Karashahr, and Kucha. It matters because this was the zone where Tocharian manuscripts were found and where contact between China and Central Asia can be visualized most clearly."
             }
-          ],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p002.mp3",
-          "duration": 38.221
+          ]
         },
         {
           "id": "02.07-p003",
           "text": "Scholars distinguish two main dialects.\nTocharian A is associated with Turfan and Karashahr, while Tocharian B is associated with Kucha.\nThe manuscripts themselves are late, not earlier than about AD 600, but the language they preserve probably reflects a much older presence in the region.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p003.mp3",
-          "duration": 22.423
+          "figures": []
         },
         {
           "id": "02.07-p004",
           "text": "One reason is that Tocharian is a centum language.\nIn that respect it aligns with Celtic, Greek, Italic, and Germanic rather than with the nearer Indo-Iranian satem languages.\nAt first this seemed puzzling, as though a western language had somehow wandered across Eurasia.\nBut the age and area hypothesis suggested a simpler answer.\nInnovations often arise in the center of a linguistic zone and fail to reach the edges, so peripheral languages can preserve older features.\nFrom that perspective, Tocharian looks not like a late intruder but like a very early settlement on the northeastern edge of the Indo-European world.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p004.mp3",
-          "duration": 47.193
+          "figures": []
         },
         {
           "id": "02.07-p005",
           "text": "Archaeology points in the same direction.\nBurials from the Tarim Basin, dating to the second and first millennia BC, have yielded strikingly non-Chinese and often clearly Caucasoid bodies.\nSome scholars have linked these people with the Tocharians, though the identification is not certain.\nJ P Mallory even suggested that the Tocharians may have been connected with the Afanasievo culture north of the Altai.\nStuart Piggott, in turn, proposed that they may have been involved in transmitting the chariot eastward into North China around 1200 BC.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p005.mp3",
-          "duration": 39.491
+          "figures": []
         },
         {
           "id": "02.07-p006",
           "text": "There is also direct linguistic contact.\nPre-Han Chinese seems to contain at least two Tocharian loanwords, one for honey and one for lion.\nIf those identifications are right, then the Indo-European presence in the northwest was not a remote curiosity.\nIt touched the Chinese world closely enough to leave traces in its vocabulary.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.07-p006.mp3",
-          "duration": 25.027
+          "figures": []
         }
       ]
     },
@@ -448,42 +304,27 @@ const BOOK_DATA = {
         {
           "id": "02.08-p001",
           "text": "For the millennium from about 1200 to 200 BC, Boltz divides the history of written Chinese into three periods.\nThe divisions are artificial in one sense, because spoken language changes gradually and without clear breaks.\nBut when viewed through surviving texts, the three periods are real enough to be useful.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.08-p001.mp3",
-          "duration": 24.898
+          "figures": []
         },
         {
           "id": "02.08-p002",
           "text": "The first is the Archaic period, from 1200 to 1000 BC.\nIts texts are all archaeological finds rather than later transmitted books.\nThey consist mainly of oracle-bone inscriptions and very short bronze inscriptions from the Shang and the earliest Zhou.\nThe language is unmistakably Chinese, but our understanding of it remains limited.\nMuch of its vocabulary is uncertain, and its grammar often seems austere, with relations left implicit rather than marked by many explicit particles or constructions.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.08-p002.mp3",
-          "duration": 38.969
+          "figures": []
         },
         {
           "id": "02.08-p003",
           "text": "The second is the Pre-Classical period, from 1000 to 600 BC, roughly the age of the Western Zhou.\nNow the evidence expands greatly.\nBronze inscriptions become more numerous and often much longer, and parts of the Documents, the Poetry, and the Changes belong to this period as transmitted texts.\nThe language still has an older spareness, but it moves visibly toward the grammar and vocabulary later recognized as standard Classical Chinese.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.08-p003.mp3",
-          "duration": 37.709
+          "figures": []
         },
         {
           "id": "02.08-p004",
           "text": "The third is the Classical period, from 600 to 200 BC.\nThis is the great age of early Chinese literature and philosophy, the age of texts such as the Analects, the Mencius, and the Zuo Tradition.\nBronze inscriptions remain important, but they are now overshadowed by the volume of transmitted writing.\nOracle bones disappear, while writing on bamboo, wood, jade, and eventually silk becomes common.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.08-p004.mp3",
-          "duration": 30.509
+          "figures": []
         },
         {
           "id": "02.08-p005",
           "text": "Archaeology also gives a glimpse of how books were physically made.\nWhen bamboo strips were used, one vertical column of characters was normally written on each strip.\nHan evidence suggests that formal texts may often have used strips of uniform length, with a fixed number of characters on each.\nThe exact rule is not certain, but many scholars think twenty two or twenty four characters per strip was common in some settings.\nThat detail matters because disordered passages in transmitted texts sometimes seem to reflect the accidental displacement of just such strips.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.08-p005.mp3",
-          "duration": 41.337
+          "figures": []
         }
       ]
     },
@@ -495,34 +336,22 @@ const BOOK_DATA = {
         {
           "id": "02.09-p001",
           "text": "Chinese is often described as a monosyllabic and isolating language.\nThat means its words are usually treated as single syllables that do not change form for tense, case, person, or similar grammatical functions.\nAt first sight, Classical Chinese seems to fit this description rather well.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.09-p001.mp3",
-          "duration": 22.007
+          "figures": []
         },
         {
           "id": "02.09-p002",
           "text": "Yet the appearance may be deceptive.\nThe Chinese script often hides relationships that an alphabetic writing system would make easier to see.\nA single graph may cover two related words with different pronunciations and meanings, while two closely related words may be written with entirely different characters.\nThe result is that visible spelling can mislead us about how many words there are and how they are related.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.09-p002.mp3",
-          "duration": 30.755
+          "figures": []
         },
         {
           "id": "02.09-p003",
           "text": "Examples from later Chinese make the point.\nThe graph 長 can represent both long and to grow long, while 張 and 脹 distinguish stretch from stretched or swollen.\nObjectively, both pairs may preserve traces of earlier morphological processes.\nThe script merely nudges us to notice the relation in one case and overlook it in the other.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.09-p003.mp3",
-          "duration": 29.645
+          "figures": []
         },
         {
           "id": "02.09-p004",
           "text": "For that reason, some scholars have come to think that Old Chinese may have been less purely isolating than it seems.\nInstead of having no morphology, it may preserve the worn remains of older derivational patterns.\nThese are difficult to recover directly from the script.\nThey have to be inferred from reconstructed pronunciations, recurrent semantic patterns, and clusters of related words.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.09-p004.mp3",
-          "duration": 27.544
+          "figures": []
         }
       ]
     },
@@ -534,26 +363,17 @@ const BOOK_DATA = {
         {
           "id": "02.10-p001",
           "text": "One path into this deeper structure is the study of what Chinese scholars often call word families.\nThese are sets of words with similar sounds, similar meanings, and often characters built around the same phonetic element.\nBoltz gives a good example in the cluster around an, including words for stability, pressing down, seat, rest, saddle, and banquet.\nThe shared core is something like sitting, settling, or being made firm.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.10-p001.mp3",
-          "duration": 32.557
+          "figures": []
         },
         {
           "id": "02.10-p002",
           "text": "In such cases, one relation may be morphological rather than merely associative.\nPulleyblank and others proposed that Old Chinese had a suffix, often reconstructed as s, that could turn an abstract state into a concrete act or object.\nThus a word meaning stability could yield a verb meaning to press down or make firm, and also a noun meaning a seat or stool.\nThe precise details remain debated, but the pattern is suggestive.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.10-p002.mp3",
-          "duration": 34.744
+          "figures": []
         },
         {
           "id": "02.10-p003",
           "text": "Other examples point in the same direction.\nA word meaning antiquity seems to stand behind another meaning an old friend, an old home, or an established reason or precedent.\nLikewise, from follow one may derive follower, and from rise one may derive top.\nEven if the full system is still obscure, these sets suggest that Old Chinese once used small formal changes to create predictable shifts in meaning.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.10-p003.mp3",
-          "duration": 32.6
+          "figures": []
         }
       ]
     },
@@ -565,26 +385,17 @@ const BOOK_DATA = {
         {
           "id": "02.11-p001",
           "text": "Pulleyblank also argued for another kind of hidden morphology.\nHe proposed that Old Chinese sometimes used a contrast between two vowel types, one closer and one more open, to mark a semantic contrast he described as extrovert and introvert.\nIn simpler terms, one form tends to express an outward process or action, while the other expresses a more inward, self-contained state.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.11-p001.mp3",
-          "duration": 29.634
+          "figures": []
         },
         {
           "id": "02.11-p002",
           "text": "His examples are striking.\nA word meaning to last a long time can correspond to another meaning antiquity.\nA word meaning to see can correspond to another meaning to appear or be seen.\nA word meaning to explain, understood in origin as to loosen, can correspond to another meaning pleased or relaxed, that is, loosened inwardly.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.11-p002.mp3",
-          "duration": 25.688
+          "figures": []
         },
         {
           "id": "02.11-p003",
           "text": "If such patterns are real, then Chinese was not simply a language of bare, unchanging monosyllables.\nIt had derivational resources that became obscured in later writing and transmission.\nThat would also make its deeper structure look somewhat closer to Tibetan and Burmese than is obvious at first sight.\nPulleyblank even thought such evidence made broader long-range comparison, including with Indo-European, worth taking seriously, though still very cautiously.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.11-p003.mp3",
-          "duration": 33.176
+          "figures": []
         }
       ]
     },
@@ -596,34 +407,22 @@ const BOOK_DATA = {
         {
           "id": "02.12-p001",
           "text": "Before the Qin and Han empires, Chinese thinkers do not seem to have developed a discipline equivalent to grammar in the later Western sense.\nWhat we find instead is a sustained concern with words, names, meanings, and the relation between language and reality.\nThis concern appears most clearly in the Confucian doctrine of setting names aright and in the logical writings of the Later Mohists.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.12-p001.mp3",
-          "duration": 27.778
+          "figures": []
         },
         {
           "id": "02.12-p002",
           "text": "In the Analects, Confucius is made to say that proper government must begin with the rectification of names.\nIf names are not correct, speech will not follow rightly.\nIf speech fails, action fails, ritual fails, punishment fails, and society loses its bearings.\nThe passage is famous not because it offers a grammar of language, but because it treats linguistic order as the basis of moral and political order.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.12-p002.mp3",
-          "duration": 31.16
+          "figures": []
         },
         {
           "id": "02.12-p003",
           "text": "Xunzi develops the theme more systematically.\nFor him, names do not possess their meanings by nature.\nThey acquire force through convention, agreement, and proper use.\nAt the same time, the ruler has authority to stabilize correct naming and prevent disorderly usage.\nSo language is both social and political, conventional and normative at once.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.12-p003.mp3",
-          "duration": 30.286
+          "figures": []
         },
         {
           "id": "02.12-p004",
           "text": "The Later Mohists approached the matter more analytically.\nThey distinguished sources of knowledge such as hearsay, explanation, and direct experience.\nThey also tried to clarify the relation between names, objects, their pairing, and action.\nThis is perhaps the closest pre-Han China came to an explicit science of language.\nEven so, it remained tied to larger questions of logic, conduct, and the ordering of the world.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.12-p004.mp3",
-          "duration": 33.017
+          "figures": []
         }
       ]
     },
@@ -635,18 +434,12 @@ const BOOK_DATA = {
         {
           "id": "02.13-p001",
           "text": "One cannot study Classical Chinese seriously without some sense of how Old Chinese sounded.\nWord study, grammar, foreign names, and the wider question of Chinese linguistic affinities all depend on phonology.\nThat is why the reconstruction of earlier Chinese sound systems became such a major field of modern scholarship.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.13-p001.mp3",
-          "duration": 23.735
+          "figures": []
         },
         {
           "id": "02.13-p002",
           "text": "From Karlgren onward, generations of scholars tried to recover the sound structure of both Middle and Old Chinese.\nThe effort has been immense.\nYet for Old Chinese especially, many important questions remain disputed.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.13-p002.mp3",
-          "duration": 17.421
+          "figures": []
         }
       ]
     },
@@ -658,26 +451,17 @@ const BOOK_DATA = {
         {
           "id": "02.14-p001",
           "text": "Most reconstructions of Old Chinese begin by reconstructing Middle Chinese first.\nThat means the language reflected in the rime dictionaries and rime tables of the Sui, Tang, and Song world.\nFrom that more orderly system, scholars then work backward toward earlier forms.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.14-p001.mp3",
-          "duration": 20.749
+          "figures": []
         },
         {
           "id": "02.14-p002",
           "text": "This method has an obvious advantage.\nMiddle Chinese is recorded in sources that give a relatively complete formal framework of phonological distinctions.\nFor Old Chinese there is no equally convenient starting point.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.14-p002.mp3",
-          "duration": 16.813
+          "figures": []
         },
         {
           "id": "02.14-p003",
           "text": "Instead, scholars often rely on the rhyme patterns of the Shijing to reconstruct Old Chinese finals.\nThat gives a workable substitute for part of the system.\nBut there is no equally clear counterpart for the initials.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.14-p003.mp3",
-          "duration": 17.687
+          "figures": []
         }
       ]
     },
@@ -689,34 +473,22 @@ const BOOK_DATA = {
         {
           "id": "02.15-p001",
           "text": "Ideally one would like to distinguish the pronunciation of each pre imperial period from the next and watch the language change step by step.\nAt present that cannot be done with real completeness.\nThe evidence is too scattered, too mixed in date, and too uneven in kind.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.15-p001.mp3",
-          "duration": 21.591
+          "figures": []
         },
         {
           "id": "02.15-p002",
           "text": "Reconstruction draws on several bodies of evidence at once.\nThere is Middle Chinese.\nThere are the Shijing rhyme groups.\nThere are phonetic series in the script and also foreign words written in Chinese transcription.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.15-p002.mp3",
-          "duration": 17.283
+          "figures": []
         },
         {
           "id": "02.15-p003",
           "text": "The difficulty is that these different kinds of evidence do not all belong to the same moment.\nA feature inferred from one body of data may reflect one period, while another feature may reflect a much earlier or later one.\nSo any single overall picture of Old Chinese is still provisional.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.15-p003.mp3",
-          "duration": 21.741
+          "figures": []
         },
         {
           "id": "02.15-p004",
           "text": "Boltz therefore treats Pulleyblank's work as highly valuable, but not definitive.\nIts strength lies in making use of many different kinds of evidence and in refusing some of the older assumptions that had become too comfortable.\nEven so, the result remains a carefully argued hypothesis rather than a final map of the language.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.15-p004.mp3",
-          "duration": 21.826
+          "figures": []
         }
       ]
     },
@@ -728,34 +500,22 @@ const BOOK_DATA = {
         {
           "id": "02.16-p001",
           "text": "In Chinese phonology, the final means everything in the syllable except the initial.\nIt includes the main vowel, any ending consonant, and the feature that later became tone.\nThe medial may also be included, though for Old Chinese that point is not entirely settled.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.16-p001.mp3",
-          "duration": 20.759
+          "figures": []
         },
         {
           "id": "02.16-p002",
           "text": "The Shijing rhyme groups help scholars organize the Old Chinese finals.\nSome correspond to syllables ending in a stop, the class later associated with the entering tone.\nThe other later tones are thought to have developed from earlier syllables that ended in other segments, including a glottal stop or an s like ending.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.16-p002.mp3",
-          "duration": 24.194
+          "figures": []
         },
         {
           "id": "02.16-p003",
           "text": "Old Chinese syllables are also commonly divided into type A and type B.\nOlder scholars explained the difference by assuming a medial yod in one class and not the other.\nPulleyblank and Jerry Norman both doubted that this yod was really present in Old Chinese, though they explained the contrast in different ways.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.16-p003.mp3",
-          "duration": 21.09
+          "figures": []
         },
         {
           "id": "02.16-p004",
           "text": "For Pulleyblank the difference was prosodic, a matter of where the prominence of the syllable fell.\nFor Norman it reflected the later tendency of some syllables to palatalize and others not to do so.\nIn either case, the older habit of simply inserting a yod into Old Chinese reconstruction becomes much less secure.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.16-p004.mp3",
-          "duration": 22.893
+          "figures": []
         }
       ]
     },
@@ -767,34 +527,22 @@ const BOOK_DATA = {
         {
           "id": "02.17-p001",
           "text": "Pulleyblank argued that the signs later known as the Heavenly Stems and Earthly Branches preserve a complete and nonrepeating set of Old Chinese initials.\nIf so, they give for initials what the Shijing rhyme groups give for finals, though from a much earlier stage of the language.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.17-p001.mp3",
-          "duration": 18.572
+          "figures": []
         },
         {
           "id": "02.17-p002",
           "text": "That makes the picture uneven in time.\nThe finals as reconstructed from the Shijing point mainly to the sixth century BC.\nThe initials inferred from the stem and branch series may point back as far as Shang times, around 1200 BC.\nSo the total reconstruction is assembled from parts that do not naturally belong to one single moment.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.17-p002.mp3",
-          "duration": 25.357
+          "figures": []
         },
         {
           "id": "02.17-p003",
           "text": "Another difficulty is the strong likelihood of initial consonant clusters.\nEvidence from phonetic series shows characters that seem related in sound even though their initials differ in ways that suggest an earlier cluster.\nThat point has been recognized for a long time.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.17-p003.mp3",
-          "duration": 19.042
+          "figures": []
         },
         {
           "id": "02.17-p004",
           "text": "But once clusters enter the picture, uncertainty grows sharply.\nOne must ask how they were formed, how they later simplified, and how medials such as r, j, or w fit into the story.\nAt present there is no firm framework that tells us exactly which clusters were possible and which were not.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.17-p004.mp3",
-          "duration": 21.453
+          "figures": []
         }
       ]
     },
@@ -806,42 +554,27 @@ const BOOK_DATA = {
         {
           "id": "02.18-p001",
           "text": "Chinese writing first appears securely in the oracle bone inscriptions from Anyang, the last Shang capital.\nThese texts were cut on ox scapulas and turtle plastrons and record royal divinations, often linked to sacrifice and ancestral ritual.\nTheir content allows scholars to identify the reigns of the last Shang kings, beginning with Wu Ding around 1200 BC.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.18-p001.mp3",
-          "duration": 26.605
+          "figures": []
         },
         {
           "id": "02.18-p002",
           "text": "Bronze inscriptions are also known from about the same time.\nAt present we cannot say that one medium clearly preceded the other.\nWe can only say that both are attested by roughly 1200 BC and that neither is known from an earlier period.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.18-p002.mp3",
-          "duration": 17.186
+          "figures": []
         },
         {
           "id": "02.18-p003",
           "text": "This raises an important question.\nWere these ceremonial inscriptions the only writing that existed, or were more ordinary texts also being written on perishable materials such as bamboo and wood.\nThe archaeological record cannot answer that directly, because such materials would rarely survive.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.18-p003.mp3",
-          "duration": 20.813
+          "figures": []
         },
         {
           "id": "02.18-p004",
           "text": "Yet there are good reasons to suspect that more practical writing already existed.\nOne Shang graph seems to represent bound writing tablets, that is, strips tied together with a thong.\nIf that interpretation is right, then bamboo or wooden documents must already have been part of the world of writing.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.18-p004.mp3",
-          "duration": 22.018
+          "figures": []
         },
         {
           "id": "02.18-p005",
           "text": "There is also reason to think such texts were written with a brush.\nLater Chinese did not normally incise bamboo or wood.\nAnd there is late Shang evidence for brush writing on pottery, jade, and perhaps even on bone before the final incision was cut.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.18-p005.mp3",
-          "duration": 19.554
+          "figures": []
         }
       ]
     },
@@ -853,34 +586,22 @@ const BOOK_DATA = {
         {
           "id": "02.19-p001",
           "text": "Some Neolithic pottery marks have prompted claims that Chinese writing goes back far earlier than the late Shang.\nBoltz treats those claims very cautiously.\nThe marks are too isolated, too hard to decipher, and too far removed in time to be linked directly with the Shang script.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.19-p001.mp3",
-          "duration": 19.554
+          "figures": []
         },
         {
           "id": "02.19-p002",
           "text": "So although such marks may be interesting, they do not show a continuous history of Chinese writing from the Neolithic onward.\nNor is there any convincing evidence that writing was imported into China from western Asia or elsewhere.\nOn present evidence, the Chinese script seems to have been invented in China not long before the late Shang record that survives.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.19-p002.mp3",
-          "duration": 24.386
+          "figures": []
         },
         {
           "id": "02.19-p003",
           "text": "Boltz also stresses that Chinese writing, despite its later visual difference from alphabetic scripts, arose according to a broadly familiar ancient pattern.\nHe compares it with Egyptian, Mesopotamian, and Mayan writing.\nIn each case, one can identify a movement from depiction toward phonetic writing.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.19-p003.mp3",
-          "duration": 22.146
+          "figures": []
         },
         {
           "id": "02.19-p004",
           "text": "He names three early principles in that development.\nThere is the zodiographic stage, the multivalent stage, and the determinative stage.\nThese should not be imagined as neat chronological blocks, because once the system began to grow, the principles likely operated together.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.19-p004.mp3",
-          "duration": 19.319
+          "figures": []
         }
       ]
     },
@@ -892,34 +613,22 @@ const BOOK_DATA = {
         {
           "id": "02.20-p001",
           "text": "Writing probably began with graphs that depicted concrete things or simple actions.\nBut a picture is not yet writing.\nIt becomes writing only when it is regularly associated with the spoken word for the thing and thus comes to represent speech.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p001.mp3",
-          "duration": 18.071
+          "figures": []
         },
         {
           "id": "02.20-p002",
           "text": "Boltz therefore distinguishes between a pictograph and a zodiograph.\nA pictograph is simply a picture.\nA zodiograph is a graph that has acquired a conventional pronunciation and now writes a word.\nThat shift from picture to written word is what he calls phoneticization.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p002.mp3",
-          "duration": 22.477
+          "figures": []
         },
         {
           "id": "02.20-p003",
           "text": "This helps explain why so many early Chinese characters are less pictorial than people often imagine.\nOnce a graph stands for a word, it no longer needs to remain a clear picture of a thing.\nIt can be stylized and simplified so that scribes can write it quickly and consistently.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p003.mp3",
-          "duration": 20.343
+          "figures": []
         },
         {
           "id": "02.20-p004",
           "text": "Even the Shang characters often called pictographs are, in practice, word signs rather than little drawings of meanings.\nThey do not represent ideas directly.\nThey represent words, and words carry meaning.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p004.mp3",
-          "duration": 16.258
+          "figures": []
         },
         {
           "id": "02.20-p005",
@@ -929,18 +638,12 @@ const BOOK_DATA = {
               "label": "Figure 2.1",
               "caption": "Figure 2.1 shows Shang clan-name insignias from bronze vessels. They matter because they are highly iconic emblems, closer to heraldic badges than to ordinary running text, and so help clarify what early Chinese writing was and was not."
             }
-          ],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p005.mp3",
-          "duration": 19.789
+          ]
         },
         {
           "id": "02.20-p006",
           "text": "These signs often look more like heraldic badges than ordinary writing.\nThat is precisely the point.\nTheir realism does not prove that Chinese characters as a whole were pictographic in nature.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.20-p006.mp3",
-          "duration": 13.655
+          "figures": []
         }
       ]
     },
@@ -952,34 +655,22 @@ const BOOK_DATA = {
         {
           "id": "02.21-p001",
           "text": "Once a graph had become a zodiograph, another possibility opened.\nIt could be used not only for the original word it wrote, but also for another word with the same or a similar sound.\nThis is the rebus principle.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.21-p001.mp3",
-          "duration": 16.621
+          "figures": []
         },
         {
           "id": "02.21-p002",
           "text": "That step is crucial in the history of writing.\nIt allows the script to move beyond what can be easily pictured.\nA graph that once wrote a concrete noun can now help write an abstract word or a grammatical word that cannot be drawn at all.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.21-p002.mp3",
-          "duration": 16.77
+          "figures": []
         },
         {
           "id": "02.21-p003",
           "text": "Boltz treats this as one of the great early discoveries behind the growth of the script.\nThe Chinese case is no exception.\nA system capable only of depicting visible things would be far too limited for real connected language.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.21-p003.mp3",
-          "duration": 17.037
+          "figures": []
         },
         {
           "id": "02.21-p004",
           "text": "So the early history of Chinese writing is not the history of little pictures slowly accumulating meanings.\nIt is the history of graphs becoming tied to spoken words, then being extended, reused, and reorganized until a fully workable writing system emerged.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.21-p004.mp3",
-          "duration": 19.777
+          "figures": []
         }
       ]
     },
@@ -991,26 +682,17 @@ const BOOK_DATA = {
         {
           "id": "02.22-p001",
           "text": "The zodiographic stage could take the script only so far.\nA stock of graphs based on direct depiction, no matter how large, could never be enough to write everything that a language can say.\nMany words do not lend themselves to any obvious picture.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.22-p001.mp3",
-          "duration": 19.277
+          "figures": []
         },
         {
           "id": "02.22-p002",
           "text": "The next decisive step was therefore not uniquely Chinese.\nBoltz stresses that China followed the same general path seen in Egypt, Mesopotamia, and among the Maya.\nA graph that had first written one word could be extended to write other words as well.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.22-p002.mp3",
-          "duration": 19.831
+          "figures": []
         },
         {
           "id": "02.22-p003",
           "text": "This was the beginning of the multivalent stage.\nA single graph no longer had only one fixed use.\nOnce that possibility was recognized, the script could begin to escape the narrow limit of direct depiction.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.22-p003.mp3",
-          "duration": 15.885
+          "figures": []
         }
       ]
     },
@@ -1022,26 +704,17 @@ const BOOK_DATA = {
         {
           "id": "02.23-p001",
           "text": "One form of this extension was paronomasia, the rebus use of a graph for another word of the same or a similar sound.\nA character that originally wrote one concrete word could now write a different word that sounded like it.\nBoltz notes that the modern character 足 can still write both zú, meaning foot, and the homophonous zú, meaning sufficient.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.23-p001.mp3",
-          "duration": 22.615
+          "figures": []
         },
         {
           "id": "02.23-p002",
           "text": "Such usages were once more widespread than the surviving standard script might suggest.\nLater orthographic reform often modified the old graph so that the intended word became clearer.\nAs a result, many early paronomastic uses now have to be reconstructed indirectly, even when the principle behind them is unmistakable.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.23-p002.mp3",
-          "duration": 23.501
+          "figures": []
         },
         {
           "id": "02.23-p003",
           "text": "The archaeological manuscripts are especially revealing here.\nTexts from Mawangdui, for example, show many spellings that later readers would call eccentric or wrong, yet they make sense once one recognizes that the scribe is freely exploiting sound resemblance.\nA baffling sequence may turn out to write an ordinary phrase such as Zhao shi, the Zhao clan, by using unexpected but phonetically plausible graphs.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.23-p003.mp3",
-          "duration": 29.869
+          "figures": []
         }
       ]
     },
@@ -1053,34 +726,22 @@ const BOOK_DATA = {
         {
           "id": "02.24-p001",
           "text": "A second form of multivalence was polyphony.\nHere a graph was used for another word that was semantically allied, even though the pronunciation was different.\nThe graph for mouth, for example, could also be used for the verb call out, because calling out is something one does with the mouth.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.24-p001.mp3",
-          "duration": 20.429
+          "figures": []
         },
         {
           "id": "02.24-p002",
           "text": "The same logic appears elsewhere.\nThe graph for eye could be used for see.\nThe graph for moon could be used for brighten.\nThe graph for growing grain could be used for harvest, and from there for year.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.24-p002.mp3",
-          "duration": 17.091
+          "figures": []
         },
         {
           "id": "02.24-p003",
           "text": "In all such cases the graph still wrote a word, not a free-floating idea.\nThat point matters.\nEven when a sign was extended beyond its original use, it remained a logograph, that is, a written sign for a whole word.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.24-p003.mp3",
-          "duration": 17.09
+          "figures": []
         },
         {
           "id": "02.24-p004",
           "text": "Paronomasia and polyphony are therefore the two complementary modes of multivalence.\nIn the first, the sound stays roughly constant while the meaning shifts.\nIn the second, the meaning stays roughly aligned while the sound changes.\nTogether they made it possible to write far more of the language than direct depiction alone could ever manage.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.24-p004.mp3",
-          "duration": 24.995
+          "figures": []
         }
       ]
     },
@@ -1092,34 +753,22 @@ const BOOK_DATA = {
         {
           "id": "02.25-p001",
           "text": "But the success of multivalence created a new problem.\nIf one graph could stand for several words, how was the reader to know which word was intended in a given case.\nA sign might mean mouth or call out, moon or brighten, foot or sufficient, elephant or image.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.25-p001.mp3",
-          "duration": 19.319
+          "figures": []
         },
         {
           "id": "02.25-p002",
           "text": "Context could resolve some of these cases, just as it still does in writing today.\nBut as the script grew more flexible, context alone was no longer enough.\nThe Chinese response, Boltz argues, was again parallel to what happened in Egypt, Mesopotamia, and the Mayan world.\nThey began to append secondary graphs to remove ambiguity.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.25-p002.mp3",
-          "duration": 26.008
+          "figures": []
         },
         {
           "id": "02.25-p003",
           "text": "These added elements are called determinatives.\nIf the ambiguity concerned meaning, the added graph specified the meaning and functioned as a semantic determinative.\nIf the ambiguity concerned pronunciation, the added graph specified the sound and functioned as a phonetic determinative.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.25-p003.mp3",
-          "duration": 22.018
+          "figures": []
         },
         {
           "id": "02.25-p004",
           "text": "This led to a new structural principle in the script.\nA graph could now consist of a primary element plus a secondary element that guided the reader toward the intended word.\nIn many familiar Chinese characters, what later readers call the radical is in fact this added semantic determinative, while the older inherited core is the phonophoric, the element that carries the sound.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.25-p004.mp3",
-          "duration": 38.125
+          "figures": []
         }
       ]
     },
@@ -1131,34 +780,22 @@ const BOOK_DATA = {
         {
           "id": "02.26-p001",
           "text": "Boltz illustrates the semantic side with examples that later became standard compound characters.\nA graph first used paronomastically could receive an added semantic marker to distinguish one meaning from another.\nOnce that practice became productive, large families of characters could be built around one shared phonophoric, each with a different semantic determinative.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.26-p001.mp3",
-          "duration": 25.773
+          "figures": []
         },
         {
           "id": "02.26-p002",
           "text": "He gives the series built on 莫 as a good example.\nFrom it come characters associated with meanings such as dusk, longing, grave, summons, desert stillness, membrane, loneliness, model, rubbing, and others.\nWhat unites them graphically is not a shared core meaning, but a shared phonophoric combined with different semantic markers.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.26-p002.mp3",
-          "duration": 28.194
+          "figures": []
         },
         {
           "id": "02.26-p003",
           "text": "By Han times such forms were called xié shēng characters, usually translated as phonetic compounds.\nThat label is useful, but Boltz cautions that the usual English terms can mislead.\nThe so-called radical is not the root of the character, and the so-called phonetic is more precisely a phonophoric, the element that bears the pronunciation.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.26-p003.mp3",
-          "duration": 25.741
+          "figures": []
         },
         {
           "id": "02.26-p004",
           "text": "Once the structural principle was understood, scribes no longer needed to wait for an actual paronomastic usage to become widespread before creating a new form.\nThey could produce the character directly.\nAt that point the script was no longer merely recording old habits.\nIt had become a system capable of deliberate growth.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.26-p004.mp3",
-          "duration": 26.808
+          "figures": []
         }
       ]
     },
@@ -1170,34 +807,22 @@ const BOOK_DATA = {
         {
           "id": "02.27-p001",
           "text": "Phonetic determinatives are harder to document, because later orthography often concealed their earlier history.\nEven so, Boltz argues that they were just as fundamental as semantic determinatives in the formative period.\nThe result was a script made of both unit characters and compound characters, both of which still represented words.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.27-p001.mp3",
-          "duration": 25.965
+          "figures": []
         },
         {
           "id": "02.27-p002",
           "text": "This is why he insists that Chinese characters do not write ideas directly.\nAt the formative stage, as far as we can tell, each written syllable normally corresponded to a word or at least to a meaningful morpheme.\nThe orthographic rule was therefore, in effect, one syllable, one word, one character.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.27-p002.mp3",
-          "duration": 23.085
+          "figures": []
         },
         {
           "id": "02.27-p003",
           "text": "Some characters always stood for the same word.\nOthers, because of multivalence, could stand for one of several words depending on context and orthographic marking.\nBut no character floated free of language as a pure symbol for an idea.\nIt reached meaning only through the word it wrote.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.27-p003.mp3",
-          "duration": 21.315
+          "figures": []
         },
         {
           "id": "02.27-p004",
           "text": "In the long run, semantic determinatives became the most visible feature of the script and were felt to be an intrinsic part of the character itself.\nPhonetic determinatives, by contrast, left fewer obvious traces.\nYet together these developments gave Chinese a fully workable and enduring writing system.\nThat system would shape the scripts of East Asia and make China one of the very few civilizations to create an indigenous script that survived continuously into the modern world.",
-          "figures": [],
-          "videos": [],
-          "audio": "audio/paragraphs/02.27-p004.mp3",
-          "duration": 35.768
+          "figures": []
         }
       ]
     }
@@ -1205,7 +830,5 @@ const BOOK_DATA = {
   "stats": {
     "sectionCount": 27,
     "paragraphCount": 125
-  },
-  "audioMode": "per-paragraph",
-  "timingsReady": false
+  }
 };
