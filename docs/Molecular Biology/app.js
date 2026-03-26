@@ -271,8 +271,8 @@
       notesCornerDockEl.id = "notesCornerDock";
       notesCornerDockEl.innerHTML = `
         <button type="button" class="notes-corner-btn notes-corner-btn-primary" id="toggleNotesBtn" title="Open or close notes" aria-label="Open or close notes">✎</button>
-        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="exportNotesBtn" title="Export notes backup" aria-label="Export notes backup" hidden>⇩</button>
-        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="importNotesBtn" title="Import notes backup" aria-label="Import notes backup" hidden>⇧</button>
+        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="exportNotesBtn" title="Export all Molecular Biology notes backup" aria-label="Export all Molecular Biology notes backup" hidden>⇩</button>
+        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="importNotesBtn" title="Import all Molecular Biology notes backup" aria-label="Import all Molecular Biology notes backup" hidden>⇧</button>
         <input type="file" id="importNotesFileInput" accept="application/json,.json" hidden />
       `;
 
@@ -338,10 +338,14 @@
     updateNotesDockState();
   }
 
+  function hasAnyProjectNotes() {
+    return collectAllProjectNotes().some((entry) => Object.keys(entry.notes).length > 0);
+  }
+
   function updateNotesDockState() {
     const paragraph = getCurrentParagraph();
     const hasParagraph = Boolean(paragraph);
-    const hasAnyNotes = Object.values(readAllLocalNotes()).some((value) => String(value || "").trim());
+    const hasAnyNotes = hasAnyProjectNotes();
 
     if (notesCornerDockEl) {
       notesCornerDockEl.hidden = !hasParagraph;
@@ -362,8 +366,41 @@
     }
   }
 
+  function getCurrentDirectoryPath() {
+    return window.location.pathname.replace(/\/[^/]*$/, "") || "/";
+  }
+
+  function getParentDirectoryPath(pathValue) {
+    const normalized = String(pathValue || "/").replace(/\/+$/, "") || "/";
+    const parent = normalized.replace(/\/[^/]*$/, "") || "/";
+    return parent || "/";
+  }
+
+  function getNotesProjectScope() {
+    const explicit = normalizePath(getDatasetValue("notesProjectScope"));
+    if (explicit) {
+      return explicit.startsWith("/") ? explicit : `/${explicit}`;
+    }
+
+    return getParentDirectoryPath(getCurrentDirectoryPath());
+  }
+
+  function getProjectTitle() {
+    const explicit = String(getDatasetValue("notesProjectTitle") || "").trim();
+    if (explicit) return explicit;
+
+    const scope = getNotesProjectScope().replace(/\/+$/, "") || "/";
+    const tail = scope.split("/").filter(Boolean).pop() || "Book Reader";
+
+    try {
+      return decodeURIComponent(tail);
+    } catch (error) {
+      return tail;
+    }
+  }
+
   function getNotesStorageScope() {
-    const pathScope = window.location.pathname.replace(/\/[^/]*$/, "") || "/";
+    const pathScope = getCurrentDirectoryPath();
     const titleScope = String(state.book?.title || "untitled-book").trim() || "untitled-book";
     return `${pathScope}::${titleScope}`;
   }
@@ -494,23 +531,93 @@
     });
   }
 
-  function buildNotesExportPayload() {
+  function getProjectNotesKeyPrefix() {
+    return `${NOTES_STORAGE_PREFIX}::${getNotesProjectScope().replace(/\/+$/, "")}/`;
+  }
+
+  function parseNotesStorageKey(storageKey) {
+    if (!String(storageKey || "").startsWith(`${NOTES_STORAGE_PREFIX}::`)) {
+      return null;
+    }
+
+    const storageScope = String(storageKey).slice(`${NOTES_STORAGE_PREFIX}::`.length);
+    const separatorIndex = storageScope.lastIndexOf("::");
+    if (separatorIndex === -1) {
+      return null;
+    }
+
     return {
-      format: "book-reader-notes-v1",
-      bookTitle: String(state.book?.title || "Untitled Book"),
-      storageScope: getNotesStorageScope(),
+      storageScope,
+      pathScope: storageScope.slice(0, separatorIndex),
+      bookTitle: storageScope.slice(separatorIndex + 2),
+    };
+  }
+
+  function collectAllProjectNotes() {
+    const entries = [];
+    const projectPrefix = getProjectNotesKeyPrefix();
+
+    for (let i = 0; i < localStorage.length; i += 1) {
+      const storageKey = localStorage.key(i);
+      if (!storageKey || !storageKey.startsWith(projectPrefix)) continue;
+
+      const parsedKey = parseNotesStorageKey(storageKey);
+      if (!parsedKey) continue;
+
+      let notes = {};
+      try {
+        const raw = localStorage.getItem(storageKey);
+        const parsedNotes = raw ? JSON.parse(raw) : {};
+        notes = sanitizeImportedNotes(parsedNotes || {});
+      } catch (error) {
+        console.warn("Could not parse stored notes:", error);
+        continue;
+      }
+
+      entries.push({
+        storageKey,
+        storageScope: parsedKey.storageScope,
+        pathScope: parsedKey.pathScope,
+        bookTitle: parsedKey.bookTitle,
+        notes,
+      });
+    }
+
+    return entries.sort((a, b) => {
+      if (a.pathScope === b.pathScope) {
+        return a.bookTitle.localeCompare(b.bookTitle);
+      }
+      return a.pathScope.localeCompare(b.pathScope);
+    });
+  }
+
+  function buildNotesExportPayload() {
+    const books = {};
+    for (const entry of collectAllProjectNotes()) {
+      books[entry.storageScope] = {
+        bookTitle: entry.bookTitle,
+        pathScope: entry.pathScope,
+        notes: entry.notes,
+      };
+    }
+
+    return {
+      format: "book-reader-notes-v2",
+      projectTitle: getProjectTitle(),
+      projectScope: getNotesProjectScope(),
       exportedAt: new Date().toISOString(),
-      notes: readAllLocalNotes(),
+      books,
     };
   }
 
   function getNotesExportFileName() {
-    return `${toSafeFileNameStem(state.book?.title || "Book Reader")}_notes.json`;
+    return `${toSafeFileNameStem(getProjectTitle())}_notes_backup.json`;
   }
 
   async function exportNotesBackup() {
     try {
       const payload = buildNotesExportPayload();
+      const bookCount = Object.keys(payload.books).length;
       const json = JSON.stringify(payload, null, 2);
       const fileName = getNotesExportFileName();
       const blob = new Blob([json], { type: "application/json" });
@@ -520,11 +627,11 @@
           const file = new File([blob], fileName, { type: "application/json" });
           if (navigator.canShare({ files: [file] })) {
             await navigator.share({
-              title: `${state.book?.title || "Book Reader"} notes`,
-              text: "Book Reader notes backup",
+              title: `${getProjectTitle()} notes backup`,
+              text: `${getProjectTitle()} notes backup across ${bookCount} chapter${bookCount === 1 ? "" : "s"}`,
               files: [file],
             });
-            setNotesStatus("Export ready in share sheet");
+            setNotesStatus("Backup ready in share sheet");
             return;
           }
         } catch (error) {
@@ -544,7 +651,7 @@
       link.click();
       link.remove();
       window.setTimeout(() => URL.revokeObjectURL(url), 1200);
-      setNotesStatus("Notes exported");
+      setNotesStatus("Backup exported");
     } catch (error) {
       console.error("Could not export notes:", error);
       setNotesStatus("Export failed");
@@ -567,6 +674,47 @@
     return cleaned;
   }
 
+  function normalizeImportedBooks(parsed) {
+    if (parsed?.format === "book-reader-notes-v2" && parsed?.books && typeof parsed.books === "object") {
+      const normalized = [];
+
+      for (const [storageScope, entry] of Object.entries(parsed.books)) {
+        const cleanStorageScope = String(storageScope || "").trim();
+        if (!cleanStorageScope) continue;
+
+        const notes = sanitizeImportedNotes(entry?.notes || {});
+        const parsedKey = parseNotesStorageKey(`${NOTES_STORAGE_PREFIX}::${cleanStorageScope}`) || {};
+
+        normalized.push({
+          storageScope: cleanStorageScope,
+          pathScope: String(entry?.pathScope || parsedKey.pathScope || "").trim(),
+          bookTitle: String(entry?.bookTitle || parsedKey.bookTitle || "Untitled Book").trim() || "Untitled Book",
+          notes,
+        });
+      }
+
+      return normalized;
+    }
+
+    const singleBookNotes = sanitizeImportedNotes(parsed?.notes ?? parsed);
+    const singleBookStorageScope = String(parsed?.storageScope || getNotesStorageScope()).trim() || getNotesStorageScope();
+    const parsedKey = parseNotesStorageKey(`${NOTES_STORAGE_PREFIX}::${singleBookStorageScope}`) || {};
+
+    return [{
+      storageScope: singleBookStorageScope,
+      pathScope: String(parsed?.pathScope || parsedKey.pathScope || getCurrentDirectoryPath()).trim() || getCurrentDirectoryPath(),
+      bookTitle: String(parsed?.bookTitle || parsedKey.bookTitle || state.book?.title || "Untitled Book").trim() || "Untitled Book",
+      notes: singleBookNotes,
+    }];
+  }
+
+  function clearProjectNotesSnapshot() {
+    const keysToRemove = collectAllProjectNotes().map((entry) => entry.storageKey);
+    keysToRemove.forEach((storageKey) => {
+      localStorage.removeItem(storageKey);
+    });
+  }
+
   async function handleImportNotesFileSelection(event) {
     const input = event?.target;
     const file = input?.files?.[0];
@@ -575,30 +723,36 @@
     try {
       const rawText = await file.text();
       const parsed = JSON.parse(rawText);
-      const importedNotes = sanitizeImportedNotes(parsed?.notes ?? parsed);
-      const importedBookTitle = String(parsed?.bookTitle || "").trim();
+      const importedBooks = normalizeImportedBooks(parsed);
+      const importedProjectTitle = String(parsed?.projectTitle || "").trim();
+      const importedProjectScope = String(parsed?.projectScope || "").trim();
+      const currentProjectScope = getNotesProjectScope();
 
       if (
-        importedBookTitle &&
-        state.book?.title &&
-        importedBookTitle !== state.book.title &&
+        importedProjectTitle &&
+        importedProjectScope &&
+        importedProjectScope !== currentProjectScope &&
         !window.confirm(
-          `This backup is for “${importedBookTitle}”. Import it into the current book “${state.book.title}” anyway?`
+          `This backup is for “${importedProjectTitle}”. Replace the current ${getProjectTitle()} notes with it anyway?`
         )
       ) {
         setNotesStatus("Import cancelled");
         return;
       }
 
-      const mergedNotes = {
-        ...readAllLocalNotes(),
-        ...importedNotes,
-      };
+      clearProjectNotesSnapshot();
 
-      writeAllLocalNotes(mergedNotes);
+      let importedNoteCount = 0;
+      importedBooks.forEach((bookEntry) => {
+        const notes = sanitizeImportedNotes(bookEntry.notes || {});
+        const storageKey = `${NOTES_STORAGE_PREFIX}::${bookEntry.storageScope}`;
+        localStorage.setItem(storageKey, JSON.stringify(notes));
+        importedNoteCount += Object.keys(notes).length;
+      });
+
       updateSectionNoteMarkers();
       renderCurrentParagraphNote();
-      setNotesStatus(`Imported ${Object.keys(importedNotes).length} note${Object.keys(importedNotes).length === 1 ? "" : "s"}`);
+      setNotesStatus(`Imported ${importedNoteCount} note${importedNoteCount === 1 ? "" : "s"} across ${importedBooks.length} chapter${importedBooks.length === 1 ? "" : "s"}`);
     } catch (error) {
       console.error("Could not import notes:", error);
       setNotesStatus("Import failed");
