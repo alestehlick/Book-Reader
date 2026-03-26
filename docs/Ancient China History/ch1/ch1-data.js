@@ -1,5 +1,5 @@
 const BOOK_DATA = {
-  "title": "Ancient China — Chapter 1",
+  "title": "1 — China on the Eve of the Historical Period",
   "language": "en",
   "sections": [
     {
