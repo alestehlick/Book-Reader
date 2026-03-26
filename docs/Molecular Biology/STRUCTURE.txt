@@ -1,0 +1,20 @@
+Molecular Biology/
+├─ app.js
+├─ styles.css
+├─ index.html
+├─ figures/                 # shared by all chapters
+├─ audio/                   # shared by all chapters
+├─ videos/                  # shared by all chapters
+├─ ch10/
+│  ├─ ch10-index.html
+│  ├─ ch10-data.js
+│  └─ ch10-data.json
+└─ ch11/
+   └─ ch11-index.html
+
+Notes:
+- Chapter pages live inside their own folders.
+- Shared media remains at the project root.
+- The chapter HTML points back to ../figures, ../audio, and ../videos.
+- app.js now honors HTML data attributes for media roots, so future chapters can follow the same pattern.
+- app.js also now supports separate Figures and Clips groups when the HTML provides both containers.

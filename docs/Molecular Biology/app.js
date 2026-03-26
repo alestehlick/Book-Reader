@@ -35,7 +35,9 @@
   const mediaSectionEl = document.getElementById("mediaSection");
   const mediaSummaryEl = document.getElementById("mediaSummary");
   const figureGroupEl = document.getElementById("figureGroup");
+  const videoGroupEl = document.getElementById("videoGroup");
   const paragraphFiguresEl = document.getElementById("paragraphFigures");
+  const paragraphVideosEl = document.getElementById("paragraphVideos");
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
@@ -57,6 +59,14 @@
     currentAudioPath: "",
     autoplayRequested: false,
   };
+
+  function getDataConfig() {
+    return {
+      jsUrl: getDatasetValue("bookJs"),
+      jsonUrl: getDatasetValue("bookJson"),
+      prefer: (getDatasetValue("bookDataPreference") || "js").toLowerCase(),
+    };
+  }
 
   function formatTime(seconds) {
     const value = Number.isFinite(seconds) ? Math.max(0, seconds) : 0;
@@ -98,6 +108,55 @@
     return [...new Set(items.filter(Boolean))];
   }
 
+  function getDatasetValue(name) {
+    const root = document.documentElement;
+    const body = document.body;
+    return body.dataset[name] || root.dataset[name] || "";
+  }
+
+  function parseDatasetList(value) {
+    const raw = String(value || "").trim();
+    if (!raw) return [];
+
+    return uniqueStrings(
+      raw
+        .split(/\r?\n|[|,]/)
+        .map((item) => normalizePath(item))
+        .filter(Boolean)
+    );
+  }
+
+  function getMediaConfig() {
+    const audioDirs = parseDatasetList(getDatasetValue("audioDirs"));
+    const figuresDir = normalizePath(getDatasetValue("figuresDir"));
+    const videosDir = normalizePath(getDatasetValue("videosDir"));
+    const videoExtensions = parseDatasetList(getDatasetValue("videoExtensions"));
+
+    return {
+      audioDirs: audioDirs.length > 0 ? audioDirs : [...DEFAULT_AUDIO_DIRS],
+      figuresDir: figuresDir || DEFAULT_FIGURES_DIR,
+      videosDir: videosDir || DEFAULT_VIDEOS_DIR,
+      videoExtensions: videoExtensions.length > 0 ? videoExtensions : [...DEFAULT_VIDEO_EXTENSIONS],
+    };
+  }
+
+  const MEDIA_CONFIG = getMediaConfig();
+
+  function getVideoStackEl() {
+    return paragraphVideosEl || paragraphFiguresEl;
+  }
+
+  function clearMediaStacks() {
+    if (paragraphFiguresEl) {
+      paragraphFiguresEl.innerHTML = "";
+    }
+
+    if (paragraphVideosEl && paragraphVideosEl !== paragraphFiguresEl) {
+      paragraphVideosEl.innerHTML = "";
+    }
+  }
+
+
   function escapeHtml(text) {
     return String(text || "")
       .replaceAll("&", "&amp;")
@@ -115,59 +174,6 @@
   function toSafeUrl(path) {
     if (!path) return "";
     return isAbsoluteLike(path) ? path : encodeURI(path).replace(/#/g, "%23");
-  }
-
-  function replaceBaseNameKeepingExtension(path, newBaseName) {
-    const clean = normalizePath(path);
-    if (!clean) return "";
-    const match = clean.match(/^(.*\/)?([^/]+?)(\.[^.]+)$/);
-    if (!match) return "";
-    const dir = match[1] || "";
-    const ext = match[3] || "";
-    return `${dir}${newBaseName}${ext}`;
-  }
-
-  function inferFallbackDataPaths(configuredPath, desiredKind) {
-    const results = [];
-    const clean = normalizePath(configuredPath);
-
-    if (clean) results.push(clean);
-
-    const expectedExt = desiredKind === "js" ? ".js" : ".json";
-
-    if (clean) {
-      if (clean.includes("chapter1-data")) {
-        results.push(replaceBaseNameKeepingExtension(clean, "ch1-data"));
-      }
-      if (clean.includes("ch1-data")) {
-        results.push(replaceBaseNameKeepingExtension(clean, "chapter1-data"));
-      }
-    }
-
-    if (desiredKind === "js") {
-      results.push("ch1-data.js", "chapter1-data.js");
-    } else {
-      results.push("ch1-data.json", "chapter1-data.json");
-    }
-
-    return uniqueStrings(
-      results.filter((item) => item && item.toLowerCase().endsWith(expectedExt))
-    );
-  }
-
-  function getDataConfig() {
-    const root = document.documentElement;
-    const body = document.body;
-
-    const jsUrl = body.dataset.bookJs || root.dataset.bookJs || "";
-    const jsonUrl = body.dataset.bookJson || root.dataset.bookJson || "";
-    const prefer = (body.dataset.bookDataPreference || root.dataset.bookDataPreference || "js").toLowerCase();
-
-    return {
-      jsCandidates: inferFallbackDataPaths(jsUrl, "js"),
-      jsonCandidates: inferFallbackDataPaths(jsonUrl, "json"),
-      prefer,
-    };
   }
 
   function getCurrentParagraph() {
@@ -258,31 +264,27 @@
     const modes = config.prefer === "json" ? ["json", "js"] : ["js", "json"];
 
     for (const mode of modes) {
-      if (mode === "js") {
-        for (const url of config.jsCandidates) {
-          try {
-            return await readBookDataFromJsFile(url);
-          } catch (error) {
-            console.warn(error);
-          }
+      if (mode === "js" && config.jsUrl) {
+        try {
+          return await readBookDataFromJsFile(config.jsUrl);
+        } catch (error) {
+          console.warn(error);
         }
       }
 
-      if (mode === "json") {
-        for (const url of config.jsonCandidates) {
-          try {
-            const data = await fetchJson(url);
-            window.BOOK_DATA = data;
-            return data;
-          } catch (error) {
-            console.warn(error);
-          }
+      if (mode === "json" && config.jsonUrl) {
+        try {
+          const data = await fetchJson(config.jsonUrl);
+          window.BOOK_DATA = data;
+          return data;
+        } catch (error) {
+          console.warn(error);
         }
       }
     }
 
     throw new Error(
-      "No book data could be loaded. Checked both configured paths and fallback aliases such as ch1-data.js / ch1-data.json."
+      "No book data could be loaded. Provide BOOK_DATA via JS or JSON, or set data-book-json / data-book-js on the HTML root or body."
     );
   }
 
@@ -292,10 +294,7 @@
 
     return {
       ...paragraph,
-      id: String(
-        paragraph?.id ||
-        `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`
-      ),
+      id: String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`),
       text: String(paragraph?.text || ""),
       figures,
       videos,
@@ -349,7 +348,7 @@
           if (cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)) {
             return [cleaned];
           }
-          return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${cleaned}.mp3`));
+          return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${cleaned}.mp3`));
         }
 
         if (typeof entry === "object") {
@@ -361,7 +360,7 @@
           if (explicitPath.includes("/") || hasExtension(explicitPath) || isAbsoluteLike(explicitPath)) {
             return [explicitPath];
           }
-          return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${explicitPath}.mp3`));
+          return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${explicitPath}.mp3`));
         }
 
         return [];
@@ -375,7 +374,7 @@
       return [];
     }
 
-    return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${paragraph.id}.mp3`));
+    return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${paragraph.id}.mp3`));
   }
 
   function resolveFigureEntry(rawEntry, index) {
@@ -385,7 +384,7 @@
       const cleaned = normalizePath(rawEntry);
       const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
         ? cleaned
-        : joinPath(DEFAULT_FIGURES_DIR, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
+        : joinPath(MEDIA_CONFIG.figuresDir, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
 
       return {
         src,
@@ -408,9 +407,9 @@
       if (explicitPath) {
         src = explicitPath.includes("/") || isAbsoluteLike(explicitPath)
           ? explicitPath
-          : joinPath(DEFAULT_FIGURES_DIR, explicitPath);
+          : joinPath(MEDIA_CONFIG.figuresDir, explicitPath);
       } else if (label) {
-        src = joinPath(DEFAULT_FIGURES_DIR, `${label}.png`);
+        src = joinPath(MEDIA_CONFIG.figuresDir, `${label}.png`);
       }
 
       return {
@@ -440,7 +439,7 @@
 
     if (typeof rawEntry === "string") {
       return {
-        sources: resolveNamedMediaSources(rawEntry, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS),
+        sources: resolveNamedMediaSources(rawEntry, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions),
         label: `Clip ${index + 1}`,
         caption: "",
       };
@@ -452,8 +451,8 @@
 
       const explicitPath = rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || "";
       const sources = explicitPath
-        ? resolveNamedMediaSources(explicitPath, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS)
-        : resolveNamedMediaSources(label, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS);
+        ? resolveNamedMediaSources(explicitPath, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions)
+        : resolveNamedMediaSources(label, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions);
 
       return {
         sources,
@@ -620,7 +619,7 @@
       appendMediaCaption(figure, videoData.label, videoData.caption);
 
       wrapper.appendChild(figure);
-      paragraphFiguresEl.appendChild(wrapper);
+      getVideoStackEl().appendChild(wrapper);
     });
   }
 
@@ -641,12 +640,13 @@
   function renderMedia() {
     const current = getCurrentParagraph();
 
-    paragraphFiguresEl.innerHTML = "";
+    clearMediaStacks();
     mediaSummaryEl.textContent = "";
 
     if (!current) {
       mediaSectionEl.hidden = true;
       figureGroupEl.hidden = true;
+      if (videoGroupEl) videoGroupEl.hidden = true;
       return;
     }
 
@@ -668,15 +668,29 @@
     if (totalCount === 0) {
       mediaSectionEl.hidden = true;
       figureGroupEl.hidden = true;
+      if (videoGroupEl) videoGroupEl.hidden = true;
       return;
     }
 
     mediaSectionEl.hidden = false;
-    figureGroupEl.hidden = false;
+    figureGroupEl.hidden = figureCount === 0;
+
+    if (videoGroupEl) {
+      videoGroupEl.hidden = videoCount === 0;
+    }
+
     mediaSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
 
-    renderFigures(rawFigures);
-    renderVideos(rawVideos);
+    if (figureCount > 0) {
+      renderFigures(rawFigures);
+    }
+
+    if (videoCount > 0) {
+      renderVideos(rawVideos);
+      if (!videoGroupEl && figureGroupEl.hidden) {
+        figureGroupEl.hidden = false;
+      }
+    }
   }
 
   function renderTextAndMedia() {
@@ -797,7 +811,7 @@
 
   function updatePlayPauseButton() {
     const current = getCurrentParagraph();
-    const hasAudio = resolveAudioCandidates(current).length > 0;
+    const hasAudio = state.currentAudioCandidates.length > 0;
     playPauseBtn.textContent = hasAudio && !audio.paused ? "Pause" : "Play";
   }
 
@@ -1006,6 +1020,7 @@
       }
 
       bookTitleEl.textContent = state.book.title;
+      document.title = state.book.title;
       buildSectionNav();
 
       state.continuous = continuousToggle.checked;
