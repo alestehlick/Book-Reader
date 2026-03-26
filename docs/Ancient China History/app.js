@@ -59,13 +59,10 @@
   };
 
   function getDataConfig() {
-    const root = document.documentElement;
-    const body = document.body;
-
     return {
-      jsUrl: body.dataset.bookJs || root.dataset.bookJs || "",
-      jsonUrl: body.dataset.bookJson || root.dataset.bookJson || "",
-      prefer: (body.dataset.bookDataPreference || root.dataset.bookDataPreference || "js").toLowerCase(),
+      jsUrl: getDatasetValue("bookJs"),
+      jsonUrl: getDatasetValue("bookJson"),
+      prefer: (getDatasetValue("bookDataPreference") || "js").toLowerCase(),
     };
   }
 
@@ -108,6 +105,40 @@
   function uniqueStrings(items) {
     return [...new Set(items.filter(Boolean))];
   }
+
+  function getDatasetValue(name) {
+    const root = document.documentElement;
+    const body = document.body;
+    return body.dataset[name] || root.dataset[name] || "";
+  }
+
+  function parseDatasetList(value) {
+    const raw = String(value || "").trim();
+    if (!raw) return [];
+
+    return uniqueStrings(
+      raw
+        .split(/\r?\n|[|,]/)
+        .map((item) => normalizePath(item))
+        .filter(Boolean)
+    );
+  }
+
+  function getMediaConfig() {
+    const audioDirs = parseDatasetList(getDatasetValue("audioDirs"));
+    const figuresDir = normalizePath(getDatasetValue("figuresDir"));
+    const videosDir = normalizePath(getDatasetValue("videosDir"));
+    const videoExtensions = parseDatasetList(getDatasetValue("videoExtensions"));
+
+    return {
+      audioDirs: audioDirs.length > 0 ? audioDirs : [...DEFAULT_AUDIO_DIRS],
+      figuresDir: figuresDir || DEFAULT_FIGURES_DIR,
+      videosDir: videosDir || DEFAULT_VIDEOS_DIR,
+      videoExtensions: videoExtensions.length > 0 ? videoExtensions : [...DEFAULT_VIDEO_EXTENSIONS],
+    };
+  }
+
+  const MEDIA_CONFIG = getMediaConfig();
 
   function escapeHtml(text) {
     return String(text || "")
@@ -300,7 +331,7 @@
           if (cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)) {
             return [cleaned];
           }
-          return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${cleaned}.mp3`));
+          return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${cleaned}.mp3`));
         }
 
         if (typeof entry === "object") {
@@ -312,7 +343,7 @@
           if (explicitPath.includes("/") || hasExtension(explicitPath) || isAbsoluteLike(explicitPath)) {
             return [explicitPath];
           }
-          return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${explicitPath}.mp3`));
+          return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${explicitPath}.mp3`));
         }
 
         return [];
@@ -326,7 +357,7 @@
       return [];
     }
 
-    return DEFAULT_AUDIO_DIRS.map((dir) => joinPath(dir, `${paragraph.id}.mp3`));
+    return MEDIA_CONFIG.audioDirs.map((dir) => joinPath(dir, `${paragraph.id}.mp3`));
   }
 
   function resolveFigureEntry(rawEntry, index) {
@@ -336,7 +367,7 @@
       const cleaned = normalizePath(rawEntry);
       const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
         ? cleaned
-        : joinPath(DEFAULT_FIGURES_DIR, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
+        : joinPath(MEDIA_CONFIG.figuresDir, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
 
       return {
         src,
@@ -359,9 +390,9 @@
       if (explicitPath) {
         src = explicitPath.includes("/") || isAbsoluteLike(explicitPath)
           ? explicitPath
-          : joinPath(DEFAULT_FIGURES_DIR, explicitPath);
+          : joinPath(MEDIA_CONFIG.figuresDir, explicitPath);
       } else if (label) {
-        src = joinPath(DEFAULT_FIGURES_DIR, `${label}.png`);
+        src = joinPath(MEDIA_CONFIG.figuresDir, `${label}.png`);
       }
 
       return {
@@ -391,7 +422,7 @@
 
     if (typeof rawEntry === "string") {
       return {
-        sources: resolveNamedMediaSources(rawEntry, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS),
+        sources: resolveNamedMediaSources(rawEntry, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions),
         label: `Clip ${index + 1}`,
         caption: "",
       };
@@ -403,8 +434,8 @@
 
       const explicitPath = rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.video || "";
       const sources = explicitPath
-        ? resolveNamedMediaSources(explicitPath, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS)
-        : resolveNamedMediaSources(label, DEFAULT_VIDEOS_DIR, DEFAULT_VIDEO_EXTENSIONS);
+        ? resolveNamedMediaSources(explicitPath, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions)
+        : resolveNamedMediaSources(label, MEDIA_CONFIG.videosDir, MEDIA_CONFIG.videoExtensions);
 
       return {
         sources,
@@ -748,7 +779,7 @@
 
   function updatePlayPauseButton() {
     const current = getCurrentParagraph();
-    const hasAudio = resolveAudioCandidates(current).length > 0;
+    const hasAudio = state.currentAudioCandidates.length > 0;
     playPauseBtn.textContent = hasAudio && !audio.paused ? "Pause" : "Play";
   }
 
@@ -957,6 +988,7 @@
       }
 
       bookTitleEl.textContent = state.book.title;
+      document.title = state.book.title;
       buildSectionNav();
 
       state.continuous = continuousToggle.checked;

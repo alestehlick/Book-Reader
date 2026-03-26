@@ -1,111 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-book-js="ch1-data.js" data-book-json="ch1-data.json" data-book-data-preference="js">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Audio Reader</title>
+  <title>Ancient China History</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="dark">
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Sections panel">
-      <div class="sidebar-header">
-        <div class="eyebrow">Audio Reader</div>
-        <h1 id="bookTitle">Loading…</h1>
-      </div>
+<body class="dark library-page">
+  <main class="library-shell">
+    <section class="card library-card">
+      <div class="eyebrow">Historical Reader</div>
+      <h1 class="library-title">Ancient China History</h1>
+      <p class="library-intro">
+        This library is now organized chapter by chapter. Shared reader code stays at the project root,
+        while each chapter keeps its own page and data files inside its own folder.
+      </p>
 
-      <div class="sidebar-section">
-        <div class="eyebrow">Sections</div>
-        <nav id="sectionsNav" class="sections-nav"></nav>
-      </div>
-    </aside>
-
-    <div id="sidebarBackdrop" class="sidebar-backdrop" hidden></div>
-
-    <main class="main-panel">
-      <header class="topbar card">
-        <button id="toggleSidebarBtn" class="icon-btn" type="button" aria-label="Toggle sections panel">
-          ☰
-        </button>
-
-        <div class="topbar-center">
-          <div class="eyebrow">Now Reading</div>
-          <div id="nowReadingTitle" class="topbar-title">—</div>
-        </div>
-
-        <button id="themeToggleBtn" class="icon-btn" type="button" aria-label="Toggle theme">
-          ◐
-        </button>
-      </header>
-
-      <section class="card player-card">
-        <div class="player-meta">
-          <div class="eyebrow" id="playerSectionLabel">Section — Paragraph</div>
-          <h2 id="playerParagraphLabel" class="player-paragraph-label">—</h2>
-          <div id="playerTimeRange" class="time-range">0:00</div>
-        </div>
-
-        <div class="player-controls-row">
-          <button id="prevBtn" class="control-btn" type="button">Previous</button>
-          <button id="playPauseBtn" class="control-btn primary" type="button">Play</button>
-          <button id="nextBtn" class="control-btn" type="button">Next</button>
-        </div>
-
-        <div class="toggle-row">
-          <label class="toggle-item">
-            <input id="continuousToggle" type="checkbox" checked />
-            <span>Continuous playback</span>
-          </label>
-
-          <label class="toggle-item">
-            <input id="oneParagraphToggle" type="checkbox" checked />
-            <span>One-paragraph mode</span>
-          </label>
-        </div>
-
-        <div class="progress-wrap">
-          <input id="progressBar" type="range" min="0" max="100" value="0" step="0.1" />
-          <div class="progress-times">
-            <span id="currentTimeLabel">0:00</span>
-            <span id="durationLabel">0:00</span>
+      <div class="chapter-grid">
+        <a class="chapter-link-card" href="ch1/ch1-index.html">
+          <div class="chapter-status">Available now</div>
+          <div class="chapter-name">Chapter 1</div>
+          <div class="chapter-desc">
+            Launch the full audio reader for Chapter 1 with sections, paragraph playback, figures, and context view.
           </div>
-        </div>
-      </section>
+        </a>
 
-      <section class="card current-card">
-        <div class="eyebrow">Current Paragraph</div>
-        <div id="currentParagraphText" class="current-paragraph-text">Loading…</div>
-      </section>
+        <a class="chapter-link-card is-disabled" href="ch2/ch2-index.html">
+          <div class="chapter-status">Prepared</div>
+          <div class="chapter-name">Chapter 2</div>
+          <div class="chapter-desc">
+            Placeholder chapter page already created so the project structure is ready for the next build.
+          </div>
+        </a>
+      </div>
 
-      <section id="mediaSection" class="card media-card" hidden>
-        <div class="media-header">
-          <div class="eyebrow">Figures</div>
-          <div id="mediaSummary" class="media-summary"></div>
-        </div>
-
-        <section id="figureGroup" class="media-group" hidden>
-          <div class="media-group-title">Figures</div>
-          <div id="paragraphFigures" class="media-stack"></div>
-        </section>
-      </section>
-
-      <section id="contextGrid" class="context-grid">
-        <article class="card context-card">
-          <div class="eyebrow">Previous</div>
-          <div id="previousParagraphText" class="context-text">—</div>
-        </article>
-
-        <article class="card context-card">
-          <div class="eyebrow">Next</div>
-          <div id="nextParagraphText" class="context-text">—</div>
-        </article>
-      </section>
-    </main>
-  </div>
-
-  <audio id="audioPlayer" preload="metadata"></audio>
-
-  <!-- app.js can now load either the JS or JSON book file based on the html data attributes above -->
-  <script src="app.js"></script>
+      <p class="chapter-footnote">
+        Recommended structure going forward: keep shared <code>app.js</code> and <code>styles.css</code> here,
+        and place each chapter entry page plus chapter data inside its own folder.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
