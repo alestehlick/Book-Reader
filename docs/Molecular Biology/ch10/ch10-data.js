@@ -1,5 +1,5 @@
 const BOOK_DATA = {
-  "title": "Molecular Biology - Chapter 10",
+  "title": "10 — Membrane Structure",
   "language": "en",
   "sections": [
     {
