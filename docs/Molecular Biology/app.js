@@ -32,6 +32,17 @@
   const nextParagraphTextEl = document.getElementById("nextParagraphText");
   const contextGridEl = document.getElementById("contextGrid");
 
+  let notesPanelEl = null;
+  let notesBodyEl = null;
+  let toggleNotesBtn = null;
+  let notesStatusEl = null;
+  let paragraphNoteInput = null;
+  let clearParagraphNoteBtn = null;
+  let notesCornerDockEl = null;
+  let exportNotesBtn = null;
+  let importNotesBtn = null;
+  let importNotesFileInput = null;
+
   const mediaSectionEl = document.getElementById("mediaSection");
   const mediaSummaryEl = document.getElementById("mediaSummary");
   const figureGroupEl = document.getElementById("figureGroup");
@@ -44,6 +55,10 @@
   const DEFAULT_VIDEOS_DIR = "videos";
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
+  const NOTES_STORAGE_PREFIX = "audio-reader-notes";
+
+  let notesOpen = false;
+  let noteSaveTimer = null;
 
   const state = {
     book: null,
@@ -106,6 +121,17 @@
 
   function uniqueStrings(items) {
     return [...new Set(items.filter(Boolean))];
+  }
+
+  function toSafeFileNameStem(value) {
+    const stem = String(value || "notes")
+      .normalize("NFKD")
+      .replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-zA-Z0-9]+/g, "_")
+      .replace(/^_+|_+$/g, "")
+      .slice(0, 80);
+
+    return stem || "notes";
   }
 
   function getDatasetValue(name) {
@@ -194,6 +220,395 @@
     return Array.isArray(section?.paragraphs) ? section.paragraphs.length : 0;
   }
 
+  function getCurrentCardEl() {
+    return currentParagraphTextEl?.closest(".current-card") || currentParagraphTextEl?.parentElement || null;
+  }
+
+  function getSectionLinkSelector(sectionId) {
+    const escaped =
+      window.CSS && typeof window.CSS.escape === "function"
+        ? window.CSS.escape(String(sectionId || ""))
+        : String(sectionId || "").replace(/"/g, '\\\"');
+    return `.section-link[data-section-id="${escaped}"]`;
+  }
+
+  function ensureNotesUi() {
+    if (!currentParagraphTextEl) return;
+
+    const hostCard = getCurrentCardEl();
+    if (!hostCard) return;
+
+    if (!notesPanelEl) {
+      notesPanelEl = document.createElement("section");
+      notesPanelEl.className = "notes-panel";
+      notesPanelEl.id = "notesPanel";
+      notesPanelEl.innerHTML = `
+        <div class="notes-panel-header">
+          <div class="notes-panel-title-group">
+            <span class="notes-panel-meta">Notes for this paragraph</span>
+          </div>
+          <div class="notes-panel-actions">
+            <span class="notes-status" id="notesStatus">No note yet</span>
+            <button type="button" class="notes-clear-btn" id="clearParagraphNoteBtn" hidden>Clear</button>
+          </div>
+        </div>
+        <div class="notes-body" id="notesBody" hidden>
+          <textarea
+            id="paragraphNoteInput"
+            class="paragraph-note-input"
+            placeholder="Write your reflections, questions, analogies, or reminders for this paragraph..."
+            spellcheck="true"
+          ></textarea>
+        </div>
+      `;
+
+      currentParagraphTextEl.insertAdjacentElement("afterend", notesPanelEl);
+    }
+
+    if (!notesCornerDockEl) {
+      notesCornerDockEl = document.createElement("div");
+      notesCornerDockEl.className = "notes-corner-dock";
+      notesCornerDockEl.id = "notesCornerDock";
+      notesCornerDockEl.innerHTML = `
+        <button type="button" class="notes-corner-btn notes-corner-btn-primary" id="toggleNotesBtn" title="Open or close notes" aria-label="Open or close notes">✎</button>
+        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="exportNotesBtn" title="Export notes backup" aria-label="Export notes backup" hidden>⇩</button>
+        <button type="button" class="notes-corner-btn notes-corner-btn-aux" id="importNotesBtn" title="Import notes backup" aria-label="Import notes backup" hidden>⇧</button>
+        <input type="file" id="importNotesFileInput" accept="application/json,.json" hidden />
+      `;
+
+      document.body.appendChild(notesCornerDockEl);
+    }
+
+    notesBodyEl = document.getElementById("notesBody");
+    toggleNotesBtn = document.getElementById("toggleNotesBtn");
+    notesStatusEl = document.getElementById("notesStatus");
+    paragraphNoteInput = document.getElementById("paragraphNoteInput");
+    clearParagraphNoteBtn = document.getElementById("clearParagraphNoteBtn");
+    exportNotesBtn = document.getElementById("exportNotesBtn");
+    importNotesBtn = document.getElementById("importNotesBtn");
+    importNotesFileInput = document.getElementById("importNotesFileInput");
+
+    if (!toggleNotesBtn?.dataset.bound) {
+      toggleNotesBtn?.addEventListener("click", toggleNotesPanel);
+      toggleNotesBtn.dataset.bound = "true";
+    }
+
+    if (!clearParagraphNoteBtn?.dataset.bound) {
+      clearParagraphNoteBtn?.addEventListener("click", () => {
+        if (!paragraphNoteInput) return;
+        paragraphNoteInput.value = "";
+        saveCurrentParagraphNote("", { statusMessage: "Note cleared" });
+        renderCurrentParagraphNote();
+        if (notesOpen) {
+          paragraphNoteInput.focus();
+        }
+      });
+      clearParagraphNoteBtn.dataset.bound = "true";
+    }
+
+    if (!paragraphNoteInput?.dataset.bound) {
+      paragraphNoteInput?.addEventListener("input", () => {
+        setNotesStatus("Saving...");
+        clearTimeout(noteSaveTimer);
+
+        noteSaveTimer = window.setTimeout(() => {
+          saveCurrentParagraphNote(paragraphNoteInput.value, { statusMessage: "Saved locally" });
+        }, 450);
+      });
+      paragraphNoteInput.dataset.bound = "true";
+    }
+
+    if (!exportNotesBtn?.dataset.bound) {
+      exportNotesBtn?.addEventListener("click", exportNotesBackup);
+      exportNotesBtn.dataset.bound = "true";
+    }
+
+    if (!importNotesBtn?.dataset.bound) {
+      importNotesBtn?.addEventListener("click", () => {
+        importNotesFileInput?.click();
+      });
+      importNotesBtn.dataset.bound = "true";
+    }
+
+    if (!importNotesFileInput?.dataset.bound) {
+      importNotesFileInput?.addEventListener("change", handleImportNotesFileSelection);
+      importNotesFileInput.dataset.bound = "true";
+    }
+
+    updateNotesDockState();
+  }
+
+  function updateNotesDockState() {
+    const paragraph = getCurrentParagraph();
+    const hasParagraph = Boolean(paragraph);
+    const hasAnyNotes = Object.values(readAllLocalNotes()).some((value) => String(value || "").trim());
+
+    if (notesCornerDockEl) {
+      notesCornerDockEl.hidden = !hasParagraph;
+      notesCornerDockEl.classList.toggle("expanded", notesOpen);
+    }
+
+    if (toggleNotesBtn) {
+      toggleNotesBtn.classList.toggle("active", notesOpen);
+      toggleNotesBtn.setAttribute("aria-pressed", notesOpen ? "true" : "false");
+    }
+
+    if (exportNotesBtn) {
+      exportNotesBtn.hidden = !hasParagraph || (!notesOpen && !hasAnyNotes);
+    }
+
+    if (importNotesBtn) {
+      importNotesBtn.hidden = !hasParagraph || !notesOpen;
+    }
+  }
+
+  function getNotesStorageScope() {
+    const pathScope = window.location.pathname.replace(/\/[^/]*$/, "") || "/";
+    const titleScope = String(state.book?.title || "untitled-book").trim() || "untitled-book";
+    return `${pathScope}::${titleScope}`;
+  }
+
+  function getBookNotesStorageKey() {
+    return `${NOTES_STORAGE_PREFIX}::${getNotesStorageScope()}`;
+  }
+
+  function readAllLocalNotes() {
+    try {
+      const raw = localStorage.getItem(getBookNotesStorageKey());
+      return raw ? JSON.parse(raw) : {};
+    } catch (error) {
+      console.warn("Could not read notes from localStorage:", error);
+      return {};
+    }
+  }
+
+  function writeAllLocalNotes(notesMap) {
+    try {
+      localStorage.setItem(getBookNotesStorageKey(), JSON.stringify(notesMap));
+    } catch (error) {
+      console.warn("Could not write notes to localStorage:", error);
+    }
+  }
+
+  function setNotesStatus(message) {
+    if (notesStatusEl) {
+      notesStatusEl.textContent = String(message || "");
+    }
+  }
+
+  function updateClearNoteButton(noteText) {
+    if (clearParagraphNoteBtn) {
+      clearParagraphNoteBtn.hidden = !String(noteText || "").trim();
+    }
+  }
+
+  function getCurrentParagraphNote() {
+    const paragraph = getCurrentParagraph();
+    if (!paragraph) return "";
+
+    const notesMap = readAllLocalNotes();
+    return typeof notesMap[paragraph.id] === "string" ? notesMap[paragraph.id] : "";
+  }
+
+  function saveCurrentParagraphNote(text, options = {}) {
+    const paragraph = getCurrentParagraph();
+    if (!paragraph) return;
+
+    const notesMap = readAllLocalNotes();
+    const cleaned = String(text || "").replace(/\s+$/u, "");
+
+    if (cleaned.trim()) {
+      notesMap[paragraph.id] = cleaned;
+    } else {
+      delete notesMap[paragraph.id];
+    }
+
+    writeAllLocalNotes(notesMap);
+    updateClearNoteButton(cleaned);
+    updateSectionNoteMarkers();
+    setNotesStatus(options.statusMessage || (cleaned.trim() ? "Saved locally" : "No note yet"));
+    updateNotesDockState();
+  }
+
+  function renderCurrentParagraphNote() {
+    ensureNotesUi();
+
+    if (!notesPanelEl) return;
+
+    const paragraph = getCurrentParagraph();
+    notesPanelEl.hidden = !paragraph;
+    if (!paragraph) return;
+
+    const noteText = getCurrentParagraphNote();
+
+    if (paragraphNoteInput) {
+      paragraphNoteInput.value = noteText;
+    }
+
+    if (notesBodyEl) {
+      notesBodyEl.hidden = !notesOpen;
+    }
+
+    updateClearNoteButton(noteText);
+    setNotesStatus(noteText.trim() ? "Saved locally" : "No note yet");
+    updateNotesDockState();
+  }
+
+  function toggleNotesPanel() {
+    notesOpen = !notesOpen;
+
+    if (notesBodyEl) {
+      notesBodyEl.hidden = !notesOpen;
+    }
+
+    updateNotesDockState();
+
+    if (notesOpen && paragraphNoteInput) {
+      paragraphNoteInput.focus();
+      paragraphNoteInput.setSelectionRange(
+        paragraphNoteInput.value.length,
+        paragraphNoteInput.value.length
+      );
+    }
+  }
+
+  function updateSectionNoteMarkers() {
+    if (!Array.isArray(state.book?.sections) || state.flatParagraphs.length === 0) return;
+
+    const notesMap = readAllLocalNotes();
+
+    document.querySelectorAll(".section-link").forEach((button) => {
+      button.classList.remove("has-note-indicator");
+    });
+
+    state.book.sections.forEach((section) => {
+      const hasNote = state.flatParagraphs.some((paragraph) => {
+        if (paragraph.sectionId !== section.id) return false;
+        return Boolean(String(notesMap[paragraph.id] || "").trim());
+      });
+
+      if (!hasNote) return;
+
+      const button = document.querySelector(getSectionLinkSelector(section.id));
+      button?.classList.add("has-note-indicator");
+    });
+  }
+
+  function buildNotesExportPayload() {
+    return {
+      format: "book-reader-notes-v1",
+      bookTitle: String(state.book?.title || "Untitled Book"),
+      storageScope: getNotesStorageScope(),
+      exportedAt: new Date().toISOString(),
+      notes: readAllLocalNotes(),
+    };
+  }
+
+  function getNotesExportFileName() {
+    return `${toSafeFileNameStem(state.book?.title || "Book Reader")}_notes.json`;
+  }
+
+  async function exportNotesBackup() {
+    try {
+      const payload = buildNotesExportPayload();
+      const json = JSON.stringify(payload, null, 2);
+      const fileName = getNotesExportFileName();
+      const blob = new Blob([json], { type: "application/json" });
+
+      if (typeof File === "function" && navigator.share && navigator.canShare) {
+        try {
+          const file = new File([blob], fileName, { type: "application/json" });
+          if (navigator.canShare({ files: [file] })) {
+            await navigator.share({
+              title: `${state.book?.title || "Book Reader"} notes`,
+              text: "Book Reader notes backup",
+              files: [file],
+            });
+            setNotesStatus("Export ready in share sheet");
+            return;
+          }
+        } catch (error) {
+          if (error?.name === "AbortError") {
+            setNotesStatus("Export cancelled");
+            return;
+          }
+          console.warn("Share export fell back to direct download:", error);
+        }
+      }
+
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1200);
+      setNotesStatus("Notes exported");
+    } catch (error) {
+      console.error("Could not export notes:", error);
+      setNotesStatus("Export failed");
+    }
+  }
+
+  function sanitizeImportedNotes(rawNotes) {
+    if (!rawNotes || typeof rawNotes !== "object" || Array.isArray(rawNotes)) {
+      throw new Error("Invalid notes payload.");
+    }
+
+    const cleaned = {};
+    for (const [key, value] of Object.entries(rawNotes)) {
+      if (typeof value !== "string") continue;
+      const noteText = value.replace(/\s+$/u, "");
+      if (!noteText.trim()) continue;
+      cleaned[String(key)] = noteText;
+    }
+
+    return cleaned;
+  }
+
+  async function handleImportNotesFileSelection(event) {
+    const input = event?.target;
+    const file = input?.files?.[0];
+    if (!file) return;
+
+    try {
+      const rawText = await file.text();
+      const parsed = JSON.parse(rawText);
+      const importedNotes = sanitizeImportedNotes(parsed?.notes ?? parsed);
+      const importedBookTitle = String(parsed?.bookTitle || "").trim();
+
+      if (
+        importedBookTitle &&
+        state.book?.title &&
+        importedBookTitle !== state.book.title &&
+        !window.confirm(
+          `This backup is for “${importedBookTitle}”. Import it into the current book “${state.book.title}” anyway?`
+        )
+      ) {
+        setNotesStatus("Import cancelled");
+        return;
+      }
+
+      const mergedNotes = {
+        ...readAllLocalNotes(),
+        ...importedNotes,
+      };
+
+      writeAllLocalNotes(mergedNotes);
+      updateSectionNoteMarkers();
+      renderCurrentParagraphNote();
+      setNotesStatus(`Imported ${Object.keys(importedNotes).length} note${Object.keys(importedNotes).length === 1 ? "" : "s"}`);
+    } catch (error) {
+      console.error("Could not import notes:", error);
+      setNotesStatus("Import failed");
+    } finally {
+      if (input) {
+        input.value = "";
+      }
+    }
+  }
+
   function setLoadError(message) {
     bookTitleEl.textContent = "Loading failed";
     nowReadingTitleEl.textContent = "—";
@@ -203,6 +618,12 @@
     mediaSectionEl.hidden = true;
     figureGroupEl.hidden = true;
     contextGridEl.style.display = "none";
+    if (notesPanelEl) {
+      notesPanelEl.hidden = true;
+    }
+    if (notesCornerDockEl) {
+      notesCornerDockEl.hidden = true;
+    }
   }
 
   function getGlobalBookData() {
@@ -725,6 +1146,7 @@
     nowReadingTitleEl.textContent = sectionLabel;
 
     renderParagraphText(current);
+    renderCurrentParagraphNote();
 
     previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
     nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
@@ -1022,6 +1444,8 @@
       bookTitleEl.textContent = state.book.title;
       document.title = state.book.title;
       buildSectionNav();
+      ensureNotesUi();
+      updateSectionNoteMarkers();
 
       state.continuous = continuousToggle.checked;
       state.oneParagraphMode = oneParagraphToggle.checked;

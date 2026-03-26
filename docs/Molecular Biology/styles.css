@@ -447,6 +447,156 @@ img {
   margin-top: 1.05em;
 }
 
+.notes-panel {
+  margin: 22px auto 0;
+  max-width: 44em;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.notes-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.notes-panel-title-group,
+.notes-panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.notes-panel-meta,
+.notes-status {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.notes-clear-btn {
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 12px;
+  background: transparent;
+  color: var(--muted);
+  transition:
+    transform 150ms ease,
+    background 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    opacity 150ms ease;
+  opacity: 0.8;
+}
+
+.notes-clear-btn:hover,
+.notes-clear-btn:focus-visible {
+  transform: translateY(-1px);
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(192, 154, 98, 0.18);
+  opacity: 1;
+}
+
+.notes-body {
+  margin-top: 12px;
+}
+
+.paragraph-note-input {
+  width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.028);
+  color: var(--text-soft);
+  padding: 16px 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 19px;
+  line-height: 1.65;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.paragraph-note-input:focus {
+  border-color: rgba(192, 154, 98, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.notes-corner-dock {
+  position: fixed;
+  right: max(14px, env(safe-area-inset-right, 0px) + 10px);
+  bottom: max(16px, env(safe-area-inset-bottom, 0px) + 10px);
+  z-index: 35;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.notes-corner-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(11, 17, 26, 0.72);
+  color: rgba(235, 230, 220, 0.84);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0.68;
+  transition:
+    transform 160ms ease,
+    opacity 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.notes-corner-btn:hover,
+.notes-corner-btn:focus-visible,
+.notes-corner-dock.expanded .notes-corner-btn {
+  opacity: 0.96;
+}
+
+.notes-corner-btn:hover,
+.notes-corner-btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.notes-corner-btn-primary.active {
+  background: rgba(34, 42, 56, 0.92);
+  border-color: rgba(192, 154, 98, 0.22);
+  color: rgba(244, 232, 207, 0.96);
+  opacity: 0.94;
+}
+
+.notes-corner-btn-aux {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+}
+
+.section-link.has-note-indicator::after {
+  content: "●";
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--accent-2);
+  font-size: 13px;
+  vertical-align: middle;
+}
+
 .media-card {
   padding: 28px 32px 34px;
   display: grid;
@@ -632,6 +782,15 @@ body.sidebar-collapsed .main-panel {
     font-size: clamp(21px, 4.6vw, 28px);
     line-height: 1.74;
     max-width: 100%;
+  }
+
+  .notes-panel {
+    max-width: 100%;
+  }
+
+  .paragraph-note-input {
+    min-height: 160px;
+    font-size: 18px;
   }
 
   .context-text {
@@ -947,5 +1106,24 @@ body.sidebar-collapsed .main-panel {
 
   .chapter-name {
     font-size: 24px;
+  }
+}
+
+
+@media (max-width: 980px) {
+  .notes-corner-dock {
+    right: max(10px, env(safe-area-inset-right, 0px) + 8px);
+    bottom: max(12px, env(safe-area-inset-bottom, 0px) + 8px);
+    gap: 7px;
+  }
+
+  .notes-corner-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .notes-corner-btn-aux {
+    width: 32px;
+    height: 32px;
   }
 }
