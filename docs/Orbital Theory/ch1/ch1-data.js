@@ -1,37 +1,44 @@
 const BOOK_DATA = {
-  "title": "1 — Molecular Orbital Theory",
+  "title": "1 — Theories of Valence",
   "language": "en",
   "sections": [
     {
       "id": "01.01",
       "number": "01.01",
-      "title": "The Hydrogen One S Orbital",
+      "title": "What a theory of valence must explain",
       "paragraphs": [
         {
           "id": "01.01-p001",
-          "text": "We begin with hydrogen because it gives us the cleanest possible stage on which to watch a bond come into being.\nA hydrogen atom contains only a proton and one electron, so the whole problem is to describe where that electron is likely to be found and how its distribution is shaped in space.\nThe wave function is the hidden mathematical description behind that distribution, and only its square corresponds to an observable probability.\nFor the present book, the important state is the lowest one in energy, the one s orbital.\nThat orbital is spherically symmetric around the nucleus, densest at the center, and rapidly diminishing as one moves outward.\nA simple circle is often used as a practical sketch of this orbital, but that sketch is only the beginning.\nIt tells us roughly where the electron is likely to be found, yet it conceals much of the finer structure that later becomes chemically important.\nMore detailed contour pictures and cloud pictures restore some of that lost subtlety.\nThey also introduce one of the book's most useful habits of speech, the idea of electron density.\nInstead of imagining an electron as a tiny bead circling a nucleus, we begin to think in terms of a distributed presence, concentrated in some regions and sparse in others.",
-          "visuals": [
-            {
-              "id": "fig-1.1",
-              "label": "Figure 1.1",
-              "kind": "figure",
-              "caption": "Three ways of picturing the hydrogen one s orbital. The simple contour, the richer contour map, and the cloud picture all point to the same lesson: electron density is spread out, not bead-like."
-            }
-          ],
+          "text": "This chapter begins at the right place.\nBefore we chase fine structural detail, we have to ask what any serious theory of valence is actually supposed to explain.",
+          "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p002",
-          "text": "Another way to look at the same orbital is to ask how much of the electron cloud lies outside a given radius.\nThat picture makes the falloff with distance vivid and also helps us see why empirical sizes such as the van der Waals radius are useful but not fundamental.\nThe radial density plot adds a further twist.\nAlthough the wave function itself is largest at the nucleus, the most probable distance is not zero but the Bohr radius, about zero point five two nine angstrom.\nThat is a fine early lesson in quantum thinking.\nThe shape of a function and the place where an electron is most likely to be found are not always the same thing.",
-          "visuals": [
-            {
-              "id": "fig-1.2",
-              "label": "Figure 1.2",
-              "kind": "figure",
-              "caption": "Two radial views of the hydrogen one s orbital. One shows how little electron density survives far from the nucleus, and the other shows that the most probable distance is the Bohr radius rather than the nucleus itself."
-            }
-          ],
+          "text": "The first question is the most basic one.\nWhy do atoms bind at all.\nWhy do two hydrogen atoms settle into H two, while two helium atoms do not produce a comparable stable molecule.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p003",
+          "text": "The next question concerns proportion.\nChemistry does not merely tell us that atoms combine, but that they combine in definite ratios, and sometimes in more than one ratio.\nThe old image of little valence knobs on the surface of an atom is too crude to cope with that richness.\nIt may explain why hydrogen saturates at H two rather than H three, but it does not really explain how carbon can give both carbon monoxide and carbon dioxide, or why valence changes with position in the periodic table.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p004",
+          "text": "Then comes geometry.\nA good theory must explain not only which atoms bind, but how they sit in space.\nIt must account for the tetrahedral H C H angles of methane, for the wider chlorine angles in chloroform, for the linear form of carbon dioxide, and for the bent shape of water.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p005",
+          "text": "And that is still not enough.\nModern measurements reveal bond lengths, bond angles, and finer bond properties that lie far beyond the old habit of drawing one line for a single bond and two for a double bond.\nA satisfying theory should gather all of this into one account.\nIt should tell us whether an atom can bind, how many partners it can hold, how they will be arranged, and what the individual bond is really like.",
+          "visuals": [],
           "equations": [],
           "videos": []
         }
@@ -40,65 +47,27 @@ const BOOK_DATA = {
     {
       "id": "01.02",
       "number": "01.02",
-      "title": "Building H Two from Two Atomic Orbitals",
+      "title": "Why valence must be electronic",
       "paragraphs": [
         {
           "id": "01.02-p001",
-          "text": "When two hydrogen atoms approach one another, we no longer want two isolated pictures.\nWe need one description for the pair, a molecular orbital spread across the whole molecule.\nThe first approximation is deliberately modest.\nWe assume that each atom remains recognizably itself, and we build the molecular orbital by combining the two one s atomic orbitals.\nEquation 1 point 1 expresses that idea.\nThe new orbital is written as a weighted combination of the two atomic contributions, and the coefficients tell us how much each atom is participating.",
+          "text": "In the end, to describe bonding is to describe how electrons are distributed around nuclei.\nEarly electronic theories saw those electrons as fixed point charges arranged in neat geometrical patterns, often cubes or tetrahedra, and they used that picture to support the octet rule and its link with the periodic table.",
           "visuals": [],
-          "equations": [
-            {
-              "id": "eq-1.1",
-              "label": "1.1",
-              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2",
-              "spoken": "Equation 1 point 1 writes the molecular orbital as a weighted combination of the two atomic orbitals.",
-              "note": "The key idea is that the molecular orbital is built from familiar atomic pieces rather than invented from nothing."
-            }
-          ],
+          "equations": [],
           "videos": []
         },
         {
           "id": "01.02-p002",
-          "text": "Once that combination is squared, the decisive new term appears.\nIt is the cross term, and it tells us that simple addition is not the whole story.\nTwo distinct combinations become possible.\nIn one, the orbitals meet with the same sign, electron density is drawn into the region between the nuclei, and the negative charge helps hold the two protons together.\nThat is the bonding orbital.\nIn the other, the signs oppose one another, a node appears between the nuclei, and the electron distribution no longer helps to bind the atoms.\nThat is the antibonding orbital.\nThe contrast is one of the great recurring themes of chemistry.\nA good overlap is not merely a matter of nearness, but of fit, phase, and where the electron density ends up.",
-          "visuals": [
-            {
-              "id": "fig-1.3",
-              "label": "Figure 1.3",
-              "kind": "figure",
-              "caption": "The two molecular orbitals formed when two hydrogen one s orbitals combine. The bonding orbital concentrates electron density between the nuclei, while the antibonding orbital introduces a node and works against binding."
-            }
-          ],
-          "equations": [
-            {
-              "id": "eq-1.2",
-              "label": "1.2",
-              "latex": "\\psi^2 = (c_1\\phi_1 + c_2\\phi_2)^2 = (c_1\\phi_1)^2 + (c_2\\phi_2)^2 + 2 c_1 c_2 \\phi_1 \\phi_2",
-              "spoken": "Equation 1 point 2 shows that squaring the combined orbital produces a cross term as well as the two separate atomic contributions.",
-              "note": "That extra term is what allows the electron density between the nuclei to increase or decrease, giving bonding and antibonding solutions."
-            }
-          ],
+          "text": "But a static picture of charges cannot be the real answer.\nElectrostatics itself says that such a distribution cannot be stably at rest.\nEven the earliest ionic pictures had this weakness.\nOpposite ions attract, yes, but something else must keep the structure from collapsing.\nAnd if that difficulty already appears in ionic solids, it becomes sharper still for covalent molecules like H two, where neutral atoms somehow attract one another strongly enough to bind.",
+          "visuals": [],
+          "equations": [],
           "videos": []
         },
         {
           "id": "01.02-p003",
-          "text": "Equation 1 point 3 gives a compact way to measure this fit.\nThe overlap integral starts at essentially zero when the atoms are far apart and grows as the orbitals begin to interpenetrate.\nFigure 1 point 4 is useful because it turns that abstract statement into a visible curve.\nAs the atoms are brought together, overlap steadily rises.\nWithout overlap there is no real sharing, and without sharing there is no bond.",
-          "visuals": [
-            {
-              "id": "fig-1.4",
-              "label": "Figure 1.4",
-              "kind": "figure",
-              "caption": "The overlap integral for two hydrogen one s orbitals as the internuclear distance changes. The lesson is simple: real bonding requires real overlap, and overlap grows as the atoms come together."
-            }
-          ],
-          "equations": [
-            {
-              "id": "eq-1.3",
-              "label": "1.3",
-              "latex": "S_{12} = \\int \\phi_1 \\phi_2 \\, d\\tau",
-              "spoken": "Equation 1 point 3 defines the overlap integral.",
-              "note": "It measures how much the two atomic orbitals overlap in space, which is why it is central to bond formation."
-            }
-          ],
+          "text": "Bohr's model was the first serious attempt to make the picture dynamic.\nIt succeeded brilliantly for the hydrogen atom by giving discrete orbits and discrete energies, and so it explained spectroscopic lines with astonishing accuracy.\nBut it failed for systems with more than one electron or more than one nucleus.\nThe deeper problem was that it carried classical ideas too far.\nAt the electronic scale, a sharply defined orbit is not a literal observable track.\nThat is why valence theory had to pass into quantum mechanics, and especially wave mechanics.\nOnly there do we get a framework that can, in principle and often in practice, build a coherent theory of molecular structure and properties.",
+          "visuals": [],
+          "equations": [],
           "videos": []
         }
       ]
@@ -106,93 +75,70 @@ const BOOK_DATA = {
     {
       "id": "01.03",
       "number": "01.03",
-      "title": "Energy, Overlap, and Why Helium Does Not Bond",
+      "title": "Energy as the key test",
       "paragraphs": [
         {
           "id": "01.03-p001",
-          "text": "Equations 1 point 4 and 1 point 5 translate the orbital story into an energy story.\nThe alpha term represents the energy of an electron in an isolated atomic orbital, while beta measures the extra effect of interaction across the two atoms.\nBeta is the language of delocalization in this simplest setting.\nBecause beta is negative, it lowers the energy of the bonding combination and raises the energy of the antibonding one.\nThat is why the bonding orbital lies below the atomic starting point and the antibonding orbital lies above it.",
+          "text": "Broadly speaking, two atoms form a molecule because the total energy falls when the atoms come together.\nFor most purposes, the decisive quantity is the electronic energy, together with the repulsion between the nuclei.\nThe energies of vibration, rotation, and translation matter, especially in spectroscopy, but they are usually small compared with the main electronic terms.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p002",
+          "text": "This is why energy sits at the center of valence theory.\nHydrogen forms H two rather than H three because the relevant electronic energy is lower for the diatomic arrangement.\nWater has its particular bond lengths and its bent angle because the energy reaches a minimum there.\nSo a real theory must show how energy changes as the nuclei move.\nFrom that one can recover equilibrium structure, restoring forces, and vibrational behavior.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p003",
+          "text": "At this point an important distinction appears.\nThe electronic binding energy is not quite the same as the experimentally observed dissociation energy.\nReal molecules are vibrating, rotating, and translating.\nZero point vibration matters most among these corrections, while rotational and translational terms are usually smaller.\nFor a diatomic molecule, the observed bond energy therefore depends slightly on temperature, even though the underlying electronic binding energy does not.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p004",
+          "text": "For larger molecules, another complication enters.\nBreaking one bond is not always the same thing as dividing the total binding energy evenly among all the bonds.\nAfter one bond breaks, the fragments can reorganize electronically and recover part of the energy.\nWater gives a simple example.\nIts total binding energy is about 9 point 49 electron volts, but the first O H bond requires about 5 point 18 electron volts to break, and the second only about 4 point 31.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p005",
+          "text": "There is also a thermodynamic distinction.\nExperimental bond energies are commonly inferred from heats of reaction measured at ordinary temperature and pressure.\nStrictly speaking, those are enthalpy changes rather than pure internal energy changes, because one must also reckon with the pressure volume term.\nFor the purposes of this book, the main concern remains electronic binding energy, but it is useful to know what has been folded into the experimental numbers.",
           "visuals": [],
           "equations": [
             {
-              "id": "eq-1.4",
-              "label": "1.4",
-              "latex": "E = \\frac{\\alpha + \\beta}{1 + S}",
-              "spoken": "Equation 1 point 4 gives the energy of the bonding molecular orbital.",
-              "note": "The important point is that interaction lowers the energy of the bonding combination."
-            },
-            {
-              "id": "eq-1.5",
-              "label": "1.5",
-              "latex": "E = \\frac{\\alpha - \\beta}{1 - S}",
-              "spoken": "Equation 1 point 5 gives the energy of the antibonding molecular orbital.",
-              "note": "Here the same interaction raises the energy, which is why the antibonding orbital resists bond formation."
+              "id": "eq-enthalpy-relation",
+              "label": "H = U + PV",
+              "latex": "H = U + PV",
+              "spoken": "This relation says that enthalpy equals internal energy plus the pressure volume term.",
+              "note": "It explains why measured heats of reaction are not exactly the same thing as pure electronic binding energies."
             }
           ],
           "videos": []
         },
         {
-          "id": "01.03-p002",
-          "text": "Figure 1 point 5 then adds the other half of the drama.\nAs the atoms approach, the electrons may stabilize the system, but the nuclei repel one another more and more strongly.\nThe actual bond length appears where these two tendencies reach a compromise.\nFor the bonding orbital, the total energy curve dips to a minimum.\nFor the antibonding orbital, it does not.\nThat difference captures in one picture the practical meaning of bonding and antibonding.\nIt also explains why merely forming molecular orbitals does not guarantee that a stable molecule will result.",
+          "id": "01.03-p006",
+          "text": "The table for H two makes the scale of these corrections vivid.\nThe electronic binding energy is about 458 kilojoules per mole, while the observed bond energy is about 435.\nThe zero point vibrational correction is therefore noticeable, whereas the rotational, translational, and pressure volume corrections are comparatively small.\nThe lesson is sobering.\nBinding energy is only a small residue left after subtracting two much larger electronic energies.\nThat is why accurate first principles calculations of bonding are so demanding.\nAnd the energies involved are electrical, not gravitational, by an overwhelming margin.",
           "visuals": [
             {
-              "id": "fig-1.5",
-              "label": "Figure 1.5",
-              "kind": "figure",
-              "caption": "Electronic attraction and nuclear repulsion plotted against internuclear distance. The bonding case produces a minimum in the total energy, whereas the antibonding case does not."
+              "id": "table-h2-energy-values",
+              "label": "Some energy values for H2",
+              "kind": "table",
+              "caption": "A compact comparison of the main energy terms for molecular hydrogen. The point is not to memorize every number, but to see that zero point vibration matters and that binding energy is a small difference between far larger totals."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.03-p003",
-          "text": "There is another asymmetry worth noticing.\nThe bonding orbital is not lowered quite as much as the antibonding orbital is raised.\nNor does putting a second electron into the bonding orbital simply double the gain, because the two electrons must still share space and repel one another.\nThis is where electron correlation enters the story.\nEven when two electrons occupy the same orbital with opposite spins, they do not move with total indifference to each other.\nTheir motions remain subtly coordinated, and careful calculations sometimes refine the average picture by allowing for that extra detail.\nThe point matters immediately for helium.\nIf two helium atoms tried to combine in the same way, electrons would fill both the bonding and the antibonding orbitals.\nSince the antibonding penalty outweighs the bonding benefit, the pair does not hold together as a stable He two molecule.",
-          "visuals": [
-            {
-              "id": "fig-1.5",
-              "label": "Figure 1.5",
-              "kind": "figure",
-              "caption": "The same energy curves also explain why filling an antibonding orbital is so costly. The repulsive contribution wins unless enough bonding occupation compensates for it."
-            }
-          ],
-          "equations": [
-            {
-              "id": "eq-1.4",
-              "label": "1.4",
-              "latex": "E = \\frac{\\alpha + \\beta}{1 + S}",
-              "spoken": "Equation 1 point 4 is the bonding energy expression.",
-              "note": "Used here to explain why the bonding orbital lowers the total energy only by a limited amount."
-            },
-            {
-              "id": "eq-1.5",
-              "label": "1.5",
-              "latex": "E = \\frac{\\alpha - \\beta}{1 - S}",
-              "spoken": "Equation 1 point 5 is the antibonding energy expression.",
-              "note": "Used here to explain why antibonding raises the energy more strongly than bonding lowers it."
-            }
-          ],
-          "videos": []
-        },
-        {
-          "id": "01.03-p004",
-          "text": "Equations 1 point 6 and 1 point 7 finally show where alpha and beta come from.\nThey are integrals built from the Hamiltonian, the operator that represents the energy of the system.\nEven without dwelling on the mathematics, we can already hear the physical difference.\nAlpha belongs to an electron on its own atom, while beta belongs to the interaction between one atom and the other.",
+          "id": "01.03-p007",
+          "text": "A final consequence follows from this way of thinking.\nBecause bond energy is a small difference between large quantities, it is exquisitely sensitive to the exact identity and arrangement of the atoms involved.\nThat is why the hydrogen fluoride bond is far stronger than either the hydrogen-hydrogen bond or the fluorine-fluorine bond.\nWhy phosphorus makes stable P four while nitrogen does not form an analogous stable tetrahedron.\nAnd why even noble gases can form substantial bonds in compounds such as xenon difluoride.\nA theory of valence succeeds only if it can explain that kind of specificity.",
           "visuals": [],
-          "equations": [
-            {
-              "id": "eq-1.6",
-              "label": "1.6",
-              "latex": "\\alpha = \\int \\phi_1 H \\phi_1 \\, d\\tau",
-              "spoken": "Equation 1 point 6 defines alpha as an integral associated with an electron on its own atom.",
-              "note": "Alpha captures the energy contribution of the isolated atomic setting."
-            },
-            {
-              "id": "eq-1.7",
-              "label": "1.7",
-              "latex": "\\beta = \\int \\phi_1 H \\phi_2 \\, d\\tau",
-              "spoken": "Equation 1 point 7 defines beta as an integral associated with interaction between the two atoms.",
-              "note": "Beta is the term that carries the effect of delocalization and interaction across the bond."
-            }
-          ],
+          "equations": [],
           "videos": []
         }
       ]
@@ -200,34 +146,107 @@ const BOOK_DATA = {
     {
       "id": "01.04",
       "number": "01.04",
-      "title": "What the Orbital Pictures Really Show",
+      "title": "Reading energy diagrams",
       "paragraphs": [
         {
           "id": "01.04-p001",
-          "text": "The standard bonding and antibonding sketches are useful, but they are still simplified emblems.\nFigure 1 point 6 lets us look more carefully at the contour structure of the two molecular orbitals.\nIn the bonding orbital, electron density is pulled inward toward the region between the nuclei.\nFarther out, the contours wrap around the two nuclei in one shared envelope.\nThe picture quietly reinforces the main lesson.\nA bond forms when electron density gathers in the region that can attract both nuclei at once.",
+          "text": "Energy diagrams condense a great deal of chemistry into a single picture.\nFigure 1.1 begins with the simplest case, a particle held near the origin by a restoring force.\nThe farther the particle is displaced, the more potential energy is stored, and in this idealized case the curve is a parabola.\nAt any chosen position, the total energy divides between potential and kinetic energy.",
           "visuals": [
             {
-              "id": "fig-1.6",
-              "label": "Figure 1.6",
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
               "kind": "figure",
-              "caption": "Contour views of the bonding and antibonding orbitals of hydrogen. The bonding contours are drawn inward between the nuclei, while the antibonding contours are pushed outward and separated by a node."
+              "caption": "Two energy diagrams placed side by side. The first shows a particle in a parabolic well, and the second translates the same logic into the potential energy curve of a diatomic molecule."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-hooke-force",
+              "label": "F = -kx",
+              "latex": "F = -kx",
+              "spoken": "This says the restoring force points back toward equilibrium and grows in proportion to the displacement.",
+              "note": "It is the standard linear force law behind the harmonic approximation."
+            },
+            {
+              "id": "eq-harmonic-potential",
+              "label": "V(x) = 1/2 k x^2",
+              "latex": "V(x)=\\tfrac{1}{2}kx^2",
+              "spoken": "The potential energy rises with the square of the displacement, so the graph is a parabola.",
+              "note": "This is the energy form associated with a linear restoring force."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.04-p002",
+          "text": "That picture immediately shows what classical vibration means.\nWhere the kinetic energy falls to zero, the motion turns around.\nThose turning points define the classically allowed region and therefore the amplitude of the vibration.\nAt the bottom of the curve the force vanishes, and because the point is a minimum, the equilibrium is stable.\nQuantum mechanics changes the interpretation, but not the usefulness, of the diagram.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "The vertical slices of the curve show how total energy is shared between kinetic and potential energy. The turning points are where the kinetic part falls to zero and the motion reverses."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-energy-conservation",
+              "label": "E = T + V",
+              "latex": "E = T + V",
+              "spoken": "This is the conservation of energy statement for the vibrating particle. Total energy is the sum of kinetic and potential energy.",
+              "note": "It lets the diagram show, at each position, how much of the energy is kinetic and how much is potential."
+            },
+            {
+              "id": "eq-force-gradient",
+              "label": "F = -dV/dx",
+              "latex": "F=-\\dfrac{dV}{dx}",
+              "spoken": "The force is the negative slope of the potential energy curve.",
+              "note": "A minimum in the curve therefore corresponds to stable equilibrium."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.04-p003",
+          "text": "The second part of Figure 1.1 transfers the same logic to a diatomic molecule.\nWhen the nuclei are very far apart, the energy approaches that of the separate atoms.\nAs they come together, the energy falls to a minimum at the equilibrium distance.\nPush them still closer, and the energy rises again because nuclear repulsion eventually overwhelms the bonding effect.\nThe diagram also separates the purely electronic binding energy from the smaller observed dissociation energy, which is reduced by vibrational motion.\nAnd unlike the classical picture, the vibrational energies now come only in discrete levels.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "The molecular panel shows why a stable bond sits at an energy minimum. It also distinguishes the deeper electronic well depth from the smaller observed dissociation energy once vibration is taken into account."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.04-p002",
-          "text": "The antibonding picture reverses the emphasis.\nA node sits midway between the nuclei, and the density is pushed outward onto the far sides.\nIf electrons occupied that orbital, their distribution would favor separation rather than union.\nFigure 1 point 7 removes the distraction of sign and looks directly at the squared wave function along the internuclear axis.\nThere the contrast becomes even clearer.\nThe bonding orbital shows an increase in electron population between the nuclei, while the antibonding orbital shows a depletion there.\nIn other words, the difference between bonding and antibonding is not mystical.\nIt is written into the actual redistribution of electron density.",
-          "visuals": [
+          "id": "01.04-p004",
+          "text": "One of the central tasks of valence theory is to predict the exact shape of such a curve.\nEmpirically, many molecular curves can be fitted by the Morse expression.\nNear the minimum, that expression reduces to a parabola, which is why the harmonic picture works so well as a first approximation.\nFor polyatomic molecules the problem becomes richer, because the single curve expands into a potential energy surface depending on several bond lengths and angles.\nThat surface is one of the master objects in the theory of chemical reactions.",
+          "visuals": [],
+          "equations": [
             {
-              "id": "fig-1.7",
-              "label": "Figure 1.7",
-              "kind": "figure",
-              "caption": "Plots of the squared wave functions along the internuclear axis. The bonding orbital shows extra electron density between the nuclei, whereas the antibonding orbital shows a deficit there."
+              "id": "eq-morse-reference-shift",
+              "label": "E(R) = E_AB(R) - (E_A + E_B)",
+              "latex": "E(R)=E_{AB}(R)-\\left(E_A+E_B\\right)",
+              "spoken": "This defines the molecular energy relative to the energy of the separated atoms.",
+              "note": "It shifts the zero of energy so that the shape of the bonding curve can be described more clearly."
+            },
+            {
+              "id": "eq-morse-curve",
+              "label": "Morse curve",
+              "latex": "E(R)=D_e\\left[\\exp\\left\\{-2a\\left(R-R_e\\right)\\right\\}-2\\exp\\left\\{-a\\left(R-R_e\\right)\\right\\}\\right]",
+              "spoken": "This is the Morse expression used to fit many diatomic potential curves.",
+              "note": "It captures both the attractive well near equilibrium and the asymmetric rise of the curve away from that minimum."
+            },
+            {
+              "id": "eq-morse-near-minimum",
+              "label": "Near minimum expansion",
+              "latex": "E(R)=-D_e + D_e a^2\\left(R-R_e\\right)^2 + \\cdots",
+              "spoken": "Near the minimum, the Morse curve becomes approximately parabolic.",
+              "note": "That is why the harmonic picture is such a good first approximation close to equilibrium."
             }
           ],
-          "equations": [],
           "videos": []
         }
       ]
@@ -235,43 +254,181 @@ const BOOK_DATA = {
     {
       "id": "01.05",
       "number": "01.05",
-      "title": "Coefficients, Balance, and Normalization",
+      "title": "Quantum chemistry",
       "paragraphs": [
         {
           "id": "01.05-p001",
-          "text": "We can now return to the coefficients in Equation 1 point 1 with a sharper sense of what they mean.\nIn a homonuclear diatomic molecule such as H two, the two atoms contribute equally in magnitude.\nThat is why the coefficients in the simplest picture come out as plus or minus zero point seven zero seven.\nTheir squares measure how much electron population belongs near each atom.\nTwo balancing rules are at work.\nWithin a given molecular orbital, the squared coefficients must add up to one.\nAcross the full set of molecular orbitals, the squared contributions associated with a given atom must also add up properly.\nThe antibonding orbital therefore takes the same magnitudes as the bonding one, but with opposite sign on one side.\nThat sign change is what encodes the node.",
+          "text": "Valence theory belongs to a much larger enterprise.\nQuantum mechanics does not merely ask how strongly electrons bind atoms together.\nIn principle, it lets us calculate the whole electronic life of a molecule, from structure and geometry to spectra, collisions, and chemical change.",
           "visuals": [],
-          "equations": [
-            {
-              "id": "eq-1.1",
-              "label": "1.1",
-              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2",
-              "spoken": "Equation 1 point 1 reappears here through the meaning of the coefficients c one and c two.",
-              "note": "Their squares measure how much electron population is associated with each atom in the molecular orbital."
-            }
-          ],
+          "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p002",
-          "text": "Fleming then notes a subtle correction.\nA more exact normalization would include the overlap integral, which affects the bonding and antibonding orbitals with opposite sign.\nAs a result, the antibonding coefficients are in truth slightly larger in magnitude than the bonding ones.\nAt the level used in this book, that refinement can usually be set aside.\nStill, it points once more to the same general moral.\nAntibonding is not merely the mirror image of bonding.\nIts destabilizing effect is, in a precise sense, a little stronger.",
+          "text": "That larger enterprise is what we call quantum chemistry.\nIts impact on chemistry has been double.\nIt has given chemists a whole language of ideas, and it has also made first-principles calculation increasingly real.",
           "visuals": [],
-          "equations": [
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p003",
+          "text": "Coulson insists, however, that calculation by itself is not yet understanding.\nA machine may confirm that one bond is stronger than another, but the explanation still has to be chemical.\nIt must be expressed in terms such as nonbonding repulsion, core interaction, and the distribution of electron density.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p004",
+          "text": "That is why the qualitative side is not a second-rate substitute for exact calculation.\nThe two sides correct and support one another.\nA sound physical picture should survive rigorous calculation, and a good physical idea often suggests the right approximation.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p005",
+          "text": "At the same time, one should not underestimate what quantum chemistry has already achieved.\nFor very small systems, especially hydrogen and other small molecules and ions, calculations can reach or even surpass laboratory precision.\nIn such cases, the theory has been tested so hard that the basic equations of quantum mechanics remain remarkably secure.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p006",
+          "text": "Dirac could therefore say, very early on, that the underlying laws for much of physics and essentially all of chemistry were already known.\nThe real obstacle was practical rather than fundamental.\nComplicated molecules force us, at least for now, to seek understanding at a more qualitative level.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p007",
+          "text": "But what does it mean to understand a molecule at all?\nWe never see a molecule directly.\nWhat we possess is a convergence of evidence from diffraction, spectroscopy, magnetic methods, and related experiments.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p008",
+          "text": "From that evidence there emerges a picture that is simple in outline and very powerful.\nThe nuclei vibrate about fairly definite equilibrium positions, but their motion is small compared with the distances between neighboring nuclei.\nSo, for many structural purposes, we may think of the nuclei as fixed.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p009",
+          "text": "The electrons are different.\nThey are better imagined as a charge cloud whose density changes from place to place.\nIf one could take a time exposure of electronic motion, the blurred photograph would be denser where the electrons spend more of their time.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p010",
+          "text": "That is the practical meaning of the charge density, usually written as P.\nAt each point, it tells us how much electronic charge is present per unit volume.\nOnce that idea is in hand, many otherwise scattered observations begin to fall into one pattern.",
+          "visuals": [
             {
-              "id": "eq-1.4",
-              "label": "1.4",
-              "latex": "E = \\frac{\\alpha + \\beta}{1 + S}",
-              "spoken": "Equation 1 point 4 includes overlap in the normalization of the bonding orbital.",
-              "note": "The overlap term helps explain why the bonding and antibonding coefficients are not perfectly symmetric in a stricter treatment."
-            },
-            {
-              "id": "eq-1.5",
-              "label": "1.5",
-              "latex": "E = \\frac{\\alpha - \\beta}{1 - S}",
-              "spoken": "Equation 1 point 5 includes overlap in the normalization of the antibonding orbital.",
-              "note": "Because the sign of overlap changes, the antibonding coefficients come out slightly larger in magnitude in a more exact treatment."
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Contour map of electron density in anthracene. The peaks mark where charge is concentrated around the carbon nuclei, and the gentler bridges show how bonding can be read from the cloud itself."
             }
           ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p011",
+          "text": "Figure 1.2 makes this wonderfully concrete.\nIts contour map for anthracene joins points where the total electron density has the same value.\nThe carbon nuclei stand out as strong peaks, while the hydrogen positions are much less precise because hydrogen contributes so little electron density to the scattering.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p012",
+          "text": "The same charge density can also be calculated from quantum mechanics.\nObserved and calculated densities usually agree rather well.\nMore importantly, the molecule often behaves almost exactly as if its electrons were smeared into a continuous cloud of this density.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p013",
+          "text": "That is why the concept is so central.\nIf the charge density is known, classical electrostatics can already tell us a great deal about the forces inside the molecule.\nChemical binding then appears as the attraction between positive nuclei and the surrounding negative cloud.",
+          "visuals": [
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Contour map of electron density in anthracene. The peaks mark where charge is concentrated around the carbon nuclei, and the gentler bridges show how bonding can be read from the cloud itself."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p014",
+          "text": "Figure 1.2 also shows something crucial for bonding.\nMost of the density remains concentrated around each nucleus, as one would expect from atoms.\nYet there is still enough density in the bridge between neighboring peaks to hold the nuclei together against their mutual repulsion.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p015",
+          "text": "Once you begin to think in these terms, many measurable properties fall into place.\nIf one atom draws charge more strongly than another, the cloud becomes polarized.\nThe molecule then acquires a dipole moment, and higher electric moments can be understood in the same general way.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p016",
+          "text": "Nuclear quadrupole resonance gives another example.\nHere the nucleus itself acts as a probe of how uneven the electric field is at its position.\nBecause that field depends on the surrounding electron density, the experiment becomes a very direct test of bonding ideas.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "Energy diagram for photoelectron spectroscopy. The essential point is that the supplied energy is divided between the cost of ionization and the kinetic energy carried away by the emitted electron."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p017",
+          "text": "Photoelectron spectroscopy offers an even sharper kind of probe.\nIf radiation gives an electron enough energy to escape, the leftover energy appears as kinetic energy of the ejected electron.\nFigure 1.3 lays out that bookkeeping very clearly.",
+          "visuals": [
+            {
+              "id": "fig-1.4",
+              "label": "Figure 1.4",
+              "kind": "figure",
+              "caption": "Carbon one s photoelectron spectrum of ethyl trifluoroacetate. Separate peaks appear because chemically different carbon atoms bind their inner electrons by different amounts."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p018",
+          "text": "Now the interesting point is that inner-shell electrons from different atoms of the same element inside one molecule need not come out with the same kinetic energy.\nFigure 1.4 shows this for four carbon atoms in one molecule.\nBecause fluorine and oxygen pull electron density away with different strengths, each carbon environment shifts the binding of its inner electron by a slightly different amount.",
+          "visuals": [
+            {
+              "id": "fig-1.5",
+              "label": "Figure 1.5",
+              "kind": "figure",
+              "caption": "Nitrogen one s photoelectron spectrum of a cobalt complex containing amine, nitro, and nitrate nitrogens. Different nitrogen environments produce distinct peaks, so the spectrum becomes a map of local electronic surroundings."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p019",
+          "text": "So the peaks separate.\nThe nuclei are telling us, through spectroscopy, how the charge cloud has been distorted by the surrounding substituents.\nFigure 1.5 shows the same kind of logic for nitrogen, and even the differing peak sizes carry chemical information.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p020",
+          "text": "This is the sort of understanding Coulson wants.\nNot a gush of numbers from a computer, but a visualizable physical pattern that lets the chemistry make sense.\nAnd with that demand in view, the book now turns back to fundamentals, beginning with quantum mechanics itself and the simplest solvable problems.",
+          "visuals": [],
+          "equations": [],
           "videos": []
         }
       ]
@@ -279,8 +436,8 @@ const BOOK_DATA = {
   ],
   "stats": {
     "sectionCount": 5,
-    "paragraphCount": 13,
-    "visualCount": 8,
-    "equationCount": 12
+    "paragraphCount": 39,
+    "visualCount": 9,
+    "equationCount": 8
   }
 };
