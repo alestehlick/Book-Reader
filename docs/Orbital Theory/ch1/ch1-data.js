@@ -1,37 +1,63 @@
 const BOOK_DATA = {
-  "title": "1 — Theories of Valence",
+  "title": "1 — Molecular Orbital Theory",
   "language": "en",
   "sections": [
     {
       "id": "01.01",
       "number": "01.01",
-      "title": "Essentials of Any Theory of Valence",
+      "title": "The hydrogen atom as a probability cloud",
       "paragraphs": [
         {
           "id": "01.01-p001",
-          "text": "A theory of valence must begin with the most basic question of all.\nWhy do atoms join to form molecules in the first place, and why do they do so only in certain ways.\nIt is not enough to note that hydrogen atoms form a stable H two molecule while helium atoms do not form an analogous stable He two species.",
-          "visuals": [],
+          "text": "The chapter begins in the simplest possible place, with a single hydrogen atom.\nIf we want to understand a bond, we must first understand what one electron is doing before any partner arrives.\nThe wave function is the underlying mathematical description, and its square tells us where the electron is likely to be found.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Three ways of picturing the one s orbital of hydrogen. The point is to see the same electron distribution as contour, cloud, and simple outline."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p002",
-          "text": "A serious theory must show why one pairing is favored and the other is not.\nIt must also explain why compounds appear in definite proportions.\nChemists recognized long ago that atoms do not combine at random, yet the old image of atoms as little spheres with a fixed number of hooks or knobs is far too crude.\nThat picture might explain why hydrogen does not go on binding indefinitely.\nBut it does not really explain why the same element can enter different combining ratios, as carbon does in carbon monoxide and carbon dioxide.\nSo valence theory must explain both constancy and variation.\nIt must show why there are definite ratios, why multiple valences occur, and how these patterns are connected with an element's place in the periodic table.",
-          "visuals": [],
+          "text": "For hydrogen in its ground state, that electron sits in a one s orbital.\nThis orbital is spherically symmetric, dense near the nucleus, and already much lower in energy than a separated proton and electron.\nMost of the electron population lies very close to the nucleus, which is why hydrogen can look so compact even before we start bonding.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Three ways of picturing the one s orbital of hydrogen. The point is to see the same electron distribution as contour, cloud, and simple outline."
+            },
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Radial plots for the hydrogen one s orbital. They show both the rapid falloff with distance and the special role of the Bohr radius."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p003",
-          "text": "There is a third demand as well, and it is no less important.\nA theory of valence must account for molecular shape.\nWhy does methane take the tetrahedral arrangement with angles near one hundred nine and a half degrees.\nWhy does chloroform distort those angles slightly.\nWhy is carbon dioxide linear while water is bent.\nThese are not ornamental details added after the real chemistry is done.\nThey belong to the heart of the problem, because bonding is inseparable from spatial arrangement.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.01-p004",
-          "text": "In the end, a good theory should unify all three questions at once.\nIt should tell us whether an atom can bind, how many partners it can bind, and in what geometry those partners must be arranged.\nAnd modern evidence asks for still more.\nSpectroscopy and other physical methods reveal subtle differences among bonds that go far beyond the old habit of drawing one line for a single bond and two for a double bond.\nA mature theory of valence must therefore account not only for the existence of bonds, but for their finer character as well.",
-          "visuals": [],
+          "text": "The different pictures in Figures 1 point 1 and 1 point 2 are not rival truths but different ways of seeing the same distribution.\nA contour picture emphasizes shape, a cloud picture emphasizes probability, and the radial plots reveal something easy to miss.\nEven though the wave function is largest at the nucleus, the radial density reaches its maximum at the Bohr radius, because there is simply more space a little further out.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Three ways of picturing the one s orbital of hydrogen. The point is to see the same electron distribution as contour, cloud, and simple outline."
+            },
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Radial plots for the hydrogen one s orbital. They show both the rapid falloff with distance and the special role of the Bohr radius."
+            }
+          ],
           "equations": [],
           "videos": []
         }
@@ -40,33 +66,63 @@ const BOOK_DATA = {
     {
       "id": "01.02",
       "number": "01.02",
-      "title": "Electronic Character of Valence",
+      "title": "Two hydrogens and the birth of bonding and antibonding orbitals",
       "paragraphs": [
         {
           "id": "01.02-p001",
-          "text": "At a deep level, to describe bonding is simply to describe how electrons are distributed around nuclei.\nThe whole problem of valence is, in the end, an electronic problem.\nEarly electronic models tried to picture electrons as static charges sitting at fixed geometrical points.\nSuch schemes helped chemists talk about octets and periodic patterns, but they suffered from a fatal weakness.\nA purely static distribution of charges cannot be stably balanced by electrostatics alone.\nIf the charges are treated as fixed points, the picture collapses under its own simplicity.",
-          "visuals": [],
-          "equations": [],
+          "text": "Once two hydrogen atoms approach one another, we stop thinking in terms of two isolated atomic orbitals and ask for an orbital spread over the whole pair.\nThe simplest approximation is to write that molecular orbital as a linear combination of the two one s orbitals.\nThat is the first great move of molecular orbital theory.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The bonding and antibonding molecular orbitals of H two. Matching phase builds density between the nuclei, while opposite phase creates a node."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.1",
+              "label": "1.1",
+              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2",
+              "spoken": "Equation 1 point 1 says that the molecular orbital is built as a linear combination of the two atomic orbitals.",
+              "note": "This is the basic L C A O move. The coefficients say how much each atomic orbital contributes."
+            }
+          ],
           "videos": []
         },
         {
           "id": "01.02-p002",
-          "text": "That difficulty already appeared in early views of ionic bonding.\nOpposite charges attract, certainly, but then one must explain what prevents the whole structure from collapsing inward.\nThe problem is even sharper for covalent molecules such as H two.\nThere the atoms are electrically neutral overall, so simple Coulomb attraction is not enough to explain why they hold together.",
-          "visuals": [],
-          "equations": [],
+          "text": "When this combination is squared, a new cross term appears.\nThat term is the whole drama, because it tells us whether the two atomic patterns reinforce each other between the nuclei or cancel there.\nIf the signs match, electron density builds up in the middle and the two positive nuclei are pulled together.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The bonding and antibonding molecular orbitals of H two. Matching phase builds density between the nuclei, while opposite phase creates a node."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.2",
+              "label": "1.2",
+              "latex": "\\psi^2 = (c_1 \\phi_1 + c_2 \\phi_2)^2 = (c_1 \\phi_1)^2 + (c_2 \\phi_2)^2 + 2 c_1 \\phi_1 c_2 \\phi_2",
+              "spoken": "Equation 1 point 2 shows that squaring the wave function creates a cross term. That extra term is what decides whether overlap is bonding or antibonding.",
+              "note": "The cross term measures constructive or destructive interference between the two atomic patterns."
+            }
+          ],
           "videos": []
         },
         {
           "id": "01.02-p003",
-          "text": "Bohr made the first great attempt to replace the static picture with a dynamic one.\nIn his hydrogen model, the electron moves in an orbit around the nucleus, and only certain quantized orbits are allowed.\nThat idea was extraordinarily successful for the hydrogen atom.\nIt explained the discrete spectral lines with impressive accuracy, and for a moment it seemed that the path forward had appeared.\nBut the success did not extend far.\nAs soon as one dealt with more than one electron, or more than one nucleus, the model broke down.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.02-p004",
-          "text": "The failure is instructive.\nBohr was still trying to apply classical ideas of motion to particles so small that the very picture of a sharply defined orbit cannot survive scrutiny.\nAt the electronic scale, one cannot simply miniaturize ordinary mechanics and hope for the best.\nThe concepts themselves have to change.\nThat change came with quantum mechanics, and in particular with wave mechanics.\nHere at last one has a framework that is valid for electrons in atoms and molecules, while still reducing to classical mechanics for large masses.\nOnly on that basis can a coherent theory of molecular structure be built.\nValence theory becomes sound when bonding is treated not as a little mechanical sketch, but as a quantum problem of electronic distribution and energy.",
-          "visuals": [],
+          "text": "If the signs oppose, the middle is depleted and a node appears between the nuclei.\nThat gives the antibonding sigma star orbital.\nIn the ground state of H two, both electrons occupy the bonding sigma orbital, so the net effect of bringing the atoms together is stabilization.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The bonding and antibonding molecular orbitals of H two. Matching phase builds density between the nuclei, while opposite phase creates a node."
+            }
+          ],
           "equations": [],
           "videos": []
         }
@@ -75,54 +131,98 @@ const BOOK_DATA = {
     {
       "id": "01.03",
       "number": "01.03",
-      "title": "Importance of Energy",
+      "title": "Overlap, alpha and beta, and the energetic shape of a bond",
       "paragraphs": [
         {
           "id": "01.03-p001",
-          "text": "If two atoms form a molecule, the central reason is simple in outline.\nThe total energy becomes lower when they come together than when they remain apart.\nFor most purposes, the dominant part of this story is the electronic energy.\nThis includes the kinetic energy of the electrons and their electrical interactions, together with the repulsion between the nuclei.\nOther contributions exist.\nMolecules also vibrate, rotate, and translate, but these usually contribute much less to the total than the electronic part.",
-          "visuals": [],
-          "equations": [],
+          "text": "Bonding is only as good as overlap allows it to be.\nThe overlap integral measures how much the two orbitals occupy the same region of space, and for two one s orbitals it grows steadily as the atoms are brought together.\nAt infinite separation it is zero, and at full superposition it would be one.",
+          "visuals": [
+            {
+              "id": "fig-1.4",
+              "label": "Figure 1.4",
+              "kind": "figure",
+              "caption": "The overlap integral for two hydrogen one s orbitals as the nuclei approach. It turns the intuitive idea of overlap into a measurable quantity."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.3",
+              "label": "1.3",
+              "latex": "S_{12} = \\int \\phi_1 \\phi_2 \\, d\\tau",
+              "spoken": "Equation 1 point 3 defines the overlap integral.",
+              "note": "It gives a compact measure of how much the two orbitals share the same region of space."
+            }
+          ],
           "videos": []
         },
         {
           "id": "01.03-p002",
-          "text": "That is why electronic energy governs structure.\nHydrogen prefers H two rather than H three because the relevant electronic energy is lower for the diatomic arrangement than for the triatomic one.\nThe same principle governs shape.\nWater has its particular bond angle and bond length because the energy reaches a minimum there, and any distortion raises the energy again.\nThis is why valence theory must do more than announce that a bond exists.\nIt must show how the energy changes as the nuclei move, because only then can we understand equilibrium geometry, restoring forces, and vibrational behavior.\nOnce this is clear, one sees why valence theory connects immediately with spectroscopy.\nInfrared and Raman frequencies, rotational structure, and many other observable effects all depend on how energy varies with molecular geometry.",
-          "visuals": [],
-          "equations": [],
+          "text": "The textbook symbols alpha and beta give names to two pieces of the energy bookkeeping.\nAlpha refers to the energy of an electron in an isolated atomic orbital, while beta captures the extra energetic effect of letting the electron feel both nuclei at once.\nHere beta is negative, so it lowers the bonding orbital and raises the antibonding one.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The bonding and antibonding molecular orbitals of H two. Matching phase builds density between the nuclei, while opposite phase creates a node."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.4",
+              "label": "1.4",
+              "latex": "E = \\frac{\\alpha + \\beta}{1 + S}",
+              "spoken": "Equation 1 point 4 gives the energy of the bonding molecular orbital.",
+              "note": "The combination of alpha, beta, and overlap shows how a bonding orbital falls below the atomic reference level."
+            },
+            {
+              "id": "eq-1.5",
+              "label": "1.5",
+              "latex": "E = \\frac{\\alpha - \\beta}{1 - S}",
+              "spoken": "Equation 1 point 5 gives the energy of the antibonding molecular orbital.",
+              "note": "Changing the sign of beta and the overlap term turns stabilization into destabilization."
+            },
+            {
+              "id": "eq-1.6",
+              "label": "1.6",
+              "latex": "\\alpha = \\int \\phi_1 H \\phi_1 \\, d\\tau",
+              "spoken": "Equation 1 point 6 defines the Coulomb integral alpha.",
+              "note": "Alpha is the energy reference associated with an electron in an isolated atomic orbital."
+            },
+            {
+              "id": "eq-1.7",
+              "label": "1.7",
+              "latex": "\\beta = \\int \\phi_1 H \\phi_2 \\, d\\tau",
+              "spoken": "Equation 1 point 7 defines the resonance integral beta.",
+              "note": "Beta captures the energetic effect of allowing the electron to feel both centers at once."
+            }
+          ],
           "videos": []
         },
         {
           "id": "01.03-p003",
-          "text": "There is, however, an important distinction to keep in view.\nThe electronic binding energy is not quite the same as the experimentally observed dissociation energy.\nThe difference arises because real molecules are never entirely free of nuclear motion.\nZero point vibration, translational motion, and rotational motion all make contributions, and these slightly modify the energy needed to break a molecule apart.",
-          "visuals": [],
+          "text": "Figure 1 point 5 makes the full balance visible.\nElectronic attraction pulls the atoms together, nuclear repulsion pushes them apart, and the familiar well of a bond appears only where those two tendencies find a minimum.\nIf the antibonding orbital were occupied instead, the atoms would not settle into a bond at all but would be driven apart.",
+          "visuals": [
+            {
+              "id": "fig-1.5",
+              "label": "Figure 1.5",
+              "kind": "figure",
+              "caption": "Electronic attraction, nuclear repulsion, and the resulting energy curve for H two. The figure shows why a bond length exists and why antibonding occupation destroys it."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.03-p004",
-          "text": "For a diatomic molecule, this observed dissociation energy can be called the bond energy.\nFor larger molecules, the situation becomes subtler, because breaking one bond can allow the fragments to rearrange electronically and recover some energy.\nWater gives a good example.\nIts total binding energy is about 9 point 49 electron volts, but that does not mean each O H bond simply counts for half of that value in isolation.\nTo break one O H bond in water requires about 5 point 18 electron volts.\nAfter that first break, the second bond requires only about 4 point 31 electron volts, and together those two numbers recover the total.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.03-p005",
-          "text": "Another refinement enters through thermodynamics.\nBond energies are often inferred from heats of reaction measured at standard temperature and pressure.\nSo what is actually obtained is an enthalpy change rather than a pure internal energy change.\nIn many practical discussions these corrections do not overturn the main picture.\nStill, the distinction matters when one wants real precision.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.03-p006",
-          "text": "The example of H two shows the pattern clearly.\nIts electronic binding energy is about 458 kilojoules per mole, while the observed bond energy is lower, about 435 kilojoules per mole, because motion-related corrections must be included.\nAmong those corrections, zero point vibration matters noticeably more than rotation, translation, or the pressure-volume term.\nSo even here, what seems at first a small refinement has real weight.\nA second lesson is even more revealing.\nThe binding energy is only a small difference between much larger total electronic energies.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.03-p007",
-          "text": "That makes bond energies exquisitely sensitive.\nA small change in electronic structure can produce a large relative change in bonding behavior.\nThis helps explain why bond strengths are so specific.\nHydrogen fluoride forms a much stronger single bond than either hydrogen with hydrogen or fluorine with fluorine.\nIt also explains why apparently similar atoms can behave very differently.\nPhosphorus and nitrogen have comparable single bond energies in some contexts, yet phosphorus forms a stable tetrahedral P four molecule while nitrogen does not form an analogous N four species.\nAnd it explains why the old category of inert gases turned out not to be final.\nAtoms once thought chemically aloof can, in the right pairing and geometry, enter stable compounds such as xenon difluoride.\nSo the strength of a bond is not merely an intrinsic property carried around by an isolated atom.\nIt depends on the specific encounter, the electronic fit, and the geometry that allows that fit to become stable.\nA satisfactory theory of valence must therefore explain not just bonding in general, but the remarkable selectivity of actual bonds.\nThat is where the real subtlety begins.",
-          "visuals": [],
+          "text": "This is also why two helium atoms do not make an ordinary He two molecule.\nOnce both bonding and antibonding orbitals are filled, the energy penalty of the antibonding occupation slightly outweighs the gain from the bonding one.\nElectron correlation softens the picture a little, but it does not rescue the bond.",
+          "visuals": [
+            {
+              "id": "fig-1.5",
+              "label": "Figure 1.5",
+              "kind": "figure",
+              "caption": "Electronic attraction, nuclear repulsion, and the resulting energy curve for H two. The figure shows why a bond length exists and why antibonding occupation destroys it."
+            }
+          ],
           "equations": [],
           "videos": []
         }
@@ -131,17 +231,23 @@ const BOOK_DATA = {
     {
       "id": "01.04",
       "number": "01.04",
-      "title": "Energy Diagrams",
+      "title": "What the hydrogen molecule really looks like",
       "paragraphs": [
         {
           "id": "01.04-p001",
-          "text": "Energy relations in a molecule are often best seen in a picture before they are handled in equations.\nThat is the purpose of an energy diagram.\nIt shows, in one glance, what motions are allowed, where equilibrium lies, and what it costs to pull a system apart.",
+          "text": "The simple sketches of sigma and sigma star are useful, but the contour plots reveal more.\nIn the bonding orbital, electron density is drawn in toward the line between the nuclei and then spreads out in an elliptical envelope around them.\nIn the antibonding orbital, the density is pushed out to the far sides, which is why occupying that orbital helps drive the nuclei apart.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.1",
+              "id": "fig-1.6",
+              "label": "Figure 1.6",
               "kind": "figure",
-              "caption": "Two energy diagrams that teach the same basic lesson in different settings. The first shows vibration in a simple restoring potential, and the second shows how molecular binding appears as an energy minimum at a particular internuclear distance."
+              "caption": "Contour slices through the bonding and antibonding orbitals of H two. The useful contrast is where the electron density is pulled in and where it is pushed out."
+            },
+            {
+              "id": "fig-1.7",
+              "label": "Figure 1.7",
+              "kind": "figure",
+              "caption": "Plots of the squared wave functions for the H two orbitals. These make the buildup or depletion of electron population between the nuclei unmistakable."
             }
           ],
           "equations": [],
@@ -149,13 +255,13 @@ const BOOK_DATA = {
         },
         {
           "id": "01.04-p002",
-          "text": "The first example is the familiar case of a particle bound near an origin by a restoring force proportional to displacement.\nIts potential energy rises as the square of the distance from equilibrium, so the graph is a parabola.\nThis is the natural picture of a simple vibration.",
+          "text": "Plotting the square of the wave function along the bond axis removes the distraction of sign and lets us compare actual electron population.\nNow the bonding orbital clearly shows enhanced density in the middle, while the antibonding orbital shows the opposite.\nThe drawings stop being merely symbolic and start to feel mechanically persuasive.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.1",
+              "id": "fig-1.7",
+              "label": "Figure 1.7",
               "kind": "figure",
-              "caption": "The horizontal energy line shows how total energy is divided between motion and stored potential energy at different positions. The turning points mark the limits of the classically allowed motion."
+              "caption": "Plots of the squared wave functions for the H two orbitals. These make the buildup or depletion of electron population between the nuclei unmistakable."
             }
           ],
           "equations": [],
@@ -163,70 +269,7 @@ const BOOK_DATA = {
         },
         {
           "id": "01.04-p003",
-          "text": "If we draw a horizontal line for the total energy, the meaning becomes clear at once.\nAt each position, the total divides into kinetic and potential parts.\nNear the center, where the potential energy is small, the motion is fastest.\nFarther out, more of the total is stored as potential energy and less remains as motion.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p004",
-          "text": "At the turning points, the kinetic energy falls to zero.\nThe particle stops for an instant and then reverses direction.\nIt cannot go beyond those points, because that would require negative kinetic energy, which is impossible.\nSo the intersections of the energy line with the curve mark the classically allowed region and therefore the amplitude of the vibration.",
-          "visuals": [
-            {
-              "id": "",
-              "label": "Figure 1.1",
-              "kind": "figure",
-              "caption": "The molecular potential well shows why a bond has a preferred length. Too far apart, the atoms are essentially separate, and too close, nuclear repulsion drives the energy sharply upward."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p005",
-          "text": "The shape of the curve also tells us about stability.\nWhere the potential has a minimum, the force vanishes, and a small displacement produces a restoring pull back toward equilibrium.\nThat is what stable equilibrium means in this setting.\nEnergy diagrams remain useful in quantum mechanics as well, though their interpretation becomes subtler.",
-          "visuals": [
-            {
-              "id": "",
-              "label": "Figure 1.1",
-              "kind": "figure",
-              "caption": "Near the minimum, the molecule vibrates in discrete quantum levels rather than with arbitrary energy. This is the key reason the true dissociation energy is smaller than the full depth of the electronic well."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p006",
-          "text": "The same visual logic applies to a diatomic molecule.\nNow the horizontal axis is the internuclear distance.\nWhen the atoms are very far apart, the energy approaches that of the two separate atoms.\nAs they come together, the energy falls, reaches a minimum at the equilibrium bond length, and then rises sharply again when the nuclei are pushed too close.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p007",
-          "text": "That curve says several important things at once.\nThe depth of the well measures the electronic binding.\nThe minimum marks the stable bond distance.\nAnd the steep rise at short range reminds us that however helpful the electrons may be in binding, nuclear repulsion eventually wins if the atoms are forced too near each other.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p008",
-          "text": "Around the minimum, the curve is roughly parabolic, so the nuclei vibrate there in a way that resembles the simpler oscillator.\nBut quantum mechanics now adds a decisive refinement.\nThe vibrational energy cannot vary continuously.\nIt comes in discrete levels.\nThat is why the true dissociation energy from the lowest vibrational state is smaller than the purely electronic depth of the well.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p009",
-          "text": "One of the major aims of valence theory is to determine the precise shape of this curve for a given molecule.\nIn practice, chemists often use the Morse form as a useful empirical model.\nIt captures the essential fact that the attractive and repulsive sides of the well are not mirror images.\nThe bond is easier to stretch gradually than to compress.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.04-p010",
-          "text": "For polyatomic molecules the situation becomes richer still.\nOne no longer has a single curve, but a potential energy surface depending on several bond lengths and angles at once.\nSuch surfaces are central to the theory of molecular shape and even more central to the theory of chemical reactions, where the system moves across that landscape from one arrangement to another.",
+          "text": "The coefficients in the hydrogen orbitals are equal in magnitude, so each atomic orbital contributes by the familiar factor of zero point seven zero seven.\nThat symmetry is exact only in the simplest approximation.\nOnce overlap is handled more carefully, the antibonding coefficients are slightly larger in magnitude, which is another way of saying that antibonding is a little more severe than bonding is generous.",
           "visuals": [],
           "equations": [],
           "videos": []
@@ -236,169 +279,1238 @@ const BOOK_DATA = {
     {
       "id": "01.05",
       "number": "01.05",
-      "title": "Quantum Chemistry",
+      "title": "Three hydrogens, four hydrogens, and the role of symmetry",
       "paragraphs": [
         {
           "id": "01.05-p001",
-          "text": "The theory of valence is only one part of a much larger subject.\nQuantum mechanics, in principle, allows us to calculate not only molecular energies and structures, but also excited states, spectra, intermolecular interactions, collisions, and the course of chemical reactions.\nValence theory belongs within that wider enterprise called quantum chemistry.",
-          "visuals": [],
+          "text": "With three hydrogen atoms, symmetry steps onto the stage explicitly.\nThe triangular H three system is built by matching orbitals that have the same symmetry with respect to the relevant mirror plane.\nA symmetric one s type combination can mix with the symmetric sigma orbital, while the antisymmetric sigma star has to stand apart unless another antisymmetric partner is available.",
+          "visuals": [
+            {
+              "id": "fig-1.8",
+              "label": "Figure 1.8",
+              "kind": "figure",
+              "caption": "Interacting orbitals for triangular H three. The key lesson is that only orbitals of matching symmetry can mix."
+            },
+            {
+              "id": "fig-1.9",
+              "label": "Figure 1.9",
+              "kind": "figure",
+              "caption": "Relative orbital energies for triangular and linear H three. Geometry changes overlap and therefore redistributes stabilization and antibonding."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p002",
-          "text": "Quantum theory has transformed chemistry in two distinct ways.\nFirst, it has changed the very language of the subject.\nMuch of the way modern chemists think now comes from quantum ideas.\nSecond, it has opened the possibility of calculating molecular properties directly from first principles.",
-          "visuals": [],
+          "text": "The result is a set of three molecular orbitals with different nodal patterns and different energetic roles.\nH three plus is stabilized because its two electrons both fall into the lowest of them.\nThe neutral radical still comes out overall bonding, but H three minus loses that balance because the antibonding occupancy becomes too costly.",
+          "visuals": [
+            {
+              "id": "fig-1.8",
+              "label": "Figure 1.8",
+              "kind": "figure",
+              "caption": "Interacting orbitals for triangular H three. The key lesson is that only orbitals of matching symmetry can mix."
+            },
+            {
+              "id": "fig-1.9",
+              "label": "Figure 1.9",
+              "kind": "figure",
+              "caption": "Relative orbital energies for triangular and linear H three. Geometry changes overlap and therefore redistributes stabilization and antibonding."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p003",
-          "text": "This book is concerned mainly with the conceptual side.\nIts aim is to build what Coulson called patterns of understanding.\nThat aim is not inferior to computation.\nThe two approaches support one another.\nGood physical ideas are confirmed by exact calculation, and good physical ideas also suggest which calculations and approximations are worth making in the first place.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p004",
-          "text": "A mere numerical result is not yet an explanation.\nTo say that one bond is stronger than another because a computer says so is only to restate the fact in a more expensive language.\nA satisfying explanation must show what features of electronic structure are responsible.\nIt must point to things such as repulsion between nonbonding electrons, the influence of atomic cores, and the distribution of charge in space.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p005",
-          "text": "Even so, one must not underestimate how far quantitative work can go.\nFor small molecules, calculations can now reach astonishing precision.\nThey can recover fine spectral structure and include even very small relativistic corrections.\nThat matters not only for chemistry itself, but also because it tests quantum mechanics under severe conditions.\nSo far, the theory has survived such tests remarkably well.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p006",
-          "text": "The underlying laws seem to be in hand.\nThe real difficulty is practical.\nComplicated molecules make the equations too hard to solve exactly.\nThat is why chemistry still needs qualitative understanding of a high order.\nOne must know how to think, not merely how to compute.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p007",
-          "text": "But what does it mean to understand a molecule at all.\nWe never see a molecule directly.\nEverything is inferred from experiment.\nOver time, techniques such as X-ray diffraction, electron diffraction, infrared and ultraviolet spectroscopy, and nuclear magnetic resonance have given us a remarkably rich picture of molecular structure.\nElectron spin resonance, nuclear quadrupole resonance, and photoelectron spectroscopy have deepened that picture still further.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p008",
-          "text": "That picture is simple in outline, though profound in consequence.\nThe nuclei sit near definite equilibrium positions and vibrate around them with relatively small amplitudes.\nFor many purposes, then, we can treat the nuclei as occupying fixed mean positions.\nThe electrons are different.\nThey are best imagined not as little pellets on fixed tracks, but as a cloud of charge spread through space with varying density.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p009",
-          "text": "This charge cloud is described by the electron density, usually written as P.\nAt each point, it tells us how much electronic charge is concentrated there.\nA useful image is that of a long-exposure photograph.\nThe electrons move too quickly to be followed individually, but their statistically favored regions of presence build up into a continuous density pattern.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p010",
-          "text": "That pattern can be probed experimentally.\nBecause X rays are scattered by electrons, the measured scattering can be used to reconstruct charge density maps.\nThe contour map of anthracene is a striking example.\nThe carbon nuclei appear as pronounced peaks, from which bond lengths can be inferred, while the hydrogen positions are much less precise because hydrogen contributes so little electron density by comparison.",
+          "text": "H four teaches the same lesson more sternly.\nWhen two filled H two units are brought together, one bonding combination is gained and one antibonding combination is gained with it.\nSince filled orbitals generally repel one another more than they stabilize, two H two molecules do not fuse into a stable H four molecule, and that simple fact foreshadows a major principle of chemical reactivity.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.2",
+              "id": "fig-1.10",
+              "label": "Figure 1.10",
               "kind": "figure",
-              "caption": "A contour map of electron density in anthracene. The important thing to notice is that the molecule is being read as a landscape of charge, with strong peaks at the carbon nuclei and visible density in the bonding regions."
+              "caption": "The orbitals of tetrahedral H four. It illustrates why combining two filled H two units gives repulsion rather than a new stable molecule."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.06",
+      "number": "01.06",
+      "title": "Carbon enters with two s and two p",
+      "paragraphs": [
+        {
+          "id": "01.06-p001",
+          "text": "Carbon immediately enriches the story because its valence shell contains both s and p orbitals.\nThe one s core is too tight and too deep to matter for ordinary bonding, so attention shifts to the two s and the three two p orbitals.\nThese are the orbitals out of which organic structure will be built.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p002",
+          "text": "The two s orbital still has spherical symmetry, but it now contains a radial node.\nThat node creates an inner and an outer region, though for bonding purposes the outer region does almost all the visible work.\nThis is why the two s orbital is often drawn simply as a circle even though its real wave function is more subtle.",
+          "visuals": [
+            {
+              "id": "fig-1.11",
+              "label": "Figure 1.11",
+              "kind": "figure",
+              "caption": "The carbon two s orbital in wave function, contour, and conventional form. It is a reminder that the simple circle hides a radial node."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p011",
-          "text": "The importance of electron density can hardly be overstated.\nFor many purposes, a molecule behaves just as though its negative charge were really smeared through space in this way.\nIf the density is known, many forces can be calculated by classical electrostatics.\nChemical binding then appears in a clear light.\nThe positively charged nuclei are held together because they are attracted to the negatively charged cloud around and between them.",
+          "id": "01.06-p003",
+          "text": "The three two p orbitals point along the three axes and sit higher in energy than the two s because their electrons are, on average, further from the nucleus.\nTheir shapes are directional, their signs matter, and their angular character makes them the great architects of sigma and pi bonding.\nOnce carbon appears, geometry is no longer an ornament but part of the electronic logic itself.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.2",
+              "id": "fig-1.12",
+              "label": "Figure 1.12",
               "kind": "figure",
-              "caption": "The density map makes visible the charge cloud that helps bind the nuclei together. It is especially useful here because the argument turns on electron density between atoms, not just around them."
+              "caption": "A carbon two p x orbital in several representations. The figure makes the directional character and sign pattern of p orbitals visible."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.07",
+      "number": "01.07",
+      "title": "How carbon overlaps with its neighbors",
+      "paragraphs": [
+        {
+          "id": "01.07-p001",
+          "text": "A p orbital can overlap with an s orbital head on to make a sigma interaction, or with another p orbital head on to make a stronger kind of sigma interaction between aligned lobes.\nBut those overlaps are not monotonic.\nThey rise, reach a maximum, and then fall again as the front lobe begins to interfere with the back lobe.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Overlap integrals for sigma overlap involving carbon p orbitals. It shows why distance and alignment both control bond strength."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p012",
-          "text": "The cloud is especially dense near each nucleus, as one would expect.\nBut what matters for bonding is that there is still enough density in the region between nuclei to generate attraction across the bond.\nThat is why a contour map is not a decorative extra.\nIt shows, in visible form, the very charge distribution from which bonding follows.",
+          "id": "01.07-p002",
+          "text": "This is a quietly important point.\nBringing atoms closer does not guarantee better bonding once the phases begin to cancel in the wrong places.\nThe same orbital can help at one distance and frustrate at another.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Overlap integrals for sigma overlap involving carbon p orbitals. It shows why distance and alignment both control bond strength."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p003",
+          "text": "Angle matters too.\nFor a one s orbital on hydrogen approaching a two p orbital on carbon, the overlap is proportional to the cosine of the angle of approach.\nHead on gives the strongest sigma bonding, while the nodal plane of the p orbital gives none at all.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Overlap integrals for sigma overlap involving carbon p orbitals. It shows why distance and alignment both control bond strength."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.08",
+      "number": "01.08",
+      "title": "Methane without hybrids",
+      "paragraphs": [
+        {
+          "id": "01.08-p001",
+          "text": "The book first builds methane without invoking hybridization.\nA tetrahedral H four unit is classified by symmetry, and its orbitals are matched with the two s and two p orbitals of carbon.\nOnly orbitals of the same symmetry are allowed to mix, and that already gives four bonding molecular orbitals and four antibonding counterparts.",
+          "visuals": [
+            {
+              "id": "fig-1.14",
+              "label": "Figure 1.14",
+              "kind": "figure",
+              "caption": "Methane built from the orbitals of tetrahedral H four and a carbon atom. The figure emphasizes symmetry matching rather than local bond pictures."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p002",
+          "text": "One of the filled orbitals lies lower because it draws on the lower energy two s orbital of carbon.\nThe other three, derived from the two p set, are equal in energy.\nSo even in methane, which chemists often treat as the very emblem of four identical bonds, the deeper molecular picture is already more layered than that convenient slogan suggests.",
+          "visuals": [
+            {
+              "id": "fig-1.14",
+              "label": "Figure 1.14",
+              "kind": "figure",
+              "caption": "Methane built from the orbitals of tetrahedral H four and a carbon atom. The figure emphasizes symmetry matching rather than local bond pictures."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p003",
+          "text": "Another subtle point now appears.\nNo single molecular orbital corresponds to one single C H bond.\nEach hydrogen is held to carbon by contributions from more than one filled orbital, and Figure 1 point 15 makes that distributed bonding visible in a more realistic shape than the conventional textbook lobes.",
+          "visuals": [
+            {
+              "id": "fig-1.15",
+              "label": "Figure 1.15",
+              "kind": "figure",
+              "caption": "Realistic contour surfaces for the four filled orbitals of methane. It shows how distributed the bonding is compared with simple structural lines."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.09",
+      "number": "01.09",
+      "title": "Methylene and why bent can beat linear",
+      "paragraphs": [
+        {
+          "id": "01.09-p001",
+          "text": "Methylene, C H two, is simpler in atom count than methane and richer in electronic drama.\nNow the symmetry analysis produces one set of orbitals from the symmetric H H combination and another from the antisymmetric one.\nThe carbon two p y orbital is left unmatched and therefore nonbonding.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "Methylene built from H two and carbon orbitals. The figure highlights the bent bonding pattern and the unmatched p orbital."
+            },
+            {
+              "id": "fig-1.17",
+              "label": "Figure 1.17",
+              "kind": "figure",
+              "caption": "Interactions of carbon two s and two p z with the H H orbital of the same symmetry. It clarifies why three orbitals emerge from three ingredients."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.8",
+              "label": "1.8",
+              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2 + c_3 \\phi_3",
+              "spoken": "Equation 1 point 8 writes a molecular orbital as a three term combination.",
+              "note": "This is the algebraic form needed when three orbitals of the same symmetry are mixing, as in methylene."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.09-p002",
+          "text": "Because the two s and two p z orbitals of carbon both share the right symmetry with the bonding H H combination, three orbitals must be built from three ingredients.\nThat is why the picture is more entangled than methane.\nThe lowest orbital remains largely s like, the next one has strong p character and bulges in the molecular plane, and the highest is antibonding overall.",
+          "visuals": [
+            {
+              "id": "fig-1.17",
+              "label": "Figure 1.17",
+              "kind": "figure",
+              "caption": "Interactions of carbon two s and two p z with the H H orbital of the same symmetry. It clarifies why three orbitals emerge from three ingredients."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p003",
+          "text": "Most importantly, the bent structure wins over the linear one.\nIn the linear geometry the relevant p orbital would place the hydrogens in its node and would contribute nothing to bonding.\nBy bending, the molecule allows that orbital to help, and the energy drops.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "Methylene built from H two and carbon orbitals. The figure highlights the bent bonding pattern and the unmatched p orbital."
+            },
+            {
+              "id": "fig-1.17",
+              "label": "Figure 1.17",
+              "kind": "figure",
+              "caption": "Interactions of carbon two s and two p z with the H H orbital of the same symmetry. It clarifies why three orbitals emerge from three ingredients."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.10",
+      "number": "01.10",
+      "title": "Hybridization as a useful but chosen picture",
+      "paragraphs": [
+        {
+          "id": "01.10-p001",
+          "text": "Chemists often prefer a more localized story, and this is where hybridization enters.\nInstead of first building the molecular orbitals from separate s and p orbitals, we first mix the carbon orbitals among themselves into new directional hybrids.\nThat is a change in representation, not a change in the molecule.",
+          "visuals": [
+            {
+              "id": "fig-1.18",
+              "label": "Figure 1.18",
+              "kind": "figure",
+              "caption": "The standard sp, sp two, and sp three hybrid sets. The point is not just the algebraic mixing, but the directional geometry each set supports."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.10-p002",
+          "text": "The familiar cases now line up cleanly.\nHalf s plus half p gives two s p hybrids, one third s with suitable p contributions gives three s p two hybrids, and one quarter s with three quarters total p character gives four s p three hybrids.\nEach set is tuned to a geometry, digonal, trigonal, or tetrahedral.",
+          "visuals": [
+            {
+              "id": "fig-1.18",
+              "label": "Figure 1.18",
+              "kind": "figure",
+              "caption": "The standard sp, sp two, and sp three hybrid sets. The point is not just the algebraic mixing, but the directional geometry each set supports."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.10-p003",
+          "text": "Figure 1 point 19 is a salutary corrective to the cartoon version.\nA real s p three hybrid is fatter than the usual drawing, its back lobe wraps behind the nucleus, and the nucleus sits inside the back lobe rather than neatly in front of it.\nThe conventional hybrid is helpful, but only if we keep that mental reservation alive.",
+          "visuals": [
+            {
+              "id": "fig-1.19",
+              "label": "Figure 1.19",
+              "kind": "figure",
+              "caption": "A contour section through an sp three hybrid on carbon. It corrects the thin cartoon by showing the fat front lobe and the hidden back lobe."
+            },
+            {
+              "id": "fig-1.20",
+              "label": "Figure 1.20",
+              "kind": "figure",
+              "caption": "Bonding and antibonding orbitals of a C H bond built from a hydrogen one s orbital and a carbon sp three hybrid."
+            },
+            {
+              "id": "fig-1.21",
+              "label": "Figure 1.21",
+              "kind": "figure",
+              "caption": "Methane drawn from sp three hybridized orbitals and as conventional bonds. It shows what the hybrid picture gains in local clarity and loses in orbital detail."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.10-p004",
+          "text": "That reservation matters philosophically as well as technically.\nIt is better to say that a carbon center is tetrahedral or trigonal than to speak as though the atom itself were literally rehybridizing inside nature.\nHybridization is our economical picture, and it is best used when it clarifies without deceiving.",
+          "visuals": [
+            {
+              "id": "fig-1.20",
+              "label": "Figure 1.20",
+              "kind": "figure",
+              "caption": "Bonding and antibonding orbitals of a C H bond built from a hydrogen one s orbital and a carbon sp three hybrid."
+            },
+            {
+              "id": "fig-1.21",
+              "label": "Figure 1.21",
+              "kind": "figure",
+              "caption": "Methane drawn from sp three hybridized orbitals and as conventional bonds. It shows what the hybrid picture gains in local clarity and loses in orbital detail."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.11",
+      "number": "01.11",
+      "title": "Ethane and the hidden complexity of a sigma bond",
+      "paragraphs": [
+        {
+          "id": "01.11-p001",
+          "text": "Ethane introduces the C C bond, and with it a fuller orbital crowd.\nThe occupied set contains seven bonding molecular orbitals, even before we worry about the unfilled antibonding ones.\nSo the force holding the two carbons together is not concentrated in a single line on the page, even though the structural formula tempts us to think so.",
+          "visuals": [
+            {
+              "id": "fig-1.22",
+              "label": "Figure 1.22",
+              "kind": "figure",
+              "caption": "The bonding orbitals of ethane and selected antibonding ones. It shows that a single C C bond is made from several molecular contributions."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.11-p002",
+          "text": "The major part of the C C sigma bond comes from an orbital of x type, strongly focused along the carbon carbon axis.\nThere is also a contribution from the largely s based pair usually called sigma s and sigma s prime.\nMeanwhile the two p y and two p z sets overlap sideways and generate weak pi like bonding and antibonding contributions that mostly cancel with respect to the C C bond while still helping the C H framework.",
+          "visuals": [
+            {
+              "id": "fig-1.22",
+              "label": "Figure 1.22",
+              "kind": "figure",
+              "caption": "The bonding orbitals of ethane and selected antibonding ones. It shows that a single C C bond is made from several molecular contributions."
+            },
+            {
+              "id": "fig-1.23",
+              "label": "Figure 1.23",
+              "kind": "figure",
+              "caption": "Comparison of sigma and pi overlap integrals for carbon p orbitals. The main lesson is that pi overlap is weaker at normal bond lengths."
+            },
+            {
+              "id": "fig-1.24",
+              "label": "Figure 1.24",
+              "kind": "figure",
+              "caption": "A major orbital contribution to the C C sigma bond of ethane. It is the localized sigma and sigma star picture extracted from the fuller set."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.11-p003",
+          "text": "That sideways contribution is worth noticing because it prepares the mind for later comparisons.\nPi overlap is real even in ethane, but it is weak because sideways overlap cannot hold the nuclei together as directly as head on sigma overlap can.\nThe localized sigma bond picture is therefore acceptable as a simplification, but the fuller orbital set explains why it is only a simplification.",
+          "visuals": [
+            {
+              "id": "fig-1.23",
+              "label": "Figure 1.23",
+              "kind": "figure",
+              "caption": "Comparison of sigma and pi overlap integrals for carbon p orbitals. The main lesson is that pi overlap is weaker at normal bond lengths."
+            },
+            {
+              "id": "fig-1.24",
+              "label": "Figure 1.24",
+              "kind": "figure",
+              "caption": "A major orbital contribution to the C C sigma bond of ethane. It is the localized sigma and sigma star picture extracted from the fuller set."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.12",
+      "number": "01.12",
+      "title": "Ethylene and the essence of Hückel theory",
+      "paragraphs": [
+        {
+          "id": "01.12-p001",
+          "text": "Ethylene is the place where the sigma framework and the pi system separate cleanly enough to become a method.\nFive low lying bonding orbitals make up the sigma framework, while the remaining pair of p z orbitals form the pi bond and its antibonding partner.\nThat separation is the essence of Hückel theory.",
+          "visuals": [
+            {
+              "id": "fig-1.25",
+              "label": "Figure 1.25",
+              "kind": "figure",
+              "caption": "The bonding orbitals of ethylene and one antibonding orbital. It separates the sigma framework from the pi bond."
+            },
+            {
+              "id": "fig-1.26",
+              "label": "Figure 1.26",
+              "kind": "figure",
+              "caption": "A localized picture of the C equals C pi bond and its antibonding partner."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.12-p002",
+          "text": "The pi bond is localized on the two carbons because the hydrogens sit in the nodal plane of the p z orbitals and therefore do not mix into this part of the system.\nThe coefficients return to the familiar hydrogen like values of zero point seven zero seven and zero point seven zero seven with opposite sign in pi star.\nA pi bond is therefore, in one sense, the cleanest small molecular orbital problem after H two.",
+          "visuals": [
+            {
+              "id": "fig-1.26",
+              "label": "Figure 1.26",
+              "kind": "figure",
+              "caption": "A localized picture of the C equals C pi bond and its antibonding partner."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.12-p003",
+          "text": "The electron in a box picture is not introduced here as ornament but as a compressed way of remembering nodal order and coefficients.\nWith only two p orbitals, the one hundred eighty degree sine curve gives the bonding pi orbital and the three hundred sixty degree curve gives pi star.\nFigures 1 point 27 through 1 point 29 make the same point in three increasingly concrete ways, from sign pattern to contour map to wire mesh.",
+          "visuals": [
+            {
+              "id": "fig-1.27",
+              "label": "Figure 1.27",
+              "kind": "figure",
+              "caption": "The pi orbitals of ethylene and the electron in a box analogy. It turns nodal pattern into a memorable sine wave picture."
+            },
+            {
+              "id": "fig-1.28",
+              "label": "Figure 1.28",
+              "kind": "figure",
+              "caption": "Contour sections through the pi and pi star orbitals of ethylene. The figure makes sideways overlap look physically real."
+            },
+            {
+              "id": "fig-1.29",
+              "label": "Figure 1.29",
+              "kind": "figure",
+              "caption": "Wire mesh surfaces for the ethylene pi and pi star orbitals. They give the three dimensional shape that the simpler sketches suppress."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.13",
+      "number": "01.13",
+      "title": "The allyl system and the first genuinely delocalized frontier orbital",
+      "paragraphs": [
+        {
+          "id": "01.13-p001",
+          "text": "With allyl, the theory becomes recognizably organic.\nThe allyl cation, radical, and anion share the same sigma framework and differ only in the number of electrons placed into a three orbital pi system.\nThis is why one set of molecular orbitals can illuminate three different reactive intermediates at once.",
+          "visuals": [
+            {
+              "id": "diag-1.1",
+              "label": "1.1",
+              "kind": "diagram",
+              "caption": "The allyl cation drawn in localized form. It is useful as a conventional entry point into a delocalized system."
+            },
+            {
+              "id": "diag-1.4c",
+              "label": "1.4c",
+              "kind": "diagram",
+              "caption": "A delocalized drawing of the allyl cation. It helps prevent the common mistake of treating resonance forms as a reaction sequence."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.13-p002",
+          "text": "The resonance drawings are both useful and dangerous.\nThey are useful because they highlight where charge or odd electron density is concentrated, but they are dangerous if one starts to imagine them as a reaction that shuttles back and forth.\nDiagram 1 point 4 c is the corrective reminder that the p system is delocalized even when we temporarily draw it in localized forms.",
+          "visuals": [
+            {
+              "id": "diag-1.4c",
+              "label": "1.4c",
+              "kind": "diagram",
+              "caption": "A delocalized drawing of the allyl cation. It helps prevent the common mistake of treating resonance forms as a reaction sequence."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.13-p003",
+          "text": "Mathematically, the allyl pi orbital is a three term combination, and physically that produces three levels.\nThe lowest is bonding across the whole chain, the middle one is nonbonding, and the highest is antibonding.\nThe middle orbital is especially elegant, because its node falls on the central carbon atom itself, forcing the coefficient there to zero.",
+          "visuals": [
+            {
+              "id": "fig-1.30",
+              "label": "Figure 1.30",
+              "kind": "figure",
+              "caption": "The three pi orbitals of the allyl system. The central nonbonding orbital is the especially important feature."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.9",
+              "label": "1.9",
+              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2 + c_3 \\phi_3",
+              "spoken": "Equation 1 point 9 is the three term allyl combination.",
+              "note": "The same formal structure now generates the three pi orbitals of the allyl system."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.13-p004",
+          "text": "The circle construction then gives the energies almost at a glance.\nIt explains why the middle allyl orbital sits at the alpha level and why the lower and upper orbitals lie symmetrically below and above it.\nEquation 1 point 10 packages that geometry into a compact formula.",
+          "visuals": [
+            {
+              "id": "fig-1.31",
+              "label": "Figure 1.31",
+              "kind": "figure",
+              "caption": "A circle construction for the energies of the pi orbitals in ethylene and allyl. It turns orbital energies into simple geometry."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.10",
+              "label": "1.10",
+              "latex": "E = 2 \\beta \\cos\\!\\left(\\frac{k\\pi}{n+1}\\right)",
+              "spoken": "Equation 1 point 10 converts the circle construction for a linear conjugated system into a direct energy formula.",
+              "note": "It gives the Hückel energy levels for the pi orbitals of a chain of n atoms."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.13-p005",
+          "text": "An alternative route reaches the same result by letting an extra p orbital interact with the pi and pi star orbitals of ethylene.\nThat construction is worth dwelling on because it shows how a new nonbonding orbital can emerge as a compromise between one bonding interaction and one antibonding interaction.\nThe allyl system is the first clear case in which delocalization is not just pretty but diagnostically powerful.",
+          "visuals": [
+            {
+              "id": "fig-1.32",
+              "label": "Figure 1.32",
+              "kind": "figure",
+              "caption": "An extra p orbital interacting separately with pi and pi star of ethylene. It is a stepping stone toward the allyl pattern."
+            },
+            {
+              "id": "fig-1.33",
+              "label": "Figure 1.33",
+              "kind": "figure",
+              "caption": "The allyl system rebuilt by letting a p orbital interact with pi and pi star. It shows how the nonbonding orbital emerges."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.13-p006",
+          "text": "Once the coefficients are squared, the charge distribution follows.\nIn the cation, electron deficiency is concentrated at the two ends, and in the anion the extra electron density is likewise concentrated at the two ends.\nThat is why the localized drawings work as frontier orbital mnemonics even while the real orbital picture is delocalized.",
+          "visuals": [
+            {
+              "id": "fig-1.34",
+              "label": "Figure 1.34",
+              "kind": "figure",
+              "caption": "Wave functions and one electron populations for the allyl orbitals. Squaring the coefficients turns orbital shape into charge distribution."
+            },
+            {
+              "id": "fig-1.35",
+              "label": "Figure 1.35",
+              "kind": "figure",
+              "caption": "Total pi electron populations in the allyl cation and anion. The end concentrated charge pattern becomes immediately visible."
+            },
+            {
+              "id": "fig-1.36",
+              "label": "Figure 1.36",
+              "kind": "figure",
+              "caption": "Wire mesh forms of the allyl pi orbitals. The figure shows that the nonbonding orbital is only approximately nonbonding."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.14",
+      "number": "01.14",
+      "title": "Butadiene and the first real gain from conjugation",
+      "paragraphs": [
+        {
+          "id": "01.14-p001",
+          "text": "Butadiene extends the same logic from three p orbitals to four.\nNow there are four levels, with zero, one, two, and three nodes respectively.\nThe lowest two are filled in the ground state, and they are not equivalent in what they do to electron density.",
+          "visuals": [
+            {
+              "id": "fig-1.37",
+              "label": "Figure 1.37",
+              "kind": "figure",
+              "caption": "The four pi molecular orbitals of butadiene with coefficients and nodes. It is the basic map for conjugation across four carbons."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.11",
+              "label": "1.11",
+              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2 + c_3 \\phi_3 + c_4 \\phi_4",
+              "spoken": "Equation 1 point 11 is the four term linear combination used for butadiene.",
+              "note": "Four p orbitals produce four molecular orbitals with four coefficient sets."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.14-p002",
+          "text": "The first orbital, psi one, is bonding everywhere and therefore pulls electron density strongly into the middle of the chain.\nThe next one, psi two, still counts as overall bonding, but the node between carbon two and carbon three pushes density away from the middle and toward the ends.\nSo even before we talk about reactivity, the nodal pattern is already shaping where electrons prefer to live.",
+          "visuals": [
+            {
+              "id": "fig-1.37",
+              "label": "Figure 1.37",
+              "kind": "figure",
+              "caption": "The four pi molecular orbitals of butadiene with coefficients and nodes. It is the basic map for conjugation across four carbons."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.14-p003",
+          "text": "Equation 1 point 12 gives the coefficients directly from the sine pattern.\nIt is more than a calculation trick.\nIt tells us that the coefficients are not arbitrary decorations on the orbitals but a quantitative measure of how strongly each atom participates in each molecular pattern.",
+          "visuals": [
+            {
+              "id": "fig-1.37",
+              "label": "Figure 1.37",
+              "kind": "figure",
+              "caption": "The four pi molecular orbitals of butadiene with coefficients and nodes. It is the basic map for conjugation across four carbons."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.12",
+              "label": "1.12",
+              "latex": "c_{jr} = \\sqrt{\\frac{2}{n+1}} \\sin\\!\\left(\\frac{r j \\pi}{n+1}\\right)",
+              "spoken": "Equation 1 point 12 gives the coefficient on atom j in molecular orbital r of a linear conjugated system.",
+              "note": "It turns the electron in a box picture into actual numbers for Hückel coefficients."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.14-p004",
+          "text": "There is also a more intuitive construction in which two ethylene pi systems are allowed to interact.\nFrom that perspective, conjugation lowers the lowest orbital more than it raises the second one, and that asymmetry is the energetic secret of stabilization.\nFigures 1 point 38 through 1 point 40 make this especially clear.",
+          "visuals": [
+            {
+              "id": "fig-1.38",
+              "label": "Figure 1.38",
+              "kind": "figure",
+              "caption": "Primary interactions of the pi orbitals of two ethylenes. It is a useful intermediate picture for understanding butadiene."
+            },
+            {
+              "id": "fig-1.39",
+              "label": "Figure 1.39",
+              "kind": "figure",
+              "caption": "Energies of the pi orbitals of ethylene and butadiene by orbital interaction. The key point is that the lowest orbital drops more than the next one rises."
+            },
+            {
+              "id": "fig-1.40",
+              "label": "Figure 1.40",
+              "kind": "figure",
+              "caption": "A geometric comparison of pi orbital energies in ethylene and butadiene. It translates conjugative stabilization into simple numerical steps."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.14-p005",
+          "text": "The gain is not infinite, but it is real.\nButadiene is lower in pi energy than two isolated double bonds would be, and the wire mesh orbitals make that gain look physically plausible rather than merely algebraic.\nBy now the HOMO and the LUMO are no longer rhetorical labels but visible actors with distinct shapes and coefficients.",
+          "visuals": [
+            {
+              "id": "fig-1.41",
+              "label": "Figure 1.41",
+              "kind": "figure",
+              "caption": "Wire mesh views of the butadiene pi orbitals in the s trans conformation. They show where the HOMO and LUMO really place their lobes."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.15",
+      "number": "01.15",
+      "title": "Longer polyenes and the shrinking HOMO LUMO gap",
+      "paragraphs": [
+        {
+          "id": "01.15-p001",
+          "text": "Once the pattern is clear, longer linear conjugated systems are conceptually easy even if the bookkeeping grows.\nThe lower levels keep descending, the highest occupied level rises, and the lowest unoccupied one falls.\nThe HOMO and LUMO therefore move toward each other as the chain length increases.",
+          "visuals": [
+            {
+              "id": "fig-1.42",
+              "label": "Figure 1.42",
+              "kind": "figure",
+              "caption": "Energies and coefficients for the smaller linear conjugated systems. The trend in HOMO and LUMO positions is the main thing to notice."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.15-p002",
+          "text": "That narrowing gap has a direct optical consequence.\nLess energy is needed to promote an electron from the HOMO to the LUMO, so longer polyenes absorb at longer wavelengths.\nThe mathematics becomes visibly chemical.",
+          "visuals": [
+            {
+              "id": "fig-1.42",
+              "label": "Figure 1.42",
+              "kind": "figure",
+              "caption": "Energies and coefficients for the smaller linear conjugated systems. The trend in HOMO and LUMO positions is the main thing to notice."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.15-p003",
+          "text": "If simple Hückel theory were pushed to an infinite polyene without correction, the gap would collapse to zero and the chain would become metallic.\nReal molecules refuse that limit.\nThey undergo a Peierls or Jahn Teller type distortion, alternating their bond lengths and reopening a gap.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p013",
-          "text": "Once this picture is accepted, many other molecular properties become easier to understand.\nIf one atom draws electron density more strongly than another, the cloud becomes polarized and the molecule acquires a dipole moment.\nHigher electric moments can be treated in the same spirit.\nIn nuclear quadrupole resonance, the nucleus itself acts as a local probe of the nonuniform electric field created by that cloud.",
+          "id": "01.15-p004",
+          "text": "This is one of the chapter's recurring lessons.\nA useful model may be profoundly right about trends and still need correction at an extreme.\nIn long polyenes and conducting polymers, that correction becomes the chemistry.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.16",
+      "number": "01.16",
+      "title": "Aromaticity and antiaromaticity",
+      "paragraphs": [
+        {
+          "id": "01.16-p001",
+          "text": "Benzene does not merely continue the polyene story.\nIt bends it into a ring and creates a new electronic regime.\nWith six p orbitals arranged cyclically, one gets a lowest orbital with no node, two degenerate orbitals with one node each, two degenerate antibonding orbitals with two nodes each, and one highest orbital with three nodes.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.3",
+              "id": "fig-1.43",
+              "label": "Figure 1.43",
               "kind": "figure",
-              "caption": "Photoelectron spectroscopy in its simplest logic. Radiation supplies energy, part of that energy frees the electron, and the remainder appears as measurable kinetic energy."
+              "caption": "The six pi orbitals of benzene in side and top view. It shows the node pattern behind aromatic stabilization."
+            },
+            {
+              "id": "fig-1.44",
+              "label": "Figure 1.44",
+              "kind": "figure",
+              "caption": "A circle construction for the energies of the benzene pi orbitals. Degenerate pairs appear naturally from the ring geometry."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p014",
-          "text": "Photoelectron spectroscopy offers another especially vivid example.\nIf radiation gives an electron enough energy to escape the molecule, the excess appears as kinetic energy in the ejected electron.\nBy measuring that kinetic energy, one can infer how tightly the electron had been bound.\nThe method is therefore an indirect but powerful way of reading the electronic environment inside the molecule.",
+          "id": "01.16-p002",
+          "text": "The total pi bonding of benzene comes out greater than that of three isolated double bonds and even greater than that of open chain hexatriene.\nThat extra lowering is the orbital basis of aromatic stabilization.\nThe circle construction and the comparison with closing hexatriene into a ring both point to the same conclusion.",
           "visuals": [
             {
-              "id": "",
-              "label": "Figure 1.4",
+              "id": "fig-1.44",
+              "label": "Figure 1.44",
               "kind": "figure",
-              "caption": "The carbon 1s spectrum shows that not all carbon atoms in a molecule are electronically equivalent. Their local environments shift how tightly inner electrons are bound, so separate peaks appear."
+              "caption": "A circle construction for the energies of the benzene pi orbitals. Degenerate pairs appear naturally from the ring geometry."
+            },
+            {
+              "id": "fig-1.45",
+              "label": "Figure 1.45",
+              "kind": "figure",
+              "caption": "The drop in pi energy when hexatriene is closed into benzene. It is an interaction view of aromatic stabilization."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p015",
-          "text": "This is why inner-shell photoelectron peaks shift from one atom to another, even for atoms of the same element in the same molecule.\nIn ethyl trifluoroacetate, the four carbon atoms do not live in identical electronic surroundings.\nFluorine pulls charge strongly, oxygen also alters the nearby density, and the effect weakens with distance.\nSo the inner-shell electrons of those carbons are bound by slightly different amounts, and the spectrum splits into several peaks rather than one.",
-          "visuals": [
-            {
-              "id": "",
-              "label": "Figure 1.5",
-              "kind": "figure",
-              "caption": "A nitrogen 1s spectrum in which different nitrogen environments generate distinct peaks. Even the relative peak sizes carry structural information, so the spectrum becomes a probe of molecular electronic arrangement."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p016",
-          "text": "The nitrogen example makes the same point in another form.\nDifferent nitrogen environments produce different binding energies, and even the sizes of the peaks carry structural information.\nThese examples show what this book means by understanding.\nOne does not want bare numbers pouring from a machine.\nOne wants a simple but faithful physical picture that lets the numbers make sense.",
+          "id": "01.16-p003",
+          "text": "The ring current belongs to the same story.\nBecause the delocalized electrons can circulate, aromatic rings generate a diamagnetic anisotropy that moves outer protons downfield and inner protons of large annulenes upfield.\nMagnetic behavior here is not an afterthought but a fingerprint of delocalized electronic motion.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p017",
-          "text": "That is why the chapter ends here, before the formal machinery begins, by insisting on these primitive patterns of understanding.\nIf we can learn to think in terms of energy landscapes, equilibrium structure, charge clouds, and experimentally probed electronic environments, then the later mathematics will illuminate something already inwardly grasped.\nOnly then are we really prepared to approach molecular bonding.",
+          "id": "01.16-p004",
+          "text": "Four n systems behave very differently.\nSquare cyclobutadiene has one strongly bonding orbital and then a pair of nonbonding orbitals rather than a second deep gain in stabilization.\nRelative to butadiene, the cyclic four electron system loses the energetic advantage of ordinary conjugation.",
+          "visuals": [
+            {
+              "id": "fig-1.46",
+              "label": "Figure 1.46",
+              "kind": "figure",
+              "caption": "The pi orbitals of square cyclobutadiene. The pair of nonbonding orbitals is the crucial antiaromatic feature."
+            },
+            {
+              "id": "fig-1.47",
+              "label": "Figure 1.47",
+              "kind": "figure",
+              "caption": "No net gain in pi energy on going from butadiene to cyclobutadiene. The figure contrasts antiaromatic closure with aromatic closure."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.16-p005",
+          "text": "That is why antiaromatic systems are so often both high in energy and unusually reactive.\nTheir HOMO is high, their LUMO is low, and the gap between them is uncomfortably small.\nCyclobutadiene then escapes by a Jahn Teller distortion into a rectangle with alternating bond lengths, lowering one of the formerly degenerate levels and raising the other.",
+          "visuals": [
+            {
+              "id": "fig-1.48",
+              "label": "Figure 1.48",
+              "kind": "figure",
+              "caption": "The three lowest pi orbitals of rectangular cyclobutadiene. It illustrates the Jahn Teller distortion that splits the former degeneracy."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.17",
+      "number": "01.17",
+      "title": "Cyclopentadienyl, cyclopentadienyl cation, and the frontier gap",
+      "paragraphs": [
+        {
+          "id": "01.17-p001",
+          "text": "The cyclopentadienyl anion and cation offer a compact contrast between aromatic and antiaromatic behavior.\nIn the anion, six pi electrons fill three lowered orbitals and produce an aromatic stabilization very similar in spirit to benzene.\nIn the cation, only four electrons are available and the cyclic pattern fails to deliver that bonus.",
+          "visuals": [
+            {
+              "id": "fig-1.49",
+              "label": "Figure 1.49",
+              "kind": "figure",
+              "caption": "The energies and coefficients of the cyclopentadienyl pi system. It is the compact comparison between aromatic anion and antiaromatic cation."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.17-p002",
+          "text": "This contrast is not just thermodynamic.\nAromatic systems tend to have a substantial HOMO LUMO gap, while antiaromatic systems have a vanishing or at least a troublingly small one.\nThat difference helps explain why aromatic rings feel electronically self contained and antiaromatic rings feel eager for reaction or distortion.",
+          "visuals": [
+            {
+              "id": "fig-1.49",
+              "label": "Figure 1.49",
+              "kind": "figure",
+              "caption": "The energies and coefficients of the cyclopentadienyl pi system. It is the compact comparison between aromatic anion and antiaromatic cation."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.17-p003",
+          "text": "The ring current follows the same division.\nAromatic rings support the familiar diamagnetic circulation, while four n systems tend toward a paramagnetic response because low energy orbital promotion between nearly degenerate frontier levels becomes possible.\nThe magnetic and energetic criteria converge on the same judgment.",
           "visuals": [],
           "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.18",
+      "number": "01.18",
+      "title": "Homoaromaticity and spiro conjugation",
+      "paragraphs": [
+        {
+          "id": "01.18-p001",
+          "text": "Conjugation does not always require direct bond to bond continuity.\nIf p orbitals can still overlap through space across an interruption, a system may be homoaromatic.\nThe interrupted framework then behaves as though a hidden bridge of overlap had survived.",
+          "visuals": [
+            {
+              "id": "fig-1.50",
+              "label": "Figure 1.50",
+              "kind": "figure",
+              "caption": "Relative energies of local, homoaromatic, and homoantiaromatic arrangements. The figure distinguishes stabilization from mere transition structure effects."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.18-p002",
+          "text": "The energy diagrams in Figure 1 point 50 distinguish three possibilities.\nSome interrupted systems are genuinely stabilized by through space cyclic overlap.\nSome merely pass through a potentially homoaromatic geometry on the way between localized structures.\nOthers are penalized because the interrupted cyclic overlap would be antiaromatic.\nThis is one of those places where orbital logic explains not just a structure but a barrier.",
+          "visuals": [
+            {
+              "id": "fig-1.50",
+              "label": "Figure 1.50",
+              "kind": "figure",
+              "caption": "Relative energies of local, homoaromatic, and homoantiaromatic arrangements. The figure distinguishes stabilization from mere transition structure effects."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.18-p003",
+          "text": "Spiro conjugation is weaker still, because the two p systems lie at right angles and overlap only through selected lobes with matching symmetry.\nYet even this small overlap can measurably lower or raise the energy depending on whether the total electron count falls on the aromatic or antiaromatic side.\nThe effect is faint, but it is real enough to be chemically legible.",
+          "visuals": [
+            {
+              "id": "fig-1.51",
+              "label": "Figure 1.51",
+              "kind": "figure",
+              "caption": "Pi molecular orbitals of an aromatic spiroheptatriene. It shows how weak orthogonal overlap can still lower the energy."
+            },
+            {
+              "id": "fig-1.52",
+              "label": "Figure 1.52",
+              "kind": "figure",
+              "caption": "Pi molecular orbitals of an antiaromatic spirononatetraene. Here the same kind of overlap raises the overall energy instead."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.19",
+      "number": "01.19",
+      "title": "Strained sigma bonds in cyclopropane and cyclobutane",
+      "paragraphs": [
+        {
+          "id": "01.19-p001",
+          "text": "Cyclopropane reveals that a sigma bond can be bent so far from ideal head on overlap that it begins to imitate pi chemistry.\nIn the simple hybrid picture, the carbon orbitals can only meet imperfectly, so the C C bonds fall somewhere between ordinary sigma and sideways pi overlap.\nThat is why cyclopropanes are neither as inert as alkanes nor as free as alkenes, but occupy a curious middle ground.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.19-p002",
+          "text": "The Walsh description makes this kinship even sharper.\nIt displays a high lying occupied orbital with substantial p character and the right symmetry to overlap with neighboring unsaturated systems.\nThat is why a cyclopropyl group can participate in conjugation more effectively than a casual structural formula would suggest.",
+          "visuals": [
+            {
+              "id": "fig-1.53",
+              "label": "Figure 1.53",
+              "kind": "figure",
+              "caption": "A simplified set of occupied Walsh orbitals for cyclopropane. The figure makes the p like character of the strained C C bonds explicit."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.19-p003",
+          "text": "Even the magnetic behavior is telling.\nCyclopropane shows an aromatic like ring current pattern in the C H bond system, but the geometry places its protons in a region of reduced field, so they appear unusually far upfield in proton N M R.\nCyclobutane shows a related but weaker and partly opposite effect because its four bond pattern resembles an antiaromatic arrangement and the ring can buckle to relieve the strain.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.20",
+      "number": "01.20",
+      "title": "When the two atoms do not start at the same energy",
+      "paragraphs": [
+        {
+          "id": "01.20-p001",
+          "text": "So far the cleanest interaction diagrams have paired orbitals of comparable energy.\nHeteronuclear bonds force us to relax that comfort.\nElectronegativity and calculated orbital energies now become crucial because the two partners do not meet on equal terms.",
+          "visuals": [
+            {
+              "id": "fig-1.54",
+              "label": "Figure 1.54",
+              "kind": "figure",
+              "caption": "Allen electronegativity values and related carbon hybrid values. It provides a quick scale for orbital inequality across elements."
+            },
+            {
+              "id": "fig-1.55",
+              "label": "Figure 1.55",
+              "kind": "figure",
+              "caption": "Electronegativity drawn as a third dimension of the periodic table. It makes the ordering vivid at a glance."
+            },
+            {
+              "id": "fig-1.56",
+              "label": "Figure 1.56",
+              "kind": "figure",
+              "caption": "Calculated valence orbital energies for first and second row elements. This is the more direct orbital version of electronegativity."
+            },
+            {
+              "id": "fig-1.57",
+              "label": "Figure 1.57",
+              "kind": "figure",
+              "caption": "Orbital energies for hybrid orbitals. It shows how adding s character lowers an orbital."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.20-p002",
+          "text": "In a C Cl sigma bond, the chlorine orbital starts lower in energy, so the bonding molecular orbital is polarized toward chlorine and the antibonding orbital is polarized toward carbon.\nThe covalent stabilization is therefore less than in a symmetric C C bond, but the bond as a whole is strengthened by electrostatic attraction between partial charges.\nThis is why a C Cl bond can be fairly strong homolytically and yet much easier to break heterolytically than a C C bond.",
+          "visuals": [
+            {
+              "id": "fig-1.58",
+              "label": "Figure 1.58",
+              "kind": "figure",
+              "caption": "A major part of the C Cl sigma bond. The unequal orbital energies produce polarization toward chlorine."
+            },
+            {
+              "id": "fig-1.59",
+              "label": "Figure 1.59",
+              "kind": "figure",
+              "caption": "Filled orbitals and the lowest unfilled orbital of methyl chloride, shown with and without hybridization. The LUMO is polarized toward carbon."
+            },
+            {
+              "id": "fig-1.60",
+              "label": "Figure 1.60",
+              "kind": "figure",
+              "caption": "An intentionally oversimplified ionic bond picture for sodium fluoride. It clarifies the meaning of the ionic energy term."
+            },
+            {
+              "id": "fig-1.61",
+              "label": "Figure 1.61",
+              "kind": "figure",
+              "caption": "Wire mesh surfaces for the major C Cl bonding orbital and the LUMO of methyl chloride."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.13",
+              "label": "1.13",
+              "latex": "E_{\\sigma\\mathrm{CCl}} = E_{p\\mathrm{Cl}} + \\frac{(\\beta_{\\mathrm{CCl}} - E_{p\\mathrm{Cl}} S_{\\mathrm{CCl}})^2}{E_{p\\mathrm{Cl}} - E_{p\\mathrm{C}}}",
+              "spoken": "Equation 1 point 13 gives the lowered energy level for the C chlorine bonding combination.",
+              "note": "The important point is that unequal orbital energies make the stabilization depend on both overlap and the energy gap between the partners."
+            },
+            {
+              "id": "eq-1.14",
+              "label": "1.14",
+              "latex": "E_{\\sigma^{*}\\mathrm{CCl}} = E_{p\\mathrm{C}} + \\frac{(\\beta_{\\mathrm{CCl}} - E_{p\\mathrm{C}} S_{\\mathrm{CCl}})^2}{E_{p\\mathrm{C}} - E_{p\\mathrm{Cl}}}",
+              "spoken": "Equation 1 point 14 gives the raised energy level for the antibonding C chlorine combination.",
+              "note": "It is the partner to Equation 1 point 13 and shows the same dependence on overlap and orbital mismatch."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.20-p003",
+          "text": "Methyllithium flips the polarity.\nNow carbon is the lower energy partner, so the highest occupied bonding orbital is polarized toward carbon and the corresponding low unoccupied orbital toward lithium.\nThat helps explain why organolithium compounds behave like strongly carbanion like donors even though the bond still retains covalent character.",
+          "visuals": [
+            {
+              "id": "fig-1.62",
+              "label": "Figure 1.62",
+              "kind": "figure",
+              "caption": "Major orbital interactions for methyl chloride, methyl fluoride, and methyllithium. It compares how changing the partner changes the dominant mixing."
+            },
+            {
+              "id": "fig-1.63",
+              "label": "Figure 1.63",
+              "kind": "figure",
+              "caption": "A contributory part of the Li C sigma bond. The polarization now points toward carbon rather than away from it."
+            },
+            {
+              "id": "fig-1.64",
+              "label": "Figure 1.64",
+              "kind": "figure",
+              "caption": "Filled orbitals and one low unfilled orbital of methyllithium. It is the covalent picture behind the carbanion like behavior."
+            },
+            {
+              "id": "fig-1.65",
+              "label": "Figure 1.65",
+              "kind": "figure",
+              "caption": "Wire mesh views of the HOMO and LUMO of methyllithium. They show how the frontier orbitals are distributed across carbon and lithium."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.20-p004",
+          "text": "A carbonyl pi bond follows the same unequal energy logic in a cleaner Hückel setting.\nThe bonding pi orbital is polarized toward oxygen, while pi star is polarized toward carbon.\nThat is the orbital reason nucleophiles attack the carbon of a carbonyl group so readily.",
+          "visuals": [
+            {
+              "id": "fig-1.66",
+              "label": "Figure 1.66",
+              "kind": "figure",
+              "caption": "A C equals O pi bond and its antibonding partner. The bond is polarized toward oxygen, while pi star is polarized toward carbon."
+            },
+            {
+              "id": "fig-1.67",
+              "label": "Figure 1.67",
+              "kind": "figure",
+              "caption": "Wire mesh plots of the formaldehyde pi and pi star orbitals. These make carbonyl polarization spatially visible."
+            },
+            {
+              "id": "fig-1.68",
+              "label": "Figure 1.68",
+              "kind": "figure",
+              "caption": "Electron population contours for the formaldehyde pi and pi star orbitals. The oxygen side is more compact, not merely larger."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.15",
+              "label": "1.15",
+              "latex": "\\alpha_X = \\alpha_0 + h_X \\beta_0",
+              "spoken": "Equation 1 point 15 adjusts the alpha value for a heteroatom X.",
+              "note": "In simple Hückel treatments, the parameter h shifts the orbital energy relative to carbon."
+            },
+            {
+              "id": "eq-1.16",
+              "label": "1.16",
+              "latex": "\\beta_{CX} = k_{CX} \\beta_0",
+              "spoken": "Equation 1 point 16 adjusts the beta value for a carbon heteroatom pi bond.",
+              "note": "The parameter k scales the interaction strength relative to a carbon carbon reference bond."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.21",
+      "number": "01.21",
+      "title": "Heteroaromatic systems, the tau bond model, and experimental checks",
+      "paragraphs": [
+        {
+          "id": "01.21-p001",
+          "text": "Pyrrole and pyridine show that aromaticity easily survives the introduction of heteroatoms.\nThe cyclic lowering remains, but the orbitals are skewed because the heteroatom pulls electron density toward itself in some levels and pushes it away in others.\nThe familiar aromatic patterns are preserved, but they are no longer perfectly democratic around the ring.",
+          "visuals": [
+            {
+              "id": "fig-1.69",
+              "label": "Figure 1.69",
+              "kind": "figure",
+              "caption": "Pi molecular orbitals of pyrrole, pyridine, and the pyridinium ion. The aromatic pattern survives but is skewed by heteroatom electronegativity."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.21-p002",
+          "text": "The tau bond model offers an alternative way of describing alkenes and conjugated systems using only bent sigma like bonds between s p three carbon centers.\nIt is legitimate and sometimes suggestive for stereochemical thinking.\nBut for ordinary questions of conjugation, nodal structure, and frontier orbitals, the Hückel picture remains clearer and more powerful.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.21-p003",
+          "text": "The final pages of the chapter are a reminder that molecular orbital theory is not only a visual language but an experimentally answerable one.\nUltraviolet spectroscopy tracks the HOMO to LUMO gap.\nN M R coupling constants reveal how spin information is transmitted through occupied orbitals.\nPhotoelectron spectroscopy measures the energies of filled orbitals rather directly.\nE S R reports unpaired electron distribution in radicals.\nThe theory survives because the molecule keeps answering in the same accent.",
+          "visuals": [
+            {
+              "id": "fig-1.70",
+              "label": "Figure 1.70",
+              "kind": "figure",
+              "caption": "Observed first pi to pi star transition energies of polyenes plotted against calculated HOMO LUMO gaps. The correlation is a strong vote of confidence for the model."
+            },
+            {
+              "id": "table-1.3",
+              "label": "Table 1.3",
+              "kind": "table",
+              "caption": "HOMO energies of simple molecules from photoelectron spectroscopy. The ordering matters more than memorizing every entry."
+            },
+            {
+              "id": "fig-1.71a",
+              "label": "Figure 1.71",
+              "kind": "figure",
+              "caption": "Energy levels of two nuclei showing no apparent coupling. It is the starting point for understanding spin splitting."
+            },
+            {
+              "id": "fig-1.72",
+              "label": "Figure 1.72",
+              "kind": "figure",
+              "caption": "Energy levels for positively coupled directly bonded nuclei. It explains why one bond couplings split signals into matched doublets."
+            },
+            {
+              "id": "fig-1.73",
+              "label": "Figure 1.73",
+              "kind": "figure",
+              "caption": "Energy levels for negatively coupled nuclei separated by two bonds. It shows how the same apparent splitting can arise with opposite sign."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.17",
+              "label": "1.17",
+              "latex": "\\Delta E = 4 \\beta \\sin\\!\\left(\\frac{\\pi}{2(2n+1)}\\right)",
+              "spoken": "Equation 1 point 17 gives the HOMO LUMO separation for a representative linear polyene series.",
+              "note": "It links increasing conjugation length to a shrinking frontier orbital gap."
+            },
+            {
+              "id": "eq-1.18",
+              "label": "1.18",
+              "latex": "a_H = Q_{CH}^{H} \\rho_C",
+              "spoken": "Equation 1 point 18 is the McConnell relation for proton coupling in electron spin resonance.",
+              "note": "It links the observed splitting to the unpaired spin population on the adjacent carbon atom."
+            }
+          ],
           "videos": []
         }
       ]
     }
   ],
   "stats": {
-    "sectionCount": 5,
-    "paragraphCount": 42,
-    "visualCount": 9,
-    "equationCount": 0
+    "sectionCount": 21,
+    "paragraphCount": 74,
+    "visualCount": 106,
+    "equationCount": 18
   }
 };
