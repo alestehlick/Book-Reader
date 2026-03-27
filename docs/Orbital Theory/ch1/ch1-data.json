@@ -5,39 +5,39 @@
     {
       "id": "01.01",
       "number": "01.01",
-      "title": "What a theory of valence must explain",
+      "title": "What a Theory of Valence Must Explain",
       "paragraphs": [
         {
           "id": "01.01-p001",
-          "text": "This chapter begins at the right place.\nBefore we chase fine structural detail, we have to ask what any serious theory of valence is actually supposed to explain.",
+          "text": "A theory of valence is not chiefly asked to list molecular details.\nIt is asked to explain why molecules form, why they form in definite proportions, and why those proportions can vary from one case to another.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p002",
-          "text": "The first question is the most basic one.\nWhy do atoms bind at all.\nWhy do two hydrogen atoms settle into H two, while two helium atoms do not produce a comparable stable molecule.",
+          "text": "The first question is the most basic one.\nWhy do two hydrogen atoms settle into H two, while two helium atoms do not settle into an analogous stable molecule?",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p003",
-          "text": "The next question concerns proportion.\nChemistry does not merely tell us that atoms combine, but that they combine in definite ratios, and sometimes in more than one ratio.\nThe old image of little valence knobs on the surface of an atom is too crude to cope with that richness.\nIt may explain why hydrogen saturates at H two rather than H three, but it does not really explain how carbon can give both carbon monoxide and carbon dioxide, or why valence changes with position in the periodic table.",
+          "text": "The next question concerns combining ratios.\nA serious theory must explain not only fixed proportions, but also cases like carbon monoxide and carbon dioxide, where the same elements combine in more than one stable ratio.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p004",
-          "text": "Then comes geometry.\nA good theory must explain not only which atoms bind, but how they sit in space.\nIt must account for the tetrahedral H C H angles of methane, for the wider chlorine angles in chloroform, for the linear form of carbon dioxide, and for the bent shape of water.",
+          "text": "It must also explain molecular shape.\nMethane, chloroform, carbon dioxide, and water do not merely differ in composition.\nThey differ in geometry, and those geometries are part of the problem, not decorative extras.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.01-p005",
-          "text": "And that is still not enough.\nModern measurements reveal bond lengths, bond angles, and finer bond properties that lie far beyond the old habit of drawing one line for a single bond and two for a double bond.\nA satisfying theory should gather all of this into one account.\nIt should tell us whether an atom can bind, how many partners it can hold, how they will be arranged, and what the individual bond is really like.",
+          "text": "In the end, one wants a unified account.\nThe same theory should explain whether an atom can bind, how many partners it can hold, how those partners are arranged in space, and what individual bonds are really like.",
           "visuals": [],
           "equations": [],
           "videos": []
@@ -47,25 +47,53 @@
     {
       "id": "01.02",
       "number": "01.02",
-      "title": "Why valence must be electronic",
+      "title": "Why the Theory Must Be Electronic and Quantum",
       "paragraphs": [
         {
           "id": "01.02-p001",
-          "text": "In the end, to describe bonding is to describe how electrons are distributed around nuclei.\nEarly electronic theories saw those electrons as fixed point charges arranged in neat geometrical patterns, often cubes or tetrahedra, and they used that picture to support the octet rule and its link with the periodic table.",
+          "text": "In the deepest sense, a bond is a pattern in the distribution of electrons around nuclei.\nThat is why early static pictures, with electrons pinned at the corners of cubes or tetrahedra, could never be enough.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.02-p002",
-          "text": "But a static picture of charges cannot be the real answer.\nElectrostatics itself says that such a distribution cannot be stably at rest.\nEven the earliest ionic pictures had this weakness.\nOpposite ions attract, yes, but something else must keep the structure from collapsing.\nAnd if that difficulty already appears in ionic solids, it becomes sharper still for covalent molecules like H two, where neutral atoms somehow attract one another strongly enough to bind.",
+          "text": "Such models tried to visualize the octet rule, but they violated a basic lesson of electrostatics.\nA rigid static arrangement of charges cannot be a stable resting structure.\nSomething essential was missing.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.02-p003",
-          "text": "Bohr's model was the first serious attempt to make the picture dynamic.\nIt succeeded brilliantly for the hydrogen atom by giving discrete orbits and discrete energies, and so it explained spectroscopic lines with astonishing accuracy.\nBut it failed for systems with more than one electron or more than one nucleus.\nThe deeper problem was that it carried classical ideas too far.\nAt the electronic scale, a sharply defined orbit is not a literal observable track.\nThat is why valence theory had to pass into quantum mechanics, and especially wave mechanics.\nOnly there do we get a framework that can, in principle and often in practice, build a coherent theory of molecular structure and properties.",
+          "text": "Even ionic bonding could not be explained by bare electrostatic attraction alone.\nAnd in a covalent molecule like H two, the problem is even sharper, because two neutral atoms do not simply pull together by an obvious classical Coulomb force.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p004",
+          "text": "Bohr's model was a great advance because it made the electron dynamic rather than static.\nIt explained the hydrogen spectrum by allowing only certain orbits and certain energies.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p005",
+          "text": "But that success did not extend far enough.\nThe Bohr picture breaks down for systems with more than one electron, and also for systems with more than one nucleus.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p006",
+          "text": "The deeper reason is that classical mechanics is not built for objects as small as electrons.\nAt that scale, even the idea of a sharply defined orbit loses its physical meaning.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p007",
+          "text": "So the theory of valence must pass into quantum mechanics.\nWave mechanics gives the framework in which atoms and molecules can be treated with both conceptual coherence and real predictive power.",
           "visuals": [],
           "equations": [],
           "videos": []
@@ -75,68 +103,82 @@
     {
       "id": "01.03",
       "number": "01.03",
-      "title": "Energy as the key test",
+      "title": "Energy as the Decisive Guide",
       "paragraphs": [
         {
           "id": "01.03-p001",
-          "text": "Broadly speaking, two atoms form a molecule because the total energy falls when the atoms come together.\nFor most purposes, the decisive quantity is the electronic energy, together with the repulsion between the nuclei.\nThe energies of vibration, rotation, and translation matter, especially in spectroscopy, but they are usually small compared with the main electronic terms.",
+          "text": "In broad terms, atoms form a molecule when bringing them together lowers the total energy.\nThat is the master principle that governs the rest of the chapter.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.03-p002",
-          "text": "This is why energy sits at the center of valence theory.\nHydrogen forms H two rather than H three because the relevant electronic energy is lower for the diatomic arrangement.\nWater has its particular bond lengths and its bent angle because the energy reaches a minimum there.\nSo a real theory must show how energy changes as the nuclei move.\nFrom that one can recover equilibrium structure, restoring forces, and vibrational behavior.",
+          "text": "For most structural purposes, the decisive quantity is the electronic energy together with the repulsion among the nuclei.\nVibrational, rotational, and translational contributions matter, especially in spectroscopy, but they are usually much smaller.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.03-p003",
-          "text": "At this point an important distinction appears.\nThe electronic binding energy is not quite the same as the experimentally observed dissociation energy.\nReal molecules are vibrating, rotating, and translating.\nZero point vibration matters most among these corrections, while rotational and translational terms are usually smaller.\nFor a diatomic molecule, the observed bond energy therefore depends slightly on temperature, even though the underlying electronic binding energy does not.",
+          "text": "This is why structure can be read from an energy landscape.\nThe equilibrium geometry of a molecule is the arrangement of nuclei for which the energy is lowest.\nDistort the geometry, and the rise in energy tells us the restoring forces and the vibrational behavior.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.03-p004",
-          "text": "For larger molecules, another complication enters.\nBreaking one bond is not always the same thing as dividing the total binding energy evenly among all the bonds.\nAfter one bond breaks, the fragments can reorganize electronically and recover part of the energy.\nWater gives a simple example.\nIts total binding energy is about 9 point 49 electron volts, but the first O H bond requires about 5 point 18 electron volts to break, and the second only about 4 point 31.",
+          "text": "That same viewpoint lets valence theory speak to spectroscopy.\nInfrared and Raman frequencies, rotational structure, and many other observable effects all depend on how the energy changes as the molecule is deformed.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.03-p005",
-          "text": "There is also a thermodynamic distinction.\nExperimental bond energies are commonly inferred from heats of reaction measured at ordinary temperature and pressure.\nStrictly speaking, those are enthalpy changes rather than pure internal energy changes, because one must also reckon with the pressure volume term.\nFor the purposes of this book, the main concern remains electronic binding energy, but it is useful to know what has been folded into the experimental numbers.",
+          "text": "One must also distinguish carefully between electronic binding energy and measured dissociation energy.\nReal molecules vibrate, rotate, and translate, so the experimentally required energy to pull them apart is not identical with the purely electronic quantity.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p006",
+          "text": "The water molecule gives a good warning against overly simple bookkeeping.\nIts total binding energy is not equal to two copies of one fixed O H bond energy, because after the first bond is broken the remaining fragment rearranges electronically.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p007",
+          "text": "There is also a thermodynamic correction.\nExperimental bond energies are often inferred from enthalpy changes at ordinary temperature and pressure, so one must keep separate the ideas of internal energy and enthalpy.",
           "visuals": [],
           "equations": [
             {
               "id": "eq-enthalpy-relation",
-              "label": "H = U + PV",
+              "label": "Enthalpy relation",
               "latex": "H = U + PV",
-              "spoken": "This relation says that enthalpy equals internal energy plus the pressure volume term.",
-              "note": "It explains why measured heats of reaction are not exactly the same thing as pure electronic binding energies."
+              "spoken": "The enthalpy relation says that enthalpy equals internal energy plus pressure times volume.",
+              "note": "The conceptual point is that experimental bond data often track enthalpy changes, not bare internal energy."
             }
           ],
           "videos": []
         },
         {
-          "id": "01.03-p006",
-          "text": "The table for H two makes the scale of these corrections vivid.\nThe electronic binding energy is about 458 kilojoules per mole, while the observed bond energy is about 435.\nThe zero point vibrational correction is therefore noticeable, whereas the rotational, translational, and pressure volume corrections are comparatively small.\nThe lesson is sobering.\nBinding energy is only a small residue left after subtracting two much larger electronic energies.\nThat is why accurate first principles calculations of bonding are so demanding.\nAnd the energies involved are electrical, not gravitational, by an overwhelming margin.",
+          "id": "01.03-p008",
+          "text": "The small table of values for H two makes two points vivid.\nZero point vibration matters more than rotation, translation, or the pressure volume correction, and the binding energy itself is only a small difference between much larger electronic energies.",
           "visuals": [
             {
-              "id": "table-h2-energy-values",
-              "label": "Some energy values for H2",
+              "id": "table-energy-h2",
+              "label": "Some energy values for H two",
               "kind": "table",
-              "caption": "A compact comparison of the main energy terms for molecular hydrogen. The point is not to memorize every number, but to see that zero point vibration matters and that binding energy is a small difference between far larger totals."
+              "caption": "A compact breakdown of the energy terms for H two. The key lesson is that zero point vibration matters, while the binding energy is a small residual between much larger totals."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.03-p007",
-          "text": "A final consequence follows from this way of thinking.\nBecause bond energy is a small difference between large quantities, it is exquisitely sensitive to the exact identity and arrangement of the atoms involved.\nThat is why the hydrogen fluoride bond is far stronger than either the hydrogen-hydrogen bond or the fluorine-fluorine bond.\nWhy phosphorus makes stable P four while nitrogen does not form an analogous stable tetrahedron.\nAnd why even noble gases can form substantial bonds in compounds such as xenon difluoride.\nA theory of valence succeeds only if it can explain that kind of specificity.",
+          "id": "01.03-p009",
+          "text": "That last fact explains why bond energies are so specific.\nSmall shifts in electronic behavior can change the final difference a great deal.\nThis is why hydrogen fluoride is exceptionally strong, why phosphorus makes P four while nitrogen does not, and why xenon can bind at all.",
           "visuals": [],
           "equations": [],
           "videos": []
@@ -146,75 +188,68 @@
     {
       "id": "01.04",
       "number": "01.04",
-      "title": "Reading energy diagrams",
+      "title": "Energy Diagrams and Molecular Potentials",
       "paragraphs": [
         {
           "id": "01.04-p001",
-          "text": "Energy diagrams condense a great deal of chemistry into a single picture.\nFigure 1.1 begins with the simplest case, a particle held near the origin by a restoring force.\nThe farther the particle is displaced, the more potential energy is stored, and in this idealized case the curve is a parabola.\nAt any chosen position, the total energy divides between potential and kinetic energy.",
+          "text": "Energy arguments become much clearer when drawn.\nFigure 1.1 begins with the simple case of a particle bound to an origin by a restoring force, so that the potential energy rises like a parabola as the displacement grows.",
           "visuals": [
             {
               "id": "fig-1.1",
               "label": "Figure 1.1",
               "kind": "figure",
-              "caption": "Two energy diagrams placed side by side. The first shows a particle in a parabolic well, and the second translates the same logic into the potential energy curve of a diatomic molecule."
+              "caption": "Two linked energy pictures. The first shows the turning points of a simple vibration, and the second shows how bond length, binding energy, and dissociation appear on a diatomic potential curve."
             }
           ],
           "equations": [
             {
-              "id": "eq-hooke-force",
-              "label": "F = -kx",
+              "id": "eq-harmonic-force",
+              "label": "Harmonic restoring force",
               "latex": "F = -kx",
-              "spoken": "This says the restoring force points back toward equilibrium and grows in proportion to the displacement.",
-              "note": "It is the standard linear force law behind the harmonic approximation."
+              "spoken": "The restoring force is proportional to displacement and points back toward equilibrium.",
+              "note": "This is the simplest local model for a stable vibration near a minimum."
             },
             {
               "id": "eq-harmonic-potential",
-              "label": "V(x) = 1/2 k x^2",
-              "latex": "V(x)=\\tfrac{1}{2}kx^2",
-              "spoken": "The potential energy rises with the square of the displacement, so the graph is a parabola.",
-              "note": "This is the energy form associated with a linear restoring force."
+              "label": "Harmonic potential",
+              "latex": "V(x) = \\frac{1}{2} k x^2",
+              "spoken": "The potential energy rises quadratically as the displacement grows.",
+              "note": "The parabola makes the relation between displacement and stored energy immediately visible."
             }
           ],
           "videos": []
         },
         {
           "id": "01.04-p002",
-          "text": "That picture immediately shows what classical vibration means.\nWhere the kinetic energy falls to zero, the motion turns around.\nThose turning points define the classically allowed region and therefore the amplitude of the vibration.\nAt the bottom of the curve the force vanishes, and because the point is a minimum, the equilibrium is stable.\nQuantum mechanics changes the interpretation, but not the usefulness, of the diagram.",
+          "text": "In that picture, the total energy is split between motion and position.\nWhere the curve reaches the chosen energy level, the motion turns around.\nThose turning points mark the classically allowed region of the vibration.",
           "visuals": [
             {
               "id": "fig-1.1",
               "label": "Figure 1.1",
               "kind": "figure",
-              "caption": "The vertical slices of the curve show how total energy is shared between kinetic and potential energy. The turning points are where the kinetic part falls to zero and the motion reverses."
+              "caption": "Two linked energy pictures. The first shows the turning points of a simple vibration, and the second shows how bond length, binding energy, and dissociation appear on a diatomic potential curve."
             }
           ],
           "equations": [
             {
-              "id": "eq-energy-conservation",
-              "label": "E = T + V",
+              "id": "eq-energy-balance",
+              "label": "Energy balance",
               "latex": "E = T + V",
-              "spoken": "This is the conservation of energy statement for the vibrating particle. Total energy is the sum of kinetic and potential energy.",
-              "note": "It lets the diagram show, at each position, how much of the energy is kinetic and how much is potential."
-            },
-            {
-              "id": "eq-force-gradient",
-              "label": "F = -dV/dx",
-              "latex": "F=-\\dfrac{dV}{dx}",
-              "spoken": "The force is the negative slope of the potential energy curve.",
-              "note": "A minimum in the curve therefore corresponds to stable equilibrium."
+              "spoken": "The total energy is the sum of kinetic and potential energy.",
+              "note": "The turning points occur where the kinetic part falls to zero, so the diagram displays the classically allowed region."
             }
           ],
           "videos": []
         },
         {
           "id": "01.04-p003",
-          "text": "The second part of Figure 1.1 transfers the same logic to a diatomic molecule.\nWhen the nuclei are very far apart, the energy approaches that of the separate atoms.\nAs they come together, the energy falls to a minimum at the equilibrium distance.\nPush them still closer, and the energy rises again because nuclear repulsion eventually overwhelms the bonding effect.\nThe diagram also separates the purely electronic binding energy from the smaller observed dissociation energy, which is reduced by vibrational motion.\nAnd unlike the classical picture, the vibrational energies now come only in discrete levels.",
+          "text": "The same visual logic carries over to a diatomic molecule.\nFigure 1.1 then plots electronic energy against internuclear distance.\nFar apart, the atoms behave almost independently.\nAt an intermediate distance, the curve reaches its minimum, which gives the stable bond length.",
           "visuals": [
             {
               "id": "fig-1.1",
               "label": "Figure 1.1",
               "kind": "figure",
-              "caption": "The molecular panel shows why a stable bond sits at an energy minimum. It also distinguishes the deeper electronic well depth from the smaller observed dissociation energy once vibration is taken into account."
+              "caption": "Two linked energy pictures. The first shows the turning points of a simple vibration, and the second shows how bond length, binding energy, and dissociation appear on a diatomic potential curve."
             }
           ],
           "equations": [],
@@ -222,29 +257,43 @@
         },
         {
           "id": "01.04-p004",
-          "text": "One of the central tasks of valence theory is to predict the exact shape of such a curve.\nEmpirically, many molecular curves can be fitted by the Morse expression.\nNear the minimum, that expression reduces to a parabola, which is why the harmonic picture works so well as a first approximation.\nFor polyatomic molecules the problem becomes richer, because the single curve expands into a potential energy surface depending on several bond lengths and angles.\nThat surface is one of the master objects in the theory of chemical reactions.",
+          "text": "Near that minimum, the curve is approximately parabolic.\nThat is why small vibrations around equilibrium resemble the simpler oscillator.\nThe diagram also separates the electronic binding energy from the smaller dissociation energy that remains after vibrational motion is taken into account.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Two linked energy pictures. The first shows the turning points of a simple vibration, and the second shows how bond length, binding energy, and dissociation appear on a diatomic potential curve."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p005",
+          "text": "Quantum mechanics changes one crucial feature of this picture.\nThe vibrational energy is not continuous.\nOnly discrete levels are allowed, so the molecule occupies quantized vibrational states rather than an unbroken range.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p006",
+          "text": "For actual molecules, one often fits the potential curve with the Morse form.\nIts value lies in capturing both the near parabolic region and the gradual approach to dissociation.\nFor polyatomic molecules, the same task expands into a full potential energy surface.",
           "visuals": [],
           "equations": [
             {
-              "id": "eq-morse-reference-shift",
-              "label": "E(R) = E_AB(R) - (E_A + E_B)",
-              "latex": "E(R)=E_{AB}(R)-\\left(E_A+E_B\\right)",
-              "spoken": "This defines the molecular energy relative to the energy of the separated atoms.",
-              "note": "It shifts the zero of energy so that the shape of the bonding curve can be described more clearly."
-            },
-            {
-              "id": "eq-morse-curve",
-              "label": "Morse curve",
-              "latex": "E(R)=D_e\\left[\\exp\\left\\{-2a\\left(R-R_e\\right)\\right\\}-2\\exp\\left\\{-a\\left(R-R_e\\right)\\right\\}\\right]",
-              "spoken": "This is the Morse expression used to fit many diatomic potential curves.",
-              "note": "It captures both the attractive well near equilibrium and the asymmetric rise of the curve away from that minimum."
+              "id": "eq-morse-potential",
+              "label": "Morse potential",
+              "latex": "E(R) = D_e\\left[\\exp\\{-2a(R-R_e)\\} - 2\\exp\\{-a(R-R_e)\\}\\right]",
+              "spoken": "The Morse potential models the energy of a bond as a function of internuclear distance.",
+              "note": "Its strength is that it behaves like a parabola near equilibrium but also opens correctly toward dissociation."
             },
             {
               "id": "eq-morse-near-minimum",
-              "label": "Near minimum expansion",
-              "latex": "E(R)=-D_e + D_e a^2\\left(R-R_e\\right)^2 + \\cdots",
-              "spoken": "Near the minimum, the Morse curve becomes approximately parabolic.",
-              "note": "That is why the harmonic picture is such a good first approximation close to equilibrium."
+              "label": "Morse potential near equilibrium",
+              "latex": "E(R) = -D_e + D_e a^2 (R-R_e)^2 + \\cdots",
+              "spoken": "Near the minimum, the Morse form reduces to an approximately quadratic dependence on displacement.",
+              "note": "This connects the realistic bond curve back to the simple harmonic picture."
             }
           ],
           "videos": []
@@ -254,179 +303,101 @@
     {
       "id": "01.05",
       "number": "01.05",
-      "title": "Quantum chemistry",
+      "title": "Quantum Chemistry and the Charge Cloud",
       "paragraphs": [
         {
           "id": "01.05-p001",
-          "text": "Valence theory belongs to a much larger enterprise.\nQuantum mechanics does not merely ask how strongly electrons bind atoms together.\nIn principle, it lets us calculate the whole electronic life of a molecule, from structure and geometry to spectra, collisions, and chemical change.",
+          "text": "Valence theory is only one part of a larger enterprise.\nQuantum chemistry aims, in principle, to calculate not just bond energies and geometries, but excited states, spectra, interactions, and chemical reactions as well.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p002",
-          "text": "That larger enterprise is what we call quantum chemistry.\nIts impact on chemistry has been double.\nIt has given chemists a whole language of ideas, and it has also made first-principles calculation increasingly real.",
+          "text": "That larger program has two sides.\nOne is conceptual, because modern chemistry now speaks naturally in quantum terms.\nThe other is computational, because first principles calculations can sometimes reach astonishing accuracy.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p003",
-          "text": "Coulson insists, however, that calculation by itself is not yet understanding.\nA machine may confirm that one bond is stronger than another, but the explanation still has to be chemical.\nIt must be expressed in terms such as nonbonding repulsion, core interaction, and the distribution of electron density.",
+          "text": "But calculation alone is not understanding.\nIf a computer reproduces a bond energy, that confirms the experiment.\nIt does not yet tell us why the bond has that strength.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p004",
-          "text": "That is why the qualitative side is not a second-rate substitute for exact calculation.\nThe two sides correct and support one another.\nA sound physical picture should survive rigorous calculation, and a good physical idea often suggests the right approximation.",
+          "text": "What we seek instead are physical patterns that can be grasped.\nRepulsions among nonbonding electrons, the shape of the electronic distribution, and the way stabilization emerges from that distribution are the kinds of explanations chemistry actually lives by.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p005",
-          "text": "At the same time, one should not underestimate what quantum chemistry has already achieved.\nFor very small systems, especially hydrogen and other small molecules and ions, calculations can reach or even surpass laboratory precision.\nIn such cases, the theory has been tested so hard that the basic equations of quantum mechanics remain remarkably secure.",
+          "text": "To build such understanding, one starts from experiment.\nDiffraction and spectroscopy tell us that nuclei sit near well defined equilibrium positions, while the electrons are better pictured as a cloud of negative charge spread through space with varying density.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p006",
-          "text": "Dirac could therefore say, very early on, that the underlying laws for much of physics and essentially all of chemistry were already known.\nThe real obstacle was practical rather than fundamental.\nComplicated molecules force us, at least for now, to seek understanding at a more qualitative level.",
-          "visuals": [],
+          "text": "Figure 1.2 makes this visible for anthracene.\nThe density piles up strongly around the carbon nuclei, but it also remains appreciable in the bond regions.\nThat shared density between nuclei is what helps hold the molecular framework together.",
+          "visuals": [
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Electron density contours for anthracene. The important thing to notice is that density remains present between nuclei, so bonding appears as a shared region of charge rather than as a mere line."
+            }
+          ],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p007",
-          "text": "But what does it mean to understand a molecule at all?\nWe never see a molecule directly.\nWhat we possess is a convergence of evidence from diffraction, spectroscopy, magnetic methods, and related experiments.",
+          "text": "Once the electron cloud is taken seriously, many phenomena fall into place.\nDipole moments arise when the cloud is pulled unevenly.\nNuclear quadrupole resonance uses certain nuclei as probes of how nonuniform the nearby electronic field is.",
           "visuals": [],
           "equations": [],
           "videos": []
         },
         {
           "id": "01.05-p008",
-          "text": "From that evidence there emerges a picture that is simple in outline and very powerful.\nThe nuclei vibrate about fairly definite equilibrium positions, but their motion is small compared with the distances between neighboring nuclei.\nSo, for many structural purposes, we may think of the nuclei as fixed.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p009",
-          "text": "The electrons are different.\nThey are better imagined as a charge cloud whose density changes from place to place.\nIf one could take a time exposure of electronic motion, the blurred photograph would be denser where the electrons spend more of their time.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p010",
-          "text": "That is the practical meaning of the charge density, usually written as P.\nAt each point, it tells us how much electronic charge is present per unit volume.\nOnce that idea is in hand, many otherwise scattered observations begin to fall into one pattern.",
-          "visuals": [
-            {
-              "id": "fig-1.2",
-              "label": "Figure 1.2",
-              "kind": "figure",
-              "caption": "Contour map of electron density in anthracene. The peaks mark where charge is concentrated around the carbon nuclei, and the gentler bridges show how bonding can be read from the cloud itself."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p011",
-          "text": "Figure 1.2 makes this wonderfully concrete.\nIts contour map for anthracene joins points where the total electron density has the same value.\nThe carbon nuclei stand out as strong peaks, while the hydrogen positions are much less precise because hydrogen contributes so little electron density to the scattering.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p012",
-          "text": "The same charge density can also be calculated from quantum mechanics.\nObserved and calculated densities usually agree rather well.\nMore importantly, the molecule often behaves almost exactly as if its electrons were smeared into a continuous cloud of this density.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p013",
-          "text": "That is why the concept is so central.\nIf the charge density is known, classical electrostatics can already tell us a great deal about the forces inside the molecule.\nChemical binding then appears as the attraction between positive nuclei and the surrounding negative cloud.",
-          "visuals": [
-            {
-              "id": "fig-1.2",
-              "label": "Figure 1.2",
-              "kind": "figure",
-              "caption": "Contour map of electron density in anthracene. The peaks mark where charge is concentrated around the carbon nuclei, and the gentler bridges show how bonding can be read from the cloud itself."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p014",
-          "text": "Figure 1.2 also shows something crucial for bonding.\nMost of the density remains concentrated around each nucleus, as one would expect from atoms.\nYet there is still enough density in the bridge between neighboring peaks to hold the nuclei together against their mutual repulsion.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p015",
-          "text": "Once you begin to think in these terms, many measurable properties fall into place.\nIf one atom draws charge more strongly than another, the cloud becomes polarized.\nThe molecule then acquires a dipole moment, and higher electric moments can be understood in the same general way.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p016",
-          "text": "Nuclear quadrupole resonance gives another example.\nHere the nucleus itself acts as a probe of how uneven the electric field is at its position.\nBecause that field depends on the surrounding electron density, the experiment becomes a very direct test of bonding ideas.",
+          "text": "Photoelectron spectroscopy offers another probe.\nA supplied quantum of energy ejects an electron, and the departing electron carries kinetic energy that reveals how tightly it had been bound.\nFigure 1.3 presents that energy bookkeeping in its simplest form.",
           "visuals": [
             {
               "id": "fig-1.3",
               "label": "Figure 1.3",
               "kind": "figure",
-              "caption": "Energy diagram for photoelectron spectroscopy. The essential point is that the supplied energy is divided between the cost of ionization and the kinetic energy carried away by the emitted electron."
+              "caption": "A simple energy diagram for photoelectron spectroscopy. The supplied energy is divided into the work needed to remove the electron and the kinetic energy carried away by the emitted electron."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p017",
-          "text": "Photoelectron spectroscopy offers an even sharper kind of probe.\nIf radiation gives an electron enough energy to escape, the leftover energy appears as kinetic energy of the ejected electron.\nFigure 1.3 lays out that bookkeeping very clearly.",
+          "id": "01.05-p009",
+          "text": "Figures 1.4 and 1.5 show why local electronic environment matters.\nInner shell electrons on nominally similar atoms need different ionization energies when surrounding atoms pull charge away by different amounts.\nThe peaks therefore become a map of chemical environment.",
           "visuals": [
             {
               "id": "fig-1.4",
               "label": "Figure 1.4",
               "kind": "figure",
-              "caption": "Carbon one s photoelectron spectrum of ethyl trifluoroacetate. Separate peaks appear because chemically different carbon atoms bind their inner electrons by different amounts."
-            }
-          ],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p018",
-          "text": "Now the interesting point is that inner-shell electrons from different atoms of the same element inside one molecule need not come out with the same kinetic energy.\nFigure 1.4 shows this for four carbon atoms in one molecule.\nBecause fluorine and oxygen pull electron density away with different strengths, each carbon environment shifts the binding of its inner electron by a slightly different amount.",
-          "visuals": [
+              "caption": "A carbon one s photoelectron spectrum in which chemically distinct carbons give distinct peaks. The spectrum shows that inner shell energies shift with local charge withdrawal."
+            },
             {
               "id": "fig-1.5",
               "label": "Figure 1.5",
               "kind": "figure",
-              "caption": "Nitrogen one s photoelectron spectrum of a cobalt complex containing amine, nitro, and nitrate nitrogens. Different nitrogen environments produce distinct peaks, so the spectrum becomes a map of local electronic surroundings."
+              "caption": "A nitrogen one s photoelectron spectrum whose peaks reflect different nitrogen environments. The learner should read it as further evidence that electron density redistributes according to chemical surroundings."
             }
           ],
           "equations": [],
           "videos": []
         },
         {
-          "id": "01.05-p019",
-          "text": "So the peaks separate.\nThe nuclei are telling us, through spectroscopy, how the charge cloud has been distorted by the surrounding substituents.\nFigure 1.5 shows the same kind of logic for nitrogen, and even the differing peak sizes carry chemical information.",
-          "visuals": [],
-          "equations": [],
-          "videos": []
-        },
-        {
-          "id": "01.05-p020",
-          "text": "This is the sort of understanding Coulson wants.\nNot a gush of numbers from a computer, but a visualizable physical pattern that lets the chemistry make sense.\nAnd with that demand in view, the book now turns back to fundamentals, beginning with quantum mechanics itself and the simplest solvable problems.",
+          "id": "01.05-p010",
+          "text": "So the chapter ends with a decisive shift in viewpoint.\nA molecule is not best imagined as little hooks connecting little balls.\nIt is better understood as nuclei embedded in, stabilized by, and interpreted through a structured cloud of electrons.",
           "visuals": [],
           "equations": [],
           "videos": []
@@ -436,8 +407,8 @@
   ],
   "stats": {
     "sectionCount": 5,
-    "paragraphCount": 39,
+    "paragraphCount": 37,
     "visualCount": 9,
-    "equationCount": 8
+    "equationCount": 6
   }
 }
