@@ -1,0 +1,2067 @@
+const BOOK_DATA = {
+  "title": "3 — Language and Writing",
+  "language": "en",
+  "sections": [
+    {
+      "id": "03.01",
+      "number": "03.01",
+      "title": "The Problem of Shang Archaeology",
+      "paragraphs": [
+        {
+          "id": "03.01-p001",
+          "text": "Shang archaeology began as the archaeology of one place.\nThat place was Anyang in northern Henan, firmly linked to the Shang of traditional history by the oracle-bone inscriptions found there.",
+          "figures": []
+        },
+        {
+          "id": "03.01-p002",
+          "text": "As more sites were discovered after 1950, the field widened beyond Anyang.\nYet many of those newer sites had no inscriptions.\nTheir political status was therefore uncertain.",
+          "figures": []
+        },
+        {
+          "id": "03.01-p003",
+          "text": "Chinese archaeologists often solved that uncertainty by fitting the new finds into the old historical picture.\nIf later tradition described the Shang king as the dominant power of the age, then distant sites were treated as Shang dependents or as vaguely subordinate outsiders.",
+          "figures": []
+        },
+        {
+          "id": "03.01-p004",
+          "text": "The opening objection is that this procedure assumes in advance what archaeology ought to discover.\nEven the oracle texts from Anyang do not independently prove that the Shang court stood at the unquestioned center of all civilized life.\nThey too have usually been read through that same inherited model.",
+          "figures": []
+        },
+        {
+          "id": "03.01-p005",
+          "text": "As discoveries multiplied, the weakness of the model became harder to ignore.\nBy the later second millennium BC, civilized societies existed across a broad area, and many of them were far from Anyang and unlike it in material culture.\nTo attach all of that diversity to a single royal house now looks forced.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.02",
+      "number": "03.02",
+      "title": "Terms, Limits, and Method",
+      "paragraphs": [
+        {
+          "id": "03.02-p001",
+          "text": "The chapter therefore proposes a more cautious procedure.\nIt tries to describe the archaeological record without pretending that the final historical picture is already known.",
+          "figures": []
+        },
+        {
+          "id": "03.02-p002",
+          "text": "For that reason, some terms are narrowed sharply.\nShang and Shang dynasty are to refer only to the ruling family named in the Anyang oracle texts.\nAnyang period refers only to the time of the nine kings whose inscriptions have been found there, and only to the Anyang site itself.",
+          "figures": []
+        },
+        {
+          "id": "03.02-p003",
+          "text": "Other terms are handled with equal caution.\nShang period is avoided because it has no secure archaeological definition.\nDynasty is dangerous because Chinese historiography loads it with meanings far beyond the simple idea of a ruling family.",
+          "figures": []
+        },
+        {
+          "id": "03.02-p004",
+          "text": "Chinese civilization is also treated as a problematic phrase.\nProjected backward into the second millennium BC, it becomes vague and anachronistic.\nUsed carelessly, it can make the archaeological past look more unified than it really was.",
+          "figures": []
+        },
+        {
+          "id": "03.02-p005",
+          "text": "Apart from two or three centuries in the life of one city, the second millennium remains prehistory.\nLater traditions cannot simply be used as a guide to it.\nBut the difficulty is that archaeology itself has often been shaped by those traditions, above all by the long focus on the Central Plain.",
+          "figures": []
+        },
+        {
+          "id": "03.02-p006",
+          "text": "The discussion therefore turns to a different anchor.\nChance finds, especially bronzes, provide a corrective to the geography imposed by texts.\nThey also offer a way to define the chapter's scope archaeologically rather than dynastically.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.03",
+      "number": "03.03",
+      "title": "Archaeology and the Crisis of Tradition",
+      "paragraphs": [
+        {
+          "id": "03.03-p001",
+          "text": "From the beginning, Chinese archaeology was entangled with arguments about the truth of inherited history.\nThe fall of the Qing in 1911 shook confidence in traditional culture and forced intellectuals to reconsider what in the ancient record could still be trusted.",
+          "figures": []
+        },
+        {
+          "id": "03.03-p002",
+          "text": "The oracle bones entered this debate at exactly the right moment.\nCollectors had begun acquiring them around the turn of the century, and scholars quickly saw that they contained names known from the received list of Shang kings.",
+          "figures": []
+        },
+        {
+          "id": "03.03-p003",
+          "text": "For some scholars, especially Luo Zhenyu and Wang Guowei, the inscriptions seemed a priceless vindication of tradition.\nFor Gu Jiegang they had a different value.\nThey did not confirm everything in the old narratives, but they did suggest that Shang stood on firmer ground than the Xia and the still earlier sage kings.",
+          "figures": []
+        },
+        {
+          "id": "03.03-p004",
+          "text": "That distinction mattered.\nGu had already argued that the stories of Xia and the ancient sages had much of the character of folklore.\nThe oracle bones therefore promised not a return to old certainty, but the possibility of a more rigorous history.",
+          "figures": []
+        },
+        {
+          "id": "03.03-p005",
+          "text": "Even the authenticity of the bones was contested for a time.\nAt least one prominent scholar denounced them as forgeries.\nThe excavations at Anyang would eventually settle that question.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.04",
+      "number": "03.04",
+      "title": "Anyang and the Birth of Field Archaeology",
+      "paragraphs": [
+        {
+          "id": "03.04-p001",
+          "text": "By 1915 Luo Zhenyu had traced the source of the oracle bones to farmers near modern Anyang.\nMap 3.1 helps place that region and the site that soon became decisive for early Chinese archaeology.",
+          "figures": [
+            {
+              "label": "Map 3.1",
+              "caption": "A map locating Anyang and the region from which the oracle bones entered modern scholarship. It matters because it ties the textual discovery to a real archaeological landscape."
+            }
+          ]
+        },
+        {
+          "id": "03.04-p002",
+          "text": "What transformed the matter was not epigraphy alone, but field archaeology.\nThat discipline arrived in China from the West and found a favorable climate in the reforming atmosphere of the May Fourth era.",
+          "figures": []
+        },
+        {
+          "id": "03.04-p003",
+          "text": "Its promise had already been demonstrated by the Swedish geologist J G Andersson, whose discoveries revealed the first Neolithic sites recognized in China.\nWhen the Academia Sinica decided in 1928 to undertake an excavation, Anyang was the obvious place to begin.\nLi Ji, trained as an anthropologist at Harvard, was chosen to direct the work.",
+          "figures": []
+        },
+        {
+          "id": "03.04-p004",
+          "text": "The result was larger than anyone first imagined.\nChinese archaeology was born from the meeting of a Western scientific method and a question charged with enormous significance for Chinese historical identity.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.05",
+      "number": "03.05",
+      "title": "The Authority of Anyang",
+      "paragraphs": [
+        {
+          "id": "03.05-p001",
+          "text": "Between 1928 and 1937, despite difficult local conditions, fifteen seasons of excavation were carried out at Anyang.\nThe work soon expanded beyond the search for inscribed bones.",
+          "figures": []
+        },
+        {
+          "id": "03.05-p002",
+          "text": "A temporary move to Chengziyai in Shandong proved especially important.\nThere the excavators found a distinctive black pottery culture and learned to recognize rammed earth construction, which they had earlier mistaken at Anyang for natural deposit.",
+          "figures": []
+        },
+        {
+          "id": "03.05-p003",
+          "text": "Back at Anyang they uncovered a stratified sequence at Hougang.\nPainted pottery lay below, black pottery in the middle, and Shang remains above.\nThey took this to reveal a native eastern component in East Asian prehistory.",
+          "figures": []
+        },
+        {
+          "id": "03.05-p004",
+          "text": "Later work at Xiaotun and Xibeigang made the scale of the site unmistakable.\nThere were great rammed-earth foundations, huge shaft tombs, sacrificial burials, and in 1936 a pit containing more than seventeen thousand fragments of inscribed turtle plastrons.",
+          "figures": []
+        },
+        {
+          "id": "03.05-p005",
+          "text": "The excavations began as an attempt to locate the source of the oracle bones.\nThey ended by uncovering an entire civilization.\nThat double success reassured Chinese scholars that tradition might be trustworthy, and persuaded Western scholars that China possessed a truly ancient past.",
+          "figures": []
+        },
+        {
+          "id": "03.05-p006",
+          "text": "But the triumph had a price.\nBecause Anyang seemed to vindicate the texts, it encouraged the belief that archaeology as a whole should confirm the traditional dynastic narrative.\nA city and a few centuries came to stand for far more than the evidence could strictly bear.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.06",
+      "number": "03.06",
+      "title": "National Archaeology after 1949",
+      "paragraphs": [
+        {
+          "id": "03.06-p001",
+          "text": "Anyang gave archaeology a secure place in modern China.\nA discipline that might have been dismissed as foreign instead won state support under both Republican and Communist governments.",
+          "figures": []
+        },
+        {
+          "id": "03.06-p002",
+          "text": "Yet the mission of the field was narrowed.\nThe archaeology of the Early Bronze Age remained largely the archaeology of the Shang dynasty, guided by images inherited from late Zhou and Han texts rather than from archaeology itself.",
+          "figures": []
+        },
+        {
+          "id": "03.06-p003",
+          "text": "Li Ji had been willing to consider diffusion from western Asia.\nHe thought Chinese metallurgy, some artifact types, and even the sudden appearance of major bronze vessels might owe something to outside stimulus.\nFor an archaeologist of his generation, diffusion was a natural explanation for culture change.",
+          "figures": []
+        },
+        {
+          "id": "03.06-p004",
+          "text": "After 1949, however, the dominant demand was different.\nAncient China had to be shown as indigenous and self-developing.\nWhen excavations at Zhengzhou revealed a great walled city earlier than Anyang, and Erlitou later supplied a still earlier stage, the need to invoke foreign origins largely disappeared.",
+          "figures": []
+        },
+        {
+          "id": "03.06-p005",
+          "text": "The result was not the rejection of diffusion in general.\nIt was the rejection of foreign influence into the Central Plain, while influence radiating outward from the Yellow River valley remained easy to assume.\nThat kept the old centralizing pattern intact in a new form.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.07",
+      "number": "03.07",
+      "title": "Chance Finds Beyond the Central Plain",
+      "paragraphs": [
+        {
+          "id": "03.07-p001",
+          "text": "The real corrective came from salvage archaeology and chance finds.\nAfter 1950 the state encouraged the reporting of objects found during farming and construction.\nThis created a much wider archaeological sample than the one produced by text-guided excavation alone.",
+          "figures": []
+        },
+        {
+          "id": "03.07-p002",
+          "text": "One early shock was Panlongcheng in Hubei, an Erligang-period walled city far south of Zhengzhou and culturally very close to it.\nIts discovery showed that the Erligang world extended much farther than many had imagined.",
+          "figures": []
+        },
+        {
+          "id": "03.07-p003",
+          "text": "Further south, the evidence became harder to absorb into the old picture.\nBronzes from the middle and lower Yangzi region were often highly distinctive.\nFor a long time they were still explained away as refugees from the north, peoples named in oracle texts, or groups labeled with later ethnonyms.",
+          "figures": []
+        },
+        {
+          "id": "03.07-p004",
+          "text": "Only slowly did archaeologists begin to insist on local development in places such as Jiangxi and Hunan.\nThe discoveries at Sanxingdui in Sichuan and at Xin'gan in Jiangxi finally made the old explanations much harder to maintain.",
+          "figures": []
+        },
+        {
+          "id": "03.07-p005",
+          "text": "Hence the newer talk of multiple centers of innovation.\nThe widening of attention is accepted, but the phrase still smuggles in a later goal, as though all these cultures mattered chiefly because they contributed to some future Chinese civilization.",
+          "figures": []
+        },
+        {
+          "id": "03.07-p006",
+          "text": "His deeper point is simple.\nThe real subject should be the rise of civilization in China, not the back projection of a later civilizational unity.\nIf archaeology is read too eagerly through the lens of later China, diversity and contingency disappear.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.08",
+      "number": "03.08",
+      "title": "Defining the Bronze Age in China",
+      "paragraphs": [
+        {
+          "id": "03.08-p001",
+          "text": "To escape dynastic geography, the discussion turns to metallurgy.\nThe bronze industry, by its scale and character, offers an archaeological way to identify the first civilized societies in China.",
+          "figures": []
+        },
+        {
+          "id": "03.08-p002",
+          "text": "In many parts of the world the term Bronze Age is only a convenient label.\nThe first appearance of copper or bronze does not automatically coincide with the rise of cities or stratified societies.\nBronze tools were not everywhere the motor of civilization.",
+          "figures": []
+        },
+        {
+          "id": "03.08-p003",
+          "text": "China is different.\nIts early bronze industry reached an extraordinary scale.\nThe famous Si Mu Wu fangding alone weighs about eight hundred and seventy five kilograms, and one royal tomb at Anyang contained about sixteen hundred kilograms of bronze.",
+          "figures": []
+        },
+        {
+          "id": "03.08-p004",
+          "text": "That scale implies labor, organization, mining, fuel, transport, workshops, and elite command.\nWhether or not bronze caused the rise of civilization, it provides a clear index of social complexity.\nIn China, the term Bronze Age is therefore genuinely meaningful.",
+          "figures": []
+        },
+        {
+          "id": "03.08-p005",
+          "text": "An important distinction is then drawn.\nThere is a world of difference between small-scale metallurgy and large-scale metallurgy.\nThe first involves technical knowledge used for modest tools and ornaments.\nThe second involves specialists, heavy patronage, artistic distinction, and production on a new scale.",
+          "figures": []
+        },
+        {
+          "id": "03.08-p006",
+          "text": "For this chapter, large-scale casting and the technical repertoire associated with it define the Early Bronze Age.\nThey also define the field of inquiry more securely than any attempt to map later dynasties back onto the second millennium BC.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.09",
+      "number": "03.09",
+      "title": "Small-Scale Metallurgy Before the Bronze Age",
+      "paragraphs": [
+        {
+          "id": "03.09-p001",
+          "text": "The earliest clear evidence for metallurgy in China comes from the Qijia culture in Gansu, around 2000 BC.\nHere one finds a genuinely early stage of metal use.",
+          "figures": []
+        },
+        {
+          "id": "03.09-p002",
+          "text": "Qijia metalwork includes mirrors, finger rings, pendants, knives, awls, chisels, and axes.\nSome pieces were hammered.\nSome were cast in simple molds.\nMost seem to be copper, sometimes alloyed with lead or tin.",
+          "figures": []
+        },
+        {
+          "id": "03.09-p003",
+          "text": "A richer successor, the Huoshaogou site at Yumen, also belongs to the first half of the second millennium BC.\nIts graves yielded more than two hundred metal artifacts, including axes, sickles, daggers, spearheads, needles, bracelets, hammers, and mirrors.",
+          "figures": []
+        },
+        {
+          "id": "03.09-p004",
+          "text": "What matters is not only the presence of metal, but its social character.\nThese are still small tools and ornaments, not highly distinctive prestige objects made for a ruling elite.\nThis is metallurgy before the urban revolution shows itself clearly in the archaeological record.",
+          "figures": []
+        },
+        {
+          "id": "03.09-p005",
+          "text": "Qijia may or may not have been ancestral to later developments farther east.\nThat question is left open.\nBut it offers a useful contrast, because it shows what metalworking looks like before the great explosion of scale seen at Erlitou and Erligang.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.10",
+      "number": "03.10",
+      "title": "Erlitou and the Turn to Large-Scale Casting",
+      "paragraphs": [
+        {
+          "id": "03.10-p001",
+          "text": "At Erlitou something changes decisively.\nIn the upper levels of the site one finds bronze vessels, bells, and weapons more ambitious than anything yet known from Qijia.",
+          "figures": []
+        },
+        {
+          "id": "03.10-p002",
+          "text": "The importance of Erlitou lies not only in quantity, though the foundry remains are said to cover a vast area.\nIt lies above all in method.\nThe vessels were cast.",
+          "figures": []
+        },
+        {
+          "id": "03.10-p003",
+          "text": "In most other ancient metal traditions, vessels and similar shapes were normally hammered, which conserved metal.\nAt Erlitou one sees the first unmistakable sign of a characteristically Chinese extravagance in bronze production.",
+          "figures": []
+        },
+        {
+          "id": "03.10-p004",
+          "text": "That extravagance presupposed two things at once.\nThere had to be geological abundance of ore.\nThere also had to be the social ability to mobilize labor for mining, transport, fuel gathering, and workshop production.",
+          "figures": []
+        },
+        {
+          "id": "03.10-p005",
+          "text": "This is why bronze matters so much in the argument.\nThe leap from Qijia to Erlitou is not chiefly a leap in technical knowledge.\nIt is a leap in organization, scale, and social purpose.\nThe bronzes of Erlitou are traces of the urban revolution in material form.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.11",
+      "number": "03.11",
+      "title": "Erligang Technique",
+      "paragraphs": [
+        {
+          "id": "03.11-p001",
+          "text": "The next stage, Erligang, transformed this new metallurgy into a mature technical system.\nBronze vessels now become abundant, and the industry makes advances that would shape Chinese casting for centuries.",
+          "figures": []
+        },
+        {
+          "id": "03.11-p002",
+          "text": "A crucial step was the use of section molds in increasingly flexible ways.\nFigure 3.1 makes the process unusually clear.\nIt shows how a clay core and outer mold sections worked together in casting a tripod vessel.",
+          "figures": [
+            {
+              "label": "Figure 3.1",
+              "caption": "A diagram of the mold assembly for casting a bronze ding. The important point is how the clay core and outer mold sections fit together and leave visible mold lines on the finished vessel."
+            }
+          ]
+        },
+        {
+          "id": "03.11-p003",
+          "text": "Because the mold could be opened before casting, decoration could be carved into its inner surface.\nThat meant decoration was cast, not cut afterward into cold metal.\nThis technical choice had long artistic consequences.",
+          "figures": []
+        },
+        {
+          "id": "03.11-p004",
+          "text": "Erligang casters also learned to cast objects in stages.\nParts could be made separately, then embedded in a later mold and locked into place when the next pour was made.\nThey also used bronze spacers to hold cores and mold walls at the right distance during casting.",
+          "figures": []
+        },
+        {
+          "id": "03.11-p005",
+          "text": "These procedures sound simple when described in words.\nIn practice they created a highly versatile system.\nBy the end of the Erligang period, the essential technical repertoire for complex bronze casting was already in place.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.12",
+      "number": "03.12",
+      "title": "Decoration, Shape, and the Mold",
+      "paragraphs": [
+        {
+          "id": "03.12-p001",
+          "text": "The artistic achievement of Erligang was not decoration alone.\nIt was the deep fit between decoration and shape.\nThe chapter argues that this relation grew directly from the logic of mold making.",
+          "figures": []
+        },
+        {
+          "id": "03.12-p002",
+          "text": "When decoration is carved section by section into the mold, each section naturally invites a complete and self-contained pattern.\nThe divisions required by casting therefore leave their trace on the finished bronze.\nThe vessel's shape determines the mold.\nThe mold in turn helps determine the layout of the decoration.",
+          "figures": []
+        },
+        {
+          "id": "03.12-p003",
+          "text": "Over time this produced a powerful visual order.\nPatterns grew more elaborate, but the subdivisions of the vessel remained legible.\nThe result was a close marriage of form and ornament that would dominate bronze design for centuries.",
+          "figures": []
+        },
+        {
+          "id": "03.12-p004",
+          "text": "Figure 3.2 shows the point in a relatively early and simple form.\nThe bronze ding from Panlongcheng still carries a pattern whose repetition follows the logic of the mold sections and the placement of the legs.\nFigure 3.1 helps explain why that relationship is there at all.",
+          "figures": [
+            {
+              "label": "Figure 3.2",
+              "caption": "A bronze ding from Panlongcheng in Hubei. The useful point is that its repeated decoration follows the logic of the mold sections and the placement of the legs."
+            },
+            {
+              "label": "Figure 3.1",
+              "caption": "The mold diagram clarifies why the decoration of the ding falls into repeated sections. It shows how casting technique directly shaped visual design."
+            }
+          ]
+        },
+        {
+          "id": "03.12-p005",
+          "text": "Later casters could have abandoned this way of organizing decoration, but they did not.\nEven after they moved from carving on mold sections to carving on the model, they preserved the subdivided logic.\nOnly much later, toward the end of Western Zhou, did that old discipline begin to loosen.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.13",
+      "number": "03.13",
+      "title": "A Sequence of Bronze Styles",
+      "paragraphs": [
+        {
+          "id": "03.13-p001",
+          "text": "A developmental sequence of five styles was set out in 1953 for pre-Zhou bronze decoration.\nLater excavations showed that the sequence began earlier than first supposed, with the first decorated bronzes at Erlitou and the fully mature fifth style by about 1200 BC.",
+          "figures": []
+        },
+        {
+          "id": "03.13-p002",
+          "text": "What gives the sequence its lasting value is not merely chronology.\nIt captures an internal logic of development.\nIt shows how one solution in design and casting opened the way to the next.",
+          "figures": []
+        },
+        {
+          "id": "03.13-p003",
+          "text": "The sequence is therefore more than a classificatory grid.\nIt helps explain why certain forms appear before others, and how the bronze industry expanded its visual repertoire over time.\nIt also helps make sense of regional branching after the Erligang age.",
+          "figures": []
+        },
+        {
+          "id": "03.13-p004",
+          "text": "These five styles should not be imagined as rigid period boxes.\nEach survived after later ones appeared.\nThey are better understood as stages in the growth of a repertoire that continued to accumulate rather than simply replacing itself.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.14",
+      "number": "03.14",
+      "title": "Style I and the First Decorative Logic",
+      "paragraphs": [
+        {
+          "id": "03.14-p001",
+          "text": "Style I is the thread relief seen on the early ding of the Erligang world, as in Figure 3.2.\nIts thin raised lines stand proud on the bronze because the design was carved directly into the mold sections.",
+          "figures": [
+            {
+              "label": "Figure 3.2",
+              "caption": "An early bronze ding from Panlongcheng. The important point is the thin thread relief and the way the repeated decoration follows the tripod structure."
+            }
+          ]
+        },
+        {
+          "id": "03.14-p002",
+          "text": "This matters because the decoration was born inside the logic of section-mold casting.\nThe mold was divided according to the practical needs of manufacture.\nThe decoration then occupied those same divided fields.",
+          "figures": []
+        },
+        {
+          "id": "03.14-p003",
+          "text": "The result was a close relation between vessel shape, mold structure, and ornament.\nThe repeated design follows the same rhythm as the vessel itself.\nOn a tripod, for example, the units of pattern fall in step with the placement of the legs.",
+          "figures": []
+        },
+        {
+          "id": "03.14-p004",
+          "text": "The best known unit in this early repertoire is the two-eyed animal-like motif conventionally called taotie.\nAt this stage it is not yet a dramatic image separated from its ground.\nIt is a compact patterned form, repeated within the fixed compartments created by the casting process.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.15",
+      "number": "03.15",
+      "title": "From Style II to Style III",
+      "paragraphs": [
+        {
+          "id": "03.15-p001",
+          "text": "Style II begins when those thin lines cease to be uniform.\nThe raised bands broaden and narrow, giving the designs a more deliberate and expressive contour.\nA profile animal, reasonably described as a dragon, joins the taotie as a standard motif.",
+          "figures": [
+            {
+              "label": "Figure 3.3",
+              "caption": "A bronze jia showing the move beyond simple thread relief. The changing width of the raised lines gives the decoration a more expressive contour."
+            }
+          ]
+        },
+        {
+          "id": "03.15-p002",
+          "text": "Style III grows out of this by elaboration.\nThe patterns become denser, more intricate, and more expansive.\nThey spread across larger surfaces and diversify into many local variants.",
+          "figures": [
+            {
+              "label": "Figure 3.4",
+              "caption": "A bronze gui from Panlongcheng. It shows an early Stage III expansion of the decorative field, with denser and more elaborate patterning."
+            }
+          ]
+        },
+        {
+          "id": "03.15-p003",
+          "text": "By this stage the decoration was no longer being cut into the mold itself.\nIt was cut on the model from which the mold was taken.\nThat shift removed the technical necessity for subdivision, yet the subdivided layout was preserved because it had become visually compelling.",
+          "figures": [
+            {
+              "label": "Figure 3.5",
+              "caption": "A large bronze drum from Chongyang. It matters because Style III decoration had spread beyond the Central Plain into the middle Yangzi region."
+            }
+          ]
+        },
+        {
+          "id": "03.15-p004",
+          "text": "Late Style III also introduced experiments in high relief.\nThe broad undulating surfaces seen on vessels such as Figure 3.6 gave animal forms more force after the older fine-line meshes had become hard to read.\nThis fuller relief matters because it anticipates later developments without yet becoming the same thing.",
+          "figures": [
+            {
+              "label": "Figure 3.6",
+              "caption": "A bronze zun from Anhui with undulating high relief. This image helps show the late Stage III search for stronger and more legible animal form."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.16",
+      "number": "03.16",
+      "title": "Styles IV and V",
+      "paragraphs": [
+        {
+          "id": "03.16-p001",
+          "text": "Style IV marks a decisive change.\nThe old dense patterning is reorganized so that motif and ground pull apart.\nThe animal image now stands out clearly against a tightly worked background.",
+          "figures": [
+            {
+              "label": "Figure 3.7",
+              "caption": "A bronze jia in early Style IV. The useful point is the new contrast between the animal image and the tightly worked ground."
+            }
+          ]
+        },
+        {
+          "id": "03.16-p002",
+          "text": "That background is often made of tiny spirals conventionally called leiwen.\nEarlier pattern meshes are reduced and miniaturized until they become a field rather than an image.\nThe contrast gives the vessel a new visual authority.",
+          "figures": [
+            {
+              "label": "Figure 3.8",
+              "caption": "A bronze hu in Style IV. The tiny leiwen background sharpens the difference between figure and ground and gives the motif greater clarity."
+            }
+          ]
+        },
+        {
+          "id": "03.16-p003",
+          "text": "This also changes the status of the dragon and the taotie.\nIn the earlier styles they were patterned units with animal suggestions.\nIn Style IV they become more definite creatures, sharply bounded and visually insistent.",
+          "figures": []
+        },
+        {
+          "id": "03.16-p004",
+          "text": "Style V pushes the effect further by raising the motifs above the ground in high relief.\nAt the same time, vertical flanges often reinforce the divisions of the vessel.\nThe whole object becomes more theatrical, more emphatic, and more commanding in its visual presence.",
+          "figures": [
+            {
+              "label": "Figure 3.9",
+              "caption": "A bronze fangyi in Style V. The raised motifs and strong flanges show how the decoration became more emphatic and architectonic."
+            }
+          ]
+        },
+        {
+          "id": "03.16-p005",
+          "text": "The difference can be felt at once when an early and a late he are set side by side, as in Figure 3.10.\nThe earlier vessel still belongs to a delicate and exploratory world.\nThe later one has the air of a fully staged court style.",
+          "figures": [
+            {
+              "label": "Figure 3.10",
+              "caption": "Two bronze he placed side by side. The contrast makes the long development vivid, from a more delicate earlier vessel to a later courtly and theatrical form."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.17",
+      "number": "03.17",
+      "title": "What the Styles Reveal",
+      "paragraphs": [
+        {
+          "id": "03.17-p001",
+          "text": "This sequence is not only a history of ornament.\nIt is part of a larger development in vessel shape, relief, motif, and layout.\nThe bronzes become richer because the foundries are thinking more consciously about visual effect.",
+          "figures": []
+        },
+        {
+          "id": "03.17-p002",
+          "text": "That matters historically because such a development presupposes sustained patronage.\nThese are not casual embellishments.\nThey belong to workshops serving elites that cared deeply about display, ceremony, and controlled visual power.",
+          "figures": []
+        },
+        {
+          "id": "03.17-p003",
+          "text": "The bronzes therefore become unusually good historical evidence.\nArchitecture survives poorly.\nTexts are late and selective.\nBut bronzes preserve fine differences of time, place, and affiliation with exceptional clarity.",
+          "figures": []
+        },
+        {
+          "id": "03.17-p004",
+          "text": "They also travel.\nAs gifts, prestige objects, or models for imitation, they can link one court to another.\nFor that reason the history of bronze style becomes one of the best guides to the wider history of the Early Bronze Age.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.18",
+      "number": "03.18",
+      "title": "An Archaeological Reading of Early Bronze Age History",
+      "paragraphs": [
+        {
+          "id": "03.18-p001",
+          "text": "The archaeological record suggests a broad sequence of events.\nUrban societies first arose in the middle Yellow River region during the first half of the second millennium BC.\nThen, around 1500 BC, a major state seems to have expanded outward from that region.",
+          "figures": []
+        },
+        {
+          "id": "03.18-p002",
+          "text": "The clearest material expression of that expansion is the wide and short-lived spread of the Erligang style.\nBecause the bronzes are so uniform across a large area, they look less like loose cultural resemblance than like the reach of an organized power.\nIn that sense the Erligang style behaves like a horizon style.",
+          "figures": []
+        },
+        {
+          "id": "03.18-p003",
+          "text": "By about 1300 BC, however, that unity had weakened.\nLocal bronze traditions began to assert themselves on the frontiers.\nThe transition period, roughly corresponding to the thirteenth century BC, is the moment when regional styles become unmistakable.",
+          "figures": []
+        },
+        {
+          "id": "03.18-p004",
+          "text": "Those local industries still depend on Erligang foundations.\nThey share its casting methods, and many still make bronze vessels.\nBut they also adapt the technology to local needs, producing forms such as large bells and drums in the Yangzi region.",
+          "figures": []
+        },
+        {
+          "id": "03.18-p005",
+          "text": "The world that emerges is not one of a single unquestioned center.\nIt is a network of interacting powers, among them the dynasty later known from Anyang.\nSome of its neighbors were culturally different, and some were by no means inferior.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.19",
+      "number": "03.19",
+      "title": "Erlitou and the First Urban Horizon",
+      "paragraphs": [
+        {
+          "id": "03.19-p001",
+          "text": "Against that larger background, Erlitou appears as the first clearly urban horizon in the story.\nIts importance lies not only in a few striking objects, but in the appearance together of monumental building, ambitious burial, and cast bronze vessels.",
+          "figures": []
+        },
+        {
+          "id": "03.19-p002",
+          "text": "The site was discovered near Luoyang in western Henan and gave its name to a wider archaeological culture extending across much of the surrounding region.\nThe mixture of older and newer traits is striking.\nSome elements are still recognizably Neolithic.\nOthers open directly into the Bronze Age proper.",
+          "figures": []
+        },
+        {
+          "id": "03.19-p003",
+          "text": "Among the features already present are pounded-earth construction, rich burials, cast bronze vessels, turquoise inlay, lacquered wood, divination by animal bones, human sacrifice, and the ge weapon in bronze and jade.\nThis is not yet the fully developed world of Zhengzhou or Anyang.\nBut it is already a society of rank, labor mobilization, and emerging court culture.",
+          "figures": []
+        },
+        {
+          "id": "03.19-p004",
+          "text": "The continuity with later developments is especially important.\nMuch of what appears at Erlitou survives for centuries afterward.\nIt is one of those sites where later Chinese Bronze Age civilization can be seen forming before it has reached its full scale.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.20",
+      "number": "03.20",
+      "title": "Palaces and Compounds at Erlitou",
+      "paragraphs": [
+        {
+          "id": "03.20-p001",
+          "text": "Erlitou lies on the south bank of the Luo River and extends over a large area.\nIn its central zone, archaeologists found pounded-earth terraces and building foundations that imply planned monumental architecture.\nFigure 3.11 gives a sense of one of the main compounds.",
+          "figures": [
+            {
+              "label": "Figure 3.11",
+              "caption": "The main palace foundation at Erlitou. It helps visualize the scale of the pounded-earth compound and the formal architectural planning already present there."
+            }
+          ]
+        },
+        {
+          "id": "03.20-p002",
+          "text": "The largest excavated terrace is a great square platform more than one hundred meters across.\nIt was built by pounding thin layers of earth into an excavation and then raising the surface above the surrounding ground.\nThis was laborious work, and its scale is already socially revealing.",
+          "figures": []
+        },
+        {
+          "id": "03.20-p003",
+          "text": "Inside the enclosure stood a large pillared hall.\nPost holes suggest a rectangular timber building with an unroofed porch along the south side.\nIf smaller outer holes belonged to eave supports, the roof may even have been hipped.",
+          "figures": []
+        },
+        {
+          "id": "03.20-p004",
+          "text": "Another nearby compound had a similar hall but also signs of internal partition walls.\nAt least one of these buildings may have been designed for formal gatherings.\nA large audience could have watched ceremonies from the open space inside the enclosure.",
+          "figures": []
+        },
+        {
+          "id": "03.20-p005",
+          "text": "The architectural significance is long-range.\nA pillared hall inside a walled compound, built on pounded earth, is the beginning of a durable tradition.\nHangtu construction remains central throughout the Bronze Age, whether in platforms, walls, or tomb fill.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.21",
+      "number": "03.21",
+      "title": "Tombs and Social Rank at Erlitou",
+      "paragraphs": [
+        {
+          "id": "03.21-p001",
+          "text": "One of the most revealing Erlitou compounds also contained a large tomb dug into the terrace.\nIts shaft was rectangular, deep, and furnished with an ercengtai, the ledge or shelf left around the coffin chamber.\nThe grave had been plundered, but its scale still speaks plainly.",
+          "figures": []
+        },
+        {
+          "id": "03.21-p002",
+          "text": "The tomb also contained traces of cinnabar, fragments of a lacquer coffin, and the skeleton of a dog that seems to have had a lacquer coffin of its own.\nEven stripped of its goods, the burial announces a rank far above that of ordinary graves.\nIts size is comparable to one of the most famous royal tombs later found at Anyang.",
+          "figures": []
+        },
+        {
+          "id": "03.21-p003",
+          "text": "Other rich Erlitou burials are smaller, but they repeat a recognizable set of signs.\nThere are traces of lacquer, cinnabar, the ercengtai, and often a waist pit beneath the coffin.\nBronze, jade, and pottery grave goods complete the pattern.",
+          "figures": []
+        },
+        {
+          "id": "03.21-p004",
+          "text": "What emerges is social hierarchy rather than a clearly named political system.\nThe foundations and tombs prove organized labor and strong distinctions of rank.\nBut archaeology still cannot say with confidence what sort of state, if any, stood behind them.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.22",
+      "number": "03.22",
+      "title": "The Erlitou Bronze Inventory",
+      "paragraphs": [
+        {
+          "id": "03.22-p001",
+          "text": "The bronzes from Erlitou are the clearest evidence yet of a transformed metal industry in early second-millennium China.\nThe alloy figures remain limited, so the term bronze is used cautiously.\nBut the analyzed pieces contain enough tin to suggest deliberate alloying.",
+          "figures": []
+        },
+        {
+          "id": "03.22-p002",
+          "text": "The inventory includes vessels, bells, plaques, knives, and ge blades, as seen in Figures 3.12 and 3.13.\nOne ring-handled knife may even point northward, suggesting contact with the Northern Zone.\nThe ge blades are especially important because they mark the first appearance of a standard Bronze Age weapon.",
+          "figures": [
+            {
+              "label": "Figure 3.12",
+              "caption": "Bronze weapons from Erlitou, including ge blades and a knife. The figure matters because it shows how early weapon types and outside contacts begin to appear together."
+            }
+          ]
+        },
+        {
+          "id": "03.22-p003",
+          "text": "The bells are small and probably had clappers.\nLater examples of this kind were sometimes tied to the necks of dogs or horses.\nTurquoise-inlaid plaques add another note of luxury, even if their exact use remains uncertain.",
+          "figures": []
+        },
+        {
+          "id": "03.22-p004",
+          "text": "Above all, the metal inventory is dominated by cast vessels.\nJue are the most numerous, but jia, ding, he, and fragments of gu are also present.\nA new material had been assigned to functions once served by pottery, probably in funerary offering and ritual display.",
+          "figures": [
+            {
+              "label": "Figure 3.13",
+              "caption": "Bronze vessels from Erlitou. The important point is that cast vessel forms such as jue, jia, and ding were already present in simple but durable early versions."
+            }
+          ]
+        },
+        {
+          "id": "03.22-p005",
+          "text": "Only two vessels so far carry decoration, and it is extremely simple.\nYet even this matters.\nThe designs were cast, not engraved afterward, and the vessel types themselves proved lasting.\nIn function, manufacture, and formal vocabulary, Erlitou established precedents for the whole Bronze Age that followed.",
+          "figures": [
+            {
+              "label": "Figure 3.13",
+              "caption": "The Erlitou bronze vessels also show the earliest cast decoration in this sequence. Even the very simple patterns matter because they establish a lasting technical precedent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.23",
+      "number": "03.23",
+      "title": "The Erlitou Jades",
+      "paragraphs": [
+        {
+          "id": "03.23-p001",
+          "text": "The jades from Erlitou tell a less straightforward story than the bronzes.\nBronze can be melted down and recast.\nJade usually remains in circulation for long periods, so its archaeological distribution is much harder to interpret.",
+          "figures": []
+        },
+        {
+          "id": "03.23-p002",
+          "text": "Even so, the Erlitou inventory is revealing.\nThe most common types are trapezoidal knives, ge blades, axes, disk-axes, arc-ended blades, and handles, as shown in Figure 3.14.\nEach has a different history and a different pattern of connections.",
+          "figures": [
+            {
+              "label": "Figure 3.14",
+              "caption": "Jades from Erlitou, including ge blades, disk-axes, and arc-ended forms. The figure helps show how varied the jade inventory was and how mixed its inheritances appear."
+            }
+          ]
+        },
+        {
+          "id": "03.23-p003",
+          "text": "Some forms look back toward the eastern Neolithic.\nThe trapezoidal knives seem to enlarge an older east coast type.\nThe axes also have Neolithic ancestors, though their saw-cut decoration is new.\nThe jade ge, by contrast, copies the new bronze weapon.",
+          "figures": []
+        },
+        {
+          "id": "03.23-p004",
+          "text": "The relation to the Liangzhu world is especially instructive.\nOne or two details suggest distant echoes, and a handle decorated with thread-relief faces clearly recalls Liangzhu workmanship.\nBut the overlap is actually small.",
+          "figures": []
+        },
+        {
+          "id": "03.23-p005",
+          "text": "Of the three most characteristic Liangzhu jade forms, the axe appears at Erlitou only in altered versions, the cong is barely present, and the plain disk is absent.\nThat makes any strong claim of special connection doubtful.\nThe jades point not to a single inheritance, but to a complicated and selective reworking of older traditions.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.24",
+      "number": "03.24",
+      "title": "Erlitou in the Larger Development",
+      "paragraphs": [
+        {
+          "id": "03.24-p001",
+          "text": "Erlitou was the largest and richest site of its culture, and the range of raw materials found there implies wide exchange.\nCopper, tin, jade, turquoise, and cowries were not all local.\nThe site must have stood within extensive networks of movement and acquisition.",
+          "figures": []
+        },
+        {
+          "id": "03.24-p002",
+          "text": "Whether those networks were controlled by a single state is another matter.\nThe evidence proves labor mobilization, social rank, and concentration of wealth.\nIt does not yet prove the exact political form in which those things were organized.",
+          "figures": []
+        },
+        {
+          "id": "03.24-p003",
+          "text": "What can be said with more confidence is that Erlitou stands very close to the threshold of the Erligang world.\nIts later levels fall near the middle of the second millennium BC, and their pottery and other remains point strongly toward Zhengzhou.\nOn present evidence, Erlitou is the immediate ancestor of the first great Bronze Age civilization in East Asia.",
+          "figures": []
+        },
+        {
+          "id": "03.24-p004",
+          "text": "In that sense Erlitou is both already impressive and still unfinished.\nIt is not merely a preface.\nIt is the stage at which many enduring features of later Bronze Age society first come together, before they expand into the wider and more forceful horizon of Erligang.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.25",
+      "number": "03.25",
+      "title": "Panlongcheng and the Erligang Horizon",
+      "paragraphs": [
+        {
+          "id": "03.25-p001",
+          "text": "Panlongcheng had already shown that the Erligang world could establish itself far to the south.\nFigure 3.15, the plan of Lijiazui M2, makes that presence concrete in funerary form, with bronzes, jades, tools, pottery, and human remains arranged in a recognizably elite burial.",
+          "figures": [
+            {
+              "label": "Figure 3.15",
+              "caption": "Plan of Lijiazui M2 at Panlongcheng. The point is the fully furnished elite tomb in the south, showing how far the Erligang burial system had spread."
+            }
+          ]
+        },
+        {
+          "id": "03.25-p002",
+          "text": "Southern finds, however, do not stand alone.\nTypical Erligang bronzes have been found across a large part of North and Central China.\nWherever they appear, they are virtually indistinguishable from Zhengzhou counterparts.",
+          "figures": []
+        },
+        {
+          "id": "03.25-p003",
+          "text": "That uniformity suggests that Erligang expansion was not slow or diffuse.\nA complex bronze technology and a standardized vessel inventory seem to have spread over a large territory in a sharply defined movement.\nConquest is the simplest explanation.",
+          "figures": []
+        },
+        {
+          "id": "03.25-p004",
+          "text": "Yet the expansion also seems to have been brief.\nAfter the Erligang period, the wide stylistic unity disappears.\nNothing comparable reappears before the Zhou period.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.26",
+      "number": "03.26",
+      "title": "Wucheng Before Xin'gan",
+      "paragraphs": [
+        {
+          "id": "03.26-p001",
+          "text": "The centuries immediately after Erligang saw the rise of local bronze-using cultures, and likely of local powers, in places that may previously have known nothing of metallurgy.\nThe clearest southern case lay in northern Jiangxi, at Wucheng and nearby Xin'gan on the Gan River.",
+          "figures": []
+        },
+        {
+          "id": "03.26-p002",
+          "text": "Wucheng was excavated in 1973.\nIts middle level yielded short unreadable inscriptions incised on pottery, and also evidence of bronze casting in the form of weapons and numerous molds of pottery and stone.",
+          "figures": []
+        },
+        {
+          "id": "03.26-p003",
+          "text": "The pottery was distinctive.\nMuch of it carried impressed geometric designs.\nA smaller group consisted of technically advanced glazed and high-fired wares that the excavators called primitive porcelain.",
+          "figures": []
+        },
+        {
+          "id": "03.26-p004",
+          "text": "That assemblage was striking enough for Wucheng to be proposed as the type site of a new archaeological culture.\nEven so, the site did not transform the larger discussion until a major tomb was found nearby in 1989.\nOnly then did the scale of the local civilization become fully visible.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.27",
+      "number": "03.27",
+      "title": "The Xin'gan Tomb",
+      "paragraphs": [
+        {
+          "id": "03.27-p001",
+          "text": "The tomb at Xin'gan could be linked firmly to Wucheng because its pottery matched Wucheng pottery in shape, clay, glaze, decoration, and incised marks.\nBut the rest of its contents came as a surprise.",
+          "figures": []
+        },
+        {
+          "id": "03.27-p002",
+          "text": "This was one of the richest Early Bronze Age burials ever found.\nOnly the tomb of Fu Hao at Anyang seems clearly richer.\nXin'gan contained 356 pottery vessels, 50 bronze vessels, 4 bells, more than 400 bronze tools and weapons, and about 150 jades, apart from hundreds of jade beads.",
+          "figures": []
+        },
+        {
+          "id": "03.27-p003",
+          "text": "The assemblage is important not only for its wealth, but for its date.\nThe earliest bronzes are standard Erligang types.\nThe later ones belong to the period between the end of Erligang and the full rise of Anyang around 1200 BC.",
+          "figures": []
+        },
+        {
+          "id": "03.27-p004",
+          "text": "That makes the tomb the largest known assemblage from the transition period.\nSince Zhengzhou and Anyang have yielded only scant remains from that interval, Xin'gan becomes a crucial witness.\nIt preserves a stage that is otherwise poorly represented in the central sites.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.28",
+      "number": "03.28",
+      "title": "A Southern Bronze Tradition",
+      "paragraphs": [
+        {
+          "id": "03.28-p001",
+          "text": "The bronzes from Xin'gan show a local industry emerging from an Erligang base.\nSome pieces still follow standard Erligang forms.\nOthers reveal a distinct regional taste taking shape.",
+          "figures": []
+        },
+        {
+          "id": "03.28-p002",
+          "text": "That local taste appears in several ways.\nSome decorative schemes echo Wucheng pottery.\nThree unusual tripods seem to have been converted from ring-footed vessels, perhaps imported items radically remade for local use.",
+          "figures": []
+        },
+        {
+          "id": "03.28-p003",
+          "text": "A large fangding is especially revealing.\nIn most respects it resembles northern examples, yet tigers rise on its handles in a startling local flourish.\nFigure 3.16 shows the effect clearly.",
+          "figures": [
+            {
+              "label": "Figure 3.16",
+              "caption": "Bronze fangding from Xin'gan with tigers rising on the handles. It shows how a southern workshop could inherit northern forms and yet transform them with a strong local accent."
+            }
+          ]
+        },
+        {
+          "id": "03.28-p004",
+          "text": "The four bells are just as important.\nThey connect Wucheng not only to Xin'gan, but to a larger cultural province in the lower Yangzi and perhaps, a little later, in the middle Yangzi as well.\nThree are mouth-upward nao, struck from the outside, and one is a suspended bo.",
+          "figures": []
+        },
+        {
+          "id": "03.28-p005",
+          "text": "These are the earliest securely dated bells of that class found together with bronze vessels.\nThough Wucheng is still the only known city site in this southern zone, the bells imply a broader world.\nLarge bells were becoming the defining artifact of a civilization distinct from the northern courts.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.29",
+      "number": "03.29",
+      "title": "Why Xin'gan Changed the Picture",
+      "paragraphs": [
+        {
+          "id": "03.29-p001",
+          "text": "Comparison with Fu Hao's tomb makes the southern difference unmistakable.\nFu Hao's tomb contained far more jades and bronze vessels, but quantity alone is not the point.\nThe significant contrast lies in the types.",
+          "figures": []
+        },
+        {
+          "id": "03.29-p002",
+          "text": "At Anyang, jia, jue, and gu were fundamental vessel forms in elite burials.\nAt Xin'gan they are absent.\nInstead the assemblage is dominated by ding and li, and it also includes the four large bells.",
+          "figures": []
+        },
+        {
+          "id": "03.29-p003",
+          "text": "That combination can hardly belong to a northerner.\nIt points to a local ritual system and a local elite.\nThe occupant of the tomb stood inside a southern tradition, not on the margins of a northern one.",
+          "figures": []
+        },
+        {
+          "id": "03.29-p004",
+          "text": "This mattered because Chinese archaeology had long tried to explain southern bronzes away.\nThey were often treated as imports from Anyang, or as provincial imitations, or as the possessions of Shang agents.\nXin'gan made those explanations much harder to sustain.",
+          "figures": []
+        },
+        {
+          "id": "03.29-p005",
+          "text": "The bronzes are unmistakably local, technically accomplished, and in some cases as fine as anything from the north.\nWucheng and Xin'gan therefore begin to look like the remains of a local power, a city and the cemetery of its rulers.\nThe old image of civilization as a monopoly of the Yellow River valley becomes much less credible.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.30",
+      "number": "03.30",
+      "title": "The Transition Period as a Network",
+      "paragraphs": [
+        {
+          "id": "03.30-p001",
+          "text": "The pattern seen in Jiangxi seems not to have been unique.\nAfter the short-lived Erligang expansion, local bronze-using cultures emerged in several regions.\nWhat broke down was uniformity, not contact.",
+          "figures": []
+        },
+        {
+          "id": "03.30-p002",
+          "text": "The transition period was therefore not a time of isolation.\nIt was a time when local styles began to form inside a larger field of interaction.\nImported bronzes, imported artisans, and gifts between courts must all have played a part.",
+          "figures": []
+        },
+        {
+          "id": "03.30-p003",
+          "text": "Wucheng and Xin'gan offer the clearest southern example because excavation happened to uncover them.\nElsewhere the evidence is thinner and depends mainly on chance finds.\nBut those finds are enough to show that civilized centers were widely distributed.",
+          "figures": []
+        },
+        {
+          "id": "03.30-p004",
+          "text": "The next evidence comes from Anhui, Beijing, Hebei, and southern Shaanxi.\nTogether these finds suggest a flowering of local powers after Erligang, even though the record remains frustratingly uneven.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.31",
+      "number": "03.31",
+      "title": "Transition Period Finds in Anhui",
+      "paragraphs": [
+        {
+          "id": "03.31-p001",
+          "text": "Two finds in Anhui are especially striking, one from Funan on the Huai River and one from Feixi between the Huai and the Yangzi.\nNeither was well documented archaeologically.\nBut the bronzes themselves are extraordinary.",
+          "figures": []
+        },
+        {
+          "id": "03.31-p002",
+          "text": "The Feixi find consisted of a pair of jia and a pair of jue.\nFigure 3.17 captures their scale and refinement.\nThe jue are among the largest known, and the jia are equally imposing.",
+          "figures": [
+            {
+              "label": "Figure 3.17",
+              "caption": "A monumental bronze jue from Feixi. The useful point is the scale and refinement of transition-period bronzes in the Huai region."
+            }
+          ]
+        },
+        {
+          "id": "03.31-p003",
+          "text": "The Funan find included pairs of jue, jia, and gu, together with two remarkable zun.\nOne of those zun was already used earlier to illustrate late Style III decoration.\nHere the point is not only style, but the appearance of very high-quality bronzes in the Huai region.",
+          "figures": []
+        },
+        {
+          "id": "03.31-p004",
+          "text": "Both assemblages look like elite burial sets of northern type.\nThat suggests that the Huai region was not peripheral in any simple sense.\nEven where the documentation is poor, such bronzes force the conclusion that major courts or major patrons were active there.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.32",
+      "number": "03.32",
+      "title": "Border Worlds in Beijing and Hebei",
+      "paragraphs": [
+        {
+          "id": "03.32-p001",
+          "text": "A large grave at Pinggu in modern Beijing is important for a different reason.\nIts goods mix familiar bronze vessels with objects that seem distinctly foreign.\nThe result is a border picture, not a purely central one.",
+          "figures": []
+        },
+        {
+          "id": "03.32-p002",
+          "text": "The grave seems to have had an Erligang burial form, but it also contained an axe with an iron blade, bronze disks with human faces, and gold ornaments of types linked to the northeast.\nThe occupant cannot be fitted neatly into a single cultural box.",
+          "figures": []
+        },
+        {
+          "id": "03.32-p003",
+          "text": "Taixicun in Hebei tells a related story.\nThe site yielded houses, pits, graves, bronze vessels, divination bones, textiles, and lacquered wood.\nSome materials point northward, others toward the culture of the Yellow River valley.",
+          "figures": []
+        },
+        {
+          "id": "03.32-p004",
+          "text": "Yet Taixicun does not seem to have been one of the greatest centers of the time.\nIts graves are modest, and the site is comparatively small.\nIts importance lies rather in showing a mixed frontier world where ritual forms, craft traditions, and peoples overlapped.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.33",
+      "number": "03.33",
+      "title": "Chenggu and the Web of Contacts",
+      "paragraphs": [
+        {
+          "id": "03.33-p001",
+          "text": "The most tantalizing transition period center may be Chenggu in southern Shaanxi, at the meeting of the Han River and the Xushui.\nRepeated accidental finds there have produced more than five hundred bronzes, mostly weapons, but also chariot fittings and fine vessels.",
+          "figures": []
+        },
+        {
+          "id": "03.33-p002",
+          "text": "These were not ordinary graves.\nThey seem instead to have been pit deposits of uncertain purpose.\nEven so, the quality of some vessels is astonishing.\nFigure 3.18 shows one such bronze, fully equal in ambition to the best works from other regions.",
+          "figures": [
+            {
+              "label": "Figure 3.18",
+              "caption": "A bronze pou from Chenggu. It matters because it shows the high quality of a center known mainly through chance finds rather than systematic excavation."
+            }
+          ]
+        },
+        {
+          "id": "03.33-p003",
+          "text": "One deposit at Sucun is especially revealing.\nIt contained a mass of ge blades, many bronze disks, human and animal bronze faces, and a pair of fanglei.\nSome of these have close counterparts in Fu Hao's tomb, while the human faces also link Chenggu to the Wei valley and to Xin'gan, as Figure 3.19 makes clear.",
+          "figures": [
+            {
+              "label": "Figure 3.19",
+              "caption": "Bronze human faces from Xin'gan and Shaanxi. Their resemblance helps reveal contact between distant regions during the transition period."
+            }
+          ]
+        },
+        {
+          "id": "03.33-p004",
+          "text": "Those links are crucial.\nThey imply contact running north into the Wei valley, south toward Sichuan, east toward Anyang, and southeast toward Jiangxi and Hunan.\nEven without full excavation, Chenggu emerges as an important node in a wide network of interacting powers.",
+          "figures": []
+        },
+        {
+          "id": "03.33-p005",
+          "text": "This only sharpens the irony that the transition period is poorly known at Zhengzhou and only dimly visible at Anyang.\nFor this interval, the central plain is not where the clearest evidence lies.\nThe archaeological light falls more strongly on the margins.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.34",
+      "number": "03.34",
+      "title": "Anyang around 1200 BC",
+      "paragraphs": [
+        {
+          "id": "03.34-p001",
+          "text": "Anyang becomes central again at about 1200 BC.\nThe oracle inscriptions found there were made on behalf of nine kings whose names later tradition preserves as the last rulers of the Shang or Yin dynasty.\nThat is why the site is identified as the last Shang capital.",
+          "figures": []
+        },
+        {
+          "id": "03.34-p002",
+          "text": "Even here, however, chronology is not simple.\nThe calendar dates depend partly on later texts.\nArchaeologists rely mainly on a sequence of pottery stages, Yinxu 1 to 4, and then try to connect inscribed finds to that sequence.",
+          "figures": []
+        },
+        {
+          "id": "03.34-p003",
+          "text": "On present understanding, Wu Ding belongs to late Yinxu 1 and early Yinxu 2.\nThis matters because the first great building foundations at the site also seem to belong to that moment.\nAnyang may have become a major city under his reign.",
+          "figures": []
+        },
+        {
+          "id": "03.34-p004",
+          "text": "Around that same time the site's most striking features appear together.\nThere are inscribed oracle bones, huge tombs, chariot burials, and human sacrifice on a scale not seen earlier.\nNo earlier site approaches the richness of Fu Hao's tomb or the sheer quantity of divinatory inscriptions.",
+          "figures": []
+        },
+        {
+          "id": "03.34-p005",
+          "text": "Anyang is therefore truly exceptional, but not in a simple way.\nIts prominence reflects ancient reality, yet it also reflects decades of excavation.\nIf places such as Zhengzhou, Sanxingdui, or the Yangzi centers were equally well known, the balance of the picture might look different.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.35",
+      "number": "03.35",
+      "title": "Writing and Historical Distortion",
+      "paragraphs": [
+        {
+          "id": "03.35-p001",
+          "text": "Writing is one reason Anyang looms so large.\nOnce written documents appear, the past instantly seems more concrete.\nBut this concreteness can mislead as much as it helps.",
+          "figures": []
+        },
+        {
+          "id": "03.35-p002",
+          "text": "One question is whether writing itself first appeared at Anyang around 1200 BC.\nInscriptions show up on bronzes at about the same time that they appear on oracle bones, and that might suggest a true beginning.\nYet it is equally possible that writing had already existed on perishable materials.",
+          "figures": []
+        },
+        {
+          "id": "03.35-p003",
+          "text": "The evidence from Anyang itself points in that direction.\nThere are signs of brush writing, and indirect evidence for wood or bamboo writing surfaces.\nIf so, the inscribed bones are only one surviving corner of a much larger written world.",
+          "figures": []
+        },
+        {
+          "id": "03.35-p004",
+          "text": "This matters because it limits the inferences one may draw.\nThe first surviving texts need not be the first texts ever written.\nWriting at this stage need not have been confined to divination, or to the royal court, or even to Anyang itself.",
+          "figures": []
+        },
+        {
+          "id": "03.35-p005",
+          "text": "Comparison with the Western Zhou makes the point clearer.\nWithout inscribed bronzes, Zhou literacy would hardly be visible archaeologically, even though it was surely much broader than the bronze record alone suggests.\nThe poverty of the Chinese textual record, compared with the clay tablets of the ancient Near East, may say more about preservation than about civilization.",
+          "figures": []
+        },
+        {
+          "id": "03.35-p006",
+          "text": "The surviving Anyang texts are therefore both invaluable and distorting.\nThey are the earliest surviving documents, but all come from one place and one narrow sphere.\nThe result is a view of the second millennium filtered through the concerns of a single royal court.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.36",
+      "number": "03.36",
+      "title": "The Layout of Anyang",
+      "paragraphs": [
+        {
+          "id": "03.36-p001",
+          "text": "Just before Wu Ding's time, the main areas of activity at Anyang seem to have lain near Xiaotun and across the Huan River at Sanjiazhuang.\nUnder Wu Ding the settlement expanded rapidly.\nBy the end of his reign it may have covered about 15 square kilometers, and by the end of the dynasty perhaps 24.",
+          "figures": []
+        },
+        {
+          "id": "03.36-p002",
+          "text": "The site included cemeteries, dwelling areas, workshops, royal foundations, and vast mortuary zones.\nNo city wall has been found.\nThat absence has sometimes encouraged contrast with walled places such as Zhengzhou and Panlongcheng, though the functional meaning of the difference remains uncertain.",
+          "figures": []
+        },
+        {
+          "id": "03.36-p003",
+          "text": "Workshops were especially important.\nAt Miaopu Beidi in the south, excavation revealed industrial areas for bronze and bone working.\nBy the end of the dynasty, the bronze foundry there covered roughly 10000 square meters.",
+          "figures": []
+        },
+        {
+          "id": "03.36-p004",
+          "text": "Near Xiaotun lay the great rammed-earth foundations usually interpreted as palaces and temples.\nMore than fifty were excavated.\nTheir stratigraphy is difficult, but the earliest probably belong to Wu Ding's reign.",
+          "figures": []
+        },
+        {
+          "id": "03.36-p005",
+          "text": "These foundations stand among pits used for storage, dwelling, sacrifice, and the keeping of oracle bones.\nOne pit held more than seventeen thousand turtle plastron fragments.\nOther deposits of inscribed bones were found later at Xiaotun South and Huayuanzhuang.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.37",
+      "number": "03.37",
+      "title": "Xibeigang and Tomb M1001",
+      "paragraphs": [
+        {
+          "id": "03.37-p001",
+          "text": "Across the Huan River at Xibeigang lay the great royal cemetery.\nFigure 3.20 shows its scale, with major tombs and large zones of sacrificial burial.\nThirteen huge tombs are known there, almost all plundered in antiquity.",
+          "figures": [
+            {
+              "label": "Figure 3.20",
+              "caption": "Plans of the Xibeigang cemetery. The image helps show the arrangement of the great tombs and the dense fields of sacrificial burials around them."
+            }
+          ]
+        },
+        {
+          "id": "03.37-p002",
+          "text": "These tombs are plausibly royal because of their size, their setting, and in one case an inscription naming a royal consort.\nThe famous bronze set of three he found by looters in 1934 probably came from M1001, which may have been the tomb of Wu Ding.",
+          "figures": []
+        },
+        {
+          "id": "03.37-p003",
+          "text": "M1001 can stand as the best example of the group.\nIts basic scheme recalls the much smaller elite tomb at Panlongcheng.\nThere is a vertical shaft, a wooden chamber at the bottom, a waist pit beneath it, an earthen shelf around it, and grave goods and victims placed in and around the structure.",
+          "figures": []
+        },
+        {
+          "id": "03.37-p004",
+          "text": "The difference is scale.\nIncluding its ramps, the tomb measured about 66 meters from north to south and 44 from east to west.\nFigure 3.21 helps one see the full form, including the four ramps descending toward the central shaft.",
+          "figures": [
+            {
+              "label": "Figure 3.21",
+              "caption": "Plan and section of Xibeigang tomb M1001. The important point is the immense scale of the shaft and ramps compared with earlier elite burials."
+            }
+          ]
+        },
+        {
+          "id": "03.37-p005",
+          "text": "The shaft itself was cross-shaped and about 10.5 meters deep.\nAt its floor lay nine sacrificial pits, one in the center and two in each corner.\nEach contained a man, a dog, and a ge blade, as Figures 3.22 and 3.23 help to show.",
+          "figures": [
+            {
+              "label": "Figure 3.22",
+              "caption": "The floor of M1001 with nine sacrificial pits and traces of the burial chamber. It makes the internal organization of the tomb unusually clear."
+            },
+            {
+              "label": "Figure 3.23",
+              "caption": "The shaft floor of M1001 during excavation. This view helps one imagine the size of the cross-shaped chamber space and the placement of the sacrificial burials."
+            }
+          ]
+        },
+        {
+          "id": "03.37-p006",
+          "text": "The eight corner pits held bronze ge of usable size.\nThe central pit held a much larger jade ge, perhaps deliberately broken.\nThis recurring link between the yaokeng and the jade ge suggests that the buried figures were understood as guardians, whether present in person or symbolically represented.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.38",
+      "number": "03.38",
+      "title": "Filling the Royal Tomb",
+      "paragraphs": [
+        {
+          "id": "03.38-p001",
+          "text": "The wooden chamber itself was also cross-shaped, though smaller than the shaft.\nIts floor area was about 78 square meters, and its interior seems once to have been richly decorated.\nPigments, shell, bone, ivory inlay, and carved patterns were preserved as impressions after the wood decayed.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p002",
+          "text": "Most of the grave goods had originally been placed inside this chamber.\nLooters removed almost everything, yet enough remained to suggest a sumptuously furnished room filled with royal possessions.\nThe chamber was not just a container, but a constructed setting for the dead ruler.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p003",
+          "text": "The ritual continued as the tomb was filled.\nOnce the nine guardians had been buried in the floor, the space around the chamber was packed with pounded earth.\nOfferings and additional victims were then deposited on higher levels of the fill.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p004",
+          "text": "At one level, eleven human victims were found near the shaft walls.\nSome had coffins and ornaments of jade and turquoise.\nOthers were buried without goods, face down, and with much less care.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p005",
+          "text": "Still more victims were deposited in the ramps.\nThe south ramp was the most terrible, containing repeated rows of bound and beheaded young males.\nTheir bodies were covered with earth, then new rows were added above them.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p006",
+          "text": "Burials also lined the outside of the tomb, including humans, horses, and one richly furnished pit with chariot gear and bronze vessels.\nTaken together, the victims around M1001 seem to fall into two broad classes.\nSome were buried carefully, perhaps as servants or close retainers.\nOthers were mutilated and treated as a more distant sacrificial class.",
+          "figures": []
+        },
+        {
+          "id": "03.38-p007",
+          "text": "The closing of such a tomb must have been a prolonged public rite involving labor, display, and political meaning.\nTo stage a funeral on this scale was also to proclaim legitimacy.\nThe evidence from Xibeigang suggests that sacrifice to royal predecessors did not end with burial, but continued as part of the ongoing life of the dynasty.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.39",
+      "number": "03.39",
+      "title": "The Sacrificial Ground at Xibeigang",
+      "paragraphs": [
+        {
+          "id": "03.39-p001",
+          "text": "The great royal tombs at Xibeigang were surrounded by an immense field of sacrificial burials.\nMore than 1,200 pits were excavated there in 1934 and 1935, most of them near M1400 in the eastern part of the cemetery.\nFigure 3.20 helps one see the overall arrangement, with the great tombs at the center and the sacrificial zones spread around them.",
+          "figures": [
+            {
+              "label": "Figure 3.20",
+              "caption": "Plan of the Xibeigang cemetery and its sacrificial zones. The useful point is the scale and organization of the killing ground around the royal tombs."
+            }
+          ]
+        },
+        {
+          "id": "03.39-p002",
+          "text": "The contents of the pits varied.\nComplete skeletons more often had grave goods than dismembered ones, but even headless skeletons might be accompanied by knives, axes, or whetstones.\nSome pits held horses, some birds, some monkeys, and in two striking cases elephants buried with human attendants.\nThe human pits were arranged in east west rows and in distinct groups, and each group tended to contain one consistent mode of killing and burial, as though it represented a single sacrificial occasion.",
+          "figures": []
+        },
+        {
+          "id": "03.39-p003",
+          "text": "Later excavation made the scale clearer still.\nIn 1976, 191 pits southeast of M1400 were found to contain the remains of more than 1,200 victims.\nMost were young adult males, though women and children also appeared.\nBeheading was normal, but some victims were cut in half, dismembered, or in a few cases apparently buried alive.\nThe excavators distinguished twenty-two separate sacrificial groups, from single-pit offerings up to one immense group of forty-seven pits with more than 339 victims.",
+          "figures": []
+        },
+        {
+          "id": "03.39-p004",
+          "text": "The western part of the cemetery yielded another pattern.\nForty pits excavated in 1978 seem to represent slightly later sacrifices, concentrated mainly on horses.\nTaken together with test probes in the intervening ground, the evidence suggests that Xibeigang contained a continuous sacrificial zone used over a substantial span of time.\nOracle inscriptions from the reign of Wu Ding record offerings of human victims, sometimes by the hundred, dedicated to royal ancestors.\nXibeigang was almost certainly one of the main places where such rites were carried out.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.40",
+      "number": "03.40",
+      "title": "The Meaning of Sacrifice at Anyang",
+      "paragraphs": [
+        {
+          "id": "03.40-p001",
+          "text": "Human sacrifice at Anyang did not serve only one function.\nFoundation burials show that construction itself could demand victims, and sacrificial pits of uncertain purpose occur in many parts of the site.\nEven so, the strongest concentration of evidence points to the mortuary cult of the kings.",
+          "figures": []
+        },
+        {
+          "id": "03.40-p002",
+          "text": "What that cult meant to the wider population cannot be known directly.\nA comparison with Mesoamerica is useful here, not because the two worlds were the same, but because it shows how large public sacrifices might combine political terror with religious necessity.\nAt Anyang too, sacrifice on this scale probably presupposed more than brute force alone.\nIt suggests a world in which the royal ancestors were believed to possess real power over the living.",
+          "figures": []
+        },
+        {
+          "id": "03.40-p003",
+          "text": "The practice also marks the Anyang dynasty off from what came later.\nBurial of retainers and funerary sacrifice survived in other forms, but the repeated slaughter of anonymous victims in great numbers after the funeral seems to have ended with Anyang.\nEven the memory of it faded.\nWestern Zhou texts accuse the Shang kings of drunkenness rather than bloodiness, and later moralists seem strangely unaware that human sacrifice stood near the center of the old royal cult.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.41",
+      "number": "03.41",
+      "title": "Fu Hao's Tomb",
+      "paragraphs": [
+        {
+          "id": "03.41-p001",
+          "text": "The tomb of Fu Hao is the only intact royal burial yet discovered at Anyang, and also the only one that can be confidently tied to a named person in the oracle texts.\nIt lies west of the Xiaotun palace area and near several lesser burials of similar date.\nIt is far smaller than the great tombs of Xibeigang and has no entrance ramps, yet its contents are astonishing.\nFigure 3.24 makes the plan clear.",
+          "figures": [
+            {
+              "label": "Figure 3.24",
+              "caption": "Plan and section of Fu Hao's tomb. It helps one see how a relatively small shaft could hold an extraordinarily rich royal burial."
+            }
+          ]
+        },
+        {
+          "id": "03.41-p002",
+          "text": "The shaft measured only about 4 by 5.6 meters at the mouth and 7.5 meters in depth.\nYet it contained roughly 1,600 kilograms of bronze and the largest group of jades ever found in an Anyang tomb.\nThe inventory included 195 bronze vessels, 271 other bronzes such as tools and weapons, 755 jades, 110 objects of marble, turquoise, and other stones, 564 carved bone objects, 15 shell pieces probably used as inlays, 3 ivory cups, and 11 pottery vessels.\nIf the plundered royal tombs at Xibeigang were richer still, their contents must have been almost beyond measure.",
+          "figures": []
+        },
+        {
+          "id": "03.41-p003",
+          "text": "The excavators reconstructed the bottom of the tomb as a set of nested lacquered coffins nearly filling the shaft.\nThe ercengtai ledge was very narrow, and most of the furnishings had been placed within the coffins themselves.\nThe largest bronzes lay in the outer coffin around three sides of the inner one, while the jades were placed with the dead in the inner coffin together with nearly 7,000 cowry shells.\nTraces of cloth preserved in corrosion suggest that many bronzes had been wrapped before burial.",
+          "figures": []
+        },
+        {
+          "id": "03.41-p004",
+          "text": "The tomb also contained sacrificial victims.\nEight human skeletons, some incomplete, were found in the outer coffin.\nAnother lay with a dog in the yaokeng beneath, four more above the coffins, and three in niches cut into the sides of the shaft.\nEven here, where the burial was vastly smaller than M1001, the royal funeral remained inseparable from sacrifice.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.42",
+      "number": "03.42",
+      "title": "The Tomb's Identity and Inscriptions",
+      "paragraphs": [
+        {
+          "id": "03.42-p001",
+          "text": "The identification of the tomb depends mainly on inscriptions.\nMore than a hundred bronzes carry the name Fu Hao, and five others, including two monumental fangding, carry the name Mu Xin, which the oracle texts identify as the posthumous title under which Fu Hao received sacrifices from her sons.\nThat combination makes the attribution compelling.",
+          "figures": []
+        },
+        {
+          "id": "03.42-p002",
+          "text": "The inscriptions also raise a more delicate question.\nSome scholars have thought that so many inscribed vessels could hardly have been made for the funeral alone, and therefore treated those bearing Fu Hao's name as possessions she had owned in life.\nBut this may underestimate the productive power of Anyang foundries.\nA plausible alternative is that Wu Ding commissioned many of these vessels for the burial itself, while the great fangding to Mu Xin represent offerings made in her posthumous identity.",
+          "figures": []
+        },
+        {
+          "id": "03.42-p003",
+          "text": "The issue matters because it affects how the tomb is read.\nIf many bronzes were already in use, the tomb preserves something like a courtly household gathered into death.\nIf many were newly cast, it reveals the speed and scale with which royal ritual wealth could be mobilized.\nIn either case, the inscriptions show an unusually direct relation between archaeology and named historical persons.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.43",
+      "number": "03.43",
+      "title": "Bronze Wealth and Aristocratic Rank",
+      "paragraphs": [
+        {
+          "id": "03.43-p001",
+          "text": "The bronze assemblage expresses rank in several different ways.\nSome vessel types are themselves exceptional, appearing rarely or not at all in lesser burials.\nTwo fanglei and four fangyi belong to this category, along with a few singular pieces whose very oddity marks them out as aristocratic luxuries rather than basic ritual equipment.",
+          "figures": []
+        },
+        {
+          "id": "03.43-p002",
+          "text": "A second sign of status is sheer size.\nMany vessels in the tomb are much larger than normal for their types.\nThe two largest, both fangding dedicated to Mu Xin, weigh about 120 kilograms each.\nRectangular versions of normally round forms are especially imposing.\nThere are only twenty-one rectangular vessels in the tomb, but they visually dominate the assemblage.",
+          "figures": []
+        },
+        {
+          "id": "03.43-p003",
+          "text": "A third sign of rank is quantity.\nForty jue and fifty-three gu are not just a ritual set but a display of abundance.\nWhere a lesser aristocrat might have one example, Fu Hao often had matched groups of five or ten.\nA neighboring tomb like M18 would count as rich in almost any other context, yet beside Fu Hao's burial it seems modest and almost restrained.",
+          "figures": []
+        },
+        {
+          "id": "03.43-p004",
+          "text": "The distribution of forms also hints at ritual emphasis.\nA rough functional division suggests that the majority of the vessels were for wine rather than food.\nAlmost all the major bronzes carry Style V decoration.\nThe result is a burial that speaks not only of wealth, but of ceremonial intensity and visual authority.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.44",
+      "number": "03.44",
+      "title": "Weapons, Bells, and Northern Contacts",
+      "paragraphs": [
+        {
+          "id": "03.44-p001",
+          "text": "Outside the vessel set, the bronzes include a dense cluster of tools and weapons.\nThere are eighty-nine ge blades and two especially large axe blades inscribed with Fu Hao's name.\nThose axes may have served in sacrificial killing.\nThe tomb also yielded twenty-three small bells of the nao and ling types, a little horse gear, and several objects that seem to come from the Northern Zone, including mirrors, a knife, a pointed tool, and a number of so-called bow-shaped objects.\nFigure 3.25 gathers these northern-looking pieces together.",
+          "figures": [
+            {
+              "label": "Figure 3.25",
+              "caption": "Northern-style bronzes from Fu Hao's tomb. They matter because they show that Anyang was in active contact with northern exchange networks."
+            }
+          ]
+        },
+        {
+          "id": "03.44-p002",
+          "text": "These items matter because they place Anyang within a wider network of exchange.\nMirrors of the same sort occur further northwest, even in contexts linked with Qijia and related northern traditions.\nOther artifacts of unmistakably Anyang character turned up far away, as at Chenggu in Shaanxi.\nThe pattern suggests active traffic rather than cultural isolation.\nBy the time of Wu Ding, Anyang was not merely receiving influence from the north.\nIt was participating in a many-sided web of prestige exchange.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.45",
+      "number": "03.45",
+      "title": "Jade as Material and Technique",
+      "paragraphs": [
+        {
+          "id": "03.45-p001",
+          "text": "The jades from Fu Hao's tomb require a different way of looking.\nJade is difficult to work.\nIt cannot simply be carved like wood or bone, but must be cut and shaped through abrasion.\nThat resistance is visible in the most unusual pieces from the tomb, especially the small three-dimensional animals, whose forms still seem half imprisoned in the rectangular blocks from which they were made.\nFigure 3.26 shows this vividly.",
+          "figures": [
+            {
+              "label": "Figure 3.26",
+              "caption": "Three-dimensional jade animals from Fu Hao's tomb. The important point is how stubborn material and limited technique still produced vivid but compact forms."
+            }
+          ]
+        },
+        {
+          "id": "03.45-p002",
+          "text": "Flat objects were better suited to the material and to the available techniques.\nFor much of the Bronze Age, plaques, blades, disks, rings, and other flat forms are more numerous and often more refined than fully modeled figures.\nThe first step was to saw a pebble or block into slabs.\nAn object then had to be designed on the surface of the slab in such a way as to exploit attractive coloration, avoid flaws, and waste as little as possible.\nThat economy of material helped determine form.",
+          "figures": []
+        },
+        {
+          "id": "03.45-p003",
+          "text": "The piece was then cut out, pierced, incised, and polished.\nSaws, drills, and probably small rotating disks were the main tools.\nMany jades in the tomb were clearly recut from earlier objects, showing both the value of the material and the way designs could emerge from the possibilities of a particular surviving fragment.\nSome paired items were even cut from the same original piece.",
+          "figures": []
+        },
+        {
+          "id": "03.45-p004",
+          "text": "The technical limitations had artistic consequences.\nWhat emerged was largely a two-dimensional art, one that emphasized silhouette, polished surface, and the visual character of the stone itself.\nEven when animals were represented, they were often treated as surfaces and outlines rather than as free sculptural masses.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.46",
+      "number": "03.46",
+      "title": "Decoration, Imports, and Ancient Heirlooms",
+      "paragraphs": [
+        {
+          "id": "03.46-p001",
+          "text": "Not all of Fu Hao's jades are decorated.\nSome ge blades, disks, rings, and bracelets derive their effect simply from shape, polish, and material.\nWhere decoration does appear, it often takes the form of jagged sawn edges or fine linear patterns.\nThose lines only seem to stand proud in relief.\nIn reality the craftsman often created the effect by grinding trenches on either side of the desired line.\nThe result is careful and elegant, though less fluid than the true thread relief that appears in some earlier Neolithic work.",
+          "figures": []
+        },
+        {
+          "id": "03.46-p002",
+          "text": "The assemblage also contains several surprises.\nOne is the absence of large trapezoidal knives and arc-ended blades, shapes known from Erlitou and found in abundance at Sanxingdui.\nInstead, the large blades in the tomb are almost all ge.\nThirty-nine of them were buried there.\nWhether they were prized for ritual efficacy, prestige, or simple acquisitiveness cannot be said with certainty, but their concentration is striking.",
+          "figures": []
+        },
+        {
+          "id": "03.46-p003",
+          "text": "Another surprise is the breadth of the tomb's connections in time and space.\nSome jades are probably imports from the south.\nOne ge even carries an inscription recording that a set of five ge had been sent in, a small but vivid trace of elite exchange.\nMore startling still is the presence of much older Neolithic pieces from several different cultures, including Shijiahe, Liangzhu, Longshan, and Hongshan.\nHongshan forms were evidently familiar enough at Anyang to inspire local adaptations, and Figure 3.27 shows how a foreign coiled animal type could gradually become an Anyang dragon plaque.",
+          "figures": [
+            {
+              "label": "Figure 3.27",
+              "caption": "Hongshan and Anyang-related jade dragon forms. The comparison shows how an older northern type could be adopted and transformed in the style of Anyang."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.47",
+      "number": "03.47",
+      "title": "Jades and Bronzes in Different Roles",
+      "paragraphs": [
+        {
+          "id": "03.47-p001",
+          "text": "The contrast between the jades and the bronzes is revealing.\nThe jades include imports, heirlooms, and pieces already ancient when they entered the tomb.\nMany were probably ornaments or cherished valuables in life before they became grave goods in death.\nSome may even have been recovered from older burials.",
+          "figures": []
+        },
+        {
+          "id": "03.47-p002",
+          "text": "The bronzes tell a different story.\nThey belong much more consistently to the current ritual world of Anyang.\nThat makes sense.\nA funerary assemblage of bronze vessels had to perform specific ceremonial work, and that required a coherent and up-to-date equipment set.\nA random accumulation of old curiosities would not do.\nThe jades suggest personal possession and long circulation.\nThe bronzes suggest formal ritual order.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.48",
+      "number": "03.48",
+      "title": "The Arrival of the Chariot",
+      "paragraphs": [
+        {
+          "id": "03.48-p001",
+          "text": "The horse-drawn chariot appears at Anyang about the time of Wu Ding.\nThe earliest archaeological traces belong to that horizon, and there is no sign of any earlier wheeled vehicle in the area.\nThe graph for chariot in the oracle inscriptions of this period therefore becomes especially significant.\nIt almost certainly refers to a real vehicle already present in the life of the court.",
+          "figures": []
+        },
+        {
+          "id": "03.48-p002",
+          "text": "The striking thing is that the chariot enters the Chinese archaeological record fully formed.\nThere is no visible prehistory of wagons, carts, or draft use leading up to it.\nThe vehicle appears instead as part of a complete technical package, one that already had a long history in western Asia.\nThat makes the chariot an important clue to the external relations of the Anyang civilization.",
+          "figures": []
+        },
+        {
+          "id": "03.48-p003",
+          "text": "Chariot burials are known from several parts of the site.\nSome were connected with tombs, others seem to have been separate sacrifices.\nAbout twenty had been excavated when this discussion was written.\nMost contained one or two chariots, a pair of horses for each vehicle, and in about half the cases one to three human skeletons.\nThe only contemporary example known elsewhere, at Laoniupo near Xi'an, is essentially identical to the Anyang specimens.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.49",
+      "number": "03.49",
+      "title": "The Chariot Burial M52",
+      "paragraphs": [
+        {
+          "id": "03.49-p001",
+          "text": "Because early examples are often poorly preserved, one later burial is especially useful.\nPit M52 at Guojiazhuang, dated to Yinxu 4, preserved a nearly complete ghost of a chariot as a soil cast formed after the decay of the wood.\nFigure 3.28 shows the arrangement clearly.\nTwo men and two horses had been laid in the pit before the vehicle was lowered into place.",
+          "figures": [
+            {
+              "label": "Figure 3.28",
+              "caption": "Chariot burial M52 at Anyang. The image makes the funerary arrangement of vehicle, horses, and attendants immediately visible."
+            }
+          ]
+        },
+        {
+          "id": "03.49-p002",
+          "text": "The pit was about 3.5 meters square and 1.8 meters deep.\nThe wheels, axle, and draft pole rested in trenches cut to receive them, so that the body of the chariot could sit low and the wheels would not bear the full weight of the fill.\nEven so, the pounded earth later distorted the wheels and bent the draft pole.\nOne of the sacrificed men lay beside the horses on matting, his hands tied behind him and part of his body covered with patterned red cloth.\nThe other lay behind the vehicle and had been sprinkled with cinnabar.\nThe horses too were associated with cinnabar.",
+          "figures": []
+        },
+        {
+          "id": "03.49-p003",
+          "text": "Structurally the chariot was large but standard.\nIt had two eighteen-spoked wheels turning on a fixed axle, a draft pole resting over the axle and rising toward the yoke, and a curved yoke fitted with saddles resting on the horses' necks.\nThe axle was about 308 centimeters long and the distance between the wheels about 230 centimeters.\nThe box itself was broad enough to carry several passengers kneeling.",
+          "figures": []
+        },
+        {
+          "id": "03.49-p004",
+          "text": "The chariot box measured roughly a meter and a half across and just under a meter from front to back.\nIts sides were formed by a low wooden lattice, with the entrance at the rear.\nTraces of red and black lacquer survived on the wood, and several fittings were made of bronze.\nThe horses wore bronze frontlets and headstalls decorated with cowry shells, and one carried a small bell at the neck.\nBits and cheekpieces were not found in this burial, but both are known from other Anyang chariot burials.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.50",
+      "number": "03.50",
+      "title": "Chariot Form and Chariot Use",
+      "paragraphs": [
+        {
+          "id": "03.50-p001",
+          "text": "The excavators thought the decoration of M52 and the lack of weapons meant that it was a passenger vehicle rather than a war chariot.\nThat remains uncertain.\nIts construction does not differ fundamentally from chariots found with weapons, and richly decorated vehicles are not thereby excluded from military use.\nThe sides of the box were too low for stable fighting while standing, so if combat was involved, the riders probably knelt.",
+          "figures": []
+        },
+        {
+          "id": "03.50-p002",
+          "text": "Such chariots may therefore have served several purposes.\nThey could have been ceremonial vehicles for commanders, rapid transport for elite fighters, or moving platforms from which archers shot while kneeling.\nThe presence of weapons in some burials does not prove that those weapons were meant to be used from a moving vehicle.\nIn an aristocratic warrior culture, arms also functioned as rank-bearing attire.",
+          "figures": []
+        },
+        {
+          "id": "03.50-p003",
+          "text": "Compared with Near Eastern chariots, those from Anyang are notably large.\nThey had broader floors, larger wheels, and greater wheel track than the examples from the tomb of Tutankhamun.\nThat suggests more passengers and less speed.\nYet two features are especially striking.\nAnyang wheels can have eighteen to twenty-six spokes, far more than the common four, six, or eight of western Asia, and the axle is mounted not at the back edge of the box but nearer the middle.\nOutside China, the closest parallels for this combination are some mid-second-millennium chariots from the Caucasus.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.51",
+      "number": "03.51",
+      "title": "What the Chariot Implies",
+      "paragraphs": [
+        {
+          "id": "03.51-p001",
+          "text": "A horse-drawn chariot is not just one more artifact.\nIt presupposes a whole cluster of skills and institutions.\nHorses had to be bred, traded, broken, paired, and handled.\nVehicles had to be built and maintained by skilled carpenters and harness makers.\nDrivers too required training.\nEven limited use of chariots implies sustained contact with people who already possessed this knowledge.",
+          "figures": []
+        },
+        {
+          "id": "03.51-p002",
+          "text": "The logic of the vehicle points the same way.\nSpeed depends on horse traction, light construction, and spoked wheels.\nIn western Eurasia such vehicles were preceded by a long history of heavier wagons and draft use.\nIn China no earlier wheel tradition leads up to the Anyang examples.\nThe spoked wheel arrives already mature.\nEven the heat bending required for some wooden parts presupposes specialized technique.",
+          "figures": []
+        },
+        {
+          "id": "03.51-p003",
+          "text": "The implication is that Anyang did not acquire chariots merely by copying an object seen from afar.\nIt must have acquired horses, craft knowledge, and at least some trained personnel through northern contacts.\nKnives, bow-shaped objects, and other northern-style bronzes appearing in the Anyang record at the same time may belong to that same horizon of interaction.\nThe arrival of the chariot is therefore one of the clearest signs that the Anyang world was open to forces beyond the Yellow River valley.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.52",
+      "number": "03.52",
+      "title": "The Middle Yangzi Bronze World",
+      "paragraphs": [
+        {
+          "id": "03.52-p001",
+          "text": "If one looks beyond Anyang, the most sophisticated contemporary bronze cultures lay in the middle and lower Yangzi region.\nBy this time, local industries were flourishing across a wide area.\nThere was no single Anyang horizon imposing one style everywhere.\nInstead, the centuries of the Anyang kings saw the confident growth of regional traditions.",
+          "figures": []
+        },
+        {
+          "id": "03.52-p002",
+          "text": "One artifact above all marks the Yangzi sphere.\nThat is the large bell, especially the type called nao.\nAnyang had small bells of this family, but they were minor objects there.\nIn the south, by contrast, the bell became monumental.\nFigure 3.29 makes the contrast immediate.\nThe Anyang examples are small and relatively modest, whereas southern bells are huge and visually commanding.",
+          "figures": [
+            {
+              "label": "Figure 3.29",
+              "caption": "Bells of the nao type from Anyang and the south. The contrast shows how a minor northern object became a monumental ritual form in the Yangzi region."
+            }
+          ]
+        },
+        {
+          "id": "03.52-p003",
+          "text": "The lower Yangzi seems to have developed this bell tradition first, already by the transition period, and the Xin'gan tomb offers some of the earliest good examples.\nIn the middle Yangzi region the bells are later and often larger still.\nThe largest known example, from Ningxiang in Hunan, weighs 220 kilograms.\nThis is not a marginal craft tradition.\nIt is the product of courts or centers capable of commanding major resources and directing them toward a ritual ideal very different from that of Anyang.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.53",
+      "number": "03.53",
+      "title": "Southern Hubei and Northern Hunan",
+      "paragraphs": [
+        {
+          "id": "03.53-p001",
+          "text": "The middle Yangzi region of southern Hubei and northern Hunan has yielded the greatest concentration of such finds.\nMost belong to the period after the transition age, though one great drum from Hubei shows that the southern bronze tradition was already gathering force earlier.\nThe contexts are often frustratingly poor.\nMany objects come from chance finds or deposits rather than well excavated tombs.\nYet the objects themselves are eloquent.",
+          "figures": []
+        },
+        {
+          "id": "03.53-p002",
+          "text": "The repertory is narrow but distinctive.\nLarge bells are the most characteristic items.\nAfter them come imposing zun and lei, and then vessels made in the form of animals such as elephants, buffaloes, and even boars.\nFigure 3.30 shows the tone of this world.\nThe favorite creatures are not the highly formalized imaginary beings that dominate northern bronzes, but real animals rendered with a striking mixture of grandeur and naturalism.",
+          "figures": [
+            {
+              "label": "Figure 3.30",
+              "caption": "Animal-shaped bronzes from the middle Yangzi region. What matters is the local preference for powerful real animals rendered with scale, confidence, and natural presence."
+            }
+          ]
+        },
+        {
+          "id": "03.53-p003",
+          "text": "Occasionally the southern workshops borrowed something from Anyang, and a few northern imports may have reached the region.\nBut this does not make the southern bronzes provincial copies.\nOn the contrary, the scale, technical confidence, and ritual distinctiveness of the finds reveal an independent civilization.\nThese castings are not the products of simple villages.\nIf the south still lacks a site in Hunan as thoroughly excavated as Anyang, that is a limitation of modern fieldwork rather than of the ancient culture itself.\nThe chance finds alone are enough to show that powerful centers with wide connections flourished there, and that the later history of the north, including the rise of Zhou power, cannot be fully understood without them.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.54",
+      "number": "03.54",
+      "title": "Sanxingdui and the Chengdu Plain",
+      "paragraphs": [
+        {
+          "id": "03.54-p001",
+          "text": "In 1980 excavations began at Sanxingdui, a walled city on the Chengdu Plain about forty kilometers north of modern Chengdu.\nThe city wall was a hangtu construction, and the excavators judged it broadly comparable in date to the wall at Zhengzhou, or perhaps even earlier.\nThe surviving stretches reached as much as six meters in height and forty meters in thickness at the base.\nThe enclosed area was about 2.6 square kilometers, with settlement debris outside the wall extending over a much larger zone.",
+          "figures": []
+        },
+        {
+          "id": "03.54-p002",
+          "text": "The scale alone shows that Sanxingdui was a major center.\nThat point was driven home in 1986, when two extraordinary sacrificial pits were found at the site.\nThe two deposits seem to have been made a few decades apart.\nA rough working date places them just before and just after the tomb of Fu Hao, around 1200 BC.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.55",
+      "number": "03.55",
+      "title": "Pit 1 and the Logic of Sacrifice",
+      "paragraphs": [
+        {
+          "id": "03.55-p001",
+          "text": "Pit 1 was a rectangular shaft about 4.6 by 3.5 meters at the top and 1.6 meters deep.\nIt contained more than three hundred artifacts of bronze, jade, and gold, together with cowry shells, thirteen elephant tusks, and a great mass of burnt animal bone.\nNo human skeletons were found.",
+          "figures": []
+        },
+        {
+          "id": "03.55-p002",
+          "text": "The most striking point is ritual rather than quantity.\nThe artifacts themselves had been burned, and some had been deliberately broken, yet the pit showed no trace of burning.\nThe most plausible explanation is that animals and objects were first used in a sacrifice elsewhere, then their remains were pushed into the pit and sealed with pounded earth.\nNothing quite like this is known from Anyang, where sacrificial pits usually center on human victims rather than on masses of elite objects.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.56",
+      "number": "03.56",
+      "title": "Pit 2 and the Bronze Images",
+      "paragraphs": [
+        {
+          "id": "03.56-p001",
+          "text": "Pit 2 was similar in form but richer and more orderly.\nIts contents were laid down in three levels.\nSmall items, including more than a hundred jades, lay at the bottom.\nLarge bronzes occupied the middle layer.\nMore than sixty elephant tusks formed the uppermost level.\nFigure 3.31 shows the excavation clearly.",
+          "figures": [
+            {
+              "label": "Figure 3.31",
+              "caption": "Pit 2 at Sanxingdui under excavation. The arrangement of layers helps one see that the deposit was carefully staged, not a random dump."
+            }
+          ]
+        },
+        {
+          "id": "03.56-p002",
+          "text": "The bronzes from Pit 2 are among the strangest works of the Chinese Bronze Age.\nThey include a life-size standing figure on a pedestal, shown in Figure 3.32.\nThey include more than forty bronze heads, some with gold masks and traces of vermilion, and a set of huge faces or masks that border on the monstrous.\nFigure 3.33 gives the flavor of these startling forms.",
+          "figures": [
+            {
+              "label": "Figure 3.32",
+              "caption": "The life-size bronze statue from Sanxingdui. It shows how far this local bronze tradition moved beyond ordinary vessel casting into an entirely different sacred image world."
+            },
+            {
+              "label": "Figure 3.33",
+              "caption": "Bronze heads and masks from Sanxingdui. What matters is the radical local imagination of the human and the divine, unlike anything known from Anyang."
+            }
+          ]
+        },
+        {
+          "id": "03.56-p003",
+          "text": "There were also three bronze trees, the largest over four meters high, found in fragments.\nAlongside these stood a dozen large vessels.\nThose vessels are in one sense the least surprising objects in the pit, and for that very reason they are archaeologically precious.\nThey help anchor the dating of a deposit that would otherwise seem almost untethered to anything familiar.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.57",
+      "number": "03.57",
+      "title": "Yangzi Connections and Local Difference",
+      "paragraphs": [
+        {
+          "id": "03.57-p001",
+          "text": "The vessels from Pit 2 are all zun and lei.\nThey closely match examples from the middle Yangzi region and may well have been imported from there.\nFigure 3.34 makes the resemblance plain.\nMetal provenance studies point in the same direction, since some Sanxingdui bronzes appear to share an unusual lead source with bronzes from the Xin'gan tomb.",
+          "figures": [
+            {
+              "label": "Figure 3.34",
+              "caption": "A lei from the middle Yangzi region beside one from Sanxingdui. The comparison makes their connection visible while still leaving room for local difference."
+            }
+          ]
+        },
+        {
+          "id": "03.57-p002",
+          "text": "This does not mean that Sanxingdui belonged culturally to the Yangzi world.\nThe connections are real, but the local culture remains sharply distinct.\nThe great bells that define the middle Yangzi tradition do not appear here.\nInstead there are only a few ling and two clappered bells of highly unusual form.\nSanxingdui was in contact with the south, but it was not merely an outpost of southern taste.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.58",
+      "number": "03.58",
+      "title": "Jades, Technology, and the Problem of Origins",
+      "paragraphs": [
+        {
+          "id": "03.58-p001",
+          "text": "The jades of Sanxingdui are unlike those from Fu Hao's tomb.\nDisks and large blades dominate the assemblage.\nArc-ended blades, trapezoidal knives, ge blades, and hybrids between these forms appear in remarkable variety.\nFigure 3.35 shows this broad and unruly blade world.\nOrnaments, so abundant in Fu Hao's burial, are almost absent here.",
+          "figures": [
+            {
+              "label": "Figure 3.35",
+              "caption": "Large jade blades from Sanxingdui. The important point is the extraordinary range of blade forms and the very different jade priorities of this culture."
+            }
+          ]
+        },
+        {
+          "id": "03.58-p002",
+          "text": "The site also poses a historical puzzle.\nPottery suggests some contact with the Erlitou world, and the hangtu wall may reflect influence from Erlitou or Erligang.\nYet the bronzes themselves show little obvious Erligang flavor.\nTheir casting technology belongs to the Erligang tradition, but their forms and imagery do not.\nPerhaps bronze casting reached the Chengdu Plain relatively late, during the transition period rather than during the great Erligang expansion itself.",
+          "figures": []
+        },
+        {
+          "id": "03.58-p003",
+          "text": "The relation of Sanxingdui to later Sichuan history is equally uncertain.\nIt has often been treated as an ancestor of the later Shu culture, but that continuity has mostly been assumed rather than demonstrated.\nEarly Western Zhou bronze deposits found nearby seem largely untouched by the strange artistic world of the pits.\nSanxingdui remains one of the great unresolved presences of the second millennium BC.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.59",
+      "number": "03.59",
+      "title": "Sufutun in Shandong",
+      "paragraphs": [
+        {
+          "id": "03.59-p001",
+          "text": "Shandong presents a different problem.\nAt Sufutun, near modern Qingzhou, bronzes were first found in 1931 in a small hill at the edge of the village.\nLater work confirmed that the hill contained a cemetery, though no associated habitation site was securely identified nearby.\nA chariot burial and four tombs were excavated in 1965 and 1966, and six more tombs in 1986.",
+          "figures": []
+        },
+        {
+          "id": "03.59-p002",
+          "text": "All the excavated tombs are assigned to the later part of the Anyang sequence, roughly Yinxu 3 or 4.\nMost had been plundered before excavation.\nEven so, three tombs are revealing.\nTwo smaller burials, M7 and M8, survived intact enough to show their contents, while the great tomb M1 remained important because of its scale and sacrificial wealth.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.60",
+      "number": "03.60",
+      "title": "The Smaller Tombs at Sufutun",
+      "paragraphs": [
+        {
+          "id": "03.60-p001",
+          "text": "M7 was a rectangular shaft with a yaokeng containing a dog and an ercengtai on which three sacrificed humans had been laid, one of them a child.\nMost of the grave goods were placed between inner and outer coffins.\nThey included eight bronze vessels, seven weapons, and bronzes inscribed with the emblem conventionally read as Ya Chou.",
+          "figures": []
+        },
+        {
+          "id": "03.60-p002",
+          "text": "M8 was somewhat larger and had a sloping southern ramp ten meters long.\nIt did not contain sacrificed humans, but dogs appeared in the upper part of the tomb and animal remains lay in the yaokeng below.\nThe grave goods included seventeen bronze vessels, three nao, eight ling, a stone chime, more than two hundred arrowheads, two axes, and about thirty bronze weapons.\nThe excavators thought many of the weapons were made cheaply for burial rather than for serious use.",
+          "figures": []
+        },
+        {
+          "id": "03.60-p003",
+          "text": "These smaller tombs already show something unusual about Sufutun.\nThe burial form is largely familiar from the Anyang world, yet the assemblages also have their own local emphases.\nThe emblem Ya Chou links some of the bronzes to a broader group of objects now scattered in collections without clear provenance.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.61",
+      "number": "03.61",
+      "title": "Tomb M1 and the Scale of Sacrifice",
+      "paragraphs": [
+        {
+          "id": "03.61-p001",
+          "text": "M1 was the dominant tomb at the cemetery.\nIt had four ramps and a cross-shaped wooden burial chamber, making it the only tomb outside the Xibeigang cemetery that clearly follows the great royal pattern of Anyang.\nThe south ramp ran all the way down to the floor of the shaft.\nThe other ramps entered higher, at the level of the ercengtai.\nThough much smaller than M1001 at Xibeigang, it is the largest tomb yet known outside Anyang.",
+          "figures": []
+        },
+        {
+          "id": "03.61-p002",
+          "text": "The sacrifices were immense.\nForty-eight human victims were recorded altogether, most of them teenagers or younger.\nTwo were buried in pits in the chamber floor, one with a dog.\nSeven more lay on the ercengtai, apparently in coffins.\nThe rest, whether whole bodies or severed heads, were deposited in three layers in the south ramp together with five dogs.\nEven after looting, the tomb still yielded two large bronze axes, one inscribed with the Ya Chou emblem, along with jades, gold foil, and thousands of cowries.",
+          "figures": []
+        },
+        {
+          "id": "03.61-p003",
+          "text": "Several other features are suggestive.\nSome tombs at Sufutun had ramps, something otherwise known mainly from the great royal tombs at Anyang.\nM1 had charcoal spread beneath the wooden outer coffin.\nM8 had the lower walls lined with bundles of reeds.\nAnother large tomb, M2, placed a ge, a shield, and a human head in each corner of the shaft.\nThese details do not amount to a wholly separate local tradition, but they give the cemetery its own character.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.62",
+      "number": "03.62",
+      "title": "The Ya Chou Bronzes",
+      "paragraphs": [
+        {
+          "id": "03.62-p001",
+          "text": "The Ya Chou emblem occurs on bronzes from M1 and M7, on an earlier bronze found at Sufutun in 1931, and on several spearheads said to come from the same site.\nIt is also known from many unprovenanced bronzes.\nBecause the emblem does not seem securely tied to other excavated sites, it is tempting to connect much of that unprovenanced material with Sufutun.",
+          "figures": []
+        },
+        {
+          "id": "03.62-p002",
+          "text": "The published Ya Chou bronzes number in the dozens.\nThey include many large and flamboyant castings, with an unusually high proportion of rectangular vessels.\nSome of the square-bodied jue are among the most eccentric bronzes of the late Shang world.\nFor a long time they seemed almost without parallel at Anyang itself.\nBut a tomb found at Anyang in 1990 yielded very similar pieces.",
+          "figures": []
+        },
+        {
+          "id": "03.62-p003",
+          "text": "This matters for interpretation.\nThe Ya Chou bronzes are not foreign to the Anyang style, even when they push it toward theatrical excess.\nThey belong within its range.\nThat makes Sufutun look less like a wholly independent culture than like a place tied quite closely to the late Anyang sphere.\nOn present evidence, Shandong here looks more like a late eastern extension of that civilization than like a fully separate regional power.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.63",
+      "number": "03.63",
+      "title": "The Northern Zone",
+      "paragraphs": [
+        {
+          "id": "03.63-p001",
+          "text": "A very different world stretched across the north.\nThe Northern Zone ran from Xinjiang and Gansu in the west to Jilin in the east, including much of Inner Mongolia and parts of Liaoning, Hebei, Shanxi, and northern Shaanxi.\nIn the first millennium BC this broad region would become the home of pastoral nomadism.\nBut even in the late second millennium BC it already housed cultures visibly distinct from the civilization of the middle Yellow River valley.",
+          "figures": []
+        },
+        {
+          "id": "03.63-p002",
+          "text": "Those cultures matter for at least two reasons.\nFirst, their bronzes point to a metalworking tradition independent of the Erligang world, with roots reaching northward and westward into Siberia and Central Asia.\nSecond, the spread of their characteristic inventory seems roughly to coincide with the southward retreat of the Erligang culture from some frontier zones.\nThe appearance of the Northern Complex may therefore signal not just trade, but movement of peoples and a reshaping of the political frontier.",
+          "figures": []
+        },
+        {
+          "id": "03.63-p003",
+          "text": "The Anyang court clearly had dealings with this world.\nNorthern-style knives, mirrors, and bow-shaped objects appear in Anyang burials, and the arrival of the chariot belongs to the same broad horizon of contact.\nAt the same time, bronze vessels of the central tradition moved northward into the zone.\nThe frontier was not a wall.\nIt was a zone of transmission, borrowing, and transformation.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.64",
+      "number": "03.64",
+      "title": "The Northern Complex",
+      "paragraphs": [
+        {
+          "id": "03.64-p001",
+          "text": "The bronzes of the Northern Complex are distinctive both in type and in decoration.\nSimple striations and zigzags are common.\nSo are loops, buttons for suspension, and terminals shaped like rattles or animal heads.\nCharacteristic types include mirrors, battle-axes with tubular sockets, knives cast in one piece with their handles, daggers, spoons, spatulas, and ladles.\nFigures 3.36 and 3.37 show several of these forms.",
+          "figures": [
+            {
+              "label": "Figure 3.36",
+              "caption": "Axes from Panlongcheng, Xin'gan, and the Northern Zone. The comparison helps clarify how different hafting methods reveal different technical traditions."
+            },
+            {
+              "label": "Figure 3.37",
+              "caption": "Knives and daggers from Anyang and the north. These forms show at a glance how clearly northern weapons stand apart from native central styles."
+            }
+          ]
+        },
+        {
+          "id": "03.64-p002",
+          "text": "These types are immediately recognizable beside the native bronzes of the Yellow River world.\nChinese axes normally have flat tangs for hafting.\nNorthern ones often use shaft rings or tubular sockets.\nChinese knives usually have separate handles.\nNorthern knives cast blade and handle together.\nThe differences are not minor.\nThey point to different technical lineages.",
+          "figures": []
+        },
+        {
+          "id": "03.64-p003",
+          "text": "Some northern borrowings were naturalized in China and others were not.\nGe blades with shaft rings seem to represent a temporary experiment inspired by northern hafting methods.\nRing-handled knives, by contrast, became a permanent acquisition and eventually displaced the older native type.\nThe northern bronzes therefore matter not only as markers of ethnic or regional difference, but also as sources of technical change within China itself.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.65",
+      "number": "03.65",
+      "title": "Mixed Burials in Shanxi",
+      "paragraphs": [
+        {
+          "id": "03.65-p001",
+          "text": "The archaeology of Shanxi shows how complex this frontier world could be.\nA small grave at Jixian contained only four bronzes, all of clearly northern character.\nA battle-axe and a dagger lay by the head of the dead, and two large spoons lay beside the hand.\nFigure 3.38 shows the arrangement.\nHere there is little sign of influence from Anyang.",
+          "figures": [
+            {
+              "label": "Figure 3.38",
+              "caption": "A grave at Jixian in Shanxi. The burial is useful because it presents a compact assemblage of distinctly northern weapons and utensils without obvious Anyang features."
+            }
+          ]
+        },
+        {
+          "id": "03.65-p002",
+          "text": "At Lingshi, however, two large graves contained only a few northern items alongside rich groups of Anyang-style vessels.\nThe burials also had familiar features such as yaokeng with sacrificed dogs.\nIn these graves the northern pieces look like intrusions into an otherwise central style of aristocratic burial.",
+          "figures": []
+        },
+        {
+          "id": "03.65-p003",
+          "text": "At Shilou the balance shifts again.\nThere, small northern bronzes repeatedly occur with vessels so eccentric that they must be local products.\nFigure 3.39 gives some idea of this mixed repertoire, with ornaments, weapons, utensils, and an extraordinary boat-shaped vessel all appearing together.\nThe implication is not simple diffusion in one direction.\nDifferent groups, economies, and habits of burial were overlapping in the same broad region.",
+          "figures": [
+            {
+              "label": "Figure 3.39",
+              "caption": "Objects from several finds at Shilou in Shanxi. Taken together, they show a frontier world where ornaments, weapons, utensils, and odd local vessels overlap."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.66",
+      "number": "03.66",
+      "title": "The Wei Valley before the Zhou",
+      "paragraphs": [
+        {
+          "id": "03.66-p001",
+          "text": "The Wei valley has often been mined archaeologically in hopes of finding the early Zhou.\nThe search usually aims to identify a pottery assemblage that can be labeled proto-Zhou.\nBut the whole enterprise is uncertain.\nLater texts are too vague and contradictory to fix the homeland securely, and there is no good reason to expect pottery styles to map neatly onto peoples named in literature.",
+          "figures": []
+        },
+        {
+          "id": "03.66-p002",
+          "text": "What does stand out clearly is cultural mixture.\nErligang bronzes reached deep into the valley.\nThe eastern end, around places such as Laoniupo near Xi'an, shows strong ties with Anyang and also with the Northern Zone.\nFarther north, as one moves toward Chunhua, Tongchuan, Suide, and Qingjian, northern bronzes appear with increasing frequency alongside vessel types that remain linked to the central tradition.",
+          "figures": []
+        },
+        {
+          "id": "03.66-p003",
+          "text": "The valley was also open to the south.\nObjects from Laoniupo and Chenggu connect the Wei world with southern Shaanxi and even with Xin'gan in Jiangxi.\nChenggu may have served as an intermediary between the Yangzi sphere and the Wei valley.\nTraffic moving along these routes helps explain why southern influence on early Zhou bronzes later became so strong.\nThe valley that produced the Zhou was not culturally isolated.\nIt was a region of receiving, borrowing, and recombining.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.67",
+      "number": "03.67",
+      "title": "A Less Civilized Conqueror",
+      "paragraphs": [
+        {
+          "id": "03.67-p001",
+          "text": "Archaeology makes one point especially difficult to ignore.\nThe Zhou did not emerge from the most materially sophisticated part of the late second-millennium world.\nThe middle Yangzi region seems in many respects more advanced in bronze casting and more exuberant in large ritual display.\nAnyang itself was richer and more textually visible.\nThe preconquest Wei valley, by contrast, appears mixed, receptive, and comparatively rough.",
+          "figures": []
+        },
+        {
+          "id": "03.67-p002",
+          "text": "This gives the Zhou conquest a different texture.\nThe Anyang dynasty was not overthrown by the most civilized of its contemporaries, but perhaps by a neighbor especially eager to acquire civilization.\nThat possibility helps explain why the early Zhou world could be at once politically triumphant and culturally indebted.",
+          "figures": []
+        }
+      ]
+    },
+    {
+      "id": "03.68",
+      "number": "03.68",
+      "title": "Archaeology and Traditional History",
+      "paragraphs": [
+        {
+          "id": "03.68-p001",
+          "text": "Taken as a whole, the archaeological record points to a second millennium far wider and more varied than traditional history allows.\nThere were civilized centers in the Chengdu Plain, in the Yangzi valley, in Shandong, and beyond, alongside simpler but still significant bronze-using societies in the north and northwest.\nThe world of late Shang was not a single cultural block ruled unambiguously from one center.\nIt was a large, diverse, and interacting field.",
+          "figures": []
+        },
+        {
+          "id": "03.68-p002",
+          "text": "Traditional history remembers something much narrower.\nIt presents an ancient China in which the only fully civilized powers were Shang and Zhou, and in which the decisive event was the lawful transfer of universal rule from one dynasty to the next.\nThat account was shaped by the Zhou themselves.\nIts earliest formulations belong to texts concerned with political legitimation and the doctrine later called the Mandate of Heaven.",
+          "figures": []
+        },
+        {
+          "id": "03.68-p003",
+          "text": "From that point of view, the omissions begin to make sense.\nTo justify their conquest, the Zhou needed a past in which they had replaced not one power among many, but the single rightful ruler of the civilized world.\nThat required assigning a unique status to the kings of Anyang and inventing, behind them, an earlier precedent for lawful dynastic transfer.\nArchaeology does not simply add detail to that story.\nIt destabilizes its whole framework.",
+          "figures": []
+        },
+        {
+          "id": "03.68-p004",
+          "text": "The value of archaeology therefore lies not only in recovering forgotten places.\nIt also lies in showing how power reshapes memory.\nAs long as archaeology is used chiefly to vindicate tradition, the second millennium will remain distorted.\nOnce it is allowed to stand independently, both the pre-Zhou world and the Zhou invention of history become far more interesting.",
+          "figures": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sectionCount": 68,
+    "paragraphCount": 273
+  }
+};
