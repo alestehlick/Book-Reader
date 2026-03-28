@@ -1,5 +1,5 @@
 const BOOK_DATA = {
-  "title": "3 — Language and Writing",
+  "title": "3 — Shang Archeology",
   "language": "en",
   "sections": [
     {
