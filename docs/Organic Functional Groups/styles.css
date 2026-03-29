@@ -447,15 +447,6 @@ img {
   margin-top: 1.05em;
 }
 
-.section-title,
-.topbar-title,
-#playerSectionLabel,
-#previousParagraphText,
-#nextParagraphText,
-.current-paragraph-text {
-  overflow-wrap: anywhere;
-}
-
 .notes-panel {
   margin: 22px auto 0;
   max-width: 44em;
@@ -678,6 +669,7 @@ img {
   font-size: 18px;
   line-height: 1.58;
   color: var(--text-soft);
+  white-space: normal;
 }
 
 .media-caption-label {
@@ -913,51 +905,6 @@ body.sidebar-collapsed .main-panel {
 }
 
 
-.reader-display-math {
-  margin: 1.15em 0;
-  padding: 0.15em 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  text-align: center;
-  color: var(--text-soft);
-}
-
-.reader-display-math-fallback {
-  font-family: var(--font-serif);
-  font-size: 0.95em;
-  line-height: 1.5;
-  white-space: normal;
-}
-
-.reader-display-math:first-child {
-  margin-top: 0;
-}
-
-.current-paragraph-text > :first-child {
-  margin-top: 0;
-}
-
-.current-paragraph-text > :last-child {
-  margin-bottom: 0;
-}
-
-.current-paragraph-text mjx-container {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  color: inherit;
-}
-
-.current-paragraph-text mjx-container[display="true"] {
-  margin: 0 !important;
-  padding: 0.15em 0;
-}
-
-.current-paragraph-text mjx-container[display="true"] > svg,
-.current-paragraph-text mjx-container[display="true"] > mjx-assistive-mml {
-  max-width: 100%;
-}
-
 [hidden] {
   display: none !important;
 }
@@ -1180,23 +1127,4 @@ body.sidebar-collapsed .main-panel {
     width: 32px;
     height: 32px;
   }
-}
-
-
-.reader-inline-math {
-  white-space: normal;
-}
-
-.reader-inline-math-fallback {
-  font-style: normal;
-}
-
-.reader-display-math-fallback {
-  overflow-wrap: anywhere;
-}
-
-.media-figure-image {
-  display: block;
-  width: 100%;
-  height: auto;
 }

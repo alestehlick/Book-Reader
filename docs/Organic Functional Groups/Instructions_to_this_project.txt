@@ -25,15 +25,17 @@ It is a project of idealization for learning, listening, visual reading, and lon
 The science and mathematics must remain deep.
 But they should be reshaped into a form that is easier to engage, hear, imagine, and retain.
 
-In particular, when the source compresses a mathematical or physical point for the sake of a broader audience, the rewrite is expected to EXPAND IT VERY FREELY until the logic becomes completely clear.
-This expansion may continue for many paragraphs if necessary.
+(IMPORTANT)
+In particular, when the source compresses a MATHEMATICAL, PHYSICAL or CHEMICAL point for the sake of brevity or broader audience, the rewrite is expected to EXPAND IT VERY FREELY AND AGRESSIVELY until the logic becomes completely clear.
+This expansion may continue for many paragraphs if necessary. Length is not a problem at all.
 Local proportionality to the source is not a concern.
 Clarity is.
 
-Most importantly: when an equation is introduced, invoked, or used in an argument, the rewrite must normally DERIVE IT or reconstruct the reasoning that leads to it, not merely quote it and comment on it.
+(IMPORTANT)
+Most importantly: when an equation is introduced, invoked, or used in an argument, the rewrite must normally DERIVE IT or reconstruct the reasoning that leads to it throughly, not merely quote it and comment on it.
 If the equation is approximate, the derivation must make the approximation visible.
-If the equation depends on assumptions, those assumptions must be stated.
-If the equation cannot honestly be derived from the local material, the rewrite must say where it comes from, what has been suppressed, and why the expression is being accepted at that point.
+If the equation depends on assumptions, those assumptions must be stated and justified throughly.
+If the equation cannot honestly be derived from the local material, the rewrite must access its own soucrs, the web, etc, to supply the full steps throughly and clearly.
 
 GOVERNING PRINCIPLE
 
