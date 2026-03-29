@@ -59,6 +59,83 @@
   const MATHJAX_SCRIPT_ID = "reader-mathjax-script";
   const MATHJAX_CDN_URL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
 
+  const SIMPLE_LATEX_TEXT_REPLACEMENTS = [
+    [/\\AA\b/g, "Å"],
+    [/\\angstrom\b/g, "Å"],
+    [/\\Angstrom\b/g, "Å"],
+    [/\\alpha\b/g, "α"],
+    [/\\beta\b/g, "β"],
+    [/\\gamma\b/g, "γ"],
+    [/\\delta\b/g, "δ"],
+    [/\\epsilon\b/g, "ε"],
+    [/\\varepsilon\b/g, "ε"],
+    [/\\theta\b/g, "θ"],
+    [/\\lambda\b/g, "λ"],
+    [/\\mu\b/g, "μ"],
+    [/\\nu\b/g, "ν"],
+    [/\\xi\b/g, "ξ"],
+    [/\\pi\b/g, "π"],
+    [/\\rho\b/g, "ρ"],
+    [/\\sigma\b/g, "σ"],
+    [/\\tau\b/g, "τ"],
+    [/\\phi\b/g, "φ"],
+    [/\\varphi\b/g, "φ"],
+    [/\\chi\b/g, "χ"],
+    [/\\psi\b/g, "ψ"],
+    [/\\omega\b/g, "ω"],
+    [/\\Gamma\b/g, "Γ"],
+    [/\\Delta\b/g, "Δ"],
+    [/\\Theta\b/g, "Θ"],
+    [/\\Lambda\b/g, "Λ"],
+    [/\\Xi\b/g, "Ξ"],
+    [/\\Pi\b/g, "Π"],
+    [/\\Sigma\b/g, "Σ"],
+    [/\\Phi\b/g, "Φ"],
+    [/\\Psi\b/g, "Ψ"],
+    [/\\Omega\b/g, "Ω"],
+    [/\\cdot\b/g, "·"],
+    [/\\times\b/g, "×"],
+    [/\\pm\b/g, "±"],
+    [/\\mp\b/g, "∓"],
+    [/\\leq?\b/g, "≤"],
+    [/\\geq?\b/g, "≥"],
+    [/\\neq\b/g, "≠"],
+    [/\\approx\b/g, "≈"],
+    [/\\sim\b/g, "∼"],
+    [/\\propto\b/g, "∝"],
+    [/\\infty\b/g, "∞"],
+    [/\\to\b/g, "→"],
+    [/\\rightarrow\b/g, "→"],
+    [/\\leftarrow\b/g, "←"],
+    [/\\leftrightarrow\b/g, "↔"],
+    [/\\mapsto\b/g, "↦"],
+    [/\\degree\b/g, "°"],
+    [/\\ldots\b/g, "…"],
+    [/\\dots\b/g, "…"],
+  ];
+
+  const SIMPLE_SUBSCRIPT_MAP = {
+    "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄",
+    "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉",
+    "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎",
+    "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ",
+    "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ", "o": "ₒ",
+    "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ",
+    "v": "ᵥ", "x": "ₓ", "β": "ᵦ", "γ": "ᵧ", "ρ": "ᵨ", "φ": "ᵩ", "χ": "ᵪ"
+  };
+
+  const SIMPLE_SUPERSCRIPT_MAP = {
+    "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴",
+    "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹",
+    "+": "⁺", "-": "⁻", "=": "⁼", "(": "⁽", ")": "⁾",
+    "a": "ᵃ", "b": "ᵇ", "c": "ᶜ", "d": "ᵈ", "e": "ᵉ",
+    "f": "ᶠ", "g": "ᵍ", "h": "ʰ", "i": "ⁱ", "j": "ʲ",
+    "k": "ᵏ", "l": "ˡ", "m": "ᵐ", "n": "ⁿ", "o": "ᵒ",
+    "p": "ᵖ", "r": "ʳ", "s": "ˢ", "t": "ᵗ", "u": "ᵘ",
+    "v": "ᵛ", "w": "ʷ", "x": "ˣ", "y": "ʸ", "z": "ᶻ",
+    "β": "ᵝ", "γ": "ᵞ", "δ": "ᵟ", "φ": "ᵠ", "χ": "ᵡ", "θ": "ᶿ"
+  };
+
   let notesOpen = false;
   let mathJaxLoadPromise = null;
   let noteSaveTimer = null;
@@ -200,6 +277,107 @@
       .trim();
   }
 
+  function replaceSimpleLatexText(text) {
+    let output = String(text || "");
+
+    SIMPLE_LATEX_TEXT_REPLACEMENTS.forEach(([pattern, replacement]) => {
+      output = output.replace(pattern, replacement);
+    });
+
+    return output
+      .replace(/\\,/g, " ")
+      .replace(/\\;/g, " ")
+      .replace(/\\:/g, " ")
+      .replace(/\\!/g, "")
+      .replace(/~/g, " ");
+  }
+
+  function convertSimpleScriptRuns(text, marker, replacements) {
+    return String(text || "").replace(
+      new RegExp(`\\${marker}(\\{([^{}]+)\\}|([A-Za-z0-9+\-=()αβγδρφχθ]))`, "g"),
+      (_, _whole, braced, single) => {
+        const rawValue = braced ?? single ?? "";
+        if (!rawValue) return marker;
+
+        let converted = "";
+        for (const char of rawValue) {
+          const mapped = replacements[char];
+          if (!mapped) {
+            return marker + rawValue;
+          }
+          converted += mapped;
+        }
+
+        return converted;
+      }
+    );
+  }
+
+  function latexMathToPlainText(mathSource) {
+    let text = String(mathSource || "").trim();
+
+    if (text.startsWith("\\[") && text.endsWith("\\]")) {
+      text = text.slice(2, -2);
+    } else if (text.startsWith("\\(") && text.endsWith("\\)")) {
+      text = text.slice(2, -2);
+    } else if (text.startsWith("$$") && text.endsWith("$$")) {
+      text = text.slice(2, -2);
+    }
+
+    text = text
+      .replace(/\\text\{([^{}]*)\}/g, "$1")
+      .replace(/\\mathrm\{([^{}]*)\}/g, "$1")
+      .replace(/\\operatorname\{([^{}]*)\}/g, "$1")
+      .replace(/\\left/g, "")
+      .replace(/\\right/g, "");
+
+    text = replaceSimpleLatexText(text);
+    text = convertSimpleScriptRuns(text, "_", SIMPLE_SUBSCRIPT_MAP);
+    text = convertSimpleScriptRuns(text, "^", SIMPLE_SUPERSCRIPT_MAP);
+    text = text.replace(/[{}]/g, "");
+    text = text.replace(/\\/g, "");
+    return collapseWhitespace(text);
+  }
+
+  function splitMathAwareSegments(text) {
+    const source = String(text || "");
+    const pattern = /(\\\[(?:[\s\S]*?)\\\]|\$\$(?:[\s\S]*?)\$\$|\\\((?:[\s\S]*?)\\\))/g;
+    const segments = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = pattern.exec(source)) !== null) {
+      if (match.index > lastIndex) {
+        segments.push({ type: "text", value: source.slice(lastIndex, match.index) });
+      }
+
+      const token = match[0];
+      const type = token.startsWith("\\[") || token.startsWith("$$") ? "displayMath" : "inlineMath";
+      segments.push({ type, value: token });
+      lastIndex = pattern.lastIndex;
+    }
+
+    if (lastIndex < source.length) {
+      segments.push({ type: "text", value: source.slice(lastIndex) });
+    }
+
+    return segments;
+  }
+
+  function prepareReaderTextForDisplay(text) {
+    return splitMathAwareSegments(text)
+      .map((segment) => (segment.type === "text" ? replaceSimpleLatexText(segment.value) : segment.value))
+      .join("");
+  }
+
+  function toPlainReadingText(text) {
+    return collapseWhitespace(
+      splitMathAwareSegments(text)
+        .map((segment) => (segment.type === "text" ? replaceSimpleLatexText(segment.value) : latexMathToPlainText(segment.value)))
+        .join(" ")
+    );
+  }
+
   function firstNonEmptyString(...values) {
     for (const value of values) {
       if (typeof value !== "string") continue;
@@ -239,22 +417,11 @@
 
   function getPlainPreviewText(paragraph) {
     const source = getReaderText(paragraph) || getTtsText(paragraph);
-    if (!source) return "";
-
-    return collapseWhitespace(
-      String(source)
-        .replace(/\\\[/g, " ")
-        .replace(/\\\]/g, " ")
-        .replace(/\\\(/g, " ")
-        .replace(/\\\)/g, " ")
-        .replace(/\$\$/g, " ")
-        .replace(/\\begin\{[^}]+\}/g, " ")
-        .replace(/\\end\{[^}]+\}/g, " ")
-    );
+    return source ? toPlainReadingText(source) : "";
   }
 
   function splitReaderTextSegments(text) {
-    const source = String(text || "");
+    const source = prepareReaderTextForDisplay(text);
     const pattern = /(\\\[(?:[\s\S]*?)\\\]|\$\$(?:[\s\S]*?)\$\$)/g;
     const segments = [];
     let lastIndex = 0;
@@ -274,6 +441,19 @@
     }
 
     return segments;
+  }
+
+  function applyPlainMathFallback(element) {
+    if (!element) return;
+
+    element.querySelectorAll(".reader-display-math").forEach((mathBlock) => {
+      mathBlock.textContent = latexMathToPlainText(mathBlock.textContent || "");
+      mathBlock.classList.add("reader-display-math-fallback");
+    });
+
+    element.querySelectorAll("p").forEach((paragraphEl) => {
+      paragraphEl.textContent = toPlainReadingText(paragraphEl.textContent || "");
+    });
   }
 
   function ensureMathJax() {
@@ -333,6 +513,7 @@
       }
     } catch (error) {
       console.warn("Math rendering was skipped:", error);
+      applyPlainMathFallback(element);
     }
   }
 
@@ -1216,9 +1397,10 @@
       sectionBtn.type = "button";
       sectionBtn.className = "section-link";
       sectionBtn.dataset.sectionId = section.id;
+      const plainSectionTitle = toPlainReadingText(section.title || "");
       sectionBtn.innerHTML = `
         <span class="section-number">${escapeHtml(section.number || section.id || "")}</span>
-        <span class="section-title">${escapeHtml(section.title || "")}</span>
+        <span class="section-title">${escapeHtml(plainSectionTitle)}</span>
       `;
 
       sectionBtn.addEventListener("click", async () => {
@@ -1242,7 +1424,7 @@
   }
 
   function renderParagraphText(paragraph) {
-    const readerText = getReaderText(paragraph);
+    const readerText = prepareReaderTextForDisplay(getReaderText(paragraph));
     const segments = splitReaderTextSegments(readerText);
     let hasRenderableContent = false;
 
@@ -1465,7 +1647,8 @@
       return;
     }
 
-    const sectionLabel = `${current.sectionNumber} — ${current.sectionTitle}`;
+    const plainSectionTitle = toPlainReadingText(current.sectionTitle);
+    const sectionLabel = `${current.sectionNumber} — ${plainSectionTitle}`;
     const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
     const candidates = resolveAudioCandidates(current);
 
@@ -1779,8 +1962,9 @@
         throw new Error("The loaded book data has no paragraphs.");
       }
 
-      bookTitleEl.textContent = state.book.title;
-      document.title = state.book.title;
+      const plainBookTitle = toPlainReadingText(state.book.title);
+      bookTitleEl.textContent = plainBookTitle;
+      document.title = plainBookTitle;
       buildSectionNav();
       ensureNotesUi();
       updateSectionNoteMarkers();
