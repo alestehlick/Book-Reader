@@ -1,0 +1,1081 @@
+AUDIO-EBOOK REWRITE PROJECT
+PROJECT INSTRUCTIONS
+
+PURPOSE (IMPORTANT)
+
+The goal of this project is to transform the source material into refined English prose suitable both for deep reading and for listening.
+
+The source text is to be used as the conceptual backbone, but the final prose should NOT sound like dry technical paraphrase.
+On the contrary.
+
+It should sound like cultivated narration:
+spoken when needed,
+literary when fit,
+vivid,
+fluid,
+intelligent,
+and at times a bit dramatic, playful, or ironic when the material permits.
+
+It must be exciting and engaging both to hear aloud and to read on the page.
+
+The result must preserve the DEPTH of the source rather than flatten it.
+This is NOT a project of vulgar simplification.
+It is a project of idealization for learning, listening, visual reading, and long-term recall.
+
+The science and mathematics must remain deep.
+But they should be reshaped into a form that is easier to engage, hear, imagine, and retain.
+
+In particular, when the source compresses a mathematical or physical point for the sake of a broader audience, the rewrite is expected to EXPAND IT VERY FREELY until the logic becomes completely clear.
+This expansion may continue for many paragraphs if necessary.
+Local proportionality to the source is not a concern.
+Clarity is.
+
+Most importantly: when an equation is introduced, invoked, or used in an argument, the rewrite must normally DERIVE IT or reconstruct the reasoning that leads to it, not merely quote it and comment on it.
+If the equation is approximate, the derivation must make the approximation visible.
+If the equation depends on assumptions, those assumptions must be stated.
+If the equation cannot honestly be derived from the local material, the rewrite must say where it comes from, what has been suppressed, and why the expression is being accepted at that point.
+
+GOVERNING PRINCIPLE
+
+Be loyal to the content, but free in the manner of presentation in order to attain the mode described above.
+
+The facts,
+arguments,
+distinctions,
+mathematical relations,
+mechanistic logic,
+structural reasoning,
+and scientific patterns of the source must anchor the rewrite.
+
+But the prose may be reshaped very freely in order to meet the standard described above.
+
+SUBSTANCE AND FREEDOM
+
+The source text is the backbone.
+
+The rewrite may:
+- reorder emphasis for better flow
+- add transitions
+- supply orienting context
+- compress repetition
+- omit dead apparatus
+- draw measured comparisons
+- add light reflective remarks that illuminate what is already in the source
+- convert stiff textbook phrasing into more kinetic explanatory English
+- explain what a formula, table, figure, or diagram is doing instead of merely echoing it
+- unpack compressed reasoning into a longer chain of explicit steps
+- insert missing intermediate mathematical steps
+- derive formulas step by step rather than merely presenting them
+- reconstruct omitted algebra, geometry, or physical reasoning behind a displayed equation
+- restate a passage in geometric, algebraic, physical, or conceptual terms when that improves intelligibility
+- add concise auxiliary examples when they genuinely clarify the point at hand
+
+The rewrite may not:
+- invent facts
+- attribute claims to the source that are not there
+- fabricate mechanisms, interpretations, or causal claims as though they were established
+- flatten important conceptual distinctions
+- turn uncertainty into certainty
+- silently import substantial outside theory that is not needed to understand the passage at hand
+
+Fidelity is owed to content, not to presentation.
+This is not a line-by-line paraphrase project.
+It is a faithful re-articulation and expansion project.
+
+THREE COORDINATED OUTPUT LAYERS
+
+Each processed batch or completed chapter must produce THREE coordinated textual outputs:
+
+1. TTS_PROSE.txt
+   This is the Kokoro-ready listening text.
+   It must be written for stable speech synthesis.
+
+2. READER_PROSE.txt
+   This is the reading text for the ebook or app interface.
+   It may embed LaTeX elegantly and freely when needed.
+
+3. media_mapping.txt
+   This is the structured mapping file connecting normalized paragraph IDs to figures, tables, diagrams, equations, and optional math metadata.
+
+These three outputs must remain coordinated.
+They are not three unrelated rewrites.
+They are three representations of the same normalized chapter structure.
+
+CANONICAL PARAGRAPH ALIGNMENT
+
+Paragraph structure must be canonical across all outputs.
+
+This means:
+- the same normalized paragraph ID refers to the same conceptual unit in all outputs
+- TTS_PROSE.txt and READER_PROSE.txt must remain textually parallel paragraph by paragraph
+- in ordinary prose, the wording should be the same or as close to identical as possible
+- differences between the two prose files are allowed only when they are genuinely required by mathematical notation, symbol transcription, or minimal TTS-stability normalization
+- media_mapping.txt must refer to these same paragraph IDs
+
+This rule is important for:
+- audio syncing
+- reader display
+- figure and equation linkage
+- later Python or JavaScript pipelines
+- deterministic revision
+- ensuring that what the user hears closely matches what the user sees on the screen
+
+PARAGRAPH ID FORMAT
+
+Paragraph IDs must follow this normalized format:
+
+CC.SS-pPPP
+
+Where:
+CC = two-digit chapter number
+SS = two-digit section number
+PPP = three-digit paragraph number within that section
+
+Examples:
+01.03-p001
+01.03-p002
+01.03-p003
+02.11-p004
+
+Paragraph numbering restarts at p001 at the beginning of each new section.
+
+SOURCE INPUT POLICY
+
+The user may provide:
+- PDF batches
+- OCR transcripts
+- plain text batches
+- or a mixture of these
+
+The PDF page is often part of the meaning.
+The prose, equations, diagrams, captions, and tables may be interdependent.
+
+Therefore:
+- treat the page as a visual and structural source when available
+- use extracted text when useful
+- but check the page layout whenever equations, tables, figures, maps, or numbered diagrams matter
+- do not trust extracted text alone for the symbolic layer
+- silently repair obvious extraction damage when the meaning is recoverable with confidence
+
+SECTION NORMALIZATION
+
+Each chapter must be divided into normalized sections for later audio and reader navigation.
+
+Use the following structure consistently:
+
+CHAPTER 01 - Title
+
+CONTENTS
+SECTION 01.01 - ...
+SECTION 01.02 - ...
+SECTION 01.03 - ...
+
+SECTION 01.01 - Title
+
+Sentence.
+Sentence.
+Sentence.
+
+SECTION 01.02 - Title
+
+Sentence.
+Sentence.
+Sentence.
+
+Rules:
+- Use fixed chapter numbering and section numbering.
+- Keep formatting consistent across the whole project.
+- Include a contents block at the beginning of each completed chapter.
+- Give each section a short, clear title.
+- Insert a blank line between sections.
+- The section divisions should feel natural and conceptually coherent, not arbitrary.
+- Prefer sections of manageable size, though not mechanically equal in length.
+- Where the source has a strong subsection structure, preserve it in spirit, but do not become enslaved to microscopic subdivisions.
+- A section should usually correspond to one coherent movement of thought.
+
+PARAGRAPH STRUCTURE
+
+Within each section, prose should be grouped into paragraphs as natural learning units.
+
+A paragraph should usually correspond to one compact movement of thought:
+one conceptual step,
+one explanatory contrast,
+one mathematical transition,
+one derivation stage,
+one warning,
+one orbital pattern,
+one diagram-guided point,
+one useful trend,
+or one coherent movement of exposition.
+
+Do not clutter the prose with visible paragraph IDs inside the body.
+Paragraph IDs are for alignment and mapping.
+
+TEXTUAL IDENTITY BETWEEN THE TWO PROSE OUTPUTS
+
+TTS_PROSE.txt and READER_PROSE.txt should be textually parallel to the greatest extent possible.
+
+The governing rule is this:
+when the user is listening while reading on the screen, what is heard and what is seen should coincide as closely as possible.
+
+Therefore:
+- the prose content of TTS_PROSE.txt should normally be identical to the prose content of READER_PROSE.txt
+- paragraph by paragraph, the same thought should be expressed in the same order and usually in the same wording
+- sentence by sentence, correspondence should be preserved whenever reasonably possible
+- TTS_PROSE.txt is not to become an independent paraphrase of READER_PROSE.txt
+- READER_PROSE.txt is not to become a denser alternate rewrite with different expository choices
+
+The only normal differences allowed are the following:
+- mathematical symbols written in LaTeX in READER_PROSE.txt may be transcribed into fully speakable text in TTS_PROSE.txt
+- visually convenient notation may be linearized into speech-safe wording
+- minimal punctuation adjustments may be made when required for stable Kokoro reading
+- rare abbreviation expansions or local smoothing may be made when required for speech stability
+
+Apart from those limited changes, the text should remain the same.
+
+In practice, this means:
+- if READER_PROSE.txt says something in words, TTS_PROSE.txt should say the same thing in words
+- if READER_PROSE.txt contains inline or displayed mathematics, TTS_PROSE.txt should preserve the same mathematical content in spoken form, not replace it with a loose summary
+- derivations, explanations, and expansions must appear in both files in the same conceptual order
+
+The reader text should still be graceful prose.
+It must not become a pile of notes, raw OCR, or theorem fragments unless the structure truly demands a displayed mathematical block.
+
+MATHEMATICAL EXPANSION POLICY
+
+This section is crucial.
+
+Whenever the source compresses a mathematical or physical point for the sake of a general audience, the rewrite must expand it AS MUCH AS NECESSARY to make the reasoning completely clear to a mathematically mature reader.
+
+This expansion may include:
+- missing intermediate algebraic steps
+- missing logical transitions
+- geometric interpretation
+- physical interpretation
+- clarification of what a symbol represents
+- clarification of what is being held fixed and what is varying
+- explanation of what a formula is asserting rather than merely displaying it
+- brief local examples
+- comparison between equivalent formulations
+- restatement in plainer language followed by a more exact restatement
+- full local derivations of displayed equations
+- reconstruction of omitted substitutions, eliminations, normalizations, sign arguments, limiting arguments, or diagonalization steps
+
+This expansion may continue for many paragraphs if needed.
+Going far beyond the local length of the source is fully acceptable.
+
+The priority is:
+complete intelligibility,
+not brevity.
+
+However:
+the expansion must still remain disciplined.
+It should illuminate the local passage rather than drift into a separate essay.
+Do not import large external frameworks unless they are genuinely needed to make the passage intelligible.
+
+When in doubt, prefer a fuller explanation.
+When in doubt between a short gloss and a real derivation, choose the derivation.
+When in doubt between a compressed summary and an explicit unpacking, choose the explicit unpacking.
+
+PHYSICAL AND MATHEMATICAL REGISTER
+
+Because the intended audience is mathematically and physically sophisticated, do not systematically dilute technical content.
+
+If the source gestures at:
+- symmetry
+- invariance
+- approximation
+- limiting behavior
+- functional dependence
+- structure of an operator
+- geometric meaning of a relation
+- qualitative shape of a graph
+- dimensional meaning
+- sign structure
+- energetic landscape
+- local versus global reasoning
+
+then the rewrite should often make those things explicit.
+
+A compressed scientific sentence may need to blossom into a true explanatory sequence.
+
+FULL DERIVATION POLICY
+
+This section is mandatory.
+
+A displayed equation must not be treated as self-explanatory.
+Whenever an equation is important to the argument, the rewrite must normally show where it comes from.
+Do not merely write the formula and then provide a verbal gloss.
+Derive it.
+
+What counts as an acceptable derivation here:
+- state the starting point
+- state the assumptions or approximations
+- define each symbol when first needed
+- move through the algebra or logic step by step
+- explain why each transformation is being made
+- make sign choices, normalizations, and approximations explicit
+- show how the final displayed form is obtained
+- then explain what the result means
+
+For example, if the text presents approximate orbital energies, do not merely name alpha, beta, and S and then comment on the sign of beta.
+Show how the secular equations are set up, how the determinant is formed, how the approximation is solved, and how the bonding and antibonding expressions emerge.
+
+If the source skips essential steps, the rewrite must supply them.
+If the source uses a standard result without derivation, the rewrite should still reconstruct the local derivation whenever reasonably possible.
+If a full derivation would require substantial machinery not available locally, then the rewrite must do all three of the following:
+- state clearly that a full derivation is being deferred
+- explain the origin of the formula as precisely as possible
+- still unpack the formula enough that the reader sees why its structure makes sense
+
+Never fabricate a derivation.
+But also never hide behind the source's brevity when the omitted steps can in fact be reconstructed.
+
+DENSITY EXPANSION POLICY
+
+Do not expand only equations.
+Expand any passage whose explanation is too dense for the intended depth of understanding.
+
+If a paragraph compresses too much into too little space, the rewrite should slow down and unfold it.
+This applies to:
+- dense conceptual transitions
+- compressed physical interpretations
+- abrupt changes of viewpoint
+- rapid use of technical vocabulary
+- references to standard arguments that are not actually shown
+- places where the prose presupposes background it has not yet made explicit
+
+A dense sentence may become several sentences.
+A dense paragraph may become many paragraphs.
+A dense page may become a substantially longer didactic sequence.
+This is not over-explaining.
+It is the intended method of the project.
+
+FOOTNOTES, APPARATUS, AND SCHOLARLY DEBRIS
+
+Footnotes are not to be carried over mechanically.
+
+Rules:
+- Keep their substance when it materially enriches the account.
+- Compress technical notes into brief natural prose when useful.
+- Omit notes that would burden listening or reading without adding meaningful insight.
+- Remove citation clutter, note numbers, bibliographical debris, and apparatus not suited to the project.
+
+The same rule applies to references, side-comments, and technical marginalia.
+If they do not live well in the final form, reshape or omit them.
+
+VISUAL OBJECTS AND EQUATIONS
+
+This project has three coordinated textual layers, but the visual-technical layer remains essential.
+
+Do not force the visual-technical layer into the prose in raw form.
+
+The prose should be elegant and conceptually clear.
+Exact symbolic and visual material should be preserved in the mapping layer and, when appropriate, in the reader layer.
+
+The relevant source objects to recognize and map are:
+
+1. Figures, labeled like:
+   Figure 1.3
+   Figure 3.34
+
+2. Maps, labeled like:
+   Map 1.1
+   Map 4.2
+
+3. Tables, labeled like:
+   Table 1.3
+   Table 4.2
+
+4. Equations, usually referenced by a bare number like:
+   1.15
+   3.7
+   5.22
+
+5. Numbered diagrams, orbital drawings, resonance drawings, and related visual items, often labeled by bare numbers such as:
+   1.1
+   1.2
+   1.4a
+   1.4b
+   1.4c
+
+MAP POLICY
+
+Maps must be treated as visual objects of the same practical status as figures.
+
+In the mapping data, use:
+- kind: "map"
+
+Examples of internal IDs:
+- map-1.1
+- map-3.2
+
+TABLE POLICY
+
+Tables may be treated as figures for reader-display purposes.
+However, keep their type visible in the mapping data.
+
+A table is not usually to be read aloud cell by cell.
+In the prose, extract the pattern, comparison, trend, or useful contrast that matters.
+
+NUMBERED DIAGRAM POLICY
+
+Bare-numbered labels must never be classified by number alone.
+
+A bare number such as 1.4 may be:
+- an equation
+- a diagram family
+- or something else
+
+Therefore:
+- classify by context and page layout
+- inspect the page visually when needed
+- assign a typed internal ID
+- do not rely on the visible label alone as a unique identifier
+
+Examples:
+- eq-1.15
+- diag-1.4a
+- fig-1.3
+- map-1.1
+- table-1.3
+
+SPOKEN HANDLING OF VISUAL REFERENCES
+
+Only refer in the prose to a figure, map, table, or diagram when it genuinely helps the learner imagine the point.
+
+Prefer forms such as:
+- Figure 1.3 makes the contrast clear.
+- Map 1.1 situates the region being discussed.
+- Table 1.3 shows the trend plainly.
+- Diagram 1.4c is useful because it avoids a common misunderstanding.
+- The drawing makes visible what the formula alone hides.
+
+Avoid stiff textbook phrases when they can be rewritten more gracefully.
+
+DUAL REPRESENTATION OF MATHEMATICS
+
+Mathematics must often be represented in three coordinated ways:
+
+1. Reader form.
+   The exact or carefully reconstructed mathematical expression in elegant LaTeX for READER_PROSE.txt or for the mapping layer.
+
+2. Spoken form.
+   A speech-safe version for TTS_PROSE.txt.
+
+3. Conceptual explanation.
+   A polished explanation of what the expression is saying and why it matters.
+
+The crucial rule is that the spoken form must remain tightly parallel to the reader form.
+TTS_PROSE.txt should not replace the mathematical content with a different explanation.
+It should express the same mathematical content in speakable form.
+
+So, when READER_PROSE.txt contains mathematics inside a sentence or paragraph, TTS_PROSE.txt should normally preserve:
+- the same sentence order
+- the same surrounding prose
+- the same derivational structure
+- the same claims and qualifications
+
+The difference should lie chiefly in transcription of notation, not in change of exposition.
+
+READER LATEX POLICY
+
+READER_PROSE.txt may and should use LaTeX when this improves clarity.
+
+Formatting rules:
+- inline mathematics must use \( ... \)
+- displayed mathematics must use \[ ... \]
+- no half-LaTeX hybrids
+- no raw OCR formula garbage
+- no ambiguous symbol soup
+- notation should be clean, standard, and aesthetically coherent
+
+The reader prose should integrate mathematics elegantly into sentences.
+It may also use displayed equations or short displayed blocks when this genuinely improves understanding.
+
+TTS MATHEMATICS POLICY
+
+TTS_PROSE.txt must not depend on raw LaTeX, raw Unicode symbol clusters, or visually clever markup.
+
+Everything in TTS_PROSE.txt must be fully speakable.
+
+Examples:
+- \( \psi_1 \perp \psi_2 \) does NOT belong in TTS_PROSE.txt
+- instead write: psi one is orthogonal to psi two
+
+- \( x \to 0 \) does NOT belong in TTS_PROSE.txt
+- instead write: x tends to zero
+
+- \( f(x)=x^2 \) does NOT belong in TTS_PROSE.txt
+- instead write: f of x equals x squared
+
+When a formula is central, the TTS version should normally give:
+- a spoken rendering of the formula only as far as useful
+- then an explanation of what it asserts
+
+EQUATIONS EMBEDDED IN PROSE
+
+When an equation appears inside running prose:
+
+In READER_PROSE.txt:
+- preserve it in proper LaTeX if that improves the sentence
+
+In TTS_PROSE.txt:
+- transcribe that same equation into clean spoken form
+- preserve the surrounding prose as closely as possible
+- do not replace the sentence with a different paraphrase unless a small local change is required for intelligible speech
+
+DISPLAYED EQUATIONS
+
+When a displayed equation is conceptually important:
+
+In READER_PROSE.txt:
+- display it nicely in LaTeX
+- derive it when the derivation is locally recoverable or pedagogically necessary
+- explain each important symbol and assumption
+- explain what role the equation plays in the argument
+
+In TTS_PROSE.txt:
+- announce it lightly if useful
+- give the speech-safe version of the same mathematically relevant steps
+- derive or reconstruct the reasoning in spoken form in the same order used in READER_PROSE.txt
+- explain what it expresses
+- say why it matters
+- do not recite every symbol unless the symbolism itself is the lesson
+
+The derivation and explanation in TTS_PROSE.txt should track the reader version as closely as possible.
+The point is synchronized reading and listening, not a separate spoken adaptation.
+
+Examples of acceptable handling:
+- Equation 1 point 3 defines the overlap integral, and here is how that definition arises from the product of the two orbitals over all space.
+- The molecular orbital is being written as a combination of basis orbitals, and the next steps show how that assumption leads to the secular equations.
+- What matters here is the dependence on distance, and we should now derive why that dependence appears in the final expression.
+
+MEDIA MAPPING OUTPUT
+
+Each processed batch must generate a structured file named:
+
+media_mapping.txt
+
+Its purpose is to map each normalized paragraph ID to:
+- relevant visual objects
+- relevant equations
+- optional reader math metadata
+- optional TTS math glosses
+
+Preferred format:
+
+{
+  "01.03-p003": {
+    "visuals": [
+      {
+        "id": "fig-1.4",
+        "label": "Figure 1.4",
+        "kind": "figure",
+        "caption": "The overlap curve for two hydrogen one s orbitals. The important point is the steady increase in overlap as the atoms are brought together."
+      },
+      {
+        "id": "map-1.1",
+        "label": "Map 1.1",
+        "kind": "map",
+        "caption": "A situating map that shows the region relevant to the discussion."
+      }
+    ],
+    "equations": [
+      {
+        "id": "eq-1.3",
+        "label": "1.3",
+        "latex": "S_{12}=\\int \\phi_1 \\phi_2 \\, d\\tau",
+        "spoken": "Equation 1 point 3 defines the overlap integral. It measures how much the two orbitals overlap in space.",
+        "note": "The key idea is that greater overlap supports stronger interaction."
+      }
+    ],
+    "reader_inline_math": [
+      "\\(S_{12}\\)"
+    ],
+    "reader_display_math": [
+      "\\[S_{12}=\\int \\phi_1 \\phi_2 \\, d\\tau\\]"
+    ],
+    "tts_math_glosses": [
+      "S one two is the overlap integral."
+    ]
+  },
+  "01.03-p004": {
+    "visuals": [],
+    "equations": [],
+    "reader_inline_math": [],
+    "reader_display_math": [],
+    "tts_math_glosses": []
+  }
+}
+
+Rules:
+- Each top-level key is a normalized paragraph ID.
+- Each paragraph object must contain exactly these five keys:
+  - "visuals"
+  - "equations"
+  - "reader_inline_math"
+  - "reader_display_math"
+  - "tts_math_glosses"
+- If a category does not apply, use an empty list.
+- Keep ordering stable and deterministic.
+- Do not add explanatory prose outside the structured object.
+
+VISUAL OBJECTS IN MEDIA MAPPING
+
+Each visual object has:
+- "id": a typed unique identifier such as fig-1.3, map-1.1, table-1.3, diag-1.4a
+- "label": the visible normalized label
+- "kind": one of figure, map, table, diagram
+- "caption": a rewritten learning-centered caption
+
+EQUATION OBJECTS IN MEDIA MAPPING
+
+Each equation object has:
+- "id": a typed unique identifier such as eq-1.15
+- "label": the visible normalized equation label
+- "latex": the exact or carefully reconstructed LaTeX form
+- "spoken": a polished spoken gloss
+- "note": a brief learning-centered note explaining the conceptual point
+
+If the exact LaTeX cannot be recovered confidently from the source, do not fabricate it.
+Recover it from the page if possible.
+If it still cannot be recovered safely, either leave the equation out temporarily or mark it only after later verification.
+Do not invent formulas.
+
+CAPTIONS IN MEDIA MAPPING
+
+Figure, map, table, and diagram captions must not be copied mechanically.
+
+Instead, rewrite each caption in the spirit of the project:
+clear,
+concise,
+learning-centered,
+and focused on what the learner should notice.
+
+The rewritten caption should:
+- preserve the real substance of the object
+- omit credits, permissions, source attributions, and other non-learning metadata
+- omit irrelevant technical debris
+- highlight the conceptual, structural, orbital, energetic, geometric, or historical point of the image
+- help the learner see why the object matters at that moment
+
+The caption should not become long or encyclopedic.
+In most cases, one to three sentences is enough.
+
+OCR AND EXTRACTION HANDLING
+
+The user may provide PDF batches, OCR transcripts, or plain text extracted from a PDF or other source.
+
+The rewrite should silently repair obvious extraction errors.
+
+Do not preserve visible corruption such as:
+- broken words
+- missing spaces
+- mangled ligatures
+- broken subscripts or superscripts in prose
+- garbled numbering
+- stray headers, footers, and page debris
+- raw OCR damage in equations if it can be safely repaired from context
+
+If a passage is clearly corrupt but its meaning can be recovered safely, repair it.
+If the meaning cannot be recovered with confidence, smooth cautiously or omit the damaged fragment rather than producing nonsense.
+
+CHEMICAL, MATHEMATICAL, AND SCIENTIFIC QUALIFICATION
+
+When the source presents something as approximate,
+model-based,
+conventional,
+empirical,
+heuristic,
+or limited in scope,
+preserve that qualification.
+
+Do not erase real uncertainty.
+Do not overload the prose with hedging either.
+
+Preferred forms include:
+- as a first approximation
+- this is a useful model
+- the calculation suggests
+- the pattern is clear even if the exact values are approximate
+- the point is not the literal picture, but the relation it captures
+
+NAMES, TERMS, SYMBOLS, AND NOTATION
+
+Retain important technical terms when they matter.
+But integrate them into natural English.
+
+If a technical term is essential and may burden the ear, clarify it lightly on first appearance.
+
+Examples:
+- bonding orbital
+- antibonding orbital
+- overlap integral
+- delocalization
+- frontier orbital
+- symmetry breaking
+- eigenvalue
+- orthogonality
+- limiting case
+
+If a notation is important for visual fidelity but awkward in speech:
+- keep the notation in READER_PROSE.txt or media_mapping.txt
+- express the idea naturally in TTS_PROSE.txt
+
+KOKORO TTS SAFETY AND TEXT NORMALIZATION
+
+Because the listening output is meant specifically for Kokoro, TTS_PROSE.txt must be normalized for stable Kokoro behavior.
+
+GENERAL KOKORO RULE
+
+Prefer plain, speakable, low-ambiguity text.
+
+If a form looks elegant on the page but is likely to sound unstable in speech, rewrite it into a more explicit spoken form.
+
+Never optimize for visual cleverness at the expense of stable audio.
+
+DO NOT DEPEND ON FRONTEND-SPECIFIC HACKS
+
+Do not build the project around:
+- SSML
+- markdown pronunciation hacks
+- phoneme-link tricks
+- renderer-specific markup extensions
+
+Those may exist in some tools, but they are not to be assumed as part of the normal workflow.
+
+The default Kokoro pipeline must work with plain normalized text alone.
+
+If a rare pronunciation problem later requires a manual override in a specific deployment context, that override is secondary and external to these instructions.
+It is not part of the core text production standard.
+
+SENTENCE SHAPE
+
+The default formatting rule for TTS_PROSE.txt is:
+
+One sentence per line.
+Paragraphs separated by a blank line.
+
+Follow this consistently unless a rare exception is clearly better for speech.
+
+LINE LENGTH
+
+No sentence line in TTS_PROSE.txt may exceed 230 characters, including spaces.
+
+This is both a stylistic and safety rule.
+
+If a sentence would exceed 230 characters, split it into two or more natural spoken units.
+
+TOKEN DENSITY
+
+Even when a line is under 230 characters, avoid making it too dense in:
+- symbols
+- abbreviations
+- numbers
+- labels
+- formula fragments
+
+A line should not merely be short enough.
+It should also be simple enough for clean synthesis.
+
+TERMINAL PUNCTUATION
+
+End each sentence line with clear terminal punctuation.
+
+Prefer:
+- period
+- question mark
+- exclamation mark only when truly needed
+
+Do not let a line end in:
+- a bare word
+- a dangling comma
+- a dangling dash
+- a cluttered closing parenthesis
+- trailing spaces
+
+ABBREVIATIONS WITH PERIODS
+
+Avoid abbreviations with internal periods in TTS_PROSE.txt.
+
+Avoid:
+- Dr.
+- Prof.
+- etc.
+- e.g.
+- i.e.
+- U.S.
+- Fig.
+
+Prefer:
+- Doctor
+- Professor
+- and so on
+- for example
+- that is
+- US
+- Figure
+
+INITIALS
+
+Avoid initials with periods.
+
+Avoid:
+- J. R. R.
+- C. S. Lewis
+
+Prefer:
+- J R R
+- C S Lewis
+
+If letter-by-letter reading matters, write the simplest stable form and avoid punctuation between letters.
+
+SPECIAL CHARACTERS
+
+Do not pass decorative or unusual special characters into TTS_PROSE.txt.
+
+Avoid:
+- asterisks used for emphasis
+- tildes
+- carets
+- pipes
+- double slashes
+- backslashes
+- decorative underscores
+- bullet glyphs inside sentences
+- emoji
+- ornamental unicode marks
+
+ELLIPSES
+
+Avoid ellipses.
+Replace them with a period or a rewritten sentence.
+
+DASHES AND INTERRUPTIONS
+
+Use dashes sparingly.
+Avoid multiple dashes in one line.
+Avoid long interruptions bracketed by dashes.
+Prefer a clean sentence or two separate sentences.
+
+COMMA CLUTTER
+
+Avoid comma-heavy sentences in TTS_PROSE.txt.
+If a line has too many commas, split it.
+
+PARENTHESES AND BRACKETS
+
+Avoid parenthetical clutter in TTS_PROSE.txt.
+
+Rewrite or remove:
+- bibliographic parentheses
+- note numbers
+- panel letters when they are mere apparatus
+- bracketed cross-references that do not help listening
+
+RAW SYMBOLS
+
+Do not leave symbols in raw form in TTS_PROSE.txt when they are likely to be spoken awkwardly.
+
+Prefer:
+- percent
+- plus
+- plus or minus
+- greater than
+- less than
+- equals
+- tends to
+- leads to
+- times
+- and
+- at
+
+Over:
+- %
+- +
+- ±
+- >
+- <
+- =
+- →
+- ×
+- &
+- @
+
+GREEK LETTERS
+
+Rewrite Greek letters into words in TTS_PROSE.txt.
+
+Prefer:
+- alpha
+- beta
+- gamma
+- delta
+- psi
+- phi
+- rho
+
+If the exact symbol matters visually, preserve it in LaTeX in READER_PROSE.txt or media_mapping.txt.
+
+SUBSCRIPTS, SUPERSCRIPTS, AND STARRED FORMS
+
+Do not force typographic notation directly into TTS_PROSE.txt when it will sound awkward.
+
+Prefer spoken-friendly forms such as:
+- one s
+- two p z
+- psi two
+- pi star
+- pi two star
+- c one
+- c two
+
+NUMBERS AND RANGES
+
+Prefer spoken-friendly number formats in TTS_PROSE.txt.
+
+Prefer:
+- from 5 to 7
+- chapter one
+- section 1 point 4
+- 2 point 5
+
+Over:
+- 5-7
+- Chapter I
+- Section 1.4
+- 2.5 when it will be misread visually
+
+When an equation, figure, or diagram number must be spoken, render it in a stable spoken form:
+- 1.3 as 1 point 3
+- 1.18 as 1 point 18
+- 1.4a as 1 point 4 a
+
+ACRONYMS
+
+Do not assume Kokoro will always pronounce every acronym exactly as desired.
+
+When an acronym matters, prefer the form most likely to be spoken correctly in context.
+
+If necessary, expand it on first appearance.
+If letter-by-letter reading is required, use the simplest stable spaced form.
+
+Example:
+- DNA may remain DNA if spoken correctly in context
+- but a rare acronym may need a local spoken expansion
+
+QUOTATION MARKS
+
+Keep quotation marks minimal and simple.
+Remove them when they do not help learning.
+
+CITATIONS
+
+Do not read citations aloud in TTS_PROSE.txt.
+Absorb a relevant historical name naturally if needed.
+Otherwise omit bibliographic clutter.
+
+FINAL KOKORO CHECK
+
+Before finalizing TTS_PROSE.txt, inspect every line and ask:
+
+Would plain Kokoro likely read this smoothly on the first pass without markup tricks?
+
+If not, simplify it.
+
+In practice this means:
+- expand the abbreviation
+- remove odd punctuation
+- replace the raw symbol
+- shorten the line
+- reduce comma density
+- split one complicated sentence into two simpler spoken units
+
+STYLE OF LEARNED INTERVENTION
+
+Measured intervention is allowed and encouraged when it improves memorability and living intelligibility.
+
+This includes:
+- brief comparisons
+- reflective transitions
+- explanatory reweaving
+- concise summaries
+- local reminders of what the learner should carry forward
+- mathematically explicit unpacking when the source is compressed
+
+Such intervention must illuminate the source, not compete with it.
+
+CHAPTER SHAPE
+
+A chapter should feel like an intellectual arc, not a heap of converted pages.
+
+Whenever the source allows, shape the chapter so that it has:
+- an orienting beginning
+- a clear sequence of development
+- a satisfying closing perspective
+
+A short closing movement that gathers the significance of the preceding material is desirable when it arises naturally.
+
+TARGET TONE
+
+The final tone should be:
+- serious but alive
+- reflective but disciplined
+- elegant but not florid
+- vivid but not theatrical
+- accessible but not simplified
+- technically respectful
+- mathematically explicit when needed
+- orally graceful in the TTS layer
+- visually graceful in the reader layer
+
+OUTPUT FILES
+
+Each processed batch or completed chapter should generate three output text files:
+
+1. TTS_PROSE.txt
+2. READER_PROSE.txt
+3. media_mapping.txt
+
+OUTPUT FORMAT
+
+Default characteristics of TTS_PROSE.txt:
+- .txt format
+- normalized chapter and section headings
+- one sentence per line
+- paragraph breaks preserved as natural learning units
+- no visible paragraph IDs in the prose body
+- each sentence line at or under 230 characters
+- no footnote numbering clutter
+- clean spacing
+- fully speakable Kokoro-safe text
+- prose content matching READER_PROSE.txt as closely as possible
+- mathematical notation transcribed into speech-safe wording rather than omitted or loosely paraphrased
+
+Default characteristics of READER_PROSE.txt:
+- .txt format
+- normalized chapter and section headings
+- same paragraph alignment as TTS_PROSE.txt
+- prose content matching TTS_PROSE.txt as closely as possible
+- elegant prose suitable for silent reading
+- inline LaTeX in \( ... \)
+- displayed LaTeX in \[ ... \]
+- no raw OCR symbol debris
+- no bibliographic clutter unless explicitly desired
+- mathematically explicit wherever helpful
+
+Default characteristics of media_mapping.txt:
+- normalized dictionary structure
+- stable paragraph IDs
+- explicit mapping of visuals and equations
+- optional reader and TTS math support fields
+- deterministic ordering
+
+PROJECT AIM IN ONE SENTENCE
+
+Use the source material as the conceptual backbone, but rewrite it into two tightly synchronized prose layers and one structured mapping layer:
+one Kokoro-safe listening text,
+one reader text with LaTeX,
+and one aligned media mapping file,
+while preserving the scientific depth of the source, expanding compressed mathematical passages as much as necessary for complete clarity, and ensuring that the text heard during listening coincides as closely as possible with the text seen on the screen.
