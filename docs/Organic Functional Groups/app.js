@@ -61,58 +61,58 @@
   const MATHJAX_CDN_URL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
 
   const SIMPLE_LATEX_TEXT_REPLACEMENTS = [
-    [/\AA/g, "Å"],
-    [/\angstrom/g, "Å"],
-    [/\Angstrom/g, "Å"],
-    [/\alpha/g, "α"],
-    [/\beta/g, "β"],
-    [/\gamma/g, "γ"],
-    [/\delta/g, "δ"],
-    [/\epsilon/g, "ε"],
-    [/\varepsilon/g, "ε"],
-    [/\theta/g, "θ"],
-    [/\lambda/g, "λ"],
-    [/\mu/g, "μ"],
-    [/\nu/g, "ν"],
-    [/\xi/g, "ξ"],
-    [/\pi/g, "π"],
-    [/\rho/g, "ρ"],
-    [/\sigma/g, "σ"],
-    [/\tau/g, "τ"],
-    [/\phi/g, "φ"],
-    [/\varphi/g, "φ"],
-    [/\chi/g, "χ"],
-    [/\psi/g, "ψ"],
-    [/\omega/g, "ω"],
-    [/\Gamma/g, "Γ"],
-    [/\Delta/g, "Δ"],
-    [/\Theta/g, "Θ"],
-    [/\Lambda/g, "Λ"],
-    [/\Xi/g, "Ξ"],
-    [/\Pi/g, "Π"],
-    [/\Sigma/g, "Σ"],
-    [/\Phi/g, "Φ"],
-    [/\Psi/g, "Ψ"],
-    [/\Omega/g, "Ω"],
-    [/\cdot/g, "·"],
-    [/\times/g, "×"],
-    [/\pm/g, "±"],
-    [/\mp/g, "∓"],
-    [/\leq?/g, "≤"],
-    [/\geq?/g, "≥"],
-    [/\neq/g, "≠"],
-    [/\approx/g, "≈"],
-    [/\sim/g, "∼"],
-    [/\propto/g, "∝"],
-    [/\infty/g, "∞"],
-    [/\to/g, "→"],
-    [/\rightarrow/g, "→"],
-    [/\leftarrow/g, "←"],
-    [/\leftrightarrow/g, "↔"],
-    [/\mapsto/g, "↦"],
-    [/\degree/g, "°"],
-    [/\ldots/g, "…"],
-    [/\dots/g, "…"],
+    [/\\AA\b/g, "Å"],
+    [/\\angstrom\b/g, "Å"],
+    [/\\Angstrom\b/g, "Å"],
+    [/\\alpha\b/g, "α"],
+    [/\\beta\b/g, "β"],
+    [/\\gamma\b/g, "γ"],
+    [/\\delta\b/g, "δ"],
+    [/\\epsilon\b/g, "ε"],
+    [/\\varepsilon\b/g, "ε"],
+    [/\\theta\b/g, "θ"],
+    [/\\lambda\b/g, "λ"],
+    [/\\mu\b/g, "μ"],
+    [/\\nu\b/g, "ν"],
+    [/\\xi\b/g, "ξ"],
+    [/\\pi\b/g, "π"],
+    [/\\rho\b/g, "ρ"],
+    [/\\sigma\b/g, "σ"],
+    [/\\tau\b/g, "τ"],
+    [/\\phi\b/g, "φ"],
+    [/\\varphi\b/g, "φ"],
+    [/\\chi\b/g, "χ"],
+    [/\\psi\b/g, "ψ"],
+    [/\\omega\b/g, "ω"],
+    [/\\Gamma\b/g, "Γ"],
+    [/\\Delta\b/g, "Δ"],
+    [/\\Theta\b/g, "Θ"],
+    [/\\Lambda\b/g, "Λ"],
+    [/\\Xi\b/g, "Ξ"],
+    [/\\Pi\b/g, "Π"],
+    [/\\Sigma\b/g, "Σ"],
+    [/\\Phi\b/g, "Φ"],
+    [/\\Psi\b/g, "Ψ"],
+    [/\\Omega\b/g, "Ω"],
+    [/\\cdot\b/g, "·"],
+    [/\\times\b/g, "×"],
+    [/\\pm\b/g, "±"],
+    [/\\mp\b/g, "∓"],
+    [/\\leq?\b/g, "≤"],
+    [/\\geq?\b/g, "≥"],
+    [/\\neq\b/g, "≠"],
+    [/\\approx\b/g, "≈"],
+    [/\\sim\b/g, "∼"],
+    [/\\propto\b/g, "∝"],
+    [/\\infty\b/g, "∞"],
+    [/\\to\b/g, "→"],
+    [/\\rightarrow\b/g, "→"],
+    [/\\leftarrow\b/g, "←"],
+    [/\\leftrightarrow\b/g, "↔"],
+    [/\\mapsto\b/g, "↦"],
+    [/\\degree\b/g, "°"],
+    [/\\ldots\b/g, "…"],
+    [/\\dots\b/g, "…"],
   ];
 
   const SIMPLE_SUBSCRIPT_MAP = {
@@ -160,6 +160,12 @@
     return {
       jsUrl: getDatasetValue("bookJs"),
       jsonUrl: getDatasetValue("bookJson"),
+      mediaMappingUrl:
+        getDatasetValue("bookMediaMapping") ||
+        getDatasetValue("mediaMapping") ||
+        getDatasetValue("mediaMappingUrl") ||
+        getDatasetValue("bookMedia") ||
+        "",
       prefer: (getDatasetValue("bookDataPreference") || "js").toLowerCase(),
     };
   }
@@ -278,6 +284,408 @@
       .replace(/\s*\n+\s*/g, " ")
       .replace(/\s{2,}/g, " ")
       .trim();
+  }
+
+  function replaceSimpleLatexText(text) {
+    let output = String(text || "");
+
+    SIMPLE_LATEX_TEXT_REPLACEMENTS.forEach(([pattern, replacement]) => {
+      output = output.replace(pattern, replacement);
+    });
+
+    return output
+      .replace(/\\,/g, " ")
+      .replace(/\\;/g, " ")
+      .replace(/\\:/g, " ")
+      .replace(/\\!/g, "")
+      .replace(/~/g, " ");
+  }
+
+  function convertSimpleScriptRuns(text, marker, replacements) {
+    return String(text || "").replace(
+      new RegExp(`\\${marker}(\\{([^{}]+)\\}|([A-Za-z0-9+\-=()αβγδρφχθ]))`, "g"),
+      (_, _whole, braced, single) => {
+        const rawValue = braced ?? single ?? "";
+        if (!rawValue) return marker;
+
+        let converted = "";
+        for (const char of rawValue) {
+          const mapped = replacements[char];
+          if (!mapped) {
+            return marker + rawValue;
+          }
+          converted += mapped;
+        }
+
+        return converted;
+      }
+    );
+  }
+
+  function latexMathToPlainText(mathSource) {
+    let text = String(mathSource || "").trim();
+
+    if (text.startsWith("\\[") && text.endsWith("\\]")) {
+      text = text.slice(2, -2);
+    } else if (text.startsWith("\\(") && text.endsWith("\\)")) {
+      text = text.slice(2, -2);
+    } else if (text.startsWith("$$") && text.endsWith("$$")) {
+      text = text.slice(2, -2);
+    }
+
+    text = text
+      .replace(/\\text\{([^{}]*)\}/g, "$1")
+      .replace(/\\mathrm\{([^{}]*)\}/g, "$1")
+      .replace(/\\operatorname\{([^{}]*)\}/g, "$1")
+      .replace(/\\left/g, "")
+      .replace(/\\right/g, "");
+
+    text = replaceSimpleLatexText(text);
+    text = convertSimpleScriptRuns(text, "_", SIMPLE_SUBSCRIPT_MAP);
+    text = convertSimpleScriptRuns(text, "^", SIMPLE_SUPERSCRIPT_MAP);
+    text = text.replace(/[{}]/g, "");
+    text = text.replace(/\\/g, "");
+    return collapseWhitespace(text);
+  }
+
+  function splitMathAwareSegments(text) {
+    const source = String(text || "");
+    const pattern = /(\\\[(?:[\s\S]*?)\\\]|\$\$(?:[\s\S]*?)\$\$|\\\((?:[\s\S]*?)\\\))/g;
+    const segments = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = pattern.exec(source)) !== null) {
+      if (match.index > lastIndex) {
+        segments.push({ type: "text", value: source.slice(lastIndex, match.index) });
+      }
+
+      const token = match[0];
+      const type = token.startsWith("\\[") || token.startsWith("$$") ? "displayMath" : "inlineMath";
+      segments.push({ type, value: token });
+      lastIndex = pattern.lastIndex;
+    }
+
+    if (lastIndex < source.length) {
+      segments.push({ type: "text", value: source.slice(lastIndex) });
+    }
+
+    return segments;
+  }
+
+  function prepareReaderTextForDisplay(text) {
+    return splitMathAwareSegments(text)
+      .map((segment) => (segment.type === "text" ? replaceSimpleLatexText(segment.value) : segment.value))
+      .join("");
+  }
+
+  function toPlainReadingText(text) {
+    return collapseWhitespace(
+      splitMathAwareSegments(text)
+        .map((segment) => (segment.type === "text" ? replaceSimpleLatexText(segment.value) : latexMathToPlainText(segment.value)))
+        .join(" ")
+    );
+  }
+
+  function uniqueMediaEntries(entries) {
+    const seen = new Set();
+    return entries.filter((entry) => {
+      if (!entry) return false;
+      const key = JSON.stringify(entry);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function getInlineVisualEntries(paragraph) {
+    return Array.isArray(paragraph?.visuals) ? paragraph.visuals : [];
+  }
+
+  function getMediaMappingStore(book) {
+    if (book && typeof book === "object") {
+      return book.mediaMapping || book.media_mapping || book.paragraphMedia || book.paragraph_media || {};
+    }
+    return {};
+  }
+
+  function classifyVisualKind(entry) {
+    const kind = String(entry?.kind || entry?.type || "").trim().toLowerCase();
+    if (!kind) return "figure";
+    if (["video", "clip", "movie"].includes(kind)) return "video";
+    if (["figure", "map", "table", "diagram", "image"].includes(kind)) return kind === "image" ? "figure" : kind;
+    return "figure";
+  }
+
+  function getFigureEntries(paragraph, mediaEntry) {
+    const inlineFigures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
+    const inlineVisuals = getInlineVisualEntries(paragraph).filter((entry) => classifyVisualKind(entry) !== "video");
+    const mappedVisuals = Array.isArray(mediaEntry?.visuals)
+      ? mediaEntry.visuals.filter((entry) => classifyVisualKind(entry) !== "video")
+      : [];
+
+    return uniqueMediaEntries([...inlineFigures, ...inlineVisuals, ...mappedVisuals]);
+  }
+
+  function getVideoEntries(paragraph, mediaEntry) {
+    const inlineVideos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
+    const inlineVisualVideos = getInlineVisualEntries(paragraph).filter((entry) => classifyVisualKind(entry) === "video");
+    const mappedVisualVideos = Array.isArray(mediaEntry?.visuals)
+      ? mediaEntry.visuals.filter((entry) => classifyVisualKind(entry) === "video")
+      : [];
+
+    return uniqueMediaEntries([...inlineVideos, ...inlineVisualVideos, ...mappedVisualVideos]);
+  }
+
+  function normalizeMediaBaseName(value) {
+    return String(value || "")
+      .trim()
+      .replace(/^['"]+|['"]+$/g, "")
+      .replace(/[?#].*$/, "")
+      .replace(/^[./\\]+/, "")
+      .replace(/\s+/g, " ")
+      .replace(/[. ]+$/g, "");
+  }
+
+  function collectFigureBaseNames(rawEntry, label) {
+    const candidates = [];
+
+    const push = (value) => {
+      const cleaned = normalizeMediaBaseName(value);
+      if (cleaned) candidates.push(cleaned);
+    };
+
+    if (typeof rawEntry === "string") {
+      push(rawEntry);
+    } else if (rawEntry && typeof rawEntry === "object") {
+      push(rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || rawEntry.href || "");
+      push(rawEntry.basename || rawEntry.base || rawEntry.stem || rawEntry.fileBase || rawEntry.file_base || "");
+      push(rawEntry.id || "");
+      push(rawEntry.label || rawEntry.title || rawEntry.name || "");
+    }
+
+    push(label);
+
+    const joined = candidates.join(" || ");
+    const idMatch = joined.match(/(?:fig|map|table|diag)-([0-9]+(?:\.[0-9]+)*[a-z]?)/i);
+    if (idMatch) push(idMatch[1]);
+
+    const labelMatch = joined.match(/(?:Figure|Map|Table|Diagram)\s+([0-9]+(?:\.[0-9]+)*[a-z]?)/i);
+    if (labelMatch) push(labelMatch[1]);
+
+    return uniqueStrings(candidates);
+  }
+
+  function resolveFigureSourcesFromEntry(rawEntry, label) {
+    const bases = collectFigureBaseNames(rawEntry, label);
+    const sources = [];
+
+    bases.forEach((base) => {
+      if (!base) return;
+      if (isAbsoluteLike(base) || base.includes("/") || hasExtension(base)) {
+        sources.push(base);
+        return;
+      }
+
+      MEDIA_CONFIG.figureExtensions.forEach((ext) => {
+        sources.push(joinPath(MEDIA_CONFIG.figuresDir, `${base}.${ext}`));
+      });
+    });
+
+    return uniqueStrings(sources);
+  }
+
+  function parseMediaMappingPayload(rawText) {
+    const text = String(rawText || "").trim();
+    if (!text) return null;
+
+    const directCandidates = [text];
+    const jsAssignmentMatch = text.match(/^(?:const|let|var)\s+[A-Za-z_$][\w$]*\s*=\s*([\s\S]+?);?$/);
+    if (jsAssignmentMatch) {
+      directCandidates.push(jsAssignmentMatch[1].trim());
+    }
+
+    for (const candidate of directCandidates) {
+      try {
+        const parsed = JSON.parse(candidate);
+        if (parsed && typeof parsed === "object") return parsed;
+      } catch (error) {
+        // continue
+      }
+    }
+
+    return null;
+  }
+
+  async function loadOptionalMediaMapping() {
+    const globalMapping = window.BOOK_MEDIA_MAPPING || window.MEDIA_MAPPING || null;
+    if (globalMapping && typeof globalMapping === "object") {
+      return globalMapping;
+    }
+
+    const config = getDataConfig();
+    if (!config.mediaMappingUrl) return null;
+
+    try {
+      const response = await fetch(config.mediaMappingUrl, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Could not load media mapping: ${response.status} ${response.statusText}`);
+      }
+
+      const rawText = await response.text();
+      const parsed = parseMediaMappingPayload(rawText);
+      if (parsed && typeof parsed === "object") {
+        return parsed;
+      }
+    } catch (error) {
+      console.warn("Media mapping could not be loaded:", error);
+    }
+
+    return null;
+  }
+
+  function firstNonEmptyString(...values) {
+    for (const value of values) {
+      if (typeof value !== "string") continue;
+      if (!value.trim()) continue;
+      return value;
+    }
+    return "";
+  }
+
+  function getReaderText(paragraph) {
+    return firstNonEmptyString(
+      paragraph?.readerText,
+      paragraph?.reader_text,
+      paragraph?.displayText,
+      paragraph?.display_text,
+      paragraph?.text
+    );
+  }
+
+  function getTtsText(paragraph) {
+    return firstNonEmptyString(
+      paragraph?.ttsText,
+      paragraph?.tts_text,
+      paragraph?.audioText,
+      paragraph?.audio_text,
+      paragraph?.spokenText,
+      paragraph?.spoken_text,
+      paragraph?.text,
+      paragraph?.readerText,
+      paragraph?.reader_text
+    );
+  }
+
+  function hasRenderableMath(text) {
+    return /\\\(|\\\[|\$\$|\\begin\{|\\[A-Za-z]+|[_^]\{?/.test(String(text || ""));
+  }
+
+  function getPlainPreviewText(paragraph) {
+    const source = getReaderText(paragraph) || getTtsText(paragraph);
+    return source ? toPlainReadingText(source) : "";
+  }
+
+  function splitReaderTextSegments(text) {
+    const source = prepareReaderTextForDisplay(text);
+    const pattern = /(\\\[(?:[\s\S]*?)\\\]|\$\$(?:[\s\S]*?)\$\$)/g;
+    const segments = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = pattern.exec(source)) !== null) {
+      if (match.index > lastIndex) {
+        segments.push({ type: "text", value: source.slice(lastIndex, match.index) });
+      }
+
+      segments.push({ type: "displayMath", value: match[0] });
+      lastIndex = pattern.lastIndex;
+    }
+
+    if (lastIndex < source.length) {
+      segments.push({ type: "text", value: source.slice(lastIndex) });
+    }
+
+    return segments;
+  }
+
+  function applyPlainMathFallback(element) {
+    if (!element) return;
+
+    element.querySelectorAll(".reader-display-math").forEach((mathBlock) => {
+      mathBlock.textContent = latexMathToPlainText(mathBlock.textContent || "");
+      mathBlock.classList.add("reader-display-math-fallback");
+    });
+
+    element.querySelectorAll(".reader-inline-math").forEach((mathSpan) => {
+      mathSpan.textContent = latexMathToPlainText(mathSpan.textContent || "");
+      mathSpan.classList.add("reader-inline-math-fallback");
+    });
+
+    element.querySelectorAll("p").forEach((paragraphEl) => {
+      paragraphEl.textContent = toPlainReadingText(paragraphEl.textContent || "");
+    });
+  }
+
+  function ensureMathJax() {
+    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+      return Promise.resolve(window.MathJax);
+    }
+
+    if (mathJaxLoadPromise) {
+      return mathJaxLoadPromise;
+    }
+
+    window.MathJax = window.MathJax || {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"], ["$$", "$$"]],
+      },
+      options: {
+        skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+      },
+      startup: {
+        typeset: false,
+      },
+    };
+
+    mathJaxLoadPromise = new Promise((resolve, reject) => {
+      const existingScript = document.getElementById(MATHJAX_SCRIPT_ID);
+
+      if (existingScript) {
+        existingScript.addEventListener("load", () => resolve(window.MathJax), { once: true });
+        existingScript.addEventListener("error", () => reject(new Error("MathJax failed to load.")), { once: true });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.id = MATHJAX_SCRIPT_ID;
+      script.async = true;
+      script.src = MATHJAX_CDN_URL;
+      script.addEventListener("load", () => resolve(window.MathJax), { once: true });
+      script.addEventListener("error", () => reject(new Error("MathJax failed to load.")), { once: true });
+      document.head.appendChild(script);
+    }).catch((error) => {
+      mathJaxLoadPromise = null;
+      console.warn("Could not load MathJax for reader text:", error);
+      throw error;
+    });
+
+    return mathJaxLoadPromise;
+  }
+
+  async function typesetMathInElement(element) {
+    if (!element || !hasRenderableMath(element.textContent || "")) return;
+
+    try {
+      const mathJax = await ensureMathJax();
+      if (mathJax && typeof mathJax.typesetPromise === "function") {
+        await mathJax.typesetPromise([element]);
+      }
+    } catch (error) {
+      console.warn("Math rendering was skipped:", error);
+      applyPlainMathFallback(element);
+    }
   }
 
   function toSafeUrl(path) {
@@ -418,7 +826,24 @@
       importNotesFileInput.dataset.bound = "true";
     }
 
+    updateNotesButtonLabels();
     updateNotesDockState();
+  }
+
+  function updateNotesButtonLabels() {
+    const projectTitle = getProjectTitle();
+    const exportLabel = `Export all ${projectTitle} notes backup`;
+    const importLabel = `Import all ${projectTitle} notes backup`;
+
+    if (exportNotesBtn) {
+      exportNotesBtn.title = exportLabel;
+      exportNotesBtn.setAttribute("aria-label", exportLabel);
+    }
+
+    if (importNotesBtn) {
+      importNotesBtn.title = importLabel;
+      importNotesBtn.setAttribute("aria-label", importLabel);
+    }
   }
 
   function hasAnyProjectNotes() {
@@ -946,20 +1371,25 @@
     );
   }
 
-  function normalizeParagraph(paragraph, section, paragraphIndex) {
-    const figures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
-    const videos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
-    const readerText = getReaderText(paragraph);
-    const ttsText = getTtsText(paragraph);
+  function normalizeParagraph(paragraph, section, paragraphIndex, mediaMappingStore = {}) {
+    const paragraphId = String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`);
+    const mediaEntry = mediaMappingStore && typeof mediaMappingStore === "object" ? mediaMappingStore[paragraphId] || {} : {};
+    const figures = getFigureEntries(paragraph, mediaEntry);
+    const videos = getVideoEntries(paragraph, mediaEntry);
+    const rawText = String(paragraph?.text || "");
+    const readerText = getReaderText(paragraph) || rawText;
+    const ttsText = getTtsText(paragraph) || rawText || readerText;
 
     return {
       ...paragraph,
-      id: String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`),
-      text: String(readerText || paragraph?.text || ""),
-      readerText: String(readerText || paragraph?.text || ""),
-      ttsText: String(ttsText || readerText || paragraph?.text || ""),
+      id: paragraphId,
+      text: rawText || readerText || ttsText,
+      readerText,
+      ttsText,
       figures,
       videos,
+      visuals: Array.isArray(mediaEntry?.visuals) ? mediaEntry.visuals : getInlineVisualEntries(paragraph),
+      equations: Array.isArray(mediaEntry?.equations) ? mediaEntry.equations : (Array.isArray(paragraph?.equations) ? paragraph.equations : []),
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -969,10 +1399,12 @@
 
   function indexBookData(book) {
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
+    const mediaMappingStore = getMediaMappingStore(book);
 
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
+      mediaMapping: mediaMappingStore,
       sections: rawSections.map((section, index) => ({
         ...section,
         id: String(section?.id || section?.number || `section-${index + 1}`),
@@ -990,11 +1422,12 @@
       state.sectionStartIndexById.set(section.id, startIndex);
 
       section.paragraphs.forEach((paragraph, pIndex) => {
-        state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex));
+        state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex, mediaMappingStore));
       });
     });
 
     state.activeSectionId = state.book.sections[0]?.id ?? null;
+    updateNotesButtonLabels();
   }
 
   function resolveAudioCandidates(paragraph) {
@@ -1043,13 +1476,10 @@
     if (!rawEntry) return null;
 
     if (typeof rawEntry === "string") {
-      const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(MEDIA_CONFIG.figuresDir, hasExtension(cleaned) ? cleaned : `${cleaned}.${MEDIA_CONFIG.figureExtensions[0]}`);
-
+      const sources = resolveFigureSourcesFromEntry(rawEntry, "");
       return {
-        src,
+        src: sources[0] || "",
+        sources,
         label: `Figure ${index + 1}`,
         caption: "",
         alt: `Figure ${index + 1}`,
@@ -1057,25 +1487,15 @@
     }
 
     if (typeof rawEntry === "object") {
-      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || "").trim();
-      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-      const alt = toPlainReadingText(String(rawEntry.alt || label || `Figure ${index + 1}`).trim());
-
-      const explicitPath = normalizePath(
-        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || ""
-      );
-
-      let src = "";
-      if (explicitPath) {
-        src = explicitPath.includes("/") || isAbsoluteLike(explicitPath)
-          ? explicitPath
-          : joinPath(MEDIA_CONFIG.figuresDir, explicitPath);
-      } else if (label) {
-        src = joinPath(MEDIA_CONFIG.figuresDir, `${label}.${MEDIA_CONFIG.figureExtensions[0]}`);
-      }
+      const fallbackLabel = rawEntry.kind ? `${String(rawEntry.kind).replace(/^./, (m) => m.toUpperCase())} ${index + 1}` : `Figure ${index + 1}`;
+      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || fallbackLabel).trim();
+      const caption = String(rawEntry.caption || rawEntry.description || rawEntry.note || "").trim();
+      const alt = String(rawEntry.alt || label || fallbackLabel).trim();
+      const sources = resolveFigureSourcesFromEntry(rawEntry, label);
 
       return {
-        src,
+        src: sources[0] || "",
+        sources,
         label,
         caption,
         alt,
@@ -1141,9 +1561,10 @@
       sectionBtn.type = "button";
       sectionBtn.className = "section-link";
       sectionBtn.dataset.sectionId = section.id;
+      const plainSectionTitle = toPlainReadingText(section.title || "");
       sectionBtn.innerHTML = `
         <span class="section-number">${escapeHtml(section.number || section.id || "")}</span>
-        <span class="section-title">${escapeHtml(section.title || "")}</span>
+        <span class="section-title">${escapeHtml(plainSectionTitle)}</span>
       `;
 
       sectionBtn.addEventListener("click", async () => {
@@ -1167,19 +1588,63 @@
   }
 
   function renderParagraphText(paragraph) {
-    const blocks = String(paragraph?.text || "")
+    const readerText = prepareReaderTextForDisplay(getReaderText(paragraph));
+    const blocks = String(readerText || "")
       .split(/\n\s*\n+/)
-      .map((block) => block.replace(/\n+/g, " ").trim())
+      .map((block) => block.trim())
       .filter(Boolean);
+
+    currentParagraphTextEl.innerHTML = "";
 
     if (blocks.length === 0) {
       currentParagraphTextEl.innerHTML = "<p>—</p>";
       return;
     }
 
-    currentParagraphTextEl.innerHTML = blocks
-      .map((block) => `<p>${escapeHtml(block)}</p>`)
-      .join("");
+    const appendParagraphNode = (paragraphEl) => {
+      if (paragraphEl && paragraphEl.childNodes.length > 0) {
+        currentParagraphTextEl.appendChild(paragraphEl);
+      }
+    };
+
+    blocks.forEach((block) => {
+      const segments = splitMathAwareSegments(block.replace(/\n+/g, " "));
+      let paragraphEl = document.createElement("p");
+
+      segments.forEach((segment) => {
+        if (!segment.value) return;
+
+        if (segment.type === "displayMath") {
+          appendParagraphNode(paragraphEl);
+          paragraphEl = document.createElement("p");
+
+          const mathBlock = document.createElement("div");
+          mathBlock.className = "reader-display-math";
+          mathBlock.textContent = segment.value.trim();
+          currentParagraphTextEl.appendChild(mathBlock);
+          return;
+        }
+
+        if (segment.type === "inlineMath") {
+          const mathSpan = document.createElement("span");
+          mathSpan.className = "reader-inline-math";
+          mathSpan.textContent = segment.value;
+          paragraphEl.appendChild(mathSpan);
+          return;
+        }
+
+        paragraphEl.appendChild(document.createTextNode(segment.value));
+      });
+
+      appendParagraphNode(paragraphEl);
+    });
+
+    if (!currentParagraphTextEl.childNodes.length) {
+      currentParagraphTextEl.innerHTML = "<p>—</p>";
+      return;
+    }
+
+    void typesetMathInElement(currentParagraphTextEl);
   }
 
   function createMissingMediaCard(message) {
@@ -1195,26 +1660,24 @@
   }
 
   function appendMediaCaption(figureEl, label, caption) {
-    const plainLabel = toPlainReadingText(label || "");
-    const plainCaption = toPlainReadingText(caption || "");
-    if (!plainLabel && !plainCaption) return;
+    if (!label && !caption) return;
 
     const figcaption = document.createElement("figcaption");
     figcaption.className = "media-caption";
 
-    if (plainLabel) {
+    if (label) {
       const labelSpan = document.createElement("span");
       labelSpan.className = "media-caption-label";
-      labelSpan.textContent = plainLabel;
+      labelSpan.textContent = label;
       figcaption.appendChild(labelSpan);
 
-      if (plainCaption) {
+      if (caption) {
         figcaption.appendChild(document.createTextNode(". "));
       }
     }
 
-    if (plainCaption) {
-      figcaption.appendChild(document.createTextNode(plainCaption));
+    if (caption) {
+      figcaption.appendChild(document.createTextNode(caption));
     }
 
     figureEl.appendChild(figcaption);
@@ -1236,12 +1699,24 @@
       img.loading = "lazy";
       img.decoding = "async";
       img.alt = figureData.alt || figureData.label || `Figure ${index + 1}`;
-      img.src = toSafeUrl(figureData.src);
+
+      const sources = Array.isArray(figureData.sources) && figureData.sources.length > 0 ? figureData.sources : [figureData.src];
+      let sourceIndex = 0;
+
+      const loadCurrentSource = () => {
+        img.src = toSafeUrl(sources[sourceIndex] || "");
+      };
 
       img.addEventListener("error", () => {
-        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${figureData.src}`));
+        sourceIndex += 1;
+        if (sourceIndex < sources.length) {
+          loadCurrentSource();
+          return;
+        }
+        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${sources[0]}`));
       });
 
+      loadCurrentSource();
       figure.appendChild(img);
       appendMediaCaption(figure, figureData.label, figureData.caption);
 
@@ -1370,7 +1845,8 @@
       return;
     }
 
-    const sectionLabel = `${toPlainReadingText(current.sectionNumber)} — ${toPlainReadingText(current.sectionTitle)}`;
+    const plainSectionTitle = toPlainReadingText(current.sectionTitle);
+    const sectionLabel = `${current.sectionNumber} — ${plainSectionTitle}`;
     const sectionParagraphCount = getSectionParagraphCount(current.sectionId);
     const candidates = resolveAudioCandidates(current);
 
@@ -1391,8 +1867,8 @@
     renderParagraphText(current);
     renderCurrentParagraphNote();
 
-    previousParagraphTextEl.textContent = previous ? toPlainReadingText(getReaderText(previous) || getTtsText(previous)) : "—";
-    nextParagraphTextEl.textContent = next ? toPlainReadingText(getReaderText(next) || getTtsText(next)) : "—";
+    previousParagraphTextEl.textContent = previous ? (getPlainPreviewText(previous) || "Mathematical paragraph") : "—";
+    nextParagraphTextEl.textContent = next ? (getPlainPreviewText(next) || "Mathematical paragraph") : "—";
 
     contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
 
@@ -1678,15 +2154,19 @@
       applySavedTheme();
 
       const rawBookData = await loadBookData();
+      const optionalMediaMapping = await loadOptionalMediaMapping();
+      if (optionalMediaMapping && typeof optionalMediaMapping === "object") {
+        rawBookData.mediaMapping = rawBookData.mediaMapping || rawBookData.media_mapping || optionalMediaMapping;
+      }
       indexBookData(rawBookData);
 
       if (state.flatParagraphs.length === 0) {
         throw new Error("The loaded book data has no paragraphs.");
       }
 
-      const safeBookTitle = toPlainReadingText(state.book.title);
-      bookTitleEl.textContent = safeBookTitle;
-      document.title = safeBookTitle;
+      const plainBookTitle = toPlainReadingText(state.book.title);
+      bookTitleEl.textContent = plainBookTitle;
+      document.title = plainBookTitle;
       buildSectionNav();
       ensureNotesUi();
       updateSectionNoteMarkers();
