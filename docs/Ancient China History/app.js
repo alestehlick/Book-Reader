@@ -288,17 +288,25 @@
     };
   }
 
+  function normalizeMediaList(value) {
+    return Array.isArray(value) ? value.filter(Boolean) : [];
+  }
+
   function indexBookData(book) {
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
 
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
+      sharedFigures: normalizeMediaList(book?.sharedFigures),
+      sharedVideos: normalizeMediaList(book?.sharedVideos),
       sections: rawSections.map((section, index) => ({
         ...section,
         id: String(section?.id || section?.number || `section-${index + 1}`),
         number: String(section?.number || section?.id || `Section ${index + 1}`),
         title: String(section?.title || ""),
+        sharedFigures: normalizeMediaList(section?.sharedFigures),
+        sharedVideos: normalizeMediaList(section?.sharedVideos),
         paragraphs: Array.isArray(section?.paragraphs) ? section.paragraphs : [],
       })),
     };
@@ -447,6 +455,60 @@
     return null;
   }
 
+  function dedupeResolvedFigures(entries) {
+    const seen = new Set();
+
+    return entries.filter((item) => {
+      if (!item || !item.src) return false;
+      const key = `${item.src}::${item.label || ""}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function dedupeResolvedVideos(entries) {
+    const seen = new Set();
+
+    return entries.filter((item) => {
+      if (!item || !Array.isArray(item.sources) || item.sources.length === 0) return false;
+      const key = `${item.sources.join("|")}::${item.label || ""}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function getEffectiveFigureEntries(paragraph) {
+    const section = getSectionById(paragraph?.sectionId);
+    const rawEntries = [
+      ...normalizeMediaList(state.book?.sharedFigures),
+      ...normalizeMediaList(section?.sharedFigures),
+      ...normalizeMediaList(paragraph?.figures),
+    ];
+
+    return dedupeResolvedFigures(
+      rawEntries
+        .map((entry, index) => resolveFigureEntry(entry, index))
+        .filter((item) => item && item.src)
+    );
+  }
+
+  function getEffectiveVideoEntries(paragraph) {
+    const section = getSectionById(paragraph?.sectionId);
+    const rawEntries = [
+      ...normalizeMediaList(state.book?.sharedVideos),
+      ...normalizeMediaList(section?.sharedVideos),
+      ...normalizeMediaList(paragraph?.videos),
+    ];
+
+    return dedupeResolvedVideos(
+      rawEntries
+        .map((entry, index) => resolveVideoEntry(entry, index))
+        .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0)
+    );
+  }
+
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
 
@@ -540,8 +602,7 @@
   }
 
   function renderFigures(entries) {
-    entries.forEach((entry, index) => {
-      const figureData = resolveFigureEntry(entry, index);
+    entries.forEach((figureData, index) => {
       if (!figureData || !figureData.src) return;
 
       const wrapper = document.createElement("article");
@@ -570,8 +631,7 @@
   }
 
   function renderVideos(entries) {
-    entries.forEach((entry, index) => {
-      const videoData = resolveVideoEntry(entry, index);
+    entries.forEach((videoData, index) => {
       if (!videoData || videoData.sources.length === 0) return;
 
       const wrapper = document.createElement("article");
@@ -632,19 +692,11 @@
       return;
     }
 
-    const rawFigures = Array.isArray(current.figures) ? current.figures : [];
-    const rawVideos = Array.isArray(current.videos) ? current.videos : [];
+    const effectiveFigures = getEffectiveFigureEntries(current);
+    const effectiveVideos = getEffectiveVideoEntries(current);
 
-    const validFigures = rawFigures
-      .map((entry, index) => resolveFigureEntry(entry, index))
-      .filter((item) => item && item.src);
-
-    const validVideos = rawVideos
-      .map((entry, index) => resolveVideoEntry(entry, index))
-      .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0);
-
-    const figureCount = validFigures.length;
-    const videoCount = validVideos.length;
+    const figureCount = effectiveFigures.length;
+    const videoCount = effectiveVideos.length;
     const totalCount = figureCount + videoCount;
 
     if (totalCount === 0) {
@@ -657,8 +709,8 @@
     figureGroupEl.hidden = false;
     mediaSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
 
-    renderFigures(rawFigures);
-    renderVideos(rawVideos);
+    renderFigures(effectiveFigures);
+    renderVideos(effectiveVideos);
   }
 
   function renderTextAndMedia() {
