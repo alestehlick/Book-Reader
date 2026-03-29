@@ -1181,3 +1181,22 @@ body.sidebar-collapsed .main-panel {
     height: 32px;
   }
 }
+
+
+.reader-inline-math {
+  white-space: normal;
+}
+
+.reader-inline-math-fallback {
+  font-style: normal;
+}
+
+.reader-display-math-fallback {
+  overflow-wrap: anywhere;
+}
+
+.media-figure-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -52,6 +52,7 @@
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
+  const DEFAULT_FIGURE_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "gif", "svg"];
   const DEFAULT_VIDEOS_DIR = "videos";
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
@@ -159,6 +160,12 @@
     return {
       jsUrl: getDatasetValue("bookJs"),
       jsonUrl: getDatasetValue("bookJson"),
+      mediaMappingUrl:
+        getDatasetValue("bookMediaMapping") ||
+        getDatasetValue("mediaMapping") ||
+        getDatasetValue("mediaMappingUrl") ||
+        getDatasetValue("bookMedia") ||
+        "",
       prefer: (getDatasetValue("bookDataPreference") || "js").toLowerCase(),
     };
   }
@@ -235,12 +242,14 @@
   function getMediaConfig() {
     const audioDirs = parseDatasetList(getDatasetValue("audioDirs"));
     const figuresDir = normalizePath(getDatasetValue("figuresDir"));
+    const figureExtensions = parseDatasetList(getDatasetValue("figureExtensions"));
     const videosDir = normalizePath(getDatasetValue("videosDir"));
     const videoExtensions = parseDatasetList(getDatasetValue("videoExtensions"));
 
     return {
       audioDirs: audioDirs.length > 0 ? audioDirs : [...DEFAULT_AUDIO_DIRS],
       figuresDir: figuresDir || DEFAULT_FIGURES_DIR,
+      figureExtensions: figureExtensions.length > 0 ? figureExtensions : [...DEFAULT_FIGURE_EXTENSIONS],
       videosDir: videosDir || DEFAULT_VIDEOS_DIR,
       videoExtensions: videoExtensions.length > 0 ? videoExtensions : [...DEFAULT_VIDEO_EXTENSIONS],
     };
@@ -378,6 +387,163 @@
     );
   }
 
+  function uniqueMediaEntries(entries) {
+    const seen = new Set();
+    return entries.filter((entry) => {
+      if (!entry) return false;
+      const key = JSON.stringify(entry);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function getInlineVisualEntries(paragraph) {
+    return Array.isArray(paragraph?.visuals) ? paragraph.visuals : [];
+  }
+
+  function getMediaMappingStore(book) {
+    if (book && typeof book === "object") {
+      return book.mediaMapping || book.media_mapping || book.paragraphMedia || book.paragraph_media || {};
+    }
+    return {};
+  }
+
+  function classifyVisualKind(entry) {
+    const kind = String(entry?.kind || entry?.type || "").trim().toLowerCase();
+    if (!kind) return "figure";
+    if (["video", "clip", "movie"].includes(kind)) return "video";
+    if (["figure", "map", "table", "diagram", "image"].includes(kind)) return kind === "image" ? "figure" : kind;
+    return "figure";
+  }
+
+  function getFigureEntries(paragraph, mediaEntry) {
+    const inlineFigures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
+    const inlineVisuals = getInlineVisualEntries(paragraph).filter((entry) => classifyVisualKind(entry) !== "video");
+    const mappedVisuals = Array.isArray(mediaEntry?.visuals)
+      ? mediaEntry.visuals.filter((entry) => classifyVisualKind(entry) !== "video")
+      : [];
+
+    return uniqueMediaEntries([...inlineFigures, ...inlineVisuals, ...mappedVisuals]);
+  }
+
+  function getVideoEntries(paragraph, mediaEntry) {
+    const inlineVideos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
+    const inlineVisualVideos = getInlineVisualEntries(paragraph).filter((entry) => classifyVisualKind(entry) === "video");
+    const mappedVisualVideos = Array.isArray(mediaEntry?.visuals)
+      ? mediaEntry.visuals.filter((entry) => classifyVisualKind(entry) === "video")
+      : [];
+
+    return uniqueMediaEntries([...inlineVideos, ...inlineVisualVideos, ...mappedVisualVideos]);
+  }
+
+  function normalizeMediaBaseName(value) {
+    return String(value || "")
+      .trim()
+      .replace(/^['"]+|['"]+$/g, "")
+      .replace(/[?#].*$/, "")
+      .replace(/^[./\\]+/, "")
+      .replace(/\s+/g, " ")
+      .replace(/[. ]+$/g, "");
+  }
+
+  function collectFigureBaseNames(rawEntry, label) {
+    const candidates = [];
+
+    const push = (value) => {
+      const cleaned = normalizeMediaBaseName(value);
+      if (cleaned) candidates.push(cleaned);
+    };
+
+    if (typeof rawEntry === "string") {
+      push(rawEntry);
+    } else if (rawEntry && typeof rawEntry === "object") {
+      push(rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || rawEntry.href || "");
+      push(rawEntry.basename || rawEntry.base || rawEntry.stem || rawEntry.fileBase || rawEntry.file_base || "");
+      push(rawEntry.id || "");
+      push(rawEntry.label || rawEntry.title || rawEntry.name || "");
+    }
+
+    push(label);
+
+    const joined = candidates.join(" || ");
+    const idMatch = joined.match(/(?:fig|map|table|diag)-([0-9]+(?:\.[0-9]+)*[a-z]?)/i);
+    if (idMatch) push(idMatch[1]);
+
+    const labelMatch = joined.match(/(?:Figure|Map|Table|Diagram)\s+([0-9]+(?:\.[0-9]+)*[a-z]?)/i);
+    if (labelMatch) push(labelMatch[1]);
+
+    return uniqueStrings(candidates);
+  }
+
+  function resolveFigureSourcesFromEntry(rawEntry, label) {
+    const bases = collectFigureBaseNames(rawEntry, label);
+    const sources = [];
+
+    bases.forEach((base) => {
+      if (!base) return;
+      if (isAbsoluteLike(base) || base.includes("/") || hasExtension(base)) {
+        sources.push(base);
+        return;
+      }
+
+      MEDIA_CONFIG.figureExtensions.forEach((ext) => {
+        sources.push(joinPath(MEDIA_CONFIG.figuresDir, `${base}.${ext}`));
+      });
+    });
+
+    return uniqueStrings(sources);
+  }
+
+  function parseMediaMappingPayload(rawText) {
+    const text = String(rawText || "").trim();
+    if (!text) return null;
+
+    const directCandidates = [text];
+    const jsAssignmentMatch = text.match(/^(?:const|let|var)\s+[A-Za-z_$][\w$]*\s*=\s*([\s\S]+?);?$/);
+    if (jsAssignmentMatch) {
+      directCandidates.push(jsAssignmentMatch[1].trim());
+    }
+
+    for (const candidate of directCandidates) {
+      try {
+        const parsed = JSON.parse(candidate);
+        if (parsed && typeof parsed === "object") return parsed;
+      } catch (error) {
+        // continue
+      }
+    }
+
+    return null;
+  }
+
+  async function loadOptionalMediaMapping() {
+    const globalMapping = window.BOOK_MEDIA_MAPPING || window.MEDIA_MAPPING || null;
+    if (globalMapping && typeof globalMapping === "object") {
+      return globalMapping;
+    }
+
+    const config = getDataConfig();
+    if (!config.mediaMappingUrl) return null;
+
+    try {
+      const response = await fetch(config.mediaMappingUrl, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Could not load media mapping: ${response.status} ${response.statusText}`);
+      }
+
+      const rawText = await response.text();
+      const parsed = parseMediaMappingPayload(rawText);
+      if (parsed && typeof parsed === "object") {
+        return parsed;
+      }
+    } catch (error) {
+      console.warn("Media mapping could not be loaded:", error);
+    }
+
+    return null;
+  }
+
   function firstNonEmptyString(...values) {
     for (const value of values) {
       if (typeof value !== "string") continue;
@@ -412,7 +578,7 @@
   }
 
   function hasRenderableMath(text) {
-    return /\\\(|\\\[|\$\$|\\begin\{/.test(String(text || ""));
+    return /\\\(|\\\[|\$\$|\\begin\{|\\[A-Za-z]+|[_^]\{?/.test(String(text || ""));
   }
 
   function getPlainPreviewText(paragraph) {
@@ -449,6 +615,11 @@
     element.querySelectorAll(".reader-display-math").forEach((mathBlock) => {
       mathBlock.textContent = latexMathToPlainText(mathBlock.textContent || "");
       mathBlock.classList.add("reader-display-math-fallback");
+    });
+
+    element.querySelectorAll(".reader-inline-math").forEach((mathSpan) => {
+      mathSpan.textContent = latexMathToPlainText(mathSpan.textContent || "");
+      mathSpan.classList.add("reader-inline-math-fallback");
     });
 
     element.querySelectorAll("p").forEach((paragraphEl) => {
@@ -1200,21 +1371,25 @@
     );
   }
 
-  function normalizeParagraph(paragraph, section, paragraphIndex) {
-    const figures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
-    const videos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
+  function normalizeParagraph(paragraph, section, paragraphIndex, mediaMappingStore = {}) {
+    const paragraphId = String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`);
+    const mediaEntry = mediaMappingStore && typeof mediaMappingStore === "object" ? mediaMappingStore[paragraphId] || {} : {};
+    const figures = getFigureEntries(paragraph, mediaEntry);
+    const videos = getVideoEntries(paragraph, mediaEntry);
     const rawText = String(paragraph?.text || "");
     const readerText = getReaderText(paragraph) || rawText;
     const ttsText = getTtsText(paragraph) || rawText || readerText;
 
     return {
       ...paragraph,
-      id: String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`),
+      id: paragraphId,
       text: rawText || readerText || ttsText,
       readerText,
       ttsText,
       figures,
       videos,
+      visuals: Array.isArray(mediaEntry?.visuals) ? mediaEntry.visuals : getInlineVisualEntries(paragraph),
+      equations: Array.isArray(mediaEntry?.equations) ? mediaEntry.equations : (Array.isArray(paragraph?.equations) ? paragraph.equations : []),
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -1224,10 +1399,12 @@
 
   function indexBookData(book) {
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
+    const mediaMappingStore = getMediaMappingStore(book);
 
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
+      mediaMapping: mediaMappingStore,
       sections: rawSections.map((section, index) => ({
         ...section,
         id: String(section?.id || section?.number || `section-${index + 1}`),
@@ -1245,7 +1422,7 @@
       state.sectionStartIndexById.set(section.id, startIndex);
 
       section.paragraphs.forEach((paragraph, pIndex) => {
-        state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex));
+        state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex, mediaMappingStore));
       });
     });
 
@@ -1299,13 +1476,10 @@
     if (!rawEntry) return null;
 
     if (typeof rawEntry === "string") {
-      const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(MEDIA_CONFIG.figuresDir, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
-
+      const sources = resolveFigureSourcesFromEntry(rawEntry, "");
       return {
-        src,
+        src: sources[0] || "",
+        sources,
         label: `Figure ${index + 1}`,
         caption: "",
         alt: `Figure ${index + 1}`,
@@ -1313,25 +1487,15 @@
     }
 
     if (typeof rawEntry === "object") {
-      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || "").trim();
-      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
-      const alt = String(rawEntry.alt || label || `Figure ${index + 1}`).trim();
-
-      const explicitPath = normalizePath(
-        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || ""
-      );
-
-      let src = "";
-      if (explicitPath) {
-        src = explicitPath.includes("/") || isAbsoluteLike(explicitPath)
-          ? explicitPath
-          : joinPath(MEDIA_CONFIG.figuresDir, explicitPath);
-      } else if (label) {
-        src = joinPath(MEDIA_CONFIG.figuresDir, `${label}.png`);
-      }
+      const fallbackLabel = rawEntry.kind ? `${String(rawEntry.kind).replace(/^./, (m) => m.toUpperCase())} ${index + 1}` : `Figure ${index + 1}`;
+      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || fallbackLabel).trim();
+      const caption = String(rawEntry.caption || rawEntry.description || rawEntry.note || "").trim();
+      const alt = String(rawEntry.alt || label || fallbackLabel).trim();
+      const sources = resolveFigureSourcesFromEntry(rawEntry, label);
 
       return {
-        src,
+        src: sources[0] || "",
+        sources,
         label,
         caption,
         alt,
@@ -1425,35 +1589,57 @@
 
   function renderParagraphText(paragraph) {
     const readerText = prepareReaderTextForDisplay(getReaderText(paragraph));
-    const segments = splitReaderTextSegments(readerText);
-    let hasRenderableContent = false;
+    const blocks = String(readerText || "")
+      .split(/\n\s*\n+/)
+      .map((block) => block.trim())
+      .filter(Boolean);
 
     currentParagraphTextEl.innerHTML = "";
 
-    segments.forEach((segment) => {
-      if (segment.type === "displayMath") {
-        const mathBlock = document.createElement("div");
-        mathBlock.className = "reader-display-math";
-        mathBlock.textContent = segment.value.trim();
-        currentParagraphTextEl.appendChild(mathBlock);
-        hasRenderableContent = true;
-        return;
-      }
+    if (blocks.length === 0) {
+      currentParagraphTextEl.innerHTML = "<p>—</p>";
+      return;
+    }
 
-      const textBlocks = String(segment.value || "")
-        .split(/\n\s*\n+/)
-        .map((block) => block.replace(/\n+/g, " ").trim())
-        .filter(Boolean);
-
-      textBlocks.forEach((block) => {
-        const paragraphEl = document.createElement("p");
-        paragraphEl.textContent = block;
+    const appendParagraphNode = (paragraphEl) => {
+      if (paragraphEl && paragraphEl.childNodes.length > 0) {
         currentParagraphTextEl.appendChild(paragraphEl);
-        hasRenderableContent = true;
+      }
+    };
+
+    blocks.forEach((block) => {
+      const segments = splitMathAwareSegments(block.replace(/\n+/g, " "));
+      let paragraphEl = document.createElement("p");
+
+      segments.forEach((segment) => {
+        if (!segment.value) return;
+
+        if (segment.type === "displayMath") {
+          appendParagraphNode(paragraphEl);
+          paragraphEl = document.createElement("p");
+
+          const mathBlock = document.createElement("div");
+          mathBlock.className = "reader-display-math";
+          mathBlock.textContent = segment.value.trim();
+          currentParagraphTextEl.appendChild(mathBlock);
+          return;
+        }
+
+        if (segment.type === "inlineMath") {
+          const mathSpan = document.createElement("span");
+          mathSpan.className = "reader-inline-math";
+          mathSpan.textContent = segment.value;
+          paragraphEl.appendChild(mathSpan);
+          return;
+        }
+
+        paragraphEl.appendChild(document.createTextNode(segment.value));
       });
+
+      appendParagraphNode(paragraphEl);
     });
 
-    if (!hasRenderableContent) {
+    if (!currentParagraphTextEl.childNodes.length) {
       currentParagraphTextEl.innerHTML = "<p>—</p>";
       return;
     }
@@ -1513,12 +1699,24 @@
       img.loading = "lazy";
       img.decoding = "async";
       img.alt = figureData.alt || figureData.label || `Figure ${index + 1}`;
-      img.src = toSafeUrl(figureData.src);
+
+      const sources = Array.isArray(figureData.sources) && figureData.sources.length > 0 ? figureData.sources : [figureData.src];
+      let sourceIndex = 0;
+
+      const loadCurrentSource = () => {
+        img.src = toSafeUrl(sources[sourceIndex] || "");
+      };
 
       img.addEventListener("error", () => {
-        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${figureData.src}`));
+        sourceIndex += 1;
+        if (sourceIndex < sources.length) {
+          loadCurrentSource();
+          return;
+        }
+        wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${sources[0]}`));
       });
 
+      loadCurrentSource();
       figure.appendChild(img);
       appendMediaCaption(figure, figureData.label, figureData.caption);
 
@@ -1956,6 +2154,10 @@
       applySavedTheme();
 
       const rawBookData = await loadBookData();
+      const optionalMediaMapping = await loadOptionalMediaMapping();
+      if (optionalMediaMapping && typeof optionalMediaMapping === "object") {
+        rawBookData.mediaMapping = rawBookData.mediaMapping || rawBookData.media_mapping || optionalMediaMapping;
+      }
       indexBookData(rawBookData);
 
       if (state.flatParagraphs.length === 0) {
