@@ -61,58 +61,58 @@
   const MATHJAX_CDN_URL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
 
   const SIMPLE_LATEX_TEXT_REPLACEMENTS = [
-    [/\AA/g, "Å"],
-    [/\angstrom/g, "Å"],
-    [/\Angstrom/g, "Å"],
-    [/\alpha/g, "α"],
-    [/\beta/g, "β"],
-    [/\gamma/g, "γ"],
-    [/\delta/g, "δ"],
-    [/\epsilon/g, "ε"],
-    [/\varepsilon/g, "ε"],
-    [/\theta/g, "θ"],
-    [/\lambda/g, "λ"],
-    [/\mu/g, "μ"],
-    [/\nu/g, "ν"],
-    [/\xi/g, "ξ"],
-    [/\pi/g, "π"],
-    [/\rho/g, "ρ"],
-    [/\sigma/g, "σ"],
-    [/\tau/g, "τ"],
-    [/\phi/g, "φ"],
-    [/\varphi/g, "φ"],
-    [/\chi/g, "χ"],
-    [/\psi/g, "ψ"],
-    [/\omega/g, "ω"],
-    [/\Gamma/g, "Γ"],
-    [/\Delta/g, "Δ"],
-    [/\Theta/g, "Θ"],
-    [/\Lambda/g, "Λ"],
-    [/\Xi/g, "Ξ"],
-    [/\Pi/g, "Π"],
-    [/\Sigma/g, "Σ"],
-    [/\Phi/g, "Φ"],
-    [/\Psi/g, "Ψ"],
-    [/\Omega/g, "Ω"],
-    [/\cdot/g, "·"],
-    [/\times/g, "×"],
-    [/\pm/g, "±"],
-    [/\mp/g, "∓"],
-    [/\leq?/g, "≤"],
-    [/\geq?/g, "≥"],
-    [/\neq/g, "≠"],
-    [/\approx/g, "≈"],
-    [/\sim/g, "∼"],
-    [/\propto/g, "∝"],
-    [/\infty/g, "∞"],
-    [/\to/g, "→"],
-    [/\rightarrow/g, "→"],
-    [/\leftarrow/g, "←"],
-    [/\leftrightarrow/g, "↔"],
-    [/\mapsto/g, "↦"],
-    [/\degree/g, "°"],
-    [/\ldots/g, "…"],
-    [/\dots/g, "…"],
+    [/\AA\b/g, "Å"],
+    [/\angstrom\b/g, "Å"],
+    [/\Angstrom\b/g, "Å"],
+    [/\alpha\b/g, "α"],
+    [/\beta\b/g, "β"],
+    [/\gamma\b/g, "γ"],
+    [/\delta\b/g, "δ"],
+    [/\epsilon\b/g, "ε"],
+    [/\varepsilon\b/g, "ε"],
+    [/\theta\b/g, "θ"],
+    [/\lambda\b/g, "λ"],
+    [/\mu\b/g, "μ"],
+    [/\nu\b/g, "ν"],
+    [/\xi\b/g, "ξ"],
+    [/\pi\b/g, "π"],
+    [/\rho\b/g, "ρ"],
+    [/\sigma\b/g, "σ"],
+    [/\tau\b/g, "τ"],
+    [/\phi\b/g, "φ"],
+    [/\varphi\b/g, "φ"],
+    [/\chi\b/g, "χ"],
+    [/\psi\b/g, "ψ"],
+    [/\omega\b/g, "ω"],
+    [/\Gamma\b/g, "Γ"],
+    [/\Delta\b/g, "Δ"],
+    [/\Theta\b/g, "Θ"],
+    [/\Lambda\b/g, "Λ"],
+    [/\Xi\b/g, "Ξ"],
+    [/\Pi\b/g, "Π"],
+    [/\Sigma\b/g, "Σ"],
+    [/\Phi\b/g, "Φ"],
+    [/\Psi\b/g, "Ψ"],
+    [/\Omega\b/g, "Ω"],
+    [/\cdot\b/g, "·"],
+    [/\times\b/g, "×"],
+    [/\pm\b/g, "±"],
+    [/\mp\b/g, "∓"],
+    [/\leq?\b/g, "≤"],
+    [/\geq?\b/g, "≥"],
+    [/\neq\b/g, "≠"],
+    [/\approx\b/g, "≈"],
+    [/\sim\b/g, "∼"],
+    [/\propto\b/g, "∝"],
+    [/\infty\b/g, "∞"],
+    [/\to\b/g, "→"],
+    [/\rightarrow\b/g, "→"],
+    [/\leftarrow\b/g, "←"],
+    [/\leftrightarrow\b/g, "↔"],
+    [/\mapsto\b/g, "↦"],
+    [/\degree\b/g, "°"],
+    [/\ldots\b/g, "…"],
+    [/\dots\b/g, "…"],
   ];
 
   const SIMPLE_SUBSCRIPT_MAP = {
@@ -1141,9 +1141,10 @@
       sectionBtn.type = "button";
       sectionBtn.className = "section-link";
       sectionBtn.dataset.sectionId = section.id;
+      const plainSectionTitle = toPlainReadingText(section.title || "");
       sectionBtn.innerHTML = `
         <span class="section-number">${escapeHtml(section.number || section.id || "")}</span>
-        <span class="section-title">${escapeHtml(section.title || "")}</span>
+        <span class="section-title">${escapeHtml(plainSectionTitle)}</span>
       `;
 
       sectionBtn.addEventListener("click", async () => {
@@ -1167,19 +1168,63 @@
   }
 
   function renderParagraphText(paragraph) {
-    const blocks = String(paragraph?.text || "")
+    const readerText = prepareReaderTextForDisplay(getReaderText(paragraph));
+    const blocks = String(readerText || "")
       .split(/\n\s*\n+/)
-      .map((block) => block.replace(/\n+/g, " ").trim())
+      .map((block) => block.trim())
       .filter(Boolean);
+
+    currentParagraphTextEl.innerHTML = "";
 
     if (blocks.length === 0) {
       currentParagraphTextEl.innerHTML = "<p>—</p>";
       return;
     }
 
-    currentParagraphTextEl.innerHTML = blocks
-      .map((block) => `<p>${escapeHtml(block)}</p>`)
-      .join("");
+    const appendParagraphNode = (paragraphEl) => {
+      if (paragraphEl && paragraphEl.childNodes.length > 0) {
+        currentParagraphTextEl.appendChild(paragraphEl);
+      }
+    };
+
+    blocks.forEach((block) => {
+      const segments = splitMathAwareSegments(block);
+      let paragraphEl = document.createElement("p");
+
+      segments.forEach((segment) => {
+        if (!segment.value) return;
+
+        if (segment.type === "displayMath") {
+          appendParagraphNode(paragraphEl);
+          paragraphEl = document.createElement("p");
+
+          const mathBlock = document.createElement("div");
+          mathBlock.className = "reader-display-math";
+          mathBlock.textContent = segment.value.trim();
+          currentParagraphTextEl.appendChild(mathBlock);
+          return;
+        }
+
+        if (segment.type === "inlineMath") {
+          const mathSpan = document.createElement("span");
+          mathSpan.className = "reader-inline-math";
+          mathSpan.textContent = segment.value;
+          paragraphEl.appendChild(mathSpan);
+          return;
+        }
+
+        paragraphEl.appendChild(document.createTextNode(segment.value));
+      });
+
+      appendParagraphNode(paragraphEl);
+    });
+
+    if (!currentParagraphTextEl.childNodes.length) {
+      currentParagraphTextEl.innerHTML = "<p>—</p>";
+      return;
+    }
+
+    void typesetMathInElement(currentParagraphTextEl);
   }
 
   function createMissingMediaCard(message) {
