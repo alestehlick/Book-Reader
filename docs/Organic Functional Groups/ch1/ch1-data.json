@@ -1,0 +1,276 @@
+{
+  "title": "1 — Molecular Orbital Theory",
+  "language": "en",
+  "sections": [
+    {
+      "id": "01.01",
+      "number": "01.01",
+      "title": "The Hydrogen One s Orbital",
+      "paragraphs": [
+        {
+          "id": "01.01-p001",
+          "text": "To begin the story of chemical bonding, we first need a picture of the hydrogen atom.\nHydrogen has one proton and one electron, so the whole problem is to describe how that single electron is distributed in space.\nA wave function gives the underlying amplitude, and its square gives the probability density.\nThe integral of that density over all space must be one, because the electron has to be somewhere.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p002",
+          "text": "For the ground state, the relevant orbital is the one s orbital.\nIt is spherically symmetric around the nucleus.\nThe density is greatest at the center and then falls away rapidly with distance.\nAbout ninety percent of the electron cloud lies within a sphere of radius one point four angstroms.\nBetter than ninety nine percent lies within two angstroms.\nThis state also sits thirteen point six electron volts below a completely separated proton and electron.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p003",
+          "text": "A single contour circle is a convenient sketch, but it hides structure.\nSeveral nested contours show how the density fades gradually rather than stopping sharply.\nAn electron cloud picture says the same thing in a more statistical language.\nIt imagines many repeated detections of the electron, so that dense regions correspond to high probability.\nThat is why chemists often speak of electron density.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Three complementary pictures of the hydrogen \\(1s\\) orbital: a single contour, a richer contour family, and a cloud picture. The learner should notice that each picture expresses the same probability distribution in a different visual language."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p004",
+          "text": "Because the orbital is spherical, one can ask two sharper questions.\nFirst, what fraction of the cloud lies outside a sphere of radius r.\nSecond, what is the probability of finding the electron between radius r and radius r plus d r.\nThe second question gives the radial density.\nIt peaks at zero point five two nine angstroms, the Bohr radius.\nSo even though the wave function itself is largest at the nucleus, the chance of finding the electron exactly there is tiny.\nThe van der Waals radius, by contrast, is an empirical size taken from molecular structures rather than a fundamental radius of the atom.\nThe stage is now set for the molecule, where two such orbitals are allowed to meet.",
+          "visuals": [
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Two radial plots for the hydrogen \\(1s\\) state. One shows how much charge lies outside a sphere of radius \\(r\\), and the other shows where the radial probability density is greatest, namely near the Bohr radius."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.02",
+      "number": "01.02",
+      "title": "The H Two Molecule",
+      "paragraphs": [
+        {
+          "id": "01.02-p001",
+          "text": "When two hydrogen atoms approach, the task changes.\nWe no longer describe one electron around one nucleus.\nWe need a molecular orbital spread across both centers.\nThe first approximation is to build that orbital from the familiar one s orbitals of the separated atoms.\nSo we write the molecular orbital as psi equals c one phi one plus c two phi two.\nThe coefficients c one and c two tell us how much each atomic orbital contributes.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-1.1",
+              "label": "1.1",
+              "latex": "\\psi = c_1\\phi_1 + c_2\\phi_2",
+              "spoken": "Equation 1 point 1 writes the molecular orbital as a linear combination of the two hydrogen one s orbitals.",
+              "note": "This is the basic LCAO ansatz. The coefficients measure how much each atomic orbital contributes to the molecular orbital."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p002",
+          "text": "The physical density comes from squaring this combination.\nWhen the square is expanded, we do not get only the two separate atomic densities.\nWe also get a cross term proportional to c one c two phi one phi two.\nThat cross term is the heart of the matter.\nIf c one and c two have the same sign, the cross term adds density between the nuclei.\nIf they have opposite signs, it subtracts density there.\nSo the algebra already contains the difference between bonding and antibonding.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-1.2",
+              "label": "1.2",
+              "latex": "\\psi^2 = \\left(c_1\\phi_1 + c_2\\phi_2\\right)^2 = (c_1\\phi_1)^2 + (c_2\\phi_2)^2 + 2c_1c_2\\phi_1\\phi_2",
+              "spoken": "Equation 1 point 2 shows that squaring the trial orbital produces two atomic density terms and one interference term.",
+              "note": "The cross term is the decisive part. Its sign determines whether density is built up or depleted in the overlap region."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p003",
+          "text": "This is why two combinations appear.\nThe same sign combination is the bonding orbital.\nThe opposite sign combination is the antibonding orbital.\nIn the bonding case, the density between the nuclei is enhanced.\nThat extra negative charge helps hold the two positive nuclei together.\nIn the antibonding case, a node appears between the nuclei.\nAcross that nodal plane the wave function changes sign, and the density between the nuclei is depleted.\nThat is why the antibonding orbital would push the nuclei apart if electrons occupied it.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The bonding and antibonding molecular orbitals obtained by combining two hydrogen \\(1s\\) orbitals. The crucial contrast is whether electron density is built up or removed between the nuclei, which in turn lowers or raises the energy."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p004",
+          "text": "To make this more quantitative, one introduces the overlap integral S one two.\nIt is the integral of phi one times phi two over all space.\nIt measures how much the two atomic orbitals occupy the same region of space.\nWhen the atoms are far apart, this overlap is essentially zero.\nAs the atoms move together, it increases.\nFor two identical one s orbitals, it would reach one only at complete superposition.",
+          "visuals": [
+            {
+              "id": "fig-1.4",
+              "label": "Figure 1.4",
+              "kind": "figure",
+              "caption": "The overlap integral \\(S\\) for two hydrogen \\(1s\\) orbitals as a function of internuclear distance. The main lesson is that interaction grows continuously as the orbitals interpenetrate."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.3",
+              "label": "1.3",
+              "latex": "S_{12} = \\int \\phi_1\\phi_2\\,d\\tau",
+              "spoken": "Equation 1 point 3 defines the overlap integral, which measures how much the two orbitals occupy the same region of space.",
+              "note": "Greater overlap means stronger coupling between the two centers."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p005",
+          "text": "Now we want the approximate orbital energies.\nThe starting point is the one electron Schrodinger equation, together with the trial orbital psi equals c one phi one plus c two phi two.\nThe idea is not to solve the two center problem exactly.\nInstead, we assume from the start that the molecular orbital lies in the span of the two hydrogen basis functions.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p006",
+          "text": "The next step is to substitute that trial form into the Schrodinger equation.\nThen we multiply once by phi one and integrate over all space.\nThen we multiply once by phi two and integrate over all space.\nThat produces two linear equations for c one and c two.\nThe diagonal Hamiltonian terms are equal by symmetry, and we call that common value alpha.\nThe off diagonal Hamiltonian terms are also equal, and we call that common value beta.\nThe overlap of the two basis functions is S.\nSo the two equations become alpha minus E times c one, plus beta minus E S times c two, equals zero.\nAnd beta minus E S times c one, plus alpha minus E times c two, equals zero.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p007",
+          "text": "A nonzero orbital requires a nonzero pair of coefficients.\nSo the determinant of that two by two system must vanish.\nThat condition gives alpha minus E all squared, minus beta minus E S all squared, equals zero.\nSo alpha minus E must equal plus or minus beta minus E S.\nThe entire energy splitting is now compressed into those two signs.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p008",
+          "text": "If we take the plus sign, the result is the antibonding root.\nA little algebra gives E times one minus S equals alpha minus beta.\nSo the antibonding energy is alpha minus beta divided by one minus S.\nIf we take the minus sign, we get the bonding root.\nThen E times one plus S equals alpha plus beta.\nSo the bonding energy is alpha plus beta divided by one plus S.\nThe numerators come from Hamiltonian matrix elements.\nThe denominators come from overlap and normalization.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-1.4",
+              "label": "1.4",
+              "latex": "E_{\\text{bonding}} = \\frac{\\alpha+\\beta}{1+S}",
+              "spoken": "Equation 1 point 4 gives the bonding orbital energy.",
+              "note": "The bonding root comes from the in phase combination. The denominator shows that overlap affects normalization as well as coupling."
+            },
+            {
+              "id": "eq-1.5",
+              "label": "1.5",
+              "latex": "E_{\\text{antibonding}} = \\frac{\\alpha-\\beta}{1-S}",
+              "spoken": "Equation 1 point 5 gives the antibonding orbital energy.",
+              "note": "The antibonding root comes from the out of phase combination. Because the denominator is smaller, the antibonding level is pushed upward more strongly."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p009",
+          "text": "Alpha is the Coulomb integral.\nIt represents the energy scale of keeping the electron on one center.\nBeta is the resonance integral, though delocalization is the better intuition here.\nIn integral language, alpha is phi one H phi one integrated over all space.\nBeta is phi one H phi two integrated over all space.\nSo alpha belongs to the isolated center picture, while beta belongs to the coupling between centers.\nIn this hydrogen problem, beta is negative.\nThat single sign lowers the bonding energy and raises the antibonding energy.\nA large part of the qualitative chemistry follows from that fact.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-1.6",
+              "label": "1.6",
+              "latex": "\\alpha = \\int \\phi_1 H \\phi_1\\,d\\tau",
+              "spoken": "Equation 1 point 6 defines the Coulomb integral alpha.",
+              "note": "Alpha measures the one center energy scale for the electron."
+            },
+            {
+              "id": "eq-1.7",
+              "label": "1.7",
+              "latex": "\\beta = \\int \\phi_1 H \\phi_2\\,d\\tau",
+              "spoken": "Equation 1 point 7 defines the resonance integral beta.",
+              "note": "Beta measures the energetic effect of coupling the two centers. In this hydrogen problem it is negative, which stabilizes the bonding combination and destabilizes the antibonding one."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p010",
+          "text": "These one electron formulas are only part of the total story.\nAs the atoms move together, the electronic energy of a filled bonding orbital falls.\nAt the same time, the two nuclei repel one another more and more strongly.\nThe sum of those two effects produces the familiar energy well with a minimum near the bond length.\nIf the antibonding orbital were filled instead, the electronic term would not compensate the nuclear repulsion well enough.\nThe total energy would then rise as the atoms are pushed together.",
+          "visuals": [
+            {
+              "id": "fig-1.5",
+              "label": "Figure 1.5",
+              "kind": "figure",
+              "caption": "Electronic attraction, nuclear repulsion, and total energy as functions of the H-H distance. A stable bond appears only when electronic stabilization can more than offset nuclear repulsion over some range of distances."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.4",
+              "label": "1.4",
+              "latex": "E_{\\text{bonding}} = \\frac{\\alpha+\\beta}{1+S}",
+              "spoken": "Equation 1 point 4 supplies the electronic contribution for the bonding case.",
+              "note": "As the atoms approach, the bonding electronic term falls and competes with nuclear repulsion."
+            },
+            {
+              "id": "eq-1.5",
+              "label": "1.5",
+              "latex": "E_{\\text{antibonding}} = \\frac{\\alpha-\\beta}{1-S}",
+              "spoken": "Equation 1 point 5 supplies the electronic contribution for the antibonding case.",
+              "note": "With antibonding occupation the electronic term does not create a stable minimum against nuclear repulsion."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p011",
+          "text": "The formulas also explain why the antibonding orbital rises more than the bonding orbital falls.\nThe denominators are one plus S and one minus S.\nSince S is positive, the antibonding denominator is smaller, so the upward shift is amplified.\nThat asymmetry already makes helium pairing unpromising.\nTwo helium atoms would place two electrons in the bonding orbital and two in the antibonding orbital.\nBecause the antibonding penalty is larger than the bonding gain, no stable helium molecule results in this simple picture.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p012",
+          "text": "There is another correction beyond this first sketch.\nPutting a second electron into the same bonding orbital does not simply double the stabilization.\nThe two electrons have opposite spin, so they may share the orbital, but they still repel one another.\nReal electrons avoid each other dynamically more than a crude average picture allows.\nThat extra subtlety is called electron correlation.\nWhen it is built into a more careful calculation, one often speaks of configuration interaction.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p013",
+          "text": "The later figures help one see what the simple cartoons hide.\nIn the bonding orbital, the density is drawn inward toward the region between the nuclei.\nFurther out, the contours form an oval envelope around the pair of atoms.\nIn the antibonding orbital, the outer density is pushed to the far sides of the nuclei.\nSo the same electron distribution that fails to bind the atoms between them begins to pull them apart from the outside.",
+          "visuals": [
+            {
+              "id": "fig-1.6",
+              "label": "Figure 1.6",
+              "kind": "figure",
+              "caption": "Contour plots of the bonding and antibonding molecular orbitals of \\( \\mathrm{H}_2 \\). The main point is the contrast between inward drawn density in the bonding case and outward displaced density in the antibonding case."
+            },
+            {
+              "id": "fig-1.7",
+              "label": "Figure 1.7",
+              "kind": "figure",
+              "caption": "Plots of \\( \\psi^2 \\) for the \\( \\mathrm{H}_2 \\) molecular orbitals along the internuclear axis, compared with the isolated atomic densities. They show directly how bonding increases density in the middle, whereas antibonding removes it."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p014",
+          "text": "If one plots the square of the wave function along the internuclear axis, the comparison becomes even sharper.\nIn the bonding case, the density is slightly contracted and increased in the middle relative to a mere sum of isolated atomic densities.\nIn the antibonding case, the density is reduced in the middle and displaced outward.\nThat makes the word bonding almost geometric.\nIt means that probability has been redistributed into the region where it can hold the nuclei together.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p015",
+          "text": "Finally, the coefficients themselves can be estimated.\nFor a homonuclear diatomic, symmetry requires equal magnitudes on the two atoms.\nIf the bonding orbital is normalized and the overlap correction is temporarily ignored, each coefficient has magnitude one over root two.\nThat is about zero point seven zero seven.\nThe antibonding orbital has the same magnitudes but opposite signs.\nThis picture is not exact, because proper normalization includes the overlap S.\nBut it is accurate enough to show why the antibonding orbital is a little more strongly antibonding than the bonding orbital is bonding.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sectionCount": 2,
+    "paragraphCount": 19,
+    "visualCount": 7,
+    "equationCount": 9
+  }
+}
