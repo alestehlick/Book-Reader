@@ -1128,28 +1128,3 @@ body.sidebar-collapsed .main-panel {
     height: 32px;
   }
 }
-
-
-.reader-inline-math {
-  display: inline;
-  white-space: normal;
-}
-
-.reader-display-math {
-  margin: 0.8em 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.reader-display-math mjx-container,
-.current-paragraph-text mjx-container {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.current-paragraph-text mjx-container[display="true"] {
-  margin: 0.8em auto;
-}
