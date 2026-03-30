@@ -285,12 +285,564 @@ const BOOK_DATA = {
           "videos": []
         }
       ]
+    },
+    {
+      "id": "01.03",
+      "number": "01.03",
+      "title": "Three and Four Hydrogen Assemblies",
+      "paragraphs": [
+        {
+          "id": "01.03-p001",
+          "text": "Once a third hydrogen atom is brought into the picture, the two-center story is no longer enough. For triangular H₃ one convenient way to proceed is to take an H₂ fragment first, with its bonding \\(\\sigma\\) and antibonding \\(\\sigma^*\\) orbitals, and then ask how the 1s orbital on the third atom can mix with those two molecular orbitals. This is the first moment at which symmetry ceases to be a decorative afterthought and becomes an actual selection rule. With three centers present, one cannot simply allow every orbital to interact with every other. Most apparent possibilities are forbidden by symmetry before one writes down any serious numerical calculation.",
+          "visuals": [
+            {
+              "id": "fig-1.8",
+              "label": "Figure 1.8",
+              "kind": "figure",
+              "caption": "Triangular H₃ is built by combining a third hydrogen 1s orbital with the bonding and antibonding orbitals of an H₂ fragment."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p002",
+          "text": "The reason is straightforward. If a molecular framework has a symmetry plane, then an orbital may be either symmetric or antisymmetric with respect to reflection in that plane. In the triangular arrangement of Fig. 1.8, the nontrivial plane is the yz plane. The H₂ bonding orbital \\(\\sigma\\) and the third hydrogen 1s orbital are both symmetric with respect to that reflection, whereas the antibonding orbital \\(\\sigma^*\\) is antisymmetric. When one evaluates a coupling matrix element, the integral vanishes whenever the integrand changes sign under the symmetry operation. In compact form,\n\\[\n\\langle \\phi_a | H | \\phi_b \\rangle = \\int \\phi_a\\, H\\, \\phi_b \\, d\\tau = 0\n\\]\nif one factor is symmetric and the other antisymmetric with respect to the same symmetry element. This is why only orbitals of the same symmetry can mix.",
+          "visuals": [
+            {
+              "id": "fig-1.8",
+              "label": "Figure 1.8",
+              "kind": "figure",
+              "caption": "The yz mirror plane separates the orbitals into symmetric and antisymmetric types, and only like symmetry types can couple."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p003",
+          "text": "Accordingly, the symmetric pair — the H₂ bonding orbital and the third 1s orbital — combine to produce two new orbitals, labelled \\(\\sigma_1\\) and \\(\\sigma_2^*\\) in Fig. 1.8. The lower one is bonding because all three contributions cooperate in phase, so electronic density is built up in the regions that hold the nuclei together. The upper one is antibonding overall: it contains a node that frustrates one part of the three-center bonding pattern, leaving two antibonding interactions against only one bonding interaction. The antisymmetric \\(\\sigma^*\\) orbital of the original H₂ fragment remains essentially unchanged, not because nature has forgotten it, but because there is nothing of the correct symmetry available for it to mix with.",
+          "visuals": [
+            {
+              "id": "fig-1.8",
+              "label": "Figure 1.8",
+              "kind": "figure",
+              "caption": "The symmetric pair produces a lower three-center bonding orbital and a higher antibonding one, while the antisymmetric H₂ orbital remains essentially nonbonding."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p004",
+          "text": "Only after the orbitals are constructed is it sensible to place electrons into them. That is the content of the aufbau viewpoint used here: first determine the available molecular orbitals, then fill them from low to high energy. With two electrons, as in \\(\\mathrm{H}_3^+\\), both electrons enter \\(\\sigma_1\\), and the three-center system is electronically stabilized. With three electrons, as in neutral \\(\\mathrm{H}_3^\\bullet\\), the third electron must enter an antibonding level, but the net result is still stabilizing because the lower bonding orbital contains two electrons while the higher level contains only one. With four electrons, as in \\(\\mathrm{H}_3^-\\), the antibonding contribution outweighs the bonding gain, and the assembly is no longer electronically favorable.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p005",
+          "text": "The same symmetry logic survives if the three atoms are arranged linearly instead of triangularly. Figure 1.9 shows that the ordering remains similar, because the symmetry labels do not change, but the quantitative balance does. In the triangular case the two lower hydrogen atoms also overlap with each other, so both the bonding and antibonding effects are stronger. In the linear case that side-by-side overlap is removed. The lowest orbital is therefore less strongly stabilized, the upper antibonding orbital is less strongly destabilized, and the untouched antisymmetric orbital moves closer to the energy of an isolated 1s function. Geometry does not abolish the symmetry argument; it modulates the strength of the allowed interactions.",
+          "visuals": [
+            {
+              "id": "fig-1.9",
+              "label": "Figure 1.9",
+              "kind": "figure",
+              "caption": "Linear H₃ keeps the same symmetry logic as triangular H₃, but weaker overlap changes the size of the bonding and antibonding splittings."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p006",
+          "text": "Four hydrogen atoms make the same lesson even sharper. In the tetrahedral H₄ arrangement of Fig. 1.10, it is convenient to start from two H₂ fragments at right angles to one another and classify their orbitals with respect to the two mirror planes xz and yz. The bonding orbital on one fragment is symmetric with respect to both planes, so it carries the label SS. The corresponding antibonding orbital is symmetric with respect to one plane and antisymmetric with respect to the other, giving SA or AS depending on orientation. Only orbitals with the same double symmetry label can interact. As a result, the two SS bonding orbitals mix with each other, while the two antibonding fragment orbitals of mismatched symmetry do not.",
+          "visuals": [
+            {
+              "id": "fig-1.10",
+              "label": "Figure 1.10",
+              "kind": "figure",
+              "caption": "Tetrahedral H₄ is analyzed by combining two H₂ fragments and classifying their orbitals by double symmetry labels with respect to the xz and yz planes."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p007",
+          "text": "This gives one lower SS combination and one higher SS combination, often written \\(\\sigma_1\\) and \\(\\sigma_2^*\\), together with two largely unchanged antibonding fragment orbitals. Because the weight is now spread over four centers, equal-amplitude coefficients in the fully delocalized combination are of order \\(1/2\\) rather than \\(1/\\sqrt{2}\\). The normalization condition\n\\[\n\\sum_i c_i^2 = 1\n\\]\nmakes that inevitable. The higher SS combination contains more antibonding contacts than bonding ones, but each individual contact is weaker because the coefficients are smaller. That is why its energy can sit near the energies of the unchanged antibonding fragment orbitals instead of shooting far above them.",
+          "visuals": [
+            {
+              "id": "fig-1.10",
+              "label": "Figure 1.10",
+              "kind": "figure",
+              "caption": "The delocalized four-center combinations carry smaller coefficients on each atom, so even the higher SS combination is not destabilized as violently as a two-center antibonding orbital."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.03-p008",
+          "text": "The decisive chemical point is what happens when four electrons occupy the system. Each H₂ fragment already contributes a filled bonding orbital. When two filled bonding orbitals are brought together, the interaction produces one lower and one higher combination, but both are occupied. The stabilization gained by the lower one is then offset, and more than offset, by the destabilization of the higher one. Hence two H₂ molecules do not merge into a stable H₄ molecule. This is not a curious accident of one geometry. It is the elementary prototype of a much broader truth: when closed-shell molecules approach one another, filled-filled orbital interactions are usually repulsive. Chemical reaction requires some way of overcoming that repulsion, and a large part of activation energy is nothing other than the energetic price of forcing molecules close enough for new interactions to replace the old ones.",
+          "visuals": [
+            {
+              "id": "fig-1.10",
+              "label": "Figure 1.10",
+              "kind": "figure",
+              "caption": "When both fragment bonding orbitals are filled, the interaction of the two H₂ molecules is overall repulsive rather than stabilizing."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.04",
+      "number": "01.04",
+      "title": "Carbon Atomic Orbitals and Orbital Overlap",
+      "paragraphs": [
+        {
+          "id": "01.04-p001",
+          "text": "To move from hydrogen to ordinary organic bonding, one must first understand the valence orbitals of carbon. The carbon 1s orbital is too low in energy and too tightly contracted to contribute meaningfully to normal covalent bonding, so it functions as a core shell whose main role is to shield the nucleus. The orbitals that matter chemically are the valence 2s and 2p orbitals. The 2s orbital is still spherically symmetric, but unlike hydrogen 1s it contains a spherical node: the radial wavefunction changes sign once as one moves outward from the nucleus. Even so, the inner lobe is so compact that chemically important overlap comes almost entirely from the outer lobe, which is why the 2s orbital is often drawn as a simple sphere in practical orbital diagrams. Figure 1.11 shows the more honest wavefunction and contour picture behind that simplification.",
+          "visuals": [
+            {
+              "id": "fig-1.11",
+              "label": "Figure 1.11",
+              "kind": "figure",
+              "caption": "Carbon 2s has a radial node, but chemically relevant overlap comes mainly from the outer lobe, so the orbital is often drawn as a simple sphere."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p002",
+          "text": "Its energy, about \\(-19.5\\) eV in the discussion here, is markedly lower than that of hydrogen 1s. The deeper energy reflects the stronger pull of a six-proton nucleus, partially softened by shielding from the other electrons and by the fact that valence electrons spend much of their time farther from the nucleus. Slater-style effective-charge reasoning makes this plausible without pretending to be exact: the core 1s electrons screen strongly, the other valence electrons screen more weakly, and the resulting effective nuclear charge still binds the 2s electrons much more tightly than hydrogen binds its single 1s electron.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p003",
+          "text": "The three 2p orbitals are altogether different in shape. They point along three mutually perpendicular axes and each contains a nodal plane passing through the nucleus. Figure 1.12 shows the \\(2p_x\\) orbital explicitly: two lobes of opposite sign extend on either side of the nucleus, and the wavefunction crosses through zero at the center. The three 2p orbitals are higher in energy than 2s, here about \\(-10.7\\) eV, because they keep their electron density on average farther from the nucleus. Yet if one squares all three p orbitals and adds the resulting densities, the total has spherical symmetry again. The directional character belongs to each individual orbital, not to the sum of a filled p shell.",
+          "visuals": [
+            {
+              "id": "fig-1.12",
+              "label": "Figure 1.12",
+              "kind": "figure",
+              "caption": "Each carbon 2p orbital has two lobes of opposite sign separated by a nodal plane, and the three together point along mutually perpendicular axes."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p004",
+          "text": "Bonding to carbon can therefore arise in three basic ways: s-s overlap, s-p overlap, and p-p overlap. The first is already familiar from H₂. The new subtleties lie in the second and third, because the sign structure of p orbitals makes the overlap strongly dependent on geometry. When a hydrogen 1s orbital approaches a carbon p orbital head-on along the p axis, with the near lobe of matching sign, the overlap integral grows as the orbitals begin to interpenetrate, reaches a maximum at a finite separation, and then falls again if the nuclei are forced too close. The fall is not mysterious. Once the hydrogen 1s function begins to overlap appreciably with the far lobe of opposite sign, bonding and antibonding contributions cancel. Figure 1.13a makes this cancellation visible.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Head-on s-p overlap first grows, then weakens when overlap with the far lobe of opposite sign begins to cancel the bonding contribution."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p005",
+          "text": "The same logic governs head-on p-p overlap. With matching signs on the approaching lobes, the overlap first increases as the lobes meet, reaches a maximum at an appropriate bond length, and then decreases when the front-lobe overlap is increasingly cancelled by overlap involving the back lobes. Figure 1.13b shows that even a seemingly simple \\(\\sigma\\) overlap between two p orbitals is not monotone all the way to superposition. A p orbital is not a little arrow that simply \"points and bonds.\" Its positive and negative lobes impose a geometry-sensitive interference pattern, and the overlap integral records that pattern quantitatively.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Head-on p-p overlap also has an optimum distance: too much interpenetration forces cancellation between positive and negative lobes."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.04-p006",
+          "text": "Imperfect alignment weakens the interaction for the same structural reason. Bonding is strongest when extra electron density is built up directly between the nuclei, because that is the position from which the negative charge best screens nuclear repulsion. If the overlap region is off-axis, the density increase is both smaller and less well placed. For a hydrogen 1s orbital approaching a carbon 2p orbital, the overlap varies as the cosine of the angle of approach:\n\\[\nS \\propto \\cos\\theta.\n\\]\nAt \\(\\theta = 0^\\circ\\) the approach is perfectly head-on and the overlap is maximal; at \\(90^\\circ\\) the hydrogen lies in the nodal plane and the overlap vanishes. This is the first rigorous glimpse of why orbital orientation matters so much in organic structure. Directionality is not an extra rule pasted onto bonding. It is already built into the wavefunctions.",
+          "visuals": [
+            {
+              "id": "fig-1.13",
+              "label": "Figure 1.13",
+              "kind": "figure",
+              "caption": "Tilting the approach weakens overlap, and for a hydrogen 1s orbital approaching a carbon 2p orbital the strength falls with the cosine of the approach angle."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.05",
+      "number": "01.05",
+      "title": "Methane",
+      "paragraphs": [
+        {
+          "id": "01.05-p001",
+          "text": "Methane is the first carbon compound in which all these pieces lock together. There are eight valence electrons altogether, four from carbon and one from each hydrogen, so four filled bonding molecular orbitals are required. The hydrogen atoms repel one another, and the arrangement that separates them most effectively is the tetrahedral one. That geometry is not chosen merely to keep the hydrogens apart. It also allows symmetry-adapted combinations of the four hydrogen 1s orbitals to match the available carbon valence orbitals in just the right way, so that all four electron pairs can be accommodated in bonding orbitals.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p002",
+          "text": "A useful route is to begin with the symmetry-adapted combinations already suggested by tetrahedral H₄. Relative to the xz and yz mirror planes used in Fig. 1.14, the four hydrogen combinations have symmetries SS, SS, SA, and AS. The carbon valence orbitals provide exactly the needed partners: the 2s orbital is SS, and the three 2p orbitals furnish one orbital of each of the remaining symmetry types together with an additional SS combination. The rule is the same as before and is now decisive: only orbitals of the same symmetry can mix. Methane bonding is therefore not assembled by pairing each hydrogen with one private carbon orbital. It is assembled by matching whole symmetry types across the entire molecule.",
+          "visuals": [
+            {
+              "id": "fig-1.14",
+              "label": "Figure 1.14",
+              "kind": "figure",
+              "caption": "Methane is assembled by matching the symmetry-adapted hydrogen combinations with carbon 2s and 2p orbitals of the same symmetry type."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p003",
+          "text": "One subtlety matters. Although there are two SS orbitals on the hydrogen side and two on the carbon side, not every formal SS-SS pairing leads to real interaction. The overlap between carbon 2s and the higher hydrogen SS combination \\(\\sigma_2^*\\) is zero, because positive overlap in one region is cancelled by negative overlap in another. Symmetry allows the interaction in principle, but the spatial pattern kills it in practice. What survives is four genuine bonding combinations and, higher in energy, four corresponding antibonding combinations. One of the bonding orbitals lies lower than the other three because it draws more strongly on the lower-energy carbon 2s orbital. The other three are equal in energy because they arise from symmetry-equivalent interactions involving the three carbon 2p orbitals. Figure 1.14 lays out this structure cleanly.",
+          "visuals": [
+            {
+              "id": "fig-1.14",
+              "label": "Figure 1.14",
+              "kind": "figure",
+              "caption": "Four bonding methane orbitals survive after symmetry matching and cancellation are taken into account; the corresponding antibonding set lies higher in energy."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p004",
+          "text": "This picture also corrects a very common oversimplification. No single filled molecular orbital is \"the bond\" to one particular hydrogen. Each C-H bond is supported by several molecular orbitals at once. Some hydrogen atoms receive density from the totally symmetric low-lying orbital and from one or two of the p-derived orbitals, while a different p-derived orbital may vanish on them because they lie in one of its nodal planes. Thus bonding is distributed across the whole set of occupied orbitals. Localized bond language is often convenient later, but the underlying molecular-orbital description is collective from the outset.",
+          "visuals": [
+            {
+              "id": "fig-1.14",
+              "label": "Figure 1.14",
+              "kind": "figure",
+              "caption": "Each C-H bond is supported by several occupied molecular orbitals; no single orbital belongs exclusively to one hydrogen atom."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.05-p005",
+          "text": "Figure 1.15 gives the more realistic contour picture. The four occupied methane orbitals are shown as surfaces of constant wavefunction, with shading marking sign. These are not little sticks connecting carbon to hydrogen. They are extended wave patterns whose shapes still betray their ancestry: one strongly s-like totally symmetric orbital and three mutually related orbitals with clear p character. The conventional drawings of Fig. 1.14 are therefore useful for bookkeeping which atomic orbitals contribute, while the contour surfaces show more honestly what the resulting electron distribution looks like in space. Between them one learns the right lesson: methane is held together by symmetry-matched delocalized orbitals built from carbon 2s and 2p functions together with the four hydrogen 1s functions.",
+          "visuals": [
+            {
+              "id": "fig-1.15",
+              "label": "Figure 1.15",
+              "kind": "figure",
+              "caption": "Contour surfaces for the four occupied methane orbitals reveal their extended wave character more honestly than stick-like conventional sketches."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.06",
+      "number": "01.06",
+      "title": "Methylene",
+      "paragraphs": [
+        {
+          "id": "01.06-p001",
+          "text": "Methylene, \\(\\mathrm{CH_2}\\), is a useful test case because it is smaller than methane and yet more revealing. It is not a quiet closed-shell molecule like methane, but a reactive intermediate, and its lowest-energy structure is bent rather than linear. The reason is already visible at the level of orbital interaction. One may begin with an \\(\\mathrm{H_2}\\) fragment on one side and the valence orbitals of carbon on the other, as in Figure 1.16. The hydrogen fragment contributes a bonding orbital \\(\\sigma_{\\mathrm{HH}}\\) and an antibonding orbital \\(\\sigma_{\\mathrm{HH}}^*\\). Carbon contributes \\(2s\\), \\(2p_x\\), \\(2p_y\\), and \\(2p_z\\). The important step is to classify all of them with respect to the symmetry elements of the bent \\(\\mathrm{H\\!-\\!C\\!-\\!H}\\) arrangement.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "Methylene is analyzed by combining the bonding and antibonding orbitals of an H₂ fragment with the valence orbitals of carbon."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p002",
+          "text": "There are three such symmetry operations in the chosen orientation: the \\(xz\\) plane containing all three atoms, the \\(yz\\) plane bisecting the molecule and exchanging the two hydrogens, and a twofold rotation about the \\(z\\) axis. With respect to these, \\(\\sigma_{\\mathrm{HH}}\\) is of \\(SSS\\) type and \\(\\sigma_{\\mathrm{HH}}^*\\) is of \\(SAA\\) type. On carbon, the \\(2s\\) and \\(2p_z\\) orbitals are both \\(SSS\\), \\(2p_x\\) is \\(SAA\\), and \\(2p_y\\) is \\(ASA\\). The selection rule is therefore immediate. The antibonding hydrogen combination can mix only with \\(2p_x\\). The \\(2p_y\\) orbital has no partner of matching symmetry and remains nonbonding. The more interesting sector is the \\(SSS\\) one, because three orbitals now share the same symmetry and must be combined together rather than in pairs.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "The bent H–C–H geometry is sorted by three symmetry operations, and those symmetry labels decide which orbitals may mix."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p003",
+          "text": "The corresponding linear combination is\n\\[\n\\psi = c_1 \\phi_1 + c_2 \\phi_2 + c_3 \\phi_3,\n\\]\nwhich is Equation 1.8 in substance. Here the three basis functions may be taken as \\(\\sigma_{\\mathrm{HH}}\\), carbon \\(2s\\), and carbon \\(2p_z\\). Symmetry forces \\(|c_1| = |c_3|\\) only when the outer contributions are symmetry-related; the central carbon coefficient may differ. Because the carbon \\(2s\\) orbital begins lower in energy than the hydrogen combination, the lowest orbital that emerges from this three-way mixing is largely s-like and is labelled \\(\\sigma_s\\) in Figures 1.16 and 1.17. The next one, \\(\\sigma_z\\), carries much more \\(2p_z\\) character: it bulges above and below carbon in the plane of the molecule and contributes decisively to the bent geometry. A third orbital, higher in energy and antibonding overall, contains the same ingredients out of phase and is the price paid for allowing the lower two to form.",
+          "visuals": [
+            {
+              "id": "fig-1.17",
+              "label": "Figure 1.17",
+              "kind": "figure",
+              "caption": "Three orbitals of the same symmetry combine to give a low mostly s-like orbital, a higher p-rich bonding orbital, and a still higher antibonding partner."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-1.8",
+              "label": "1.8",
+              "latex": "\\psi = c_1 \\phi_1 + c_2 \\phi_2 + c_3 \\phi_3",
+              "spoken": "",
+              "note": "Equation 1.8 is the three-term LCAO ansatz used when three basis functions of the same symmetry are allowed to interact."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.06-p004",
+          "text": "The second allowed interaction is simpler. The \\(SAA\\) hydrogen orbital \\(\\sigma_{\\mathrm{HH}}^*\\) combines with carbon \\(2p_x\\) to form a bonding orbital \\(\\sigma_x\\) and a corresponding antibonding partner above it. Meanwhile \\(2p_y\\), with no symmetry match at all, stays behind as an essentially pure carbon p orbital. In the lowest state of methylene, \\(\\sigma_s\\), \\(\\sigma_z\\), and \\(\\sigma_x\\) are occupied, while the unused \\(2p_y\\) orbital is left empty. That empty nonbonding p orbital is a major part of what makes methylene chemically eager to react: it is lower than the true antibonding orbitals, yet it is still vacant.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "The antibonding H₂ fragment couples with carbon 2pₓ, while carbon 2pᵧ has no symmetry partner and remains nonbonding."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.06-p005",
+          "text": "The bent geometry follows from this pattern. If the molecule were forced into a linear arrangement, the overlap responsible for \\(\\sigma_x\\) would indeed improve because the hydrogen combination and carbon \\(2p_x\\) would approach in a more nearly head-on way. But the \\(\\sigma_z\\) orbital would then lose its bonding role altogether, because the hydrogens would lie in the nodal plane of the relevant p orbital. One gains in one channel and loses in another, and the loss is greater. The bent structure keeps both types of stabilization alive. Thus methylene is not bent because carbon has mysteriously decided to \"rehybridize\"; it is bent because the available symmetry-allowed combinations lower the electronic energy more effectively in that geometry.",
+          "visuals": [
+            {
+              "id": "fig-1.16",
+              "label": "Figure 1.16",
+              "kind": "figure",
+              "caption": "The bent structure wins because it preserves more than one bonding channel; forcing methylene linear would strengthen one interaction but destroy another."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.07",
+      "number": "01.07",
+      "title": "Hybridisation as a Chosen Description",
+      "paragraphs": [
+        {
+          "id": "01.07-p001",
+          "text": "The delocalized molecular-orbital account is more honest, but it has one inconvenience: in methane or methylene there is no single occupied molecular orbital that can simply be pointed to and called one particular C—H bond. Hybridisation is a remedy for that inconvenience. It does not introduce new physics. It reorganizes the same carbon \\(2s\\) and \\(2p\\) functions into new linear combinations chosen for geometric usefulness before those combinations are allowed to overlap with neighboring atoms. The move is therefore representational. One trades a delocalized but direct picture for a more localized and more chemically intuitive one.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p002",
+          "text": "The coefficients in a hybrid orbital are fixed by normalization and by geometry. For an \\(sp\\) pair one writes\n\\[\nh_{\\pm} = \\frac{1}{\\sqrt{2}}(2s \\pm 2p_x),\n\\]\nso that the squares of the coefficients add to 1 and the two hybrids point in opposite directions. For trigonal bonding one can form three \\(sp^2\\) hybrids; one convenient example is\n\\[\nh = \\sqrt{\\frac13}\\,2s + \\sqrt{\\frac12}\\,2p_x + \\sqrt{\\frac16}\\,2p_z,\n\\]\nwith two analogous companions rotated through \\(120^\\circ\\). For tetrahedral bonding the coefficients are adjusted again, for example\n\\[\nh = \\frac12\\,2s + \\frac{1}{\\sqrt2}\\,2p_x + \\frac12\\,2p_z,\n\\]\ntogether with three related combinations. In every case the point is the same: the hybrid is not discovered inside the atom as a pre-existing object. It is constructed as a normalized linear combination suited to a chosen bonding pattern.",
+          "visuals": [
+            {
+              "id": "fig-1.18",
+              "label": "Figure 1.18",
+              "kind": "figure",
+              "caption": "sp, sp², and sp³ hybrids are constructed as normalized linear combinations chosen to point in geometrically useful directions."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p003",
+          "text": "Figure 1.18 lays out these combinations, but Figure 1.19 is just as important because it corrects the usual cartoon. The conventional hybrid is drawn as a thin large lobe with a tiny back lobe. The actual wavefunction is subtler. Because the carbon 2s orbital already contains an inner radial structure, the nucleus sits inside the back region of the hybrid, and a little of the forward lobe wraps behind the nucleus. The hybrid is therefore fatter and less one-sided than classroom sketches suggest. The sketch is useful, but only under a mental reservation: it encodes direction and sign more than literal shape.",
+          "visuals": [
+            {
+              "id": "fig-1.19",
+              "label": "Figure 1.19",
+              "kind": "figure",
+              "caption": "A contour section through an sp³ hybrid shows that the real wavefunction is fuller and subtler than the thin classroom cartoon."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p004",
+          "text": "Once an \\(sp^3\\) hybrid has been chosen, its interaction with hydrogen 1s is handled exactly as in the hydrogen molecule. A bonding \\(\\sigma_{\\mathrm{CH}}\\) combination and an antibonding \\(\\sigma_{\\mathrm{CH}}^*\\) combination result, as shown in Figure 1.20. Four equivalent \\(sp^3\\) hybrids directed toward the corners of a tetrahedron then give the familiar methane picture of four equal C—H bonds in Figure 1.21. This localized language is often wonderfully convenient. It makes the equality of the four bonds immediately visible, and it aligns the orbital picture with the ordinary structural formula in a way the fully delocalized methane orbitals do not.",
+          "visuals": [
+            {
+              "id": "fig-1.20",
+              "label": "Figure 1.20",
+              "kind": "figure",
+              "caption": "A hydrogen 1s orbital and a carbon sp³ hybrid generate a bonding C–H sigma orbital and a higher antibonding partner."
+            },
+            {
+              "id": "fig-1.21",
+              "label": "Figure 1.21",
+              "kind": "figure",
+              "caption": "Four equivalent sp³ hybrids pointing toward a tetrahedron produce the familiar localized picture of the methane bonds."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.07-p005",
+          "text": "Yet the convenience comes with a price. The hybrid picture hides distinctions among the occupied methane orbitals that the full molecular-orbital treatment keeps in view. Ionization data, for example, know perfectly well that electrons are being removed from orbitals of different energies, and the delocalized picture explains that at once. The hybrid picture tends to blur such differences into four apparently identical bonds. It is therefore best used knowingly. One should also resist the common habit of saying that an atom itself \"is \\(sp^3\\)\" or that a molecule \"rehybridizes\" as though something inside nature had physically swapped labels. The geometry is real; the hybridisation scheme is our chosen way of organizing the wavefunctions that describe it.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.08",
+      "number": "01.08",
+      "title": "Ethane and the C—C Sigma Bond",
+      "paragraphs": [
+        {
+          "id": "01.08-p001",
+          "text": "Ethane introduces a new task: not merely C—H bonding, but a genuine C—C bond. The full set of valence orbitals is already large — fourteen valence electrons distributed over seven bonding molecular orbitals — so Figure 1.22 is intentionally selective. It shows the seven occupied bonding orbitals together with several antibonding ones, enough to reveal the structure without drowning it in bookkeeping. The essential point is that the C—C bond is not generated by one orbital alone. It is assembled from several molecular orbitals, though one of them contributes far more strongly than the others.",
+          "visuals": [
+            {
+              "id": "fig-1.22",
+              "label": "Figure 1.22",
+              "kind": "figure",
+              "caption": "Ethane has seven occupied bonding orbitals, and the carbon–carbon bond emerges from several of them rather than from one isolated object."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p002",
+          "text": "The two orbitals labelled \\(\\sigma_s\\) and \\(\\sigma_s'\\) are built largely from the carbon 2s functions and resemble the hydrogen \\(\\sigma\\) and \\(\\sigma^*\\) pair in one respect: their decisive overlap lies directly on the line joining the nuclei, so they are sigma-type orbitals. The lower one is strongly bonding between the carbons; the higher one is correspondingly antibonding with respect to the C—C contact, though still helpful elsewhere in the molecule, especially for C—H bonding. More important still for the C—C bond is the orbital labelled \\(\\sigma_x\\), built mostly from the two carbon \\(2p_x\\) orbitals aimed head-on along the carbon-carbon axis. Figure 1.24 isolates this interaction. It is the clearest single orbital contribution to the C—C sigma bond.",
+          "visuals": [
+            {
+              "id": "fig-1.24",
+              "label": "Figure 1.24",
+              "kind": "figure",
+              "caption": "The strongest single contribution to the ethane C–C bond comes from head-on overlap of the carbon p orbitals aligned along the bond axis."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p003",
+          "text": "The sideways overlaps built from \\(2p_y\\) and \\(2p_z\\) are weaker. They produce orbitals of pi type even in ethane, though here they do not create a distinct double bond. Their density lies above and below, or to the sides of, the internuclear line instead of squarely on it. Figure 1.23 explains the consequence in overlap language. The sigma overlap integral for p orbitals approaching head-on is substantially larger at ordinary C—C bond lengths than the corresponding pi overlap integral for sideways approach. Sideways overlap still enhances electron density between the nuclei, but less efficiently and at a less favorable location for screening nuclear repulsion. Thus pi bonding is inherently weaker than sigma bonding when all else is comparable.",
+          "visuals": [
+            {
+              "id": "fig-1.23",
+              "label": "Figure 1.23",
+              "kind": "figure",
+              "caption": "At ordinary C–C distances the sigma overlap is much larger than the corresponding sideways pi overlap, which is why sigma bonding is stronger."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.08-p004",
+          "text": "In ethane the bonding and antibonding contributions from the \\(p_y\\) and \\(p_z\\) sectors largely cancel as far as the C—C bond itself is concerned, even though those orbitals remain useful for the C—H framework. The net C—C bond is therefore governed above all by the on-axis sigma interactions, especially \\(\\sigma_x\\), together with the fact that \\(\\sigma_s\\) is somewhat more bonding than \\(\\sigma_s'\\) is antibonding. One may certainly switch to the hybrid picture and say that the bond comes from overlap of two \\(sp^3\\) hybrids on carbon. That is a perfectly serviceable summary. But it is only a summary. The fuller molecular-orbital description shows where that localized image comes from and why it works.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.09",
+      "number": "01.09",
+      "title": "Ethylene and the Pi Bond",
+      "paragraphs": [
+        {
+          "id": "01.09-p001",
+          "text": "Ethylene is the point at which the sigma framework and the pi bond separate cleanly enough to be treated almost as independent worlds. The \\(1s\\) orbitals of the four hydrogens, together with the carbon \\(2s\\), \\(2p_x\\), and \\(2p_y\\) orbitals, generate five low-lying bonding orbitals that make up the sigma framework shown in Figure 1.25. Ten valence electrons fill those orbitals. Outside that framework, standing higher in energy yet still occupied, is one more bonding orbital built almost entirely from the two carbon \\(2p_z\\) orbitals overlapping sideways. That is the \\(\\pi\\) bond of ethylene.",
+          "visuals": [
+            {
+              "id": "fig-1.25",
+              "label": "Figure 1.25",
+              "kind": "figure",
+              "caption": "Ethylene separates cleanly into a low-lying sigma framework and a higher, self-contained pi bond built from the carbon 2p_z orbitals."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p002",
+          "text": "The interaction diagram for that bond, Figure 1.26, is the exact analogue of the hydrogen \\(\\sigma/\\sigma^*\\) diagram, but with p orbitals instead of s orbitals. Because the orbital is localized on two equivalent atoms, the coefficients are again the familiar two-center values. In the bonding combination the coefficients have the same sign and equal magnitude, \\(c_1 = c_2 = 0.707\\); in the antibonding combination they retain equal magnitude but opposite sign, \\(c_1 = 0.707\\), \\(c_2 = -0.707\\). The bonding orbital has enhanced density between the carbons above and below the molecular plane. The antibonding orbital has a node between the atoms. Two electrons occupy the lower \\(\\pi\\) orbital, none the upper \\(\\pi^*\\), and that extra stabilizing interaction is why ethylene is stronger and shorter at the carbon-carbon contact than ethane.",
+          "visuals": [
+            {
+              "id": "fig-1.26",
+              "label": "Figure 1.26",
+              "kind": "figure",
+              "caption": "The ethylene pi bond is the two-center p-orbital analogue of the hydrogen sigma bond: one bonding combination and one antibonding combination."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p003",
+          "text": "Yet the pi bond is not the whole double bond. The carbon-carbon sigma bonding inside the framework remains stronger than the pi bonding added on top of it. The reason is geometric and shows up in the overlap integrals. Sideways p-p overlap is less effective than head-on sigma overlap, even when the orbitals are otherwise comparable. In the simple Hückel language used here, the p orbital energy on carbon is taken as a reference value \\(\\alpha\\), and the stabilization of the bonding pi orbital is measured by \\(\\beta\\). For ethylene the drop \\(E_\\pi\\) is about \\(\\beta \\approx 140\\ \\mathrm{kJ\\,mol^{-1}}\\), so the two electrons in the bonding pi orbital contribute about \\(280\\ \\mathrm{kJ\\,mol^{-1}}\\) of total pi stabilization. That is substantial, but it sits on top of an even more important sigma skeleton.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p004",
+          "text": "This clean separation of the sigma framework from the pi system is the heart of Hückel theory. Since the hydrogens all lie in the nodal plane of the \\(2p_z\\) orbitals, they do not mix into the pi bond at all in this approximation. One may therefore treat the two p orbitals as a self-contained two-level system. Figure 1.27 translates that picture into the \"electron in a box\" analogy. If one imagines a box extending slightly beyond the two carbons, the bonding \\(\\pi\\) orbital resembles the lowest sine wave in the box: no interior node, same sign at both atoms. The antibonding \\(\\pi^*\\) orbital resembles the next sine wave: one interior node, opposite signs at the two atoms. The vertical coefficient lines drawn over the atoms simply restate the same phase pattern in algebraic language.",
+          "visuals": [
+            {
+              "id": "fig-1.27",
+              "label": "Figure 1.27",
+              "kind": "figure",
+              "caption": "The electron-in-a-box sine waves reproduce the nodal pattern and coefficient signs of the bonding and antibonding pi orbitals in ethylene."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.09-p005",
+          "text": "The later contour and wire-mesh figures complete the picture. Figure 1.28 shows that even sideways overlap can build extra electron density between the nuclei, though not on the internuclear axis itself. Figure 1.29 gives the three-dimensional character more vividly: \\(\\pi\\) is a single continuous envelope above and below the bond, whereas \\(\\pi^*\\) splits into separate lobes because the phase reversal inserts a node between the carbons. This is why the word \"double bond\" is useful but incomplete. Ethylene does not consist of one sigma stick plus one pi stick laid beside it. It is a sigma framework plus a higher, weaker, but still decisive delocalized pi interaction.",
+          "visuals": [
+            {
+              "id": "fig-1.28",
+              "label": "Figure 1.28",
+              "kind": "figure",
+              "caption": "Contour sections show that sideways p overlap still builds density between the carbons, though not directly along the internuclear axis."
+            },
+            {
+              "id": "fig-1.29",
+              "label": "Figure 1.29",
+              "kind": "figure",
+              "caption": "Wire-mesh surfaces make the three-dimensional difference between the continuous pi envelope and the nodal split of pi-star easy to see."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        }
+      ]
     }
   ],
   "stats": {
-    "sectionCount": 2,
-    "paragraphCount": 20,
-    "visualCount": 11,
-    "equationCount": 7
+    "sectionCount": 9,
+    "paragraphCount": 58,
+    "visualCount": 44,
+    "equationCount": 8
   }
 };
