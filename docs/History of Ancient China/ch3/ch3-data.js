@@ -14,12 +14,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Anyang milieu",
-              "start": -1200,
-              "end": -1046,
-              "display_date": "c. 1200-1046 BC",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
               "certainty": "approximate",
-              "caption": "The late Shang world centered at Anyang, the site whose inscriptions shaped the traditional picture."
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "point",
+              "label": "Oracle-bone source traced to Anyang",
+              "start": 1915,
+              "end": 1915,
+              "display_date": "1915",
+              "certainty": "secure",
+              "caption": "The source of the oracle bones was traced to farmers near modern Anyang, linking the inscriptions to a real site."
             }
           ]
         },
@@ -29,13 +56,40 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
+              "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
               "type": "point",
               "label": "Archaeological expansion beyond Anyang",
               "start": 1950,
               "end": 1950,
               "display_date": "after 1950",
-              "certainty": "secure",
-              "caption": "After 1950, new sites without inscriptions widened the field beyond the single Anyang center."
+              "certainty": "approximate",
+              "caption": "After 1950, newly reported sites without inscriptions forced the field beyond its original Anyang focus."
             }
           ]
         },
@@ -58,12 +112,21 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Late second millennium BC",
-              "start": -1300,
+              "label": "Second millennium BC",
+              "start": -2000,
               "end": -1000,
-              "display_date": "c. 1300-1000 BC",
+              "display_date": "second millennium BC",
               "certainty": "approximate",
-              "caption": "The broader age in which several civilized centers coexisted beyond Anyang."
+              "caption": "The broad prehistoric field within which the chapter tries to orient the evidence without later dynastic assumptions."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
             },
             {
               "type": "span",
@@ -72,7 +135,7 @@ const BOOK_DATA = {
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The late Shang world centered at Anyang, the site whose inscriptions shaped the traditional picture."
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         }
@@ -96,12 +159,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Second millennium BC",
+              "start": -2000,
+              "end": -1000,
+              "display_date": "second millennium BC",
+              "certainty": "approximate",
+              "caption": "The broad prehistoric field within which the chapter tries to orient the evidence without later dynastic assumptions."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
               "label": "Anyang milieu",
               "start": -1200,
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The late Shang world centered at Anyang, the site whose inscriptions shaped the traditional picture."
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -109,7 +190,35 @@ const BOOK_DATA = {
           "id": "03.02-p003",
           "text": "Other terms are handled with equal caution.\nShang period is avoided because it has no secure archaeological definition.\nDynasty is dangerous because Chinese historiography loads it with meanings far beyond the simple idea of a ruling family.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Second millennium BC",
+              "start": -2000,
+              "end": -1000,
+              "display_date": "second millennium BC",
+              "certainty": "approximate",
+              "caption": "The broad prehistoric field within which the chapter tries to orient the evidence without later dynastic assumptions."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.02-p004",
@@ -123,7 +232,25 @@ const BOOK_DATA = {
               "end": -1000,
               "display_date": "second millennium BC",
               "certainty": "approximate",
-              "caption": "The long prehistoric field within which this chapter tries to orient the evidence without later dynastic assumptions."
+              "caption": "The broad prehistoric field within which the chapter tries to orient the evidence without later dynastic assumptions."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -139,7 +266,25 @@ const BOOK_DATA = {
               "end": -1000,
               "display_date": "second millennium BC",
               "certainty": "approximate",
-              "caption": "The long prehistoric field within which this chapter tries to orient the evidence without later dynastic assumptions."
+              "caption": "The broad prehistoric field within which the chapter tries to orient the evidence without later dynastic assumptions."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -150,12 +295,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Early Bronze Age",
-              "start": -1600,
-              "end": -1046,
-              "display_date": "c. 1600-1046 BC",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
             }
           ]
         }
@@ -172,22 +335,40 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
+              "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
               "type": "point",
               "label": "Fall of the Qing",
               "start": 1911,
               "end": 1911,
               "display_date": "1911",
               "certainty": "secure",
-              "caption": "The political collapse that intensified modern arguments about what ancient tradition could still be trusted."
-            },
-            {
-              "type": "span",
-              "label": "Early oracle-bone debates",
-              "start": 1900,
-              "end": 1930,
-              "display_date": "c. 1900-1930",
-              "certainty": "approximate",
-              "caption": "The first modern debates over what the oracle bones could confirm about Shang antiquity."
+              "caption": "The political collapse that sharpened the crisis over what ancient tradition could still be trusted."
             }
           ]
         },
@@ -199,11 +380,38 @@ const BOOK_DATA = {
             {
               "type": "span",
               "label": "Early oracle-bone debates",
-              "start": 1900,
-              "end": 1930,
-              "display_date": "c. 1900-1930",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
               "certainty": "approximate",
-              "caption": "The first modern debates over what the oracle bones could confirm about Shang antiquity."
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "point",
+              "label": "Oracle-bone collecting begins",
+              "start": 1900,
+              "end": 1900,
+              "display_date": "c. 1900",
+              "certainty": "approximate",
+              "caption": "Collectors began acquiring oracle bones around the turn of the century, making them central to modern debates about antiquity."
             }
           ]
         },
@@ -215,20 +423,38 @@ const BOOK_DATA = {
             {
               "type": "span",
               "label": "Early oracle-bone debates",
-              "start": 1900,
-              "end": 1930,
-              "display_date": "c. 1900-1930",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
               "certainty": "approximate",
-              "caption": "The first modern debates over what the oracle bones could confirm about Shang antiquity."
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             },
             {
               "type": "point",
               "label": "Gu Jiegang's early critiques",
-              "start": 1920,
-              "end": 1920,
+              "start": 1923,
+              "end": 1923,
               "display_date": "early 1920s",
               "certainty": "approximate",
-              "caption": "Gu Jiegang's work treated Xia and the sage kings more as layered tradition than secure history."
+              "caption": "The critique of Xia and the sage-kings as layered tradition sharpened the distinction between legend and firmer Shang evidence."
             }
           ]
         },
@@ -238,13 +464,40 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
+              "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
               "type": "point",
               "label": "Gu Jiegang's early critiques",
-              "start": 1920,
-              "end": 1920,
+              "start": 1923,
+              "end": 1923,
               "display_date": "early 1920s",
               "certainty": "approximate",
-              "caption": "The debate over Xia and the sage kings sharpened the distinction between textual legend and firmer Shang evidence."
+              "caption": "The critique of Xia and the sage-kings as layered tradition sharpened the distinction between legend and firmer Shang evidence."
             }
           ]
         },
@@ -255,12 +508,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "Anyang excavations",
               "start": 1928,
               "end": 1937,
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             }
           ]
         }
@@ -282,13 +553,40 @@ const BOOK_DATA = {
           ],
           "timeline": [
             {
+              "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
               "type": "point",
               "label": "Oracle-bone source traced to Anyang",
               "start": 1915,
               "end": 1915,
               "display_date": "1915",
               "certainty": "secure",
-              "caption": "Luo Zhenyu identified the region from which dealers had been obtaining oracle bones."
+              "caption": "The source of the oracle bones was traced to farmers near modern Anyang, linking the inscriptions to a real site."
             }
           ]
         },
@@ -299,12 +597,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "May Fourth era",
               "start": 1915,
               "end": 1925,
               "display_date": "c. 1915-1925",
               "certainty": "approximate",
-              "caption": "The reforming climate in which Western field archaeology gained exceptional prestige in China."
+              "caption": "The reforming climate in which Western scholarly methods, including archaeology, found unusual prestige in China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
             }
           ]
         },
@@ -315,12 +631,21 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "May Fourth era",
               "start": 1915,
               "end": 1925,
               "display_date": "c. 1915-1925",
               "certainty": "approximate",
-              "caption": "The reforming climate in which Western field archaeology gained exceptional prestige in China."
+              "caption": "The reforming climate in which Western scholarly methods, including archaeology, found unusual prestige in China."
             },
             {
               "type": "span",
@@ -340,12 +665,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "Anyang excavations",
               "start": 1928,
               "end": 1937,
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             }
           ]
         }
@@ -363,12 +706,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "Anyang excavations",
               "start": 1928,
               "end": 1937,
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             }
           ]
         },
@@ -379,20 +740,13 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Anyang excavations",
-              "start": 1928,
-              "end": 1937,
-              "display_date": "1928-1937",
-              "certainty": "secure",
-              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
-            }
-          ]
-        },
-        {
-          "id": "03.05-p003",
-          "text": "Back at Anyang they uncovered a stratified sequence at Hougang.\nPainted pottery lay below, black pottery in the middle, and Shang remains above.\nThey took this to reveal a native eastern component in East Asian prehistory.",
-          "figures": [],
-          "timeline": [
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
             {
               "type": "span",
               "label": "Anyang excavations",
@@ -401,8 +755,23 @@ const BOOK_DATA = {
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             }
           ]
+        },
+        {
+          "id": "03.05-p003",
+          "text": "Back at Anyang they uncovered a stratified sequence at Hougang.\nPainted pottery lay below, black pottery in the middle, and Shang remains above.\nThey took this to reveal a native eastern component in East Asian prehistory.",
+          "figures": [],
+          "timeline": []
         },
         {
           "id": "03.05-p004",
@@ -411,12 +780,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "Anyang excavations",
               "start": 1928,
               "end": 1937,
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang cemetery identified",
+              "start": 1934,
+              "end": 1934,
+              "display_date": "1934",
+              "certainty": "secure",
+              "caption": "Discovery of the great cemetery at Xibeigang revealed the scale of royal mortuary archaeology at Anyang."
             },
             {
               "type": "point",
@@ -436,12 +832,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early oracle-bone debates",
+              "start": 1899,
+              "end": 1928,
+              "display_date": "c. 1899-1928",
+              "certainty": "approximate",
+              "caption": "The formative decades in which oracle bones, textual criticism, and modern historical doubt first collided."
+            },
+            {
+              "type": "span",
               "label": "Anyang excavations",
               "start": 1928,
               "end": 1937,
               "display_date": "1928-1937",
               "certainty": "secure",
               "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
             }
           ]
         },
@@ -465,20 +879,13 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "National archaeology after 1949",
-              "start": 1949,
-              "end": 1989,
-              "display_date": "1949-1989",
-              "certainty": "approximate",
-              "caption": "The era in which archaeology became strongly state-supported and increasingly tied to national historical narratives."
-            }
-          ]
-        },
-        {
-          "id": "03.06-p002",
-          "text": "Yet the mission of the field was narrowed.\nThe archaeology of the Early Bronze Age remained largely the archaeology of the Shang dynasty, guided by images inherited from late Zhou and Han texts rather than from archaeology itself.",
-          "figures": [],
-          "timeline": [
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
             {
               "type": "span",
               "label": "National archaeology after 1949",
@@ -486,9 +893,24 @@ const BOOK_DATA = {
               "end": 1989,
               "display_date": "1949-1989",
               "certainty": "approximate",
-              "caption": "The era in which archaeology became strongly state-supported and increasingly tied to national historical narratives."
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
             }
           ]
+        },
+        {
+          "id": "03.06-p002",
+          "text": "Yet the mission of the field was narrowed.\nThe archaeology of the Early Bronze Age remained largely the archaeology of the Shang dynasty, guided by images inherited from late Zhou and Han texts rather than from archaeology itself.",
+          "figures": [],
+          "timeline": []
         },
         {
           "id": "03.06-p003",
@@ -503,12 +925,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
               "label": "National archaeology after 1949",
               "start": 1949,
               "end": 1989,
               "display_date": "1949-1989",
               "certainty": "approximate",
-              "caption": "The era in which archaeology became strongly state-supported and increasingly tied to national historical narratives."
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
             },
             {
               "type": "point",
@@ -534,17 +974,7 @@ const BOOK_DATA = {
           "id": "03.06-p005",
           "text": "The result was not the rejection of diffusion in general.\nIt was the rejection of foreign influence into the Central Plain, while influence radiating outward from the Yellow River valley remained easy to assume.\nThat kept the old centralizing pattern intact in a new form.",
           "figures": [],
-          "timeline": [
-            {
-              "type": "span",
-              "label": "National archaeology after 1949",
-              "start": 1949,
-              "end": 1989,
-              "display_date": "1949-1989",
-              "certainty": "approximate",
-              "caption": "The era in which archaeology became strongly state-supported and increasingly tied to national historical narratives."
-            }
-          ]
+          "timeline": []
         }
       ]
     },
@@ -560,12 +990,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
               "label": "Salvage archaeology",
               "start": 1950,
               "end": 1989,
               "display_date": "c. 1950-1989",
               "certainty": "approximate",
-              "caption": "Reporting and rescue work widened the archaeological sample far beyond sites chosen chiefly from texts."
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
+            },
+            {
+              "type": "point",
+              "label": "Archaeological expansion beyond Anyang",
+              "start": 1950,
+              "end": 1950,
+              "display_date": "after 1950",
+              "certainty": "approximate",
+              "caption": "After 1950, newly reported sites without inscriptions forced the field beyond its original Anyang focus."
             }
           ]
         },
@@ -576,12 +1033,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "point",
+              "label": "Erligang expansion",
+              "start": -1500,
+              "end": -1500,
+              "display_date": "c. 1500 BC",
+              "certainty": "approximate",
+              "caption": "A major outward expansion from the middle Yellow River region is the simplest explanation for the wide Erligang horizon."
             }
           ]
         },
@@ -589,13 +1073,59 @@ const BOOK_DATA = {
           "id": "03.07-p003",
           "text": "Further south, the evidence became harder to absorb into the old picture.\nBronzes from the middle and lower Yangzi region were often highly distinctive.\nFor a long time they were still explained away as refugees from the north, peoples named in oracle texts, or groups labeled with later ethnonyms.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.07-p004",
           "text": "Only slowly did archaeologists begin to insist on local development in places such as Jiangxi and Hunan.\nThe discoveries at Sanxingdui in Sichuan and at Xin'gan in Jiangxi finally made the old explanations much harder to maintain.",
           "figures": [],
           "timeline": [
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
+            },
             {
               "type": "point",
               "label": "Sanxingdui pits discovered",
@@ -642,12 +1172,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
               "label": "Early Bronze Age",
               "start": -1600,
               "end": -1046,
               "display_date": "c. 1600-1046 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -664,12 +1212,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
               "label": "Anyang milieu",
               "start": -1200,
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The late Shang world centered at Anyang, the site whose inscriptions shaped the traditional picture."
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             },
             {
               "type": "point",
@@ -678,7 +1244,7 @@ const BOOK_DATA = {
               "end": -1200,
               "display_date": "c. 1200 BC",
               "certainty": "approximate",
-              "caption": "The immense fangding illustrates the exceptional scale of bronze production in late Shang China."
+              "caption": "The immense fangding stands as a vivid sign of the exceptional scale of late Shang bronze production."
             }
           ]
         },
@@ -692,7 +1258,35 @@ const BOOK_DATA = {
           "id": "03.08-p005",
           "text": "An important distinction is then drawn.\nThere is a world of difference between small-scale metallurgy and large-scale metallurgy.\nThe first involves technical knowledge used for modest tools and ornaments.\nThe second involves specialists, heavy patronage, artistic distinction, and production on a new scale.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.08-p006",
@@ -701,12 +1295,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Early Bronze Age",
-              "start": -1600,
-              "end": -1046,
-              "display_date": "c. 1600-1046 BC",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         }
@@ -732,13 +1353,31 @@ const BOOK_DATA = {
               "caption": "The long formative span before the mature Erligang and Anyang worlds."
             },
             {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
               "type": "point",
               "label": "Qijia metallurgy",
               "start": -2000,
               "end": -2000,
               "display_date": "c. 2000 BC",
               "certainty": "approximate",
-              "caption": "The earliest clear evidence in this chapter for metalworking in China before urban-scale bronze production."
+              "caption": "The earliest clear metalworking horizon discussed here, still modest in scale and social reach."
             }
           ]
         },
@@ -748,13 +1387,40 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
+              "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
               "type": "point",
               "label": "Qijia metallurgy",
               "start": -2000,
               "end": -2000,
               "display_date": "c. 2000 BC",
               "certainty": "approximate",
-              "caption": "The earliest clear evidence in this chapter for metalworking in China before urban-scale bronze production."
+              "caption": "The earliest clear metalworking horizon discussed here, still modest in scale and social reach."
             }
           ]
         },
@@ -771,6 +1437,24 @@ const BOOK_DATA = {
               "display_date": "c. 2000-1500 BC",
               "certainty": "approximate",
               "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
             },
             {
               "type": "point",
@@ -795,13 +1479,40 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
+              "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
               "type": "point",
               "label": "Qijia metallurgy",
               "start": -2000,
               "end": -2000,
               "display_date": "c. 2000 BC",
               "certainty": "approximate",
-              "caption": "The earliest clear evidence in this chapter for metalworking in China before urban-scale bronze production."
+              "caption": "The earliest clear metalworking horizon discussed here, still modest in scale and social reach."
             }
           ]
         }
@@ -819,12 +1530,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
               "label": "Erlitou horizon",
               "start": -1750,
               "end": -1500,
               "display_date": "c. 1750-1500 BC",
               "certainty": "approximate",
-              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization come together."
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "point",
+              "label": "Transition to large-scale casting",
+              "start": -1600,
+              "end": -1600,
+              "display_date": "mid second millennium BC",
+              "certainty": "approximate",
+              "caption": "The threshold at which metalworking shifts from modest craft to organized, elite-sponsored casting on a new scale."
             }
           ]
         },
@@ -835,12 +1573,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
               "label": "Erlitou horizon",
               "start": -1750,
               "end": -1500,
               "display_date": "c. 1750-1500 BC",
               "certainty": "approximate",
-              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization come together."
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "point",
+              "label": "Transition to large-scale casting",
+              "start": -1600,
+              "end": -1600,
+              "display_date": "mid second millennium BC",
+              "certainty": "approximate",
+              "caption": "The threshold at which metalworking shifts from modest craft to organized, elite-sponsored casting on a new scale."
             }
           ]
         },
@@ -851,12 +1616,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
               "label": "Erlitou horizon",
               "start": -1750,
               "end": -1500,
               "display_date": "c. 1750-1500 BC",
               "certainty": "approximate",
-              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization come together."
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
             },
             {
               "type": "point",
@@ -865,7 +1648,7 @@ const BOOK_DATA = {
               "end": -1600,
               "display_date": "mid second millennium BC",
               "certainty": "approximate",
-              "caption": "The threshold at which bronze production shifts from modest metalworking to organized, elite-sponsored casting."
+              "caption": "The threshold at which metalworking shifts from modest craft to organized, elite-sponsored casting on a new scale."
             }
           ]
         },
@@ -882,12 +1665,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
               "label": "Erlitou horizon",
               "start": -1750,
               "end": -1500,
               "display_date": "c. 1750-1500 BC",
               "certainty": "approximate",
-              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization come together."
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
             },
             {
               "type": "point",
@@ -896,7 +1697,7 @@ const BOOK_DATA = {
               "end": -1600,
               "display_date": "mid second millennium BC",
               "certainty": "approximate",
-              "caption": "The threshold at which bronze production shifts from modest metalworking to organized, elite-sponsored casting."
+              "caption": "The threshold at which metalworking shifts from modest craft to organized, elite-sponsored casting on a new scale."
             }
           ]
         }
@@ -914,12 +1715,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             }
           ]
         },
@@ -935,12 +1754,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             }
           ]
         },
@@ -951,12 +1788,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             }
           ]
         },
@@ -967,12 +1822,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             }
           ]
         },
@@ -983,12 +1856,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             }
           ]
         }
@@ -1006,12 +1897,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             }
           ]
         },
@@ -1022,12 +1940,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             }
           ]
         },
@@ -1038,12 +1983,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             }
           ]
         },
@@ -1063,12 +2035,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             }
           ]
         },
@@ -1079,12 +2078,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
               "label": "Western Zhou",
               "start": -1046,
               "end": -771,
               "display_date": "c. 1046-771 BC",
               "certainty": "approximate",
-              "caption": "The later period in which the old subdivided discipline of bronze ornament gradually loosened."
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
             }
           ]
         }
@@ -1101,22 +2127,49 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [
             {
-              "type": "point",
-              "label": "Loehr's five-style sequence",
-              "start": 1953,
-              "end": 1953,
-              "display_date": "1953",
-              "certainty": "secure",
-              "caption": "Max Loehr proposed the developmental sequence that still frames discussion of pre-Zhou bronze decoration."
+              "type": "span",
+              "label": "Style I",
+              "start": -1600,
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
+              "certainty": "approximate",
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
             },
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
-              "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1127,12 +2180,48 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
+              "label": "Style I",
               "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1143,12 +2232,48 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
+              "label": "Style I",
               "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1159,12 +2284,48 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
+              "label": "Style I",
               "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         }
@@ -1187,12 +2348,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Style I",
               "start": -1600,
               "end": -1450,
               "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The earliest decorated bronze stage, still close to the logic of mold sections and thread relief."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             }
           ]
         },
@@ -1203,12 +2391,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Style I",
               "start": -1600,
               "end": -1450,
               "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The earliest decorated bronze stage, still close to the logic of mold sections and thread relief."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             }
           ]
         },
@@ -1219,12 +2434,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Style I",
               "start": -1600,
               "end": -1450,
               "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The earliest decorated bronze stage, still close to the logic of mold sections and thread relief."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             }
           ]
         },
@@ -1235,12 +2477,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
               "label": "Style I",
               "start": -1600,
               "end": -1450,
               "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The earliest decorated bronze stage, still close to the logic of mold sections and thread relief."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             }
           ]
         }
@@ -1263,12 +2532,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style I",
+              "start": -1600,
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
+              "certainty": "approximate",
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
               "label": "Style II",
               "start": -1500,
               "end": -1400,
               "display_date": "c. 1500-1400 BC",
               "certainty": "approximate",
               "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             }
           ]
         },
@@ -1284,12 +2571,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
               "label": "Style III",
               "start": -1450,
               "end": -1250,
               "display_date": "c. 1450-1250 BC",
               "certainty": "approximate",
-              "caption": "The expansive stage of denser patterning, regional branching, and late experiments in stronger relief."
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
             }
           ]
         },
@@ -1305,12 +2610,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
               "label": "Style III",
               "start": -1450,
               "end": -1250,
               "display_date": "c. 1450-1250 BC",
               "certainty": "approximate",
-              "caption": "The expansive stage of denser patterning, regional branching, and late experiments in stronger relief."
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
             }
           ]
         },
@@ -1326,21 +2649,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
               "label": "Style III",
               "start": -1450,
               "end": -1250,
               "display_date": "c. 1450-1250 BC",
               "certainty": "approximate",
-              "caption": "The expansive stage of denser patterning, regional branching, and late experiments in stronger relief."
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
             },
             {
               "type": "span",
-              "label": "Transition period",
+              "label": "Style IV",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The century in which regional bronze styles emerged after the short-lived unity of Erligang."
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
             }
           ]
         }
@@ -1363,12 +2695,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
               "label": "Style IV",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The stage in which image and ground separate sharply and the animal motifs gain new visual force."
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1384,12 +2734,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
               "label": "Style IV",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The stage in which image and ground separate sharply and the animal motifs gain new visual force."
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1400,12 +2768,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
               "label": "Style IV",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The stage in which image and ground separate sharply and the animal motifs gain new visual force."
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1421,12 +2807,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
               "label": "Style V",
               "start": -1200,
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The high-relief late Shang style, theatrical, emphatic, and closely associated with the mature courtly repertoire."
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1442,12 +2846,21 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
               "label": "Style IV",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The stage in which image and ground separate sharply and the animal motifs gain new visual force."
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
             },
             {
               "type": "span",
@@ -1456,7 +2869,7 @@ const BOOK_DATA = {
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The high-relief late Shang style, theatrical, emphatic, and closely associated with the mature courtly repertoire."
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         }
@@ -1474,12 +2887,48 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
+              "label": "Style I",
               "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1490,12 +2939,48 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
-              "label": "Decorated bronze style sequence",
+              "label": "Style I",
               "start": -1600,
-              "end": -1200,
-              "display_date": "c. 1600-1200 BC",
+              "end": -1450,
+              "display_date": "c. 1600-1450 BC",
               "certainty": "approximate",
-              "caption": "The long development from the first decorated Erlitou bronzes to the mature late Shang repertoire."
+              "caption": "The earliest decorated bronze stage, still closely bound to mold sections and thread relief."
+            },
+            {
+              "type": "span",
+              "label": "Style II",
+              "start": -1500,
+              "end": -1400,
+              "display_date": "c. 1500-1400 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which the raised lines become more expressive and the decorative vocabulary expands."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            },
+            {
+              "type": "span",
+              "label": "Style IV",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The stage in which motif and ground separate sharply and animal imagery gains new visual force."
+            },
+            {
+              "type": "span",
+              "label": "Style V",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The high-relief late Shang style, theatrical and emphatic, closely associated with the mature courtly repertoire."
             }
           ]
         },
@@ -1511,7 +2996,34 @@ const BOOK_DATA = {
               "end": -1046,
               "display_date": "c. 1600-1046 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -1527,7 +3039,34 @@ const BOOK_DATA = {
               "end": -1046,
               "display_date": "c. 1600-1046 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         }
@@ -1554,12 +3093,30 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Early Bronze Age",
-              "start": -1600,
-              "end": -1046,
-              "display_date": "c. 1600-1046 BC",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
-              "caption": "The period in which large-scale casting and its associated elite cultures define the chapter's main archaeological field."
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -1570,12 +3127,39 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
               "label": "Erligang horizon",
               "start": -1500,
               "end": -1300,
               "display_date": "c. 1500-1300 BC",
               "certainty": "approximate",
               "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             },
             {
               "type": "point",
@@ -1595,12 +3179,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
               "label": "Transition period",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The century in which regional bronze styles emerged after the short-lived unity of Erligang."
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -1611,12 +3213,30 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
               "label": "Transition period",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The century in which regional bronze styles emerged after the short-lived unity of Erligang."
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         },
@@ -1627,12 +3247,21 @@ const BOOK_DATA = {
           "timeline": [
             {
               "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
               "label": "Transition period",
               "start": -1300,
               "end": -1200,
               "display_date": "c. 1300-1200 BC",
               "certainty": "approximate",
-              "caption": "The century in which regional bronze styles emerged after the short-lived unity of Erligang."
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
             },
             {
               "type": "span",
@@ -1641,7 +3270,7 @@ const BOOK_DATA = {
               "end": -1046,
               "display_date": "c. 1200-1046 BC",
               "certainty": "approximate",
-              "caption": "The late Shang world centered at Anyang, the site whose inscriptions shaped the traditional picture."
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
             }
           ]
         }
@@ -1686,12 +3315,7 @@ const BOOK_DATA = {
         {
           "id": "03.20-p001",
           "text": "Erlitou lies on the south bank of the Luo River and extends over a large area.\nIn its central zone, archaeologists found pounded-earth terraces and building foundations that imply planned monumental architecture.\nFigure 3.11 gives a sense of one of the main compounds.",
-          "figures": [
-            {
-              "label": "Figure 3.11",
-              "caption": "The main palace foundation at Erlitou. It helps visualize the scale of the pounded-earth compound and the formal architectural planning already present there."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -1765,12 +3389,7 @@ const BOOK_DATA = {
         {
           "id": "03.22-p002",
           "text": "The inventory includes vessels, bells, plaques, knives, and ge blades, as seen in Figures 3.12 and 3.13.\nOne ring-handled knife may even point northward, suggesting contact with the Northern Zone.\nThe ge blades are especially important because they mark the first appearance of a standard Bronze Age weapon.",
-          "figures": [
-            {
-              "label": "Figure 3.12",
-              "caption": "Bronze weapons from Erlitou, including ge blades and a knife. The figure matters because it shows how early weapon types and outside contacts begin to appear together."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -1782,23 +3401,13 @@ const BOOK_DATA = {
         {
           "id": "03.22-p004",
           "text": "Above all, the metal inventory is dominated by cast vessels.\nJue are the most numerous, but jia, ding, he, and fragments of gu are also present.\nA new material had been assigned to functions once served by pottery, probably in funerary offering and ritual display.",
-          "figures": [
-            {
-              "label": "Figure 3.13",
-              "caption": "Bronze vessels from Erlitou. The important point is that cast vessel forms such as jue, jia, and ding were already present in simple but durable early versions."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
           "id": "03.22-p005",
           "text": "Only two vessels so far carry decoration, and it is extremely simple.\nYet even this matters.\nThe designs were cast, not engraved afterward, and the vessel types themselves proved lasting.\nIn function, manufacture, and formal vocabulary, Erlitou established precedents for the whole Bronze Age that followed.",
-          "figures": [
-            {
-              "label": "Figure 3.13",
-              "caption": "The Erlitou bronze vessels also show the earliest cast decoration in this sequence. Even the very simple patterns matter because they establish a lasting technical precedent."
-            }
-          ],
+          "figures": [],
           "timeline": []
         }
       ]
@@ -1817,12 +3426,7 @@ const BOOK_DATA = {
         {
           "id": "03.23-p002",
           "text": "Even so, the Erlitou inventory is revealing.\nThe most common types are trapezoidal knives, ge blades, axes, disk-axes, arc-ended blades, and handles, as shown in Figure 3.14.\nEach has a different history and a different pattern of connections.",
-          "figures": [
-            {
-              "label": "Figure 3.14",
-              "caption": "Jades from Erlitou, including ge blades, disk-axes, and arc-ended forms. The figure helps show how varied the jade inventory was and how mixed its inheritances appear."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -1884,12 +3488,7 @@ const BOOK_DATA = {
         {
           "id": "03.25-p001",
           "text": "Panlongcheng had already shown that the Erligang world could establish itself far to the south.\nFigure 3.15, the plan of Lijiazui M2, makes that presence concrete in funerary form, with bronzes, jades, tools, pottery, and human remains arranged in a recognizably elite burial.",
-          "figures": [
-            {
-              "label": "Figure 3.15",
-              "caption": "Plan of Lijiazui M2 at Panlongcheng. The point is the fully furnished elite tomb in the south, showing how far the Erligang burial system had spread."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -1994,12 +3593,7 @@ const BOOK_DATA = {
         {
           "id": "03.28-p003",
           "text": "A large fangding is especially revealing.\nIn most respects it resembles northern examples, yet tigers rise on its handles in a startling local flourish.\nFigure 3.16 shows the effect clearly.",
-          "figures": [
-            {
-              "label": "Figure 3.16",
-              "caption": "Bronze fangding from Xin'gan with tigers rising on the handles. It shows how a southern workshop could inherit northern forms and yet transform them with a strong local accent."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2098,12 +3692,7 @@ const BOOK_DATA = {
         {
           "id": "03.31-p002",
           "text": "The Feixi find consisted of a pair of jia and a pair of jue.\nFigure 3.17 captures their scale and refinement.\nThe jue are among the largest known, and the jia are equally imposing.",
-          "figures": [
-            {
-              "label": "Figure 3.17",
-              "caption": "A monumental bronze jue from Feixi. The useful point is the scale and refinement of transition-period bronzes in the Huai region."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2165,23 +3754,13 @@ const BOOK_DATA = {
         {
           "id": "03.33-p002",
           "text": "These were not ordinary graves.\nThey seem instead to have been pit deposits of uncertain purpose.\nEven so, the quality of some vessels is astonishing.\nFigure 3.18 shows one such bronze, fully equal in ambition to the best works from other regions.",
-          "figures": [
-            {
-              "label": "Figure 3.18",
-              "caption": "A bronze pou from Chenggu. It matters because it shows the high quality of a center known mainly through chance finds rather than systematic excavation."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
           "id": "03.33-p003",
           "text": "One deposit at Sucun is especially revealing.\nIt contained a mass of ge blades, many bronze disks, human and animal bronze faces, and a pair of fanglei.\nSome of these have close counterparts in Fu Hao's tomb, while the human faces also link Chenggu to the Wei valley and to Xin'gan, as Figure 3.19 makes clear.",
-          "figures": [
-            {
-              "label": "Figure 3.19",
-              "caption": "Bronze human faces from Xin'gan and Shaanxi. Their resemblance helps reveal contact between distant regions during the transition period."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2323,12 +3902,7 @@ const BOOK_DATA = {
         {
           "id": "03.37-p001",
           "text": "Across the Huan River at Xibeigang lay the great royal cemetery.\nFigure 3.20 shows its scale, with major tombs and large zones of sacrificial burial.\nThirteen huge tombs are known there, almost all plundered in antiquity.",
-          "figures": [
-            {
-              "label": "Figure 3.20",
-              "caption": "Plans of the Xibeigang cemetery. The image helps show the arrangement of the great tombs and the dense fields of sacrificial burials around them."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2346,27 +3920,13 @@ const BOOK_DATA = {
         {
           "id": "03.37-p004",
           "text": "The difference is scale.\nIncluding its ramps, the tomb measured about 66 meters from north to south and 44 from east to west.\nFigure 3.21 helps one see the full form, including the four ramps descending toward the central shaft.",
-          "figures": [
-            {
-              "label": "Figure 3.21",
-              "caption": "Plan and section of Xibeigang tomb M1001. The important point is the immense scale of the shaft and ramps compared with earlier elite burials."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
           "id": "03.37-p005",
           "text": "The shaft itself was cross-shaped and about 10.5 meters deep.\nAt its floor lay nine sacrificial pits, one in the center and two in each corner.\nEach contained a man, a dog, and a ge blade, as Figures 3.22 and 3.23 help to show.",
-          "figures": [
-            {
-              "label": "Figure 3.22",
-              "caption": "The floor of M1001 with nine sacrificial pits and traces of the burial chamber. It makes the internal organization of the tomb unusually clear."
-            },
-            {
-              "label": "Figure 3.23",
-              "caption": "The shaft floor of M1001 during excavation. This view helps one imagine the size of the cross-shaped chamber space and the placement of the sacrificial burials."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2434,12 +3994,7 @@ const BOOK_DATA = {
         {
           "id": "03.39-p001",
           "text": "The great royal tombs at Xibeigang were surrounded by an immense field of sacrificial burials.\nMore than 1,200 pits were excavated there in 1934 and 1935, most of them near M1400 in the eastern part of the cemetery.\nFigure 3.20 helps one see the overall arrangement, with the great tombs at the center and the sacrificial zones spread around them.",
-          "figures": [
-            {
-              "label": "Figure 3.20",
-              "caption": "Plan of the Xibeigang cemetery and its sacrificial zones. The useful point is the scale and organization of the killing ground around the royal tombs."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2495,12 +4050,7 @@ const BOOK_DATA = {
         {
           "id": "03.41-p001",
           "text": "The tomb of Fu Hao is the only intact royal burial yet discovered at Anyang, and also the only one that can be confidently tied to a named person in the oracle texts.\nIt lies west of the Xiaotun palace area and near several lesser burials of similar date.\nIt is far smaller than the great tombs of Xibeigang and has no entrance ramps, yet its contents are astonishing.\nFigure 3.24 makes the plan clear.",
-          "figures": [
-            {
-              "label": "Figure 3.24",
-              "caption": "Plan and section of Fu Hao's tomb. It helps one see how a relatively small shaft could hold an extraordinarily rich royal burial."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2587,12 +4137,7 @@ const BOOK_DATA = {
         {
           "id": "03.44-p001",
           "text": "Outside the vessel set, the bronzes include a dense cluster of tools and weapons.\nThere are eighty-nine ge blades and two especially large axe blades inscribed with Fu Hao's name.\nThose axes may have served in sacrificial killing.\nThe tomb also yielded twenty-three small bells of the nao and ling types, a little horse gear, and several objects that seem to come from the Northern Zone, including mirrors, a knife, a pointed tool, and a number of so-called bow-shaped objects.\nFigure 3.25 gathers these northern-looking pieces together.",
-          "figures": [
-            {
-              "label": "Figure 3.25",
-              "caption": "Northern-style bronzes from Fu Hao's tomb. They matter because they show that Anyang was in active contact with northern exchange networks."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2611,12 +4156,7 @@ const BOOK_DATA = {
         {
           "id": "03.45-p001",
           "text": "The jades from Fu Hao's tomb require a different way of looking.\nJade is difficult to work.\nIt cannot simply be carved like wood or bone, but must be cut and shaped through abrasion.\nThat resistance is visible in the most unusual pieces from the tomb, especially the small three-dimensional animals, whose forms still seem half imprisoned in the rectangular blocks from which they were made.\nFigure 3.26 shows this vividly.",
-          "figures": [
-            {
-              "label": "Figure 3.26",
-              "caption": "Three-dimensional jade animals from Fu Hao's tomb. The important point is how stubborn material and limited technique still produced vivid but compact forms."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2659,12 +4199,7 @@ const BOOK_DATA = {
         {
           "id": "03.46-p003",
           "text": "Another surprise is the breadth of the tomb's connections in time and space.\nSome jades are probably imports from the south.\nOne ge even carries an inscription recording that a set of five ge had been sent in, a small but vivid trace of elite exchange.\nMore startling still is the presence of much older Neolithic pieces from several different cultures, including Shijiahe, Liangzhu, Longshan, and Hongshan.\nHongshan forms were evidently familiar enough at Anyang to inspire local adaptations, and Figure 3.27 shows how a foreign coiled animal type could gradually become an Anyang dragon plaque.",
-          "figures": [
-            {
-              "label": "Figure 3.27",
-              "caption": "Hongshan and Anyang-related jade dragon forms. The comparison shows how an older northern type could be adopted and transformed in the style of Anyang."
-            }
-          ],
+          "figures": [],
           "timeline": []
         }
       ]
@@ -2721,12 +4256,7 @@ const BOOK_DATA = {
         {
           "id": "03.49-p001",
           "text": "Because early examples are often poorly preserved, one later burial is especially useful.\nPit M52 at Guojiazhuang, dated to Yinxu 4, preserved a nearly complete ghost of a chariot as a soil cast formed after the decay of the wood.\nFigure 3.28 shows the arrangement clearly.\nTwo men and two horses had been laid in the pit before the vehicle was lowered into place.",
-          "figures": [
-            {
-              "label": "Figure 3.28",
-              "caption": "Chariot burial M52 at Anyang. The image makes the funerary arrangement of vehicle, horses, and attendants immediately visible."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2813,12 +4343,7 @@ const BOOK_DATA = {
         {
           "id": "03.52-p002",
           "text": "One artifact above all marks the Yangzi sphere.\nThat is the large bell, especially the type called nao.\nAnyang had small bells of this family, but they were minor objects there.\nIn the south, by contrast, the bell became monumental.\nFigure 3.29 makes the contrast immediate.\nThe Anyang examples are small and relatively modest, whereas southern bells are huge and visually commanding.",
-          "figures": [
-            {
-              "label": "Figure 3.29",
-              "caption": "Bells of the nao type from Anyang and the south. The contrast shows how a minor northern object became a monumental ritual form in the Yangzi region."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2843,12 +4368,7 @@ const BOOK_DATA = {
         {
           "id": "03.53-p002",
           "text": "The repertory is narrow but distinctive.\nLarge bells are the most characteristic items.\nAfter them come imposing zun and lei, and then vessels made in the form of animals such as elephants, buffaloes, and even boars.\nFigure 3.30 shows the tone of this world.\nThe favorite creatures are not the highly formalized imaginary beings that dominate northern bronzes, but real animals rendered with a striking mixture of grandeur and naturalism.",
-          "figures": [
-            {
-              "label": "Figure 3.30",
-              "caption": "Animal-shaped bronzes from the middle Yangzi region. What matters is the local preference for powerful real animals rendered with scale, confidence, and natural presence."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2905,27 +4425,13 @@ const BOOK_DATA = {
         {
           "id": "03.56-p001",
           "text": "Pit 2 was similar in form but richer and more orderly.\nIts contents were laid down in three levels.\nSmall items, including more than a hundred jades, lay at the bottom.\nLarge bronzes occupied the middle layer.\nMore than sixty elephant tusks formed the uppermost level.\nFigure 3.31 shows the excavation clearly.",
-          "figures": [
-            {
-              "label": "Figure 3.31",
-              "caption": "Pit 2 at Sanxingdui under excavation. The arrangement of layers helps one see that the deposit was carefully staged, not a random dump."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
           "id": "03.56-p002",
           "text": "The bronzes from Pit 2 are among the strangest works of the Chinese Bronze Age.\nThey include a life-size standing figure on a pedestal, shown in Figure 3.32.\nThey include more than forty bronze heads, some with gold masks and traces of vermilion, and a set of huge faces or masks that border on the monstrous.\nFigure 3.33 gives the flavor of these startling forms.",
-          "figures": [
-            {
-              "label": "Figure 3.32",
-              "caption": "The life-size bronze statue from Sanxingdui. It shows how far this local bronze tradition moved beyond ordinary vessel casting into an entirely different sacred image world."
-            },
-            {
-              "label": "Figure 3.33",
-              "caption": "Bronze heads and masks from Sanxingdui. What matters is the radical local imagination of the human and the divine, unlike anything known from Anyang."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2944,12 +4450,7 @@ const BOOK_DATA = {
         {
           "id": "03.57-p001",
           "text": "The vessels from Pit 2 are all zun and lei.\nThey closely match examples from the middle Yangzi region and may well have been imported from there.\nFigure 3.34 makes the resemblance plain.\nMetal provenance studies point in the same direction, since some Sanxingdui bronzes appear to share an unusual lead source with bronzes from the Xin'gan tomb.",
-          "figures": [
-            {
-              "label": "Figure 3.34",
-              "caption": "A lei from the middle Yangzi region beside one from Sanxingdui. The comparison makes their connection visible while still leaving room for local difference."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -2968,12 +4469,7 @@ const BOOK_DATA = {
         {
           "id": "03.58-p001",
           "text": "The jades of Sanxingdui are unlike those from Fu Hao's tomb.\nDisks and large blades dominate the assemblage.\nArc-ended blades, trapezoidal knives, ge blades, and hybrids between these forms appear in remarkable variety.\nFigure 3.35 shows this broad and unruly blade world.\nOrnaments, so abundant in Fu Hao's burial, are almost absent here.",
-          "figures": [
-            {
-              "label": "Figure 3.35",
-              "caption": "Large jade blades from Sanxingdui. The important point is the extraordinary range of blade forms and the very different jade priorities of this culture."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -3117,16 +4613,7 @@ const BOOK_DATA = {
         {
           "id": "03.64-p001",
           "text": "The bronzes of the Northern Complex are distinctive both in type and in decoration.\nSimple striations and zigzags are common.\nSo are loops, buttons for suspension, and terminals shaped like rattles or animal heads.\nCharacteristic types include mirrors, battle-axes with tubular sockets, knives cast in one piece with their handles, daggers, spoons, spatulas, and ladles.\nFigures 3.36 and 3.37 show several of these forms.",
-          "figures": [
-            {
-              "label": "Figure 3.36",
-              "caption": "Axes from Panlongcheng, Xin'gan, and the Northern Zone. The comparison helps clarify how different hafting methods reveal different technical traditions."
-            },
-            {
-              "label": "Figure 3.37",
-              "caption": "Knives and daggers from Anyang and the north. These forms show at a glance how clearly northern weapons stand apart from native central styles."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -3151,12 +4638,7 @@ const BOOK_DATA = {
         {
           "id": "03.65-p001",
           "text": "The archaeology of Shanxi shows how complex this frontier world could be.\nA small grave at Jixian contained only four bronzes, all of clearly northern character.\nA battle-axe and a dagger lay by the head of the dead, and two large spoons lay beside the hand.\nFigure 3.38 shows the arrangement.\nHere there is little sign of influence from Anyang.",
-          "figures": [
-            {
-              "label": "Figure 3.38",
-              "caption": "A grave at Jixian in Shanxi. The burial is useful because it presents a compact assemblage of distinctly northern weapons and utensils without obvious Anyang features."
-            }
-          ],
+          "figures": [],
           "timeline": []
         },
         {
@@ -3168,12 +4650,7 @@ const BOOK_DATA = {
         {
           "id": "03.65-p003",
           "text": "At Shilou the balance shifts again.\nThere, small northern bronzes repeatedly occur with vessels so eccentric that they must be local products.\nFigure 3.39 gives some idea of this mixed repertoire, with ornaments, weapons, utensils, and an extraordinary boat-shaped vessel all appearing together.\nThe implication is not simple diffusion in one direction.\nDifferent groups, economies, and habits of burial were overlapping in the same broad region.",
-          "figures": [
-            {
-              "label": "Figure 3.39",
-              "caption": "Objects from several finds at Shilou in Shanxi. Taken together, they show a frontier world where ornaments, weapons, utensils, and odd local vessels overlap."
-            }
-          ],
+          "figures": [],
           "timeline": []
         }
       ]
@@ -3257,7 +4734,7 @@ const BOOK_DATA = {
   "stats": {
     "sectionCount": 68,
     "paragraphCount": 273,
-    "figureCount": 44,
-    "timelineItemCount": 94
+    "figureCount": 13,
+    "timelineItemCount": 275
   }
 };
