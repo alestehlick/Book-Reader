@@ -1,5 +1,5 @@
 const BOOK_DATA = {
-  "title": "3 — Shang Archeology",
+  "title": "3 — Language and Writing",
   "language": "en",
   "sections": [
     {
@@ -111,7 +111,12 @@ const BOOK_DATA = {
         {
           "id": "03.04-p001",
           "text": "By 1915 Luo Zhenyu had traced the source of the oracle bones to farmers near modern Anyang.\nMap 3.1 helps place that region and the site that soon became decisive for early Chinese archaeology.",
-          "figures": []
+          "figures": [
+            {
+              "label": "Map 3.1",
+              "caption": "A map locating Anyang and the region from which the oracle bones entered modern scholarship. It matters because it ties the textual discovery to a real archaeological landscape."
+            }
+          ]
         },
         {
           "id": "03.04-p002",
@@ -2058,11 +2063,5 @@ const BOOK_DATA = {
   "stats": {
     "sectionCount": 68,
     "paragraphCount": 273
-  },
-  "sharedFigures": [
-    {
-      "label": "Map 3.1",
-      "caption": "A map locating Anyang and the region from which the oracle bones entered modern scholarship. It matters because it ties the textual discovery to a real archaeological landscape."
-    }
-  ]
+  }
 };
