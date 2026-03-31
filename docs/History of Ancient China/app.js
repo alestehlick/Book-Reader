@@ -49,12 +49,12 @@
   let playerAudioRowEl = null;
   let timelineSectionEl = null;
   let timelineSummaryEl = null;
-  let timelineRangeStartEl = null;
-  let timelineRangeEndEl = null;
   let timelineRailEl = null;
+  let timelineGridEl = null;
   let timelineSpansEl = null;
+  let timelineSpanLabelsEl = null;
   let timelinePointsEl = null;
-  let timelineCardsEl = null;
+  let timelinePointLabelsEl = null;
   let timelineFallbackEl = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
@@ -357,10 +357,11 @@
 
   function formatTimelineBoundary(year) {
     if (!Number.isFinite(year)) return "";
-    const abs = Math.abs(year);
-    if (year < 0) return `${abs} BC`;
-    if (year === 0) return "0";
-    return abs >= 1000 ? `${year}` : `${year} AD`;
+    const rounded = Math.round(year);
+    const abs = Math.abs(rounded);
+    if (rounded < 0) return `${abs} BC`;
+    if (rounded === 0) return "0";
+    return `${abs} AD`;
   }
 
   function formatTimelineDisplayDate(entry) {
@@ -380,6 +381,103 @@
     }
 
     return "";
+  }
+
+  function formatTimelineTick(year) {
+    return formatTimelineBoundary(year);
+  }
+
+  function niceTimelineUnit(spread) {
+    const safeSpread = Number.isFinite(spread) && spread > 0 ? spread : 1;
+    const candidates = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000];
+    const target = Math.max(10, safeSpread / 8);
+    return candidates.find((value) => value >= target) || candidates[candidates.length - 1];
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
+
+  function pctFromYear(year, windowStart, windowEnd) {
+    if (!Number.isFinite(year) || !Number.isFinite(windowStart) || !Number.isFinite(windowEnd) || windowEnd === windowStart) {
+      return 0;
+    }
+
+    return clamp(((year - windowStart) / (windowEnd - windowStart)) * 100, 0, 100);
+  }
+
+  function buildTimelineWindow(entries) {
+    const numericEntries = entries.filter((entry) =>
+      entry.type === "span"
+        ? Number.isFinite(entry.start) || Number.isFinite(entry.end)
+        : Number.isFinite(entry.date)
+    );
+
+    if (numericEntries.length === 0) {
+      return null;
+    }
+
+    const values = numericEntries.flatMap((entry) => {
+      if (entry.type === "span") {
+        return [entry.start, entry.end].filter(Number.isFinite);
+      }
+      return [entry.date].filter(Number.isFinite);
+    });
+
+    if (values.length === 0) {
+      return null;
+    }
+
+    const rawMin = Math.min(...values);
+    const rawMax = Math.max(...values);
+    const spread = Math.max(1, rawMax - rawMin);
+    const unit = niceTimelineUnit(spread);
+    const windowSize = unit * 10;
+
+    let start = Math.floor((rawMin - unit) / unit) * unit;
+    let end = start + windowSize;
+
+    const maxWanted = rawMax + unit;
+    if (end < maxWanted) {
+      start = Math.ceil((maxWanted - windowSize) / unit) * unit;
+      end = start + windowSize;
+    }
+
+    const ticks = Array.from({ length: 11 }, (_, index) => start + index * unit);
+
+    return {
+      unit,
+      start,
+      end,
+      ticks,
+      numericEntries,
+    };
+  }
+
+  function assignIntervalLanes(items, gapPct = 2) {
+    const laneEnds = [];
+
+    items
+      .sort((a, b) => {
+        if (a.sortLeft !== b.sortLeft) return a.sortLeft - b.sortLeft;
+        return a.sortRight - b.sortRight;
+      })
+      .forEach((item) => {
+        let laneIndex = 0;
+        while (laneIndex < laneEnds.length && item.sortLeft <= laneEnds[laneIndex] + gapPct) {
+          laneIndex += 1;
+        }
+
+        if (laneIndex === laneEnds.length) {
+          laneEnds.push(item.sortRight);
+        } else {
+          laneEnds[laneIndex] = item.sortRight;
+        }
+
+        item.lane = laneIndex;
+      });
+
+    return laneEnds.length;
   }
 
   function normalizeTimelineEntry(entry, index) {
@@ -907,7 +1005,7 @@
     renderVideos(effectiveVideos);
   }
 
-  function formatTimelineSummary(entries) {
+  function formatTimelineSummary(entries, unit = null) {
     const spanCount = entries.filter((entry) => entry.type === "span").length;
     const pointCount = entries.filter((entry) => entry.type === "point").length;
     const parts = [];
@@ -917,141 +1015,154 @@
     }
 
     if (pointCount > 0) {
-      parts.push(`${pointCount} landmark${pointCount === 1 ? "" : "s"}`);
+      parts.push(`${pointCount} pin${pointCount === 1 ? "" : "s"}`);
+    }
+
+    if (Number.isFinite(unit) && unit > 0) {
+      parts.push(`${unit}-year units`);
     }
 
     return parts.join(" • ");
   }
 
-  function createTimelineChip(entry) {
-    const chip = document.createElement("article");
-    chip.className = `timeline-chip timeline-chip--${entry.type}`;
-    chip.dataset.certainty = entry.certainty;
-    if (entry.caption) {
-      chip.title = entry.caption;
+  function clearTimelineRail() {
+    if (timelineGridEl) timelineGridEl.innerHTML = "";
+    if (timelineSpansEl) timelineSpansEl.innerHTML = "";
+    if (timelineSpanLabelsEl) timelineSpanLabelsEl.innerHTML = "";
+    if (timelinePointsEl) timelinePointsEl.innerHTML = "";
+    if (timelinePointLabelsEl) timelinePointLabelsEl.innerHTML = "";
+    if (timelineFallbackEl) {
+      timelineFallbackEl.hidden = true;
+      timelineFallbackEl.innerHTML = "";
     }
-
-    const kicker = document.createElement("div");
-    kicker.className = "timeline-chip-kicker";
-    kicker.textContent = entry.type === "span" ? "Span" : "Landmark";
-
-    const label = document.createElement("div");
-    label.className = "timeline-chip-label";
-    label.textContent = entry.label;
-
-    const date = document.createElement("div");
-    date.className = "timeline-chip-date";
-    date.textContent = entry.displayDate || "Date not specified";
-
-    chip.append(kicker, label, date);
-    return chip;
   }
 
-  function renderTimelineFallback(entries) {
-    timelineRailEl.hidden = true;
-    timelineFallbackEl.hidden = true;
-    timelineFallbackEl.innerHTML = "";
-    timelineRangeStartEl.textContent = "";
-    timelineRangeEndEl.textContent = "";
-    timelineCardsEl.innerHTML = "";
-
-    entries.forEach((entry) => {
-      timelineCardsEl.appendChild(createTimelineChip(entry));
-    });
+  function makeTimelineTooltip(entry) {
+    const parts = [entry.label];
+    if (entry.displayDate) {
+      parts.push(entry.displayDate);
+    }
+    if (entry.caption) {
+      parts.push(entry.caption);
+    }
+    return parts.filter(Boolean).join(" — ");
   }
 
   function renderTimelineRail(entries) {
-    const numericEntries = entries.filter((entry) =>
-      entry.type === "span"
-        ? Number.isFinite(entry.start) || Number.isFinite(entry.end)
-        : Number.isFinite(entry.date)
-    );
+    const windowData = buildTimelineWindow(entries);
 
-    const anchors = [...new Set(
-      numericEntries.flatMap((entry) => {
-        if (entry.type === "span") {
-          return [entry.start, entry.end].filter(Number.isFinite);
-        }
-        return [entry.date].filter(Number.isFinite);
-      })
-    )].sort((a, b) => a - b);
-
-    if (anchors.length === 0) {
-      renderTimelineFallback(entries);
-      return;
-    }
-
-    if (anchors.length === 1) {
-      anchors.push(anchors[0] + 1);
-    }
-
-    const anchorToPct = new Map(
-      anchors.map((value, index) => [value, anchors.length === 1 ? 50 : (index / (anchors.length - 1)) * 100])
-    );
-
-    const spans = numericEntries.filter((entry) => entry.type === "span");
-    const points = numericEntries.filter((entry) => entry.type === "point");
-
-    timelineRailEl.hidden = false;
-    timelineFallbackEl.hidden = true;
-    timelineSpansEl.innerHTML = "";
-    timelinePointsEl.innerHTML = "";
-    timelineCardsEl.innerHTML = "";
-
-    timelineRangeStartEl.textContent = formatTimelineBoundary(anchors[0]);
-    timelineRangeEndEl.textContent = formatTimelineBoundary(anchors[anchors.length - 1]);
-
-    spans.forEach((entry, index) => {
-      const startValue = Number.isFinite(entry.start) ? entry.start : entry.end;
-      const endValue = Number.isFinite(entry.end) ? entry.end : entry.start;
-      const leftPct = anchorToPct.get(startValue) ?? 0;
-      const rightPct = anchorToPct.get(endValue) ?? leftPct;
-      const rawLeft = Math.min(leftPct, rightPct);
-      const rawRight = Math.max(leftPct, rightPct);
-      let bandLeft = rawLeft;
-      let bandWidth = rawRight - rawLeft;
-
-      if (bandWidth < 10) {
-        bandLeft = Math.max(0, Math.min(90, rawLeft - (10 - bandWidth) / 2));
-        bandWidth = 10;
+    if (!windowData || !timelineRailEl || !timelineGridEl || !timelineSpansEl || !timelineSpanLabelsEl || !timelinePointsEl || !timelinePointLabelsEl) {
+      clearTimelineRail();
+      if (timelineRailEl) {
+        timelineRailEl.hidden = true;
       }
+      if (timelineFallbackEl) {
+        timelineFallbackEl.hidden = false;
+        timelineFallbackEl.textContent = "Timeline data is missing usable dates.";
+      }
+      return null;
+    }
+
+    clearTimelineRail();
+    timelineRailEl.hidden = false;
+
+    const { start, end, unit, ticks } = windowData;
+
+    ticks.forEach((tickYear, index) => {
+      const tick = document.createElement("div");
+      tick.className = "timeline-tick";
+      tick.style.left = `${pctFromYear(tickYear, start, end)}%`;
+      if (index % 3 === 0) {
+        tick.classList.add("timeline-tick--labeled");
+
+        const label = document.createElement("div");
+        label.className = "timeline-tick-label";
+        label.textContent = formatTimelineTick(tickYear);
+        tick.appendChild(label);
+      }
+      timelineGridEl.appendChild(tick);
+    });
+
+    const spanEntries = entries
+      .filter((entry) => entry.type === "span" && (Number.isFinite(entry.start) || Number.isFinite(entry.end)))
+      .map((entry) => {
+        const startYear = Number.isFinite(entry.start) ? entry.start : entry.end;
+        const endYear = Number.isFinite(entry.end) ? entry.end : entry.start;
+        const left = pctFromYear(Math.min(startYear, endYear), start, end);
+        const right = pctFromYear(Math.max(startYear, endYear), start, end);
+        return {
+          ...entry,
+          left,
+          right,
+          sortLeft: Math.min(left, right),
+          sortRight: Math.max(left, right),
+        };
+      });
+
+    assignIntervalLanes(spanEntries, 3.5);
+
+    spanEntries.forEach((entry) => {
+      const width = Math.max(4, entry.sortRight - entry.sortLeft);
+      const rowTop = 119 + entry.lane * 38;
 
       const band = document.createElement("div");
       band.className = "timeline-span";
       band.dataset.certainty = entry.certainty;
-      band.style.left = `${bandLeft}%`;
-      band.style.width = `${bandWidth}%`;
-      band.style.top = `${10 + (index % 2) * 22}px`;
-      if (entry.caption) {
-        band.title = `${entry.label} — ${entry.caption}`;
-      }
-
+      band.style.left = `${entry.sortLeft}%`;
+      band.style.width = `${width}%`;
+      band.style.top = `${rowTop}px`;
+      band.title = makeTimelineTooltip(entry);
       timelineSpansEl.appendChild(band);
+
+      const label = document.createElement("div");
+      label.className = "timeline-span-label";
+      label.dataset.certainty = entry.certainty;
+      label.style.left = `${entry.sortLeft + width / 2}%`;
+      label.style.top = `${rowTop + 16}px`;
+      label.textContent = entry.label;
+      label.title = makeTimelineTooltip(entry);
+      timelineSpanLabelsEl.appendChild(label);
     });
 
-    points.forEach((entry, index) => {
-      const xPct = anchorToPct.get(entry.date) ?? 0;
+    const pointEntries = entries
+      .filter((entry) => entry.type === "point" && Number.isFinite(entry.date))
+      .map((entry) => {
+        const x = pctFromYear(entry.date, start, end);
+        return {
+          ...entry,
+          x,
+          sortLeft: x - 7,
+          sortRight: x + 7,
+        };
+      });
+
+    assignIntervalLanes(pointEntries, 2.5);
+
+    pointEntries.forEach((entry) => {
       const point = document.createElement("div");
       point.className = "timeline-point";
       point.dataset.certainty = entry.certainty;
-      point.style.left = `${xPct}%`;
-      point.style.top = `${32 + (index % 2) * 6}px`;
-      if (entry.caption) {
-        point.title = `${entry.label} — ${entry.caption}`;
-      }
+      point.style.left = `${entry.x}%`;
+      point.title = makeTimelineTooltip(entry);
 
       const stem = document.createElement("span");
       stem.className = "timeline-point-stem";
       const dot = document.createElement("span");
       dot.className = "timeline-point-dot";
       point.append(stem, dot);
-
       timelinePointsEl.appendChild(point);
+
+      const label = document.createElement("div");
+      label.className = "timeline-point-label";
+      label.dataset.certainty = entry.certainty;
+      label.style.left = `${entry.x}%`;
+      label.style.top = `${78 - entry.lane * 22}px`;
+      label.textContent = entry.label;
+      label.title = makeTimelineTooltip(entry);
+      timelinePointLabelsEl.appendChild(label);
     });
 
-    entries.forEach((entry) => {
-      timelineCardsEl.appendChild(createTimelineChip(entry));
-    });
+    return { unit, start, end };
   }
 
   function renderTimeline() {
@@ -1070,8 +1181,8 @@
     }
 
     timelineSectionEl.hidden = false;
-    timelineSummaryEl.textContent = formatTimelineSummary(entries);
-    renderTimelineRail(entries);
+    const windowInfo = renderTimelineRail(entries);
+    timelineSummaryEl.textContent = formatTimelineSummary(entries, windowInfo?.unit ?? null);
   }
 
   function renderTextAndMedia() {
@@ -1129,6 +1240,7 @@
     audio.load();
     state.currentAudioPath = "";
     state.currentAudioCandidateIndex = -1;
+    updateAudioMetaControls();
   }
 
   async function loadAudioCandidate(candidateIndex, autoplay = false) {
@@ -1150,6 +1262,7 @@
     audio.pause();
     audio.src = toSafeUrl(state.currentAudioPath);
     audio.load();
+    updateAudioMetaControls();
 
     if (autoplay) {
       try {
@@ -1187,6 +1300,7 @@
     state.currentAudioCandidateIndex = -1;
     state.currentAudioPath = "";
     state.autoplayRequested = autoplay;
+    updateAudioMetaControls();
 
     if (state.currentAudioCandidates.length === 0) {
       clearAudioElement();
@@ -1276,6 +1390,11 @@
     audio.currentTime = Math.max(0, (Number.isFinite(audio.currentTime) ? audio.currentTime : 0) - seconds);
   }
 
+  function updateAudioMetaControls() {
+    if (!rewindBtn) return;
+    rewindBtn.disabled = state.currentAudioCandidates.length === 0 || !state.currentAudioPath;
+  }
+
   function ensureEnhancedLayout() {
     if (playerCardEl && playerMetaEl && playerControlsRowEl && !playerCardEl.querySelector(".player-top-row")) {
       const topRow = document.createElement("div");
@@ -1332,24 +1451,24 @@
         </div>
         <div class="timeline-rail" id="timelineRail">
           <div class="timeline-track">
+            <div class="timeline-grid" id="timelineGrid"></div>
             <div class="timeline-axis"></div>
-            <div class="timeline-range timeline-range--start" id="timelineRangeStart"></div>
-            <div class="timeline-range timeline-range--end" id="timelineRangeEnd"></div>
             <div class="timeline-spans" id="timelineSpans"></div>
+            <div class="timeline-span-labels" id="timelineSpanLabels"></div>
             <div class="timeline-points" id="timelinePoints"></div>
+            <div class="timeline-point-labels" id="timelinePointLabels"></div>
           </div>
         </div>
-        <div class="timeline-cards" id="timelineCards"></div>
         <div class="timeline-fallback" id="timelineFallback" hidden></div>
       `;
       currentCardEl.parentNode.insertBefore(timelineSectionEl, currentCardEl);
       timelineSummaryEl = timelineSectionEl.querySelector("#timelineSummary");
-      timelineRangeStartEl = timelineSectionEl.querySelector("#timelineRangeStart");
-      timelineRangeEndEl = timelineSectionEl.querySelector("#timelineRangeEnd");
       timelineRailEl = timelineSectionEl.querySelector("#timelineRail");
+      timelineGridEl = timelineSectionEl.querySelector("#timelineGrid");
       timelineSpansEl = timelineSectionEl.querySelector("#timelineSpans");
+      timelineSpanLabelsEl = timelineSectionEl.querySelector("#timelineSpanLabels");
       timelinePointsEl = timelineSectionEl.querySelector("#timelinePoints");
-      timelineCardsEl = timelineSectionEl.querySelector("#timelineCards");
+      timelinePointLabelsEl = timelineSectionEl.querySelector("#timelinePointLabels");
       timelineFallbackEl = timelineSectionEl.querySelector("#timelineFallback");
     }
   }
