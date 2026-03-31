@@ -3285,25 +3285,146 @@
           "id": "03.19-p001",
           "text": "Against that larger background, Erlitou appears as the first clearly urban horizon in the story.\nIts importance lies not only in a few striking objects, but in the appearance together of monumental building, ambitious burial, and cast bronze vessels.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.19-p002",
           "text": "The site was discovered near Luoyang in western Henan and gave its name to a wider archaeological culture extending across much of the surrounding region.\nThe mixture of older and newer traits is striking.\nSome elements are still recognizably Neolithic.\nOthers open directly into the Bronze Age proper.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.19-p003",
           "text": "Among the features already present are pounded-earth construction, rich burials, cast bronze vessels, turquoise inlay, lacquered wood, divination by animal bones, human sacrifice, and the ge weapon in bronze and jade.\nThis is not yet the fully developed world of Zhengzhou or Anyang.\nBut it is already a society of rank, labor mobilization, and emerging court culture.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.19-p004",
           "text": "The continuity with later developments is especially important.\nMuch of what appears at Erlitou survives for centuries afterward.\nIt is one of those sites where later Chinese Bronze Age civilization can be seen forming before it has reached its full scale.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3315,32 +3436,177 @@
         {
           "id": "03.20-p001",
           "text": "Erlitou lies on the south bank of the Luo River and extends over a large area.\nIn its central zone, archaeologists found pounded-earth terraces and building foundations that imply planned monumental architecture.\nFigure 3.11 gives a sense of one of the main compounds.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.11",
+              "caption": "The main palace foundation at Erlitou. It helps visualize the scale of the pounded-earth compound and the formal architectural planning already present there."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.20-p002",
           "text": "The largest excavated terrace is a great square platform more than one hundred meters across.\nIt was built by pounding thin layers of earth into an excavation and then raising the surface above the surrounding ground.\nThis was laborious work, and its scale is already socially revealing.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.20-p003",
           "text": "Inside the enclosure stood a large pillared hall.\nPost holes suggest a rectangular timber building with an unroofed porch along the south side.\nIf smaller outer holes belonged to eave supports, the roof may even have been hipped.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.20-p004",
           "text": "Another nearby compound had a similar hall but also signs of internal partition walls.\nAt least one of these buildings may have been designed for formal gatherings.\nA large audience could have watched ceremonies from the open space inside the enclosure.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.20-p005",
           "text": "The architectural significance is long-range.\nA pillared hall inside a walled compound, built on pounded earth, is the beginning of a durable tradition.\nHangtu construction remains central throughout the Bronze Age, whether in platforms, walls, or tomb fill.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            }
+          ]
         }
       ]
     },
@@ -3353,25 +3619,146 @@
           "id": "03.21-p001",
           "text": "One of the most revealing Erlitou compounds also contained a large tomb dug into the terrace.\nIts shaft was rectangular, deep, and furnished with an ercengtai, the ledge or shelf left around the coffin chamber.\nThe grave had been plundered, but its scale still speaks plainly.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.21-p002",
           "text": "The tomb also contained traces of cinnabar, fragments of a lacquer coffin, and the skeleton of a dog that seems to have had a lacquer coffin of its own.\nEven stripped of its goods, the burial announces a rank far above that of ordinary graves.\nIts size is comparable to one of the most famous royal tombs later found at Anyang.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A royal tomb that fixes one of the clearest archaeological points within the Anyang sequence."
+            }
+          ]
         },
         {
           "id": "03.21-p003",
           "text": "Other rich Erlitou burials are smaller, but they repeat a recognizable set of signs.\nThere are traces of lacquer, cinnabar, the ercengtai, and often a waist pit beneath the coffin.\nBronze, jade, and pottery grave goods complete the pattern.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.21-p004",
           "text": "What emerges is social hierarchy rather than a clearly named political system.\nThe foundations and tombs prove organized labor and strong distinctions of rank.\nBut archaeology still cannot say with confidence what sort of state, if any, stood behind them.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         }
       ]
     },
@@ -3384,31 +3771,186 @@
           "id": "03.22-p001",
           "text": "The bronzes from Erlitou are the clearest evidence yet of a transformed metal industry in early second-millennium China.\nThe alloy figures remain limited, so the term bronze is used cautiously.\nBut the analyzed pieces contain enough tin to suggest deliberate alloying.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.22-p002",
           "text": "The inventory includes vessels, bells, plaques, knives, and ge blades, as seen in Figures 3.12 and 3.13.\nOne ring-handled knife may even point northward, suggesting contact with the Northern Zone.\nThe ge blades are especially important because they mark the first appearance of a standard Bronze Age weapon.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.12",
+              "caption": "Bronze weapons from Erlitou, including ge blades and a knife. The figure matters because it shows how early weapon types and outside contacts begin to appear together."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First half of the second millennium BC",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. 2000-1500 BC",
+              "certainty": "approximate",
+              "caption": "The long formative span before the mature Erligang and Anyang worlds."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.22-p003",
           "text": "The bells are small and probably had clappers.\nLater examples of this kind were sometimes tied to the necks of dogs or horses.\nTurquoise-inlaid plaques add another note of luxury, even if their exact use remains uncertain.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.22-p004",
           "text": "Above all, the metal inventory is dominated by cast vessels.\nJue are the most numerous, but jia, ding, he, and fragments of gu are also present.\nA new material had been assigned to functions once served by pottery, probably in funerary offering and ritual display.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.13",
+              "caption": "Bronze vessels from Erlitou. The important point is that cast vessel forms such as jue, jia, and ding were already present in simple but durable early versions."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.22-p005",
           "text": "Only two vessels so far carry decoration, and it is extremely simple.\nYet even this matters.\nThe designs were cast, not engraved afterward, and the vessel types themselves proved lasting.\nIn function, manufacture, and formal vocabulary, Erlitou established precedents for the whole Bronze Age that followed.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.13",
+              "caption": "The Erlitou bronze vessels also show the earliest cast decoration in this sequence. Even the very simple patterns matter because they establish a lasting technical precedent."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3421,31 +3963,176 @@
           "id": "03.23-p001",
           "text": "The jades from Erlitou tell a less straightforward story than the bronzes.\nBronze can be melted down and recast.\nJade usually remains in circulation for long periods, so its archaeological distribution is much harder to interpret.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Liangzhu culture",
+              "start": -3300,
+              "end": -2200,
+              "display_date": "c. 3300-2200 BC",
+              "certainty": "approximate",
+              "caption": "A lower Yangzi late Neolithic culture whose jade repertory provides one of the main long-range comparisons for Erlitou."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.23-p002",
           "text": "Even so, the Erlitou inventory is revealing.\nThe most common types are trapezoidal knives, ge blades, axes, disk-axes, arc-ended blades, and handles, as shown in Figure 3.14.\nEach has a different history and a different pattern of connections.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.14",
+              "caption": "Jades from Erlitou, including ge blades, disk-axes, and arc-ended forms. The figure helps show how varied the jade inventory was and how mixed its inheritances appear."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Liangzhu culture",
+              "start": -3300,
+              "end": -2200,
+              "display_date": "c. 3300-2200 BC",
+              "certainty": "approximate",
+              "caption": "A lower Yangzi late Neolithic culture whose jade repertory provides one of the main long-range comparisons for Erlitou."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.23-p003",
           "text": "Some forms look back toward the eastern Neolithic.\nThe trapezoidal knives seem to enlarge an older east coast type.\nThe axes also have Neolithic ancestors, though their saw-cut decoration is new.\nThe jade ge, by contrast, copies the new bronze weapon.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Liangzhu culture",
+              "start": -3300,
+              "end": -2200,
+              "display_date": "c. 3300-2200 BC",
+              "certainty": "approximate",
+              "caption": "A lower Yangzi late Neolithic culture whose jade repertory provides one of the main long-range comparisons for Erlitou."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.23-p004",
           "text": "The relation to the Liangzhu world is especially instructive.\nOne or two details suggest distant echoes, and a handle decorated with thread-relief faces clearly recalls Liangzhu workmanship.\nBut the overlap is actually small.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Liangzhu culture",
+              "start": -3300,
+              "end": -2200,
+              "display_date": "c. 3300-2200 BC",
+              "certainty": "approximate",
+              "caption": "A lower Yangzi late Neolithic culture whose jade repertory provides one of the main long-range comparisons for Erlitou."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.23-p005",
           "text": "Of the three most characteristic Liangzhu jade forms, the axe appears at Erlitou only in altered versions, the cong is barely present, and the plain disk is absent.\nThat makes any strong claim of special connection doubtful.\nThe jades point not to a single inheritance, but to a complicated and selective reworking of older traditions.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Liangzhu culture",
+              "start": -3300,
+              "end": -2200,
+              "display_date": "c. 3300-2200 BC",
+              "certainty": "approximate",
+              "caption": "A lower Yangzi late Neolithic culture whose jade repertory provides one of the main long-range comparisons for Erlitou."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         }
       ]
     },
@@ -3458,25 +4145,137 @@
           "id": "03.24-p001",
           "text": "Erlitou was the largest and richest site of its culture, and the range of raw materials found there implies wide exchange.\nCopper, tin, jade, turquoise, and cowries were not all local.\nThe site must have stood within extensive networks of movement and acquisition.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            }
+          ]
         },
         {
           "id": "03.24-p002",
           "text": "Whether those networks were controlled by a single state is another matter.\nThe evidence proves labor mobilization, social rank, and concentration of wealth.\nIt does not yet prove the exact political form in which those things were organized.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            }
+          ]
         },
         {
           "id": "03.24-p003",
           "text": "What can be said with more confidence is that Erlitou stands very close to the threshold of the Erligang world.\nIts later levels fall near the middle of the second millennium BC, and their pottery and other remains point strongly toward Zhengzhou.\nOn present evidence, Erlitou is the immediate ancestor of the first great Bronze Age civilization in East Asia.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "First urban horizon in the middle Yellow River",
+              "start": -2000,
+              "end": -1500,
+              "display_date": "c. first half of the second millennium BC",
+              "certainty": "approximate",
+              "caption": "The span in which the earliest urban societies appear in the middle Yellow River region."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            }
+          ]
         },
         {
           "id": "03.24-p004",
           "text": "In that sense Erlitou is both already impressive and still unfinished.\nIt is not merely a preface.\nIt is the stage at which many enduring features of later Bronze Age society first come together, before they expand into the wider and more forceful horizon of Erligang.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou horizon",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The formative horizon in which large-scale casting, elite display, and early urban organization first come together."
+            },
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Early Bronze Age",
+              "start": -1600,
+              "end": -1046,
+              "display_date": "c. 1600-1046 BC",
+              "certainty": "approximate",
+              "caption": "The age in which large-scale casting and elite bronze cultures define the first clearly civilized societies in China."
+            }
+          ]
         }
       ]
     },
@@ -3488,26 +4287,143 @@
         {
           "id": "03.25-p001",
           "text": "Panlongcheng had already shown that the Erligang world could establish itself far to the south.\nFigure 3.15, the plan of Lijiazui M2, makes that presence concrete in funerary form, with bronzes, jades, tools, pottery, and human remains arranged in a recognizably elite burial.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.15",
+              "caption": "Plan of Lijiazui M2 at Panlongcheng. The point is the fully furnished elite tomb in the south, showing how far the Erligang burial system had spread."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.25-p002",
           "text": "Southern finds, however, do not stand alone.\nTypical Erligang bronzes have been found across a large part of North and Central China.\nWherever they appear, they are virtually indistinguishable from Zhengzhou counterparts.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.25-p003",
           "text": "That uniformity suggests that Erligang expansion was not slow or diffuse.\nA complex bronze technology and a standardized vessel inventory seem to have spread over a large territory in a sharply defined movement.\nConquest is the simplest explanation.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.25-p004",
           "text": "Yet the expansion also seems to have been brief.\nAfter the Erligang period, the wide stylistic unity disappears.\nNothing comparable reappears before the Zhou period.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         }
       ]
     },
@@ -3520,25 +4436,155 @@
           "id": "03.26-p001",
           "text": "The centuries immediately after Erligang saw the rise of local bronze-using cultures, and likely of local powers, in places that may previously have known nothing of metallurgy.\nThe clearest southern case lay in northern Jiangxi, at Wucheng and nearby Xin'gan on the Gan River.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.26-p002",
           "text": "Wucheng was excavated in 1973.\nIts middle level yielded short unreadable inscriptions incised on pottery, and also evidence of bronze casting in the form of weapons and numerous molds of pottery and stone.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
+            },
+            {
+              "type": "point",
+              "label": "Wucheng excavated",
+              "start": 1973,
+              "end": 1973,
+              "display_date": "1973",
+              "certainty": "secure",
+              "caption": "Excavation at Wucheng first exposed the pottery, inscriptions, and casting evidence of a southern bronze-using culture."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb discovered",
+              "start": 1989,
+              "end": 1989,
+              "display_date": "1989",
+              "certainty": "secure",
+              "caption": "The rich tomb at Xin'gan made southern bronze traditions much harder to dismiss as peripheral."
+            }
+          ]
         },
         {
           "id": "03.26-p003",
           "text": "The pottery was distinctive.\nMuch of it carried impressed geometric designs.\nA smaller group consisted of technically advanced glazed and high-fired wares that the excavators called primitive porcelain.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.26-p004",
           "text": "That assemblage was striking enough for Wucheng to be proposed as the type site of a new archaeological culture.\nEven so, the site did not transform the larger discussion until a major tomb was found nearby in 1989.\nOnly then did the scale of the local civilization become fully visible.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
+            },
+            {
+              "type": "point",
+              "label": "Wucheng excavated",
+              "start": 1973,
+              "end": 1973,
+              "display_date": "1973",
+              "certainty": "secure",
+              "caption": "Excavation at Wucheng first exposed the pottery, inscriptions, and casting evidence of a southern bronze-using culture."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb discovered",
+              "start": 1989,
+              "end": 1989,
+              "display_date": "1989",
+              "certainty": "secure",
+              "caption": "The rich tomb at Xin'gan made southern bronze traditions much harder to dismiss as peripheral."
+            }
+          ]
         }
       ]
     },
@@ -3551,25 +4597,173 @@
           "id": "03.27-p001",
           "text": "The tomb at Xin'gan could be linked firmly to Wucheng because its pottery matched Wucheng pottery in shape, clay, glaze, decoration, and incised marks.\nBut the rest of its contents came as a surprise.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         },
         {
           "id": "03.27-p002",
           "text": "This was one of the richest Early Bronze Age burials ever found.\nOnly the tomb of Fu Hao at Anyang seems clearly richer.\nXin'gan contained 356 pottery vessels, 50 bronze vessels, 4 bells, more than 400 bronze tools and weapons, and about 150 jades, apart from hundreds of jade beads.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A royal tomb that fixes one of the clearest archaeological points within the Anyang sequence."
+            }
+          ]
         },
         {
           "id": "03.27-p003",
           "text": "The assemblage is important not only for its wealth, but for its date.\nThe earliest bronzes are standard Erligang types.\nThe later ones belong to the period between the end of Erligang and the full rise of Anyang around 1200 BC.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         },
         {
           "id": "03.27-p004",
           "text": "That makes the tomb the largest known assemblage from the transition period.\nSince Zhengzhou and Anyang have yielded only scant remains from that interval, Xin'gan becomes a crucial witness.\nIt preserves a stage that is otherwise poorly represented in the central sites.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         }
       ]
     },
@@ -3582,31 +4776,176 @@
           "id": "03.28-p001",
           "text": "The bronzes from Xin'gan show a local industry emerging from an Erligang base.\nSome pieces still follow standard Erligang forms.\nOthers reveal a distinct regional taste taking shape.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.28-p002",
           "text": "That local taste appears in several ways.\nSome decorative schemes echo Wucheng pottery.\nThree unusual tripods seem to have been converted from ring-footed vessels, perhaps imported items radically remade for local use.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.28-p003",
           "text": "A large fangding is especially revealing.\nIn most respects it resembles northern examples, yet tigers rise on its handles in a startling local flourish.\nFigure 3.16 shows the effect clearly.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.16",
+              "caption": "Bronze fangding from Xin'gan with tigers rising on the handles. It shows how a southern workshop could inherit northern forms and yet transform them with a strong local accent."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.28-p004",
           "text": "The four bells are just as important.\nThey connect Wucheng not only to Xin'gan, but to a larger cultural province in the lower Yangzi and perhaps, a little later, in the middle Yangzi as well.\nThree are mouth-upward nao, struck from the outside, and one is a suspended bo.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.28-p005",
           "text": "These are the earliest securely dated bells of that class found together with bronze vessels.\nThough Wucheng is still the only known city site in this southern zone, the bells imply a broader world.\nLarge bells were becoming the defining artifact of a civilization distinct from the northern courts.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3619,31 +4958,207 @@
           "id": "03.29-p001",
           "text": "Comparison with Fu Hao's tomb makes the southern difference unmistakable.\nFu Hao's tomb contained far more jades and bronze vessels, but quantity alone is not the point.\nThe significant contrast lies in the types.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A royal tomb that fixes one of the clearest archaeological points within the Anyang sequence."
+            }
+          ]
         },
         {
           "id": "03.29-p002",
           "text": "At Anyang, jia, jue, and gu were fundamental vessel forms in elite burials.\nAt Xin'gan they are absent.\nInstead the assemblage is dominated by ding and li, and it also includes the four large bells.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A royal tomb that fixes one of the clearest archaeological points within the Anyang sequence."
+            }
+          ]
         },
         {
           "id": "03.29-p003",
           "text": "That combination can hardly belong to a northerner.\nIt points to a local ritual system and a local elite.\nThe occupant of the tomb stood inside a southern tradition, not on the margins of a northern one.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         },
         {
           "id": "03.29-p004",
           "text": "This mattered because Chinese archaeology had long tried to explain southern bronzes away.\nThey were often treated as imports from Anyang, or as provincial imitations, or as the possessions of Shang agents.\nXin'gan made those explanations much harder to sustain.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Salvage archaeology",
+              "start": 1950,
+              "end": 1989,
+              "display_date": "c. 1950-1989",
+              "certainty": "approximate",
+              "caption": "Rescue work and chance finds widened the archaeological sample far beyond sites chosen chiefly from texts."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pits discovered",
+              "start": 1986,
+              "end": 1986,
+              "display_date": "1986",
+              "certainty": "secure",
+              "caption": "The spectacular pits at Sanxingdui forced wider recognition of strong regional civilizations beyond the Central Plain."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb discovered",
+              "start": 1989,
+              "end": 1989,
+              "display_date": "1989",
+              "certainty": "secure",
+              "caption": "The rich tomb at Xin'gan made southern bronze traditions much harder to dismiss as peripheral."
+            }
+          ]
         },
         {
           "id": "03.29-p005",
           "text": "The bronzes are unmistakably local, technically accomplished, and in some cases as fine as anything from the north.\nWucheng and Xin'gan therefore begin to look like the remains of a local power, a city and the cemetery of its rulers.\nThe old image of civilization as a monopoly of the Yellow River valley becomes much less credible.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         }
       ]
     },
@@ -3656,25 +5171,146 @@
           "id": "03.30-p001",
           "text": "The pattern seen in Jiangxi seems not to have been unique.\nAfter the short-lived Erligang expansion, local bronze-using cultures emerged in several regions.\nWhat broke down was uniformity, not contact.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.30-p002",
           "text": "The transition period was therefore not a time of isolation.\nIt was a time when local styles began to form inside a larger field of interaction.\nImported bronzes, imported artisans, and gifts between courts must all have played a part.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.30-p003",
           "text": "Wucheng and Xin'gan offer the clearest southern example because excavation happened to uncover them.\nElsewhere the evidence is thinner and depends mainly on chance finds.\nBut those finds are enough to show that civilized centers were widely distributed.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            }
+          ]
         },
         {
           "id": "03.30-p004",
           "text": "The next evidence comes from Anhui, Beijing, Hebei, and southern Shaanxi.\nTogether these finds suggest a flowering of local powers after Erligang, even though the record remains frustratingly uneven.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3687,25 +5323,142 @@
           "id": "03.31-p001",
           "text": "Two finds in Anhui are especially striking, one from Funan on the Huai River and one from Feixi between the Huai and the Yangzi.\nNeither was well documented archaeologically.\nBut the bronzes themselves are extraordinary.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.31-p002",
           "text": "The Feixi find consisted of a pair of jia and a pair of jue.\nFigure 3.17 captures their scale and refinement.\nThe jue are among the largest known, and the jia are equally imposing.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.17",
+              "caption": "A monumental bronze jue from Feixi. The useful point is the scale and refinement of transition-period bronzes in the Huai region."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.31-p003",
           "text": "The Funan find included pairs of jue, jia, and gu, together with two remarkable zun.\nOne of those zun was already used earlier to illustrate late Style III decoration.\nHere the point is not only style, but the appearance of very high-quality bronzes in the Huai region.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Style III",
+              "start": -1450,
+              "end": -1250,
+              "display_date": "c. 1450-1250 BC",
+              "certainty": "approximate",
+              "caption": "The expansive stage of denser patterning, wider regional branching, and late experiments in stronger relief."
+            }
+          ]
         },
         {
           "id": "03.31-p004",
           "text": "Both assemblages look like elite burial sets of northern type.\nThat suggests that the Huai region was not peripheral in any simple sense.\nEven where the documentation is poor, such bronzes force the conclusion that major courts or major patrons were active there.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3718,25 +5471,137 @@
           "id": "03.32-p001",
           "text": "A large grave at Pinggu in modern Beijing is important for a different reason.\nIts goods mix familiar bronze vessels with objects that seem distinctly foreign.\nThe result is a border picture, not a purely central one.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.32-p002",
           "text": "The grave seems to have had an Erligang burial form, but it also contained an axe with an iron blade, bronze disks with human faces, and gold ornaments of types linked to the northeast.\nThe occupant cannot be fitted neatly into a single cultural box.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.32-p003",
           "text": "Taixicun in Hebei tells a related story.\nThe site yielded houses, pits, graves, bronze vessels, divination bones, textiles, and lacquered wood.\nSome materials point northward, others toward the culture of the Yellow River valley.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.32-p004",
           "text": "Yet Taixicun does not seem to have been one of the greatest centers of the time.\nIts graves are modest, and the site is comparatively small.\nIts importance lies rather in showing a mixed frontier world where ritual forms, craft traditions, and peoples overlapped.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3749,31 +5614,190 @@
           "id": "03.33-p001",
           "text": "The most tantalizing transition period center may be Chenggu in southern Shaanxi, at the meeting of the Han River and the Xushui.\nRepeated accidental finds there have produced more than five hundred bronzes, mostly weapons, but also chariot fittings and fine vessels.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.33-p002",
           "text": "These were not ordinary graves.\nThey seem instead to have been pit deposits of uncertain purpose.\nEven so, the quality of some vessels is astonishing.\nFigure 3.18 shows one such bronze, fully equal in ambition to the best works from other regions.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.18",
+              "caption": "A bronze pou from Chenggu. It matters because it shows the high quality of a center known mainly through chance finds rather than systematic excavation."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.33-p003",
           "text": "One deposit at Sucun is especially revealing.\nIt contained a mass of ge blades, many bronze disks, human and animal bronze faces, and a pair of fanglei.\nSome of these have close counterparts in Fu Hao's tomb, while the human faces also link Chenggu to the Wei valley and to Xin'gan, as Figure 3.19 makes clear.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.19",
+              "caption": "Bronze human faces from Xin'gan and Shaanxi. Their resemblance helps reveal contact between distant regions during the transition period."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes transformed the picture of late second-millennium regional culture."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A royal tomb that fixes one of the clearest archaeological points within the Anyang sequence."
+            }
+          ]
         },
         {
           "id": "03.33-p004",
           "text": "Those links are crucial.\nThey imply contact running north into the Wei valley, south toward Sichuan, east toward Anyang, and southeast toward Jiangxi and Hunan.\nEven without full excavation, Chenggu emerges as an important node in a wide network of interacting powers.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.33-p005",
           "text": "This only sharpens the irony that the transition period is poorly known at Zhengzhou and only dimly visible at Anyang.\nFor this interval, the central plain is not where the clearest evidence lies.\nThe archaeological light falls more strongly on the margins.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3786,31 +5810,189 @@
           "id": "03.34-p001",
           "text": "Anyang becomes central again at about 1200 BC.\nThe oracle inscriptions found there were made on behalf of nine kings whose names later tradition preserves as the last rulers of the Shang or Yin dynasty.\nThat is why the site is identified as the last Shang capital.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.34-p002",
           "text": "Even here, however, chronology is not simple.\nThe calendar dates depend partly on later texts.\nArchaeologists rely mainly on a sequence of pottery stages, Yinxu 1 to 4, and then try to connect inscribed finds to that sequence.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.34-p003",
           "text": "On present understanding, Wu Ding belongs to late Yinxu 1 and early Yinxu 2.\nThis matters because the first great building foundations at the site also seem to belong to that moment.\nAnyang may have become a major city under his reign.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great building foundations and large-scale divination remains."
+            }
+          ]
         },
         {
           "id": "03.34-p004",
           "text": "Around that same time the site's most striking features appear together.\nThere are inscribed oracle bones, huge tombs, chariot burials, and human sacrifice on a scale not seen earlier.\nNo earlier site approaches the richness of Fu Hao's tomb or the sheer quantity of divinatory inscriptions.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great building foundations and large-scale divination remains."
+            }
+          ]
         },
         {
           "id": "03.34-p005",
           "text": "Anyang is therefore truly exceptional, but not in a simple way.\nIts prominence reflects ancient reality, yet it also reflects decades of excavation.\nIf places such as Zhengzhou, Sanxingdui, or the Yangzi centers were equally well known, the balance of the picture might look different.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Anyang excavations",
+              "start": 1928,
+              "end": 1937,
+              "display_date": "1928-1937",
+              "certainty": "secure",
+              "caption": "The first sustained excavation campaign at Anyang, which turned oracle-bone collecting into field archaeology."
+            },
+            {
+              "type": "span",
+              "label": "National archaeology after 1949",
+              "start": 1949,
+              "end": 1989,
+              "display_date": "1949-1989",
+              "certainty": "approximate",
+              "caption": "The era in which archaeology became state-supported and increasingly tied to national historical narratives."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         }
       ]
     },
@@ -3823,37 +6005,205 @@
           "id": "03.35-p001",
           "text": "Writing is one reason Anyang looms so large.\nOnce written documents appear, the past instantly seems more concrete.\nBut this concreteness can mislead as much as it helps.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.35-p002",
           "text": "One question is whether writing itself first appeared at Anyang around 1200 BC.\nInscriptions show up on bronzes at about the same time that they appear on oracle bones, and that might suggest a true beginning.\nYet it is equally possible that writing had already existed on perishable materials.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.35-p003",
           "text": "The evidence from Anyang itself points in that direction.\nThere are signs of brush writing, and indirect evidence for wood or bamboo writing surfaces.\nIf so, the inscribed bones are only one surviving corner of a much larger written world.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.35-p004",
           "text": "This matters because it limits the inferences one may draw.\nThe first surviving texts need not be the first texts ever written.\nWriting at this stage need not have been confined to divination, or to the royal court, or even to Anyang itself.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.35-p005",
           "text": "Comparison with the Western Zhou makes the point clearer.\nWithout inscribed bronzes, Zhou literacy would hardly be visible archaeologically, even though it was surely much broader than the bronze record alone suggests.\nThe poverty of the Chinese textual record, compared with the clay tablets of the ancient Near East, may say more about preservation than about civilization.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.35-p006",
           "text": "The surviving Anyang texts are therefore both invaluable and distorting.\nThey are the earliest surviving documents, but all come from one place and one narrow sphere.\nThe result is a view of the second millennium filtered through the concerns of a single royal court.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         }
       ]
     },
@@ -3866,31 +6216,189 @@
           "id": "03.36-p001",
           "text": "Just before Wu Ding's time, the main areas of activity at Anyang seem to have lain near Xiaotun and across the Huan River at Sanjiazhuang.\nUnder Wu Ding the settlement expanded rapidly.\nBy the end of his reign it may have covered about 15 square kilometers, and by the end of the dynasty perhaps 24.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great building foundations and large-scale divination remains."
+            }
+          ]
         },
         {
           "id": "03.36-p002",
           "text": "The site included cemeteries, dwelling areas, workshops, royal foundations, and vast mortuary zones.\nNo city wall has been found.\nThat absence has sometimes encouraged contrast with walled places such as Zhengzhou and Panlongcheng, though the functional meaning of the difference remains uncertain.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            }
+          ]
         },
         {
           "id": "03.36-p003",
           "text": "Workshops were especially important.\nAt Miaopu Beidi in the south, excavation revealed industrial areas for bronze and bone working.\nBy the end of the dynasty, the bronze foundry there covered roughly 10000 square meters.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         },
         {
           "id": "03.36-p004",
           "text": "Near Xiaotun lay the great rammed-earth foundations usually interpreted as palaces and temples.\nMore than fifty were excavated.\nTheir stratigraphy is difficult, but the earliest probably belong to Wu Ding's reign.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great building foundations and large-scale divination remains."
+            }
+          ]
         },
         {
           "id": "03.36-p005",
           "text": "These foundations stand among pits used for storage, dwelling, sacrifice, and the keeping of oracle bones.\nOne pit held more than seventeen thousand turtle plastron fragments.\nOther deposits of inscribed bones were found later at Xiaotun South and Huayuanzhuang.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old discipline of bronze ornament gradually loosened."
+            }
+          ]
         }
       ]
     },
@@ -4734,7 +7242,7 @@
   "stats": {
     "sectionCount": 68,
     "paragraphCount": 273,
-    "figureCount": 13,
-    "timelineItemCount": 275
+    "figureCount": 23,
+    "timelineItemCount": 539
   }
 }
