@@ -1,0 +1,574 @@
+const BOOK_DATA = {
+  "title": "1 — Molecular Orbital Theory",
+  "language": "en",
+  "sections": [
+    {
+      "id": "01.01",
+      "number": "01.01",
+      "title": "Introduction",
+      "paragraphs": [
+        {
+          "id": "01.01-p001",
+          "text": "The central problem is not merely how to push a quantum-chemical calculation through a computer, but how to see where its numbers come from and what structural picture they express. Numerical methods and formal quantum mechanics remain indispensable, yet the real gain comes when one can read a molecular or solid-state electronic structure as the consequence of a small number of intelligible ideas: symmetry, mixing, perturbation, geometrical change, and the reorganization of orbitals when atoms or fragments are brought into new relations.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.01-p002",
+          "text": "That is why a largely qualitative discussion can still be exact in spirit. One wants to understand how orbitals of a large molecule can be assembled from smaller pieces, how they shift when geometry is distorted, how they respond when one atom is replaced by another, and how the presence of a second molecule changes the pattern during reaction. Once these recurring patterns are recognized, very different regions of chemistry begin to look continuous with one another rather than like isolated topics.",
+          "visuals": [],
+          "equations": [],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.02",
+      "number": "01.02",
+      "title": "Atomic Orbitals",
+      "paragraphs": [
+        {
+          "id": "01.02-p001",
+          "text": "A molecular orbital is usually expanded as a linear combination of atomic orbitals, so the first task is to understand the shape and structure of those atomic pieces. In polar coordinates, an atomic wavefunction is written in the separated form \\( \\chi(r,\\theta,\\phi)=R(r)Y(\\theta,\\phi) \\) (E1). The factor \\(R(r)\\) carries the radial information: how the amplitude changes with distance from the nucleus. The factor \\(Y(\\theta,\\phi)\\) carries the angular information: how the wavefunction is oriented in space. For a one-electron atom such as hydrogen, this separation can be solved exactly. For many-electron atoms, the angular part is still taken to have the same basic form, while the radial part must be approximated. Table 1.1 is therefore important not as a list to memorize, but as a compact atlas of angular patterns: \\(s\\) functions have no directional preference, \\(p\\) functions pick out one axis, and \\(d\\) functions encode more articulated directional structure.",
+          "visuals": [
+            {
+              "id": "table-1.1",
+              "label": "Table 1.1",
+              "kind": "table",
+              "caption": "Angular components of common atomic orbitals. The table summarizes the directional part \\(Y(\\theta,\\phi)\\) for \\(s\\), \\(p\\), and \\(d\\) functions in both Cartesian and polar language, making clear which coordinate dependence creates each orbital shape."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.02-p001-e01",
+              "label": "E1",
+              "latex": "\\chi(r,\\theta,\\phi)=R(r)Y(\\theta,\\phi)",
+              "spoken": "",
+              "note": "Separation of the atomic wavefunction into a radial factor and an angular factor. This is exact for hydrogenic atoms and serves as the structural template for approximate many-electron atomic orbitals."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p002",
+          "text": "Figure 1.1 then shows what these functions look like when one follows the amplitude along an axis and then turns that information into a three-dimensional boundary surface. For a 1s orbital, the amplitude decreases smoothly and rapidly as one moves away from the nucleus, so the corresponding boundary is spherical. For a \\(2p_x\\) orbital, the amplitude has opposite sign on the two sides of the nucleus, so the orbital splits into two lobes separated by a nodal surface through the center. The sign here is part of the wavefunction itself, not of the observable density. Because drawing plus and minus signs on every lobe is cumbersome, Figure 1.2 adopts the usual shading convention: one shade represents one phase, the unshaded region the opposite phase. This is especially useful later, because constructive or destructive mixing of orbitals depends on phase agreement, not merely on geometric overlap.",
+          "visuals": [
+            {
+              "id": "fig-1.1",
+              "label": "Figure 1.1",
+              "kind": "figure",
+              "caption": "Amplitude plots and boundary surfaces for a 1s orbital and a 2p orbital. The essential contrast is between spherical decay for 1s and the two-lobed, sign-changing structure of 2p."
+            },
+            {
+              "id": "diag-1.1",
+              "label": "Diagram 1.1",
+              "kind": "diagram",
+              "caption": "Small sign-convention sketch for an s orbital and its phase-reversed partner. It shows that an overall sign change reverses phase without changing orbital shape."
+            },
+            {
+              "id": "diag-1.2",
+              "label": "Diagram 1.2",
+              "kind": "diagram",
+              "caption": "Small sign-convention sketch for a p_x orbital and its phase-reversed partner. The nodal pattern stays fixed while all phases flip together."
+            },
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Gallery of s, p, and d orbitals drawn using the shading convention introduced by diagrams 1.1 and 1.2. It lets phase and nodal geometry be compared across the common orbital types."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p003",
+          "text": "The observable quantity is obtained only after squaring the wavefunction. When one integrates \\( |\\chi|^2 \\) over a small volume element, one obtains the probability of finding the electron there. This is why the wavefunction may change sign while the electron density does not. A nodal plane is a surface on which the wavefunction itself is exactly zero. For \\(p_x\\), the whole \\(yz\\)-plane is nodal, because the factor proportional to \\(x\\) vanishes there. In general, an \\(s\\) orbital has no angular node, a \\(p\\) orbital has one, and a \\(d\\) orbital has two. These nodes are not decorative features of the pictures. They are rigid consequences of the angular dependence and strongly constrain how an orbital can mix with others.",
+          "visuals": [
+            {
+              "id": "fig-1.2",
+              "label": "Figure 1.2",
+              "kind": "figure",
+              "caption": "Orbital sketches for the common s, p, and d types, all drawn with the same phase-shading convention. The main point here is how nodal structure differs systematically from one orbital family to another."
+            }
+          ],
+          "equations": [],
+          "videos": []
+        },
+        {
+          "id": "01.02-p004",
+          "text": "The radial part has its own structure. For a hydrogenic 1s orbital one has \\( R_{1s}(r)=\\frac{1}{\\sqrt{\\pi}}\\!\\left(\\frac{Z}{a_0}\\right)^{3/2}\\!\\exp\\!\\left(-\\frac{Zr}{a_0}\\right) \\) (E1), while for a hydrogenic 2s orbital one has \\( R_{2s}(r)=\\frac{1}{4\\sqrt{2\\pi}}\\!\\left(\\frac{Z}{a_0}\\right)^{3/2}\\!\\left(2-\\frac{Zr}{a_0}\\right)\\exp\\!\\left(-\\frac{Zr}{2a_0}\\right) \\) (E2). Here \\(a_0\\) is the Bohr radius and \\(Z\\) is the nuclear charge. The extra factor \\(2-\\frac{Zr}{a_0}\\) forces the 2s function to vanish when \\( r=\\frac{2a_0}{Z} \\), producing a radial node. So one must distinguish angular nodes, which come from \\(Y(\\theta,\\phi)\\), from radial nodes, which come from zeros of \\(R(r)\\). In general, for quantum numbers \\(n\\), \\(l\\), and \\(m\\), the total number of finite nodes is \\(n-1\\): \\(l\\) of them are angular and \\(n-l-1\\) are radial. Figure 1.3 makes these structures visible in contour form. It is also a useful warning that plotted orbitals depend on the basis used to approximate them: the caption notes that the displayed carbon 2s function is an STO-3G approximation, so it does not exhibit the radial node that an exact hydrogenic 2s function would have.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "Contour plots of several atomic orbitals, with solid lines for positive amplitude, dashed lines for negative amplitude, and dotted lines for angular nodes. The figure makes both nodal geometry and orbital diffuseness visually explicit."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.02-p004-e01",
+              "label": "E1",
+              "latex": "R_{1s}(r)=\\frac{1}{\\sqrt{\\pi}}\\left(\\frac{Z}{a_0}\\right)^{3/2}\\exp\\!\\left(-\\frac{Zr}{a_0}\\right)",
+              "spoken": "",
+              "note": "Hydrogenic 1s radial function. It decays monotonically from the nucleus and has no radial node."
+            },
+            {
+              "id": "eq-01.02-p004-e02",
+              "label": "E2",
+              "latex": "R_{2s}(r)=\\frac{1}{4\\sqrt{2\\pi}}\\left(\\frac{Z}{a_0}\\right)^{3/2}\\left(2-\\frac{Zr}{a_0}\\right)\\exp\\!\\left(-\\frac{Zr}{2a_0}\\right)",
+              "spoken": "",
+              "note": "Hydrogenic 2s radial function. The prefactor forces a zero at \\(r=2a_0/Z\\), creating a radial node."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p005",
+          "text": "To pass from amplitude to a radial probability picture, one multiplies by the volume weighting factor and looks at \\( R_{n,l}^2(r)\\,r^2 \\) (E1). This quantity answers a slightly subtler question than the bare wavefunction does: not the amplitude at one radius, but the probability of finding the electron in a thin spherical shell of radius \\(r\\). For hydrogen with \\(Z=1\\), this radial probability is maximal at \\(a_0\\) for 1s, at about \\(5.2a_0\\) for 2s, and at \\(4a_0\\) for 2p. So although 2s has a radial node, it is on average much more diffuse than 1s. More generally, as one descends a column of the periodic table and the principal quantum number \\(n\\) increases, the valence orbitals spread farther from the nucleus.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "Contour plots that emphasize orbital size as well as nodal structure. They help explain why higher-\\(n\\) valence orbitals are increasingly diffuse."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.02-p005-e01",
+              "label": "E1",
+              "latex": "R_{n,l}^2(r)\\,r^2",
+              "spoken": "",
+              "note": "Radial probability density up to normalization. Multiplying by \\(r^2\\) accounts for the growing volume of spherical shells with radius \\(r\\)."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p006",
+          "text": "The nodal structure of the \\(d\\) orbitals deserves a separate look because it already shows how geometry enters the theory. For \\(d_{yz}\\), as for \\(d_{xy}\\), \\(d_{xz}\\), and \\(d_{x^2-y^2}\\), the two angular nodes are planes meeting at right angles. For \\(d_{z^2}\\), however, the nodes are not planes but cones. This follows directly from its angular factor \\(3\\cos^2\\theta-1\\): setting that expression equal to zero gives \\( \\cos^2\\theta=\\frac{1}{3} \\) (E1), so the nodal direction satisfies \\( \\theta=\\arccos\\!\\left(\\frac{1}{\\sqrt{3}}\\right)\\approx 54.73^\\circ \\) (E2) from the \\(z\\)-axis. Figure 1.3 makes this especially clear. The lesson is that a node is the geometric trace of a mathematical condition, and the orbital picture becomes precise only when one sees that relation.",
+          "visuals": [
+            {
+              "id": "fig-1.3",
+              "label": "Figure 1.3",
+              "kind": "figure",
+              "caption": "The \\(d\\)-orbital contours reveal that some angular nodes are planes, while the \\(d_{z^2}\\) orbital instead has conical nodes. The figure turns the algebraic condition on \\(\\theta\\) into a visible geometric object."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.02-p006-e01",
+              "label": "E1",
+              "latex": "\\cos^2\\theta=\\frac{1}{3}",
+              "spoken": "",
+              "note": "Condition obtained by setting the \\(d_{z^2}\\) angular factor \\(3\\cos^2\\theta-1\\) equal to zero."
+            },
+            {
+              "id": "eq-01.02-p006-e02",
+              "label": "E2",
+              "latex": "\\theta=\\arccos\\!\\left(\\frac{1}{\\sqrt{3}}\\right)\\approx 54.73^\\circ",
+              "spoken": "",
+              "note": "Opening angle of the nodal cones for the \\(d_{z^2}\\) orbital, measured from the \\(z\\)-axis."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p007",
+          "text": "For many-electron atoms, the exact hydrogenic radial functions are no longer available, so one must choose approximating functions. A very common choice is the Slater-type orbital, written as \\( \\chi(r,\\theta,\\phi)\\propto r^{\\,n-1}\\exp(-\\zeta r)\\,Y(\\theta,\\phi) \\) (E1). The parameter \\( \\zeta \\) is the orbital exponent. It controls contraction: a larger \\( \\zeta \\) pulls the orbital inward and makes it decay more rapidly. The best value of \\( \\zeta \\) is not guessed arbitrarily. One inserts this trial function into the energy, treats \\( \\zeta \\) as a variational parameter, and minimizes. The variational theorem guarantees that an approximate wavefunction gives an energy at least as high as the true ground-state energy, so the minimum within this family gives the best STO of that form. The periodic chart labeled 1.3 summarizes the optimized exponents for neutral main-group atoms and shows two broad trends at once: moving across a row generally increases \\( \\zeta \\), hence contraction, while moving down a column increases radial extent through the \\(r^{n-1}\\) factor.",
+          "visuals": [
+            {
+              "id": "diag-1.3",
+              "label": "Diagram 1.3",
+              "kind": "diagram",
+              "caption": "Periodic-table chart of optimized Slater exponents for neutral main-group atoms. It highlights how valence \\(s\\) and \\(p\\) contractions vary across rows and down columns."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.02-p007-e01",
+              "label": "E1",
+              "latex": "\\chi(r,\\theta,\\phi)\\propto r^{n-1}\\exp(-\\zeta r)Y(\\theta,\\phi)",
+              "spoken": "",
+              "note": "General Slater-type orbital. The exponent \\(\\zeta\\) controls radial contraction, while the factor \\(r^{n-1}\\) governs near-origin behavior and overall diffuseness for higher principal quantum number."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p008",
+          "text": "A simple estimate of orbital size is \\( r_{\\max}=\\frac{n^2 a_0}{Z^\\ast} \\) (E1), where \\( Z^\\ast=Z-S \\) is an effective nuclear charge obtained by subtracting a screening constant \\(S\\) from the true nuclear charge. This formula captures two opposing tendencies. Larger \\(n\\) pushes the orbital outward; larger effective nuclear charge pulls it inward. It also helps explain why valence \\(s\\) and \\(p\\) orbitals behave differently as one moves down the periodic table. Beyond the first row, the valence \\(s\\) orbital becomes noticeably more contracted than the valence \\(p\\) orbital. A useful qualitative explanation is based on Pauli repulsion and orthogonality: valence orbitals with the same angular type as occupied core orbitals must remain orthogonal to them, and this constrains how deeply they can penetrate toward the nucleus. In the first row there is a special exception, because the 2p orbitals have no 1p core analogue and therefore do not suffer the same kind of core repulsion that affects 2s through the filled 1s shell. That is why the sizes of 2s and 2p are relatively similar in the first row, whereas deeper in the table the valence \\(p\\) orbitals are usually more diffuse than the valence \\(s\\) orbitals.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.02-p008-e01",
+              "label": "E1",
+              "latex": "r_{\\max}=\\frac{n^2 a_0}{Z^\\ast}",
+              "spoken": "",
+              "note": "Approximate radius of maximum probability in a screened Coulomb picture. It displays directly the competition between principal quantum number and effective nuclear charge."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p009",
+          "text": "A single Slater function is often too rigid for molecular work, because an atomic orbital inside a molecule must be able to expand or contract as charge is redistributed. This motivates double-zeta or triple-zeta descriptions. In a double-zeta form, one writes \\( \\chi \\propto r^{\\,n-1}\\!\\big[c_1\\exp(-\\zeta_1 r)+c_2\\exp(-\\zeta_2 r)\\big]Y(\\theta,\\phi) \\) (E1). The two exponents give the radial part more flexibility: one component can describe a tighter inner contribution, the other a more diffuse outer one. That matters chemically. The valence orbitals of a species carrying extra electron density should be more diffuse than those of a cationic relative, and a split-zeta basis can adjust to that difference. One can refine the basis further by adding polarization functions, such as 3d functions on second-row atoms like carbon, nitrogen, or oxygen, or \\(p\\) functions on hydrogen. These functions introduce extra angular freedom, lower the variational energy, and often improve calculated geometries. Their role is usually not to become dominant occupied orbitals in their own right, but to let the electron density bend and distort more realistically in response to bonding.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.02-p009-e01",
+              "label": "E1",
+              "latex": "\\chi\\propto r^{n-1}\\big[c_1\\exp(-\\zeta_1 r)+c_2\\exp(-\\zeta_2 r)\\big]Y(\\theta,\\phi)",
+              "spoken": "",
+              "note": "Double-zeta Slater form. Combining two radial scales allows the same atomic orbital to adapt to different charge environments inside molecules."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.02-p010",
+          "text": "An alternative family is the Gaussian-type orbital, \\( \\chi(x,y,z)\\propto x^i y^j z^k \\exp(-\\alpha r^2) \\) (E1), where the nonnegative integers \\(i\\), \\(j\\), and \\(k\\) encode the angular character. When \\(i+j+k=0\\), one has an \\(s\\)-type Gaussian; when the sum is 1, a \\(p\\)-type function; when it is 2, a \\(d\\)-type one. Gaussian orbitals are less faithful than STOs near the nucleus because they are too smooth there: they lack the cusp behavior of the exact hydrogenic and Slater forms. Yet they are vastly easier to integrate in large ab initio calculations. For that reason, practical basis sets often approximate a Slater-like shape by a contracted sum of Gaussians, \\( \\exp(-\\zeta r)\\approx c_1\\exp(-\\alpha_1 r^2)+c_2\\exp(-\\alpha_2 r^2)+\\cdots \\) (E2). This is the origin of labels such as STO-3G: three primitive Gaussians are combined to mimic one Slater-type function. A basis called 3-21G uses three contracted Gaussians for the core and a split-valence description for the outer region; 6-311G** goes further, using six primitives for the core, a triple-split valence shell, and polarization functions on both heavy atoms and hydrogen. There is no universally best basis. One chooses among these families according to the balance one needs between chemical realism, computational cost, and the kind of property one hopes to calculate.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.02-p010-e01",
+              "label": "E1",
+              "latex": "\\chi(x,y,z)\\propto x^i y^j z^k \\exp(-\\alpha r^2)",
+              "spoken": "",
+              "note": "General Gaussian-type orbital in Cartesian form. The polynomial factor sets the angular character, while the Gaussian factor gives the radial decay used in efficient integral evaluation."
+            },
+            {
+              "id": "eq-01.02-p010-e02",
+              "label": "E2",
+              "latex": "\\exp(-\\zeta r)\\approx c_1\\exp(-\\alpha_1 r^2)+c_2\\exp(-\\alpha_2 r^2)+\\cdots",
+              "spoken": "",
+              "note": "Contracted-Gaussian approximation to a Slater-like radial decay. Several Gaussians with different exponents are combined to reproduce both the tight inner region and the diffuse tail."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    },
+    {
+      "id": "01.03",
+      "number": "01.03",
+      "title": "Molecular Orbitals",
+      "paragraphs": [
+        {
+          "id": "01.03-p001",
+          "text": "For a molecule built from \\(m\\) atomic basis functions \\(\\{\\chi_1,\\chi_2,\\ldots,\\chi_m\\}\\), one seeks \\(m\\) molecular orbitals. Before combining them, each basis function is normalized so that \\( \\int \\chi_\\mu^*(\\mathbf r)\\chi_\\mu(\\mathbf r)\\,d\\tau =1 \\) (E1). In bra-ket notation this is \\( \\langle \\chi_\\mu|\\chi_\\mu\\rangle=1 \\) (E2). The notation does not add new physics; it simply compresses the integral into a form that is easier to manipulate once many orbitals and many matrix elements appear.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p001-e01",
+              "label": "E1",
+              "latex": "\\int \\chi_\\mu^*(\\mathbf r)\\chi_\\mu(\\mathbf r)\\,d\\tau=1",
+              "spoken": "",
+              "note": "Normalization condition for an atomic basis function. It says that the total probability associated with the orbital over all space is unity."
+            },
+            {
+              "id": "eq-01.03-p001-e02",
+              "label": "E2",
+              "latex": "\\langle \\chi_\\mu|\\chi_\\mu\\rangle=1",
+              "spoken": "",
+              "note": "Bra-ket form of the same normalization condition."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p002",
+          "text": "The linear-combination step writes each molecular orbital as \\( \\psi_i=\\sum_\\mu c_{\\mu i}\\chi_\\mu \\) (E1). The coefficients \\(c_{\\mu i}\\) tell how much of atomic orbital \\(\\mu\\) enters molecular orbital \\(i\\), and their signs matter because wavefunctions can reinforce or cancel. The resulting molecular orbitals are required to satisfy orthonormality, \\( \\langle \\psi_i|\\psi_j\\rangle=\\delta_{ij} \\) (E2). This already hides a simplifying move. The molecule is being described inside a finite basis rather than in the full infinite space of all possible one-electron functions. Within that chosen space, however, the problem becomes concrete: one need only determine the coefficient patterns that give the best orbitals.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p002-e01",
+              "label": "E1",
+              "latex": "\\psi_i=\\sum_\\mu c_{\\mu i}\\chi_\\mu",
+              "spoken": "",
+              "note": "LCAO expansion of the molecular orbital \\(\\psi_i\\) in the chosen atomic basis."
+            },
+            {
+              "id": "eq-01.03-p002-e02",
+              "label": "E2",
+              "latex": "\\langle \\psi_i|\\psi_j\\rangle=\\delta_{ij}",
+              "spoken": "",
+              "note": "Orthonormality condition for the molecular orbitals. Distinct orbitals are orthogonal, while each orbital is normalized."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p003",
+          "text": "Those coefficients are not chosen by hand. One introduces an effective one-electron Hamiltonian \\(H^\\mathrm{eff}\\) and asks for orbitals satisfying \\( H^\\mathrm{eff}\\psi_i=e_i\\psi_i \\) (E1). The word effective is crucial. The exact electronic problem is a many-electron problem, with each electron feeling all the nuclei and all the others at once. Molecular orbital theory replaces that full many-body problem by a one-electron operator that represents an average field. The orbital energy is then the expectation value \\( e_i=\\frac{\\langle \\psi_i|H^\\mathrm{eff}|\\psi_i\\rangle}{\\langle \\psi_i|\\psi_i\\rangle} \\) (E2), which reduces to \\( e_i=\\langle \\psi_i|H^\\mathrm{eff}|\\psi_i\\rangle \\) (E3) once the orbital is normalized.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p003-e01",
+              "label": "E1",
+              "latex": "H^\\mathrm{eff}\\psi_i=e_i\\psi_i",
+              "spoken": "",
+              "note": "Effective one-electron eigenvalue equation used to determine the molecular orbitals."
+            },
+            {
+              "id": "eq-01.03-p003-e02",
+              "label": "E2",
+              "latex": "e_i=\\frac{\\langle \\psi_i|H^\\mathrm{eff}|\\psi_i\\rangle}{\\langle \\psi_i|\\psi_i\\rangle}",
+              "spoken": "",
+              "note": "Expectation-value formula for the orbital energy before normalization is imposed."
+            },
+            {
+              "id": "eq-01.03-p003-e03",
+              "label": "E3",
+              "latex": "e_i=\\langle \\psi_i|H^\\mathrm{eff}|\\psi_i\\rangle",
+              "spoken": "",
+              "note": "Normalized form of the orbital-energy expectation value."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p004",
+          "text": "Given two atomic orbitals on different centers, the overlap integral is \\( S_{\\mu\\nu}=\\langle \\chi_\\mu|\\chi_\\nu\\rangle \\) (E1). It measures not just spatial proximity but signed proximity: lobes of the same phase contribute positively, while opposite phases contribute negatively. The small diagrams 1.6-1.10 make this visible. If one flips the phase of one orbital, the overlap changes sign, as in \\( \\langle \\chi_\\mu|{-}\\chi_\\nu\\rangle=-S_{\\mu\\nu} \\) (E2); if both phases are flipped, the original sign returns, \\( \\langle {-}\\chi_\\mu|{-}\\chi_\\nu\\rangle=S_{\\mu\\nu} \\) (E3). This is why the shading convention introduced earlier is more than a drawing convenience. It lets one read the sign of an overlap directly from geometry.",
+          "visuals": [
+            {
+              "id": "diag-1.6",
+              "label": "Diagram 1.6",
+              "kind": "diagram",
+              "caption": "Two 1s-type radial functions drawn along the internuclear axis. The shaded common region represents the spatial part of the overlap integral."
+            },
+            {
+              "id": "diag-1.7",
+              "label": "Diagram 1.7",
+              "kind": "diagram",
+              "caption": "Lobe picture of the same positive overlap. It shows directly that like phases in the internuclear region contribute positively."
+            },
+            {
+              "id": "diag-1.8",
+              "label": "Diagram 1.8",
+              "kind": "diagram",
+              "caption": "Positive overlap between same-phase lobes."
+            },
+            {
+              "id": "diag-1.9",
+              "label": "Diagram 1.9",
+              "kind": "diagram",
+              "caption": "Negative overlap produced by reversing the phase of one orbital."
+            },
+            {
+              "id": "diag-1.10",
+              "label": "Diagram 1.10",
+              "kind": "diagram",
+              "caption": "Positive overlap recovered when both orbital phases are flipped together."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.03-p004-e01",
+              "label": "E1",
+              "latex": "S_{\\mu\\nu}=\\langle \\chi_\\mu|\\chi_\\nu\\rangle",
+              "spoken": "",
+              "note": "Definition of the overlap integral between two atomic orbitals on different centers."
+            },
+            {
+              "id": "eq-01.03-p004-e02",
+              "label": "E2",
+              "latex": "\\langle \\chi_\\mu|{-}\\chi_\\nu\\rangle=-S_{\\mu\\nu}",
+              "spoken": "",
+              "note": "Flipping the phase of one orbital reverses the sign of the overlap."
+            },
+            {
+              "id": "eq-01.03-p004-e03",
+              "label": "E3",
+              "latex": "\\langle {-}\\chi_\\mu|{-}\\chi_\\nu\\rangle=S_{\\mu\\nu}",
+              "spoken": "",
+              "note": "Flipping both phases restores the original overlap sign."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p005",
+          "text": "The size of the overlap controls how strongly two orbitals can interact. Figure 1.4 organizes the main qualitative types. When there are no nodes along the internuclear axis one has \\(\\sigma\\) overlap; one nodal plane containing that axis gives \\(\\pi\\) overlap; two such nodal planes give \\(\\delta\\) overlap. Each extra node suppresses constructive interpenetration, so for comparable valence orbitals in the same period one usually finds \\( \\sigma>\\pi>\\delta \\) in magnitude (E1). This is only a rule of thumb. Radial extent, principal quantum number, electronegativity, and above all internuclear distance can reverse naive expectations. The point is not that nodal count alone decides everything, but that it gives the first qualitative estimate of how much two orbitals can communicate.",
+          "visuals": [
+            {
+              "id": "fig-1.4",
+              "label": "Figure 1.4",
+              "kind": "figure",
+              "caption": "Representative \\(\\sigma\\)-, \\(\\pi\\)-, and \\(\\delta\\)-type overlaps. The learner should notice how additional nodal structure along the internuclear direction weakens the effective overlap."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.03-p005-e01",
+              "label": "E1",
+              "latex": "\\sigma>\\pi>\\delta",
+              "spoken": "",
+              "note": "Qualitative ordering of overlap magnitudes for comparable valence orbitals when geometry and radial scale are otherwise similar."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p006",
+          "text": "Distance and orientation are just as decisive as nodal type. At very large separation any overlap tends to zero. If two identical normalized orbitals were hypothetically placed on the same center, their overlap would become 1, which is the limiting behavior shown by the \\(S_{ss}(r)\\) curve in diagram 1.11. By contrast, an \\(s\\) orbital and a \\(p\\) orbital have zero overlap at zero separation because the \\(p\\) function changes sign through the center; diagram 1.12 therefore shows a maximum only at a finite distance. Much of the geometric dependence can be factored as \\( S_{\\mu\\nu}=S_{\\mu\\nu}(\\lambda,r)\\,f(\\text{angular geometry}) \\) (E1), where \\(\\lambda\\) indicates whether the encounter is of \\(\\sigma\\)-, \\(\\pi\\)-, or \\(\\delta\\)-type. Figure 1.5 displays this angular factor. The overlap vanishes when the probe orbital enters a nodal plane, and even for \\(d_{z^2}\\) the torus region overlaps far less effectively than the axial lobes.",
+          "visuals": [
+            {
+              "id": "diag-1.11",
+              "label": "Diagram 1.11",
+              "kind": "diagram",
+              "caption": "Distance dependence of overlap for two identical s-type orbitals. The overlap begins at 1 for zero separation and then decays toward 0 as the centers move apart."
+            },
+            {
+              "id": "diag-1.12",
+              "label": "Diagram 1.12",
+              "kind": "diagram",
+              "caption": "Distance dependence of overlap for an s orbital and a p orbital. Because the p orbital changes sign at its center, the overlap vanishes at zero separation and reaches its maximum only at a finite distance."
+            },
+            {
+              "id": "fig-1.5",
+              "label": "Figure 1.5",
+              "kind": "figure",
+              "caption": "Angular dependence of several common overlap integrals. The curves show how overlap disappears at nodal directions and how strongly the result depends on geometric orientation."
+            }
+          ],
+          "equations": [
+            {
+              "id": "eq-01.03-p006-e01",
+              "label": "E1",
+              "latex": "S_{\\mu\\nu}=S_{\\mu\\nu}(\\lambda,r)\\,f(\\text{angular geometry})",
+              "spoken": "",
+              "note": "Useful factorization of an overlap integral into a radial-and-type part and a purely angular factor."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p007",
+          "text": "The energetic counterpart of overlap is the interaction integral \\( H_{\\mu\\nu}=\\langle \\chi_\\mu|H^\\mathrm{eff}|\\chi_\\nu\\rangle \\) (E1). On the diagonal, \\(H_{\\mu\\mu}\\) measures the effective one-electron energy associated with atomic orbital \\(\\chi_\\mu\\). Off the diagonal, \\(H_{\\mu\\nu}\\) is the resonance or hopping integral: it measures how strongly an electron described on one atomic center can couple to the other. In the Wolfsberg-Helmholtz approximation one writes \\( H_{\\mu\\nu}\\approx \\tfrac12 K(H_{\\mu\\mu}+H_{\\nu\\nu})S_{\\mu\\nu} \\) (E2). So the interaction strength tracks the overlap. A positive overlap between like-phased lobes typically produces a negative interaction contribution, which is stabilizing for the bonding combination and destabilizing for the antibonding one.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p007-e01",
+              "label": "E1",
+              "latex": "H_{\\mu\\nu}=\\langle \\chi_\\mu|H^\\mathrm{eff}|\\chi_\\nu\\rangle",
+              "spoken": "",
+              "note": "Definition of the interaction matrix element between two atomic basis functions."
+            },
+            {
+              "id": "eq-01.03-p007-e02",
+              "label": "E2",
+              "latex": "H_{\\mu\\nu}\\approx \\tfrac12 K(H_{\\mu\\mu}+H_{\\nu\\nu})S_{\\mu\\nu}",
+              "spoken": "",
+              "note": "Wolfsberg-Helmholtz approximation, relating the interaction integral to the overlap integral and the diagonal orbital energies."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p008",
+          "text": "To determine the coefficients systematically, one inserts the LCAO expansion into the energy expression. If one writes \\( A=\\langle \\psi_i|\\psi_i\\rangle \\) and \\( B=\\langle \\psi_i|H^\\mathrm{eff}|\\psi_i\\rangle \\), then \\( A=\\sum_{\\mu,\\nu} c_{\\mu i}S_{\\mu\\nu}c_{\\nu i} \\) (E1) and \\( B=\\sum_{\\mu,\\nu} c_{\\mu i}H_{\\mu\\nu}c_{\\nu i} \\) (E2). Because the overlap and Hamiltonian matrices are symmetric, \\(S_{\\mu\\nu}=S_{\\nu\\mu}\\) and \\(H_{\\mu\\nu}=H_{\\nu\\mu}\\), these quadratic forms really are the natural global measures of normalization and energy inside the chosen basis. The orbital energy is then the quotient \\( e_i=B/A \\) (E3). At this stage one does not yet have a solved eigenvalue problem; one has a variational problem over the coefficient vector.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p008-e01",
+              "label": "E1",
+              "latex": "A=\\sum_{\\mu,\\nu} c_{\\mu i}S_{\\mu\\nu}c_{\\nu i}",
+              "spoken": "",
+              "note": "Quadratic form giving the norm of the trial molecular orbital inside the nonorthogonal basis."
+            },
+            {
+              "id": "eq-01.03-p008-e02",
+              "label": "E2",
+              "latex": "B=\\sum_{\\mu,\\nu} c_{\\mu i}H_{\\mu\\nu}c_{\\nu i}",
+              "spoken": "",
+              "note": "Quadratic form giving the energy numerator of the trial molecular orbital."
+            },
+            {
+              "id": "eq-01.03-p008-e03",
+              "label": "E3",
+              "latex": "e_i=\\frac{B}{A}",
+              "spoken": "",
+              "note": "Variational energy of the trial orbital expressed as a quotient of the two quadratic forms."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p009",
+          "text": "The variational principle says that the best coefficients are those for which small changes do not lower the energy any further. So one sets \\( \\partial e_i/\\partial c_{ki}=0 \\) for every coefficient \\(c_{ki}\\) (E1). Differentiating the quotient \\(e_i=B/A\\) gives \\( \\frac{\\partial B}{\\partial c_{ki}}-e_i\\frac{\\partial A}{\\partial c_{ki}}=0 \\) (E2). The two derivatives are simple because \\(A\\) and \\(B\\) are quadratic: \\( \\frac{\\partial A}{\\partial c_{ki}}=2\\sum_\\mu S_{k\\mu}c_{\\mu i} \\) (E3) and \\( \\frac{\\partial B}{\\partial c_{ki}}=2\\sum_\\mu H_{k\\mu}c_{\\mu i} \\) (E4). Substituting these into the stationarity condition and canceling the factor 2 yields \\( \\sum_\\mu (H_{k\\mu}-e_iS_{k\\mu})c_{\\mu i}=0 \\) (E5). These are the secular equations: one equation for each basis-function index \\(k\\).",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p009-e01",
+              "label": "E1",
+              "latex": "\\frac{\\partial e_i}{\\partial c_{ki}}=0",
+              "spoken": "",
+              "note": "Stationarity condition imposed on every coefficient by the variational principle."
+            },
+            {
+              "id": "eq-01.03-p009-e02",
+              "label": "E2",
+              "latex": "\\frac{\\partial B}{\\partial c_{ki}}-e_i\\frac{\\partial A}{\\partial c_{ki}}=0",
+              "spoken": "",
+              "note": "Quotient-rule form of the variational condition for the coefficient \\(c_{ki}\\)."
+            },
+            {
+              "id": "eq-01.03-p009-e03",
+              "label": "E3",
+              "latex": "\\frac{\\partial A}{\\partial c_{ki}}=2\\sum_\\mu S_{k\\mu}c_{\\mu i}",
+              "spoken": "",
+              "note": "Derivative of the normalization quadratic form with respect to a single coefficient."
+            },
+            {
+              "id": "eq-01.03-p009-e04",
+              "label": "E4",
+              "latex": "\\frac{\\partial B}{\\partial c_{ki}}=2\\sum_\\mu H_{k\\mu}c_{\\mu i}",
+              "spoken": "",
+              "note": "Derivative of the energy quadratic form with respect to the same coefficient."
+            },
+            {
+              "id": "eq-01.03-p009-e05",
+              "label": "E5",
+              "latex": "\\sum_\\mu (H_{k\\mu}-e_iS_{k\\mu})c_{\\mu i}=0",
+              "spoken": "",
+              "note": "Secular equation obtained after substituting the derivatives into the variational condition."
+            }
+          ],
+          "videos": []
+        },
+        {
+          "id": "01.03-p010",
+          "text": "A nontrivial set of coefficients exists only if this homogeneous system has zero determinant, so one must have \\( \\det(H-e_iS)=0 \\) (E1). Solving that polynomial equation gives \\(m\\) allowed orbital energies, one for each molecular orbital built from the \\(m\\) basis functions. After an energy \\(e_i\\) is found, the corresponding coefficients are recovered from the secular equations and then normalized by \\( \\sum_{\\mu,\\nu} c_{\\mu i}S_{\\mu\\nu}c_{\\nu i}=1 \\) (E2). Within the chosen basis and the effective one-electron approximation, these energies are the variationally optimal ones. The formalism looks forbidding only because it is written at full generality. Its real content is simpler: choose a basis, measure its overlaps and interaction energies, and then find the linear combinations that make the effective one-electron energy stationary. Later, symmetry and perturbation theory will reduce many practical cases to the interaction of only two or three orbitals at a time.",
+          "visuals": [],
+          "equations": [
+            {
+              "id": "eq-01.03-p010-e01",
+              "label": "E1",
+              "latex": "\\det(H-e_iS)=0",
+              "spoken": "",
+              "note": "Secular determinant condition required for a nontrivial solution of the homogeneous coefficient equations."
+            },
+            {
+              "id": "eq-01.03-p010-e02",
+              "label": "E2",
+              "latex": "\\sum_{\\mu,\\nu} c_{\\mu i}S_{\\mu\\nu}c_{\\nu i}=1",
+              "spoken": "",
+              "note": "Normalization condition imposed on the final molecular orbital after its coefficients have been determined."
+            }
+          ],
+          "videos": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sectionCount": 3,
+    "paragraphCount": 22,
+    "visualCount": 19,
+    "equationCount": 35
+  }
+};
