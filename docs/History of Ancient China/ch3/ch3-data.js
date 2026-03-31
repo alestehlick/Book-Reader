@@ -1,6 +1,12 @@
 const BOOK_DATA = {
   "title": "3 — Language and Writing",
   "language": "en",
+  "sharedFigures": [
+    {
+      "label": "Map 3.1",
+      "caption": "A map locating Anyang and the region from which the oracle bones entered modern scholarship. It matters because it ties the textual discovery to a real archaeological landscape."
+    }
+  ],
   "sections": [
     {
       "id": "03.01",
