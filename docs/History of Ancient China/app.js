@@ -27,6 +27,12 @@
   const currentTimeLabel = document.getElementById("currentTimeLabel");
   const durationLabel = document.getElementById("durationLabel");
 
+  const playerCardEl = playerSectionLabelEl?.closest(".player-card") || null;
+  const playerMetaEl = playerSectionLabelEl?.closest(".player-meta") || null;
+  const playerControlsRowEl = prevBtn?.closest(".player-controls-row") || null;
+  const toggleRowEl = continuousToggle?.closest(".toggle-row") || null;
+  const progressWrapEl = progressBar?.closest(".progress-wrap") || null;
+
   const currentParagraphTextEl = document.getElementById("currentParagraphText");
   const previousParagraphTextEl = document.getElementById("previousParagraphText");
   const nextParagraphTextEl = document.getElementById("nextParagraphText");
@@ -36,6 +42,20 @@
   const mediaSummaryEl = document.getElementById("mediaSummary");
   const figureGroupEl = document.getElementById("figureGroup");
   const paragraphFiguresEl = document.getElementById("paragraphFigures");
+
+  const currentCardEl = currentParagraphTextEl?.closest(".current-card") || null;
+
+  let rewindBtn = null;
+  let playerAudioRowEl = null;
+  let timelineSectionEl = null;
+  let timelineSummaryEl = null;
+  let timelineRangeStartEl = null;
+  let timelineRangeEndEl = null;
+  let timelineRailEl = null;
+  let timelineSpansEl = null;
+  let timelinePointsEl = null;
+  let timelineCardsEl = null;
+  let timelineFallbackEl = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
@@ -274,6 +294,9 @@
   function normalizeParagraph(paragraph, section, paragraphIndex) {
     const figures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
     const videos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
+    const timeline = normalizeMediaList(
+      paragraph?.timeline || paragraph?.chronology || paragraph?.temporal || paragraph?.timelineItems
+    );
 
     return {
       ...paragraph,
@@ -281,6 +304,7 @@
       text: String(paragraph?.text || ""),
       figures,
       videos,
+      timeline,
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -292,6 +316,145 @@
     return Array.isArray(value) ? value.filter(Boolean) : [];
   }
 
+  function coerceYear(value) {
+    if (typeof value === "number" && Number.isFinite(value)) {
+      return value;
+    }
+
+    if (typeof value !== "string") {
+      return null;
+    }
+
+    const raw = value.trim();
+    if (!raw) return null;
+
+    const numeric = Number(raw.replace(/,/g, ""));
+    if (Number.isFinite(numeric)) {
+      return numeric;
+    }
+
+    const bcMatch = raw.match(/^(c\.?\s*)?(\d+(?:\.\d+)?)\s*(BC|BCE)$/i);
+    if (bcMatch) {
+      return -Number(bcMatch[2]);
+    }
+
+    const adMatch = raw.match(/^(c\.?\s*)?(\d+(?:\.\d+)?)\s*(AD|CE)$/i);
+    if (adMatch) {
+      return Number(adMatch[2]);
+    }
+
+    return null;
+  }
+
+  function normalizeCertainty(value) {
+    const raw = String(value || "").trim().toLowerCase();
+    if (["secure", "exact", "firm"].includes(raw)) return "secure";
+    if (["approximate", "approx", "estimated", "circa", "c."].includes(raw)) return "approximate";
+    if (["disputed", "debated", "uncertain", "questioned"].includes(raw)) return "disputed";
+    if (["traditional", "legendary", "received"].includes(raw)) return "traditional";
+    return raw || "approximate";
+  }
+
+  function formatTimelineBoundary(year) {
+    if (!Number.isFinite(year)) return "";
+    const abs = Math.abs(year);
+    if (year < 0) return `${abs} BC`;
+    if (year === 0) return "0";
+    return abs >= 1000 ? `${year}` : `${year} AD`;
+  }
+
+  function formatTimelineDisplayDate(entry) {
+    if (entry.displayDate) return entry.displayDate;
+
+    if (entry.type === "span") {
+      if (Number.isFinite(entry.start) && Number.isFinite(entry.end)) {
+        return `${formatTimelineBoundary(entry.start)} – ${formatTimelineBoundary(entry.end)}`;
+      }
+      if (Number.isFinite(entry.start)) {
+        return formatTimelineBoundary(entry.start);
+      }
+    }
+
+    if (Number.isFinite(entry.date)) {
+      return formatTimelineBoundary(entry.date);
+    }
+
+    return "";
+  }
+
+  function normalizeTimelineEntry(entry, index) {
+    if (!entry) return null;
+
+    if (typeof entry === "string") {
+      return {
+        id: `timeline-${index}`,
+        type: "point",
+        label: entry.trim(),
+        displayDate: "",
+        caption: "",
+        certainty: "approximate",
+        start: null,
+        end: null,
+        date: null,
+      };
+    }
+
+    if (typeof entry !== "object") {
+      return null;
+    }
+
+    const label = String(
+      entry.label || entry.title || entry.name || entry.event || entry.period || entry.site || entry.landmark || ""
+    ).trim();
+
+    if (!label) return null;
+
+    const explicitType = String(entry.type || entry.kind || entry.mode || "").trim().toLowerCase();
+    const start = coerceYear(entry.start ?? entry.from ?? entry.startYear ?? entry.start_year ?? entry.yearStart);
+    const end = coerceYear(entry.end ?? entry.to ?? entry.endYear ?? entry.end_year ?? entry.yearEnd);
+    const date = coerceYear(entry.date ?? entry.year ?? entry.at ?? entry.point ?? entry.whenYear);
+
+    const inferredType = explicitType === "span" || explicitType === "band" || explicitType === "period"
+      ? "span"
+      : explicitType === "point" || explicitType === "pin" || explicitType === "event" || explicitType === "landmark"
+        ? "point"
+        : (Number.isFinite(end) || (Number.isFinite(start) && entry.end !== undefined))
+          ? "span"
+          : "point";
+
+    const normalized = {
+      id: String(entry.id || `${inferredType}-${index}`),
+      type: inferredType,
+      label,
+      displayDate: String(
+        entry.displayDate || entry.display_date || entry.dateLabel || entry.date_label || entry.when || entry.range || ""
+      ).trim(),
+      caption: String(entry.caption || entry.description || entry.note || "").trim(),
+      certainty: normalizeCertainty(entry.certainty || entry.status),
+      start: inferredType === "span" ? start : null,
+      end: inferredType === "span" ? (Number.isFinite(end) ? end : start) : null,
+      date: inferredType === "point" ? (Number.isFinite(date) ? date : start) : null,
+    };
+
+    normalized.displayDate = formatTimelineDisplayDate(normalized);
+    normalized.sortStart = normalized.type === "span"
+      ? (Number.isFinite(normalized.start) ? normalized.start : Number.POSITIVE_INFINITY)
+      : (Number.isFinite(normalized.date) ? normalized.date : Number.POSITIVE_INFINITY);
+    normalized.sortEnd = normalized.type === "span"
+      ? (Number.isFinite(normalized.end) ? normalized.end : normalized.sortStart)
+      : normalized.sortStart;
+
+    return normalized;
+  }
+
+  function sortTimelineEntries(entries) {
+    return [...entries].sort((a, b) => {
+      if (a.sortStart !== b.sortStart) return a.sortStart - b.sortStart;
+      if (a.type !== b.type) return a.type === "span" ? -1 : 1;
+      return a.label.localeCompare(b.label);
+    });
+  }
+
   function indexBookData(book) {
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
 
@@ -300,6 +463,7 @@
       language: String(book?.language || "en"),
       sharedFigures: normalizeMediaList(book?.sharedFigures),
       sharedVideos: normalizeMediaList(book?.sharedVideos),
+      sharedTimeline: normalizeMediaList(book?.sharedTimeline || book?.timeline),
       sections: rawSections.map((section, index) => ({
         ...section,
         id: String(section?.id || section?.number || `section-${index + 1}`),
@@ -307,6 +471,7 @@
         title: String(section?.title || ""),
         sharedFigures: normalizeMediaList(section?.sharedFigures),
         sharedVideos: normalizeMediaList(section?.sharedVideos),
+        sharedTimeline: normalizeMediaList(section?.sharedTimeline || section?.timeline),
         paragraphs: Array.isArray(section?.paragraphs) ? section.paragraphs : [],
       })),
     };
@@ -506,6 +671,35 @@
       rawEntries
         .map((entry, index) => resolveVideoEntry(entry, index))
         .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0)
+    );
+  }
+
+  function dedupeTimelineEntries(entries) {
+    const seen = new Set();
+
+    return entries.filter((item) => {
+      if (!item || !item.label) return false;
+      const key = [item.type, item.label, item.displayDate, item.start, item.end, item.date].join("::");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function getEffectiveTimelineEntries(paragraph) {
+    const section = getSectionById(paragraph?.sectionId);
+    const rawEntries = [
+      ...normalizeMediaList(state.book?.sharedTimeline),
+      ...normalizeMediaList(section?.sharedTimeline),
+      ...normalizeMediaList(paragraph?.timeline),
+    ];
+
+    return sortTimelineEntries(
+      dedupeTimelineEntries(
+        rawEntries
+          .map((entry, index) => normalizeTimelineEntry(entry, index))
+          .filter(Boolean)
+      )
     );
   }
 
@@ -713,6 +907,173 @@
     renderVideos(effectiveVideos);
   }
 
+  function formatTimelineSummary(entries) {
+    const spanCount = entries.filter((entry) => entry.type === "span").length;
+    const pointCount = entries.filter((entry) => entry.type === "point").length;
+    const parts = [];
+
+    if (spanCount > 0) {
+      parts.push(`${spanCount} span${spanCount === 1 ? "" : "s"}`);
+    }
+
+    if (pointCount > 0) {
+      parts.push(`${pointCount} landmark${pointCount === 1 ? "" : "s"}`);
+    }
+
+    return parts.join(" • ");
+  }
+
+  function createTimelineChip(entry) {
+    const chip = document.createElement("article");
+    chip.className = `timeline-chip timeline-chip--${entry.type}`;
+    chip.dataset.certainty = entry.certainty;
+    if (entry.caption) {
+      chip.title = entry.caption;
+    }
+
+    const kicker = document.createElement("div");
+    kicker.className = "timeline-chip-kicker";
+    kicker.textContent = entry.type === "span" ? "Span" : "Landmark";
+
+    const label = document.createElement("div");
+    label.className = "timeline-chip-label";
+    label.textContent = entry.label;
+
+    const date = document.createElement("div");
+    date.className = "timeline-chip-date";
+    date.textContent = entry.displayDate || "Date not specified";
+
+    chip.append(kicker, label, date);
+    return chip;
+  }
+
+  function renderTimelineFallback(entries) {
+    timelineRailEl.hidden = true;
+    timelineFallbackEl.hidden = true;
+    timelineFallbackEl.innerHTML = "";
+    timelineRangeStartEl.textContent = "";
+    timelineRangeEndEl.textContent = "";
+    timelineCardsEl.innerHTML = "";
+
+    entries.forEach((entry) => {
+      timelineCardsEl.appendChild(createTimelineChip(entry));
+    });
+  }
+
+  function renderTimelineRail(entries) {
+    const numericEntries = entries.filter((entry) =>
+      entry.type === "span"
+        ? Number.isFinite(entry.start) || Number.isFinite(entry.end)
+        : Number.isFinite(entry.date)
+    );
+
+    const anchors = [...new Set(
+      numericEntries.flatMap((entry) => {
+        if (entry.type === "span") {
+          return [entry.start, entry.end].filter(Number.isFinite);
+        }
+        return [entry.date].filter(Number.isFinite);
+      })
+    )].sort((a, b) => a - b);
+
+    if (anchors.length === 0) {
+      renderTimelineFallback(entries);
+      return;
+    }
+
+    if (anchors.length === 1) {
+      anchors.push(anchors[0] + 1);
+    }
+
+    const anchorToPct = new Map(
+      anchors.map((value, index) => [value, anchors.length === 1 ? 50 : (index / (anchors.length - 1)) * 100])
+    );
+
+    const spans = numericEntries.filter((entry) => entry.type === "span");
+    const points = numericEntries.filter((entry) => entry.type === "point");
+
+    timelineRailEl.hidden = false;
+    timelineFallbackEl.hidden = true;
+    timelineSpansEl.innerHTML = "";
+    timelinePointsEl.innerHTML = "";
+    timelineCardsEl.innerHTML = "";
+
+    timelineRangeStartEl.textContent = formatTimelineBoundary(anchors[0]);
+    timelineRangeEndEl.textContent = formatTimelineBoundary(anchors[anchors.length - 1]);
+
+    spans.forEach((entry, index) => {
+      const startValue = Number.isFinite(entry.start) ? entry.start : entry.end;
+      const endValue = Number.isFinite(entry.end) ? entry.end : entry.start;
+      const leftPct = anchorToPct.get(startValue) ?? 0;
+      const rightPct = anchorToPct.get(endValue) ?? leftPct;
+      const rawLeft = Math.min(leftPct, rightPct);
+      const rawRight = Math.max(leftPct, rightPct);
+      let bandLeft = rawLeft;
+      let bandWidth = rawRight - rawLeft;
+
+      if (bandWidth < 10) {
+        bandLeft = Math.max(0, Math.min(90, rawLeft - (10 - bandWidth) / 2));
+        bandWidth = 10;
+      }
+
+      const band = document.createElement("div");
+      band.className = "timeline-span";
+      band.dataset.certainty = entry.certainty;
+      band.style.left = `${bandLeft}%`;
+      band.style.width = `${bandWidth}%`;
+      band.style.top = `${10 + (index % 2) * 22}px`;
+      if (entry.caption) {
+        band.title = `${entry.label} — ${entry.caption}`;
+      }
+
+      timelineSpansEl.appendChild(band);
+    });
+
+    points.forEach((entry, index) => {
+      const xPct = anchorToPct.get(entry.date) ?? 0;
+      const point = document.createElement("div");
+      point.className = "timeline-point";
+      point.dataset.certainty = entry.certainty;
+      point.style.left = `${xPct}%`;
+      point.style.top = `${32 + (index % 2) * 6}px`;
+      if (entry.caption) {
+        point.title = `${entry.label} — ${entry.caption}`;
+      }
+
+      const stem = document.createElement("span");
+      stem.className = "timeline-point-stem";
+      const dot = document.createElement("span");
+      dot.className = "timeline-point-dot";
+      point.append(stem, dot);
+
+      timelinePointsEl.appendChild(point);
+    });
+
+    entries.forEach((entry) => {
+      timelineCardsEl.appendChild(createTimelineChip(entry));
+    });
+  }
+
+  function renderTimeline() {
+    if (!timelineSectionEl) return;
+
+    const current = getCurrentParagraph();
+    if (!current) {
+      timelineSectionEl.hidden = true;
+      return;
+    }
+
+    const entries = getEffectiveTimelineEntries(current);
+    if (entries.length === 0) {
+      timelineSectionEl.hidden = true;
+      return;
+    }
+
+    timelineSectionEl.hidden = false;
+    timelineSummaryEl.textContent = formatTimelineSummary(entries);
+    renderTimelineRail(entries);
+  }
+
   function renderTextAndMedia() {
     const current = getCurrentParagraph();
     const previous = getParagraph(state.currentIndex - 1);
@@ -737,9 +1098,7 @@
 
     playerTimeRangeEl.textContent =
       candidates.length > 0
-        ? (current.duration && current.duration > 0
-            ? `${paragraphMeta} • Duration: ${formatTime(current.duration)}`
-            : `${paragraphMeta} • Audio ready`)
+        ? `${paragraphMeta} • Audio ready`
         : `${paragraphMeta} • No audio`;
 
     nowReadingTitleEl.textContent = sectionLabel;
@@ -751,6 +1110,7 @@
 
     contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
 
+    renderTimeline();
     renderMedia();
   }
 
@@ -810,9 +1170,18 @@
 
     renderMeta();
 
-    progressBar.value = "0";
-    currentTimeLabel.textContent = "0:00";
-    durationLabel.textContent = paragraph?.duration ? formatTime(paragraph.duration) : "0:00";
+    if (progressBar) {
+      progressBar.value = "0";
+    }
+    if (currentTimeLabel) {
+      currentTimeLabel.textContent = "0:00";
+    }
+    if (durationLabel) {
+      durationLabel.textContent = paragraph?.duration ? formatTime(paragraph.duration) : "0:00";
+    }
+    if (rewindBtn) {
+      rewindBtn.disabled = true;
+    }
 
     state.currentAudioCandidates = resolveAudioCandidates(paragraph);
     state.currentAudioCandidateIndex = -1;
@@ -830,9 +1199,11 @@
   }
 
   function updatePlayPauseButton() {
-    const current = getCurrentParagraph();
     const hasAudio = state.currentAudioCandidates.length > 0;
     playPauseBtn.textContent = hasAudio && !audio.paused ? "Pause" : "Play";
+    if (rewindBtn) {
+      rewindBtn.disabled = !hasAudio;
+    }
   }
 
   async function togglePlayPause() {
@@ -900,6 +1271,89 @@
     applyTheme(willBeDark ? "dark" : "light", true);
   }
 
+  function rewindAudio(seconds = 10) {
+    if (!state.currentAudioCandidates.length) return;
+    audio.currentTime = Math.max(0, (Number.isFinite(audio.currentTime) ? audio.currentTime : 0) - seconds);
+  }
+
+  function ensureEnhancedLayout() {
+    if (playerCardEl && playerMetaEl && playerControlsRowEl && !playerCardEl.querySelector(".player-top-row")) {
+      const topRow = document.createElement("div");
+      topRow.className = "player-top-row";
+      playerCardEl.insertBefore(topRow, playerMetaEl);
+      topRow.append(playerMetaEl, playerControlsRowEl);
+    }
+
+    if (playerCardEl && toggleRowEl && !playerCardEl.querySelector(".player-bottom-row")) {
+      const bottomRow = document.createElement("div");
+      bottomRow.className = "player-bottom-row";
+      toggleRowEl.parentNode.insertBefore(bottomRow, toggleRowEl);
+      bottomRow.appendChild(toggleRowEl);
+
+      playerAudioRowEl = document.createElement("div");
+      playerAudioRowEl.className = "player-audio-row";
+
+      rewindBtn = document.createElement("button");
+      rewindBtn.type = "button";
+      rewindBtn.className = "control-btn player-rewind-btn";
+      rewindBtn.textContent = "<<";
+      rewindBtn.setAttribute("aria-label", "Rewind audio by ten seconds");
+      rewindBtn.addEventListener("click", () => rewindAudio(10));
+
+      const timeMeta = document.createElement("div");
+      timeMeta.className = "player-audio-meta";
+
+      const separator = document.createElement("span");
+      separator.className = "player-time-separator";
+      separator.textContent = "/";
+
+      if (currentTimeLabel && durationLabel) {
+        timeMeta.append(currentTimeLabel, separator, durationLabel);
+      }
+
+      playerAudioRowEl.append(rewindBtn, timeMeta);
+      bottomRow.appendChild(playerAudioRowEl);
+    }
+
+    if (progressWrapEl) {
+      progressWrapEl.hidden = true;
+      progressWrapEl.setAttribute("aria-hidden", "true");
+    }
+
+    if (currentCardEl && !timelineSectionEl) {
+      timelineSectionEl = document.createElement("section");
+      timelineSectionEl.id = "timelineSection";
+      timelineSectionEl.className = "timeline-card card";
+      timelineSectionEl.hidden = true;
+      timelineSectionEl.innerHTML = `
+        <div class="timeline-header">
+          <div class="eyebrow">Temporal setting</div>
+          <div class="timeline-summary" id="timelineSummary"></div>
+        </div>
+        <div class="timeline-rail" id="timelineRail">
+          <div class="timeline-track">
+            <div class="timeline-axis"></div>
+            <div class="timeline-range timeline-range--start" id="timelineRangeStart"></div>
+            <div class="timeline-range timeline-range--end" id="timelineRangeEnd"></div>
+            <div class="timeline-spans" id="timelineSpans"></div>
+            <div class="timeline-points" id="timelinePoints"></div>
+          </div>
+        </div>
+        <div class="timeline-cards" id="timelineCards"></div>
+        <div class="timeline-fallback" id="timelineFallback" hidden></div>
+      `;
+      currentCardEl.parentNode.insertBefore(timelineSectionEl, currentCardEl);
+      timelineSummaryEl = timelineSectionEl.querySelector("#timelineSummary");
+      timelineRangeStartEl = timelineSectionEl.querySelector("#timelineRangeStart");
+      timelineRangeEndEl = timelineSectionEl.querySelector("#timelineRangeEnd");
+      timelineRailEl = timelineSectionEl.querySelector("#timelineRail");
+      timelineSpansEl = timelineSectionEl.querySelector("#timelineSpans");
+      timelinePointsEl = timelineSectionEl.querySelector("#timelinePoints");
+      timelineCardsEl = timelineSectionEl.querySelector("#timelineCards");
+      timelineFallbackEl = timelineSectionEl.querySelector("#timelineFallback");
+    }
+  }
+
   function isMobileLayout() {
     return window.matchMedia("(max-width: 980px)").matches;
   }
@@ -931,20 +1385,28 @@
 
   audio.addEventListener("loadedmetadata", () => {
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
-    durationLabel.textContent = formatTime(duration);
+    if (durationLabel) {
+      durationLabel.textContent = formatTime(duration);
+    }
   });
 
   audio.addEventListener("timeupdate", () => {
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
     const currentTime = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
 
-    currentTimeLabel.textContent = formatTime(currentTime);
-    durationLabel.textContent = formatTime(duration);
+    if (currentTimeLabel) {
+      currentTimeLabel.textContent = formatTime(currentTime);
+    }
+    if (durationLabel) {
+      durationLabel.textContent = formatTime(duration);
+    }
 
-    if (duration > 0) {
-      progressBar.value = String((currentTime / duration) * 100);
-    } else {
-      progressBar.value = "0";
+    if (progressBar) {
+      if (duration > 0) {
+        progressBar.value = String((currentTime / duration) * 100);
+      } else {
+        progressBar.value = "0";
+      }
     }
   });
 
@@ -978,13 +1440,15 @@
     updatePlayPauseButton();
   });
 
-  progressBar.addEventListener("input", () => {
-    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
-    if (duration <= 0) return;
+  if (progressBar) {
+    progressBar.addEventListener("input", () => {
+      const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+      if (duration <= 0) return;
 
-    const ratio = Number(progressBar.value) / 100;
-    audio.currentTime = duration * ratio;
-  });
+      const ratio = Number(progressBar.value) / 100;
+      audio.currentTime = duration * ratio;
+    });
+  }
 
   prevBtn.addEventListener("click", () => goToPreviousParagraph(false));
   nextBtn.addEventListener("click", () => goToNextParagraph(false));
@@ -1031,6 +1495,7 @@
   async function init() {
     try {
       applySavedTheme();
+      ensureEnhancedLayout();
 
       const rawBookData = await loadBookData();
       indexBookData(rawBookData);
