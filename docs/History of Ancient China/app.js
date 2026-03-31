@@ -56,12 +56,14 @@
   let timelinePointsEl = null;
   let timelinePointLabelsEl = null;
   let timelineFallbackEl = null;
+  let timelineToggleBtn = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
   const DEFAULT_VIDEOS_DIR = "videos";
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
+  const TIMELINE_VISIBILITY_STORAGE_KEY = "audio-reader-timeline-visible";
 
   const state = {
     book: null,
@@ -76,6 +78,7 @@
     currentAudioCandidateIndex: -1,
     currentAudioPath: "",
     autoplayRequested: false,
+    timelineVisible: true,
   };
 
   function getDataConfig() {
@@ -1068,18 +1071,16 @@
 
     const { start, end, unit, ticks } = windowData;
 
-    ticks.forEach((tickYear, index) => {
+    ticks.forEach((tickYear) => {
       const tick = document.createElement("div");
-      tick.className = "timeline-tick";
+      tick.className = "timeline-tick timeline-tick--labeled";
       tick.style.left = `${pctFromYear(tickYear, start, end)}%`;
-      if (index % 3 === 0) {
-        tick.classList.add("timeline-tick--labeled");
 
-        const label = document.createElement("div");
-        label.className = "timeline-tick-label";
-        label.textContent = formatTimelineTick(tickYear);
-        tick.appendChild(label);
-      }
+      const label = document.createElement("div");
+      label.className = "timeline-tick-label";
+      label.textContent = formatTimelineTick(tickYear);
+      tick.appendChild(label);
+
       timelineGridEl.appendChild(tick);
     });
 
@@ -1446,8 +1447,11 @@
       timelineSectionEl.hidden = true;
       timelineSectionEl.innerHTML = `
         <div class="timeline-header">
-          <div class="eyebrow">Temporal setting</div>
-          <div class="timeline-summary" id="timelineSummary"></div>
+          <div class="timeline-header-main">
+            <div class="eyebrow">Temporal setting</div>
+            <div class="timeline-summary" id="timelineSummary"></div>
+          </div>
+          <button type="button" class="timeline-toggle-btn" id="timelineToggleBtn" aria-label="Hide timeline" aria-pressed="true">Hide</button>
         </div>
         <div class="timeline-rail" id="timelineRail">
           <div class="timeline-track">
@@ -1470,7 +1474,41 @@
       timelinePointsEl = timelineSectionEl.querySelector("#timelinePoints");
       timelinePointLabelsEl = timelineSectionEl.querySelector("#timelinePointLabels");
       timelineFallbackEl = timelineSectionEl.querySelector("#timelineFallback");
+      timelineToggleBtn = timelineSectionEl.querySelector("#timelineToggleBtn");
+      timelineToggleBtn?.addEventListener("click", toggleTimelineVisibility);
+      applyTimelineVisibility(false);
     }
+  }
+
+  function applyTimelineVisibility(persist = false) {
+    if (!timelineSectionEl) return;
+
+    timelineSectionEl.classList.toggle("timeline-collapsed", !state.timelineVisible);
+
+    if (timelineToggleBtn) {
+      timelineToggleBtn.textContent = state.timelineVisible ? "Hide" : "Show";
+      timelineToggleBtn.setAttribute(
+        "aria-label",
+        state.timelineVisible ? "Hide timeline" : "Show timeline"
+      );
+      timelineToggleBtn.setAttribute("aria-pressed", state.timelineVisible ? "true" : "false");
+      timelineToggleBtn.classList.toggle("is-collapsed", !state.timelineVisible);
+    }
+
+    if (persist) {
+      localStorage.setItem(TIMELINE_VISIBILITY_STORAGE_KEY, state.timelineVisible ? "visible" : "hidden");
+    }
+  }
+
+  function applySavedTimelineVisibility() {
+    const savedVisibility = localStorage.getItem(TIMELINE_VISIBILITY_STORAGE_KEY);
+    state.timelineVisible = savedVisibility !== "hidden";
+    applyTimelineVisibility(false);
+  }
+
+  function toggleTimelineVisibility() {
+    state.timelineVisible = !state.timelineVisible;
+    applyTimelineVisibility(true);
   }
 
   function isMobileLayout() {

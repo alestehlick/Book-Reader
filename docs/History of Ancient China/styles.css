@@ -476,15 +476,52 @@ img {
 
 .timeline-header {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
+}
+
+.timeline-header-main {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
 }
 
 .timeline-summary {
   color: var(--muted);
   font-size: 13px;
   letter-spacing: 0.03em;
+}
+
+.timeline-toggle-btn {
+  align-self: start;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(243, 235, 223, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition:
+    background 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    transform 150ms ease;
+}
+
+.timeline-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(192, 154, 98, 0.18);
+  color: var(--text-soft);
+  transform: translateY(-1px);
+}
+
+.timeline-toggle-btn.is-collapsed {
+  background: rgba(192, 154, 98, 0.06);
+  border-color: rgba(192, 154, 98, 0.14);
+  color: var(--accent-2);
 }
 
 .timeline-rail {
@@ -532,7 +569,7 @@ img {
 }
 
 .timeline-tick--labeled {
-  background: rgba(192, 154, 98, 0.12);
+  background: rgba(192, 154, 98, 0.1);
 }
 
 .timeline-tick-label {
@@ -540,10 +577,10 @@ img {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 9px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(223, 211, 194, 0.5);
+  color: rgba(223, 211, 194, 0.46);
   white-space: nowrap;
   pointer-events: none;
 }
@@ -638,6 +675,15 @@ img {
 
 .timeline-point-label[data-certainty="traditional"] {
   color: color-mix(in srgb, var(--muted) 86%, var(--accent-2) 14%);
+}
+
+.timeline-card.timeline-collapsed {
+  gap: 8px;
+}
+
+.timeline-card.timeline-collapsed .timeline-rail,
+.timeline-card.timeline-collapsed .timeline-fallback {
+  display: none !important;
 }
 
 .timeline-fallback {
@@ -1005,6 +1051,15 @@ body.sidebar-collapsed .main-panel {
 
 
 @media (max-width: 760px) {
+  .timeline-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .timeline-toggle-btn {
+    align-self: flex-start;
+  }
+
   .timeline-rail {
     padding: 10px 14px 14px;
   }
