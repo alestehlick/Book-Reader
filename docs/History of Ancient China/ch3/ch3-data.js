@@ -1,12 +1,6 @@
 const BOOK_DATA = {
   "title": "3 — Language and Writing",
   "language": "en",
-  "sharedFigures": [
-    {
-      "label": "Map 3.1",
-      "caption": "A map locating Anyang and the region from which the oracle bones entered modern scholarship. It matters because it ties the textual discovery to a real archaeological landscape."
-    }
-  ],
   "sections": [
     {
       "id": "03.01",
@@ -6416,38 +6410,288 @@ const BOOK_DATA = {
         {
           "id": "03.37-p001",
           "text": "Across the Huan River at Xibeigang lay the great royal cemetery.\nFigure 3.20 shows its scale, with major tombs and large zones of sacrificial burial.\nThirteen huge tombs are known there, almost all plundered in antiquity.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.20",
+              "caption": "Plans of the Xibeigang cemetery. The image helps show the arrangement of the great tombs and the dense fields of sacrificial burials around them."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang royal cemetery",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great burial ground of the late Shang kings across the Huan River."
+            }
+          ]
         },
         {
           "id": "03.37-p002",
           "text": "These tombs are plausibly royal because of their size, their setting, and in one case an inscription naming a royal consort.\nThe famous bronze set of three he found by looters in 1934 probably came from M1001, which may have been the tomb of Wu Ding.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.37-p003",
           "text": "M1001 can stand as the best example of the group.\nIts basic scheme recalls the much smaller elite tomb at Panlongcheng.\nThere is a vertical shaft, a wooden chamber at the bottom, a waist pit beneath it, an earthen shelf around it, and grave goods and victims placed in and around the structure.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Panlongcheng elite tomb",
+              "start": -1400,
+              "end": -1400,
+              "display_date": "c. 1400 BC",
+              "certainty": "approximate",
+              "caption": "An earlier elite burial that provides a southern Erligang-scale comparison for later Anyang tomb design."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.37-p004",
           "text": "The difference is scale.\nIncluding its ramps, the tomb measured about 66 meters from north to south and 44 from east to west.\nFigure 3.21 helps one see the full form, including the four ramps descending toward the central shaft.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.21",
+              "caption": "Plan and section of Xibeigang tomb M1001. The important point is the immense scale of the shaft and ramps compared with earlier elite burials."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The first great bronze-casting horizon of the Central Plain, marked by standardized vessels and rapid expansion."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.37-p005",
           "text": "The shaft itself was cross-shaped and about 10.5 meters deep.\nAt its floor lay nine sacrificial pits, one in the center and two in each corner.\nEach contained a man, a dog, and a ge blade, as Figures 3.22 and 3.23 help to show.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.22",
+              "caption": "The floor of M1001 with nine sacrificial pits and traces of the burial chamber. It makes the internal organization of the tomb unusually clear."
+            },
+            {
+              "label": "Figure 3.23",
+              "caption": "The shaft floor of M1001 during excavation. This view helps one imagine the size of the cross-shaped chamber space and the placement of the sacrificial burials."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.37-p006",
           "text": "The eight corner pits held bronze ge of usable size.\nThe central pit held a much larger jade ge, perhaps deliberately broken.\nThis recurring link between the yaokeng and the jade ge suggests that the buried figures were understood as guardians, whether present in person or symbolically represented.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         }
       ]
     },
@@ -6460,43 +6704,302 @@ const BOOK_DATA = {
           "id": "03.38-p001",
           "text": "The wooden chamber itself was also cross-shaped, though smaller than the shaft.\nIts floor area was about 78 square meters, and its interior seems once to have been richly decorated.\nPigments, shell, bone, ivory inlay, and carved patterns were preserved as impressions after the wood decayed.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p002",
           "text": "Most of the grave goods had originally been placed inside this chamber.\nLooters removed almost everything, yet enough remained to suggest a sumptuously furnished room filled with royal possessions.\nThe chamber was not just a container, but a constructed setting for the dead ruler.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p003",
           "text": "The ritual continued as the tomb was filled.\nOnce the nine guardians had been buried in the floor, the space around the chamber was packed with pounded earth.\nOfferings and additional victims were then deposited on higher levels of the fill.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p004",
           "text": "At one level, eleven human victims were found near the shaft walls.\nSome had coffins and ornaments of jade and turquoise.\nOthers were buried without goods, face down, and with much less care.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p005",
           "text": "Still more victims were deposited in the ramps.\nThe south ramp was the most terrible, containing repeated rows of bound and beheaded young males.\nTheir bodies were covered with earth, then new rows were added above them.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p006",
           "text": "Burials also lined the outside of the tomb, including humans, horses, and one richly furnished pit with chariot gear and bronze vessels.\nTaken together, the victims around M1001 seem to fall into two broad classes.\nSome were buried carefully, perhaps as servants or close retainers.\nOthers were mutilated and treated as a more distant sacrificial class.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         },
         {
           "id": "03.38-p007",
           "text": "The closing of such a tomb must have been a prolonged public rite involving labor, display, and political meaning.\nTo stage a funeral on this scale was also to proclaim legitimacy.\nThe evidence from Xibeigang suggests that sacrifice to royal predecessors did not end with burial, but continued as part of the ongoing life of the dynasty.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            }
+          ]
         }
       ]
     },
@@ -6508,26 +7011,188 @@ const BOOK_DATA = {
         {
           "id": "03.39-p001",
           "text": "The great royal tombs at Xibeigang were surrounded by an immense field of sacrificial burials.\nMore than 1,200 pits were excavated there in 1934 and 1935, most of them near M1400 in the eastern part of the cemetery.\nFigure 3.20 helps one see the overall arrangement, with the great tombs at the center and the sacrificial zones spread around them.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.20",
+              "caption": "Plan of the Xibeigang cemetery and its sacrificial zones. The useful point is the scale and organization of the killing ground around the royal tombs."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang sacrificial field",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great sacrificial zone around the royal cemetery, where ancestor offerings on a massive scale were staged."
+            }
+          ]
         },
         {
           "id": "03.39-p002",
           "text": "The contents of the pits varied.\nComplete skeletons more often had grave goods than dismembered ones, but even headless skeletons might be accompanied by knives, axes, or whetstones.\nSome pits held horses, some birds, some monkeys, and in two striking cases elephants buried with human attendants.\nThe human pits were arranged in east west rows and in distinct groups, and each group tended to contain one consistent mode of killing and burial, as though it represented a single sacrificial occasion.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang sacrificial field",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great sacrificial zone around the royal cemetery, where ancestor offerings on a massive scale were staged."
+            }
+          ]
         },
         {
           "id": "03.39-p003",
           "text": "Later excavation made the scale clearer still.\nIn 1976, 191 pits southeast of M1400 were found to contain the remains of more than 1,200 victims.\nMost were young adult males, though women and children also appeared.\nBeheading was normal, but some victims were cut in half, dismembered, or in a few cases apparently buried alive.\nThe excavators distinguished twenty-two separate sacrificial groups, from single-pit offerings up to one immense group of forty-seven pits with more than 339 victims.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang sacrificial field",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great sacrificial zone around the royal cemetery, where ancestor offerings on a massive scale were staged."
+            }
+          ]
         },
         {
           "id": "03.39-p004",
           "text": "The western part of the cemetery yielded another pattern.\nForty pits excavated in 1978 seem to represent slightly later sacrifices, concentrated mainly on horses.\nTaken together with test probes in the intervening ground, the evidence suggests that Xibeigang contained a continuous sacrificial zone used over a substantial span of time.\nOracle inscriptions from the reign of Wu Ding record offerings of human victims, sometimes by the hundred, dedicated to royal ancestors.\nXibeigang was almost certainly one of the main places where such rites were carried out.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great foundations, large-scale divination, and royal tombs."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang sacrificial field",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great sacrificial zone around the royal cemetery, where ancestor offerings on a massive scale were staged."
+            }
+          ]
         }
       ]
     },
@@ -6540,7 +7205,44 @@ const BOOK_DATA = {
           "id": "03.40-p001",
           "text": "Human sacrifice at Anyang did not serve only one function.\nFoundation burials show that construction itself could demand victims, and sacrificial pits of uncertain purpose occur in many parts of the site.\nEven so, the strongest concentration of evidence points to the mortuary cult of the kings.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang sacrificial field",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The great sacrificial zone around the royal cemetery, where ancestor offerings on a massive scale were staged."
+            }
+          ]
         },
         {
           "id": "03.40-p002",
@@ -6552,7 +7254,44 @@ const BOOK_DATA = {
           "id": "03.40-p003",
           "text": "The practice also marks the Anyang dynasty off from what came later.\nBurial of retainers and funerary sacrifice survived in other forms, but the repeated slaughter of anonymous victims in great numbers after the funeral seems to have ended with Anyang.\nEven the memory of it faded.\nWestern Zhou texts accuse the Shang kings of drunkenness rather than bloodiness, and later moralists seem strangely unaware that human sacrifice stood near the center of the old royal cult.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fall of the Shang",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The end of the Anyang dynasty separates its royal sacrificial regime from the later Zhou world."
+            }
+          ]
         }
       ]
     },
@@ -6564,26 +7303,188 @@ const BOOK_DATA = {
         {
           "id": "03.41-p001",
           "text": "The tomb of Fu Hao is the only intact royal burial yet discovered at Anyang, and also the only one that can be confidently tied to a named person in the oracle texts.\nIt lies west of the Xiaotun palace area and near several lesser burials of similar date.\nIt is far smaller than the great tombs of Xibeigang and has no entrance ramps, yet its contents are astonishing.\nFigure 3.24 makes the plan clear.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.24",
+              "caption": "Plan and section of Fu Hao's tomb. It helps one see how a relatively small shaft could hold an extraordinarily rich royal burial."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "One of the largest royal tombs at Xibeigang, probably associated with the high point of late Shang royal burial."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.41-p002",
           "text": "The shaft measured only about 4 by 5.6 meters at the mouth and 7.5 meters in depth.\nYet it contained roughly 1,600 kilograms of bronze and the largest group of jades ever found in an Anyang tomb.\nThe inventory included 195 bronze vessels, 271 other bronzes such as tools and weapons, 755 jades, 110 objects of marble, turquoise, and other stones, 564 carved bone objects, 15 shell pieces probably used as inlays, 3 ivory cups, and 11 pottery vessels.\nIf the plundered royal tombs at Xibeigang were richer still, their contents must have been almost beyond measure.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.41-p003",
           "text": "The excavators reconstructed the bottom of the tomb as a set of nested lacquered coffins nearly filling the shaft.\nThe ercengtai ledge was very narrow, and most of the furnishings had been placed within the coffins themselves.\nThe largest bronzes lay in the outer coffin around three sides of the inner one, while the jades were placed with the dead in the inner coffin together with nearly 7,000 cowry shells.\nTraces of cloth preserved in corrosion suggest that many bronzes had been wrapped before burial.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.41-p004",
           "text": "The tomb also contained sacrificial victims.\nEight human skeletons, some incomplete, were found in the outer coffin.\nAnother lay with a dog in the yaokeng beneath, four more above the coffins, and three in niches cut into the sides of the shaft.\nEven here, where the burial was vastly smaller than M1001, the royal funeral remained inseparable from sacrifice.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         }
       ]
     },
@@ -6596,19 +7497,130 @@ const BOOK_DATA = {
           "id": "03.42-p001",
           "text": "The identification of the tomb depends mainly on inscriptions.\nMore than a hundred bronzes carry the name Fu Hao, and five others, including two monumental fangding, carry the name Mu Xin, which the oracle texts identify as the posthumous title under which Fu Hao received sacrifices from her sons.\nThat combination makes the attribution compelling.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.42-p002",
           "text": "The inscriptions also raise a more delicate question.\nSome scholars have thought that so many inscribed vessels could hardly have been made for the funeral alone, and therefore treated those bearing Fu Hao's name as possessions she had owned in life.\nBut this may underestimate the productive power of Anyang foundries.\nA plausible alternative is that Wu Ding commissioned many of these vessels for the burial itself, while the great fangding to Mu Xin represent offerings made in her posthumous identity.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.42-p003",
           "text": "The issue matters because it affects how the tomb is read.\nIf many bronzes were already in use, the tomb preserves something like a courtly household gathered into death.\nIf many were newly cast, it reveals the speed and scale with which royal ritual wealth could be mobilized.\nIn either case, the inscriptions show an unusually direct relation between archaeology and named historical persons.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         }
       ]
     },
@@ -6621,25 +7633,173 @@ const BOOK_DATA = {
           "id": "03.43-p001",
           "text": "The bronze assemblage expresses rank in several different ways.\nSome vessel types are themselves exceptional, appearing rarely or not at all in lesser burials.\nTwo fanglei and four fangyi belong to this category, along with a few singular pieces whose very oddity marks them out as aristocratic luxuries rather than basic ritual equipment.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.43-p002",
           "text": "A second sign of status is sheer size.\nMany vessels in the tomb are much larger than normal for their types.\nThe two largest, both fangding dedicated to Mu Xin, weigh about 120 kilograms each.\nRectangular versions of normally round forms are especially imposing.\nThere are only twenty-one rectangular vessels in the tomb, but they visually dominate the assemblage.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.43-p003",
           "text": "A third sign of rank is quantity.\nForty jue and fifty-three gu are not just a ritual set but a display of abundance.\nWhere a lesser aristocrat might have one example, Fu Hao often had matched groups of five or ten.\nA neighboring tomb like M18 would count as rich in almost any other context, yet beside Fu Hao's burial it seems modest and almost restrained.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.43-p004",
           "text": "The distribution of forms also hints at ritual emphasis.\nA rough functional division suggests that the majority of the vessels were for wine rather than food.\nAlmost all the major bronzes carry Style V decoration.\nThe result is a burial that speaks not only of wealth, but of ceremonial intensity and visual authority.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         }
       ]
     },
@@ -6651,14 +7811,111 @@ const BOOK_DATA = {
         {
           "id": "03.44-p001",
           "text": "Outside the vessel set, the bronzes include a dense cluster of tools and weapons.\nThere are eighty-nine ge blades and two especially large axe blades inscribed with Fu Hao's name.\nThose axes may have served in sacrificial killing.\nThe tomb also yielded twenty-three small bells of the nao and ling types, a little horse gear, and several objects that seem to come from the Northern Zone, including mirrors, a knife, a pointed tool, and a number of so-called bow-shaped objects.\nFigure 3.25 gathers these northern-looking pieces together.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.25",
+              "caption": "Northern-style bronzes from Fu Hao's tomb. They matter because they show that Anyang was in active contact with northern exchange networks."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         },
         {
           "id": "03.44-p002",
           "text": "These items matter because they place Anyang within a wider network of exchange.\nMirrors of the same sort occur further northwest, even in contexts linked with Qijia and related northern traditions.\nOther artifacts of unmistakably Anyang character turned up far away, as at Chenggu in Shaanxi.\nThe pattern suggests active traffic rather than cultural isolation.\nBy the time of Wu Ding, Anyang was not merely receiving influence from the north.\nIt was participating in a many-sided web of prestige exchange.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         }
       ]
     },
@@ -6670,8 +7927,50 @@ const BOOK_DATA = {
         {
           "id": "03.45-p001",
           "text": "The jades from Fu Hao's tomb require a different way of looking.\nJade is difficult to work.\nIt cannot simply be carved like wood or bone, but must be cut and shaped through abrasion.\nThat resistance is visible in the most unusual pieces from the tomb, especially the small three-dimensional animals, whose forms still seem half imprisoned in the rectangular blocks from which they were made.\nFigure 3.26 shows this vividly.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.26",
+              "caption": "Three-dimensional jade animals from Fu Hao's tomb. The important point is how stubborn material and limited technique still produced vivid but compact forms."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.45-p002",
@@ -6708,13 +8007,92 @@ const BOOK_DATA = {
           "id": "03.46-p002",
           "text": "The assemblage also contains several surprises.\nOne is the absence of large trapezoidal knives and arc-ended blades, shapes known from Erlitou and found in abundance at Sanxingdui.\nInstead, the large blades in the tomb are almost all ge.\nThirty-nine of them were buried there.\nWhether they were prized for ritual efficacy, prestige, or simple acquisitiveness cannot be said with certainty, but their concentration is striking.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erlitou culture",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The first urban horizon in the middle Yellow River, where ambitious bronze casting and monumental compounds first come together."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.46-p003",
           "text": "Another surprise is the breadth of the tomb's connections in time and space.\nSome jades are probably imports from the south.\nOne ge even carries an inscription recording that a set of five ge had been sent in, a small but vivid trace of elite exchange.\nMore startling still is the presence of much older Neolithic pieces from several different cultures, including Shijiahe, Liangzhu, Longshan, and Hongshan.\nHongshan forms were evidently familiar enough at Anyang to inspire local adaptations, and Figure 3.27 shows how a foreign coiled animal type could gradually become an Anyang dragon plaque.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.27",
+              "caption": "Hongshan and Anyang-related jade dragon forms. The comparison shows how an older northern type could be adopted and transformed in the style of Anyang."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Neolithic jade traditions",
+              "start": -3500,
+              "end": -2000,
+              "display_date": "c. 3500-2000 BC",
+              "certainty": "approximate",
+              "caption": "Earlier jade-working traditions whose objects could survive as heirlooms far into the Bronze Age."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou culture",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The first urban horizon in the middle Yellow River, where ambitious bronze casting and monumental compounds first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         }
       ]
     },
@@ -6727,13 +8105,87 @@ const BOOK_DATA = {
           "id": "03.47-p001",
           "text": "The contrast between the jades and the bronzes is revealing.\nThe jades include imports, heirlooms, and pieces already ancient when they entered the tomb.\nMany were probably ornaments or cherished valuables in life before they became grave goods in death.\nSome may even have been recovered from older burials.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Neolithic jade traditions",
+              "start": -3500,
+              "end": -2000,
+              "display_date": "c. 3500-2000 BC",
+              "certainty": "approximate",
+              "caption": "Earlier jade-working traditions whose objects could survive as heirlooms far into the Bronze Age."
+            },
+            {
+              "type": "span",
+              "label": "Erlitou culture",
+              "start": -1750,
+              "end": -1500,
+              "display_date": "c. 1750-1500 BC",
+              "certainty": "approximate",
+              "caption": "The first urban horizon in the middle Yellow River, where ambitious bronze casting and monumental compounds first come together."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         },
         {
           "id": "03.47-p002",
           "text": "The bronzes tell a different story.\nThey belong much more consistently to the current ritual world of Anyang.\nThat makes sense.\nA funerary assemblage of bronze vessels had to perform specific ceremonial work, and that required a coherent and up-to-date equipment set.\nA random accumulation of old curiosities would not do.\nThe jades suggest personal possession and long circulation.\nThe bronzes suggest formal ritual order.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            }
+          ]
         }
       ]
     },
@@ -6746,19 +8198,139 @@ const BOOK_DATA = {
           "id": "03.48-p001",
           "text": "The horse-drawn chariot appears at Anyang about the time of Wu Ding.\nThe earliest archaeological traces belong to that horizon, and there is no sign of any earlier wheeled vehicle in the area.\nThe graph for chariot in the oracle inscriptions of this period therefore becomes especially significant.\nIt almost certainly refers to a real vehicle already present in the life of the court.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Wu Ding",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The ruler under whom Anyang seems to have become a major city with the first great foundations, large-scale divination, and royal tombs."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         },
         {
           "id": "03.48-p002",
           "text": "The striking thing is that the chariot enters the Chinese archaeological record fully formed.\nThere is no visible prehistory of wagons, carts, or draft use leading up to it.\nThe vehicle appears instead as part of a complete technical package, one that already had a long history in western Asia.\nThat makes the chariot an important clue to the external relations of the Anyang civilization.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         },
         {
           "id": "03.48-p003",
           "text": "Chariot burials are known from several parts of the site.\nSome were connected with tombs, others seem to have been separate sacrifices.\nAbout twenty had been excavated when this discussion was written.\nMost contained one or two chariots, a pair of horses for each vehicle, and in about half the cases one to three human skeletons.\nThe only contemporary example known elsewhere, at Laoniupo near Xi'an, is essentially identical to the Anyang specimens.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         }
       ]
     },
@@ -6770,26 +8342,215 @@ const BOOK_DATA = {
         {
           "id": "03.49-p001",
           "text": "Because early examples are often poorly preserved, one later burial is especially useful.\nPit M52 at Guojiazhuang, dated to Yinxu 4, preserved a nearly complete ghost of a chariot as a soil cast formed after the decay of the wood.\nFigure 3.28 shows the arrangement clearly.\nTwo men and two horses had been laid in the pit before the vehicle was lowered into place.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.28",
+              "caption": "Chariot burial M52 at Anyang. The image makes the funerary arrangement of vehicle, horses, and attendants immediately visible."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         },
         {
           "id": "03.49-p002",
           "text": "The pit was about 3.5 meters square and 1.8 meters deep.\nThe wheels, axle, and draft pole rested in trenches cut to receive them, so that the body of the chariot could sit low and the wheels would not bear the full weight of the fill.\nEven so, the pounded earth later distorted the wheels and bent the draft pole.\nOne of the sacrificed men lay beside the horses on matting, his hands tied behind him and part of his body covered with patterned red cloth.\nThe other lay behind the vehicle and had been sprinkled with cinnabar.\nThe horses too were associated with cinnabar.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         },
         {
           "id": "03.49-p003",
           "text": "Structurally the chariot was large but standard.\nIt had two eighteen-spoked wheels turning on a fixed axle, a draft pole resting over the axle and rising toward the yoke, and a curved yoke fitted with saddles resting on the horses' necks.\nThe axle was about 308 centimeters long and the distance between the wheels about 230 centimeters.\nThe box itself was broad enough to carry several passengers kneeling.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         },
         {
           "id": "03.49-p004",
           "text": "The chariot box measured roughly a meter and a half across and just under a meter from front to back.\nIts sides were formed by a low wooden lattice, with the entrance at the rear.\nTraces of red and black lacquer survived on the wood, and several fittings were made of bronze.\nThe horses wore bronze frontlets and headstalls decorated with cowry shells, and one carried a small bell at the neck.\nBits and cheekpieces were not found in this burial, but both are known from other Anyang chariot burials.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         }
       ]
     },
@@ -6802,7 +8563,53 @@ const BOOK_DATA = {
           "id": "03.50-p001",
           "text": "The excavators thought the decoration of M52 and the lack of weapons meant that it was a passenger vehicle rather than a war chariot.\nThat remains uncertain.\nIts construction does not differ fundamentally from chariots found with weapons, and richly decorated vehicles are not thereby excluded from military use.\nThe sides of the box were too low for stable fighting while standing, so if combat was involved, the riders probably knelt.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         },
         {
           "id": "03.50-p002",
@@ -6814,7 +8621,53 @@ const BOOK_DATA = {
           "id": "03.50-p003",
           "text": "Compared with Near Eastern chariots, those from Anyang are notably large.\nThey had broader floors, larger wheels, and greater wheel track than the examples from the tomb of Tutankhamun.\nThat suggests more passengers and less speed.\nYet two features are especially striking.\nAnyang wheels can have eighteen to twenty-six spokes, far more than the common four, six, or eight of western Asia, and the axle is mounted not at the back edge of the box but nearer the middle.\nOutside China, the closest parallels for this combination are some mid-second-millennium chariots from the Caucasus.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            },
+            {
+              "type": "point",
+              "label": "Chariot burial M52",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "c. 1100 BC",
+              "certainty": "approximate",
+              "caption": "A later Anyang chariot burial that preserves the vehicle, horses, and attendants with unusual clarity."
+            }
+          ]
         }
       ]
     },
@@ -6827,19 +8680,130 @@ const BOOK_DATA = {
           "id": "03.51-p001",
           "text": "A horse-drawn chariot is not just one more artifact.\nIt presupposes a whole cluster of skills and institutions.\nHorses had to be bred, traded, broken, paired, and handled.\nVehicles had to be built and maintained by skilled carpenters and harness makers.\nDrivers too required training.\nEven limited use of chariots implies sustained contact with people who already possessed this knowledge.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         },
         {
           "id": "03.51-p002",
           "text": "The logic of the vehicle points the same way.\nSpeed depends on horse traction, light construction, and spoked wheels.\nIn western Eurasia such vehicles were preceded by a long history of heavier wagons and draft use.\nIn China no earlier wheel tradition leads up to the Anyang examples.\nThe spoked wheel arrives already mature.\nEven the heat bending required for some wooden parts presupposes specialized technique.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         },
         {
           "id": "03.51-p003",
           "text": "The implication is that Anyang did not acquire chariots merely by copying an object seen from afar.\nIt must have acquired horses, craft knowledge, and at least some trained personnel through northern contacts.\nKnives, bow-shaped objects, and other northern-style bronzes appearing in the Anyang record at the same time may belong to that same horizon of interaction.\nThe arrival of the chariot is therefore one of the clearest signs that the Anyang world was open to forces beyond the Yellow River valley.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Chariot arrival at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "Horse-drawn chariots appear at Anyang already as a complete technical package, implying strong northern contacts."
+            }
+          ]
         }
       ]
     },
@@ -6852,19 +8816,153 @@ const BOOK_DATA = {
           "id": "03.52-p001",
           "text": "If one looks beyond Anyang, the most sophisticated contemporary bronze cultures lay in the middle and lower Yangzi region.\nBy this time, local industries were flourishing across a wide area.\nThere was no single Anyang horizon imposing one style everywhere.\nInstead, the centuries of the Anyang kings saw the confident growth of regional traditions.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1250,
+              "end": -1250,
+              "display_date": "c. 1250 BC",
+              "certainty": "approximate",
+              "caption": "One of the richest transition-period tombs, crucial for the early southern bell tradition and for regional bronze power outside Anyang."
+            }
+          ]
         },
         {
           "id": "03.52-p002",
           "text": "One artifact above all marks the Yangzi sphere.\nThat is the large bell, especially the type called nao.\nAnyang had small bells of this family, but they were minor objects there.\nIn the south, by contrast, the bell became monumental.\nFigure 3.29 makes the contrast immediate.\nThe Anyang examples are small and relatively modest, whereas southern bells are huge and visually commanding.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.29",
+              "caption": "Bells of the nao type from Anyang and the south. The contrast shows how a minor northern object became a monumental ritual form in the Yangzi region."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The only intact royal burial at Anyang, exceptionally rich and securely tied to a named figure in the oracle texts."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1250,
+              "end": -1250,
+              "display_date": "c. 1250 BC",
+              "certainty": "approximate",
+              "caption": "One of the richest transition-period tombs, crucial for the early southern bell tradition and for regional bronze power outside Anyang."
+            }
+          ]
         },
         {
           "id": "03.52-p003",
           "text": "The lower Yangzi seems to have developed this bell tradition first, already by the transition period, and the Xin'gan tomb offers some of the earliest good examples.\nIn the middle Yangzi region the bells are later and often larger still.\nThe largest known example, from Ningxiang in Hunan, weighs 220 kilograms.\nThis is not a marginal craft tradition.\nIt is the product of courts or centers capable of commanding major resources and directing them toward a ritual ideal very different from that of Anyang.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The century in which the short-lived unity of Erligang gives way to clearer regional bronze traditions."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, archaeologically exceptional but no longer treated as the whole of civilization."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1046,
+              "end": -771,
+              "display_date": "c. 1046-771 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which many Bronze Age forms persisted but the old sacrificial and decorative order was reshaped."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1250,
+              "end": -1250,
+              "display_date": "c. 1250 BC",
+              "certainty": "approximate",
+              "caption": "One of the richest transition-period tombs, crucial for the early southern bell tradition and for regional bronze power outside Anyang."
+            },
+            {
+              "type": "point",
+              "label": "Ningxiang great nao",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late second millennium BC",
+              "certainty": "approximate",
+              "caption": "A monumental bell from Hunan showing how the southern bell tradition became far grander than its northern counterpart."
+            }
+          ]
         }
       ]
     },
@@ -6877,19 +8975,108 @@ const BOOK_DATA = {
           "id": "03.53-p001",
           "text": "The middle Yangzi region of southern Hubei and northern Hunan has yielded the greatest concentration of such finds.\nMost belong to the period after the transition age, though one great drum from Hubei shows that the southern bronze tradition was already gathering force earlier.\nThe contexts are often frustratingly poor.\nMany objects come from chance finds or deposits rather than well excavated tombs.\nYet the objects themselves are eloquent.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The horizon in which regional bronze traditions emerged after the short-lived unity of Erligang."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mature late Shang world centered at Anyang, strong but no longer alone in civilized China."
+            },
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "The southern Hubei and northern Hunan sphere marked above all by large ritual bells and a narrow but distinctive vessel repertory."
+            }
+          ]
         },
         {
           "id": "03.53-p002",
           "text": "The repertory is narrow but distinctive.\nLarge bells are the most characteristic items.\nAfter them come imposing zun and lei, and then vessels made in the form of animals such as elephants, buffaloes, and even boars.\nFigure 3.30 shows the tone of this world.\nThe favorite creatures are not the highly formalized imaginary beings that dominate northern bronzes, but real animals rendered with a striking mixture of grandeur and naturalism.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.30",
+              "caption": "Animal-shaped bronzes from the middle Yangzi region. What matters is the local preference for powerful real animals rendered with scale, confidence, and natural presence."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The threshold in which some southern forms were already taking shape before the fully mature late Shang age."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang northern world that provides the main contrast case for the southern bronzes."
+            },
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "The regional ritual world whose favored forms were great bells, imposing ding and lei, and animal-shaped bronzes."
+            }
+          ]
         },
         {
           "id": "03.53-p003",
           "text": "Occasionally the southern workshops borrowed something from Anyang, and a few northern imports may have reached the region.\nBut this does not make the southern bronzes provincial copies.\nOn the contrary, the scale, technical confidence, and ritual distinctiveness of the finds reveal an independent civilization.\nThese castings are not the products of simple villages.\nIf the south still lacks a site in Hunan as thoroughly excavated as Anyang, that is a limitation of modern fieldwork rather than of the ancient culture itself.\nThe chance finds alone are enough to show that powerful centers with wide connections flourished there, and that the later history of the north, including the rise of Zhou power, cannot be fully understood without them.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "A southern civilization with its own large-scale casting, ritual priorities, and wide connections."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world of the north, useful here mainly as a comparison rather than a standard of superiority."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Zhou victory is easier to judge once the strength of the southern bronze world is kept in view."
+            }
+          ]
         }
       ]
     },
@@ -6902,13 +9089,114 @@ const BOOK_DATA = {
           "id": "03.54-p001",
           "text": "In 1980 excavations began at Sanxingdui, a walled city on the Chengdu Plain about forty kilometers north of modern Chengdu.\nThe city wall was a hangtu construction, and the excavators judged it broadly comparable in date to the wall at Zhengzhou, or perhaps even earlier.\nThe surviving stretches reached as much as six meters in height and forty meters in thickness at the base.\nThe enclosed area was about 2.6 square kilometers, with settlement debris outside the wall extending over a much larger zone.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The earlier northern horizon whose walls and bronze system provide one point of comparison for Sanxingdui."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The broader late-second-millennium threshold in which regional powers become more visible after Erligang unity weakens."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The main horizon of the great Sanxingdui city and pits on the Chengdu Plain."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui excavations begin",
+              "start": 1980,
+              "end": 1980,
+              "display_date": "1980",
+              "certainty": "secure",
+              "caption": "Modern excavation first established Sanxingdui as a major walled center before the famous pits were found."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pits discovered",
+              "start": 1986,
+              "end": 1986,
+              "display_date": "1986",
+              "certainty": "secure",
+              "caption": "The pits forced a major rethinking of late second-millennium civilization in Sichuan."
+            }
+          ]
         },
         {
           "id": "03.54-p002",
           "text": "The scale alone shows that Sanxingdui was a major center.\nThat point was driven home in 1986, when two extraordinary sacrificial pits were found at the site.\nThe two deposits seem to have been made a few decades apart.\nA rough working date places them just before and just after the tomb of Fu Hao, around 1200 BC.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The late-second-millennium horizon in which several regional cultures matured beyond Erligang uniformity."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world that overlaps chronologically with the Sanxingdui deposits."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local Sichuan horizon of the great ritual deposits and their monumental bronzes."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 1 deposit",
+              "start": -1210,
+              "end": -1210,
+              "display_date": "c. 1210 BC",
+              "certainty": "approximate",
+              "caption": "One of the two great sacrificial deposits that reveal the ritual world of Sanxingdui."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 2 deposit",
+              "start": -1190,
+              "end": -1190,
+              "display_date": "c. 1190 BC",
+              "certainty": "approximate",
+              "caption": "The richer deposit, probably slightly later, that anchors Sanxingdui near the time of Fu Hao."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major Anyang tomb that provides the nearest familiar chronological landmark."
+            }
+          ]
         }
       ]
     },
@@ -6921,13 +9209,69 @@ const BOOK_DATA = {
           "id": "03.55-p001",
           "text": "Pit 1 was a rectangular shaft about 4.6 by 3.5 meters at the top and 1.6 meters deep.\nIt contained more than three hundred artifacts of bronze, jade, and gold, together with cowry shells, thirteen elephant tusks, and a great mass of burnt animal bone.\nNo human skeletons were found.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon of the great ritual deposits on the Chengdu Plain."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang northern world that serves here mainly as a contrast case."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 1 deposit",
+              "start": -1210,
+              "end": -1210,
+              "display_date": "c. 1210 BC",
+              "certainty": "approximate",
+              "caption": "A sacrificial deposit of bronzes, jades, tusks, shells, and burnt remains, unusual in both richness and ritual logic."
+            }
+          ]
         },
         {
           "id": "03.55-p002",
           "text": "The most striking point is ritual rather than quantity.\nThe artifacts themselves had been burned, and some had been deliberately broken, yet the pit showed no trace of burning.\nThe most plausible explanation is that animals and objects were first used in a sacrifice elsewhere, then their remains were pushed into the pit and sealed with pounded earth.\nNothing quite like this is known from Anyang, where sacrificial pits usually center on human victims rather than on masses of elite objects.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The horizon of the Sanxingdui pits and their local sacrificial system."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world where sacrificial pits usually center more heavily on human victims than on masses of elite objects."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 1 deposit",
+              "start": -1210,
+              "end": -1210,
+              "display_date": "c. 1210 BC",
+              "certainty": "approximate",
+              "caption": "The deposit matters because it points to a ritual sequence unlike the better-known sacrificial practices at Anyang."
+            }
+          ]
         }
       ]
     },
@@ -6939,20 +9283,145 @@ const BOOK_DATA = {
         {
           "id": "03.56-p001",
           "text": "Pit 2 was similar in form but richer and more orderly.\nIts contents were laid down in three levels.\nSmall items, including more than a hundred jades, lay at the bottom.\nLarge bronzes occupied the middle layer.\nMore than sixty elephant tusks formed the uppermost level.\nFigure 3.31 shows the excavation clearly.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.31",
+              "caption": "Pit 2 at Sanxingdui under excavation. The arrangement of layers helps one see that the deposit was carefully staged, not a random dump."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The wider horizon just before the fully mature late Shang age, relevant because Pit 2 sits close to this threshold."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang sequence within which Pit 2 is roughly anchored."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon of the great sacrificial deposits on the Chengdu Plain."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 2 deposit",
+              "start": -1190,
+              "end": -1190,
+              "display_date": "c. 1190 BC",
+              "certainty": "approximate",
+              "caption": "The richer and more orderly of the two great ritual deposits at Sanxingdui."
+            }
+          ]
         },
         {
           "id": "03.56-p002",
           "text": "The bronzes from Pit 2 are among the strangest works of the Chinese Bronze Age.\nThey include a life-size standing figure on a pedestal, shown in Figure 3.32.\nThey include more than forty bronze heads, some with gold masks and traces of vermilion, and a set of huge faces or masks that border on the monstrous.\nFigure 3.33 gives the flavor of these startling forms.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.32",
+              "caption": "The life-size bronze statue from Sanxingdui. It shows how far this local bronze tradition moved beyond ordinary vessel casting into an entirely different sacred image world."
+            },
+            {
+              "label": "Figure 3.33",
+              "caption": "Bronze heads and masks from Sanxingdui. What matters is the radical local imagination of the human and the divine, unlike anything known from Anyang."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The broader threshold at which regional worlds began to diverge more sharply from the Erligang inheritance."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang northern world that provides the nearest familiar comparison."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon of the astonishing bronze images from the pits."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 2 deposit",
+              "start": -1190,
+              "end": -1190,
+              "display_date": "c. 1190 BC",
+              "certainty": "approximate",
+              "caption": "The deposit preserved the life-size figure, bronze heads, and monumental masks."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A useful chronological anchor because the Sanxingdui pits cluster close to its date while differing radically in ritual imagination."
+            }
+          ]
         },
         {
           "id": "03.56-p003",
           "text": "There were also three bronze trees, the largest over four meters high, found in fragments.\nAlongside these stood a dozen large vessels.\nThose vessels are in one sense the least surprising objects in the pit, and for that very reason they are archaeologically precious.\nThey help anchor the dating of a deposit that would otherwise seem almost untethered to anything familiar.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang sequence provides the nearest familiar dating frame for the Sanxingdui bronzes."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon in which bronze trees and unusual image forms appear alongside more familiar vessel types."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 2 deposit",
+              "start": -1190,
+              "end": -1190,
+              "display_date": "c. 1190 BC",
+              "certainty": "approximate",
+              "caption": "The deposit matters because even its strangest works still sat beside vessels that help place it chronologically."
+            }
+          ]
         }
       ]
     },
@@ -6964,14 +9433,93 @@ const BOOK_DATA = {
         {
           "id": "03.57-p001",
           "text": "The vessels from Pit 2 are all zun and lei.\nThey closely match examples from the middle Yangzi region and may well have been imported from there.\nFigure 3.34 makes the resemblance plain.\nMetal provenance studies point in the same direction, since some Sanxingdui bronzes appear to share an unusual lead source with bronzes from the Xin'gan tomb.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.34",
+              "caption": "A lei from the middle Yangzi region beside one from Sanxingdui. The comparison makes their connection visible while still leaving room for local difference."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The horizon in which regional bronze traditions were already diverging while remaining connected."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang period that overlaps with both Sanxingdui and the middle Yangzi finds."
+            },
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "The regional sphere whose vessel forms and lead sources connect in part with Sanxingdui."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local Sichuan horizon that remained distinct despite clear lines of contact."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1250,
+              "end": -1250,
+              "display_date": "c. 1250 BC",
+              "certainty": "approximate",
+              "caption": "A major southern tomb whose bronzes and lead sources help illuminate Sanxingdui's southern connections."
+            }
+          ]
         },
         {
           "id": "03.57-p002",
           "text": "This does not mean that Sanxingdui belonged culturally to the Yangzi world.\nThe connections are real, but the local culture remains sharply distinct.\nThe great bells that define the middle Yangzi tradition do not appear here.\nInstead there are only a few ling and two clappered bells of highly unusual form.\nSanxingdui was in contact with the south, but it was not merely an outpost of southern taste.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "The southern bronze world defined above all by large ritual bells and a narrow vessel repertory."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local Sichuan horizon of the pits and their very different sacred imagery."
+            },
+            {
+              "type": "point",
+              "label": "Sanxingdui pit 2 deposit",
+              "start": -1190,
+              "end": -1190,
+              "display_date": "c. 1190 BC",
+              "certainty": "approximate",
+              "caption": "The deposit matters here because it shows contact with the south without collapse into southern identity."
+            }
+          ]
         }
       ]
     },
@@ -6983,20 +9531,118 @@ const BOOK_DATA = {
         {
           "id": "03.58-p001",
           "text": "The jades of Sanxingdui are unlike those from Fu Hao's tomb.\nDisks and large blades dominate the assemblage.\nArc-ended blades, trapezoidal knives, ge blades, and hybrids between these forms appear in remarkable variety.\nFigure 3.35 shows this broad and unruly blade world.\nOrnaments, so abundant in Fu Hao's burial, are almost absent here.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.35",
+              "caption": "Large jade blades from Sanxingdui. The important point is the extraordinary range of blade forms and the very different jade priorities of this culture."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The threshold at which several regional bronze cultures became clearer in the archaeological record."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world whose jade priorities provide the clearest contrast case."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon in which large blades and unusual jade inventories dominate."
+            },
+            {
+              "type": "point",
+              "label": "Fu Hao's tomb",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A useful Anyang comparator because its jade assemblage is rich in ornaments rather than massive blades."
+            }
+          ]
         },
         {
           "id": "03.58-p002",
           "text": "The site also poses a historical puzzle.\nPottery suggests some contact with the Erlitou world, and the hangtu wall may reflect influence from Erlitou or Erligang.\nYet the bronzes themselves show little obvious Erligang flavor.\nTheir casting technology belongs to the Erligang tradition, but their forms and imagery do not.\nPerhaps bronze casting reached the Chengdu Plain relatively late, during the transition period rather than during the great Erligang expansion itself.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The earlier horizon of northern expansion whose technology Sanxingdui may have received only indirectly or late."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The likeliest horizon for the transmission of casting into the Chengdu Plain if it did not arrive during the great Erligang spread."
+            },
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The local horizon whose wall, bronzes, and pottery still resist simple derivation from the north."
+            }
+          ]
         },
         {
           "id": "03.58-p003",
           "text": "The relation of Sanxingdui to later Sichuan history is equally uncertain.\nIt has often been treated as an ancestor of the later Shu culture, but that continuity has mostly been assumed rather than demonstrated.\nEarly Western Zhou bronze deposits found nearby seem largely untouched by the strange artistic world of the pits.\nSanxingdui remains one of the great unresolved presences of the second millennium BC.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Sanxingdui horizon",
+              "start": -1250,
+              "end": -1100,
+              "display_date": "c. 1250-1100 BC",
+              "certainty": "approximate",
+              "caption": "The horizon of the strange Sichuan pits, still difficult to place securely in longer regional history."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The period whose nearby deposits show surprisingly little continuation of the Sanxingdui image world."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "A useful threshold after which the odd artistic world of the pits becomes much harder to trace."
+            }
+          ]
         }
       ]
     },
@@ -7009,13 +9655,78 @@ const BOOK_DATA = {
           "id": "03.59-p001",
           "text": "Shandong presents a different problem.\nAt Sufutun, near modern Qingzhou, bronzes were first found in 1931 in a small hill at the edge of the village.\nLater work confirmed that the hill contained a cemetery, though no associated habitation site was securely identified nearby.\nA chariot burial and four tombs were excavated in 1965 and 1966, and six more tombs in 1986.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later part of the Anyang sequence to which the excavated Sufutun tombs belong."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang field against which Sufutun must be measured."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun cemetery",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The Shandong cemetery that reveals a powerful eastern extension of the late Shang world."
+            }
+          ]
         },
         {
           "id": "03.59-p002",
           "text": "All the excavated tombs are assigned to the later part of the Anyang sequence, roughly Yinxu 3 or 4.\nMost had been plundered before excavation.\nEven so, three tombs are revealing.\nTwo smaller burials, M7 and M8, survived intact enough to show their contents, while the great tomb M1 remained important because of its scale and sacrificial wealth.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon relevant for the excavated Sufutun burials."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang world whose burial forms and bronzes shape the comparison."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M1",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The great tomb at Sufutun, important for its combination of Anyang-like form and heavy sacrifice."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M7 and M8",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The smaller but informative tombs that clarify the local character of the cemetery."
+            }
+          ]
         }
       ]
     },
@@ -7028,19 +9739,103 @@ const BOOK_DATA = {
           "id": "03.60-p001",
           "text": "M7 was a rectangular shaft with a yaokeng containing a dog and an ercengtai on which three sacrificed humans had been laid, one of them a child.\nMost of the grave goods were placed between inner and outer coffins.\nThey included eight bronze vessels, seven weapons, and bronzes inscribed with the emblem conventionally read as Ya Chou.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon of the Sufutun burials."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang world from which most of the burial form derives."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M7",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "A smaller Shandong tomb whose form and goods show close links with the late Anyang world."
+            }
+          ]
         },
         {
           "id": "03.60-p002",
           "text": "M8 was somewhat larger and had a sloping southern ramp ten meters long.\nIt did not contain sacrificed humans, but dogs appeared in the upper part of the tomb and animal remains lay in the yaokeng below.\nThe grave goods included seventeen bronze vessels, three nao, eight ling, a stone chime, more than two hundred arrowheads, two axes, and about thirty bronze weapons.\nThe excavators thought many of the weapons were made cheaply for burial rather than for serious use.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Anyang sequence to which M8 belongs."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang ritual world, present here but locally inflected."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M8",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "A larger tomb whose bells, chime, and mass of weapons sharpen the profile of the Sufutun cemetery."
+            }
+          ]
         },
         {
           "id": "03.60-p003",
           "text": "These smaller tombs already show something unusual about Sufutun.\nThe burial form is largely familiar from the Anyang world, yet the assemblages also have their own local emphases.\nThe emblem Ya Chou links some of the bronzes to a broader group of objects now scattered in collections without clear provenance.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon shared by the Sufutun burials."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang field whose forms remain dominant even in eastern Shandong."
+            },
+            {
+              "type": "point",
+              "label": "Ya Chou emblem",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The emblem links some Sufutun bronzes to a wider late Shang group that was once difficult to place."
+            }
+          ]
         }
       ]
     },
@@ -7053,19 +9848,112 @@ const BOOK_DATA = {
           "id": "03.61-p001",
           "text": "M1 was the dominant tomb at the cemetery.\nIt had four ramps and a cross-shaped wooden burial chamber, making it the only tomb outside the Xibeigang cemetery that clearly follows the great royal pattern of Anyang.\nThe south ramp ran all the way down to the floor of the shaft.\nThe other ramps entered higher, at the level of the ercengtai.\nThough much smaller than M1001 at Xibeigang, it is the largest tomb yet known outside Anyang.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon to which the great Sufutun tomb belongs."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang world whose royal mortuary pattern M1 partly imitates."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M1",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The largest tomb known outside Anyang that still clearly follows the great royal pattern."
+            },
+            {
+              "type": "point",
+              "label": "Xibeigang M1001",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The major Anyang comparison for the cross-shaped chamber and ramped tomb form."
+            }
+          ]
         },
         {
           "id": "03.61-p002",
           "text": "The sacrifices were immense.\nForty-eight human victims were recorded altogether, most of them teenagers or younger.\nTwo were buried in pits in the chamber floor, one with a dog.\nSeven more lay on the ercengtai, apparently in coffins.\nThe rest, whether whole bodies or severed heads, were deposited in three layers in the south ramp together with five dogs.\nEven after looting, the tomb still yielded two large bronze axes, one inscribed with the Ya Chou emblem, along with jades, gold foil, and thousands of cowries.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon in which the Sufutun sacrifices must be set."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang mortuary world in which heavy sacrifice remained a sign of extreme rank."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M1",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The Shandong tomb is important because its sacrificial scale approaches the great Anyang cemetery more than any other outlying site."
+            }
+          ]
         },
         {
           "id": "03.61-p003",
           "text": "Several other features are suggestive.\nSome tombs at Sufutun had ramps, something otherwise known mainly from the great royal tombs at Anyang.\nM1 had charcoal spread beneath the wooden outer coffin.\nM8 had the lower walls lined with bundles of reeds.\nAnother large tomb, M2, placed a ge, a shield, and a human head in each corner of the shaft.\nThese details do not amount to a wholly separate local tradition, but they give the cemetery its own character.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Anyang horizon relevant to M1, M2, and the associated eastern cemetery forms."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The larger late Shang field from which many of the burial features derive."
+            },
+            {
+              "type": "point",
+              "label": "Sufutun M1",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The tomb remains the main eastern case for a strongly Anyang-like but locally marked elite burial."
+            }
+          ]
         }
       ]
     },
@@ -7078,19 +9966,103 @@ const BOOK_DATA = {
           "id": "03.62-p001",
           "text": "The Ya Chou emblem occurs on bronzes from M1 and M7, on an earlier bronze found at Sufutun in 1931, and on several spearheads said to come from the same site.\nIt is also known from many unprovenanced bronzes.\nBecause the emblem does not seem securely tied to other excavated sites, it is tempting to connect much of that unprovenanced material with Sufutun.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Yinxu horizon in which the Ya Chou bronzes are best situated."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang world to which the Sufutun bronzes remain closely tied."
+            },
+            {
+              "type": "point",
+              "label": "Ya Chou emblem",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The emblem anchors a scattered group of bronzes that likely connect back to Sufutun."
+            }
+          ]
         },
         {
           "id": "03.62-p002",
           "text": "The published Ya Chou bronzes number in the dozens.\nThey include many large and flamboyant castings, with an unusually high proportion of rectangular vessels.\nSome of the square-bodied jue are among the most eccentric bronzes of the late Shang world.\nFor a long time they seemed almost without parallel at Anyang itself.\nBut a tomb found at Anyang in 1990 yielded very similar pieces.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The later Anyang horizon within which the flamboyant Ya Chou repertoire belongs."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The broader late Shang field whose style these bronzes push toward extremes rather than leave behind."
+            },
+            {
+              "type": "point",
+              "label": "Anyang tomb with similar Ya Chou pieces",
+              "start": 1990,
+              "end": 1990,
+              "display_date": "1990 discovery",
+              "certainty": "secure",
+              "caption": "The modern find mattered because it showed that the Ya Chou forms were not alien to the Anyang repertoire after all."
+            }
+          ]
         },
         {
           "id": "03.62-p003",
           "text": "This matters for interpretation.\nThe Ya Chou bronzes are not foreign to the Anyang style, even when they push it toward theatrical excess.\nThey belong within its range.\nThat makes Sufutun look less like a wholly independent culture than like a place tied quite closely to the late Anyang sphere.\nOn present evidence, Shandong here looks more like a late eastern extension of that civilization than like a fully separate regional power.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Anyang phase",
+              "start": -1150,
+              "end": -1046,
+              "display_date": "c. 1150-1046 BC",
+              "certainty": "approximate",
+              "caption": "The relevant horizon for Sufutun and its emblem-bearing bronzes."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang field within which Sufutun now looks better placed."
+            },
+            {
+              "type": "point",
+              "label": "Ya Chou emblem",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late Anyang period",
+              "certainty": "approximate",
+              "caption": "The emblem is useful because it ties an eastern group of bronzes back into the late Anyang sphere."
+            }
+          ]
         }
       ]
     },
@@ -7103,19 +10075,103 @@ const BOOK_DATA = {
           "id": "03.63-p001",
           "text": "A very different world stretched across the north.\nThe Northern Zone ran from Xinjiang and Gansu in the west to Jilin in the east, including much of Inner Mongolia and parts of Liaoning, Hebei, Shanxi, and northern Shaanxi.\nIn the first millennium BC this broad region would become the home of pastoral nomadism.\nBut even in the late second millennium BC it already housed cultures visibly distinct from the civilization of the middle Yellow River valley.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The earlier northern horizon whose frontier retreat forms part of the background to the Northern Zone problem."
+            },
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The broad northern field of bronze-using cultures distinct from the middle Yellow River world."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world that dealt directly with northern peoples and artifacts."
+            }
+          ]
         },
         {
           "id": "03.63-p002",
           "text": "Those cultures matter for at least two reasons.\nFirst, their bronzes point to a metalworking tradition independent of the Erligang world, with roots reaching northward and westward into Siberia and Central Asia.\nSecond, the spread of their characteristic inventory seems roughly to coincide with the southward retreat of the Erligang culture from some frontier zones.\nThe appearance of the Northern Complex may therefore signal not just trade, but movement of peoples and a reshaping of the political frontier.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The earlier northern horizon against which the retreat from some frontier zones becomes visible."
+            },
+            {
+              "type": "span",
+              "label": "Transition period",
+              "start": -1300,
+              "end": -1200,
+              "display_date": "c. 1300-1200 BC",
+              "certainty": "approximate",
+              "caption": "The threshold during which frontier reorganization and new regional powers become harder to miss."
+            },
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The horizon of northern bronzes that looks independent of the Erligang tradition."
+            }
+          ]
         },
         {
           "id": "03.63-p003",
           "text": "The Anyang court clearly had dealings with this world.\nNorthern-style knives, mirrors, and bow-shaped objects appear in Anyang burials, and the arrival of the chariot belongs to the same broad horizon of contact.\nAt the same time, bronze vessels of the central tradition moved northward into the zone.\nThe frontier was not a wall.\nIt was a zone of transmission, borrowing, and transformation.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern bronze world with roots reaching far beyond China proper."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang courtly world that borrowed from and sent objects into the north."
+            },
+            {
+              "type": "point",
+              "label": "Arrival of the chariot at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A major sign that northern contact was reshaping elite practices at Anyang."
+            }
+          ]
         }
       ]
     },
@@ -7127,20 +10183,113 @@ const BOOK_DATA = {
         {
           "id": "03.64-p001",
           "text": "The bronzes of the Northern Complex are distinctive both in type and in decoration.\nSimple striations and zigzags are common.\nSo are loops, buttons for suspension, and terminals shaped like rattles or animal heads.\nCharacteristic types include mirrors, battle-axes with tubular sockets, knives cast in one piece with their handles, daggers, spoons, spatulas, and ladles.\nFigures 3.36 and 3.37 show several of these forms.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.36",
+              "caption": "Axes from Panlongcheng, Xin'gan, and the Northern Zone. The comparison helps clarify how different hafting methods reveal different technical traditions."
+            },
+            {
+              "label": "Figure 3.37",
+              "caption": "Knives and daggers from Anyang and the north. These forms show at a glance how clearly northern weapons stand apart from native central styles."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The horizon of bronzes whose forms and decoration mark an independent northern lineage."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The central late Shang world that provides the clearest comparison for northern types."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The later period in which some northern forms continued to move into frontier burials and mixed assemblages."
+            }
+          ]
         },
         {
           "id": "03.64-p002",
           "text": "These types are immediately recognizable beside the native bronzes of the Yellow River world.\nChinese axes normally have flat tangs for hafting.\nNorthern ones often use shaft rings or tubular sockets.\nChinese knives usually have separate handles.\nNorthern knives cast blade and handle together.\nThe differences are not minor.\nThey point to different technical lineages.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The horizon in which mirrors, socketed axes, integrated knives, and daggers define a different technical inheritance."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world whose native bronze types sharply differ from those of the north."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The comparison matters partly because later frontier burials continued to mix these lineages."
+            }
+          ]
         },
         {
           "id": "03.64-p003",
           "text": "Some northern borrowings were naturalized in China and others were not.\nGe blades with shaft rings seem to represent a temporary experiment inspired by northern hafting methods.\nRing-handled knives, by contrast, became a permanent acquisition and eventually displaced the older native type.\nThe northern bronzes therefore matter not only as markers of ethnic or regional difference, but also as sources of technical change within China itself.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern horizon whose tools and weapons sometimes entered China proper."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world that adopted some northern forms while ignoring others."
+            },
+            {
+              "type": "point",
+              "label": "Arrival of the chariot at Anyang",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "The wider horizon of northern borrowings helps explain why some object types were naturalized in China."
+            }
+          ]
         }
       ]
     },
@@ -7152,20 +10301,114 @@ const BOOK_DATA = {
         {
           "id": "03.65-p001",
           "text": "The archaeology of Shanxi shows how complex this frontier world could be.\nA small grave at Jixian contained only four bronzes, all of clearly northern character.\nA battle-axe and a dagger lay by the head of the dead, and two large spoons lay beside the hand.\nFigure 3.38 shows the arrangement.\nHere there is little sign of influence from Anyang.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.38",
+              "caption": "A grave at Jixian in Shanxi. The burial is useful because it presents a compact assemblage of distinctly northern weapons and utensils without obvious Anyang features."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern horizon whose artifact types remain dominant in some Shanxi burials."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang comparison case, useful precisely because it is weak in this small grave."
+            },
+            {
+              "type": "point",
+              "label": "Jixian grave",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late second millennium BC",
+              "certainty": "approximate",
+              "caption": "A compact Shanxi burial whose contents lean strongly toward northern rather than Anyang forms."
+            }
+          ]
         },
         {
           "id": "03.65-p002",
           "text": "At Lingshi, however, two large graves contained only a few northern items alongside rich groups of Anyang-style vessels.\nThe burials also had familiar features such as yaokeng with sacrificed dogs.\nIn these graves the northern pieces look like intrusions into an otherwise central style of aristocratic burial.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern horizon that continued to furnish some items even in mixed elite burials."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang mortuary and vessel tradition that remains dominant in the richer Lingshi graves."
+            },
+            {
+              "type": "point",
+              "label": "Lingshi graves",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late second millennium BC",
+              "certainty": "approximate",
+              "caption": "The mixed graves show northern items entering an otherwise central style of aristocratic burial."
+            }
+          ]
         },
         {
           "id": "03.65-p003",
           "text": "At Shilou the balance shifts again.\nThere, small northern bronzes repeatedly occur with vessels so eccentric that they must be local products.\nFigure 3.39 gives some idea of this mixed repertoire, with ornaments, weapons, utensils, and an extraordinary boat-shaped vessel all appearing together.\nThe implication is not simple diffusion in one direction.\nDifferent groups, economies, and habits of burial were overlapping in the same broad region.",
-          "figures": [],
-          "timeline": []
+          "figures": [
+            {
+              "label": "Figure 3.39",
+              "caption": "Objects from several finds at Shilou in Shanxi. Taken together, they show a frontier world where ornaments, weapons, utensils, and odd local vessels overlap."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern horizon contributes many small bronzes to the Shanxi frontier world."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang comparison case against which the local eccentricity of Shilou stands out."
+            },
+            {
+              "type": "point",
+              "label": "Shilou finds",
+              "start": -1100,
+              "end": -1100,
+              "display_date": "late second millennium BC",
+              "certainty": "approximate",
+              "caption": "The Shilou group matters because it shows overlap, not simple one-way diffusion, on the Shanxi frontier."
+            }
+          ]
         }
       ]
     },
@@ -7178,19 +10421,121 @@ const BOOK_DATA = {
           "id": "03.66-p001",
           "text": "The Wei valley has often been mined archaeologically in hopes of finding the early Zhou.\nThe search usually aims to identify a pottery assemblage that can be labeled proto-Zhou.\nBut the whole enterprise is uncertain.\nLater texts are too vague and contradictory to fix the homeland securely, and there is no good reason to expect pottery styles to map neatly onto peoples named in literature.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Wei valley",
+              "start": -1300,
+              "end": -1046,
+              "display_date": "c. 1300-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mixed regional field out of which the Zhou would later emerge."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The later period that shaped the backward search for a proto-Zhou homeland."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The political threshold that later encouraged archaeologists to mine the Wei valley for origins."
+            }
+          ]
         },
         {
           "id": "03.66-p002",
           "text": "What does stand out clearly is cultural mixture.\nErligang bronzes reached deep into the valley.\nThe eastern end, around places such as Laoniupo near Xi'an, shows strong ties with Anyang and also with the Northern Zone.\nFarther north, as one moves toward Chunhua, Tongchuan, Suide, and Qingjian, northern bronzes appear with increasing frequency alongside vessel types that remain linked to the central tradition.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Erligang horizon",
+              "start": -1500,
+              "end": -1300,
+              "display_date": "c. 1500-1300 BC",
+              "certainty": "approximate",
+              "caption": "The earlier horizon whose bronzes reached deeply into the Wei valley."
+            },
+            {
+              "type": "span",
+              "label": "Late second-millennium Northern Zone",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The northern horizon that increasingly overlaps with central forms in the upper valley and frontier districts."
+            },
+            {
+              "type": "span",
+              "label": "Late second-millennium Wei valley",
+              "start": -1300,
+              "end": -1046,
+              "display_date": "c. 1300-1046 BC",
+              "certainty": "approximate",
+              "caption": "A mixed field of borrowing, overlap, and recombination rather than a clean proto-Zhou package."
+            },
+            {
+              "type": "point",
+              "label": "Laoniupo",
+              "start": -1150,
+              "end": -1150,
+              "display_date": "late second millennium BC",
+              "certainty": "approximate",
+              "caption": "The eastern Wei valley site shows ties both to Anyang and to the Northern Zone."
+            }
+          ]
         },
         {
           "id": "03.66-p003",
           "text": "The valley was also open to the south.\nObjects from Laoniupo and Chenggu connect the Wei world with southern Shaanxi and even with Xin'gan in Jiangxi.\nChenggu may have served as an intermediary between the Yangzi sphere and the Wei valley.\nTraffic moving along these routes helps explain why southern influence on early Zhou bronzes later became so strong.\nThe valley that produced the Zhou was not culturally isolated.\nIt was a region of receiving, borrowing, and recombining.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Wei valley",
+              "start": -1300,
+              "end": -1046,
+              "display_date": "c. 1300-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mixed world out of which Zhou power later emerged."
+            },
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "A southern sphere whose influence likely reached north through intermediary routes."
+            },
+            {
+              "type": "point",
+              "label": "Chenggu",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "A likely intermediary linking the Wei valley with southern Shaanxi and farther southern bronze worlds."
+            },
+            {
+              "type": "point",
+              "label": "Xin'gan tomb",
+              "start": -1250,
+              "end": -1250,
+              "display_date": "c. 1250 BC",
+              "certainty": "approximate",
+              "caption": "Its distant connection helps show how widely linked the Wei valley already was before the Zhou conquest."
+            }
+          ]
         }
       ]
     },
@@ -7203,13 +10548,69 @@ const BOOK_DATA = {
           "id": "03.67-p001",
           "text": "Archaeology makes one point especially difficult to ignore.\nThe Zhou did not emerge from the most materially sophisticated part of the late second-millennium world.\nThe middle Yangzi region seems in many respects more advanced in bronze casting and more exuberant in large ritual display.\nAnyang itself was richer and more textually visible.\nThe preconquest Wei valley, by contrast, appears mixed, receptive, and comparatively rough.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Middle Yangzi bronze world",
+              "start": -1250,
+              "end": -1046,
+              "display_date": "c. 1250-1046 BC",
+              "certainty": "approximate",
+              "caption": "A southern sphere whose large ritual bronzes may have surpassed the preconquest Zhou world in material splendor."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang courtly world, richer and more textually visible than the preconquest Wei valley."
+            },
+            {
+              "type": "span",
+              "label": "Late second-millennium Wei valley",
+              "start": -1300,
+              "end": -1046,
+              "display_date": "c. 1300-1046 BC",
+              "certainty": "approximate",
+              "caption": "The rougher and more mixed regional world from which the Zhou emerged."
+            }
+          ]
         },
         {
           "id": "03.67-p002",
           "text": "This gives the Zhou conquest a different texture.\nThe Anyang dynasty was not overthrown by the most civilized of its contemporaries, but perhaps by a neighbor especially eager to acquire civilization.\nThat possibility helps explain why the early Zhou world could be at once politically triumphant and culturally indebted.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second-millennium Wei valley",
+              "start": -1300,
+              "end": -1046,
+              "display_date": "c. 1300-1046 BC",
+              "certainty": "approximate",
+              "caption": "The mixed frontier field that formed the immediate background of the Zhou."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The period in which political triumph and cultural indebtedness were both visible."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The conquest matters because archaeology makes it look less like the victory of the most civilized power and more like the triumph of a receptive frontier neighbor."
+            }
+          ]
         }
       ]
     },
@@ -7222,25 +10623,137 @@ const BOOK_DATA = {
           "id": "03.68-p001",
           "text": "Taken as a whole, the archaeological record points to a second millennium far wider and more varied than traditional history allows.\nThere were civilized centers in the Chengdu Plain, in the Yangzi valley, in Shandong, and beyond, alongside simpler but still significant bronze-using societies in the north and northwest.\nThe world of late Shang was not a single cultural block ruled unambiguously from one center.\nIt was a large, diverse, and interacting field.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second millennium BC",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The broad field within which several civilized centers coexisted across China."
+            },
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang courtly world remains central, but only as one major node among others."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The later period whose political memory narrowed the picture of the preceding age."
+            }
+          ]
         },
         {
           "id": "03.68-p002",
           "text": "Traditional history remembers something much narrower.\nIt presents an ancient China in which the only fully civilized powers were Shang and Zhou, and in which the decisive event was the lawful transfer of universal rule from one dynasty to the next.\nThat account was shaped by the Zhou themselves.\nIts earliest formulations belong to texts concerned with political legitimation and the doctrine later called the Mandate of Heaven.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang world that later texts elevated into the single civilized center."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The period in which the doctrine of rightful dynastic transfer was articulated and projected backward."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The political break that later tradition recast as a lawful transfer of universal rule."
+            }
+          ]
         },
         {
           "id": "03.68-p003",
           "text": "From that point of view, the omissions begin to make sense.\nTo justify their conquest, the Zhou needed a past in which they had replaced not one power among many, but the single rightful ruler of the civilized world.\nThat required assigning a unique status to the kings of Anyang and inventing, behind them, an earlier precedent for lawful dynastic transfer.\nArchaeology does not simply add detail to that story.\nIt destabilizes its whole framework.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Anyang milieu",
+              "start": -1200,
+              "end": -1046,
+              "display_date": "c. 1200-1046 BC",
+              "certainty": "approximate",
+              "caption": "The late Shang courtly world whose memory was reshaped by later Zhou political needs."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The period in which the narrow traditional framework for pre-Zhou history was formed."
+            },
+            {
+              "type": "point",
+              "label": "Mandate of Heaven formulation",
+              "start": -1040,
+              "end": -1040,
+              "display_date": "early Western Zhou",
+              "certainty": "approximate",
+              "caption": "The ideological move mattered because it helped turn one conquest among many powers into a moralized dynastic succession."
+            }
+          ]
         },
         {
           "id": "03.68-p004",
           "text": "The value of archaeology therefore lies not only in recovering forgotten places.\nIt also lies in showing how power reshapes memory.\nAs long as archaeology is used chiefly to vindicate tradition, the second millennium will remain distorted.\nOnce it is allowed to stand independently, both the pre-Zhou world and the Zhou invention of history become far more interesting.",
           "figures": [],
-          "timeline": []
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late second millennium BC",
+              "start": -1300,
+              "end": -1000,
+              "display_date": "c. 1300-1000 BC",
+              "certainty": "approximate",
+              "caption": "The archaeological field recovered by this chapter once later dynastic simplifications are set aside."
+            },
+            {
+              "type": "span",
+              "label": "Early Western Zhou",
+              "start": -1046,
+              "end": -950,
+              "display_date": "c. 1046-950 BC",
+              "certainty": "approximate",
+              "caption": "The period that reshaped memory and narrowed the traditional narrative of the age before it."
+            },
+            {
+              "type": "point",
+              "label": "Zhou conquest",
+              "start": -1046,
+              "end": -1046,
+              "display_date": "1046 BC",
+              "certainty": "approximate",
+              "caption": "The threshold after which political power began to reorganize the remembered past as well as the living world."
+            }
+          ]
         }
       ]
     }
@@ -7248,7 +10761,7 @@ const BOOK_DATA = {
   "stats": {
     "sectionCount": 68,
     "paragraphCount": 273,
-    "figureCount": 23,
-    "timelineItemCount": 539
+    "figureCount": 44,
+    "timelineItemCount": 908
   }
 };
