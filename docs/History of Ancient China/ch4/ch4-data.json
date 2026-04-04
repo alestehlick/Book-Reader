@@ -10,7 +10,12 @@
         {
           "id": "04.01-p001",
           "text": "The Shang was the first Chinese dynasty to leave written records of its own.\nBut those records survive only for the final nine kings, so firm history begins only in the late Shang, above all from the reign of Wu Ding to the fall of Di Xin.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -62,7 +67,12 @@
         {
           "id": "04.01-p002",
           "text": "Much in Shang culture had deeper roots in Henan Longshan and in other late Neolithic worlds to the east and northeast.\nEven so, it is only with the late Shang inscriptions that one can speak with confidence of a recognizably early Chinese civilization, with strong ritual hierarchy, political concentration, and mature art.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -96,7 +106,12 @@
         {
           "id": "04.01-p003",
           "text": "Later tradition claimed that the dynasty was called Shang before Pan Geng moved the capital, and Yin afterward.\nThe contemporary evidence does not support that.\nThe late inscriptions speak of Shang, not of a place called Yin, so Yin seems to have been, at least in part, a Zhou name for the dynasty they replaced.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -139,7 +154,12 @@
         {
           "id": "04.01-p004",
           "text": "The dynastic name itself remains obscure.\nIt may have come from a place, as later dynastic names often did.\nLater tradition linked the founding ancestor Xie to a place called Shang, while some scholars have connected the name to a river power mentioned in the bones.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -180,7 +200,12 @@
         {
           "id": "04.02-p001",
           "text": "Eastern Zhou writers knew surprisingly little in detail about Shang life.\nConfucius was said to regret that the surviving records of Song, the Shang successor state, were too thin to restore Shang ritual in full.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -214,7 +239,12 @@
         {
           "id": "04.02-p002",
           "text": "Sima Qian's Basic Annals of Yin gave the dynasty a continuous story, from the miraculous conception of Xie to the fall of the last ruler at Muye and the failed rebellion of Wu Geng.\nThe narrative is rich in some places and skeletal in others, and it preserves moral coloring as well as memory.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -261,6 +291,10 @@
             {
               "label": "Figure 4.1",
               "caption": "The genealogy turns remembered temple names into a visible structure, making the royal line easier to follow than a mere list of names."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -314,7 +348,12 @@
         {
           "id": "04.02-p004",
           "text": "But the transmitted account is not enough by itself.\nIt did not know many of the persons, events, and anxieties that appear plainly in the oracle bones.\nHere the listener begins to feel the difference between later reconstruction and a dynasty speaking in its own records.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -355,7 +394,12 @@
         {
           "id": "04.03-p001",
           "text": "The bronzes remain invaluable for the late Shang world.\nTheir distribution, style, and provenance reveal the range of Shang culture and its regional variation.\nYet the number of long bronze inscriptions that truly narrate Shang history is small.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -389,7 +433,12 @@
         {
           "id": "04.03-p002",
           "text": "The oracle bones are different.\nHere the Shang court speaks much more directly.\nDiviners heated prepared cattle scapulas and turtle shells until the surface cracked, then read those cracks as signs of approval or danger from the Powers.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -423,7 +472,12 @@
         {
           "id": "04.03-p003",
           "text": "These inscriptions were lost to historical memory for many centuries and were only recognized for what they were in the late Qing.\nMore than two hundred thousand fragments were eventually recovered from Xiaotun near Anyang.\nTogether with palaces, workshops, and elite burials, they reveal this zone as the great sacro-administrative center of the late Shang.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -457,7 +511,12 @@
         {
           "id": "04.03-p004",
           "text": "If later tradition is right, Xiaotun formed part of the center later called Yinxu and served as the capital for the last twelve kings, beginning with Pan Geng.\nBut archaeology has not securely confirmed a pre-Wu Ding dynastic Shang presence there.\nEven here, then, the evidence has edges.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -500,7 +559,12 @@
         {
           "id": "04.03-p005",
           "text": "Royal divination also rested on a large material apparatus.\nScapulas and shells had to be acquired, sometimes in tribute, animals and turtles had to be killed, surfaces cleaned, hollows drilled, rites performed, records carved, and used bones finally buried.\nAll this shows that divination was not a marginal curiosity.\nIt was one of the central institutions of Shang rule.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -549,6 +613,10 @@
             {
               "label": "Figure 4.4",
               "caption": "This fuller record from Wu Ding's reign shows how prediction, forecast, and outcome could all be preserved together."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -584,7 +652,12 @@
         {
           "id": "04.04-p002",
           "text": "The surviving inscriptions also let scholars identify diviners as historical actors.\nMore than one hundred twenty diviners are known for the last nine Shang kings.\nSome seem to have belonged to named lineages or communities, which suggests that this work carried standing rather than menial obscurity.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -618,7 +691,12 @@
         {
           "id": "04.04-p003",
           "text": "Modern scholars divide these inscriptions into major diviner groups and broader chronological periods by style, topic, and formula.\nBy the end of the dynasty, however, the king himself had become almost the sole diviner named in the record.\nWhat had once been shared more widely now gathered into the monarch's own hands.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -671,6 +749,10 @@
             {
               "label": "Figure 4.5",
               "caption": "A royal childbirth divination shows that the same paired logic governed intimate dynastic concerns as well as harvest."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -706,7 +788,12 @@
         {
           "id": "04.05-p002",
           "text": "These paired charges ranged across a remarkably wide field.\nThey touched harvest, war, weather, dreams, sickness, childbirth, military plans, travel, settlement building, tribute, and the intentions of Di and other powers.\nThe symmetry of Shang divination fits well with the wider Shang taste for balanced opposition in art and thought.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -740,7 +827,12 @@
         {
           "id": "04.05-p003",
           "text": "Later in the dynasty, much of this breadth contracted.\nPeriod Five divinations focused far more on scheduled ancestral rites, on wishes for no harm in the coming ten-day week, and on royal hunts performed on fixed days.\nMany earlier concerns vanished from the record.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -774,7 +866,12 @@
         {
           "id": "04.05-p004",
           "text": "The form changed too.\nThe script became smaller.\nThe number of cracks per charge was reduced.\nCrack notations largely disappeared.\nRoyal forecasts grew shorter and more uniformly auspicious.\nWhat had once been exploratory and wide-ranging became more regulated, more selective, and more optimistic in tone.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -808,7 +905,12 @@
         {
           "id": "04.05-p005",
           "text": "These changes probably belonged to larger transformations within Shang life.\nAncestral cult became more systematized, succession became more regular, kingship grew more concentrated, and divination itself moved toward narrower ritual routine.\nThat is why the bones tell us more about the fears and decisions of Wu Ding than about those of the final kings.\nAs the practice became more orderly, it also became less revealing.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -849,7 +951,12 @@
         {
           "id": "04.06-p001",
           "text": "The bones were not powerful simply because they were turtle shell or ox bone.\nThe stronger impression from the evidence is that they became effective because they were consecrated and used in rites carried out before the ancestors.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -883,7 +990,12 @@
         {
           "id": "04.06-p002",
           "text": "One may suppose that the ancestor in whose temple the rite was performed acted as an intermediary.\nThe petition rose upward through that ancestral presence toward other powers above.\nEven the material shape of the turtle shell may have carried symbolic force, though that particular idea rests more on later analogy than on firm Shang proof.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -921,6 +1033,10 @@
             {
               "label": "Figure 4.6",
               "caption": "The scapula shows the terse, regular, and highly systematized weekly divination of the dynasty's closing phase."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -956,7 +1072,12 @@
         {
           "id": "04.06-p004",
           "text": "The diviners framed the charges and oversaw the rite, but the king usually alone read the cracks.\nIn the bones he could even speak of himself as \"I, the one man.\"\nThe monopoly mattered.\nThe final act of interpretation belonged to the ruler whose kinship tie to the ancestors gave him unique authority.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -997,7 +1118,12 @@
         {
           "id": "04.07-p001",
           "text": "Absolute Shang chronology still rests on a combination of different kinds of evidence.\nScholars bring together oracle bones, later bronze inscriptions, transmitted Zhou accounts, and the broader limits supplied by radiocarbon dating.\nNo single line of evidence settles the matter by itself.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1031,7 +1157,12 @@
         {
           "id": "04.07-p002",
           "text": "The eclipse inscriptions suggest that Wu Ding was on the throne at some point between at least 1198 and 1189 BC.\nThat gives a firm anchor for the late Shang, but not a complete regnal table.\nFor that reason many historians prefer to work outward from Wu Ding, the last king Di Xin, and a Zhou conquest placed around 1045 BC.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1074,7 +1205,12 @@
         {
           "id": "04.07-p003",
           "text": "The dynasty's beginning is still less secure.\nAstronomical arguments have been used to place Cheng Tang's first year in 1554 BC, while other estimates keep the beginning nearer 1600.\nThe end of the dynasty has also long been disputed, with older calculations ranging widely before more recent arguments converged near 1045 or 1046 BC.\nThe general historical frame is clear, but exact dating is still partly a matter of reconstruction.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1124,7 +1260,12 @@
         {
           "id": "04.08-p001",
           "text": "In practice, scholars often know the order of inscriptions more securely than their exact years.\nTemple names, archaeological context, hollow shapes, diviner names, writing style, same-bone links, and changes in formula all help place one inscription before or after another.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1158,7 +1299,12 @@
         {
           "id": "04.08-p002",
           "text": "That is why oracle bones are commonly grouped not only by kings, but also by diviner groups.\nChanges in style did not always coincide neatly with a change of reign.\nEven so, the older five-period scheme remains useful for broad historical orientation.\nIt provides a workable framework for following the growth and narrowing of late Shang divination over time.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1208,7 +1354,12 @@
         {
           "id": "04.09-p001",
           "text": "For the Shang, time was never merely practical.\nIt governed hunts, births, labor drafts, and agricultural work, but it also ordered sacrifice, omen, luck, and the proper moment for approaching the powers.\nHuman time and sacred time were woven together.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1242,7 +1393,12 @@
         {
           "id": "04.09-p002",
           "text": "Even the division of the day seems to have remained descriptive rather than mechanical.\nSome terms referred to the movement of light, such as dawn or midday.\nOthers referred to social moments, such as the small meal.\nThe effect is not that of a clockwork schedule, but of a lived day marked by ritual and activity.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1276,7 +1432,12 @@
         {
           "id": "04.09-p003",
           "text": "The larger cycle was more formal.\nDays were named by combining the ten stems with the twelve branches, producing a repeating cycle of sixty days.\nThose day names were not bare labels.\nThey entered the ancestral cult itself, because dead kings and queens received temple names built from the same stem system and were increasingly worshipped on their own name days.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1310,7 +1471,12 @@
         {
           "id": "04.09-p004",
           "text": "At the center of this order stood the ten-day week, the xun.\nIt began on a jia day and ended on a gui day, and the recurring wish that \"in the next ten days there will be no disasters\" seems to have been divined throughout the whole historical late Shang.\nBy the end of the dynasty, the growing cycle of ancestral offerings also served as a rough ritual year of about 360 or 370 days.\nIntercalary months were used to keep lunar months and the solar year in step, but the system was still developing.\nIt seems to have been moving from close observation toward more explicit calculation, without yet reaching the mathematical regularity of later calendars.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1355,6 +1521,10 @@
             {
               "label": "Figure 4.7",
               "caption": "The plan gathers temple foundations, ditches, river setting, and clustered activity into one view of the late Shang center at Xiaotun."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -1399,7 +1569,12 @@
         {
           "id": "04.10-p002",
           "text": "The site mattered not only because power was exercised there, but because knowledge was made there.\nOracle bones used on journeys and hunts were brought back to Xiaotun for storage and burial.\nThat alone suggests that the court regarded this place as the privileged point where political action and ritual memory met.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1433,7 +1608,12 @@
         {
           "id": "04.10-p003",
           "text": "At the top of the Shang pantheon stood Di, the high power whose original character remains difficult to define.\nDi could send down approval or disaster.\nAbove all, Di could command rain, thunder, and wind in a way no lesser power could.\nThe resemblance to the political world is striking.\nJust as only the king issued orders among men, so only Di fully issued orders among the powers.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1467,7 +1647,12 @@
         {
           "id": "04.10-p004",
           "text": "Below Di stood a wider and less sharply bounded cluster of powers.\nThese included natural powers such as the River, the Mountain, the Earth, and the Sun, together with Former Lords, predynastic ancestors, dynastic kings, and dynastic queens.\nThe boundaries between these categories were not rigid.\nSome higher powers were treated in quasi-ancestral ways, yet none of them simply collapsed into the others.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1501,7 +1686,12 @@
         {
           "id": "04.10-p005",
           "text": "The Former Lords are especially revealing.\nFigures such as Wang Hai and Yi Yin stood outside the regular ancestral cycle, yet received cult and retained great prestige.\nThe predynastic ancestors formed another distinct layer, marked by unusually regular temple names and by a cult pattern that differed from that of the later kings.\nThe upper pantheon was therefore not a simple ladder.\nIt was a loose but ordered field of powers whose jurisdictions overlapped and whose favor had to be negotiated case by case.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1542,7 +1732,12 @@
         {
           "id": "04.11-p001",
           "text": "The ancestors were the living skeleton of the Shang polity.\nTo name them in divination and to feed them in sacrifice was not merely to remember the dead.\nIt was to reaffirm the lineage through which the king ruled and from which he drew suprahuman backing.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1576,7 +1771,12 @@
         {
           "id": "04.11-p002",
           "text": "The main line of descent mattered most.\nKings whose fathers and sons were both kings formed the central line later called the great lineage.\nThose kings and their consorts received the strongest and most durable ritual support.\nCollateral rulers could be downgraded, and shifts in how a dead king was treated could mirror shifts in political value among the living.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1610,7 +1810,12 @@
         {
           "id": "04.11-p003",
           "text": "These distinctions reached even into titles.\nOnly kings on the direct line could receive the title Di attached to their temple names.\nOnly the consorts of main-line kings were securely maintained in the great cycle of rites.\nSuch arrangements made a political principle visible in sacred form.\nFather to son succession was strengthened not only by force and memory, but by the way the dead themselves were ordered.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1644,7 +1849,12 @@
         {
           "id": "04.11-p004",
           "text": "The ancestors were represented by spirit tablets or their Shang precursors and housed in temples.\nThere were temples for major kings, for some queens, for certain higher powers, and also larger joint temples in which groups of ancestors received cult together.\nMain-line temples were maintained across generations.\nCollateral temples seem to have been far less enduring.\nThe built cultic landscape itself expressed the hierarchy of the lineage.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1685,7 +1895,12 @@
         {
           "id": "04.12-p001",
           "text": "The cult was materially lavish and socially thick.\nMillet ale, grain, cattle, dogs, sheep, and at times human victims were offered in rites that sought rain, harvest, childbirth, military success, protection, or release from danger.\nBronze vessels for heating and pouring drink make clear that wine stood near the center of this ritual world.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1719,7 +1934,12 @@
         {
           "id": "04.12-p002",
           "text": "These offerings were not made in isolation.\nSome rites presented the king as host to his ancestors, while others had the form of a feast or banquet.\nThe same word could be used when the king entertained living supporters.\nOne begins to see that sacrifice also bound the living together around the dead.\nTo share in the cult of the royal descent group was to stand close to the source of dynastic power itself.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1760,7 +1980,12 @@
         {
           "id": "04.13-p001",
           "text": "Cult to the Shang ancestors revolved around a recurring sequence of five rites.\nBecause these rites were regularly divined, especially in Periods Two and Five, they help scholars reconstruct both the Shang calendar and the order of the kings.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1794,7 +2019,12 @@
         {
           "id": "04.13-p002",
           "text": "The sequence ran through five offerings, known as yi, ji, zai, xie, and yong.\nOnce the cycle for one ancestor ended, it began again.\nA given ancestor seems to have received only one of these rites in any single week.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1828,7 +2058,12 @@
         {
           "id": "04.13-p003",
           "text": "The royal consorts joined this order in a shorter cycle of four rites.\nThey were honored on the stem day of their own temple names, but their sequence lagged one week behind that of the kings.\nThe pattern shows how carefully the dead were arranged in ritual time.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1862,7 +2097,12 @@
         {
           "id": "04.13-p004",
           "text": "By Period Five, the system had become remarkably exact.\nA single oracle bone might be reserved for one rite alone, even when several ancestors were named on it.\nThe postfaces could even identify a week by naming the rite that had just been performed.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1903,7 +2143,12 @@
         {
           "id": "04.14-p001",
           "text": "After the reign of Wu Ding, the inscriptions no longer dwell on Di as the power who orders rain or thunder.\nDi does not disappear entirely, but he recedes.\nThat retreat may reflect growing confidence in the ancestors, indifference to Di, or a sense that his will was too remote to interrogate fruitfully.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1937,7 +2182,12 @@
         {
           "id": "04.14-p002",
           "text": "At the same time, the ancestors seem to rise in prestige.\nMain-line kings could now receive temple names that included the title Di.\nThe increasingly one-sided divination charges and the king's monopoly over interpretation fit the same movement toward stronger royal assurance.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -1971,7 +2221,12 @@
         {
           "id": "04.14-p003",
           "text": "For that reason, the old claim that the Shang king was simply a shaman must be treated carefully.\nThe court certainly inherited older traditions of sacred mediation, and Shang bronzes preserve a world rich in animal and ritual imagery.\nBut the divination records themselves show a disciplined religious order, not the irregular ecstasy of trance.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2005,7 +2260,12 @@
         {
           "id": "04.14-p004",
           "text": "The late Shang king was a sacred mediator, but a highly formalized one.\nHis authority rested on regular access to the ancestors, not on inspired disorder.\nBy this stage, spontaneity would have threatened royal control rather than confirming it.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2046,7 +2306,12 @@
         {
           "id": "04.15-p001",
           "text": "The treatment of the dead was one of the central enterprises of Shang society.\nLife was shorter than in the modern world, and death was correspondingly more familiar.\nIn and around Xiaotun, the excavated skeletons suggest an average age at death of only about thirty-four and a half years.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2080,7 +2345,12 @@
         {
           "id": "04.15-p002",
           "text": "Burial did more than dispose of the body.\nIt helped transform the deceased into an effective ancestor or dependent spirit.\nBy the late Shang, differences of wealth and rank among the living were projected into death with striking force.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2114,7 +2384,12 @@
         {
           "id": "04.15-p003",
           "text": "The royal tombs at Xibeigang, across the Huan River from Xiaotun, marked that principle at its highest level.\nTheir separation from the main cult center and the scale of their grave goods signaled the special status of kings even after death.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2148,7 +2423,12 @@
         {
           "id": "04.15-p004",
           "text": "Orientation mattered too.\nThe great royal tombs were aligned to the cardinal directions, and many other elite burials followed the same logic.\nBodies of high-status dead were usually laid out extended and supine, while sacrificial victims were treated very differently.\nEven in death, posture and placement expressed hierarchy.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2189,7 +2469,12 @@
         {
           "id": "04.16-p001",
           "text": "The tomb of Lady Hao gives the clearest sense of late Shang opulence.\nThough modest beside the looted royal graves, it still held hundreds of bronzes, hundreds of jades, and thousands of cowrie shells.\nIt was less a grave than an underground treasury of ritual, military, and symbolic wealth.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2232,7 +2517,12 @@
         {
           "id": "04.16-p002",
           "text": "Smaller elites also received provision for the next world.\nAt Yinxu West, many burials contained pottery, bronze vessels, weapons, or craft tools.\nCeramic substitutes often stood in for richer bronze furnishings.\nWhat one had done in life was often provided for again in death.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2270,6 +2560,10 @@
             {
               "label": "Figure 4.9",
               "caption": "The tomb model makes visible how attendants and dependents were arranged in graded relation to the dead lord, extending hierarchy into death."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -2309,6 +2603,10 @@
             {
               "label": "Figure 4.8",
               "caption": "The prone, decapitated victims in the ramp show the harsher edge of Shang burial sacrifice and the difference between attendants and captives."
+            },
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -2351,7 +2649,12 @@
         {
           "id": "04.17-p001",
           "text": "Late Shang burial formed a full hierarchy.\nAt the top stood the great ramped royal tombs.\nBelow them came followers buried with their lords, medium-size elite graves, shallow pits for lesser people, and finally the most meager burials in refuse pits or disused wells.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2385,7 +2688,12 @@
         {
           "id": "04.17-p002",
           "text": "Architecture itself marked these distinctions.\nThe largest graves had massive timber chambers with cruciform plans and long ramps.\nThe four-ramp tombs belonged to kings, while tombs with two ramps or one were for lesser elites.\nEven these lesser structures demanded heavy labor and substantial organization.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2419,7 +2727,12 @@
         {
           "id": "04.17-p003",
           "text": "Below that level, many ordinary burials had only coffins, slight coverings, or no durable protection at all.\nThe contrast is telling.\nShang mortuary practice did not flatten society before death.\nIt preserved and displayed rank with relentless clarity.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2453,7 +2766,12 @@
         {
           "id": "04.17-p004",
           "text": "The care of the dead was therefore also a political economy.\nHuge quantities of labor, bronze, jade, animals, food, drink, and human life were poured into tombs and ancestral cult.\nThe survivors demonstrated their own standing by sustaining the dead in this way.\nThe demand for such goods must also have driven further production.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2494,7 +2812,12 @@
         {
           "id": "04.18-p001",
           "text": "Many Shang communities seem to have centered on a sacred place, a local power, and a lineage leader who shared the same name.\nPlace, cult, and political identity were tightly fused.\nA community could thus appear as territory, descent group, and ritual body all at once.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2528,7 +2851,12 @@
         {
           "id": "04.18-p002",
           "text": "The Shang also imagined their world in ordered spatial terms.\nAt the center stood Zhong Shang, the central Shang domain.\nAround it lay the Four Lands or Four Regions, arranged by direction.\nThe word fang could mean side, border, region, or enemy country, which shows how political geography and frontier tension overlapped.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2562,7 +2890,12 @@
         {
           "id": "04.18-p003",
           "text": "The bronze insignia and the oracle bones together suggest that the king presided over a confederation of patrilineal groups.\nAt Yinxu West, even the cemetery can be divided into sectors marked by distinctive assemblages and lineage signs.\nThe dead preserved the social pattern of the living.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2596,7 +2929,12 @@
         {
           "id": "04.18-p004",
           "text": "That hierarchy extended beyond the royal lineage itself.\nMany diviners belonged to lineages that also appear on bronzes, which shows how marriage, service, and ritual skill tied outside groups to the court.\nBeyond the core area stood local officers, chiefs, and rulers who led their own dependents in the king's service.\nThe more distant Hou and Bo could act as allies, tributaries, or uncertain partners on a shifting frontier.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2637,7 +2975,12 @@
         {
           "id": "04.19-p001",
           "text": "At the core of this order stood the royal lineage itself.\nThe king's sons, once grown, could become princes who headed their own minor lineages, accompanied the king on hunts and journeys, and took part in ancestral rites.\nPrince Hua is one example of such a figure, with his own men, place, obligations, and reports to the court.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2671,7 +3014,12 @@
         {
           "id": "04.19-p002",
           "text": "Not all princes mattered equally.\nOnly some appear often in the inscriptions, and the king could command princes in a way he could not command outside lords.\nBeyond them stood the Many Princes, the broader body of royal cousins and collateral branches who still owed service in war and ritual.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2705,7 +3053,12 @@
         {
           "id": "04.19-p003",
           "text": "Other magnates, though not called princes, also led dependents and cast their insignia into ritual bronzes.\nThey seem to have been more distant offshoots of the royal house, still tied to older ancestors but no longer close enough to count among the king's sons.\nSome may have formed defensive nodes on the western approaches to the Shang heartland.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2739,7 +3092,12 @@
         {
           "id": "04.19-p004",
           "text": "The Shang left no simple king list carved as a genealogy.\nScholars must reconstruct the royal sequence from the schedule of sacrifices, and even that sequence reflects a ritual view of the past.\nSome collateral temple names may preserve traces of incorporated lineages or regions.\nSuccession itself remains partly uncertain, and later tradition remembered periods of rivalry among brothers and nephews.\nThe stem patterns in royal temple names are striking, but whether they reflect alternating descent groups or ritual calendrical logic remains unsettled.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2780,7 +3138,12 @@
         {
           "id": "04.20-p001",
           "text": "Royal women helped bind the dynasty to other communities.\nTheir names often preserved signs of their social origins, and some took part in preparing the scapulas and plastrons used in divination.\nTheir ability to bear sons was therefore not merely domestic.\nIt shaped the future of lineage, alliance, and succession.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2814,7 +3177,12 @@
         {
           "id": "04.20-p002",
           "text": "Lady Hao shows how powerful such a woman could become.\nBuried with extraordinary splendor, she later received major cult as Mother Xin.\nHer son, the prince later remembered as Xiao Ji, seems to have stood at one point as heir apparent.\nMarriage, maternity, and political structure were inseparable.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2896,7 +3264,12 @@
         {
           "id": "04.20-p004",
           "text": "Shang cultural sites appear across a very wide area, from the north China plain into many surrounding provinces.\nBut culturally Shang was not the same as politically Shang.\nThe late dynasty may well have held a narrower and more defensive heartland than older tradition imagined.\nIts frontiers remained porous, and the area in which the king could move with confidence was probably not vast.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2937,7 +3310,12 @@
         {
           "id": "04.21-p001",
           "text": "The Anyang region in the twelfth and eleventh centuries before Christ seems to have been wetter and warmer than it is now.\nRain was probably more evenly distributed through the year, which would have favored spring planting.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -2971,7 +3349,12 @@
         {
           "id": "04.21-p002",
           "text": "The Shang world was still, above all, an agricultural world.\nIts communities lived in small settlements surrounded by fields, and the king's divinations about harvest often concerned not just his own crops but the wider lands of Shang.\nHis ritual responsibility for food production reached across the Four Lands.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3012,7 +3395,12 @@
         {
           "id": "04.22-p001",
           "text": "The king also controlled important royal farms.\nThese were cleared and worked by labor gangs under officers, and they helped support the ruling house, privileged elites, craft industries, and the army.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3046,7 +3434,12 @@
         {
           "id": "04.22-p002",
           "text": "The inscriptions show how closely the king watched rain, planting, inspections, and harvest.\nHe might decide whether to inspect the millet, command laborers into the fields, or ask whether a certain officer's crops would prosper in a named place.\nAgriculture was not beneath kingship.\nIt was one of the chief arenas in which kingship acted.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3080,7 +3473,12 @@
         {
           "id": "04.22-p003",
           "text": "Archaeology supports this picture of organized labor.\nLarge numbers of stone sickles have been found around Xiaotun, including caches so large that they suggest planned production and storage for the harvest.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3121,7 +3519,12 @@
         {
           "id": "04.23-p001",
           "text": "Millet was the staple crop of the Shang.\nThe diviners spoke of millet and standing grain in broad terms, which suggests that their concern was the harvest as a whole rather than fine botanical distinctions among varieties.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3155,7 +3558,12 @@
         {
           "id": "04.23-p002",
           "text": "When crops failed or suffered blight, the Shang did not experience that merely as an agricultural problem.\nThey asked which Power was harming the grain.\nThe Mountain, the River, or Di himself might be named.\nA good harvest therefore brought not only food, but a sense of spiritual vindication.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3189,7 +3597,12 @@
         {
           "id": "04.23-p003",
           "text": "The opening of new land was one of the king's own affairs.\nThe inscriptions suggest drainage and field making, but not great irrigation works.\nOfficers and labor gangs were ordered to clear land, raise field boundaries, and bring new ground under cultivation.\nHunting and agriculture overlapped in this process, since burning brush for the hunt also helped clear and fertilize future fields.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3223,7 +3636,12 @@
         {
           "id": "04.23-p004",
           "text": "The same court that managed fields also managed herds.\nBone workshops drew on cattle, sheep, pigs, deer, dogs, and horses.\nTitles such as the Many Dog officers and the Many Horse officers point to organized animal management.\nThe scale of sacrifice, with offerings of cattle, sheep, pigs, and dogs in large numbers, makes clear that livestock husbandry was substantial.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3264,7 +3682,12 @@
         {
           "id": "04.24-p001",
           "text": "Part of Shang power rested on what allies and dependents brought to the king.\nThey supplied people, especially captives, for sacrifice, and they also placed labor contingents at his disposal.\nSome of this support had real economic weight, but much of it also carried political and ritual meaning.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3298,7 +3721,12 @@
         {
           "id": "04.24-p002",
           "text": "Animals too could arrive as tribute.\nA dependent might bring white horses or cattle.\nYet such offerings seem to have mattered less for feeding the state than for displaying loyalty and confirming the king's central position.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3332,7 +3760,12 @@
         {
           "id": "04.24-p003",
           "text": "The most important tribute items in the inscriptions were the turtle shells and cattle scapulas used for divination.\nThese could arrive in very large shipments, and the court recorded their origins, numbers, preparation, and delivery with care.\nThe exchange was revealing.\nOthers sent the raw material through which the king addressed the powers, and the king in turn bestowed gifts such as cowries, cattle, sheep, or weapons.\nThis was not yet a rigid tribute system.\nIt was a network of dependence expressed through symbolic exchange.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3373,7 +3806,12 @@
         {
           "id": "04.25-p001",
           "text": "The Xiaotun heartland contained a wide range of specialized workshops.\nBronze foundries, bone workshops, and other production areas show a scale of organization more extensive than what had existed in the Erligang age.\nDifferent sites concentrated on different outputs, such as ritual vessels, tools and weapons, or bone ornaments.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3407,7 +3845,12 @@
         {
           "id": "04.25-p002",
           "text": "Labor conscripts were one of the deepest foundations of Shang power.\nThey built temple palaces and tombs, farmed the land, hauled supplies, and made the objects that sustained elite life and ritual.\nIn this sense the late Shang state stood on organized human effort no less than on bronze or divination.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3441,7 +3884,12 @@
         {
           "id": "04.25-p003",
           "text": "It is better to speak here of graded dependency than of simple slavery or freedom.\nThe inscriptions refer often to the zhong and the ren.\nThe zhong seem to have been a smaller body of permanently attached dependents, often tied to a lord or lineage.\nThe ren were a broader pool of men who could be mobilized in far larger numbers.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3475,7 +3923,12 @@
         {
           "id": "04.25-p004",
           "text": "The two groups could overlap in function.\nBoth appear in agriculture and warfare.\nBut the zhong were counted in smaller numbers and seem less expendable, while the ren could be raised in the thousands.\nThe contrast suggests different degrees of attachment, privilege, and replaceability within the same general order of service.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3516,7 +3969,12 @@
         {
           "id": "04.26-p001",
           "text": "The royal workshops produced a substantial range of weapons, from dagger axes and spearheads to arrowheads, helmets, shields, and chariot fittings.\nUnder Wu Ding the Shang fought major campaigns against powers such as the Tufang, Gongfang, and Qiangfang.\nThe king might lead in person, ally himself with other leaders, or send out major commanders.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3550,7 +4008,12 @@
         {
           "id": "04.26-p002",
           "text": "The inscriptions often present these campaigns alongside proposed levies of three thousand or five thousand men.\nOn one occasion the number reaches ten thousand.\nThe troops seem to have been arranged in left, center, and right divisions, while archers and horse officers were also counted in large, orderly units.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3584,7 +4047,12 @@
         {
           "id": "04.26-p003",
           "text": "Chariots were important, but they did not make the Shang army into a purely chariot force.\nMost soldiers must still have fought on foot.\nThe evidence also hints at a standing core of military organization beneath the larger ad hoc mobilizations.\nThe late Shang state was not fully bureaucratic, but it had already learned how to count, group, arm, and direct men on a considerable scale.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3625,7 +4093,12 @@
         {
           "id": "04.27-p001",
           "text": "The king's choice of the right man for the right task was itself a matter for divination.\nThe inscriptions often ask whether a given officer should pursue an enemy, lead a force, or undertake some royal business.\nIn that sense personnel decision was still highly personal and sacralized.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3659,7 +4132,12 @@
         {
           "id": "04.27-p002",
           "text": "Yet the titles of some groups already suggest something more impersonal in the making.\nThe Many Horse officers, the Many Dog officers, the Many Artisans, and the Many Archers sound less like household retainers than like recurrent functional bodies.\nThe same is true of the many Junior Servitors who seem to have held named duties at court.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3693,7 +4171,12 @@
         {
           "id": "04.27-p003",
           "text": "The divination archive itself reveals a habit of careful routine.\nThe court noted where bones and shells came from, who prepared them, when they were delivered, who divined them, how the charges were phrased, and even how the cracks were counted.\nCertain bones were reserved for certain rituals and could be reused after intervals of nonuse.\nWhat survives is not just religion.\nIt is ordered record keeping.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3727,7 +4210,12 @@
         {
           "id": "04.27-p004",
           "text": "Other inscriptions point in the same direction.\nThe Shang counted prisoners, booty, and animals.\nThey used tablets, registers, and written pledges in ritual and military settings.\nA written script did not create Shang power by itself, but it greatly strengthened the court's ability to organize labor, preserve decisions, and make authority durable.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3768,7 +4256,12 @@
         {
           "id": "04.28-p001",
           "text": "The later record gives the impression of a core area that was relatively secure from direct invasion.\nThe Xiaotun moat seems to have choked up by the end of the dynasty, and the last inscriptions no longer dwell on enemy raids in the old way.\nWhether that reflects reality or simply changed divinatory habits, the late Shang court increasingly appears as a raiding power rather than a constantly raided one.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3802,7 +4295,12 @@
         {
           "id": "04.28-p002",
           "text": "Yet this stability was bought within a smaller political world.\nAfter Wu Ding, western alliances weakened, and former supporters or allies slipped beyond Shang control.\nThe last kings could still mount major expeditions, such as the long campaign against the Renfang, but they seem to have ruled within a narrower sphere than before.\nIn the middle of the eleventh century before Christ, one former ally turned enemy, the Zhou, destroyed the dynasty.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
@@ -3845,7 +4343,12 @@
         {
           "id": "04.28-p003",
           "text": "What endured was immense.\nThe Shang left behind a patrimonial sacred kingship centered on ancestors, a heavy investment in bronzes and burial, and a state sustained by mobilized labor.\nThey also passed on a script used in government as well as ritual, and the sixty day ganzhi calendar.\nThey also left a durable political habit.\nReligion, administration, lineage, and power could be woven together into one order.\nIn that sense, despite their defeat at Muye, the Shang long outlived their own kingdom.",
-          "figures": [],
+          "figures": [
+            {
+              "label": "Map 4.1",
+              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+            }
+          ],
           "timeline": [
             {
               "type": "span",
