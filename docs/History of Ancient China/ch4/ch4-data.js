@@ -13,7 +13,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -37,12 +37,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order that conquered Shang yet inherited many of its ritual, political, and scribal habits."
+              "caption": "The Western Zhou order inherited many of its ritual, political, and scribal habits."
             },
             {
               "type": "point",
@@ -70,7 +70,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -85,7 +85,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -109,13 +109,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -133,12 +133,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order that conquered Shang yet inherited many of its ritual, political, and scribal habits."
+              "caption": "The Western Zhou order inherited many of its ritual, political, and scribal habits."
             },
             {
               "type": "point",
@@ -157,19 +157,10 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
-            {
-              "type": "span",
-              "label": "Predynastic Shang lineage",
-              "start": null,
-              "end": null,
-              "display_date": "before the Shang dynasty",
-              "certainty": "traditional",
-              "caption": "Later tradition projected a remembered ancestral background behind the ruling house."
-            },
             {
               "type": "span",
               "label": "Shang dynasty",
@@ -177,7 +168,7 @@ const BOOK_DATA = {
               "end": -1045,
               "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "The historical dynasty later writers tried to explain by tracing its name and origin back before its own records."
+              "caption": "The historical dynasty whose name later writers tried to explain by tracing it back to places and ancestors before the surviving archive."
             },
             {
               "type": "span",
@@ -186,7 +177,16 @@ const BOOK_DATA = {
               "end": -1045,
               "display_date": "c. 1200-1045 BC",
               "certainty": "approximate",
-              "caption": "The late Shang inscriptions are the first firm internal evidence against which such traditional explanations can be judged."
+              "caption": "The late Shang inscriptions are the first firm internal evidence against which such etymologies can be judged."
+            },
+            {
+              "type": "span",
+              "label": "Western Zhou",
+              "start": -1045,
+              "end": -771,
+              "display_date": "1045-771 BC",
+              "certainty": "approximate",
+              "caption": "After the conquest, Zhou transmitters helped fix the names under which the dynasty was remembered."
             }
           ]
         }
@@ -203,7 +203,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -229,7 +229,7 @@ const BOOK_DATA = {
               "type": "point",
               "label": "Confucius",
               "start": -551,
-              "end": -479,
+              "end": -551,
               "display_date": "551-479 BC",
               "certainty": "secure",
               "caption": "Later tradition made him a witness to how partial and fragile detailed Shang ritual memory had become."
@@ -242,7 +242,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -268,7 +268,7 @@ const BOOK_DATA = {
               "type": "point",
               "label": "Sima Qian",
               "start": -145,
-              "end": -86,
+              "end": -145,
               "display_date": "c. 145-86 BC",
               "certainty": "secure",
               "caption": "His Basic Annals of Yin gave later readers the first full continuous narrative of the dynasty."
@@ -289,12 +289,12 @@ const BOOK_DATA = {
           "text": "Later texts did preserve something important.\nThey generally remembered the temple names of the Shang kings and the order in which the kings stood.\nFigure 4.1 helps one see that remembered lineage as a structured chain rather than a blur of names.",
           "figures": [
             {
-              "label": "Figure 4.1",
-              "caption": "The genealogy turns remembered temple names into a visible structure, making the royal line easier to follow than a mere list of names."
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             },
             {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "label": "Figure 4.1",
+              "caption": "The genealogy turns remembered temple names into a visible structure, making the royal line easier to follow than a mere list of names."
             }
           ],
           "timeline": [
@@ -318,7 +318,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -351,7 +351,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -366,21 +366,21 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Han retrospective reconstruction",
-              "start": -145,
-              "end": -86,
-              "display_date": "late second century BC",
-              "certainty": "approximate",
-              "caption": "A much later narrative horizon that reconstructed the Shang past through transmitted texts and moralized dynastic memory."
+              "label": "Eastern Zhou",
+              "start": -770,
+              "end": -256,
+              "display_date": "770-256 BC",
+              "certainty": "secure",
+              "caption": "Classical transmitters looked back on Shang from this much later Zhou horizon."
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
-              "start": -1045,
-              "end": -771,
-              "display_date": "1045-771 BC",
-              "certainty": "approximate",
-              "caption": "The successor Zhou order stands between the Shang world itself and the much later texts that tried to reconstruct it."
+              "label": "Han dynasty",
+              "start": -206,
+              "end": 220,
+              "display_date": "206 BC-AD 220",
+              "certainty": "secure",
+              "caption": "Han historians organized those scattered memories into fuller retrospective reconstructions."
             }
           ]
         }
@@ -397,13 +397,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -421,12 +421,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "Many bronze-working habits and forms continued into the successor age, though the historical setting changed."
+              "caption": "Many bronze-working habits and forms continued into the Western Zhou, though the historical setting changed."
             }
           ]
         },
@@ -436,13 +436,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -460,7 +460,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -475,7 +475,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -514,13 +514,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -538,7 +538,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -562,18 +562,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang polities left no surviving institution documented at this material scale."
+              "caption": "Pre-Anyang Shang polities left no surviving institution documented at this material scale."
             },
             {
               "type": "span",
@@ -586,7 +586,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -607,22 +607,22 @@ const BOOK_DATA = {
           "text": "After the cracks were made and interpreted, the result was carefully recorded.\nThe crack numbers might be carved beside the marks, specialists then incised the divination text, and the grooves and characters could even be filled with pigment.\nFigure 4.3 shows this system clearly, while Figure 4.4 preserves a fuller divination record from the reign of Wu Ding.",
           "figures": [
             {
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
+            },
+            {
               "label": "Figure 4.3",
               "caption": "The shell shows how charge, crack, and written record were materially tied together in one divinatory object."
             },
             {
               "label": "Figure 4.4",
               "caption": "This fuller record from Wu Ding's reign shows how prediction, forecast, and outcome could all be preserved together."
-            },
-            {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -655,13 +655,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -679,12 +679,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited writing and ritual offices, but not this exact late Shang divinatory profile."
+              "caption": "The Western Zhou order inherited writing and ritual offices, but not this exact late Shang divinatory profile."
             }
           ]
         },
@@ -694,7 +694,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -718,7 +718,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -739,6 +739,10 @@ const BOOK_DATA = {
           "text": "In the earlier late Shang, especially under Wu Ding, divination often proceeded through paired charges.\nOne stated a hope or prediction in positive form, and the other stated its negative counterpart.\nFigure 4.2 and Figure 4.3 show this bilateral logic in a harvest divination, and Figure 4.5 shows the same form used for a royal childbirth.",
           "figures": [
             {
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
+            },
+            {
               "label": "Figure 4.2",
               "caption": "The shell preserves the king's favorable forecast on the reverse side of a harvest divination."
             },
@@ -749,10 +753,6 @@ const BOOK_DATA = {
             {
               "label": "Figure 4.5",
               "caption": "A royal childbirth divination shows that the same paired logic governed intimate dynastic concerns as well as harvest."
-            },
-            {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
             }
           ],
           "timeline": [
@@ -791,18 +791,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang phases are much less visible, so the late Shang archive carries most of the evidence for this mode of thought."
+              "caption": "Pre-Anyang Shang phases are much less visible, so the late Shang archive carries most of the evidence for this mode of thought."
             },
             {
               "type": "span",
@@ -815,7 +815,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -830,7 +830,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -854,7 +854,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -869,7 +869,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -893,7 +893,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -908,7 +908,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -954,13 +954,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -978,7 +978,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -993,13 +993,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1017,7 +1017,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1031,12 +1031,12 @@ const BOOK_DATA = {
           "text": "The charges themselves suggest that the dead were arranged in a hierarchy.\nJunior ancestors might be asked to protect the king's person or his hunts.\nSenior dynastic ancestors were invoked when harvest, invasion, or victory in war was at stake.\nFigure 4.6 shows the late form of this practice in a highly regularized weekly divination.",
           "figures": [
             {
-              "label": "Figure 4.6",
-              "caption": "The scapula shows the terse, regular, and highly systematized weekly divination of the dynasty's closing phase."
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             },
             {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "label": "Figure 4.6",
+              "caption": "The scapula shows the terse, regular, and highly systematized weekly divination of the dynasty's closing phase."
             }
           ],
           "timeline": [
@@ -1060,12 +1060,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited ancestral hierarchy, but not this exact late Shang divinatory form."
+              "caption": "The Western Zhou order inherited ancestral hierarchy, but not this exact late Shang divinatory form."
             }
           ]
         },
@@ -1075,13 +1075,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1099,7 +1099,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1121,18 +1121,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "For the earlier Shang, chronology depends more heavily on reconstruction from archaeology and later texts."
+              "caption": "For the pre-Anyang Shang, chronology depends more heavily on reconstruction from archaeology and later texts."
             },
             {
               "type": "span",
@@ -1145,7 +1145,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1160,7 +1160,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1175,7 +1175,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1208,7 +1208,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1232,12 +1232,12 @@ const BOOK_DATA = {
             },
             {
               "type": "point",
-              "label": "Proposed date for Cheng Tang's first year",
+              "label": "Cheng Tang",
               "start": -1554,
               "end": -1554,
-              "display_date": "1554 BC",
+              "display_date": "traditional first year sometimes placed at 1554 BC",
               "certainty": "disputed",
-              "caption": "Astronomical reconstruction has sometimes placed his first year here, but the dynasty's beginning remains disputed."
+              "caption": "Later astronomical reconstruction has sometimes placed the founding ruler's first year here, though the dynasty's beginning remains disputed."
             },
             {
               "type": "point",
@@ -1263,13 +1263,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1287,7 +1287,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1302,7 +1302,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1335,7 +1335,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1357,13 +1357,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1381,7 +1381,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1396,13 +1396,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1420,7 +1420,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1435,7 +1435,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1459,7 +1459,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1474,7 +1474,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1498,7 +1498,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1519,18 +1519,18 @@ const BOOK_DATA = {
           "text": "From the reign of Wu Ding onward, Xiaotun was far more than a settlement.\nIt was the dynasty's great sacro-administrative center.\nHere stood royal burial grounds, temple foundations, bronze workshops, diviners, engravers, record keepers, and the allied communities that clustered around the court.\nFigure 4.7 shows the scale and ordered concentration of that center.",
           "figures": [
             {
-              "label": "Figure 4.7",
-              "caption": "The plan gathers temple foundations, ditches, river setting, and clustered activity into one view of the late Shang center at Xiaotun."
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             },
             {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "label": "Figure 4.7",
+              "caption": "The plan gathers temple foundations, ditches, river setting, and clustered activity into one view of the late Shang center at Xiaotun."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1548,21 +1548,21 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the idea of a ritual-political center even after this particular Shang node was lost."
+              "caption": "The Western Zhou inherited the idea of a ritual-political center even after this particular Shang node was lost."
             },
             {
               "type": "point",
-              "label": "Xiaotun cult center",
+              "label": "Xiaotun",
               "start": -1200,
               "end": -1200,
               "display_date": "c. 1200 BC",
               "certainty": "approximate",
-              "caption": "The temple, archive, workshop, and burial center near Anyang where late Shang rule was concentrated and remembered."
+              "caption": "The late Shang center near Anyang where temple foundations, workshops, burials, and the divination archive came together."
             }
           ]
         },
@@ -1572,18 +1572,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang centers do not leave a comparable archive of ritual memory and political action in one place."
+              "caption": "Pre-Anyang Shang centers do not leave a comparable archive of ritual memory and political action in one place."
             },
             {
               "type": "span",
@@ -1596,7 +1596,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1611,13 +1611,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1635,7 +1635,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1650,13 +1650,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1674,7 +1674,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1689,13 +1689,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1713,7 +1713,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1735,7 +1735,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1759,12 +1759,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited ancestor-centered legitimacy on a scale the Shang had already powerfully formed."
+              "caption": "The Western Zhou inherited ancestor-centered legitimacy on a scale the Shang had already powerfully formed."
             }
           ]
         },
@@ -1774,7 +1774,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1798,7 +1798,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1813,7 +1813,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1837,12 +1837,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order kept ancestral hierarchy central even while reorganizing its ideological language."
+              "caption": "The Western Zhou order kept ancestral hierarchy central even while reorganizing its ideological language."
             }
           ]
         },
@@ -1852,13 +1852,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1876,7 +1876,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1898,13 +1898,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -1922,12 +1922,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited the fusion of ritual offering and state life, even as forms and emphases changed."
+              "caption": "The Western Zhou order inherited the fusion of ritual offering and state life, even as forms and emphases changed."
             }
           ]
         },
@@ -1937,7 +1937,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -1961,7 +1961,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -1983,7 +1983,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2022,7 +2022,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2061,7 +2061,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2100,7 +2100,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2124,7 +2124,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2146,7 +2146,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2170,12 +2170,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited Shang sacred concerns but under a changed theological horizon."
+              "caption": "The Western Zhou order inherited Shang sacred concerns but under a changed theological horizon."
             }
           ]
         },
@@ -2185,7 +2185,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2209,7 +2209,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2224,13 +2224,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -2248,7 +2248,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2263,7 +2263,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2287,12 +2287,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order preserved sacred rulership while altering the institutions through which it worked."
+              "caption": "The Western Zhou order preserved sacred rulership while altering the institutions through which it worked."
             }
           ]
         }
@@ -2309,13 +2309,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -2333,12 +2333,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited many Shang mortuary habits, but not the dynasty's own ancestral center."
+              "caption": "The Western Zhou inherited many Shang mortuary habits, but not the dynasty's own ancestral center."
             }
           ]
         },
@@ -2348,18 +2348,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic mortuary differentiation",
-              "start": -3000,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Before the late Shang, burial was already becoming a medium for expressing rank and difference among the living."
+              "caption": "Burial belonged to the whole dynastic order, but it becomes most visible in the last centuries."
             },
             {
               "type": "span",
@@ -2372,12 +2372,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The Zhou inherited this political use of burial rather than flattening it away."
+              "caption": "The Western Zhou inherited this political use of burial rather than flattening it away."
             }
           ]
         },
@@ -2387,7 +2387,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2402,12 +2402,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age follows the royal burials as the next political horizon after Shang."
+              "caption": "The Western Zhou follows the royal burials as the next political horizon after Shang."
             },
             {
               "type": "point",
@@ -2426,18 +2426,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic mortuary differentiation",
-              "start": -3000,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Spatial order in burial had deep prehistoric roots before the late Shang elaborated it further."
+              "caption": "Ordered burial and differentiated treatment of the dead belong to the wider Shang mortuary world."
             },
             {
               "type": "span",
@@ -2446,16 +2446,16 @@ const BOOK_DATA = {
               "end": -1045,
               "display_date": "c. 1200-1045 BC",
               "certainty": "approximate",
-              "caption": "Cardinal orientation and bodily treatment made hierarchy visible in late Shang burials."
+              "caption": "The late Shang royal tombs make bodily orientation and sacrificial contrast especially clear."
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "Later mortuary practice retained ordered placement, even after the Shang royal cemetery was abandoned."
+              "caption": "Later mortuary practice retained ordered placement even after the Shang royal cemetery was abandoned."
             }
           ]
         }
@@ -2472,7 +2472,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2496,12 +2496,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the broader logic of elite burial, but not this exact Shang court setting."
+              "caption": "The Western Zhou inherited the broader logic of elite burial, but not this exact Shang court setting."
             },
             {
               "type": "point",
@@ -2520,7 +2520,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2535,12 +2535,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age continued to grade burial goods by rank and means."
+              "caption": "The Western Zhou continued to grade burial goods by rank and means."
             },
             {
               "type": "point",
@@ -2558,12 +2558,12 @@ const BOOK_DATA = {
           "text": "The logic of following in death was even more dramatic.\nSome attendants were buried whole near the grave lord, with their own coffins and goods.\nOthers seem to have served as guards in the waist pit or at the corners of the chamber.\nFigure 4.9 makes this graded companionship visible.",
           "figures": [
             {
-              "label": "Figure 4.9",
-              "caption": "The tomb model makes visible how attendants and dependents were arranged in graded relation to the dead lord, extending hierarchy into death."
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             },
             {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "label": "Figure 4.9",
+              "caption": "The tomb model makes visible how attendants and dependents were arranged in graded relation to the dead lord, extending hierarchy into death."
             }
           ],
           "timeline": [
@@ -2578,7 +2578,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2601,12 +2601,12 @@ const BOOK_DATA = {
           "text": "A much harsher level of sacrifice appears in the great royal tombs.\nRows of young male victims, often decapitated or dismembered, were buried in ramps or sacrificial pits.\nFigure 4.8 shows one such deposit with grim clarity.\nThese victims were probably war captives, many of them described in the inscriptions as Qiang.",
           "figures": [
             {
-              "label": "Figure 4.8",
-              "caption": "The prone, decapitated victims in the ramp show the harsher edge of Shang burial sacrifice and the difference between attendants and captives."
+              "label": "Map 4.1",
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             },
             {
-              "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "label": "Figure 4.8",
+              "caption": "The prone, decapitated victims in the ramp show the harsher edge of Shang burial sacrifice and the difference between attendants and captives."
             }
           ],
           "timeline": [
@@ -2621,12 +2621,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited Shang ritual forms selectively but not this same scale of royal tomb sacrifice."
+              "caption": "The Western Zhou inherited Shang ritual forms selectively but not this same scale of royal tomb sacrifice."
             },
             {
               "type": "point",
@@ -2652,18 +2652,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic mortuary differentiation",
-              "start": -3000,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Burial hierarchy did not begin with the Shang, though the late Shang made it especially sharp and visible."
+              "caption": "Burial hierarchy belongs to the wider dynastic order, not only to its final cemetery horizon."
             },
             {
               "type": "span",
@@ -2676,12 +2676,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited status-marking burial rather than erasing it."
+              "caption": "The Western Zhou inherited status-marking burial rather than erasing it."
             }
           ]
         },
@@ -2691,18 +2691,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic to early Bronze Age",
-              "start": -2500,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Monumental labor and differentiated burial architecture had deeper roots before the late Shang."
+              "caption": "Monumental labor and differentiated burial architecture belong to the wider Shang order, though they become clearest at Anyang."
             },
             {
               "type": "span",
@@ -2715,7 +2715,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2730,7 +2730,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2745,12 +2745,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order continued to bury people unequally rather than leveling status before death."
+              "caption": "The Western Zhou order continued to bury people unequally rather than leveling status before death."
             },
             {
               "type": "point",
@@ -2769,18 +2769,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic mortuary differentiation",
-              "start": -3000,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Long before the late Shang, burial already drew on wealth, labor, and symbolic display."
+              "caption": "Across the dynasty, burial drew heavily on wealth, labor, and symbolic display."
             },
             {
               "type": "span",
@@ -2793,12 +2793,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the logic that sustaining the dead also displayed the standing of the living."
+              "caption": "The Western Zhou inherited the logic that sustaining the dead also displayed the standing of the living."
             }
           ]
         }
@@ -2815,18 +2815,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang and pre-Shang communities had already tied settlement and sacred power together in local ways."
+              "caption": "Pre-Anyang Shang and still earlier communities had already tied settlement and sacred power together in local ways."
             },
             {
               "type": "span",
@@ -2839,7 +2839,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2854,13 +2854,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -2878,7 +2878,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2893,7 +2893,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -2908,12 +2908,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited lineage politics on a large scale."
+              "caption": "The Western Zhou order inherited lineage politics on a large scale."
             },
             {
               "type": "point",
@@ -2932,13 +2932,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -2956,7 +2956,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -2978,7 +2978,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3002,7 +3002,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3017,13 +3017,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3041,7 +3041,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3056,13 +3056,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3080,7 +3080,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3095,7 +3095,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3106,7 +3106,7 @@ const BOOK_DATA = {
               "end": -1045,
               "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Succession and temple naming belong to the whole dynastic problem, not only to the final kings."
+              "caption": "Succession and temple naming belong to the whole dynastic problem, not only to its final generations."
             },
             {
               "type": "span",
@@ -3119,12 +3119,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Han retrospective reconstruction",
-              "start": -145,
-              "end": -86,
-              "display_date": "late second century BC",
-              "certainty": "approximate",
-              "caption": "Much remembered rivalry among brothers and nephews comes through much later textual reconstruction rather than direct late Shang narration."
+              "label": "Han dynasty",
+              "start": -206,
+              "end": 220,
+              "display_date": "206 BC-AD 220",
+              "certainty": "secure",
+              "caption": "Much remembered rivalry among brothers and nephews comes through later Han historiography rather than direct late Shang narration."
             }
           ]
         }
@@ -3141,13 +3141,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3165,7 +3165,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3180,7 +3180,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3204,12 +3204,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the political importance of royal women even as the Shang court itself vanished."
+              "caption": "The Western Zhou inherited the political importance of royal women even as the Shang court itself vanished."
             },
             {
               "type": "point",
@@ -3228,13 +3228,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3252,7 +3252,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3267,13 +3267,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3291,7 +3291,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3313,13 +3313,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3337,12 +3337,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the same north China ecological field after the fall of Shang."
+              "caption": "The Western Zhou inherited the same north China ecological field after the fall of Shang."
             }
           ]
         },
@@ -3352,18 +3352,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang agriculture is less directly visible before the late archive."
+              "caption": "Pre-Anyang Shang agriculture is less directly visible before the late archive."
             },
             {
               "type": "span",
@@ -3376,7 +3376,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3398,13 +3398,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3422,12 +3422,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the idea that the ruler's material base depended on organized cultivation."
+              "caption": "The Western Zhou inherited the idea that the ruler's material base depended on organized cultivation."
             }
           ]
         },
@@ -3437,7 +3437,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3461,7 +3461,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3476,7 +3476,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3491,12 +3491,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited the need for coordinated harvest labor even after the Shang court fell."
+              "caption": "The Western Zhou inherited the need for coordinated harvest labor even after the Shang court fell."
             },
             {
               "type": "point",
@@ -3522,13 +3522,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3546,7 +3546,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3561,13 +3561,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3585,7 +3585,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3600,13 +3600,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3624,12 +3624,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited this linkage between territorial reach, labor, and cultivated land."
+              "caption": "The Western Zhou inherited this linkage between territorial reach, labor, and cultivated land."
             }
           ]
         },
@@ -3639,18 +3639,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang husbandry must be inferred more indirectly before the late archive and workshops speak so clearly."
+              "caption": "Pre-Anyang Shang husbandry must be inferred more indirectly before the late archive and workshops speak so clearly."
             },
             {
               "type": "span",
@@ -3663,7 +3663,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3685,13 +3685,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3709,12 +3709,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited political dependence expressed through tribute and service."
+              "caption": "The Western Zhou order inherited political dependence expressed through tribute and service."
             }
           ]
         },
@@ -3724,13 +3724,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3748,7 +3748,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3763,18 +3763,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "No earlier Shang evidence reveals the logistical basis of divination so concretely."
+              "caption": "No pre-Anyang Shang evidence reveals the logistical basis of divination so concretely."
             },
             {
               "type": "span",
@@ -3787,7 +3787,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3809,18 +3809,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "Earlier Shang metallurgy and craft production laid the background for the denser late workshop system."
+              "caption": "Pre-Anyang Shang metallurgy and craft production laid the background for the denser late workshop system."
             },
             {
               "type": "span",
@@ -3833,12 +3833,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age inherited large-scale craft organization even as its centers and outputs changed."
+              "caption": "The Western Zhou inherited large-scale craft organization even as its centers and outputs changed."
             }
           ]
         },
@@ -3848,18 +3848,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Late Neolithic to early Bronze Age",
-              "start": -2500,
-              "end": -1700,
-              "display_date": "late Neolithic to early Bronze Age",
+              "label": "Shang dynasty",
+              "start": -1570,
+              "end": -1045,
+              "display_date": "c. 1570-1045 BC",
               "certainty": "approximate",
-              "caption": "Long before the late Shang, large communal projects already depended on organized labor."
+              "caption": "Large projects and elite production depended on organized labor across the dynasty, though the evidence is fullest late."
             },
             {
               "type": "span",
@@ -3872,7 +3872,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3887,13 +3887,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3911,7 +3911,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -3926,13 +3926,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -3950,12 +3950,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited a world in which the same manpower could serve both field and battlefield."
+              "caption": "The Western Zhou order inherited a world in which the same manpower could serve both field and battlefield."
             }
           ]
         }
@@ -3972,7 +3972,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -3996,12 +3996,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age would inherit many military practices after defeating Shang itself."
+              "caption": "The Western Zhou would inherit many military practices after defeating Shang itself."
             }
           ]
         },
@@ -4011,7 +4011,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4035,7 +4035,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -4050,13 +4050,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -4074,12 +4074,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age would continue to use chariots while developing military organization in new directions."
+              "caption": "The Western Zhou would continue to use chariots while developing military organization in new directions."
             }
           ]
         }
@@ -4096,7 +4096,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4120,7 +4120,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -4135,13 +4135,13 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
@@ -4159,12 +4159,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age would push further toward more impersonal administrative groupings."
+              "caption": "The Western Zhou would push further toward more impersonal administrative groupings."
             }
           ]
         },
@@ -4174,18 +4174,18 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
             {
               "type": "span",
-              "label": "Earlier Shang before Anyang",
+              "label": "Pre-Anyang Shang",
               "start": -1570,
               "end": -1200,
               "display_date": "c. 1570-1200 BC",
               "certainty": "approximate",
-              "caption": "No earlier Shang evidence preserves administrative routine at this level of detail."
+              "caption": "No pre-Anyang Shang evidence preserves administrative routine at this level of detail."
             },
             {
               "type": "span",
@@ -4198,12 +4198,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor order inherited and extended the value of written routine in political life."
+              "caption": "The Western Zhou order inherited and extended the value of written routine in political life."
             }
           ]
         },
@@ -4213,7 +4213,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4228,12 +4228,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The successor age continued to use writing for rule as well as for ritual."
+              "caption": "The Western Zhou continued to use writing for rule as well as for ritual."
             },
             {
               "type": "span",
@@ -4259,7 +4259,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4283,7 +4283,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -4298,7 +4298,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4322,7 +4322,7 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
@@ -4346,7 +4346,7 @@ const BOOK_DATA = {
           "figures": [
             {
               "label": "Map 4.1",
-              "caption": "The map gathers Xiaotun, workshops, cemeteries, and nearby allied sites into one view of the dense core of late Shang power."
+              "caption": "Map 4.1 keeps the late Shang heartland in view, locating Xiaotun, nearby cemeteries, workshops, and allied sites within the core landscape of Shang power."
             }
           ],
           "timeline": [
@@ -4361,12 +4361,12 @@ const BOOK_DATA = {
             },
             {
               "type": "span",
-              "label": "Western Zhou successor age",
+              "label": "Western Zhou",
               "start": -1045,
               "end": -771,
               "display_date": "1045-771 BC",
               "certainty": "approximate",
-              "caption": "The first successor age inherited Shang kingship, ritual, writing, and calendrical habits on a large scale."
+              "caption": "The first Western Zhou inherited Shang kingship, ritual, writing, and calendrical habits on a large scale."
             },
             {
               "type": "span",
@@ -4394,7 +4394,7 @@ const BOOK_DATA = {
   "stats": {
     "sectionCount": 28,
     "paragraphCount": 103,
-    "figureCount": 11,
+    "figureCount": 113,
     "timelineItemCount": 324
   }
 };
