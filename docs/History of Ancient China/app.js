@@ -60,6 +60,7 @@
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
+  const DEFAULT_FIGURE_EXTENSIONS = ["png", "jpg", "jpeg"];
   const DEFAULT_VIDEOS_DIR = "videos";
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
@@ -150,12 +151,14 @@
   function getMediaConfig() {
     const audioDirs = parseDatasetList(getDatasetValue("audioDirs"));
     const figuresDir = normalizePath(getDatasetValue("figuresDir"));
+    const figureExtensions = parseDatasetList(getDatasetValue("figureExtensions"));
     const videosDir = normalizePath(getDatasetValue("videosDir"));
     const videoExtensions = parseDatasetList(getDatasetValue("videoExtensions"));
 
     return {
       audioDirs: audioDirs.length > 0 ? audioDirs : [...DEFAULT_AUDIO_DIRS],
       figuresDir: figuresDir || DEFAULT_FIGURES_DIR,
+      figureExtensions: figureExtensions.length > 0 ? figureExtensions : [...DEFAULT_FIGURE_EXTENSIONS],
       videosDir: videosDir || DEFAULT_VIDEOS_DIR,
       videoExtensions: videoExtensions.length > 0 ? videoExtensions : [...DEFAULT_VIDEO_EXTENSIONS],
     };
@@ -639,12 +642,12 @@
 
     if (typeof rawEntry === "string") {
       const cleaned = normalizePath(rawEntry);
-      const src = cleaned.includes("/") || hasExtension(cleaned) || isAbsoluteLike(cleaned)
-        ? cleaned
-        : joinPath(MEDIA_CONFIG.figuresDir, hasExtension(cleaned) ? cleaned : `${cleaned}.png`);
+      const srcCandidates = resolveNamedMediaSources(cleaned, MEDIA_CONFIG.figuresDir, MEDIA_CONFIG.figureExtensions);
+      const src = srcCandidates[0] || "";
 
       return {
         src,
+        srcCandidates,
         label: `Figure ${index + 1}`,
         caption: "",
         alt: `Figure ${index + 1}`,
@@ -660,17 +663,14 @@
         rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || ""
       );
 
-      let src = "";
-      if (explicitPath) {
-        src = explicitPath.includes("/") || isAbsoluteLike(explicitPath)
-          ? explicitPath
-          : joinPath(MEDIA_CONFIG.figuresDir, explicitPath);
-      } else if (label) {
-        src = joinPath(MEDIA_CONFIG.figuresDir, `${label}.png`);
-      }
+      const srcCandidates = explicitPath
+        ? resolveNamedMediaSources(explicitPath, MEDIA_CONFIG.figuresDir, MEDIA_CONFIG.figureExtensions)
+        : (label ? resolveNamedMediaSources(label, MEDIA_CONFIG.figuresDir, MEDIA_CONFIG.figureExtensions) : []);
+      const src = srcCandidates[0] || "";
 
       return {
         src,
+        srcCandidates,
         label,
         caption,
         alt,
@@ -726,7 +726,10 @@
 
     return entries.filter((item) => {
       if (!item || !item.src) return false;
-      const key = `${item.src}::${item.label || ""}`;
+      const sourceKey = Array.isArray(item.srcCandidates) && item.srcCandidates.length > 0
+        ? item.srcCandidates.join("|")
+        : item.src;
+      const key = `${sourceKey}::${item.label || ""}`;
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -911,11 +914,30 @@
       img.loading = "lazy";
       img.decoding = "async";
       img.alt = figureData.alt || figureData.label || `Figure ${index + 1}`;
-      img.src = toSafeUrl(figureData.src);
+
+      const srcCandidates = uniqueStrings(
+        Array.isArray(figureData.srcCandidates) && figureData.srcCandidates.length > 0
+          ? figureData.srcCandidates
+          : [figureData.src]
+      );
+      let candidateIndex = 0;
+
+      const loadCandidate = () => {
+        img.src = toSafeUrl(srcCandidates[candidateIndex] || figureData.src);
+      };
 
       img.addEventListener("error", () => {
+        candidateIndex += 1;
+
+        if (candidateIndex < srcCandidates.length) {
+          loadCandidate();
+          return;
+        }
+
         wrapper.replaceWith(createMissingMediaCard(`Could not load figure file: ${figureData.src}`));
       });
+
+      loadCandidate();
 
       figure.appendChild(img);
       appendMediaCaption(figure, figureData.label, figureData.caption);
