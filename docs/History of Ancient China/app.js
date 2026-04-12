@@ -348,10 +348,23 @@
         .filter(Boolean)
     );
 
+    const rawRowAnchor = entry.row_anchor && typeof entry.row_anchor === "object"
+      ? entry.row_anchor
+      : entry.rowAnchor && typeof entry.rowAnchor === "object"
+        ? entry.rowAnchor
+        : {};
+
+    const rowAnchor = Object.fromEntries(
+      Object.entries(rawRowAnchor)
+        .map(([nodeId, anchorId]) => [String(nodeId || "").trim(), String(anchorId || "").trim()])
+        .filter(([nodeId, anchorId]) => nodeId && anchorId)
+    );
+
     return {
       id,
       caption: String(entry.caption || entry.description || "").trim(),
       active,
+      rowAnchor,
       upGenerations: Number.isInteger(entry.up_generations) ? entry.up_generations : Number.isInteger(entry.upGenerations) ? entry.upGenerations : null,
       downGenerations: Number.isInteger(entry.down_generations) ? entry.down_generations : Number.isInteger(entry.downGenerations) ? entry.downGenerations : null,
       showCollaterals: typeof entry.show_collaterals === "boolean" ? entry.show_collaterals : typeof entry.showCollaterals === "boolean" ? entry.showCollaterals : null,
@@ -944,7 +957,13 @@
     return entries.filter((item) => {
       if (!item || !item.id) return false;
       const activeKey = Array.isArray(item.active) ? item.active.join("|") : "";
-      const key = `${item.id}::${activeKey}::${item.caption}`;
+      const rowAnchorKey = item.rowAnchor && typeof item.rowAnchor === "object"
+        ? Object.entries(item.rowAnchor)
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([k, v]) => `${k}:${v}`)
+            .join("|")
+        : "";
+      const key = `${item.id}::${activeKey}::${item.caption}::${rowAnchorKey}`;
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -1407,6 +1426,22 @@
         });
       });
     }
+
+    const rowAnchorEntries = ref.rowAnchor && typeof ref.rowAnchor === "object"
+      ? Object.entries(ref.rowAnchor)
+      : [];
+
+    rowAnchorEntries.forEach(([nodeId, anchorId]) => {
+      if (!tree.nodeMap.has(nodeId) || !tree.nodeMap.has(anchorId)) return;
+      if (!selected.has(anchorId)) {
+        selected.add(anchorId);
+      }
+      if (!selected.has(nodeId)) {
+        selected.add(nodeId);
+      }
+      const anchorLayer = layerMap.get(anchorId) ?? 0;
+      layerMap.set(nodeId, anchorLayer);
+    });
 
     const edges = tree.edges.filter((edge) => selected.has(edge.from) && selected.has(edge.to));
     const visibleEdges = getVisibleGenealogyEdges(edges, activeSet, lineageNodes);
