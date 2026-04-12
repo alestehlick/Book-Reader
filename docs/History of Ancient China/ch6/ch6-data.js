@@ -1,5 +1,5 @@
 const BOOK_DATA = {
-  "title": "6 — Western Zhou Archaeology",
+  "title": "6 — Western Zhou Archaelogy",
   "language": "en",
   "sections": [
     {
@@ -30,7 +30,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The full western dynastic period from the conquest of Shang to the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.01-p002",
@@ -41,13 +42,15 @@ const BOOK_DATA = {
               "caption": "The map shows how strongly major Western Zhou sites cluster in Shaanxi, especially along the Wei River corridor."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.01-p003",
           "text": "That concentration is itself historically striking.\nThe number of sites is large.\nThey lie close to one another.\nAnd they have yielded bronzes and other objects of unusually high quality.\nOne can feel in this material the weight of a major political center settled in the Wei valley.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.01-p004",
@@ -72,7 +75,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -109,6 +113,18 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding royal field helps place the first metropolitan concentration around the conquest and the early Wei valley order.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "zhougong",
+                "feng_hao"
+              ]
+            }
           ]
         },
         {
@@ -120,7 +136,19 @@ const BOOK_DATA = {
               "caption": "The map shows the wide spread of Zhou elite material culture from Shaanxi into Shanxi, Henan, Shandong, and the Beijing region."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The eastern and frontier state field helps orient the wide spread of Zhou elite material culture beyond Shaanxi.",
+              "active": [
+                "jin_state",
+                "chengzhou",
+                "lu_state",
+                "yan_state"
+              ]
+            }
+          ]
         },
         {
           "id": "06.02-p003",
@@ -136,7 +164,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The next moment when such wide territorial integration was achieved again under a single dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.02-p004",
@@ -161,6 +190,19 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The era after the western capital fell, when regional states dominated the political landscape."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The late court and eastern transition clarify the violent end of the western capital and the shift into the regional eastern age.",
+              "active": [
+                "youwang",
+                "quanrong",
+                "pingwang",
+                "jin_state",
+                "qin_state"
+              ]
+            }
           ]
         }
       ]
@@ -179,13 +221,15 @@ const BOOK_DATA = {
               "caption": "The map gives the broad geographic frame of Western Zhou finds, from the Wei valley outward into much of North China."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.03-p002",
           "text": "Excavation has often been driven by two motives at once.\nOn the one hand, scholars wanted to illuminate the textual record.\nOn the other, modern construction repeatedly cut into ancient sites and forced rescue work on a large scale.\nChance discoveries then led to excavation campaigns that sometimes lasted for years.\nIn practice, modernization and scholarship advanced together.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.03-p003",
@@ -210,7 +254,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.03-p004",
@@ -221,13 +266,25 @@ const BOOK_DATA = {
               "caption": "The map gathers the main archaeological sites of the Zhouyuan and helps orient the excavation history of this crucial ritual center."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The main western centers and lineages help situate the three Shaanxi zones that dominate excavation history.",
+              "active": [
+                "feng_hao",
+                "zhouyuan",
+                "yu_state"
+              ]
+            }
+          ]
         },
         {
           "id": "06.03-p005",
           "text": "The quantity of archaeological work in Shaanxi is impressive.\nRelatively few buildings have been uncovered, but tombs have been found in enormous numbers.\nAt major centers such as Chang'an, Fufeng, and Fengxiang, the excavated burials run into the hundreds, and across the province into the thousands.\nHoards of bronzes number in the hundreds, and chariot burials in the tens.\nCeramics have been especially important, because they make it possible to build chronological sequences against which new finds can be measured.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.03-p006",
@@ -238,13 +295,26 @@ const BOOK_DATA = {
               "caption": "The map helps situate the major excavation zones outside Shaanxi, including Jin, Yan, Lu, and Luoyang."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The regional state field gathers the major long excavation zones outside Shaanxi.",
+              "active": [
+                "jin_state",
+                "yan_state",
+                "lu_state",
+                "chengzhou"
+              ]
+            }
+          ]
         },
         {
           "id": "06.03-p007",
           "text": "The south remains more elusive.\nHunan, Hubei, Jiangxi, Anhui, Jiangsu, and Zhejiang have all yielded material relevant to the story.\nBut the range of known sites there is less secure, and new discoveries may yet alter the picture sharply.\nFor the southern world of the Western Zhou, surprises are still to be expected.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -257,13 +327,15 @@ const BOOK_DATA = {
           "id": "06.04-p001",
           "text": "A large mass of material survives from roughly the right period, but precise dating is harder than mere identification.\nThe basic tool is pottery typology.\nFor decades archaeologists have studied ceramic sequences in the central northern provinces, especially Henan and Shaanxi.\nThree vessel types are especially useful in this work: the lobed tripod, the basin, and the jar.\nWeapons also help, not only for chronology but for tracing contact with peoples on the western, northern, and eastern margins.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.04-p002",
           "text": "At the level of elite culture, however, one is struck less by local variation than by strong regularity.\nWestern Zhou tombs commonly follow a recognizable plan.\nThey are rectangular pits with stepped ledges.\nBelow the corpse lies a subsidiary waist pit.\nThe largest burials have long ramps.\nAnd the graves are often arranged in family groups, with chariot burials placed beside the most important male tombs.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.04-p003",
@@ -293,19 +365,22 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The full western dynastic period from the conquest of Shang to the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.04-p004",
           "text": "Bronze production raises further questions.\nWeapons, fittings, and ritual vessels must have depended on foundries of considerable sophistication.\nSome casting debris has been identified, but the overall organization remains uncertain.\nWere most major bronzes cast in one or two centrally directed foundries, or were there important workshops working farther from direct royal supervision?\nWhatever the answer, the result was extraordinary.\nFor most of the Western Zhou, bronze work across the realm retained a remarkable coherence.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.04-p005",
           "text": "That coherence makes it possible to use bronze typology as a chronological measure.\nThe corpus is vast, running well beyond ten thousand pieces if excavated finds and old collections are taken together.\nOver generations, scholars have built a persuasive sequence out of typology, style, family tomb groups, hoards, and inscriptions naming several generations.\nThe broad line of development is now widely accepted.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.04-p006",
@@ -325,6 +400,18 @@ const BOOK_DATA = {
               "display_date": "c. 1045-977 BC",
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps anchor the opening bronze phase in the reigns from the founders through Kang and into Zhao.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "kangwang",
+                "zhaowang"
+              ]
             }
           ]
         },
@@ -356,6 +443,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The reigns usually associated with the middle Western Zhou bronze style and with campaigns to the south and east."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line places the middle Western Zhou bronze style in the reigns of Kings Zhao and Mu.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
           ]
         },
         {
@@ -386,13 +483,39 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The late ninth century transformation in vessel sets, bells, and jade use that reordered Zhou ritual."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps orient the late shift after King Gong and through the later ninth-century kings.",
+              "active": [
+                "gongwang",
+                "yihwang",
+                "xiaowang",
+                "yiwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.04-p009",
           "text": "This three part sequence does not float freely.\nIt is tied down at certain points by hoards, tomb groups, inscriptions, and transmitted texts that can be correlated with them.\nA few long inscriptions are especially important, because they allow the vessel sequence to be set beside a basic political chronology and beside the line of Zhou kings known from later texts.\nThe archaeology, the bronzes, and the inscriptional record thus begin to support one another.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The succession of kings gives the political backbone to which the bronze sequence is correlated.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "kangwang",
+                "zhaowang",
+                "muwang",
+                "gongwang"
+              ]
+            }
+          ]
         },
         {
           "id": "06.04-p010",
@@ -408,6 +531,16 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founders and first royal generation frame the question of whether Zhou bronze casting began before or only after the conquest.",
+              "active": [
+                "wuwang",
+                "chengwang"
+              ]
+            }
           ]
         }
       ]
@@ -421,7 +554,8 @@ const BOOK_DATA = {
           "id": "06.05-p001",
           "text": "Bronze inscriptions were probably cast on ritual vessels in order to sustain communication between the living and the dead.\nThe vessels held food and wine offered to the ancestors, and they were used again and again in formal sacrificial banquets.\nThose who took part in these ceremonies would have become deeply familiar with the words cast inside the bronzes.\nThe inscriptions therefore did not lie silent.\nThey repeatedly brought remembered events and honored persons back into the ritual present.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.05-p002",
@@ -446,7 +580,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The full western dynastic period from the conquest of Shang to the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.05-p003",
@@ -485,7 +620,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.05-p004",
@@ -500,6 +636,18 @@ const BOOK_DATA = {
               "display_date": "c. 1045-1000 BC",
               "certainty": "approximate",
               "caption": "The first generations after the conquest, when new settlements, enfeoffments, and ritual norms were established."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding political field helps place the earliest inscriptional references to Kings Wen and Wu, early titles, and the new eastern city.",
+              "active": [
+                "wenwang",
+                "wuwang",
+                "shaogong",
+                "chengzhou"
+              ]
             }
           ]
         },
@@ -517,31 +665,45 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The reigns usually associated with the middle Western Zhou bronze style and with campaigns to the south and east."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line locates the campaign inscriptions in the reigns of Kings Zhao and Mu.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.05-p006",
           "text": "All this implies a highly developed organization of bronze casting.\nIf a king conferred an honor on a noble and that event was to be recorded in bronze, the words first had to be formulated, written correctly, and conveyed accurately to the foundry.\nThe finished vessel then had to be cast and delivered to its owner.\nWhether this work was centralized in a few major foundries or distributed across several centers, skilled scribes must have stood in close relation to the workshops.\nWithout that administrative and technical coordination, the inscriptions could not have achieved such consistency.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.05-p007",
           "text": "Either model points to an impressive political unity.\nIf the major inscribed bronzes were cast mainly in centralized workshops, then communication between the royal centers and distant regions must have been exceptionally efficient.\nIf important foundries also operated farther afield, then some system had to preserve standard language, standard calligraphy, and standard formulas across the realm.\nIn either case, a strong common discipline linked very distant parts of the Zhou world.\nThe inscriptions themselves are among the clearest signs of that unity.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.05-p008",
           "text": "They also reveal something of the political will that sustained it.\nAgain and again they record rewards, appointments, and ceremonies that tied the royal house to the Zhou elite.\nThe bronzes are not merely containers of text.\nTheir very existence embodies relationships of service, favor, memory, and hierarchy.\nThey are political monuments cast in ritual form.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.05-p009",
           "text": "Many inscriptions stage the conferral of honor almost as a miniature drama.\nThey describe the setting, name those present, report the king's words, list the gifts bestowed, and explain the new dignity that has been granted.\nSometimes they also recount the events that led to the distinction.\nOne can feel in them a striking wish to preserve not only the result, but the scene itself.\nWhat mattered was not just that an honor had been won, but how it had been won, before whom, and under what ritual sanction.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.05-p010",
@@ -562,13 +724,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The first generations after the conquest, when new settlements, enfeoffments, and ritual norms were established."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding royal field suits the Tian Wang gui, whose inscription turns around King Wen, King Wu, and the first Zhou sacrificial order.",
+              "active": [
+                "wenwang",
+                "wuwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.05-p011",
           "text": "What emerges from such inscriptions is a coherent picture of Zhou preoccupations.\nChange in status is treated as something momentous.\nRelations between high and low, king and noble, living and dead, are carefully displayed.\nThe past is invoked not as distant decoration, but as a force that validates the present.\nAnd all of this unfolds within ritual.\nThe inscriptions make clear that rank, memory, and sacrifice were inseparable in the Zhou order.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -581,7 +754,8 @@ const BOOK_DATA = {
           "id": "06.06-p001",
           "text": "If the inscriptions preserve the verbal side of Zhou self understanding, tombs and hoards preserve its material side.\nSingle objects matter, but they rarely speak most clearly in isolation.\nWhat matters more is the way bronzes recur in sets, together with other vessels, weapons, chariot fittings, and burial arrangements.\nThe Zhou world appears not through one object at a time, but through carefully composed groups.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.06-p002",
@@ -602,7 +776,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.06-p003",
@@ -617,25 +792,48 @@ const BOOK_DATA = {
               "caption": "Figure 6.5 shows the principal vessels from tomb M7 at Zhuyuangou and helps distinguish the scale and composition of its ritual equipment."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western Shaanxi lineage field places the Zhuyuangou burials within the aristocratic world of the state of Yu.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
+          ]
         },
         {
           "id": "06.06-p004",
           "text": "Some of the bronzes buried in such tombs were already old when they were interred.\nThey had been handed down from earlier generations.\nSometimes they had even belonged to different families before entering the possession of the household in which they were finally buried.\nGift, marriage, conflict, and inheritance had already woven them into long histories before they went underground.\nA tomb therefore does not freeze a single moment only.\nIt gathers several layers of remembered time into one funerary composition.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.06-p005",
           "text": "The structure of the tombs themselves reinforces that continuity.\nMany follow patterns inherited from the Shang.\nThey use rectangular pits with stepped ledges and waist pits.\nThe grandest have access ramps.\nWhole chariots may be buried nearby.\nThus even the architecture of burial proclaims that the Zhou did not simply create their elite world from nothing.\nThey reshaped older forms and inserted themselves into an already existing ceremonial grammar.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.06-p006",
           "text": "Yet tomb contents should not be treated as plain inventories of everyday life.\nThey were assembled for the dead, not for modern historians.\nWhat they offer is less a direct picture of daily use than an idealized image of what mattered most.\nThey show what a family thought should accompany the deceased into the next world.\nFor that very reason they are precious.\nThey reveal values, aspirations, and social imagination more clearly than an ordinary household deposit ever could.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western hoard families help orient the great bronze treasuries later buried in Shaanxi.",
+              "active": [
+                "zhouyuan",
+                "zhuangbai_lineage",
+                "dongjiacun_lineage"
+              ]
+            }
+          ]
         },
         {
           "id": "06.06-p007",
@@ -655,6 +853,16 @@ const BOOK_DATA = {
               "display_date": "771 BC",
               "certainty": "secure",
               "caption": "The crisis in which Zhou families hid bronze treasuries and the western Shaanxi order collapsed."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The Zhuangbai lineage field clarifies the hoard as a layered family archive rather than a random cache.",
+              "active": [
+                "zhuangbai_lineage",
+                "wei_bo_xing"
+              ]
             }
           ]
         },
@@ -690,6 +898,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The principal western hoard families provide the personal frame behind the inscriptions and inherited bronzes.",
+              "active": [
+                "zhuangbai_lineage",
+                "wei_bo_xing",
+                "dongjiacun_lineage"
+              ]
+            }
           ]
         },
         {
@@ -706,19 +925,22 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The use of inscribed bronzes to preserve family memory, status, and royal service across generations."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.06-p010",
           "text": "Seen in this way, tombs and hoards reveal the same broad concerns that appear in the inscriptions.\nRitual stands at the center.\nThe ancestors remain an ever present force.\nStatus is displayed with extreme care, not only through inscriptions but also through the quantity, range, and antiquity of possessions.\nThe past lends weight to the present, whether in inherited bronzes, remembered honors, or ancient forms preserved within later ritual life.\nAnd everywhere one senses networks of kinship, alliance, and obligation binding families to one another and to the royal house.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.06-p011",
           "text": "The archaeological record therefore does more than supply objects.\nIt shows how the Zhou presented their world to themselves.\nBronzes, tombs, and hoards all embody a strongly articulated vision of society.\nThat vision turns on ancestors, rank, memory, relationship, and ceremonial order.\nAcross the whole Western Zhou period, material remains repeatedly return to those same themes.\nThey make visible not just a civilization of things, but a civilization of structured belief.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -750,7 +972,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.07-p002",
@@ -780,13 +1003,15 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The mixed late Shang and local cultural landscape in Shaanxi before Zhou rule became archaeologically dominant."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.07-p003",
           "text": "One especially suggestive tomb has yielded a strikingly mixed group of objects.\nIts contents include standard Anyang types, local Shaanxi bronzes, and exotic pieces from the south, including a fitting decorated with a human face and a wine vessel carrying finely cast birds in three dimensions.\nEven before the conquest, then, the inhabitants of Shaanxi were not isolated.\nThey were connected to a broad geographic world, and those wide contacts would continue after the Zhou came to power.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.07-p004",
@@ -807,7 +1032,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The Anyang related occupation near Xi'an that shows Shang style ritual and burial in Shaanxi before the conquest."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.07-p005",
@@ -823,7 +1049,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -836,7 +1063,8 @@ const BOOK_DATA = {
           "id": "06.08-p001",
           "text": "For the last several decades, archaeologists have pursued the antecedents of the Zhou through intensive work on pre-conquest ceramics in Shaanxi.\nWhat has emerged is not the picture of one obvious ancestral culture, but a mosaic of groups using somewhat different tripods and jars.\nBefore discussing those types, one must first remember what pottery can and cannot show.\nPottery is easier to make than bronze, and local variation in shape is therefore much more common.\nIf Shaanxi looks regionally diverse before the conquest and much more homogeneous after it, that probably means that several loosely related populations once lived there with their own habits and skills.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.08-p002",
@@ -857,7 +1085,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The mixed late Shang and local cultural landscape in Shaanxi before Zhou rule became archaeologically dominant."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.08-p003",
@@ -868,7 +1097,8 @@ const BOOK_DATA = {
               "caption": "The figure makes the difference between sharply divided and more joined lobe forms visible at a glance."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.08-p004",
@@ -879,7 +1109,8 @@ const BOOK_DATA = {
               "caption": "The joined lobe form shown in Figure 6.7 is the one many archaeologists have treated as the strongest ceramic candidate for pre-conquest Zhou culture."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.08-p005",
@@ -900,7 +1131,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The earlier ceramic and settlement traditions later used to trace possible antecedents of pre-conquest Shaanxi groups."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.08-p006",
@@ -925,7 +1157,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.08-p007",
@@ -950,7 +1183,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The first generations after the conquest, when new settlements, enfeoffments, and ritual norms were established."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -968,13 +1202,15 @@ const BOOK_DATA = {
               "caption": "The broad map is useful here because the search for Zhou origins extends beyond Shaanxi into the neighboring regions where smaller bronze using groups also appeared."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.09-p002",
           "text": "Nor has any large alternative bronze using power yet appeared in the adjacent regions.\nCentral and southern Shanxi, despite their later importance, have yielded surprisingly little on the required scale.\nJingjiecun is revealing, but in a different way.\nIts tombs borrow much from Shang practice, yet they also preserve local traits, including northern weapon types and bronzes marked with a clan sign that seems to locate a particular group there.\nSuch a group may have joined the Zhou in their attacks on Shang, but it does not look like the Zhou alone.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.09-p003",
@@ -999,7 +1235,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The decisive overthrow of Shang that made possible the sudden western Zhou transformation of Shaanxi."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.09-p004",
@@ -1020,7 +1257,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long corridor linking Gansu, Shaanxi, Shanxi, Hebei, and farther northern zones through shared weapons and contacts."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.09-p005",
@@ -1045,7 +1283,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.09-p006",
@@ -1070,7 +1309,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The full western dynastic period from the conquest of Shang to the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -1102,13 +1342,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding royal field is the right frame for the abrupt material transformation brought by the conquest.",
+              "active": [
+                "wuwang",
+                "chengwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.10-p002",
           "text": "This abrupt expansion suggests either the arrival of a new elite or the sudden enrichment and reorganization of those already present.\nWhat is most striking, however, is the direction of the change.\nThe new bronzes and tombs do not continue the older local patterns of Shaanxi.\nThey move strongly toward Shang forms.\nThe Zhou had evidently acquired skilled labor, established models of vessel design, and enough material wealth to cast and bury bronzes on a large scale.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.10-p003",
@@ -1138,6 +1389,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The first generations after the conquest, when new settlements, enfeoffments, and ritual norms were established."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The first Zhou generation anchors the rapid shift from transitional burials to full ritual sets after the conquest.",
+              "active": [
+                "wuwang",
+                "chengwang"
+              ]
+            }
           ]
         },
         {
@@ -1159,6 +1420,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The early royal field helps interpret the first distinctly Zhou bronze style after Shang models were taken over and redirected.",
+              "active": [
+                "wuwang",
+                "chengwang"
+              ]
+            }
           ]
         },
         {
@@ -1170,13 +1441,15 @@ const BOOK_DATA = {
               "caption": "The comparison of vessel sets in Figure 6.3 helps show how much larger and more formal the post-conquest ritual equipment became."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.10-p006",
           "text": "Burial structure changed with the same force.\nThe waist pit, so common in Shang tombs and so uncommon in most pre-conquest Shaanxi burials, becomes almost standard after the conquest.\nChariots too begin to enter the funerary picture more fully.\nThese are not trivial borrowings.\nThey show that the Zhou not only knew Shang practice accurately, but considered it authoritative enough to reproduce in detail.\nEven in death, they wished to be provided for in a Shang style that they had made their own.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.10-p007",
@@ -1206,6 +1479,18 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The establishment of the eastern capital that anchored Zhou power beyond the Wei valley."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founders, regency, and eastern capital frame the Li gui and the first inscribed bronzes tied to conquest and settlement.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "zhougong",
+                "chengzhou"
+              ]
+            }
           ]
         },
         {
@@ -1217,7 +1502,18 @@ const BOOK_DATA = {
               "caption": "The Li gui is important here because it embodies the union of ritual vessel, written record, and political legitimacy in the first Zhou generation."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding court helps clarify how Shang precedent was appropriated and turned into Zhou legitimacy.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "zhougong"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1245,7 +1541,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The full western dynastic period from the conquest of Shang to the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.11-p002",
@@ -1274,6 +1571,25 @@ const BOOK_DATA = {
               "display_date": "771 BC",
               "certainty": "secure",
               "caption": "The crisis in which Zhou families hid bronze treasuries and the western Shaanxi order collapsed."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western ritual-center field places the Zhouyuan families who maintained ancestral altars and later hid their bronze treasuries there.",
+              "active": [
+                "zhouyuan",
+                "zhuangbai_lineage",
+                "dongjiacun_lineage"
+              ]
+            },
+            {
+              "id": "G6.5",
+              "caption": "The late court and western enemy provide the historical edge to the 771 flight that sent these bronzes underground.",
+              "active": [
+                "youwang",
+                "quanrong"
+              ]
             }
           ]
         },
@@ -1314,13 +1630,34 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The chief Zhouyuan hoard families help make the Zhuangbai and Dongjiacun deposits readable as long lineage archives.",
+              "active": [
+                "zhuangbai_lineage",
+                "wei_bo_xing",
+                "dongjiacun_lineage"
+              ]
+            }
           ]
         },
         {
           "id": "06.11-p004",
           "text": "The tombs of the Zhouyuan, however, are less overwhelming than the hoards.\nSeveral cemeteries have been found, but their burials do not match the richness of the great tombs at Fengxi.\nMany seem to belong either to the pre-conquest period or to the middle Western Zhou.\nThis contrast may suggest that the Zhouyuan was sustained by elite families without always serving as the main place where their wealth was buried in the ground.\nIts importance may have lain more in altar, workshop, and ceremonial life than in ostentatious funerary display.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The paired western centers help explain the different archaeological profiles of Zhouyuan hoards and Fengxi tombs.",
+              "active": [
+                "zhouyuan",
+                "feng_hao"
+              ]
+            }
+          ]
         },
         {
           "id": "06.11-p005",
@@ -1340,6 +1677,16 @@ const BOOK_DATA = {
               "display_date": "c. 1045-977 BC",
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The Zhouyuan field centers the Fengchu complex within the western ritual heartland.",
+              "active": [
+                "zhouyuan",
+                "fengchu"
+              ]
             }
           ]
         },
@@ -1362,6 +1709,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The Zhouyuan field centers the Shaochen complex within the same ceremonial landscape.",
+              "active": [
+                "zhouyuan",
+                "shaochen"
+              ]
+            }
           ]
         },
         {
@@ -1383,6 +1740,17 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The crisis in which Zhou families hid bronze treasuries and the western Shaanxi order collapsed."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western ritual-center field helps gather workshops, buildings, and storage into one integrated Zhouyuan world.",
+              "active": [
+                "zhouyuan",
+                "fengchu",
+                "shaochen"
+              ]
+            }
           ]
         }
       ]
@@ -1396,25 +1764,49 @@ const BOOK_DATA = {
           "id": "06.12-p001",
           "text": "The capitals at Feng and Hao ought in principle to be the most imposing of all Zhou sites.\nYet the archaeology has so far been curiously disappointing.\nNo clearly identifiable royal palace, no unmistakable administrative center, and no royal tombs have yet emerged from the excavations.\nCenturies of later occupation around Xi'an may well have destroyed or hidden much of the evidence.\nEven so, the contrast with the richness of the Zhouyuan is striking.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.12-p002",
           "text": "The main excavated areas south of modern Xi'an seem instead to have been cemeteries and the residences of high or middling elite families.\nOn both sides of the Feng River, especially in Chang'an county, archaeologists have found many tombs, a substantial number of bronzes, and a notable concentration of chariot burials.\nThese finds show that the capital zone was indeed wealthy.\nBut they present that wealth through funerary grounds and family deposits rather than through grand architectural remains of kingship.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-center field helps place the cemeteries and elite households clustered around Feng and Hao.",
+              "active": [
+                "feng_hao",
+                "jingshu_lineage"
+              ]
+            }
+          ]
         },
         {
           "id": "06.12-p003",
           "text": "The burial sequence at Fengxi is especially valuable because it runs through a long stretch of time.\nIt begins around the transitional period marked by the earlier bronze and ceramic forms and continues well into the middle Western Zhou.\nLate Western Zhou tombs are much rarer there, at least among those carrying bronzes, and are often identified more by ceramics than by metal vessels.\nThe capital zone therefore seems archaeologically strongest for the earlier and middle phases of the dynasty.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.12-p004",
           "text": "Even these burials are often less sumptuous than one might expect.\nApart from the important tombs of the Jingshu clan, they do not rival the richest graves of the Yu state near Baoji.\nThey also show fewer weapons and far fewer exotic pieces.\nThat contrast matters.\nIt suggests that the capital region, for all its prestige, was not the only place where elite life took on a striking or complex archaeological form.\nThe western edge of the Zhou world could be richer and stranger in its tomb evidence than the center itself.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The comparison between the capital zone and the state of Yu is clearer when both western elite settings are held together.",
+              "active": [
+                "feng_hao",
+                "jingshu_lineage",
+                "yu_state",
+                "yu_lord"
+              ]
+            }
+          ]
         },
         {
           "id": "06.12-p005",
@@ -1434,6 +1826,15 @@ const BOOK_DATA = {
               "display_date": "c. 1045-977 BC",
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-center field suits the chariot burials that define one of the clearest archaeological signatures of Fengxi.",
+              "active": [
+                "feng_hao"
+              ]
             }
           ]
         },
@@ -1465,6 +1866,15 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-center field provides the setting for the gradual conversion of the chariot into formal funerary display.",
+              "active": [
+                "feng_hao"
+              ]
+            }
           ]
         },
         {
@@ -1486,6 +1896,15 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-center field keeps the chariot tied to the martial identity of the early Zhou elite around the capitals.",
+              "active": [
+                "feng_hao"
+              ]
+            }
           ]
         }
       ]
@@ -1499,7 +1918,8 @@ const BOOK_DATA = {
           "id": "06.13-p001",
           "text": "Zhou activity in Shaanxi did not stop at the capitals and the Zhouyuan.\nIt extended westward along the Wei River and its tributaries into a much looser landscape of small states, noble outposts, tomb groups, and bronze hoards.\nThese finds suggest an elite world far more diffuse than that of the Shang at Anyang.\nPower in the western Zhou heartland was not concentrated in one city alone.\nIt was distributed across a chain of centers that shared ritual forms while differing sharply in wealth, style, and local character.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.13-p002",
@@ -1524,6 +1944,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western lineage field places the Baoji cemeteries within the state of Yu, one of the strongest early elite zones in Shaanxi.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
           ]
         },
         {
@@ -1544,6 +1974,16 @@ const BOOK_DATA = {
               "display_date": "c. 1045-977 BC",
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu remains the right frame for the highly individual western bronzes of Zhifangtou.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
             }
           ]
         },
@@ -1575,13 +2015,34 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long corridor linking Gansu, Shaanxi, Shanxi, Hebei, and farther northern zones through shared weapons and contacts."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western lineage and frontier field helps place Baoji within a wider corridor running toward Sichuan and farther west.",
+              "active": [
+                "yu_state",
+                "hei_lord",
+                "luan_lord"
+              ]
+            }
           ]
         },
         {
           "id": "06.13-p005",
           "text": "Gansu adds another piece to the picture.\nThe tombs of the Hei and Luan lords at Lingtai combine Zhou burial structure with distinctly western weapons and vessel forms.\nThey use waist pits, stepped ledges, and chariot fittings in a clearly Zhou way.\nAt the same time, they contain tubular wine vessels, unusual blades, and fittings of types linked to lands farther west and north.\nEven hints of contact with Central Asia appear in this horizon.\nThe western edge of the Zhou realm was thus not merely a passive extension of the center.\nIt was a zone where metropolitan practice and frontier material flowed together.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The frontier-lord field suits the Hei and Luan tombs, where Zhou burial structure meets western weapons and fittings.",
+              "active": [
+                "hei_lord",
+                "luan_lord"
+              ]
+            }
+          ]
         },
         {
           "id": "06.13-p006",
@@ -1597,13 +2058,35 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The main western centers and lineages help orient the shift by which Baoji ceased to dominate the archaeological picture.",
+              "active": [
+                "yu_state",
+                "zhouyuan",
+                "feng_hao"
+              ]
+            }
           ]
         },
         {
           "id": "06.13-p007",
           "text": "The broader spread of finds across Shaanxi confirms the same impression.\nBronzes, tombs, and hoards appear at Longxian, Qianyang, Fengxiang, Changwu, Binxian, Xunyi, Linyou, Qianxian, Meixian, Wugong, Zhouzhi, Xianyang, Lintong, and still farther afield.\nThis pattern does not look like a few isolated refuges.\nIt looks like a ruling stratum spread across the fertile lands on both sides of the Wei River.\nThe Zhou heartland was therefore not one city with a few satellites.\nIt was a network of elite occupation on a provincial scale.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western-center field gathers the provincial network of elite occupation spread across the Wei valley.",
+              "active": [
+                "zhouyuan",
+                "feng_hao",
+                "yu_state"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1616,7 +2099,18 @@ const BOOK_DATA = {
           "id": "06.14-p001",
           "text": "Once one moves beyond Shaanxi proper, the archaeological pattern changes.\nInstead of many smaller dispersed centers, one begins to see fewer but larger states.\nThese centers were closely tied to the Zhou elite world in their tomb forms, bronzes, and chariot burials, yet each had a stronger regional profile of its own.\nJin is the nearest and most important example.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The eastern-state field places Jin as the first major regional pillar beyond Shaanxi.",
+              "active": [
+                "jin_state",
+                "houma_site",
+                "tangshu_yu"
+              ]
+            }
+          ]
         },
         {
           "id": "06.14-p002",
@@ -1641,6 +2135,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field helps place Tianma-Qucun within the early Zhou branch-state order.",
+              "active": [
+                "jin_state",
+                "houma_site",
+                "tangshu_yu"
+              ]
+            }
           ]
         },
         {
@@ -1656,6 +2161,16 @@ const BOOK_DATA = {
               "display_date": "c. 850-650 BC",
               "certainty": "approximate",
               "caption": "The period when Jin emerged as a major eastern heir to aristocratic forms first shaped in the western court."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field helps track the region's later growth in wealth and confidence beyond the western core.",
+              "active": [
+                "jin_state",
+                "houma_site"
+              ]
             }
           ]
         }
@@ -1689,6 +2204,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long first two phases of the dynasty before the late ritual transformation."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Chengzhou field suits the eastern capital, its workshops, tombs, and metropolitan bronze culture.",
+              "active": [
+                "chengzhou",
+                "luoyang_site"
+              ]
+            }
           ]
         },
         {
@@ -1705,13 +2230,33 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The first generations after the conquest, when new settlements, enfeoffments, and ritual norms were established."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Chengzhou field suits the eastern capital, its workshops, tombs, and metropolitan bronze culture.",
+              "active": [
+                "chengzhou",
+                "luoyang_site"
+              ]
+            }
           ]
         },
         {
           "id": "06.15-p003",
           "text": "That participation required technical support.\nFoundry remains at Beiyao include molds and model fragments, showing that casting took place locally.\nBrush and ink inscriptions on weapons and vessels also show that scribes were active there.\nChariot burials point in the same direction as they do in Shaanxi.\nMilitary prestige, elite ritual, and written administration were all present together.\nChengzhou was not only a political hinge between west and east.\nIt was a place where the machinery of Zhou rule was materially reproduced.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Chengzhou field suits the eastern capital, its workshops, tombs, and metropolitan bronze culture.",
+              "active": [
+                "chengzhou",
+                "luoyang_site"
+              ]
+            }
+          ]
         },
         {
           "id": "06.15-p004",
@@ -1736,6 +2281,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The period when Zhou contacts with southern regions became especially visible in bells, jades, and copied forms."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Chengzhou field suits the eastern capital, its workshops, tombs, and metropolitan bronze culture.",
+              "active": [
+                "chengzhou",
+                "luoyang_site"
+              ]
+            }
           ]
         }
       ]
@@ -1749,7 +2304,18 @@ const BOOK_DATA = {
           "id": "06.16-p001",
           "text": "East of Chengzhou, the archaeological picture remains unmistakably Zhou, but it is no longer as diffuse as in Shaanxi.\nThe most important centers in central Henan appear as substantial states rather than as a loose chain of smaller noble outposts.\nYing and Wey are the clearest examples in this zone.\nBoth were tied closely to the ritual and political order of the Zhou court.\nAt the same time, each gives that order a distinctly regional setting.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The central plain state field places Ying and Wey within the eastern extension of Zhou order from Chengzhou.",
+              "active": [
+                "ying_state",
+                "wey_state",
+                "chengzhou"
+              ]
+            }
+          ]
         },
         {
           "id": "06.16-p002",
@@ -1769,6 +2335,17 @@ const BOOK_DATA = {
               "display_date": "c. 1045-900 BC",
               "certainty": "approximate",
               "caption": "The long western Zhou horizon in which Ying was already integrated into the central Zhou elite network."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Ying field helps place Pingdingshan within the early Zhou colonial network.",
+              "active": [
+                "ying_state",
+                "ying_site",
+                "yinghou"
+              ]
             }
           ]
         },
@@ -1790,6 +2367,25 @@ const BOOK_DATA = {
               "display_date": "c. 977-918 BC",
               "certainty": "approximate",
               "caption": "The reigns usually associated with the middle Western Zhou bronze style and with campaigns to the south and east."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Ying field keeps the preserved bronzes tied to the state that used them.",
+              "active": [
+                "ying_state",
+                "ying_site",
+                "yinghou"
+              ]
+            },
+            {
+              "id": "G6.1",
+              "caption": "The royal line also helps date these bronzes within the reigns of Kings Zhao and Mu.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
             }
           ]
         },
@@ -1816,13 +2412,35 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Wey field centers Kang Hou, whose appointment inscription ties the state directly to the founding Zhou order.",
+              "active": [
+                "kanghou",
+                "wey_state",
+                "wey_site"
+              ]
+            }
           ]
         },
         {
           "id": "06.16-p005",
           "text": "Its cemetery confirms the scale of that importance.\nMore than eighty Western Zhou tombs were excavated there, though many had been robbed.\nSeveral were extremely large and carried double access ramps, a sign of rank more imposing than what is usually seen in the Zhouyuan or at Fengxi.\nThe cemetery seems to have been used across the whole Western Zhou period.\nEven in damaged condition, it suggests that Wey was one of the major eastern pillars of the Zhou order.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Wey field keeps the great cemetery tied to one of the chief eastern pillars of the Zhou system.",
+              "active": [
+                "wey_state",
+                "wey_site",
+                "kanghou"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1854,7 +2472,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.17-p002",
@@ -1878,6 +2497,19 @@ const BOOK_DATA = {
               "display_date": "c. 977-900 BC",
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Shandong state field helps orient Lu and Qi within the layered eastern landscape.",
+              "active": [
+                "lu_state",
+                "qi_state",
+                "qufu_site",
+                "boqin",
+                "taigong_wang"
+              ]
             }
           ]
         },
@@ -1904,6 +2536,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Yan field places the northeastern stronghold within the early Zhou branch-state system.",
+              "active": [
+                "yan_state",
+                "fangshan_site",
+                "shaogong"
+              ]
+            }
           ]
         },
         {
@@ -1925,6 +2568,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The early Western Zhou establishment of Yan near modern Beijing as a far northeastern stronghold."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Yan field helps frame the inscriptional claims that tie the ruling house back to the founding generation.",
+              "active": [
+                "yan_state",
+                "shaogong",
+                "boju"
+              ]
+            }
           ]
         },
         {
@@ -1936,7 +2590,18 @@ const BOOK_DATA = {
               "caption": "Figure 6.16 helps connect Yan to western Shaanxi by showing details that recall the bronzes of Baoji and the wider western corridor."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Yan field keeps the western Shaanxi links visible behind these unusually ambitious frontier bronzes.",
+              "active": [
+                "yan_state",
+                "boju",
+                "shaogong"
+              ]
+            }
+          ]
         },
         {
           "id": "06.17-p006",
@@ -1956,6 +2621,17 @@ const BOOK_DATA = {
               "display_date": "c. 1400-800 BC",
               "certainty": "approximate",
               "caption": "The long corridor linking Gansu, Shaanxi, Shanxi, Hebei, and farther northern zones through shared weapons and contacts."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Yan field suits the mixed long-distance connections that converge in the far northeast.",
+              "active": [
+                "yan_state",
+                "boju",
+                "fangshan_site"
+              ]
             }
           ]
         },
@@ -1981,6 +2657,16 @@ const BOOK_DATA = {
               "display_date": "c. 977-900 BC",
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Yan field keeps the chariot burials tied to the military identity of this northeastern frontier elite.",
+              "active": [
+                "yan_state",
+                "fangshan_site"
+              ]
             }
           ]
         }
@@ -2014,13 +2700,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The reigns usually associated with the middle Western Zhou bronze style and with campaigns to the south and east."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line places the standardized middle Western Zhou bronze style in the reigns of Kings Zhao and Mu.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.18-p002",
           "text": "The importance of this shift goes beyond style alone.\nBronze forms, decoration, inscription, and burial all begin to show stronger signs of ordering and control.\nVariety narrows.\nSets become more regular.\nThe differences between elite groups seem less flamboyant than before.\nWhat emerges is not merely a new aesthetic.\nIt is a more standardized ritual world.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.18-p003",
@@ -2041,6 +2738,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line provides the dynastic frame for the bird-decorated bronzes of the middle period.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
           ]
         },
         {
@@ -2052,7 +2759,8 @@ const BOOK_DATA = {
               "caption": "Figure 6.19 is useful because it shows a more restrained middle Western Zhou set and makes the hierarchy of decoration within a standardized ritual ensemble easier to grasp."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.18-p005",
@@ -2063,7 +2771,8 @@ const BOOK_DATA = {
               "caption": "Figure 6.19 remains relevant here because the repeated vessel types and closely related decoration illustrate the pressure toward standardization."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.18-p006",
@@ -2079,13 +2788,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The reigns usually associated with the middle Western Zhou bronze style and with campaigns to the south and east."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The reigns of Kings Zhao and Mu remain the main royal horizon for the campaigns reflected in these bronzes.",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.18-p007",
           "text": "A later phase of the middle Western Zhou sharpens that impression.\nSome bronzes become smaller, stiffer, or less graceful.\nAt the same time, inscriptions begin to follow more regular formulas, especially in the emerging investiture inscriptions.\nThe Qiu Wei ding and related pieces even preserve legal and property disputes, suggesting deeper changes in landholding and administration.\nWhat is visible in the vessels is therefore part of a larger transformation.\nMiddle Western Zhou bronze culture reflects a society seeking order, control, and continuity in a period that was no longer easy.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -2103,7 +2823,17 @@ const BOOK_DATA = {
               "caption": "Figure 6.21 is important here because the plan of the Rujiazhuang tomb group makes the clustered family layout and associated chariot burial immediately clear."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu provides the main lineage frame for the Rujiazhuang tomb group and its western innovations.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
+          ]
         },
         {
           "id": "06.19-p002",
@@ -2114,7 +2844,17 @@ const BOOK_DATA = {
               "caption": "Figure 6.21 remains useful because it shows how the main tomb, the secondary burial, and the chariot pit were arranged as one designed group."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu provides the main lineage frame for the Rujiazhuang tomb group and its western innovations.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
+          ]
         },
         {
           "id": "06.19-p003",
@@ -2143,6 +2883,16 @@ const BOOK_DATA = {
               "display_date": "c. 975-850 BC",
               "certainty": "approximate",
               "caption": "The period when Zhou contacts with southern regions became especially visible in bells, jades, and copied forms."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu provides the main lineage frame for the Rujiazhuang tomb group and its western innovations.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
             }
           ]
         },
@@ -2174,6 +2924,18 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western and frontier lineage field helps place the Rujiazhuang tombs within multiple northern and western corridors of contact.",
+              "active": [
+                "yu_state",
+                "yu_lord",
+                "hei_lord",
+                "luan_lord"
+              ]
+            }
           ]
         },
         {
@@ -2204,6 +2966,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The late ninth century transformation in vessel sets, bells, and jade use that reordered Zhou ritual."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu provides the main lineage frame for the Rujiazhuang tomb group and its western innovations.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
           ]
         },
         {
@@ -2220,6 +2992,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase when jade carving, bead strings, facial pieces, and southern motifs gained new importance in Zhou burial."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The state of Yu provides the main lineage frame for the Rujiazhuang tomb group and its western innovations.",
+              "active": [
+                "yu_state",
+                "yu_lord"
+              ]
+            }
           ]
         }
       ]
@@ -2233,7 +3015,17 @@ const BOOK_DATA = {
           "id": "06.20-p001",
           "text": "Near the capital, the Jingshu family tombs at Fengxi show that similar developments eventually took hold farther east.\nThese burials were arranged in a planned group rather than as scattered isolated graves.\nOne principal tomb stood at the center, with others placed consciously around it.\nThe family was being presented not simply as a sequence of individuals, but as an ordered cluster in space.\nThat shift in layout already marks a change in social imagination.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-lineage field places the Jingshu tombs within the elite cemetery world around Fengxi.",
+              "active": [
+                "jingshu_lineage",
+                "feng_hao"
+              ]
+            }
+          ]
         },
         {
           "id": "06.20-p002",
@@ -2244,13 +3036,33 @@ const BOOK_DATA = {
               "caption": "Figure 6.21 remains helpful here because the Rujiazhuang plan provides a western counterpart to the same new tendency to combine tomb and chariot display more closely."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-lineage field places the Jingshu tombs within the elite cemetery world around Fengxi.",
+              "active": [
+                "jingshu_lineage",
+                "feng_hao"
+              ]
+            }
+          ]
         },
         {
           "id": "06.20-p003",
           "text": "That change suggests more than a technical adjustment in burial custom.\nIt points to a new valuation of the chariot in life and in death.\nMilitary display, ceremonial movement, and aristocratic self presentation had become more tightly fused.\nThe chariot was not only equipment.\nIt was part of the visible identity of the elite.\nThe burial made that claim permanent.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-lineage field places the Jingshu tombs within the elite cemetery world around Fengxi.",
+              "active": [
+                "jingshu_lineage",
+                "feng_hao"
+              ]
+            }
+          ]
         },
         {
           "id": "06.20-p004",
@@ -2270,6 +3082,16 @@ const BOOK_DATA = {
               "display_date": "c. 975-850 BC",
               "certainty": "approximate",
               "caption": "The phase when jade carving, bead strings, facial pieces, and southern motifs gained new importance in Zhou burial."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-lineage field places the Jingshu tombs within the elite cemetery world around Fengxi.",
+              "active": [
+                "jingshu_lineage",
+                "feng_hao"
+              ]
             }
           ]
         },
@@ -2296,6 +3118,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long southern casting tradition from which the Zhou later borrowed tuned bell sets and their decorative conventions."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The capital-lineage field places the Jingshu tombs within the elite cemetery world around Fengxi.",
+              "active": [
+                "jingshu_lineage",
+                "feng_hao"
+              ]
+            }
           ]
         }
       ]
@@ -2319,19 +3151,22 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The period when Zhou contacts with southern regions became especially visible in bells, jades, and copied forms."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.21-p002",
           "text": "The southern evidence is uneven.\nJiangxi, Hunan, and Sichuan had once produced great bronze traditions of their own, yet comparable finds for this later period remain much scarcer.\nThat scarcity may reflect the state of excavation rather than the true historical picture.\nFor now, the safest conclusion is that the southern world remained active and culturally distinct, even where its full archaeological profile is still hidden.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.21-p003",
           "text": "What matters most is that the Zhou were no longer merely confronting outside peoples in war.\nThey were also borrowing from them.\nNew bronze types, new musical practices, and new jade imagery entered the Zhou sphere from beyond its political core.\nThe result was not simple imitation.\nThe Zhou absorbed these elements and refashioned them within their own ritual order.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -2354,7 +3189,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase when captured or displaced middle Western Zhou bronzes inspired local imitations in the southeast."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.22-p002",
@@ -2384,7 +3220,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase of smoother bird decorated bronzes, stronger standardization, and mounting military strain."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.22-p003",
@@ -2395,7 +3232,8 @@ const BOOK_DATA = {
               "caption": "Figure 6.23 remains relevant because it anchors the argument that many southeastern copies look back to a concentrated middle Western Zhou horizon rather than to the full chronological range of Zhou bronze forms."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.22-p004",
@@ -2420,7 +3258,8 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The era after the western capital fell, when regional states dominated the political landscape."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2433,7 +3272,17 @@ const BOOK_DATA = {
           "id": "06.23-p001",
           "text": "The Han and Huai River regions show a different pattern.\nThere are far fewer signs of dense Zhou settlement there than in Shaanxi, Shanxi, or the great states of northern Henan.\nNorth of the Huai, Pingdingshan in the state of Ying remains the clearest site of state level Zhou presence.\nElsewhere, one finds scattered ceramics and occasional bronzes, but much less evidence for a strongly rooted aristocratic network.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The sparse southern footprint is easiest to orient when Ying is kept in view as the clearest southern state-level Zhou presence.",
+              "active": [
+                "ying_state",
+                "ying_site"
+              ]
+            }
+          ]
         },
         {
           "id": "06.23-p002",
@@ -2449,7 +3298,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The decades when late western forms, replicas, and antique burials gave way to regional eastern state styles."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.23-p003",
@@ -2465,7 +3315,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "A thin and isolated southern extension of Zhou material presence far beyond the main northern core."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2493,7 +3344,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long southern casting tradition from which the Zhou later borrowed tuned bell sets and their decorative conventions."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.24-p002",
@@ -2504,7 +3356,8 @@ const BOOK_DATA = {
               "caption": "Figure 6.24a remains useful because it represents the independent southern bell tradition whose musical and technical momentum later affected Zhou ritual life."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.24-p003",
@@ -2525,7 +3378,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The period when Zhou contacts with southern regions became especially visible in bells, jades, and copied forms."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.24-p004",
@@ -2555,7 +3409,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The late ninth century transformation in vessel sets, bells, and jade use that reordered Zhou ritual."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2578,7 +3433,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The founding and expansion phase, from the conquest through the reigns before King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.25-p002",
@@ -2594,7 +3450,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase when jade carving, bead strings, facial pieces, and southern motifs gained new importance in Zhou burial."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.25-p003",
@@ -2624,7 +3481,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The period when Zhou contacts with southern regions became especially visible in bells, jades, and copied forms."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.25-p004",
@@ -2645,7 +3503,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The phase when jade carving, bead strings, facial pieces, and southern motifs gained new importance in Zhou burial."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.25-p005",
@@ -2675,7 +3534,8 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The decades when late western forms, replicas, and antique burials gave way to regional eastern state styles."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2707,13 +3567,35 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps place the ritual revolution in the later ninth-century reigns from King Yih through Kings Xiao and Yi.",
+              "active": [
+                "yihwang",
+                "xiaowang",
+                "yiwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.26-p002",
           "text": "The transition does not look gradual at the main centers.\nNo tomb has yet shown a full and balanced mixture of the earlier middle Western Zhou bronze repertory with the heavy, solid, boldly decorated vessel groups of the late period.\nThe mixed assemblages seen in places like Rujiazhuang look local and exceptional rather than metropolitan norms.\nAt the center, the shift seems much more decisive.\nOne ritual system gives way to another.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps place the ritual revolution in the later ninth-century reigns from King Yih through Kings Xiao and Yi.",
+              "active": [
+                "yihwang",
+                "xiaowang",
+                "yiwang"
+              ]
+            }
+          ]
         },
         {
           "id": "06.26-p003",
@@ -2733,6 +3615,17 @@ const BOOK_DATA = {
               "display_date": "c. 900-858 BC",
               "certainty": "approximate",
               "caption": "The late ninth century transformation in vessel sets, bells, and jade use that reordered Zhou ritual."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps place the ritual revolution in the later ninth-century reigns from King Yih through Kings Xiao and Yi.",
+              "active": [
+                "yihwang",
+                "xiaowang",
+                "yiwang"
+              ]
             }
           ]
         },
@@ -2754,6 +3647,17 @@ const BOOK_DATA = {
               "display_date": "c. 900-858 BC",
               "certainty": "approximate",
               "caption": "The late ninth century transformation in vessel sets, bells, and jade use that reordered Zhou ritual."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.1",
+              "caption": "The royal line helps place the ritual revolution in the later ninth-century reigns from King Yih through Kings Xiao and Yi.",
+              "active": [
+                "yihwang",
+                "xiaowang",
+                "yiwang"
+              ]
             }
           ]
         }
@@ -2783,6 +3687,16 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The Zhuangbai lineage field helps place the reordered late vessel groups in the generation of Wei Bo Xing.",
+              "active": [
+                "zhuangbai_lineage",
+                "wei_bo_xing"
+              ]
+            }
           ]
         },
         {
@@ -2804,13 +3718,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The Zhuangbai lineage field keeps the repeated late food-vessel sets tied to a concrete family archive.",
+              "active": [
+                "zhuangbai_lineage",
+                "wei_bo_xing"
+              ]
+            }
           ]
         },
         {
           "id": "06.27-p003",
           "text": "Other vessel types also changed their place.\nForms long familiar in ceramic, lacquer, or bamboo, especially the li, dou, and xu, were now routinely cast in bronze.\nThis was more than a technical transfer.\nIt brought older and perhaps more everyday forms into the bronze ritual field, as if the Zhou were widening the range of vessels worthy of formal ancestral use while at the same time tightening the visible order of the ceremony.\nThe ritual set had become both broader in components and narrower in expressive freedom.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.27-p004",
@@ -2840,13 +3765,15 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The long southern casting tradition from which the Zhou later borrowed tuned bell sets and their decorative conventions."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "06.27-p005",
           "text": "The new ritual world was not merely fashionable.\nIts forms imply a changed understanding of what ritual should do.\nThe larger vessels, the insistence on identical series, the growing weight of bells, and the diminished place of improvisatory variety all suggest a system that wanted order to be seen and heard.\nThe older prestige of singular masterpieces gave way to the authority of a regulated ensemble.\nThe point was no longer only refined distinction.\nIt was the controlled display of a hierarchical order made materially obvious.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         }
       ]
     },
@@ -2859,7 +3786,8 @@ const BOOK_DATA = {
           "id": "06.28-p001",
           "text": "This new order also looked backward.\nLate Western Zhou inscriptions are often strikingly uniform in wording, layout, and script.\nThe writing seems deliberately archaizing, drawing close to early models rather than developing in an openly novel direction.\nSome vessel shapes also revive older forms.\nThe gui on a square base is one example.\nThe late system was therefore not simply innovative.\nIt was innovative through control, and part of that control came from reappropriating the authority of the past.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.28-p002",
@@ -2889,6 +3817,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The final western phase, marked by ritual reordering, archaism, and the eventual collapse of the Shaanxi center."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The main Zhouyuan hoard lineages make the archive-like curation of late and earlier bronzes easier to follow.",
+              "active": [
+                "zhuangbai_lineage",
+                "dongjiacun_lineage",
+                "wei_bo_xing"
+              ]
+            }
           ]
         },
         {
@@ -2904,6 +3843,25 @@ const BOOK_DATA = {
               "display_date": "771 BC",
               "certainty": "secure",
               "caption": "The crisis in which Zhou families hid bronze treasuries and the western Shaanxi order collapsed."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western ritual-center field keeps the hoards tied to the temple and lineage landscape of the Zhouyuan.",
+              "active": [
+                "zhouyuan",
+                "zhuangbai_lineage",
+                "dongjiacun_lineage"
+              ]
+            },
+            {
+              "id": "G6.5",
+              "caption": "The late court and western enemy provide the historical pressure behind the burial of these hoards.",
+              "active": [
+                "youwang",
+                "quanrong"
+              ]
             }
           ]
         },
@@ -2929,6 +3887,23 @@ const BOOK_DATA = {
               "display_date": "771 BC",
               "certainty": "secure",
               "caption": "The crisis in which Zhou families hid bronze treasuries and the western Shaanxi order collapsed."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western ritual-center field suits the final concentration of ritual wealth in temple and treasury rather than in tomb.",
+              "active": [
+                "zhouyuan"
+              ]
+            },
+            {
+              "id": "G6.5",
+              "caption": "The collapse field keeps the last western phase tied to the catastrophe that drove it underground.",
+              "active": [
+                "youwang",
+                "quanrong"
+              ]
             }
           ]
         }
@@ -2967,6 +3942,17 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The period when Jin emerged as a major eastern heir to aristocratic forms first shaped in the western court."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field helps place the late cemetery near Houma within the wider eastern branch-state order.",
+              "active": [
+                "jin_state",
+                "houma_site",
+                "tangshu_yu"
+              ]
+            }
           ]
         },
         {
@@ -2988,6 +3974,24 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The decades when late western forms, replicas, and antique burials gave way to regional eastern state styles."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field keeps the cemetery tied to its regional state setting.",
+              "active": [
+                "jin_state",
+                "houma_site"
+              ]
+            },
+            {
+              "id": "G6.5",
+              "caption": "The late transition field is also relevant because some of these tombs cross into the early Eastern Zhou world after the western collapse.",
+              "active": [
+                "jin_state",
+                "pingwang"
+              ]
+            }
           ]
         },
         {
@@ -2999,7 +4003,17 @@ const BOOK_DATA = {
               "caption": "Figure 6.28a is central here because it displays the conventional late Jin ding, gui, and related vessels that preserve the late Western Zhou norm while also showing a slight decline in casting quality."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field suits the conservative late vessel class that preserves the standard western grammar in the east.",
+              "active": [
+                "jin_state",
+                "houma_site"
+              ]
+            }
+          ]
         },
         {
           "id": "06.29-p004",
@@ -3019,6 +4033,16 @@ const BOOK_DATA = {
               "display_date": "c. 800-650 BC",
               "certainty": "approximate",
               "caption": "The decades when late western forms, replicas, and antique burials gave way to regional eastern state styles."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.4",
+              "caption": "The Jin field also frames the more experimental sculptural bronzes that appear as the old vessel logic begins to loosen.",
+              "active": [
+                "jin_state",
+                "houma_site"
+              ]
             }
           ]
         }
@@ -3048,6 +4072,18 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The transitional practice of burying archaizing bronzes and antique jades as the western order faded."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The transition field helps place replica bronzes, antique jades, and fading western norms across Jin, Ying, and Guo after the collapse of the western center.",
+              "active": [
+                "jin_state",
+                "ying_state",
+                "guo_state",
+                "pingwang"
+              ]
+            }
           ]
         },
         {
@@ -3073,13 +4109,37 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The transitional practice of burying archaizing bronzes and antique jades as the western order faded."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The transition field helps place replica bronzes, antique jades, and fading western norms across Jin, Ying, and Guo after the collapse of the western center.",
+              "active": [
+                "jin_state",
+                "ying_state",
+                "guo_state",
+                "pingwang"
+              ]
+            }
           ]
         },
         {
           "id": "06.30-p003",
           "text": "These habits were not limited to Jin.\nYing and Guo show similar tendencies.\nThere too one finds standardized late bronzes, vessels copied in archaic shapes, and pieces made more for burial than for use.\nFor a brief time, some of these replica forms even passed into usable bronzes in the eastern states.\nBut the tendency did not endure.\nOnce the regional states developed richer and more competitive bronze industries of their own, the old western replicas lost their point.\nThey belong to a transitional moment.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The transition field helps place replica bronzes, antique jades, and fading western norms across Jin, Ying, and Guo after the collapse of the western center.",
+              "active": [
+                "jin_state",
+                "ying_state",
+                "guo_state",
+                "pingwang"
+              ]
+            }
+          ]
         },
         {
           "id": "06.30-p004",
@@ -3103,6 +4163,18 @@ const BOOK_DATA = {
               "display_date": "770-256 BC",
               "certainty": "secure",
               "caption": "The era after the western capital fell, when regional states dominated the political landscape."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The transition field helps place replica bronzes, antique jades, and fading western norms across Jin, Ying, and Guo after the collapse of the western center.",
+              "active": [
+                "jin_state",
+                "ying_state",
+                "guo_state",
+                "pingwang"
+              ]
             }
           ]
         }
@@ -3136,13 +4208,26 @@ const BOOK_DATA = {
               "certainty": "approximate",
               "caption": "The mixed late Shang and local cultural landscape in Shaanxi before Zhou rule became archaeologically dominant."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.2",
+              "caption": "The founding royal field gives the political backbone to the sudden rise of Shaanxi as the heart of the Zhou world.",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "zhougong",
+                "feng_hao"
+              ]
+            }
           ]
         },
         {
           "id": "06.31-p002",
           "text": "Once established, they created a material culture of remarkable coherence.\nBuildings, tombs, bronzes, inscriptions, chariots, and jades all speak in related ways.\nThey present status.\nThey commemorate ties between rulers and followers.\nThey bind the living to the dead.\nThey turn family memory into durable objects.\nAnd they do so across a broad arc of North China with a uniformity unmatched for centuries.\nThat uniformity did not erase regional variation, but it gave the Zhou elite world an unmistakable shared surface and a shared discipline.",
           "figures": [],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "06.31-p003",
@@ -3166,6 +4251,24 @@ const BOOK_DATA = {
               "display_date": "770-256 BC",
               "certainty": "secure",
               "caption": "The era after the western capital fell, when regional states dominated the political landscape."
+            }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.3",
+              "caption": "The western ritual-center field helps keep the Zhouyuan in view as the concentrated archive of the lost western order.",
+              "active": [
+                "zhouyuan"
+              ]
+            },
+            {
+              "id": "G6.5",
+              "caption": "The late court and eastern transition frame the collapse that broke the western material system.",
+              "active": [
+                "youwang",
+                "quanrong",
+                "pingwang"
+              ]
             }
           ]
         },
@@ -3192,6 +4295,18 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The era after the western capital fell, when regional states dominated the political landscape."
             }
+          ],
+          "genealogy": [
+            {
+              "id": "G6.5",
+              "caption": "The transition field helps place the eastern replicas and altered bronze ideology against the disappearance of the old western archive.",
+              "active": [
+                "jin_state",
+                "ying_state",
+                "guo_state",
+                "pingwang"
+              ]
+            }
           ]
         },
         {
@@ -3217,15 +4332,918 @@ const BOOK_DATA = {
               "certainty": "secure",
               "caption": "The next moment when such wide territorial integration was achieved again under a single dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     }
   ],
+  "genealogy": {
+    "trees": [
+      {
+        "id": "G6.1",
+        "title": "Main Western Zhou Royal Line",
+        "caption": "The main royal succession from the founders to the transfer east under King Ping, useful for the archaeological phases tied to named kings.",
+        "nodes": [
+          {
+            "id": "wenwang",
+            "name": "King Wen (Chang)",
+            "type": "king",
+            "display_date": "d. before 1045 BC"
+          },
+          {
+            "id": "wuwang",
+            "name": "King Wu (Fa)",
+            "type": "king",
+            "display_date": "r. c. 1045-1043 BC"
+          },
+          {
+            "id": "chengwang",
+            "name": "King Cheng (Song)",
+            "type": "king",
+            "display_date": "r. c. 1042-1006 BC"
+          },
+          {
+            "id": "kangwang",
+            "name": "King Kang (Zhao)",
+            "type": "king",
+            "display_date": "r. c. 1005-978 BC"
+          },
+          {
+            "id": "zhaowang",
+            "name": "King Zhao",
+            "type": "king",
+            "display_date": "r. c. 977-957 BC"
+          },
+          {
+            "id": "muwang",
+            "name": "King Mu",
+            "type": "king",
+            "display_date": "r. c. 956-918 BC"
+          },
+          {
+            "id": "gongwang",
+            "name": "King Gong",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "yihwang",
+            "name": "King Yih",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "xiaowang",
+            "name": "King Xiao",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "yiwang",
+            "name": "King Yi",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "liwang",
+            "name": "King Li (Hu)",
+            "type": "king",
+            "display_date": "r. until 842 BC"
+          },
+          {
+            "id": "gonghe",
+            "name": "Lord He of Gong (Gong He)",
+            "type": "regent",
+            "display_date": "842-828 BC"
+          },
+          {
+            "id": "xuanwang",
+            "name": "King Xuan (Jing)",
+            "type": "king",
+            "display_date": "r. 827-782 BC"
+          },
+          {
+            "id": "youwang",
+            "name": "King You",
+            "type": "king",
+            "display_date": "r. 781-771 BC"
+          },
+          {
+            "id": "pingwang",
+            "name": "King Ping (Yi Jiu)",
+            "type": "king",
+            "display_date": "begins 770 BC"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wenwang",
+            "to": "wuwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "chengwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "chengwang",
+            "to": "kangwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "kangwang",
+            "to": "zhaowang",
+            "relation": "father-son"
+          },
+          {
+            "from": "zhaowang",
+            "to": "muwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "muwang",
+            "to": "gongwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "gongwang",
+            "to": "yihwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "yihwang",
+            "to": "xiaowang",
+            "relation": "brothers"
+          },
+          {
+            "from": "xiaowang",
+            "to": "yiwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "yiwang",
+            "to": "liwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "gonghe",
+            "to": "liwang",
+            "relation": "regent-after"
+          },
+          {
+            "from": "liwang",
+            "to": "xuanwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "xuanwang",
+            "to": "youwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "youwang",
+            "to": "pingwang",
+            "relation": "father-son"
+          }
+        ]
+      },
+      {
+        "id": "G6.2",
+        "title": "Founders, Regency, and the Colonial Order",
+        "caption": "The founding political field after Muye: the royal brothers, the regency, the Shang remnant, and the main states and capitals that dominate the archaeological map.",
+        "nodes": [
+          {
+            "id": "wenwang",
+            "name": "King Wen (Chang)",
+            "type": "king",
+            "display_date": "d. before 1045 BC"
+          },
+          {
+            "id": "wuwang",
+            "name": "King Wu (Fa)",
+            "type": "king",
+            "display_date": "r. c. 1045-1043 BC"
+          },
+          {
+            "id": "chengwang",
+            "name": "King Cheng (Song)",
+            "type": "king",
+            "display_date": "r. c. 1042-1006 BC"
+          },
+          {
+            "id": "zhougong",
+            "name": "Zhou Gong (Duke of Zhou, Dan)",
+            "type": "regent",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "shaogong",
+            "name": "Shao Gong (Shi)",
+            "type": "royal ally",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "guanshu",
+            "name": "Guanshu Xian",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "caishu",
+            "name": "Caishu Du",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "huoshu",
+            "name": "Huoshu Chu",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "wugeng",
+            "name": "Wu Geng",
+            "type": "Shang remnant ruler",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "tangshu_yu",
+            "name": "Tangshu Yu",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "kanghou",
+            "name": "Kang Hou / Kangshu Feng",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "boqin",
+            "name": "Bo Qin",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "taigong_wang",
+            "name": "Tai Gong Wang",
+            "type": "regional founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "yinghou",
+            "name": "Ying Hou",
+            "type": "regional founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "chengzhou",
+            "name": "Chengzhou",
+            "type": "capital node",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "feng_hao",
+            "name": "Feng and Hao",
+            "type": "capital node",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "jin_state",
+            "name": "Jin",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "wey_state",
+            "name": "Wey",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "lu_state",
+            "name": "Lu",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "qi_state",
+            "name": "Qi",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "yan_state",
+            "name": "Yan",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "ying_state",
+            "name": "Ying",
+            "type": "state",
+            "display_date": "Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wenwang",
+            "to": "wuwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "chengwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "zhougong",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "guanshu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "caishu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "huoshu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "kanghou",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "tangshu_yu",
+            "relation": "brothers"
+          },
+          {
+            "from": "zhougong",
+            "to": "chengwang",
+            "relation": "regent-of"
+          },
+          {
+            "from": "shaogong",
+            "to": "chengwang",
+            "relation": "supporter-of"
+          },
+          {
+            "from": "guanshu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "caishu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "huoshu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "zhougong",
+            "to": "guanshu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "caishu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "huoshu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "chengzhou",
+            "relation": "associated-with"
+          },
+          {
+            "from": "wuwang",
+            "to": "feng_hao",
+            "relation": "associated-with"
+          },
+          {
+            "from": "zhougong",
+            "to": "boqin",
+            "relation": "father-son"
+          },
+          {
+            "from": "tangshu_yu",
+            "to": "jin_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "kanghou",
+            "to": "wey_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "boqin",
+            "to": "lu_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "taigong_wang",
+            "to": "qi_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "shaogong",
+            "to": "yan_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "yinghou",
+            "to": "ying_state",
+            "relation": "founder-of"
+          }
+        ]
+      },
+      {
+        "id": "G6.3",
+        "title": "Western Shaanxi Lineages, Ritual Centers, and Hoard Families",
+        "caption": "The western centers and elite houses that dominate the archaeological record of the Zhouyuan, Baoji, Fengxi, and the late hoards of the west.",
+        "nodes": [
+          {
+            "id": "zhouyuan",
+            "name": "Zhouyuan",
+            "type": "ritual center",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "feng_hao",
+            "name": "Feng and Hao",
+            "type": "capital center",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "fengchu",
+            "name": "Fengchu complex",
+            "type": "building complex",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "shaochen",
+            "name": "Shaochen complex",
+            "type": "building complex",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "yu_state",
+            "name": "State of Yu",
+            "type": "western state",
+            "display_date": "early-middle Western Zhou"
+          },
+          {
+            "id": "yu_lord",
+            "name": "Lord of Yu",
+            "type": "state lord",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "jingshu_lineage",
+            "name": "Jingshu lineage",
+            "type": "elite lineage",
+            "display_date": "middle-late Western Zhou"
+          },
+          {
+            "id": "zhuangbai_lineage",
+            "name": "Zhuangbai lineage",
+            "type": "elite lineage",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "wei_bo_xing",
+            "name": "Wei Bo Xing",
+            "type": "late noble",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "dongjiacun_lineage",
+            "name": "Dongjiacun lineage",
+            "type": "elite lineage",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "hei_lord",
+            "name": "Lord of Hei",
+            "type": "frontier lord",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "luan_lord",
+            "name": "Lord of Luan",
+            "type": "frontier lord",
+            "display_date": "Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "zhouyuan",
+            "to": "fengchu",
+            "relation": "houses-complex"
+          },
+          {
+            "from": "zhouyuan",
+            "to": "shaochen",
+            "relation": "houses-complex"
+          },
+          {
+            "from": "zhouyuan",
+            "to": "zhuangbai_lineage",
+            "relation": "ritual-center-of"
+          },
+          {
+            "from": "zhouyuan",
+            "to": "dongjiacun_lineage",
+            "relation": "ritual-center-of"
+          },
+          {
+            "from": "zhuangbai_lineage",
+            "to": "wei_bo_xing",
+            "relation": "member-of-lineage"
+          },
+          {
+            "from": "yu_lord",
+            "to": "yu_state",
+            "relation": "lord-of"
+          },
+          {
+            "from": "feng_hao",
+            "to": "jingshu_lineage",
+            "relation": "cemetery-of"
+          },
+          {
+            "from": "hei_lord",
+            "to": "luan_lord",
+            "relation": "neighbouring-lords"
+          },
+          {
+            "from": "zhouyuan",
+            "to": "yu_state",
+            "relation": "western-peer-of"
+          },
+          {
+            "from": "feng_hao",
+            "to": "zhouyuan",
+            "relation": "paired-centers"
+          }
+        ]
+      },
+      {
+        "id": "G6.4",
+        "title": "Eastern and Frontier States in the Archaeological Record",
+        "caption": "The main regional states and sites that carry Zhou material culture beyond Shaanxi: Jin, Chengzhou, Wey, Ying, Lu, Qi, and Yan.",
+        "nodes": [
+          {
+            "id": "tangshu_yu",
+            "name": "Tangshu Yu",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "kanghou",
+            "name": "Kang Hou / Kangshu Feng",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "boqin",
+            "name": "Bo Qin",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "taigong_wang",
+            "name": "Tai Gong Wang",
+            "type": "regional founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "shaogong",
+            "name": "Shao Gong (Shi)",
+            "type": "royal ally",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "yinghou",
+            "name": "Ying Hou",
+            "type": "regional founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "boju",
+            "name": "Bo Ju",
+            "type": "Yan elite",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "chengzhou",
+            "name": "Chengzhou",
+            "type": "capital node",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "luoyang_site",
+            "name": "Luoyang / Chengzhou site",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "houma_site",
+            "name": "Tianma-Qucun / Houma",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "wey_site",
+            "name": "Xunxian-Huixian cemetery",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "ying_site",
+            "name": "Pingdingshan / Ying",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "qufu_site",
+            "name": "Qufu / Lu",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "fangshan_site",
+            "name": "Fangshan / Yan",
+            "type": "site",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "jin_state",
+            "name": "Jin",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "wey_state",
+            "name": "Wey",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "ying_state",
+            "name": "Ying",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "lu_state",
+            "name": "Lu",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "qi_state",
+            "name": "Qi",
+            "type": "state",
+            "display_date": "Western Zhou"
+          },
+          {
+            "id": "yan_state",
+            "name": "Yan",
+            "type": "state",
+            "display_date": "Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "tangshu_yu",
+            "to": "jin_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "kanghou",
+            "to": "wey_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "boqin",
+            "to": "lu_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "taigong_wang",
+            "to": "qi_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "shaogong",
+            "to": "yan_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "yinghou",
+            "to": "ying_state",
+            "relation": "founder-of"
+          },
+          {
+            "from": "chengzhou",
+            "to": "luoyang_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "jin_state",
+            "to": "houma_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "wey_state",
+            "to": "wey_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "ying_state",
+            "to": "ying_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "lu_state",
+            "to": "qufu_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "yan_state",
+            "to": "fangshan_site",
+            "relation": "associated-with"
+          },
+          {
+            "from": "boju",
+            "to": "yan_state",
+            "relation": "elite-of"
+          }
+        ]
+      },
+      {
+        "id": "G6.5",
+        "title": "Late Western Zhou Collapse and the Eastern Transition",
+        "caption": "The late court and the powers that mattered at the end: King Li, Gong He, King Xuan, King You, the Quan Rong, and the eastern supporters of King Ping.",
+        "nodes": [
+          {
+            "id": "liwang",
+            "name": "King Li (Hu)",
+            "type": "king",
+            "display_date": "r. until 842 BC"
+          },
+          {
+            "id": "gonghe",
+            "name": "Lord He of Gong (Gong He)",
+            "type": "regent",
+            "display_date": "842-828 BC"
+          },
+          {
+            "id": "xuanwang",
+            "name": "King Xuan (Jing)",
+            "type": "king",
+            "display_date": "r. 827-782 BC"
+          },
+          {
+            "id": "youwang",
+            "name": "King You",
+            "type": "king",
+            "display_date": "r. 781-771 BC"
+          },
+          {
+            "id": "pingwang",
+            "name": "King Ping (Yi Jiu)",
+            "type": "king",
+            "display_date": "begins 770 BC"
+          },
+          {
+            "id": "wei_bo_xing",
+            "name": "Wei Bo Xing",
+            "type": "late noble",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "jingshu_lineage",
+            "name": "Jingshu lineage",
+            "type": "elite lineage",
+            "display_date": "middle-late Western Zhou"
+          },
+          {
+            "id": "jin_state",
+            "name": "Jin",
+            "type": "supporting state",
+            "display_date": "771-770 BC transition"
+          },
+          {
+            "id": "qin_state",
+            "name": "Qin",
+            "type": "supporting state",
+            "display_date": "771-770 BC transition"
+          },
+          {
+            "id": "ying_state",
+            "name": "Ying",
+            "type": "eastern state",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "guo_state",
+            "name": "Guo",
+            "type": "eastern state",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "quanrong",
+            "name": "Quan Rong",
+            "type": "western enemy",
+            "display_date": "771 BC"
+          }
+        ],
+        "edges": [
+          {
+            "from": "gonghe",
+            "to": "liwang",
+            "relation": "regent-after"
+          },
+          {
+            "from": "liwang",
+            "to": "xuanwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "xuanwang",
+            "to": "youwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "youwang",
+            "to": "pingwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "quanrong",
+            "to": "youwang",
+            "relation": "rival-to"
+          },
+          {
+            "from": "jin_state",
+            "to": "pingwang",
+            "relation": "supports"
+          },
+          {
+            "from": "qin_state",
+            "to": "pingwang",
+            "relation": "supports"
+          },
+          {
+            "from": "wei_bo_xing",
+            "to": "xuanwang",
+            "relation": "late-elite-under"
+          },
+          {
+            "from": "jingshu_lineage",
+            "to": "xuanwang",
+            "relation": "late-elite-under"
+          },
+          {
+            "from": "ying_state",
+            "to": "pingwang",
+            "relation": "survives-into-transition"
+          },
+          {
+            "from": "guo_state",
+            "to": "pingwang",
+            "relation": "survives-into-transition"
+          }
+        ]
+      }
+    ]
+  },
   "stats": {
     "sectionCount": 31,
     "paragraphCount": 176,
     "figureCount": 79,
-    "timelineItemCount": 161
+    "timelineItemCount": 161,
+    "genealogyReferenceCount": 98,
+    "genealogyTreeCount": 5
   }
 };
