@@ -348,18 +348,6 @@
         .filter(Boolean)
     );
 
-    const rawRowAnchor = entry.row_anchor && typeof entry.row_anchor === "object"
-      ? entry.row_anchor
-      : entry.rowAnchor && typeof entry.rowAnchor === "object"
-        ? entry.rowAnchor
-        : {};
-
-    const rowAnchor = Object.fromEntries(
-      Object.entries(rawRowAnchor)
-        .map(([nodeId, anchorId]) => [String(nodeId || "").trim(), String(anchorId || "").trim()])
-        .filter(([nodeId, anchorId]) => nodeId && anchorId)
-    );
-
     return {
       id,
       caption: String(entry.caption || entry.description || "").trim(),
@@ -368,7 +356,6 @@
       downGenerations: Number.isInteger(entry.down_generations) ? entry.down_generations : Number.isInteger(entry.downGenerations) ? entry.downGenerations : null,
       showCollaterals: typeof entry.show_collaterals === "boolean" ? entry.show_collaterals : typeof entry.showCollaterals === "boolean" ? entry.showCollaterals : null,
       showAssociates: typeof entry.show_associates === "boolean" ? entry.show_associates : typeof entry.showAssociates === "boolean" ? entry.showAssociates : null,
-      rowAnchor,
       _order: index,
     };
   }
@@ -404,6 +391,20 @@
     };
   }
 
+  function dedupeGenealogyEdges(edges) {
+    const seen = new Set();
+
+    return edges.filter((edge) => {
+      if (!edge) return false;
+      const relationKey = String(edge.relation || "related-to").trim().toLowerCase();
+      const pair = [edge.from, edge.to].sort().join("::");
+      const key = `${pair}::${relationKey}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function normalizeGenealogyData(value) {
     const rawTrees = Array.isArray(value?.trees)
       ? value.trees
@@ -423,9 +424,11 @@
           .filter(Boolean);
         const nodeMap = new Map(nodes.map((node) => [node.id, node]));
 
-        const edges = normalizeMediaList(tree.edges)
-          .map((edge, edgeIndex) => normalizeGenealogyEdge(edge, edgeIndex))
-          .filter((edge) => edge && nodeMap.has(edge.from) && nodeMap.has(edge.to));
+        const edges = dedupeGenealogyEdges(
+          normalizeMediaList(tree.edges)
+            .map((edge, edgeIndex) => normalizeGenealogyEdge(edge, edgeIndex))
+            .filter((edge) => edge && nodeMap.has(edge.from) && nodeMap.has(edge.to))
+        );
 
         return {
           id,
@@ -941,10 +944,7 @@
     return entries.filter((item) => {
       if (!item || !item.id) return false;
       const activeKey = Array.isArray(item.active) ? item.active.join("|") : "";
-      const rowAnchorKey = item.rowAnchor && typeof item.rowAnchor === "object"
-        ? Object.entries(item.rowAnchor).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `${k}:${v}`).join("|")
-        : "";
-      const key = `${item.id}::${activeKey}::${item.caption}::${rowAnchorKey}`;
+      const key = `${item.id}::${activeKey}::${item.caption}`;
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -1222,11 +1222,56 @@
 
   function isAssociateRelation(relation) {
     const value = normalizeRelationName(relation);
-    return ["regent-of", "minister-to", "counselor-to", "general-to", "advisor-to", "guardian-of", "consort-of", "rival-to", "ally-of"].includes(value);
+    return ["regent-of", "minister-to", "counselor-to", "general-to", "advisor-to", "guardian-of", "consort-of", "rival-to", "ally-of", "supporter-of", "commander-for", "appoints", "associated-with"].includes(value);
   }
 
-  function getNodeSortWeight(node, activeSet) {
+  function classifyNodeRole(nodeId, activeSet, nearSet, lineageSet) {
+    if (activeSet.has(nodeId)) return "active";
+    if (nearSet.has(nodeId)) return lineageSet.has(nodeId) ? "lineage-near" : "near";
+    if (lineageSet.has(nodeId)) return "lineage";
+    return "context";
+  }
+
+  function getVisibleGenealogyEdges(edges, activeSet, lineageNodes) {
+    return edges
+      .map((edge) => {
+        const relation = normalizeRelationName(edge.relation);
+        const fromActive = activeSet.has(edge.from);
+        const toActive = activeSet.has(edge.to);
+        const fromLineage = lineageNodes.has(edge.from);
+        const toLineage = lineageNodes.has(edge.to);
+        let priority = 0;
+
+        if (fromActive && toActive) {
+          priority = 5;
+        } else if ((fromActive || toActive) && (isForwardFamilyRelation(relation) || relation === "adopted-by")) {
+          priority = 4;
+        } else if ((fromActive || toActive) && isAssociateRelation(relation)) {
+          priority = 4;
+        } else if ((fromActive || toActive) && isSameGenerationRelation(relation)) {
+          priority = 3;
+        } else if (fromActive || toActive) {
+          priority = 2;
+        } else if ((isForwardFamilyRelation(relation) || relation === "adopted-by") && fromLineage && toLineage) {
+          priority = 2;
+        }
+
+        return priority > 0 ? { ...edge, priority } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.priority - a.priority || a.relation.localeCompare(b.relation));
+  }
+
+  function getNodeSortWeight(node, activeSet, roleMap = new Map()) {
     const type = String(node?.type || "").toLowerCase();
+    const role = roleMap.get(node?.id) || "context";
+    const roleWeights = {
+      active: -180,
+      "lineage-near": -120,
+      near: -95,
+      lineage: -60,
+      context: 0,
+    };
     const activeBonus = activeSet.has(node?.id) ? -100 : 0;
     const typeWeights = {
       ruler: 0,
@@ -1244,12 +1289,12 @@
     };
 
     const firstTypeToken = type.split(/\s+/)[0];
-    return activeBonus + (typeWeights[firstTypeToken] ?? 20);
+    return (roleWeights[role] ?? 0) + activeBonus + (typeWeights[firstTypeToken] ?? 20);
   }
 
-  function sortGenealogyNodes(nodes, activeSet) {
+  function sortGenealogyNodes(nodes, activeSet, roleMap = new Map()) {
     return [...nodes].sort((a, b) => {
-      const weightDelta = getNodeSortWeight(a, activeSet) - getNodeSortWeight(b, activeSet);
+      const weightDelta = getNodeSortWeight(a, activeSet, roleMap) - getNodeSortWeight(b, activeSet, roleMap);
       if (weightDelta !== 0) return weightDelta;
       return a.name.localeCompare(b.name);
     });
@@ -1261,6 +1306,7 @@
     const activeIds = uniqueStrings(ref.active.filter((id) => tree.nodeMap.has(id)));
     if (activeIds.length === 0) return null;
 
+    const activeSet = new Set(activeIds);
     const upGenerations = Number.isInteger(ref.upGenerations) ? Math.max(0, ref.upGenerations) : 2;
     const downGenerations = Number.isInteger(ref.downGenerations) ? Math.max(0, ref.downGenerations) : 0;
     const showCollaterals = typeof ref.showCollaterals === "boolean" ? ref.showCollaterals : true;
@@ -1277,6 +1323,7 @@
     });
 
     const selected = new Set(activeIds);
+    const lineageNodes = new Set(activeIds);
     const layerMap = new Map(activeIds.map((id) => [id, 0]));
 
     let frontier = [...activeIds];
@@ -1286,6 +1333,7 @@
         (incoming.get(nodeId) || []).forEach((edge) => {
           if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.from)) {
             selected.add(edge.from);
+            lineageNodes.add(edge.from);
             layerMap.set(edge.from, -depth);
             next.push(edge.from);
           }
@@ -1293,6 +1341,7 @@
         tree.edges.forEach((edge) => {
           if (normalizeRelationName(edge.relation) === "adopted-by" && edge.from === nodeId && !selected.has(edge.to)) {
             selected.add(edge.to);
+            lineageNodes.add(edge.to);
             layerMap.set(edge.to, -depth);
             next.push(edge.to);
           }
@@ -1308,6 +1357,7 @@
         (outgoing.get(nodeId) || []).forEach((edge) => {
           if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.to)) {
             selected.add(edge.to);
+            lineageNodes.add(edge.to);
             layerMap.set(edge.to, depth);
             next.push(edge.to);
           }
@@ -1358,28 +1408,24 @@
       });
     }
 
-    const rowAnchorEntries = ref.rowAnchor && typeof ref.rowAnchor === "object"
-      ? Object.entries(ref.rowAnchor)
-      : [];
+    const edges = tree.edges.filter((edge) => selected.has(edge.from) && selected.has(edge.to));
+    const visibleEdges = getVisibleGenealogyEdges(edges, activeSet, lineageNodes);
+    const nearSet = new Set(
+      visibleEdges
+        .filter((edge) => activeSet.has(edge.from) || activeSet.has(edge.to))
+        .flatMap((edge) => [edge.from, edge.to])
+        .filter((id) => !activeSet.has(id))
+    );
 
-    rowAnchorEntries.forEach(([nodeId, anchorId]) => {
-      if (!tree.nodeMap.has(nodeId) || !tree.nodeMap.has(anchorId)) return;
-      if (!selected.has(anchorId)) {
-        selected.add(anchorId);
-      }
-      if (!selected.has(nodeId)) {
-        selected.add(nodeId);
-      }
-      const anchorLayer = layerMap.get(anchorId) ?? 0;
-      layerMap.set(nodeId, anchorLayer);
-    });
+    const nodeRoleMap = new Map(
+      [...selected].map((id) => [id, classifyNodeRole(id, activeSet, nearSet, lineageNodes)])
+    );
 
     const nodes = sortGenealogyNodes(
       [...selected].map((id) => tree.nodeMap.get(id)).filter(Boolean),
-      new Set(activeIds)
+      activeSet,
+      nodeRoleMap
     );
-
-    const edges = tree.edges.filter((edge) => selected.has(edge.from) && selected.has(edge.to));
 
     const rows = new Map();
     nodes.forEach((node) => {
@@ -1393,7 +1439,7 @@
       .map(([layer, rowNodes]) => ({
         layer,
         label: layer < 0 ? (layer === -1 ? "Above" : "Earlier line") : layer > 0 ? "Below" : "Active field",
-        nodes: sortGenealogyNodes(rowNodes, new Set(activeIds)),
+        nodes: sortGenealogyNodes(rowNodes, activeSet, nodeRoleMap),
       }));
 
     return {
@@ -1401,8 +1447,11 @@
       tree,
       nodes,
       edges,
+      visibleEdges,
       rows: sortedRows,
-      activeSet: new Set(activeIds),
+      activeSet,
+      layerMap,
+      nodeRoleMap,
     };
   }
 
@@ -1420,11 +1469,13 @@
       .trim();
   }
 
-  function createGenealogyNode(node, isActive) {
+  function createGenealogyNode(node, isActive, role = "context") {
     const card = document.createElement("div");
     card.className = "genealogy-node";
     if (isActive) card.classList.add("is-active");
+    card.classList.add(`is-${role}`);
     card.dataset.nodeId = node.id;
+    card.dataset.role = role;
 
     const name = document.createElement("div");
     name.className = "genealogy-node-name";
@@ -1504,7 +1555,8 @@
       const nodesWrap = document.createElement("div");
       nodesWrap.className = "genealogy-row-nodes";
       row.nodes.forEach((node) => {
-        nodesWrap.appendChild(createGenealogyNode(node, context.activeSet.has(node.id)));
+        const role = context.nodeRoleMap.get(node.id) || "context";
+        nodesWrap.appendChild(createGenealogyNode(node, context.activeSet.has(node.id), role));
       });
       rowEl.appendChild(nodesWrap);
       rowsEl.appendChild(rowEl);
@@ -1513,7 +1565,7 @@
     canvas.appendChild(rowsEl);
     article.appendChild(canvas);
 
-    const ties = context.edges
+    const ties = context.visibleEdges
       .filter((edge) => context.activeSet.has(edge.from) || context.activeSet.has(edge.to))
       .slice(0, 4);
 
@@ -1535,7 +1587,8 @@
       }
     }
 
-    article._genealogyEdges = context.edges;
+    article._genealogyEdges = context.visibleEdges;
+    article._genealogyLayerMap = context.layerMap;
     return article;
   }
 
@@ -1551,6 +1604,7 @@
     const canvas = treeEl.querySelector(".genealogy-canvas");
     const svg = treeEl.querySelector(".genealogy-links");
     const edges = Array.isArray(treeEl._genealogyEdges) ? treeEl._genealogyEdges : [];
+    const layerMap = treeEl._genealogyLayerMap instanceof Map ? treeEl._genealogyLayerMap : new Map();
     if (!canvas || !svg) return;
 
     const canvasRect = canvas.getBoundingClientRect();
@@ -1569,20 +1623,41 @@
 
       const fromRect = fromEl.getBoundingClientRect();
       const toRect = toEl.getBoundingClientRect();
+      const fromLayer = layerMap.get(edge.from) ?? 0;
+      const toLayer = layerMap.get(edge.to) ?? 0;
 
-      const x1 = fromRect.left - canvasRect.left + fromRect.width / 2;
-      const y1 = fromRect.top - canvasRect.top + fromRect.height / 2;
-      const x2 = toRect.left - canvasRect.left + toRect.width / 2;
-      const y2 = toRect.top - canvasRect.top + toRect.height / 2;
-      const deltaY = y2 - y1;
-      const bend = Math.max(24, Math.abs(deltaY) * 0.38);
+      let x1;
+      let y1;
+      let x2;
+      let y2;
+      let pathData;
+
+      if (fromLayer === toLayer) {
+        const fromBeforeTo = fromRect.left <= toRect.left;
+        x1 = fromBeforeTo ? fromRect.right - canvasRect.left : fromRect.left - canvasRect.left;
+        y1 = fromRect.top - canvasRect.top + fromRect.height / 2;
+        x2 = fromBeforeTo ? toRect.left - canvasRect.left : toRect.right - canvasRect.left;
+        y2 = toRect.top - canvasRect.top + toRect.height / 2;
+        const curve = Math.max(26, Math.min(90, Math.abs(x2 - x1) * 0.28));
+        const c1x = fromBeforeTo ? x1 + curve : x1 - curve;
+        const c2x = fromBeforeTo ? x2 - curve : x2 + curve;
+        pathData = `M ${x1} ${y1} C ${c1x} ${y1}, ${c2x} ${y2}, ${x2} ${y2}`;
+      } else {
+        const fromAbove = fromLayer < toLayer;
+        x1 = fromRect.left - canvasRect.left + fromRect.width / 2;
+        y1 = fromAbove ? fromRect.bottom - canvasRect.top : fromRect.top - canvasRect.top;
+        x2 = toRect.left - canvasRect.left + toRect.width / 2;
+        y2 = fromAbove ? toRect.top - canvasRect.top : toRect.bottom - canvasRect.top;
+        const deltaY = y2 - y1;
+        const bend = Math.max(24, Math.min(64, Math.abs(deltaY) * 0.44));
+        const c1y = y1 + Math.sign(deltaY || 1) * bend;
+        const c2y = y2 - Math.sign(deltaY || 1) * bend;
+        pathData = `M ${x1} ${y1} C ${x1} ${c1y}, ${x2} ${c2y}, ${x2} ${y2}`;
+      }
 
       const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute(
-        "d",
-        `M ${x1} ${y1} C ${x1} ${y1 + Math.sign(deltaY || 1) * bend}, ${x2} ${y2 - Math.sign(deltaY || 1) * bend}, ${x2} ${y2}`
-      );
-      path.setAttribute("class", "genealogy-link");
+      path.setAttribute("d", pathData);
+      path.setAttribute("class", `genealogy-link priority-${edge.priority || 1}`);
       svg.appendChild(path);
     });
   }
