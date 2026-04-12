@@ -336,6 +336,7 @@
     return Array.isArray(value) ? value.filter(Boolean) : [];
   }
 
+  
   function normalizeGenealogyRef(entry, index) {
     if (!entry || typeof entry !== "object") return null;
 
@@ -404,20 +405,6 @@
     };
   }
 
-  function dedupeGenealogyEdges(edges) {
-    const seen = new Set();
-
-    return edges.filter((edge) => {
-      if (!edge) return false;
-      const relationKey = String(edge.relation || "related-to").trim().toLowerCase();
-      const pair = [edge.from, edge.to].sort().join("::");
-      const key = `${pair}::${relationKey}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }
-
   function normalizeGenealogyData(value) {
     const rawTrees = Array.isArray(value?.trees)
       ? value.trees
@@ -437,11 +424,9 @@
           .filter(Boolean);
         const nodeMap = new Map(nodes.map((node) => [node.id, node]));
 
-        const edges = dedupeGenealogyEdges(
-          normalizeMediaList(tree.edges)
-            .map((edge, edgeIndex) => normalizeGenealogyEdge(edge, edgeIndex))
-            .filter((edge) => edge && nodeMap.has(edge.from) && nodeMap.has(edge.to))
-        );
+        const edges = normalizeMediaList(tree.edges)
+          .map((edge, edgeIndex) => normalizeGenealogyEdge(edge, edgeIndex))
+          .filter((edge) => edge && nodeMap.has(edge.from) && nodeMap.has(edge.to));
 
         return {
           id,
@@ -951,6 +936,7 @@
     );
   }
 
+  
   function dedupeGenealogyRefs(entries) {
     const seen = new Set();
 
@@ -1241,54 +1227,18 @@
 
   function isAssociateRelation(relation) {
     const value = normalizeRelationName(relation);
-    return ["regent-of", "minister-to", "counselor-to", "general-to", "advisor-to", "guardian-of", "consort-of", "rival-to", "ally-of", "supporter-of", "commander-for", "appoints", "associated-with"].includes(value);
+    return ["regent-of", "minister-to", "counselor-to", "general-to", "advisor-to", "guardian-of", "consort-of", "rival-to", "ally-of"].includes(value);
   }
 
-  function classifyNodeRole(nodeId, activeSet, nearSet, lineageSet) {
-    if (activeSet.has(nodeId)) return "active";
-    if (nearSet.has(nodeId)) return lineageSet.has(nodeId) ? "lineage-near" : "near";
-    if (lineageSet.has(nodeId)) return "lineage";
-    return "context";
-  }
-
-  function getVisibleGenealogyEdges(edges, activeSet, lineageNodes) {
-    return edges
-      .map((edge) => {
-        const relation = normalizeRelationName(edge.relation);
-        const fromActive = activeSet.has(edge.from);
-        const toActive = activeSet.has(edge.to);
-        const fromLineage = lineageNodes.has(edge.from);
-        const toLineage = lineageNodes.has(edge.to);
-        let priority = 0;
-
-        if (fromActive && toActive) {
-          priority = 5;
-        } else if ((fromActive || toActive) && (isForwardFamilyRelation(relation) || relation === "adopted-by")) {
-          priority = 4;
-        } else if ((fromActive || toActive) && isAssociateRelation(relation)) {
-          priority = 4;
-        } else if ((fromActive || toActive) && isSameGenerationRelation(relation)) {
-          priority = 3;
-        } else if (fromActive || toActive) {
-          priority = 2;
-        } else if ((isForwardFamilyRelation(relation) || relation === "adopted-by") && fromLineage && toLineage) {
-          priority = 2;
-        }
-
-        return priority > 0 ? { ...edge, priority } : null;
-      })
-      .filter(Boolean)
-      .sort((a, b) => b.priority - a.priority || a.relation.localeCompare(b.relation));
-  }
-
+  
   function getNodeSortWeight(node, activeSet, roleMap = new Map()) {
     const type = String(node?.type || "").toLowerCase();
     const role = roleMap.get(node?.id) || "context";
     const roleWeights = {
       active: -180,
-      "lineage-near": -120,
-      near: -95,
-      lineage: -60,
+      trunk: -150,
+      lineage: -95,
+      near: -65,
       context: 0,
     };
     const activeBonus = activeSet.has(node?.id) ? -100 : 0;
@@ -1305,6 +1255,7 @@
       counselor: 6,
       general: 7,
       political: 8,
+      branch: 9,
     };
 
     const firstTypeToken = type.split(/\s+/)[0];
@@ -1319,6 +1270,16 @@
     });
   }
 
+  function isLineageRelation(relation) {
+    const value = normalizeRelationName(relation);
+    return isForwardFamilyRelation(value) || value === "adopted-by";
+  }
+
+  function isRulerNode(node) {
+    const type = String(node?.type || "").toLowerCase();
+    return /\b(king|emperor|ruler|heir|crown)\b/.test(type);
+  }
+
   function buildGenealogyContext(tree, ref) {
     if (!tree) return null;
 
@@ -1330,163 +1291,333 @@
     const downGenerations = Number.isInteger(ref.downGenerations) ? Math.max(0, ref.downGenerations) : 0;
     const showCollaterals = typeof ref.showCollaterals === "boolean" ? ref.showCollaterals : true;
     const showAssociates = typeof ref.showAssociates === "boolean" ? ref.showAssociates : true;
+    const rowAnchor = ref.rowAnchor && typeof ref.rowAnchor === "object" ? ref.rowAnchor : {};
 
-    const incoming = new Map();
-    const outgoing = new Map();
+    const lineageOutgoing = new Map();
+    const lineageIncoming = new Map();
+    const adjacency = new Map();
+
+    function registerEdge(map, key, edge) {
+      if (!map.has(key)) map.set(key, []);
+      map.get(key).push(edge);
+    }
 
     tree.edges.forEach((edge) => {
-      if (!outgoing.has(edge.from)) outgoing.set(edge.from, []);
-      if (!incoming.has(edge.to)) incoming.set(edge.to, []);
-      outgoing.get(edge.from).push(edge);
-      incoming.get(edge.to).push(edge);
+      registerEdge(adjacency, edge.from, edge);
+      registerEdge(adjacency, edge.to, edge);
+      if (isLineageRelation(edge.relation)) {
+        registerEdge(lineageOutgoing, edge.from, edge);
+        registerEdge(lineageIncoming, edge.to, edge);
+      }
     });
 
-    const selected = new Set(activeIds);
-    const lineageNodes = new Set(activeIds);
-    const layerMap = new Map(activeIds.map((id) => [id, 0]));
-
-    let frontier = [...activeIds];
-    for (let depth = 1; depth <= upGenerations; depth += 1) {
-      const next = [];
-      frontier.forEach((nodeId) => {
-        (incoming.get(nodeId) || []).forEach((edge) => {
-          if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.from)) {
-            selected.add(edge.from);
-            lineageNodes.add(edge.from);
-            layerMap.set(edge.from, -depth);
-            next.push(edge.from);
-          }
-        });
-        tree.edges.forEach((edge) => {
-          if (normalizeRelationName(edge.relation) === "adopted-by" && edge.from === nodeId && !selected.has(edge.to)) {
-            selected.add(edge.to);
-            lineageNodes.add(edge.to);
-            layerMap.set(edge.to, -depth);
-            next.push(edge.to);
-          }
-        });
-      });
-      frontier = next;
+    function adjacentRulers(nodeId) {
+      return uniqueStrings(
+        (adjacency.get(nodeId) || [])
+          .map((edge) => (edge.from === nodeId ? edge.to : edge.from))
+          .filter((otherId) => isRulerNode(tree.nodeMap.get(otherId)))
+      );
     }
 
-    frontier = [...activeIds];
-    for (let depth = 1; depth <= downGenerations; depth += 1) {
-      const next = [];
-      frontier.forEach((nodeId) => {
-        (outgoing.get(nodeId) || []).forEach((edge) => {
-          if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.to)) {
-            selected.add(edge.to);
-            lineageNodes.add(edge.to);
-            layerMap.set(edge.to, depth);
-            next.push(edge.to);
-          }
-        });
-      });
-      frontier = next;
+    const activeRulers = activeIds.filter((id) => isRulerNode(tree.nodeMap.get(id)));
+    const explicitAnchorRulers = uniqueStrings(
+      Object.values(rowAnchor).filter((id) => tree.nodeMap.has(id) && isRulerNode(tree.nodeMap.get(id)))
+    );
+    const inferredAnchorRulers = uniqueStrings(activeIds.flatMap((id) => adjacentRulers(id)));
+
+    let trunkSeeds = uniqueStrings([...activeRulers, ...explicitAnchorRulers, ...inferredAnchorRulers]);
+    if (trunkSeeds.length === 0) {
+      trunkSeeds = [activeIds[0]];
     }
 
-    if (showCollaterals) {
-      [...selected].forEach((nodeId) => {
-        const baseLayer = layerMap.get(nodeId) ?? 0;
+    const trunkSet = new Set();
 
-        (incoming.get(nodeId) || []).forEach((edge) => {
-          if (!isForwardFamilyRelation(edge.relation)) return;
-          (outgoing.get(edge.from) || []).forEach((siblingEdge) => {
-            if (!isForwardFamilyRelation(siblingEdge.relation) || siblingEdge.to === nodeId) return;
-            if (!selected.has(siblingEdge.to)) {
-              selected.add(siblingEdge.to);
-              layerMap.set(siblingEdge.to, baseLayer);
+    function addAncestors(startId, depthLimit) {
+      let frontier = [startId];
+      for (let depth = 0; depth < depthLimit; depth += 1) {
+        const next = [];
+        frontier.forEach((nodeId) => {
+          (lineageIncoming.get(nodeId) || []).forEach((edge) => {
+            if (!trunkSet.has(edge.from)) {
+              trunkSet.add(edge.from);
+              next.push(edge.from);
             }
           });
         });
+        frontier = next;
+        if (frontier.length === 0) break;
+      }
+    }
 
-        tree.edges.forEach((edge) => {
-          if ((edge.from === nodeId || edge.to === nodeId) && isSameGenerationRelation(edge.relation)) {
-            const siblingId = edge.from === nodeId ? edge.to : edge.from;
-            if (!selected.has(siblingId)) {
-              selected.add(siblingId);
-              layerMap.set(siblingId, baseLayer);
+    function addDescendants(startId, depthLimit) {
+      let frontier = [startId];
+      for (let depth = 0; depth < depthLimit; depth += 1) {
+        const next = [];
+        frontier.forEach((nodeId) => {
+          (lineageOutgoing.get(nodeId) || []).forEach((edge) => {
+            if (!trunkSet.has(edge.to)) {
+              trunkSet.add(edge.to);
+              next.push(edge.to);
             }
-          }
+          });
+        });
+        frontier = next;
+        if (frontier.length === 0) break;
+      }
+    }
+
+    trunkSeeds.forEach((seedId) => {
+      trunkSet.add(seedId);
+      addAncestors(seedId, upGenerations);
+      addDescendants(seedId, downGenerations);
+    });
+
+    if (trunkSet.size === 0) {
+      activeIds.forEach((id) => trunkSet.add(id));
+    }
+
+    const depthMap = new Map();
+    const lineageRoots = [...trunkSet].filter(
+      (id) => !(lineageIncoming.get(id) || []).some((edge) => trunkSet.has(edge.from))
+    );
+    const depthQueue = [];
+    (lineageRoots.length > 0 ? lineageRoots : [...trunkSet]).forEach((id) => {
+      if (!depthMap.has(id)) {
+        depthMap.set(id, 0);
+        depthQueue.push(id);
+      }
+    });
+
+    while (depthQueue.length > 0) {
+      const nodeId = depthQueue.shift();
+      const currentDepth = depthMap.get(nodeId) ?? 0;
+      (lineageOutgoing.get(nodeId) || []).forEach((edge) => {
+        if (!trunkSet.has(edge.to)) return;
+        const nextDepth = currentDepth + 1;
+        if (!depthMap.has(edge.to) || nextDepth > depthMap.get(edge.to)) {
+          depthMap.set(edge.to, nextDepth);
+          depthQueue.push(edge.to);
+        }
+      });
+    }
+
+    function pickFocusRuler() {
+      const ranked = (ids) =>
+        ids
+          .filter((id) => trunkSet.has(id))
+          .sort((a, b) => (depthMap.get(b) ?? 0) - (depthMap.get(a) ?? 0));
+
+      const activeRanked = ranked(activeRulers);
+      if (activeRanked.length > 0) return activeRanked[0];
+
+      const explicitRanked = ranked(explicitAnchorRulers);
+      if (explicitRanked.length > 0) return explicitRanked[0];
+
+      const seedRanked = ranked(trunkSeeds);
+      if (seedRanked.length > 0) return seedRanked[0];
+
+      return [...trunkSet].sort((a, b) => (depthMap.get(b) ?? 0) - (depthMap.get(a) ?? 0))[0] || activeIds[0];
+    }
+
+    const focusRulerId = pickFocusRuler();
+    const focusDepth = depthMap.get(focusRulerId) ?? 0;
+
+    const selected = new Set(trunkSet);
+    const anchorMap = new Map();
+    const rowMap = new Map();
+
+    [...trunkSet].forEach((id) => {
+      anchorMap.set(id, id);
+      rowMap.set(id, (depthMap.get(id) ?? 0) - focusDepth);
+    });
+
+    function rankAnchorCandidate(candidateId) {
+      return [
+        activeSet.has(candidateId) ? 0 : 1,
+        Math.abs((rowMap.get(candidateId) ?? 0)),
+        -(depthMap.get(candidateId) ?? 0),
+        candidateId,
+      ];
+    }
+
+    function compareTuple(a, b) {
+      for (let i = 0; i < Math.max(a.length, b.length); i += 1) {
+        if (a[i] < b[i]) return -1;
+        if (a[i] > b[i]) return 1;
+      }
+      return 0;
+    }
+
+    function resolveAnchorId(nodeId, preferredAnchorId = "") {
+      if (preferredAnchorId && rowMap.has(preferredAnchorId)) return preferredAnchorId;
+      if (rowAnchor[nodeId] && rowMap.has(rowAnchor[nodeId])) return rowAnchor[nodeId];
+
+      const candidates = [];
+      (adjacency.get(nodeId) || []).forEach((edge) => {
+        const otherId = edge.from === nodeId ? edge.to : edge.from;
+        if (rowMap.has(otherId)) {
+          candidates.push(otherId);
+        } else if (anchorMap.has(otherId) && rowMap.has(anchorMap.get(otherId))) {
+          candidates.push(anchorMap.get(otherId));
+        }
+      });
+
+      if (candidates.length > 0) {
+        return uniqueStrings(candidates).sort((a, b) => compareTuple(rankAnchorCandidate(a), rankAnchorCandidate(b)))[0];
+      }
+
+      return focusRulerId;
+    }
+
+    function includeSatellite(nodeId, preferredAnchorId = "") {
+      if (!tree.nodeMap.has(nodeId)) return;
+      const anchorId = resolveAnchorId(nodeId, preferredAnchorId);
+      selected.add(nodeId);
+      anchorMap.set(nodeId, anchorId);
+      rowMap.set(nodeId, rowMap.get(anchorId) ?? 0);
+    }
+
+    Object.entries(rowAnchor).forEach(([nodeId, anchorId]) => {
+      if (!tree.nodeMap.has(nodeId)) return;
+      includeSatellite(nodeId, anchorId);
+    });
+
+    activeIds.forEach((nodeId) => {
+      if (!selected.has(nodeId)) {
+        includeSatellite(nodeId);
+      }
+    });
+
+    const trunkBasis = [...trunkSet];
+
+    if (showCollaterals) {
+      trunkBasis.forEach((nodeId) => {
+        (lineageIncoming.get(nodeId) || []).forEach((edge) => {
+          (lineageOutgoing.get(edge.from) || []).forEach((siblingEdge) => {
+            if (siblingEdge.to === nodeId || trunkSet.has(siblingEdge.to)) return;
+            includeSatellite(siblingEdge.to, nodeId);
+          });
+        });
+
+        (adjacency.get(nodeId) || []).forEach((edge) => {
+          if (!isSameGenerationRelation(edge.relation)) return;
+          const otherId = edge.from === nodeId ? edge.to : edge.from;
+          if (trunkSet.has(otherId)) return;
+          includeSatellite(otherId, nodeId);
         });
       });
     }
 
     if (showAssociates) {
-      [...selected].forEach((nodeId) => {
-        const baseLayer = layerMap.get(nodeId) ?? 0;
-        tree.edges.forEach((edge) => {
-          if ((edge.from === nodeId || edge.to === nodeId) && isAssociateRelation(edge.relation)) {
-            const associateId = edge.from === nodeId ? edge.to : edge.from;
-            if (!selected.has(associateId)) {
-              selected.add(associateId);
-              layerMap.set(associateId, baseLayer);
-            }
-          }
+      [...new Set([...trunkBasis, ...activeIds])].forEach((nodeId) => {
+        const anchorId = trunkSet.has(nodeId) ? nodeId : resolveAnchorId(nodeId);
+        (adjacency.get(nodeId) || []).forEach((edge) => {
+          if (!isAssociateRelation(edge.relation)) return;
+          const otherId = edge.from === nodeId ? edge.to : edge.from;
+          if (trunkSet.has(otherId)) return;
+          includeSatellite(otherId, anchorId);
         });
       });
     }
 
-    const rowAnchorEntries = ref.rowAnchor && typeof ref.rowAnchor === "object"
-      ? Object.entries(ref.rowAnchor)
-      : [];
+    const nodeRoleMap = new Map();
+    const activeAnchorIds = new Set(
+      activeRulers.length > 0 ? activeRulers.filter((id) => rowMap.has(id)) : [focusRulerId]
+    );
 
-    rowAnchorEntries.forEach(([nodeId, anchorId]) => {
-      if (!tree.nodeMap.has(nodeId) || !tree.nodeMap.has(anchorId)) return;
-      if (!selected.has(anchorId)) {
-        selected.add(anchorId);
+    [...selected].forEach((id) => {
+      if (activeSet.has(id)) {
+        nodeRoleMap.set(id, "active");
+      } else if (trunkSet.has(id)) {
+        nodeRoleMap.set(id, "trunk");
+      } else if (activeAnchorIds.has(anchorMap.get(id))) {
+        nodeRoleMap.set(id, "near");
+      } else {
+        nodeRoleMap.set(id, "context");
       }
-      if (!selected.has(nodeId)) {
-        selected.add(nodeId);
-      }
-      const anchorLayer = layerMap.get(anchorId) ?? 0;
-      layerMap.set(nodeId, anchorLayer);
     });
 
-    const edges = tree.edges.filter((edge) => selected.has(edge.from) && selected.has(edge.to));
-    const visibleEdges = getVisibleGenealogyEdges(edges, activeSet, lineageNodes);
-    const nearSet = new Set(
-      visibleEdges
-        .filter((edge) => activeSet.has(edge.from) || activeSet.has(edge.to))
-        .flatMap((edge) => [edge.from, edge.to])
-        .filter((id) => !activeSet.has(id))
-    );
-
-    const nodeRoleMap = new Map(
-      [...selected].map((id) => [id, classifyNodeRole(id, activeSet, nearSet, lineageNodes)])
-    );
-
-    const nodes = sortGenealogyNodes(
+    const allNodes = sortGenealogyNodes(
       [...selected].map((id) => tree.nodeMap.get(id)).filter(Boolean),
       activeSet,
       nodeRoleMap
     );
 
-    const rows = new Map();
-    nodes.forEach((node) => {
-      const layer = layerMap.get(node.id) ?? 0;
-      if (!rows.has(layer)) rows.set(layer, []);
-      rows.get(layer).push(node);
+    const rowBuckets = new Map();
+    function getOrCreateRow(layer) {
+      if (!rowBuckets.has(layer)) {
+        rowBuckets.set(layer, { layer, trunkNode: null, satellites: [] });
+      }
+      return rowBuckets.get(layer);
+    }
+
+    const trunkNodesSorted = [...trunkSet]
+      .map((id) => tree.nodeMap.get(id))
+      .filter(Boolean)
+      .sort((a, b) => (depthMap.get(a.id) ?? 0) - (depthMap.get(b.id) ?? 0));
+
+    trunkNodesSorted.forEach((node) => {
+      const layer = rowMap.get(node.id) ?? 0;
+      const row = getOrCreateRow(layer);
+      if (!row.trunkNode || isRulerNode(node)) {
+        if (row.trunkNode) row.satellites.push(row.trunkNode);
+        row.trunkNode = node;
+      } else {
+        row.satellites.push(node);
+      }
     });
 
-    const sortedRows = [...rows.entries()]
-      .sort((a, b) => a[0] - b[0])
-      .map(([layer, rowNodes]) => ({
-        layer,
-        label: layer < 0 ? (layer === -1 ? "Above" : "Earlier line") : layer > 0 ? "Below" : "Active field",
-        nodes: sortGenealogyNodes(rowNodes, activeSet, nodeRoleMap),
-      }));
+    allNodes.forEach((node) => {
+      if (trunkSet.has(node.id)) return;
+      const layer = rowMap.get(node.id) ?? 0;
+      const row = getOrCreateRow(layer);
+      row.satellites.push(node);
+    });
+
+    const visibleEdges = tree.edges
+      .filter((edge) => isLineageRelation(edge.relation) && trunkSet.has(edge.from) && trunkSet.has(edge.to))
+      .map((edge) => ({
+        ...edge,
+        priority: activeSet.has(edge.from) || activeSet.has(edge.to) ? 5 : 4,
+      }))
+      .sort((a, b) => (depthMap.get(a.from) ?? 0) - (depthMap.get(b.from) ?? 0));
+
+    const sortedRows = [...rowBuckets.values()]
+      .sort((a, b) => a.layer - b.layer)
+      .map((row) => {
+        const satellites = sortGenealogyNodes(row.satellites, activeSet, nodeRoleMap);
+        const leftNodes = [];
+        const rightNodes = [];
+        satellites.forEach((node, index) => {
+          if (index % 2 === 0) {
+            leftNodes.push(node);
+          } else {
+            rightNodes.push(node);
+          }
+        });
+        leftNodes.reverse();
+
+        return {
+          layer: row.layer,
+          label: row.layer < 0 ? (row.layer === -1 ? "Above" : "Earlier line") : row.layer > 0 ? "Below" : "Active field",
+          trunkNode: row.trunkNode,
+          leftNodes,
+          rightNodes,
+        };
+      });
 
     return {
       ref,
       tree,
-      nodes,
-      edges,
+      nodes: allNodes,
+      edges: visibleEdges,
       visibleEdges,
       rows: sortedRows,
       activeSet,
-      layerMap,
+      layerMap: rowMap,
       nodeRoleMap,
+      trunkSet,
+      focusRulerId,
     };
   }
 
@@ -1504,10 +1635,12 @@
       .trim();
   }
 
-  function createGenealogyNode(node, isActive, role = "context") {
+  
+  function createGenealogyNode(node, isActive, role = "context", isTrunk = false) {
     const card = document.createElement("div");
     card.className = "genealogy-node";
     if (isActive) card.classList.add("is-active");
+    if (isTrunk) card.classList.add("is-trunk");
     card.classList.add(`is-${role}`);
     card.dataset.nodeId = node.id;
     card.dataset.role = role;
@@ -1542,6 +1675,7 @@
     return card;
   }
 
+  
   function renderGenealogyContext(context, index) {
     const article = document.createElement("article");
     article.className = "genealogy-tree";
@@ -1587,51 +1721,49 @@
         rowEl.appendChild(rowLabel);
       }
 
-      const nodesWrap = document.createElement("div");
-      nodesWrap.className = "genealogy-row-nodes";
-      row.nodes.forEach((node) => {
+      const contentEl = document.createElement("div");
+      contentEl.className = "genealogy-row-content";
+
+      const leftEl = document.createElement("div");
+      leftEl.className = "genealogy-row-side genealogy-row-side-left";
+      row.leftNodes.forEach((node) => {
         const role = context.nodeRoleMap.get(node.id) || "context";
-        nodesWrap.appendChild(createGenealogyNode(node, context.activeSet.has(node.id), role));
+        leftEl.appendChild(createGenealogyNode(node, context.activeSet.has(node.id), role, false));
       });
-      rowEl.appendChild(nodesWrap);
+
+      const centerEl = document.createElement("div");
+      centerEl.className = "genealogy-row-center";
+      if (row.trunkNode) {
+        const role = context.nodeRoleMap.get(row.trunkNode.id) || "trunk";
+        centerEl.appendChild(createGenealogyNode(row.trunkNode, context.activeSet.has(row.trunkNode.id), role, true));
+      }
+
+      const rightEl = document.createElement("div");
+      rightEl.className = "genealogy-row-side genealogy-row-side-right";
+      row.rightNodes.forEach((node) => {
+        const role = context.nodeRoleMap.get(node.id) || "context";
+        rightEl.appendChild(createGenealogyNode(node, context.activeSet.has(node.id), role, false));
+      });
+
+      contentEl.append(leftEl, centerEl, rightEl);
+      rowEl.appendChild(contentEl);
       rowsEl.appendChild(rowEl);
     });
 
     canvas.appendChild(rowsEl);
     article.appendChild(canvas);
 
-    const ties = context.visibleEdges
-      .filter((edge) => context.activeSet.has(edge.from) || context.activeSet.has(edge.to))
-      .slice(0, 4);
-
-    if (ties.length > 0) {
-      const tieList = document.createElement("div");
-      tieList.className = "genealogy-ties";
-      ties.forEach((edge) => {
-        const fromNode = context.tree.nodeMap.get(edge.from);
-        const toNode = context.tree.nodeMap.get(edge.to);
-        if (!fromNode || !toNode) return;
-
-        const line = document.createElement("div");
-        line.className = "genealogy-tie";
-        line.textContent = `${fromNode.name} ${relationToReadableText(edge.relation)} ${toNode.name}`;
-        tieList.appendChild(line);
-      });
-      if (tieList.childElementCount > 0) {
-        article.appendChild(tieList);
-      }
-    }
-
     article._genealogyEdges = context.visibleEdges;
     article._genealogyLayerMap = context.layerMap;
     return article;
   }
 
+  
   function safeSelectorForNodeId(nodeId) {
     if (window.CSS && typeof window.CSS.escape === "function") {
       return `[data-node-id="${window.CSS.escape(nodeId)}"]`;
     }
-    return `[data-node-id="${String(nodeId).replace(/"/g, '\"')}"]`;
+    return `[data-node-id="${String(nodeId).replace(/"/g, '\\"')}"]`;
   }
 
   function drawGenealogyConnectorsForTree(treeEl) {
@@ -1639,7 +1771,6 @@
     const canvas = treeEl.querySelector(".genealogy-canvas");
     const svg = treeEl.querySelector(".genealogy-links");
     const edges = Array.isArray(treeEl._genealogyEdges) ? treeEl._genealogyEdges : [];
-    const layerMap = treeEl._genealogyLayerMap instanceof Map ? treeEl._genealogyLayerMap : new Map();
     if (!canvas || !svg) return;
 
     const canvasRect = canvas.getBoundingClientRect();
@@ -1658,41 +1789,20 @@
 
       const fromRect = fromEl.getBoundingClientRect();
       const toRect = toEl.getBoundingClientRect();
-      const fromLayer = layerMap.get(edge.from) ?? 0;
-      const toLayer = layerMap.get(edge.to) ?? 0;
 
-      let x1;
-      let y1;
-      let x2;
-      let y2;
-      let pathData;
-
-      if (fromLayer === toLayer) {
-        const fromBeforeTo = fromRect.left <= toRect.left;
-        x1 = fromBeforeTo ? fromRect.right - canvasRect.left : fromRect.left - canvasRect.left;
-        y1 = fromRect.top - canvasRect.top + fromRect.height / 2;
-        x2 = fromBeforeTo ? toRect.left - canvasRect.left : toRect.right - canvasRect.left;
-        y2 = toRect.top - canvasRect.top + toRect.height / 2;
-        const curve = Math.max(26, Math.min(90, Math.abs(x2 - x1) * 0.28));
-        const c1x = fromBeforeTo ? x1 + curve : x1 - curve;
-        const c2x = fromBeforeTo ? x2 - curve : x2 + curve;
-        pathData = `M ${x1} ${y1} C ${c1x} ${y1}, ${c2x} ${y2}, ${x2} ${y2}`;
-      } else {
-        const fromAbove = fromLayer < toLayer;
-        x1 = fromRect.left - canvasRect.left + fromRect.width / 2;
-        y1 = fromAbove ? fromRect.bottom - canvasRect.top : fromRect.top - canvasRect.top;
-        x2 = toRect.left - canvasRect.left + toRect.width / 2;
-        y2 = fromAbove ? toRect.top - canvasRect.top : toRect.bottom - canvasRect.top;
-        const deltaY = y2 - y1;
-        const bend = Math.max(24, Math.min(64, Math.abs(deltaY) * 0.44));
-        const c1y = y1 + Math.sign(deltaY || 1) * bend;
-        const c2y = y2 - Math.sign(deltaY || 1) * bend;
-        pathData = `M ${x1} ${y1} C ${x1} ${c1y}, ${x2} ${c2y}, ${x2} ${y2}`;
-      }
+      const x1 = fromRect.left - canvasRect.left + fromRect.width / 2;
+      const y1 = fromRect.bottom - canvasRect.top;
+      const x2 = toRect.left - canvasRect.left + toRect.width / 2;
+      const y2 = toRect.top - canvasRect.top;
+      const deltaY = y2 - y1;
+      const bend = Math.max(28, Math.min(72, Math.abs(deltaY) * 0.44));
 
       const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("d", pathData);
-      path.setAttribute("class", `genealogy-link priority-${edge.priority || 1}`);
+      path.setAttribute(
+        "d",
+        `M ${x1} ${y1} C ${x1} ${y1 + bend}, ${x2} ${y2 - bend}, ${x2} ${y2}`
+      );
+      path.setAttribute("class", `genealogy-link priority-${edge.priority || 5}`);
       svg.appendChild(path);
     });
   }
@@ -2468,6 +2578,10 @@
 
       const firstIndex = findFirstPlayableIndex();
       await loadParagraph(firstIndex, false);
+      requestAnimationFrame(drawAllGenealogyConnectors);
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => requestAnimationFrame(drawAllGenealogyConnectors)).catch(() => {});
+      }
     } catch (error) {
       console.error(error);
       setLoadError(error instanceof Error ? error.message : "Unknown loading error.");
