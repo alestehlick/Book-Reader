@@ -785,9 +785,34 @@ img {
 
 .genealogy-link {
   fill: none;
-  stroke: rgba(192, 154, 98, 0.18);
-  stroke-width: 1.5;
   stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 160ms ease, stroke-width 160ms ease, opacity 160ms ease;
+}
+
+.genealogy-link.priority-1 {
+  stroke: rgba(192, 154, 98, 0.08);
+  stroke-width: 1.1;
+}
+
+.genealogy-link.priority-2 {
+  stroke: rgba(192, 154, 98, 0.12);
+  stroke-width: 1.35;
+}
+
+.genealogy-link.priority-3 {
+  stroke: rgba(192, 154, 98, 0.2);
+  stroke-width: 1.65;
+}
+
+.genealogy-link.priority-4 {
+  stroke: rgba(211, 176, 122, 0.3);
+  stroke-width: 1.95;
+}
+
+.genealogy-link.priority-5 {
+  stroke: rgba(217, 185, 135, 0.38);
+  stroke-width: 2.2;
 }
 
 .genealogy-rows {
@@ -805,10 +830,10 @@ img {
 
 .genealogy-row-label {
   padding-left: 4px;
-  font-size: 10px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: color-mix(in srgb, var(--text-soft) 62%, var(--muted) 38%);
 }
 
 .genealogy-row-nodes {
@@ -829,16 +854,18 @@ img {
   max-width: 220px;
   padding: 12px 14px 14px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.012)),
-    rgba(31, 23, 17, 0.9);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.01)),
+    rgba(29, 21, 16, 0.84);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   transition:
     transform 160ms ease,
     border-color 160ms ease,
     background 160ms ease,
-    box-shadow 160ms ease;
+    box-shadow 160ms ease,
+    opacity 160ms ease,
+    filter 160ms ease;
 }
 
 .genealogy-node:hover {
@@ -846,7 +873,34 @@ img {
   border-color: rgba(192, 154, 98, 0.16);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
-    rgba(35, 26, 20, 0.94);
+    rgba(35, 26, 20, 0.92);
+}
+
+.genealogy-node.is-lineage,
+.genealogy-node.is-lineage-near {
+  border-color: rgba(192, 154, 98, 0.11);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.012)),
+    rgba(33, 24, 18, 0.9);
+}
+
+.genealogy-node.is-near,
+.genealogy-node.is-lineage-near {
+  border-color: rgba(192, 154, 98, 0.16);
+  background:
+    linear-gradient(180deg, rgba(192, 154, 98, 0.045), rgba(255, 255, 255, 0.012)),
+    rgba(37, 27, 20, 0.92);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.genealogy-node.is-context {
+  opacity: 0.84;
+  filter: saturate(0.9);
+  transform: scale(0.975);
+  border-color: rgba(255, 255, 255, 0.038);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0.008)),
+    rgba(24, 18, 14, 0.8);
 }
 
 .genealogy-node.is-active {
@@ -855,6 +909,9 @@ img {
     linear-gradient(180deg, rgba(192, 154, 98, 0.1), rgba(192, 154, 98, 0.025)),
     rgba(45, 33, 25, 0.96);
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+  opacity: 1;
+  filter: none;
+  transform: scale(1);
 }
 
 .genealogy-node-name {
@@ -906,9 +963,9 @@ img {
   min-height: 30px;
   padding: 0 12px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--text-soft);
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  background: rgba(255, 255, 255, 0.018);
+  color: color-mix(in srgb, var(--text-soft) 90%, transparent);
   font-size: 12px;
   line-height: 1.4;
 }
@@ -1192,9 +1249,7 @@ body.sidebar-collapsed .main-panel {
   .player-card,
   .current-card,
   .context-card,
-  .media-card,
-  .timeline-card,
-  .genealogy-card {
+  .media-card {
     padding-left: 16px;
     padding-right: 16px;
   }
