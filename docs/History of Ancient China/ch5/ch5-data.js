@@ -53,7 +53,15 @@ const BOOK_DATA = {
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wenwang",
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.01-p002",
@@ -110,7 +118,16 @@ const BOOK_DATA = {
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wenwang",
+                "wuwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.01-p003",
@@ -158,7 +175,15 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.01-p004",
@@ -254,7 +279,18 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wuwang",
+                "zhougong",
+                "tangshu_yu",
+                "kangshu_feng",
+                "boqin"
+              ]
+            }
+          ]
         },
         {
           "id": "05.01-p006",
@@ -405,7 +441,16 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang",
+                "zhougong",
+                "shaogong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.02-p003",
@@ -549,7 +594,15 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.02-p006",
@@ -836,7 +889,14 @@ const BOOK_DATA = {
               "caption": "The bronze inscription that vividly shows late Western Zhou court procedure, writing, and archive practice."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.03-p007",
@@ -856,7 +916,14 @@ const BOOK_DATA = {
             }
           ],
           "timeline": [],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.03-p008",
@@ -959,7 +1026,15 @@ const BOOK_DATA = {
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "jiangyuan",
+                "houji"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p002",
@@ -979,7 +1054,15 @@ const BOOK_DATA = {
             }
           ],
           "timeline": [],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "jiangyuan",
+                "houji"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p003",
@@ -999,7 +1082,15 @@ const BOOK_DATA = {
             }
           ],
           "timeline": [],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "jiangyuan",
+                "houji"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p004",
@@ -1047,7 +1138,14 @@ const BOOK_DATA = {
               "caption": "The Great King who was remembered as leading the Zhou to Qishan and giving their rise a clearer historical setting."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "gongliu"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p005",
@@ -1095,7 +1193,17 @@ const BOOK_DATA = {
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "gugong_danfu",
+                "taibo",
+                "yongzhong",
+                "jili"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p006",
@@ -1143,7 +1251,16 @@ const BOOK_DATA = {
               "caption": "The moral founder of the Zhou house and the leading figure of the final preconquest generation."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "gugong_danfu",
+                "jili",
+                "wenwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p007",
@@ -1191,7 +1308,15 @@ const BOOK_DATA = {
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "jili",
+                "wenwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.04-p008",
@@ -1239,7 +1364,15 @@ const BOOK_DATA = {
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang",
+                "wuwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1533,7 +1666,14 @@ const BOOK_DATA = {
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p002",
@@ -1581,7 +1721,14 @@ const BOOK_DATA = {
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p003",
@@ -1629,7 +1776,15 @@ const BOOK_DATA = {
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang",
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p004",
@@ -1677,7 +1832,14 @@ const BOOK_DATA = {
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p005",
@@ -1725,7 +1887,14 @@ const BOOK_DATA = {
               "caption": "The first Zhou generation after Muye, dominated by conquest, regency, rebellion, and new settlement."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p006",
@@ -1773,7 +1942,14 @@ const BOOK_DATA = {
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.06-p007",
@@ -1821,7 +1997,15 @@ const BOOK_DATA = {
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wuwang",
+                "wugeng"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1876,7 +2060,14 @@ const BOOK_DATA = {
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p002",
@@ -1924,7 +2115,19 @@ const BOOK_DATA = {
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wuwang",
+                "wugeng",
+                "guanshu",
+                "caishu",
+                "huoshu",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p003",
@@ -1972,7 +2175,16 @@ const BOOK_DATA = {
               "caption": "The first Zhou generation after Muye, dominated by conquest, regency, rebellion, and new settlement."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "wuwang",
+                "chengwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p004",
@@ -2020,7 +2232,20 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang",
+                "shaogong",
+                "guanshu",
+                "caishu",
+                "huoshu",
+                "wugeng"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p005",
@@ -2068,7 +2293,16 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang",
+                "chengzhou"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p006",
@@ -2116,7 +2350,17 @@ const BOOK_DATA = {
               "caption": "The long phase of consolidation after the founding crisis, later remembered as the most settled part of the dynasty."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "tangshu_yu",
+                "kangshu_feng",
+                "yinghou_zhi",
+                "chengwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.07-p007",
@@ -2164,7 +2408,17 @@ const BOOK_DATA = {
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "boqin",
+                "taigong_wang",
+                "shaogong",
+                "chengwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2219,7 +2473,16 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang",
+                "zhougong",
+                "shaogong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.08-p002",
@@ -2267,7 +2530,14 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.08-p003",
@@ -2315,7 +2585,14 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.08-p004",
@@ -2363,7 +2640,15 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2418,7 +2703,15 @@ const BOOK_DATA = {
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.09-p002",
@@ -2466,7 +2759,17 @@ const BOOK_DATA = {
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang",
+                "wenwang",
+                "wuwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.09-p003",
@@ -2514,7 +2817,16 @@ const BOOK_DATA = {
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "shaogong",
+                "chengwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.09-p004",
@@ -2534,7 +2846,16 @@ const BOOK_DATA = {
             }
           ],
           "timeline": [],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "shaogong",
+                "chengwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.09-p005",
@@ -2582,7 +2903,16 @@ const BOOK_DATA = {
               "caption": "The long phase of consolidation after the founding crisis, later remembered as the most settled part of the dynasty."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "zhougong",
+                "chengwang",
+                "chengzhou"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2637,7 +2967,23 @@ const BOOK_DATA = {
               "caption": "The transition secured by Shao Gong that helped stabilize early Zhou primogeniture."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang",
+                "shaogong",
+                "zhougong"
+              ]
+            },
+            {
+              "id": "G5.3",
+              "active": [
+                "chengwang",
+                "kangwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.10-p002",
@@ -2685,7 +3031,15 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.3",
+              "active": [
+                "chengwang",
+                "kangwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.10-p003",
@@ -2733,7 +3087,16 @@ const BOOK_DATA = {
               "caption": "The appointment of Xinghou Zhi, a revealing example of how the early colonial network was built."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.2",
+              "active": [
+                "chengwang",
+                "zhougong",
+                "yinghou_zhi"
+              ]
+            }
+          ]
         },
         {
           "id": "05.10-p004",
@@ -2840,7 +3203,15 @@ const BOOK_DATA = {
               "caption": "The reign that ended in the southern catastrophe that reshaped the later dynasty."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "kangwang",
+                "yu"
+              ]
+            }
+          ]
         },
         {
           "id": "05.11-p002",
@@ -2888,7 +3259,15 @@ const BOOK_DATA = {
               "caption": "The reign that ended in the southern catastrophe that reshaped the later dynasty."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "kangwang",
+                "yu"
+              ]
+            }
+          ]
         },
         {
           "id": "05.11-p003",
@@ -2936,7 +3315,15 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "zhaowang",
+                "chu_state"
+              ]
+            }
+          ]
         },
         {
           "id": "05.11-p004",
@@ -2984,7 +3371,15 @@ const BOOK_DATA = {
               "caption": "The reign in which reform, military strain, and new administrative forms became unmistakable."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "zhaowang",
+                "muwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3039,7 +3434,14 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p002",
@@ -3087,7 +3489,14 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p003",
@@ -3135,7 +3544,15 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "xu_state"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p004",
@@ -3183,7 +3600,17 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "xu_state",
+                "chu_state",
+                "yongfu"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p005",
@@ -3231,7 +3658,14 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p006",
@@ -3279,7 +3713,15 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "li"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p007",
@@ -3299,7 +3741,15 @@ const BOOK_DATA = {
             }
           ],
           "timeline": [],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "li"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p008",
@@ -3347,7 +3797,16 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "qiuwei",
+                "li_stateslord"
+              ]
+            }
+          ]
         },
         {
           "id": "05.12-p009",
@@ -3395,7 +3854,16 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang",
+                "da_ke",
+                "jing_family"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3450,7 +3918,16 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.3",
+              "active": [
+                "yiwang_old",
+                "xiaowang",
+                "yiwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.13-p002",
@@ -3498,7 +3975,16 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.3",
+              "active": [
+                "yiwang_old",
+                "xiaowang",
+                "yiwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.13-p003",
@@ -3546,7 +4032,14 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "yiwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.13-p004",
@@ -3594,7 +4087,20 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "yiwang"
+              ]
+            },
+            {
+              "id": "G5.4",
+              "active": [
+                "chu_state"
+              ]
+            }
+          ]
         },
         {
           "id": "05.13-p005",
@@ -3690,7 +4196,15 @@ const BOOK_DATA = {
               "caption": "The long transition in which the western monarchy weakened and the eastern order took shape."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "yiwang",
+                "liwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3745,7 +4259,14 @@ const BOOK_DATA = {
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.4",
+              "active": [
+                "muwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.14-p002",
@@ -3985,7 +4506,14 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.14-p007",
@@ -4033,7 +4561,15 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "shao_gong_hu",
+                "xuanwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4383,7 +4919,15 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.1",
+              "active": [
+                "wenwang",
+                "zhougong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.16-p002",
@@ -4670,7 +5214,15 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "liwang",
+                "rong_yi_gong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.17-p002",
@@ -4718,7 +5270,17 @@ const BOOK_DATA = {
               "caption": "The final serious restoration of royal initiative before the collapse of the west."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "liwang",
+                "ruibo_liangfu",
+                "guo_gong_changfu",
+                "shao_gong_hu"
+              ]
+            }
+          ]
         },
         {
           "id": "05.17-p003",
@@ -4770,7 +5332,14 @@ const BOOK_DATA = {
               "caption": "The overthrow of King Li and his flight to Zhi, one of the first securely fixed dates in early Chinese history."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "liwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.17-p004",
@@ -4818,7 +5387,17 @@ const BOOK_DATA = {
               "caption": "The installation of King Xuan after the Gong He regency and the last serious attempt to restore royal authority."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "liwang",
+                "gonghe",
+                "shao_gong_hu",
+                "xuanwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.17-p005",
@@ -4866,7 +5445,15 @@ const BOOK_DATA = {
               "caption": "The final serious restoration of royal initiative before the collapse of the west."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "gonghe",
+                "xuanwang"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4921,7 +5508,16 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang",
+                "yin_jifu",
+                "xianyun"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p002",
@@ -4969,7 +5565,16 @@ const BOOK_DATA = {
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang",
+                "shao_gong_hu",
+                "xianyun"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p003",
@@ -5017,7 +5622,14 @@ const BOOK_DATA = {
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p004",
@@ -5065,7 +5677,15 @@ const BOOK_DATA = {
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "xuanwang",
+                "youwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p005",
@@ -5113,7 +5733,14 @@ const BOOK_DATA = {
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "youwang"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p006",
@@ -5161,7 +5788,20 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "youwang",
+                "baosi",
+                "queen_shen",
+                "lord_shen",
+                "yijiu",
+                "bosi_son",
+                "quanrong"
+              ]
+            }
+          ]
         },
         {
           "id": "05.18-p007",
@@ -5209,7 +5849,17 @@ const BOOK_DATA = {
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
           ],
-          "genealogy": []
+          "genealogy": [
+            {
+              "id": "G5.5",
+              "active": [
+                "yijiu",
+                "pingwang",
+                "jin",
+                "qin"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5375,14 +6025,945 @@ const BOOK_DATA = {
     }
   ],
   "genealogy": {
-    "trees": []
+    "trees": [
+      {
+        "id": "G5.1",
+        "title": "Legendary Zhou Ancestral Line",
+        "caption": "The traditional ancestral line from Jiang Yuan and Hou Ji down to the house of King Wen and King Wu.",
+        "nodes": [
+          {
+            "id": "jiangyuan",
+            "name": "Jiang Yuan",
+            "type": "ancestress",
+            "display_date": "legendary"
+          },
+          {
+            "id": "houji",
+            "name": "Hou Ji (Qi, the Abandoned One)",
+            "type": "culture hero",
+            "display_date": "legendary"
+          },
+          {
+            "id": "gongliu",
+            "name": "Gong Liu",
+            "type": "ancestor",
+            "display_date": "legendary / traditional"
+          },
+          {
+            "id": "gugong_danfu",
+            "name": "Gu Gong Danfu (Tai Wang)",
+            "type": "ancestor",
+            "display_date": "traditional"
+          },
+          {
+            "id": "taibo",
+            "name": "Taibo",
+            "type": "elder brother",
+            "display_date": "traditional"
+          },
+          {
+            "id": "yongzhong",
+            "name": "Yongzhong",
+            "type": "elder brother",
+            "display_date": "traditional"
+          },
+          {
+            "id": "jili",
+            "name": "Jili",
+            "type": "heir",
+            "display_date": "traditional"
+          },
+          {
+            "id": "wenwang",
+            "name": "King Wen (Chang)",
+            "type": "king",
+            "display_date": "d. before 1045 BC"
+          },
+          {
+            "id": "wuwang",
+            "name": "King Wu (Fa)",
+            "type": "king",
+            "display_date": "r. c. 1045-1043 BC"
+          },
+          {
+            "id": "zhougong",
+            "name": "Zhou Gong (Duke of Zhou, Dan)",
+            "type": "regent",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "shaogong",
+            "name": "Shao Gong (Shi)",
+            "type": "royal ally",
+            "display_date": "early Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "jiangyuan",
+            "to": "houji",
+            "relation": "mother-son"
+          },
+          {
+            "from": "houji",
+            "to": "gongliu",
+            "relation": "ancestor-of"
+          },
+          {
+            "from": "gongliu",
+            "to": "gugong_danfu",
+            "relation": "ancestor-of"
+          },
+          {
+            "from": "gugong_danfu",
+            "to": "taibo",
+            "relation": "father-son"
+          },
+          {
+            "from": "gugong_danfu",
+            "to": "yongzhong",
+            "relation": "father-son"
+          },
+          {
+            "from": "gugong_danfu",
+            "to": "jili",
+            "relation": "father-son"
+          },
+          {
+            "from": "taibo",
+            "to": "yongzhong",
+            "relation": "brothers"
+          },
+          {
+            "from": "yongzhong",
+            "to": "jili",
+            "relation": "brothers"
+          },
+          {
+            "from": "jili",
+            "to": "wenwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "wuwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "zhougong",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "shaogong",
+            "relation": "ally-of"
+          }
+        ]
+      },
+      {
+        "id": "G5.2",
+        "title": "Founding Zhou Royal House, Regency, and Eastern Colonies",
+        "caption": "The early Zhou political field after Muye: the royal brothers, the regency, the Shang remnant, and the chief colonial founders.",
+        "nodes": [
+          {
+            "id": "wenwang",
+            "name": "King Wen (Chang)",
+            "type": "king",
+            "display_date": "d. before 1045 BC"
+          },
+          {
+            "id": "wuwang",
+            "name": "King Wu (Fa)",
+            "type": "king",
+            "display_date": "r. c. 1045-1043 BC"
+          },
+          {
+            "id": "chengwang",
+            "name": "King Cheng (Song)",
+            "type": "king",
+            "display_date": "r. c. 1042-1006 BC"
+          },
+          {
+            "id": "zhougong",
+            "name": "Zhou Gong (Duke of Zhou, Dan)",
+            "type": "regent",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "shaogong",
+            "name": "Shao Gong (Shi)",
+            "type": "royal ally",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "guanshu",
+            "name": "Guanshu Xian",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "caishu",
+            "name": "Caishu Du",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "huoshu",
+            "name": "Huoshu Chu",
+            "type": "royal brother",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "wugeng",
+            "name": "Wu Geng",
+            "type": "Shang remnant ruler",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "tangshu_yu",
+            "name": "Tangshu Yu",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "kangshu_feng",
+            "name": "Kangshu Feng",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "boqin",
+            "name": "Bo Qin",
+            "type": "branch founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "taigong_wang",
+            "name": "Tai Gong Wang",
+            "type": "regional founder",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "yinghou_zhi",
+            "name": "Ying Hou / Xinghou Zhi",
+            "type": "colonial lord",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "zongzhou",
+            "name": "Zongzhou / Feng",
+            "type": "capital node",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "chengzhou",
+            "name": "Chengzhou",
+            "type": "capital node",
+            "display_date": "early Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wenwang",
+            "to": "wuwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "chengwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "zhougong",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "guanshu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "caishu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "huoshu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "kangshu_feng",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "tangshu_yu",
+            "relation": "brothers"
+          },
+          {
+            "from": "wuwang",
+            "to": "wugeng",
+            "relation": "guardian-of"
+          },
+          {
+            "from": "zhougong",
+            "to": "chengwang",
+            "relation": "regent-of"
+          },
+          {
+            "from": "shaogong",
+            "to": "chengwang",
+            "relation": "supporter-of"
+          },
+          {
+            "from": "guanshu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "caishu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "huoshu",
+            "to": "wugeng",
+            "relation": "ally-of"
+          },
+          {
+            "from": "zhougong",
+            "to": "guanshu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "caishu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "huoshu",
+            "relation": "rival-to"
+          },
+          {
+            "from": "zhougong",
+            "to": "chengzhou",
+            "relation": "associated-with"
+          },
+          {
+            "from": "wuwang",
+            "to": "zongzhou",
+            "relation": "associated-with"
+          },
+          {
+            "from": "boqin",
+            "to": "zhougong",
+            "relation": "father-son"
+          },
+          {
+            "from": "zhougong",
+            "to": "boqin",
+            "relation": "father-son"
+          },
+          {
+            "from": "tangshu_yu",
+            "to": "chengwang",
+            "relation": "kinsman-of"
+          },
+          {
+            "from": "kangshu_feng",
+            "to": "chengwang",
+            "relation": "kinsman-of"
+          },
+          {
+            "from": "boqin",
+            "to": "chengwang",
+            "relation": "kinsman-of"
+          },
+          {
+            "from": "taigong_wang",
+            "to": "chengwang",
+            "relation": "ally-of"
+          },
+          {
+            "from": "yinghou_zhi",
+            "to": "zhougong",
+            "relation": "father-son"
+          }
+        ]
+      },
+      {
+        "id": "G5.3",
+        "title": "Main Western Zhou Royal Line",
+        "caption": "The main succession of Western Zhou kings from King Wen and King Wu to King Ping.",
+        "nodes": [
+          {
+            "id": "wenwang",
+            "name": "King Wen (Chang)",
+            "type": "king",
+            "display_date": "d. before 1045 BC"
+          },
+          {
+            "id": "wuwang",
+            "name": "King Wu (Fa)",
+            "type": "king",
+            "display_date": "r. c. 1045-1043 BC"
+          },
+          {
+            "id": "chengwang",
+            "name": "King Cheng (Song)",
+            "type": "king",
+            "display_date": "r. c. 1042-1006 BC"
+          },
+          {
+            "id": "kangwang",
+            "name": "King Kang (Zhao)",
+            "type": "king",
+            "display_date": "r. c. 1005-978 BC"
+          },
+          {
+            "id": "zhaowang",
+            "name": "King Zhao",
+            "type": "king",
+            "display_date": "r. c. 977-957 BC"
+          },
+          {
+            "id": "muwang",
+            "name": "King Mu",
+            "type": "king",
+            "display_date": "r. c. 956-918 BC"
+          },
+          {
+            "id": "gongwang",
+            "name": "King Gong",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "yiwang_old",
+            "name": "King Yih",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "xiaowang",
+            "name": "King Xiao",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "yiwang",
+            "name": "King Yi",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "liwang",
+            "name": "King Li (Hu)",
+            "type": "king",
+            "display_date": "r. until 842 BC"
+          },
+          {
+            "id": "xuanwang",
+            "name": "King Xuan (Jing)",
+            "type": "king",
+            "display_date": "r. 827-782 BC"
+          },
+          {
+            "id": "youwang",
+            "name": "King You",
+            "type": "king",
+            "display_date": "r. 781-771 BC"
+          },
+          {
+            "id": "pingwang",
+            "name": "King Ping (Yi Jiu)",
+            "type": "king",
+            "display_date": "begins 770 BC"
+          },
+          {
+            "id": "gonghe",
+            "name": "Lord He of Gong (Gong He)",
+            "type": "regent",
+            "display_date": "842-828 BC"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wenwang",
+            "to": "wuwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "wuwang",
+            "to": "chengwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "chengwang",
+            "to": "kangwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "kangwang",
+            "to": "zhaowang",
+            "relation": "father-son"
+          },
+          {
+            "from": "zhaowang",
+            "to": "muwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "muwang",
+            "to": "gongwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "gongwang",
+            "to": "yiwang_old",
+            "relation": "father-son"
+          },
+          {
+            "from": "yiwang_old",
+            "to": "xiaowang",
+            "relation": "brothers"
+          },
+          {
+            "from": "xiaowang",
+            "to": "yiwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "yiwang",
+            "to": "liwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "gonghe",
+            "to": "liwang",
+            "relation": "regent-after"
+          },
+          {
+            "from": "liwang",
+            "to": "xuanwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "xuanwang",
+            "to": "youwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "youwang",
+            "to": "pingwang",
+            "relation": "father-son"
+          }
+        ]
+      },
+      {
+        "id": "G5.4",
+        "title": "Middle Western Zhou Court and Bureaucratic Turn",
+        "caption": "The court around Kings Kang, Zhao, and Mu, with military and administrative figures who show the shift from kinship rule toward office and record.",
+        "nodes": [
+          {
+            "id": "kangwang",
+            "name": "King Kang (Zhao)",
+            "type": "king",
+            "display_date": "r. c. 1005-978 BC"
+          },
+          {
+            "id": "zhaowang",
+            "name": "King Zhao",
+            "type": "king",
+            "display_date": "r. c. 977-957 BC"
+          },
+          {
+            "id": "muwang",
+            "name": "King Mu",
+            "type": "king",
+            "display_date": "r. c. 956-918 BC"
+          },
+          {
+            "id": "nangong_kuo",
+            "name": "Nangong Kuo",
+            "type": "minister",
+            "display_date": "early Western Zhou"
+          },
+          {
+            "id": "yu",
+            "name": "Yu",
+            "type": "military commander",
+            "display_date": "late Kang / early Zhao"
+          },
+          {
+            "id": "li",
+            "name": "Li",
+            "type": "military official",
+            "display_date": "reign of King Mu"
+          },
+          {
+            "id": "qiuwei",
+            "name": "Qiu Wei",
+            "type": "litigant / landholder",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "li_stateslord",
+            "name": "Li, lord in the land lawsuit",
+            "type": "states lord",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "da_ke",
+            "name": "Ke of the Da Ke ding",
+            "type": "aristocratic recipient",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "jing_family",
+            "name": "Jing family",
+            "type": "old aristocratic house",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "chu_state",
+            "name": "Chu",
+            "type": "rival state",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "xu_state",
+            "name": "Xu",
+            "type": "eastern rival",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "yongfu",
+            "name": "Yongfu",
+            "type": "commander",
+            "display_date": "middle Western Zhou"
+          }
+        ],
+        "edges": [
+          {
+            "from": "kangwang",
+            "to": "zhaowang",
+            "relation": "father-son"
+          },
+          {
+            "from": "zhaowang",
+            "to": "muwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "nangong_kuo",
+            "to": "yu",
+            "relation": "grandfather-descendant"
+          },
+          {
+            "from": "kangwang",
+            "to": "yu",
+            "relation": "appoints"
+          },
+          {
+            "from": "muwang",
+            "to": "li",
+            "relation": "appoints"
+          },
+          {
+            "from": "muwang",
+            "to": "qiuwei",
+            "relation": "judicial-order-of"
+          },
+          {
+            "from": "qiuwei",
+            "to": "li_stateslord",
+            "relation": "lawsuit-against"
+          },
+          {
+            "from": "muwang",
+            "to": "da_ke",
+            "relation": "awards-property-to"
+          },
+          {
+            "from": "jing_family",
+            "to": "da_ke",
+            "relation": "property-transferred-to"
+          },
+          {
+            "from": "muwang",
+            "to": "xu_state",
+            "relation": "rival-to"
+          },
+          {
+            "from": "muwang",
+            "to": "chu_state",
+            "relation": "rival-to"
+          },
+          {
+            "from": "yongfu",
+            "to": "xu_state",
+            "relation": "negotiates-with"
+          }
+        ]
+      },
+      {
+        "id": "G5.5",
+        "title": "Late Western Zhou Court, Regency, and Fall",
+        "caption": "The late court from King Li to King Ping, including regents, ministers, rival claimants, and the figures around the fall of the western capital.",
+        "nodes": [
+          {
+            "id": "yiwang",
+            "name": "King Yi",
+            "type": "king",
+            "display_date": "middle Western Zhou"
+          },
+          {
+            "id": "liwang",
+            "name": "King Li (Hu)",
+            "type": "king",
+            "display_date": "r. until 842 BC"
+          },
+          {
+            "id": "rong_yi_gong",
+            "name": "Rong Yi Gong",
+            "type": "minister",
+            "display_date": "reign of King Li"
+          },
+          {
+            "id": "ruibo_liangfu",
+            "name": "Ruibo Liangfu",
+            "type": "critic / remonstrator",
+            "display_date": "reign of King Li"
+          },
+          {
+            "id": "guo_gong_changfu",
+            "name": "Guo Gong Changfu",
+            "type": "commander",
+            "display_date": "reign of King Li"
+          },
+          {
+            "id": "shao_gong_hu",
+            "name": "Shao Gong Hu",
+            "type": "court leader",
+            "display_date": "Kings Li and Xuan"
+          },
+          {
+            "id": "gonghe",
+            "name": "Lord He of Gong (Gong He)",
+            "type": "regent",
+            "display_date": "842-828 BC"
+          },
+          {
+            "id": "xuanwang",
+            "name": "King Xuan (Jing)",
+            "type": "king",
+            "display_date": "r. 827-782 BC"
+          },
+          {
+            "id": "yin_jifu",
+            "name": "Yin Jifu (Xi Jia)",
+            "type": "commander",
+            "display_date": "reign of King Xuan"
+          },
+          {
+            "id": "youwang",
+            "name": "King You",
+            "type": "king",
+            "display_date": "r. 781-771 BC"
+          },
+          {
+            "id": "baosi",
+            "name": "Bao Si",
+            "type": "consort",
+            "display_date": "reign of King You"
+          },
+          {
+            "id": "queen_shen",
+            "name": "Queen of Shen",
+            "type": "queen",
+            "display_date": "reign of King You"
+          },
+          {
+            "id": "lord_shen",
+            "name": "Lord of Shen",
+            "type": "maternal kinsman / rival power",
+            "display_date": "reign of King You"
+          },
+          {
+            "id": "yijiu",
+            "name": "Yi Jiu (later King Ping)",
+            "type": "heir",
+            "display_date": "installed 770 BC"
+          },
+          {
+            "id": "bosi_son",
+            "name": "Son of Bao Si",
+            "type": "rival heir",
+            "display_date": "reign of King You"
+          },
+          {
+            "id": "pingwang",
+            "name": "King Ping (Yi Jiu)",
+            "type": "king",
+            "display_date": "begins 770 BC"
+          },
+          {
+            "id": "qin",
+            "name": "Qin",
+            "type": "supporting state",
+            "display_date": "771-770 BC transition"
+          },
+          {
+            "id": "jin",
+            "name": "Jin",
+            "type": "supporting state",
+            "display_date": "771-770 BC transition"
+          },
+          {
+            "id": "xianyun",
+            "name": "Xianyun",
+            "type": "western enemy",
+            "display_date": "late Western Zhou"
+          },
+          {
+            "id": "quanrong",
+            "name": "Quan Rong",
+            "type": "western enemy",
+            "display_date": "771 BC"
+          }
+        ],
+        "edges": [
+          {
+            "from": "yiwang",
+            "to": "liwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "liwang",
+            "to": "rong_yi_gong",
+            "relation": "favours"
+          },
+          {
+            "from": "ruibo_liangfu",
+            "to": "liwang",
+            "relation": "critic-of"
+          },
+          {
+            "from": "guo_gong_changfu",
+            "to": "liwang",
+            "relation": "commander-for"
+          },
+          {
+            "from": "gonghe",
+            "to": "liwang",
+            "relation": "regent-after"
+          },
+          {
+            "from": "liwang",
+            "to": "xuanwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "shao_gong_hu",
+            "to": "xuanwang",
+            "relation": "supports"
+          },
+          {
+            "from": "yin_jifu",
+            "to": "xuanwang",
+            "relation": "commander-for"
+          },
+          {
+            "from": "xuanwang",
+            "to": "youwang",
+            "relation": "father-son"
+          },
+          {
+            "from": "youwang",
+            "to": "baosi",
+            "relation": "consort-of"
+          },
+          {
+            "from": "youwang",
+            "to": "queen_shen",
+            "relation": "consort-of"
+          },
+          {
+            "from": "youwang",
+            "to": "yijiu",
+            "relation": "father-son"
+          },
+          {
+            "from": "youwang",
+            "to": "bosi_son",
+            "relation": "father-son"
+          },
+          {
+            "from": "baosi",
+            "to": "bosi_son",
+            "relation": "mother-son"
+          },
+          {
+            "from": "queen_shen",
+            "to": "yijiu",
+            "relation": "mother-son"
+          },
+          {
+            "from": "lord_shen",
+            "to": "queen_shen",
+            "relation": "father-daughter"
+          },
+          {
+            "from": "lord_shen",
+            "to": "youwang",
+            "relation": "rival-to"
+          },
+          {
+            "from": "lord_shen",
+            "to": "quanrong",
+            "relation": "ally-of"
+          },
+          {
+            "from": "yijiu",
+            "to": "pingwang",
+            "relation": "same-person-as"
+          },
+          {
+            "from": "jin",
+            "to": "pingwang",
+            "relation": "supports"
+          },
+          {
+            "from": "qin",
+            "to": "pingwang",
+            "relation": "supports"
+          },
+          {
+            "from": "xianyun",
+            "to": "xuanwang",
+            "relation": "rival-to"
+          },
+          {
+            "from": "quanrong",
+            "to": "youwang",
+            "relation": "rival-to"
+          }
+        ]
+      }
+    ]
   },
   "stats": {
     "sectionCount": 19,
     "paragraphCount": 115,
     "figureCount": 347,
     "timelineItemCount": 314,
-    "genealogyReferenceCount": 0,
-    "genealogyTreeCount": 0
+    "genealogyReferenceCount": 78,
+    "genealogyTreeCount": 5
   }
 };
