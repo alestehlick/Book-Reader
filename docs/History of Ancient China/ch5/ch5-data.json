@@ -52,7 +52,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.01-p002",
@@ -108,7 +109,8 @@
               "certainty": "approximate",
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.01-p003",
@@ -155,7 +157,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.01-p004",
@@ -202,7 +205,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.01-p005",
@@ -249,7 +253,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.01-p006",
@@ -296,7 +301,8 @@
               "certainty": "secure",
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -350,7 +356,8 @@
               "certainty": "secure",
               "caption": "The age in which the classic texts were canonized and Western Zhou became a normative historical model."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.02-p002",
@@ -397,7 +404,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.02-p003",
@@ -444,7 +452,8 @@
               "certainty": "secure",
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.02-p004",
@@ -491,7 +500,8 @@
               "certainty": "approximate",
               "caption": "The early Eastern Zhou phase in which many poems of the Airs of the States took shape."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.02-p005",
@@ -538,7 +548,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.02-p006",
@@ -585,7 +596,8 @@
               "certainty": "secure",
               "caption": "The age in which the classic texts were canonized and Western Zhou became a normative historical model."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -639,7 +651,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.03-p002",
@@ -658,7 +671,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.03-p003",
@@ -705,7 +719,8 @@
               "certainty": "secure",
               "caption": "The modern movement that challenged the antiquity of many classical texts and forced new tests of authenticity."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.03-p004",
@@ -752,7 +767,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.03-p005",
@@ -771,7 +787,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.03-p006",
@@ -818,7 +835,8 @@
               "certainty": "approximate",
               "caption": "The bronze inscription that vividly shows late Western Zhou court procedure, writing, and archive practice."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.03-p007",
@@ -837,7 +855,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.03-p008",
@@ -884,7 +903,8 @@
               "certainty": "approximate",
               "caption": "The period in which satire, correlative thought, and the later poetic voice became prominent."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -938,7 +958,8 @@
               "certainty": "approximate",
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.04-p002",
@@ -957,7 +978,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.04-p003",
@@ -976,7 +998,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.04-p004",
@@ -1023,7 +1046,8 @@
               "certainty": "approximate",
               "caption": "The Great King who was remembered as leading the Zhou to Qishan and giving their rise a clearer historical setting."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.04-p005",
@@ -1070,7 +1094,8 @@
               "certainty": "approximate",
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.04-p006",
@@ -1117,7 +1142,8 @@
               "certainty": "approximate",
               "caption": "The moral founder of the Zhou house and the leading figure of the final preconquest generation."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.04-p007",
@@ -1164,7 +1190,8 @@
               "certainty": "approximate",
               "caption": "The period in which the Zhou house emerged as a serious power before the conquest of Shang."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.04-p008",
@@ -1211,7 +1238,8 @@
               "certainty": "secure",
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -1237,7 +1265,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.05-p002",
@@ -1256,7 +1285,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.05-p003",
@@ -1303,7 +1333,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.05-p004",
@@ -1350,7 +1381,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.05-p005",
@@ -1397,7 +1429,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.05-p006",
@@ -1444,7 +1477,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -1498,7 +1532,8 @@
               "certainty": "secure",
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p002",
@@ -1545,7 +1580,8 @@
               "certainty": "secure",
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p003",
@@ -1592,7 +1628,8 @@
               "certainty": "secure",
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p004",
@@ -1639,7 +1676,8 @@
               "certainty": "secure",
               "caption": "The decisive battle in which Zhou overthrew Shang and claimed Heaven's mandate."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p005",
@@ -1686,7 +1724,8 @@
               "certainty": "approximate",
               "caption": "The first Zhou generation after Muye, dominated by conquest, regency, rebellion, and new settlement."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p006",
@@ -1733,7 +1772,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.06-p007",
@@ -1780,7 +1820,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -1834,7 +1875,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p002",
@@ -1881,7 +1923,8 @@
               "certainty": "approximate",
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p003",
@@ -1928,7 +1971,8 @@
               "certainty": "approximate",
               "caption": "The first Zhou generation after Muye, dominated by conquest, regency, rebellion, and new settlement."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p004",
@@ -1975,7 +2019,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p005",
@@ -2022,7 +2067,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p006",
@@ -2069,7 +2115,8 @@
               "certainty": "approximate",
               "caption": "The long phase of consolidation after the founding crisis, later remembered as the most settled part of the dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.07-p007",
@@ -2116,7 +2163,8 @@
               "certainty": "secure",
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2170,7 +2218,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.08-p002",
@@ -2217,7 +2266,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.08-p003",
@@ -2264,7 +2314,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.08-p004",
@@ -2311,7 +2362,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2365,7 +2417,8 @@
               "certainty": "approximate",
               "caption": "The founding and consolidation phase, when conquest, civil war, and the first colonial order were worked out."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.09-p002",
@@ -2412,7 +2465,8 @@
               "certainty": "approximate",
               "caption": "The regent and architect of the early Zhou settlement who became a permanent model of political wisdom."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.09-p003",
@@ -2459,7 +2513,8 @@
               "certainty": "secure",
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.09-p004",
@@ -2478,7 +2533,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.09-p005",
@@ -2525,7 +2581,8 @@
               "certainty": "approximate",
               "caption": "The long phase of consolidation after the founding crisis, later remembered as the most settled part of the dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2579,7 +2636,8 @@
               "certainty": "approximate",
               "caption": "The transition secured by Shao Gong that helped stabilize early Zhou primogeniture."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.10-p002",
@@ -2626,7 +2684,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.10-p003",
@@ -2673,7 +2732,8 @@
               "certainty": "approximate",
               "caption": "The appointment of Xinghou Zhi, a revealing example of how the early colonial network was built."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.10-p004",
@@ -2720,7 +2780,8 @@
               "certainty": "approximate",
               "caption": "A bronze long used to argue for vast Zhou reach, but more plausibly tied to a site near the eastern capital."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2778,7 +2839,8 @@
               "certainty": "approximate",
               "caption": "The reign that ended in the southern catastrophe that reshaped the later dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.11-p002",
@@ -2825,7 +2887,8 @@
               "certainty": "approximate",
               "caption": "The reign that ended in the southern catastrophe that reshaped the later dynasty."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.11-p003",
@@ -2872,7 +2935,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.11-p004",
@@ -2919,7 +2983,8 @@
               "certainty": "approximate",
               "caption": "The reign in which reform, military strain, and new administrative forms became unmistakable."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -2973,7 +3038,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p002",
@@ -3020,7 +3086,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p003",
@@ -3067,7 +3134,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p004",
@@ -3114,7 +3182,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p005",
@@ -3161,7 +3230,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p006",
@@ -3208,7 +3278,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p007",
@@ -3227,7 +3298,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.12-p008",
@@ -3274,7 +3346,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.12-p009",
@@ -3321,7 +3394,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -3375,7 +3449,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.13-p002",
@@ -3422,7 +3497,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.13-p003",
@@ -3469,7 +3545,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.13-p004",
@@ -3516,7 +3593,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.13-p005",
@@ -3563,7 +3641,8 @@
               "certainty": "secure",
               "caption": "The years of royal breakdown, exile, regency, and the last effort to preserve the western court."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.13-p006",
@@ -3610,7 +3689,8 @@
               "certainty": "approximate",
               "caption": "The long transition in which the western monarchy weakened and the eastern order took shape."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -3664,7 +3744,8 @@
               "certainty": "approximate",
               "caption": "The period of reform, contraction, and institutional change that followed the disaster of King Zhao."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p002",
@@ -3711,7 +3792,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p003",
@@ -3758,7 +3840,8 @@
               "certainty": "approximate",
               "caption": "The period in which satire, correlative thought, and the later poetic voice became prominent."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p004",
@@ -3805,7 +3888,8 @@
               "certainty": "approximate",
               "caption": "The early Eastern Zhou phase in which many poems of the Airs of the States took shape."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p005",
@@ -3852,7 +3936,8 @@
               "certainty": "approximate",
               "caption": "The period in which satire, correlative thought, and the later poetic voice became prominent."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p006",
@@ -3899,7 +3984,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.14-p007",
@@ -3946,7 +4032,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -4000,7 +4087,8 @@
               "certainty": "approximate",
               "caption": "The period in which satire, correlative thought, and the later poetic voice became prominent."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.15-p002",
@@ -4047,7 +4135,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.15-p003",
@@ -4094,7 +4183,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.15-p004",
@@ -4141,7 +4231,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.15-p005",
@@ -4188,7 +4279,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.15-p006",
@@ -4235,7 +4327,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -4289,7 +4382,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.16-p002",
@@ -4336,7 +4430,8 @@
               "certainty": "secure",
               "caption": "The long period in which the Zhou Yi was read, used, and interpreted within changing political worlds."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.16-p003",
@@ -4355,7 +4450,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.16-p004",
@@ -4374,7 +4470,8 @@
               "caption": "The map shows the Zhou colonial network centered on Chengzhou, including the major regional states and the strategic corridors that tied the western court to the east."
             }
           ],
-          "timeline": []
+          "timeline": [],
+          "genealogy": []
         },
         {
           "id": "05.16-p005",
@@ -4421,7 +4518,8 @@
               "certainty": "secure",
               "caption": "The long period in which the Zhou Yi was read, used, and interpreted within changing political worlds."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.16-p006",
@@ -4468,7 +4566,8 @@
               "certainty": "secure",
               "caption": "The long period in which the Zhou Yi was read, used, and interpreted within changing political worlds."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.16-p007",
@@ -4515,7 +4614,8 @@
               "certainty": "secure",
               "caption": "The later Eastern Zhou age that preserved and reinterpreted Western Zhou precedents in new political conditions."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -4569,7 +4669,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.17-p002",
@@ -4616,7 +4717,8 @@
               "certainty": "secure",
               "caption": "The final serious restoration of royal initiative before the collapse of the west."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.17-p003",
@@ -4667,7 +4769,8 @@
               "certainty": "secure",
               "caption": "The overthrow of King Li and his flight to Zhi, one of the first securely fixed dates in early Chinese history."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.17-p004",
@@ -4714,7 +4817,8 @@
               "certainty": "secure",
               "caption": "The installation of King Xuan after the Gong He regency and the last serious attempt to restore royal authority."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.17-p005",
@@ -4761,7 +4865,8 @@
               "certainty": "secure",
               "caption": "The final serious restoration of royal initiative before the collapse of the west."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -4815,7 +4920,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p002",
@@ -4862,7 +4968,8 @@
               "certainty": "secure",
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p003",
@@ -4909,7 +5016,8 @@
               "certainty": "secure",
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p004",
@@ -4956,7 +5064,8 @@
               "certainty": "secure",
               "caption": "The final phase, marked by deeper regional fracture, literary transformation, and the fall of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p005",
@@ -5003,7 +5112,8 @@
               "certainty": "secure",
               "caption": "The sack of the western capital, the death of King You, and the end of the western Zhou court."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p006",
@@ -5050,7 +5160,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.18-p007",
@@ -5097,7 +5208,8 @@
               "certainty": "secure",
               "caption": "The later Zhou age that inherited Western Zhou institutions, texts, and political arguments in altered form."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     },
@@ -5160,7 +5272,8 @@
               "certainty": "secure",
               "caption": "The period treated in this chapter, from the conquest of Shang to the sack of the western capital."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.19-p002",
@@ -5207,7 +5320,8 @@
               "certainty": "secure",
               "caption": "The age in which the classic texts were canonized and Western Zhou became a normative historical model."
             }
-          ]
+          ],
+          "genealogy": []
         },
         {
           "id": "05.19-p003",
@@ -5254,15 +5368,21 @@
               "certainty": "secure",
               "caption": "The age in which the classic texts were canonized and Western Zhou became a normative historical model."
             }
-          ]
+          ],
+          "genealogy": []
         }
       ]
     }
   ],
+  "genealogy": {
+    "trees": []
+  },
   "stats": {
     "sectionCount": 19,
     "paragraphCount": 115,
     "figureCount": 347,
-    "timelineItemCount": 314
+    "timelineItemCount": 314,
+    "genealogyReferenceCount": 0,
+    "genealogyTreeCount": 0
   }
 }

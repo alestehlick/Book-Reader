@@ -1584,7 +1584,10 @@
       .filter(Boolean);
 
     if (contexts.length === 0) {
-      genealogySectionEl.hidden = true;
+      genealogySectionEl.hidden = false;
+      genealogySummaryEl.textContent = "";
+      genealogyFallbackEl.hidden = false;
+      genealogyFallbackEl.textContent = "Genealogy references exist for this paragraph, but no usable tree data could be resolved.";
       return;
     }
 
@@ -2187,10 +2190,12 @@
       } else {
         openSidebar();
       }
+      requestAnimationFrame(drawAllGenealogyConnectors);
       return;
     }
 
     document.body.classList.toggle("sidebar-collapsed");
+    requestAnimationFrame(drawAllGenealogyConnectors);
   }
 
   audio.addEventListener("loadedmetadata", () => {
@@ -2303,8 +2308,14 @@
     requestAnimationFrame(drawAllGenealogyConnectors);
   });
 
-  async function init() {
-    try {
+
+  if (document.fonts && typeof document.fonts.ready?.then === "function") {
+    document.fonts.ready.then(() => {
+      requestAnimationFrame(drawAllGenealogyConnectors);
+    }).catch(() => {});
+  }
+
+  async function init() {    try {
       applySavedTheme();
       ensureEnhancedLayout();
       applySavedTimelineVisibility();

@@ -1192,7 +1192,9 @@ body.sidebar-collapsed .main-panel {
   .player-card,
   .current-card,
   .context-card,
-  .media-card {
+  .media-card,
+  .timeline-card,
+  .genealogy-card {
     padding-left: 16px;
     padding-right: 16px;
   }
