@@ -448,7 +448,11 @@ const BOOK_DATA = {
                 "chengwang",
                 "zhougong",
                 "shaogong"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "shaogong": "chengwang"
+              }
             }
           ]
         },
@@ -2003,7 +2007,10 @@ const BOOK_DATA = {
               "active": [
                 "wuwang",
                 "wugeng"
-              ]
+              ],
+              "row_anchor": {
+                "wugeng": "wuwang"
+              }
             }
           ]
         }
@@ -2125,7 +2132,10 @@ const BOOK_DATA = {
                 "caishu",
                 "huoshu",
                 "zhougong"
-              ]
+              ],
+              "row_anchor": {
+                "wugeng": "wuwang"
+              }
             }
           ]
         },
@@ -2182,7 +2192,10 @@ const BOOK_DATA = {
                 "wuwang",
                 "chengwang",
                 "zhougong"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang"
+              }
             }
           ]
         },
@@ -2243,7 +2256,15 @@ const BOOK_DATA = {
                 "caishu",
                 "huoshu",
                 "wugeng"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "shaogong": "chengwang",
+                "guanshu": "chengwang",
+                "caishu": "chengwang",
+                "huoshu": "chengwang",
+                "wugeng": "chengwang"
+              }
             }
           ]
         },
@@ -2300,7 +2321,11 @@ const BOOK_DATA = {
                 "zhougong",
                 "chengwang",
                 "chengzhou"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "chengzhou": "chengwang"
+              }
             }
           ]
         },
@@ -2358,7 +2383,12 @@ const BOOK_DATA = {
                 "kangshu_feng",
                 "yinghou_zhi",
                 "chengwang"
-              ]
+              ],
+              "row_anchor": {
+                "tangshu_yu": "chengwang",
+                "kangshu_feng": "chengwang",
+                "yinghou_zhi": "chengwang"
+              }
             }
           ]
         },
@@ -2416,7 +2446,11 @@ const BOOK_DATA = {
                 "taigong_wang",
                 "shaogong",
                 "chengwang"
-              ]
+              ],
+              "row_anchor": {
+                "taigong_wang": "chengwang",
+                "shaogong": "chengwang"
+              }
             }
           ]
         }
@@ -2480,7 +2514,11 @@ const BOOK_DATA = {
                 "chengwang",
                 "zhougong",
                 "shaogong"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "shaogong": "chengwang"
+              }
             }
           ]
         },
@@ -2646,7 +2684,10 @@ const BOOK_DATA = {
               "active": [
                 "zhougong",
                 "chengwang"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang"
+              }
             }
           ]
         }
@@ -2709,7 +2750,10 @@ const BOOK_DATA = {
               "active": [
                 "zhougong",
                 "chengwang"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang"
+              }
             }
           ]
         },
@@ -2767,7 +2811,10 @@ const BOOK_DATA = {
                 "chengwang",
                 "wenwang",
                 "wuwang"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang"
+              }
             }
           ]
         },
@@ -2824,7 +2871,11 @@ const BOOK_DATA = {
                 "shaogong",
                 "chengwang",
                 "zhougong"
-              ]
+              ],
+              "row_anchor": {
+                "shaogong": "chengwang",
+                "zhougong": "chengwang"
+              }
             }
           ]
         },
@@ -2853,7 +2904,11 @@ const BOOK_DATA = {
                 "zhougong",
                 "shaogong",
                 "chengwang"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "shaogong": "chengwang"
+              }
             }
           ]
         },
@@ -2910,7 +2965,11 @@ const BOOK_DATA = {
                 "zhougong",
                 "chengwang",
                 "chengzhou"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "chengzhou": "chengwang"
+              }
             }
           ]
         }
@@ -2974,7 +3033,11 @@ const BOOK_DATA = {
                 "chengwang",
                 "shaogong",
                 "zhougong"
-              ]
+              ],
+              "row_anchor": {
+                "shaogong": "chengwang",
+                "zhougong": "chengwang"
+              }
             },
             {
               "id": "G5.3",
@@ -3094,7 +3157,11 @@ const BOOK_DATA = {
                 "chengwang",
                 "zhougong",
                 "yinghou_zhi"
-              ]
+              ],
+              "row_anchor": {
+                "zhougong": "chengwang",
+                "yinghou_zhi": "chengwang"
+              }
             }
           ]
         },
@@ -3209,7 +3276,10 @@ const BOOK_DATA = {
               "active": [
                 "kangwang",
                 "yu"
-              ]
+              ],
+              "row_anchor": {
+                "yu": "kangwang"
+              }
             }
           ]
         },
@@ -3265,7 +3335,10 @@ const BOOK_DATA = {
               "active": [
                 "kangwang",
                 "yu"
-              ]
+              ],
+              "row_anchor": {
+                "yu": "kangwang"
+              }
             }
           ]
         },
@@ -3321,7 +3394,10 @@ const BOOK_DATA = {
               "active": [
                 "zhaowang",
                 "chu_state"
-              ]
+              ],
+              "row_anchor": {
+                "chu_state": "zhaowang"
+              }
             }
           ]
         },
@@ -3550,7 +3626,10 @@ const BOOK_DATA = {
               "active": [
                 "muwang",
                 "xu_state"
-              ]
+              ],
+              "row_anchor": {
+                "xu_state": "muwang"
+              }
             }
           ]
         },
@@ -3608,7 +3687,12 @@ const BOOK_DATA = {
                 "xu_state",
                 "chu_state",
                 "yongfu"
-              ]
+              ],
+              "row_anchor": {
+                "xu_state": "muwang",
+                "chu_state": "muwang",
+                "yongfu": "muwang"
+              }
             }
           ]
         },
@@ -3719,7 +3803,10 @@ const BOOK_DATA = {
               "active": [
                 "muwang",
                 "li"
-              ]
+              ],
+              "row_anchor": {
+                "li": "muwang"
+              }
             }
           ]
         },
@@ -3747,7 +3834,10 @@ const BOOK_DATA = {
               "active": [
                 "muwang",
                 "li"
-              ]
+              ],
+              "row_anchor": {
+                "li": "muwang"
+              }
             }
           ]
         },
@@ -3804,7 +3894,11 @@ const BOOK_DATA = {
                 "muwang",
                 "qiuwei",
                 "li_stateslord"
-              ]
+              ],
+              "row_anchor": {
+                "qiuwei": "muwang",
+                "li_stateslord": "muwang"
+              }
             }
           ]
         },
@@ -3861,7 +3955,11 @@ const BOOK_DATA = {
                 "muwang",
                 "da_ke",
                 "jing_family"
-              ]
+              ],
+              "row_anchor": {
+                "da_ke": "muwang",
+                "jing_family": "muwang"
+              }
             }
           ]
         }
@@ -4098,7 +4196,10 @@ const BOOK_DATA = {
               "id": "G5.4",
               "active": [
                 "chu_state"
-              ]
+              ],
+              "row_anchor": {
+                "chu_state": "muwang"
+              }
             }
           ]
         },
@@ -4567,7 +4668,10 @@ const BOOK_DATA = {
               "active": [
                 "shao_gong_hu",
                 "xuanwang"
-              ]
+              ],
+              "row_anchor": {
+                "shao_gong_hu": "xuanwang"
+              }
             }
           ]
         }
@@ -5220,7 +5324,10 @@ const BOOK_DATA = {
               "active": [
                 "liwang",
                 "rong_yi_gong"
-              ]
+              ],
+              "row_anchor": {
+                "rong_yi_gong": "liwang"
+              }
             }
           ]
         },
@@ -5278,7 +5385,12 @@ const BOOK_DATA = {
                 "ruibo_liangfu",
                 "guo_gong_changfu",
                 "shao_gong_hu"
-              ]
+              ],
+              "row_anchor": {
+                "ruibo_liangfu": "liwang",
+                "guo_gong_changfu": "liwang",
+                "shao_gong_hu": "liwang"
+              }
             }
           ]
         },
@@ -5395,7 +5507,11 @@ const BOOK_DATA = {
                 "gonghe",
                 "shao_gong_hu",
                 "xuanwang"
-              ]
+              ],
+              "row_anchor": {
+                "gonghe": "xuanwang",
+                "shao_gong_hu": "xuanwang"
+              }
             }
           ]
         },
@@ -5451,7 +5567,10 @@ const BOOK_DATA = {
               "active": [
                 "gonghe",
                 "xuanwang"
-              ]
+              ],
+              "row_anchor": {
+                "gonghe": "xuanwang"
+              }
             }
           ]
         }
@@ -5515,7 +5634,11 @@ const BOOK_DATA = {
                 "xuanwang",
                 "yin_jifu",
                 "xianyun"
-              ]
+              ],
+              "row_anchor": {
+                "yin_jifu": "xuanwang",
+                "xianyun": "xuanwang"
+              }
             }
           ]
         },
@@ -5572,7 +5695,11 @@ const BOOK_DATA = {
                 "xuanwang",
                 "shao_gong_hu",
                 "xianyun"
-              ]
+              ],
+              "row_anchor": {
+                "shao_gong_hu": "xuanwang",
+                "xianyun": "xuanwang"
+              }
             }
           ]
         },
@@ -5799,7 +5926,13 @@ const BOOK_DATA = {
                 "yijiu",
                 "bosi_son",
                 "quanrong"
-              ]
+              ],
+              "row_anchor": {
+                "baosi": "bosi_son",
+                "queen_shen": "yijiu",
+                "lord_shen": "yijiu",
+                "quanrong": "youwang"
+              }
             }
           ]
         },
@@ -5857,7 +5990,11 @@ const BOOK_DATA = {
                 "pingwang",
                 "jin",
                 "qin"
-              ]
+              ],
+              "row_anchor": {
+                "jin": "pingwang",
+                "qin": "pingwang"
+              }
             }
           ]
         }
@@ -6158,6 +6295,11 @@ const BOOK_DATA = {
             "from": "wuwang",
             "to": "shaogong",
             "relation": "ally-of"
+          },
+          {
+            "from": "wenwang",
+            "to": "zhougong",
+            "relation": "father-son"
           }
         ]
       },
@@ -6360,11 +6502,6 @@ const BOOK_DATA = {
             "relation": "associated-with"
           },
           {
-            "from": "boqin",
-            "to": "zhougong",
-            "relation": "father-son"
-          },
-          {
             "from": "zhougong",
             "to": "boqin",
             "relation": "father-son"
@@ -6390,9 +6527,39 @@ const BOOK_DATA = {
             "relation": "ally-of"
           },
           {
-            "from": "yinghou_zhi",
+            "from": "wenwang",
             "to": "zhougong",
             "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "guanshu",
+            "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "caishu",
+            "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "huoshu",
+            "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "kangshu_feng",
+            "relation": "father-son"
+          },
+          {
+            "from": "wenwang",
+            "to": "tangshu_yu",
+            "relation": "father-son"
+          },
+          {
+            "from": "yinghou_zhi",
+            "to": "chengwang",
+            "relation": "colonial-peer-of"
           }
         ]
       },
@@ -6964,6 +7131,7 @@ const BOOK_DATA = {
     "figureCount": 347,
     "timelineItemCount": 314,
     "genealogyReferenceCount": 78,
-    "genealogyTreeCount": 5
+    "genealogyTreeCount": 5,
+    "rowAnchorCount": 65
   }
 };

@@ -57,11 +57,6 @@
   let timelinePointLabelsEl = null;
   let timelineFallbackEl = null;
   let timelineToggleBtn = null;
-  let genealogySectionEl = null;
-  let genealogySummaryEl = null;
-  let genealogyBodyEl = null;
-  let genealogyFallbackEl = null;
-  let genealogyToggleBtn = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
@@ -70,7 +65,6 @@
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
   const TIMELINE_VISIBILITY_STORAGE_KEY = "audio-reader-timeline-visible";
-  const GENEALOGY_VISIBILITY_STORAGE_KEY = "audio-reader-genealogy-visible";
 
   const state = {
     book: null,
@@ -86,8 +80,6 @@
     currentAudioPath: "",
     autoplayRequested: false,
     timelineVisible: true,
-    genealogyVisible: true,
-    genealogyTreeMap: new Map(),
   };
 
   function getDataConfig() {
@@ -219,8 +211,6 @@
     nextParagraphTextEl.textContent = "—";
     mediaSectionEl.hidden = true;
     figureGroupEl.hidden = true;
-    if (timelineSectionEl) timelineSectionEl.hidden = true;
-    if (genealogySectionEl) genealogySectionEl.hidden = true;
     contextGridEl.style.display = "none";
   }
 
@@ -313,9 +303,6 @@
     const timeline = normalizeMediaList(
       paragraph?.timeline || paragraph?.chronology || paragraph?.temporal || paragraph?.timelineItems
     );
-    const genealogy = normalizeMediaList(
-      paragraph?.genealogy || paragraph?.genealogyRefs || paragraph?.genealogyItems || paragraph?.genealogies || paragraph?.treeRefs
-    );
 
     return {
       ...paragraph,
@@ -324,7 +311,6 @@
       figures,
       videos,
       timeline,
-      genealogy,
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -334,117 +320,6 @@
 
   function normalizeMediaList(value) {
     return Array.isArray(value) ? value.filter(Boolean) : [];
-  }
-
-  function normalizeGenealogyRef(entry, index) {
-    if (!entry || typeof entry !== "object") return null;
-
-    const id = String(entry.id || entry.treeId || entry.tree || "").trim();
-    if (!id) return null;
-
-    const active = uniqueStrings(
-      asArray(entry.active || entry.activeNodes || entry.nodes || entry.focus || entry.highlight)
-        .map((item) => String(item || "").trim())
-        .filter(Boolean)
-    );
-
-    return {
-      id,
-      caption: String(entry.caption || entry.description || "").trim(),
-      active,
-      upGenerations: Number.isInteger(entry.up_generations) ? entry.up_generations : Number.isInteger(entry.upGenerations) ? entry.upGenerations : null,
-      downGenerations: Number.isInteger(entry.down_generations) ? entry.down_generations : Number.isInteger(entry.downGenerations) ? entry.downGenerations : null,
-      showCollaterals: typeof entry.show_collaterals === "boolean" ? entry.show_collaterals : typeof entry.showCollaterals === "boolean" ? entry.showCollaterals : null,
-      showAssociates: typeof entry.show_associates === "boolean" ? entry.show_associates : typeof entry.showAssociates === "boolean" ? entry.showAssociates : null,
-      _order: index,
-    };
-  }
-
-  function normalizeGenealogyNode(node, index) {
-    if (!node || typeof node !== "object") return null;
-
-    const id = String(node.id || `node-${index + 1}`).trim();
-    const name = String(node.name || node.label || id).trim();
-    if (!id || !name) return null;
-
-    return {
-      id,
-      name,
-      type: String(node.type || node.role || "political actor").trim(),
-      displayDate: String(node.display_date || node.displayDate || node.date || node.when || "").trim(),
-      note: String(node.note || node.caption || "").trim(),
-    };
-  }
-
-  function normalizeGenealogyEdge(edge, index) {
-    if (!edge || typeof edge !== "object") return null;
-
-    const from = String(edge.from || edge.source || "").trim();
-    const to = String(edge.to || edge.target || "").trim();
-    if (!from || !to) return null;
-
-    return {
-      id: String(edge.id || `edge-${index + 1}`).trim(),
-      from,
-      to,
-      relation: String(edge.relation || edge.type || edge.label || "related-to").trim(),
-    };
-  }
-
-  function dedupeGenealogyEdges(edges) {
-    const seen = new Set();
-
-    return edges.filter((edge) => {
-      if (!edge) return false;
-      const relationKey = String(edge.relation || "related-to").trim().toLowerCase();
-      const pair = [edge.from, edge.to].sort().join("::");
-      const key = `${pair}::${relationKey}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }
-
-  function normalizeGenealogyData(value) {
-    const rawTrees = Array.isArray(value?.trees)
-      ? value.trees
-      : Array.isArray(value)
-        ? value
-        : [];
-
-    const trees = rawTrees
-      .map((tree, treeIndex) => {
-        if (!tree || typeof tree !== "object") return null;
-
-        const id = String(tree.id || `G${treeIndex + 1}`).trim();
-        if (!id) return null;
-
-        const nodes = normalizeMediaList(tree.nodes)
-          .map((node, nodeIndex) => normalizeGenealogyNode(node, nodeIndex))
-          .filter(Boolean);
-        const nodeMap = new Map(nodes.map((node) => [node.id, node]));
-
-        const edges = dedupeGenealogyEdges(
-          normalizeMediaList(tree.edges)
-            .map((edge, edgeIndex) => normalizeGenealogyEdge(edge, edgeIndex))
-            .filter((edge) => edge && nodeMap.has(edge.from) && nodeMap.has(edge.to))
-        );
-
-        return {
-          id,
-          title: String(tree.title || tree.name || id).trim(),
-          caption: String(tree.caption || tree.description || "").trim(),
-          nodes,
-          edges,
-          nodeMap,
-        };
-      })
-      .filter(Boolean);
-
-    return {
-      trees,
-      byId: new Map(trees.map((tree) => [tree.id, tree])),
-    };
   }
 
   function coerceYear(value) {
@@ -687,16 +562,12 @@
   function indexBookData(book) {
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
 
-    const normalizedGenealogy = normalizeGenealogyData(book?.genealogy || book?.genealogies || {});
-
     state.book = {
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
       sharedFigures: normalizeMediaList(book?.sharedFigures),
       sharedVideos: normalizeMediaList(book?.sharedVideos),
       sharedTimeline: normalizeMediaList(book?.sharedTimeline || book?.timeline),
-      sharedGenealogy: normalizeMediaList(book?.sharedGenealogy || book?.genealogyRefs),
-      genealogy: normalizedGenealogy,
       sections: rawSections.map((section, index) => ({
         ...section,
         id: String(section?.id || section?.number || `section-${index + 1}`),
@@ -705,12 +576,10 @@
         sharedFigures: normalizeMediaList(section?.sharedFigures),
         sharedVideos: normalizeMediaList(section?.sharedVideos),
         sharedTimeline: normalizeMediaList(section?.sharedTimeline || section?.timeline),
-        sharedGenealogy: normalizeMediaList(section?.sharedGenealogy || section?.genealogyRefs),
         paragraphs: Array.isArray(section?.paragraphs) ? section.paragraphs : [],
       })),
     };
 
-    state.genealogyTreeMap = normalizedGenealogy.byId;
     state.flatParagraphs = [];
     state.sectionStartIndexById = new Map();
 
@@ -938,34 +807,6 @@
     );
   }
 
-  function dedupeGenealogyRefs(entries) {
-    const seen = new Set();
-
-    return entries.filter((item) => {
-      if (!item || !item.id) return false;
-      const activeKey = Array.isArray(item.active) ? item.active.join("|") : "";
-      const key = `${item.id}::${activeKey}::${item.caption}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }
-
-  function getEffectiveGenealogyRefs(paragraph) {
-    const section = getSectionById(paragraph?.sectionId);
-    const rawEntries = [
-      ...normalizeMediaList(state.book?.sharedGenealogy),
-      ...normalizeMediaList(section?.sharedGenealogy),
-      ...normalizeMediaList(paragraph?.genealogy),
-    ];
-
-    return dedupeGenealogyRefs(
-      rawEntries
-        .map((entry, index) => normalizeGenealogyRef(entry, index))
-        .filter(Boolean)
-    );
-  }
-
   function buildSectionNav() {
     sectionsNavEl.innerHTML = "";
 
@@ -1189,523 +1030,6 @@
     renderVideos(effectiveVideos);
   }
 
-  function formatGenealogySummary(treeCount, playerCount) {
-    const parts = [];
-
-    if (treeCount > 0) {
-      parts.push(`${treeCount} tree${treeCount === 1 ? "" : "s"}`);
-    }
-
-    if (playerCount > 0) {
-      parts.push(`${playerCount} player${playerCount === 1 ? "" : "s"}`);
-    }
-
-    return parts.join(" • ");
-  }
-
-  function normalizeRelationName(relation) {
-    return String(relation || "related-to")
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, "-");
-  }
-
-  function isForwardFamilyRelation(relation) {
-    const value = normalizeRelationName(relation);
-    return ["father-son", "mother-son", "parent-child", "ancestor-of", "founder-of-branch"].includes(value);
-  }
-
-  function isSameGenerationRelation(relation) {
-    const value = normalizeRelationName(relation);
-    return ["brothers", "siblings", "consort-of", "rival-to", "ally-of", "kinsman-of", "kinsman", "sibling-of"].includes(value);
-  }
-
-  function isAssociateRelation(relation) {
-    const value = normalizeRelationName(relation);
-    return ["regent-of", "minister-to", "counselor-to", "general-to", "advisor-to", "guardian-of", "consort-of", "rival-to", "ally-of", "supporter-of", "commander-for", "appoints", "associated-with"].includes(value);
-  }
-
-  function classifyNodeRole(nodeId, activeSet, nearSet, lineageSet) {
-    if (activeSet.has(nodeId)) return "active";
-    if (nearSet.has(nodeId)) return lineageSet.has(nodeId) ? "lineage-near" : "near";
-    if (lineageSet.has(nodeId)) return "lineage";
-    return "context";
-  }
-
-  function getVisibleGenealogyEdges(edges, activeSet, lineageNodes) {
-    return edges
-      .map((edge) => {
-        const relation = normalizeRelationName(edge.relation);
-        const fromActive = activeSet.has(edge.from);
-        const toActive = activeSet.has(edge.to);
-        const fromLineage = lineageNodes.has(edge.from);
-        const toLineage = lineageNodes.has(edge.to);
-        let priority = 0;
-
-        if (fromActive && toActive) {
-          priority = 5;
-        } else if ((fromActive || toActive) && (isForwardFamilyRelation(relation) || relation === "adopted-by")) {
-          priority = 4;
-        } else if ((fromActive || toActive) && isAssociateRelation(relation)) {
-          priority = 4;
-        } else if ((fromActive || toActive) && isSameGenerationRelation(relation)) {
-          priority = 3;
-        } else if (fromActive || toActive) {
-          priority = 2;
-        } else if ((isForwardFamilyRelation(relation) || relation === "adopted-by") && fromLineage && toLineage) {
-          priority = 2;
-        }
-
-        return priority > 0 ? { ...edge, priority } : null;
-      })
-      .filter(Boolean)
-      .sort((a, b) => b.priority - a.priority || a.relation.localeCompare(b.relation));
-  }
-
-  function getNodeSortWeight(node, activeSet, roleMap = new Map()) {
-    const type = String(node?.type || "").toLowerCase();
-    const role = roleMap.get(node?.id) || "context";
-    const roleWeights = {
-      active: -180,
-      "lineage-near": -120,
-      near: -95,
-      lineage: -60,
-      context: 0,
-    };
-    const activeBonus = activeSet.has(node?.id) ? -100 : 0;
-    const typeWeights = {
-      ruler: 0,
-      king: 0,
-      emperor: 0,
-      heir: 1,
-      crown: 1,
-      regent: 2,
-      consort: 3,
-      royal: 4,
-      minister: 5,
-      counselor: 6,
-      general: 7,
-      political: 8,
-    };
-
-    const firstTypeToken = type.split(/\s+/)[0];
-    return (roleWeights[role] ?? 0) + activeBonus + (typeWeights[firstTypeToken] ?? 20);
-  }
-
-  function sortGenealogyNodes(nodes, activeSet, roleMap = new Map()) {
-    return [...nodes].sort((a, b) => {
-      const weightDelta = getNodeSortWeight(a, activeSet, roleMap) - getNodeSortWeight(b, activeSet, roleMap);
-      if (weightDelta !== 0) return weightDelta;
-      return a.name.localeCompare(b.name);
-    });
-  }
-
-  function buildGenealogyContext(tree, ref) {
-    if (!tree) return null;
-
-    const activeIds = uniqueStrings(ref.active.filter((id) => tree.nodeMap.has(id)));
-    if (activeIds.length === 0) return null;
-
-    const activeSet = new Set(activeIds);
-    const upGenerations = Number.isInteger(ref.upGenerations) ? Math.max(0, ref.upGenerations) : 2;
-    const downGenerations = Number.isInteger(ref.downGenerations) ? Math.max(0, ref.downGenerations) : 0;
-    const showCollaterals = typeof ref.showCollaterals === "boolean" ? ref.showCollaterals : true;
-    const showAssociates = typeof ref.showAssociates === "boolean" ? ref.showAssociates : true;
-
-    const incoming = new Map();
-    const outgoing = new Map();
-
-    tree.edges.forEach((edge) => {
-      if (!outgoing.has(edge.from)) outgoing.set(edge.from, []);
-      if (!incoming.has(edge.to)) incoming.set(edge.to, []);
-      outgoing.get(edge.from).push(edge);
-      incoming.get(edge.to).push(edge);
-    });
-
-    const selected = new Set(activeIds);
-    const lineageNodes = new Set(activeIds);
-    const layerMap = new Map(activeIds.map((id) => [id, 0]));
-
-    let frontier = [...activeIds];
-    for (let depth = 1; depth <= upGenerations; depth += 1) {
-      const next = [];
-      frontier.forEach((nodeId) => {
-        (incoming.get(nodeId) || []).forEach((edge) => {
-          if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.from)) {
-            selected.add(edge.from);
-            lineageNodes.add(edge.from);
-            layerMap.set(edge.from, -depth);
-            next.push(edge.from);
-          }
-        });
-        tree.edges.forEach((edge) => {
-          if (normalizeRelationName(edge.relation) === "adopted-by" && edge.from === nodeId && !selected.has(edge.to)) {
-            selected.add(edge.to);
-            lineageNodes.add(edge.to);
-            layerMap.set(edge.to, -depth);
-            next.push(edge.to);
-          }
-        });
-      });
-      frontier = next;
-    }
-
-    frontier = [...activeIds];
-    for (let depth = 1; depth <= downGenerations; depth += 1) {
-      const next = [];
-      frontier.forEach((nodeId) => {
-        (outgoing.get(nodeId) || []).forEach((edge) => {
-          if (isForwardFamilyRelation(edge.relation) && !selected.has(edge.to)) {
-            selected.add(edge.to);
-            lineageNodes.add(edge.to);
-            layerMap.set(edge.to, depth);
-            next.push(edge.to);
-          }
-        });
-      });
-      frontier = next;
-    }
-
-    if (showCollaterals) {
-      [...selected].forEach((nodeId) => {
-        const baseLayer = layerMap.get(nodeId) ?? 0;
-
-        (incoming.get(nodeId) || []).forEach((edge) => {
-          if (!isForwardFamilyRelation(edge.relation)) return;
-          (outgoing.get(edge.from) || []).forEach((siblingEdge) => {
-            if (!isForwardFamilyRelation(siblingEdge.relation) || siblingEdge.to === nodeId) return;
-            if (!selected.has(siblingEdge.to)) {
-              selected.add(siblingEdge.to);
-              layerMap.set(siblingEdge.to, baseLayer);
-            }
-          });
-        });
-
-        tree.edges.forEach((edge) => {
-          if ((edge.from === nodeId || edge.to === nodeId) && isSameGenerationRelation(edge.relation)) {
-            const siblingId = edge.from === nodeId ? edge.to : edge.from;
-            if (!selected.has(siblingId)) {
-              selected.add(siblingId);
-              layerMap.set(siblingId, baseLayer);
-            }
-          }
-        });
-      });
-    }
-
-    if (showAssociates) {
-      [...selected].forEach((nodeId) => {
-        const baseLayer = layerMap.get(nodeId) ?? 0;
-        tree.edges.forEach((edge) => {
-          if ((edge.from === nodeId || edge.to === nodeId) && isAssociateRelation(edge.relation)) {
-            const associateId = edge.from === nodeId ? edge.to : edge.from;
-            if (!selected.has(associateId)) {
-              selected.add(associateId);
-              layerMap.set(associateId, baseLayer);
-            }
-          }
-        });
-      });
-    }
-
-    const edges = tree.edges.filter((edge) => selected.has(edge.from) && selected.has(edge.to));
-    const visibleEdges = getVisibleGenealogyEdges(edges, activeSet, lineageNodes);
-    const nearSet = new Set(
-      visibleEdges
-        .filter((edge) => activeSet.has(edge.from) || activeSet.has(edge.to))
-        .flatMap((edge) => [edge.from, edge.to])
-        .filter((id) => !activeSet.has(id))
-    );
-
-    const nodeRoleMap = new Map(
-      [...selected].map((id) => [id, classifyNodeRole(id, activeSet, nearSet, lineageNodes)])
-    );
-
-    const nodes = sortGenealogyNodes(
-      [...selected].map((id) => tree.nodeMap.get(id)).filter(Boolean),
-      activeSet,
-      nodeRoleMap
-    );
-
-    const rows = new Map();
-    nodes.forEach((node) => {
-      const layer = layerMap.get(node.id) ?? 0;
-      if (!rows.has(layer)) rows.set(layer, []);
-      rows.get(layer).push(node);
-    });
-
-    const sortedRows = [...rows.entries()]
-      .sort((a, b) => a[0] - b[0])
-      .map(([layer, rowNodes]) => ({
-        layer,
-        label: layer < 0 ? (layer === -1 ? "Above" : "Earlier line") : layer > 0 ? "Below" : "Active field",
-        nodes: sortGenealogyNodes(rowNodes, activeSet, nodeRoleMap),
-      }));
-
-    return {
-      ref,
-      tree,
-      nodes,
-      edges,
-      visibleEdges,
-      rows: sortedRows,
-      activeSet,
-      layerMap,
-      nodeRoleMap,
-    };
-  }
-
-  function genealogyMetaParts(node) {
-    const parts = [];
-    if (node.type) parts.push(node.type);
-    if (node.displayDate) parts.push(node.displayDate);
-    return parts;
-  }
-
-  function relationToReadableText(relation) {
-    return String(relation || "related to")
-      .replace(/_/g, " ")
-      .replace(/-/g, " ")
-      .trim();
-  }
-
-  function createGenealogyNode(node, isActive, role = "context") {
-    const card = document.createElement("div");
-    card.className = "genealogy-node";
-    if (isActive) card.classList.add("is-active");
-    card.classList.add(`is-${role}`);
-    card.dataset.nodeId = node.id;
-    card.dataset.role = role;
-
-    const name = document.createElement("div");
-    name.className = "genealogy-node-name";
-    name.textContent = node.name;
-    card.appendChild(name);
-
-    const metaParts = genealogyMetaParts(node);
-    if (metaParts.length > 0) {
-      const meta = document.createElement("div");
-      meta.className = "genealogy-node-meta";
-      meta.textContent = metaParts.join(" • ");
-      card.appendChild(meta);
-    }
-
-    if (node.note) {
-      const note = document.createElement("div");
-      note.className = "genealogy-node-note";
-      note.textContent = node.note;
-      card.appendChild(note);
-    }
-
-    if (isActive) {
-      const badge = document.createElement("span");
-      badge.className = "genealogy-node-badge";
-      badge.textContent = "Active";
-      card.appendChild(badge);
-    }
-
-    return card;
-  }
-
-  function renderGenealogyContext(context, index) {
-    const article = document.createElement("article");
-    article.className = "genealogy-tree";
-
-    const header = document.createElement("div");
-    header.className = "genealogy-tree-header";
-
-    const title = document.createElement("div");
-    title.className = "genealogy-tree-title";
-    title.textContent = context.tree.title || `Tree ${index + 1}`;
-    header.appendChild(title);
-
-    const captionText = context.ref.caption || context.tree.caption || "";
-    if (captionText) {
-      const caption = document.createElement("div");
-      caption.className = "genealogy-tree-caption";
-      caption.textContent = captionText;
-      header.appendChild(caption);
-    }
-
-    article.appendChild(header);
-
-    const canvas = document.createElement("div");
-    canvas.className = "genealogy-canvas";
-
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", "genealogy-links");
-    svg.setAttribute("aria-hidden", "true");
-    canvas.appendChild(svg);
-
-    const rowsEl = document.createElement("div");
-    rowsEl.className = "genealogy-rows";
-
-    context.rows.forEach((row) => {
-      const rowEl = document.createElement("div");
-      rowEl.className = "genealogy-row";
-      rowEl.dataset.layer = String(row.layer);
-
-      if (context.rows.length > 1) {
-        const rowLabel = document.createElement("div");
-        rowLabel.className = "genealogy-row-label";
-        rowLabel.textContent = row.label;
-        rowEl.appendChild(rowLabel);
-      }
-
-      const nodesWrap = document.createElement("div");
-      nodesWrap.className = "genealogy-row-nodes";
-      row.nodes.forEach((node) => {
-        const role = context.nodeRoleMap.get(node.id) || "context";
-        nodesWrap.appendChild(createGenealogyNode(node, context.activeSet.has(node.id), role));
-      });
-      rowEl.appendChild(nodesWrap);
-      rowsEl.appendChild(rowEl);
-    });
-
-    canvas.appendChild(rowsEl);
-    article.appendChild(canvas);
-
-    const ties = context.visibleEdges
-      .filter((edge) => context.activeSet.has(edge.from) || context.activeSet.has(edge.to))
-      .slice(0, 4);
-
-    if (ties.length > 0) {
-      const tieList = document.createElement("div");
-      tieList.className = "genealogy-ties";
-      ties.forEach((edge) => {
-        const fromNode = context.tree.nodeMap.get(edge.from);
-        const toNode = context.tree.nodeMap.get(edge.to);
-        if (!fromNode || !toNode) return;
-
-        const line = document.createElement("div");
-        line.className = "genealogy-tie";
-        line.textContent = `${fromNode.name} ${relationToReadableText(edge.relation)} ${toNode.name}`;
-        tieList.appendChild(line);
-      });
-      if (tieList.childElementCount > 0) {
-        article.appendChild(tieList);
-      }
-    }
-
-    article._genealogyEdges = context.visibleEdges;
-    article._genealogyLayerMap = context.layerMap;
-    return article;
-  }
-
-  function safeSelectorForNodeId(nodeId) {
-    if (window.CSS && typeof window.CSS.escape === "function") {
-      return `[data-node-id="${window.CSS.escape(nodeId)}"]`;
-    }
-    return `[data-node-id="${String(nodeId).replace(/"/g, '\"')}"]`;
-  }
-
-  function drawGenealogyConnectorsForTree(treeEl) {
-    if (!treeEl) return;
-    const canvas = treeEl.querySelector(".genealogy-canvas");
-    const svg = treeEl.querySelector(".genealogy-links");
-    const edges = Array.isArray(treeEl._genealogyEdges) ? treeEl._genealogyEdges : [];
-    const layerMap = treeEl._genealogyLayerMap instanceof Map ? treeEl._genealogyLayerMap : new Map();
-    if (!canvas || !svg) return;
-
-    const canvasRect = canvas.getBoundingClientRect();
-    const width = Math.max(1, canvasRect.width);
-    const height = Math.max(1, canvasRect.height);
-
-    svg.innerHTML = "";
-    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    svg.setAttribute("width", String(width));
-    svg.setAttribute("height", String(height));
-
-    edges.forEach((edge) => {
-      const fromEl = canvas.querySelector(safeSelectorForNodeId(edge.from));
-      const toEl = canvas.querySelector(safeSelectorForNodeId(edge.to));
-      if (!fromEl || !toEl) return;
-
-      const fromRect = fromEl.getBoundingClientRect();
-      const toRect = toEl.getBoundingClientRect();
-      const fromLayer = layerMap.get(edge.from) ?? 0;
-      const toLayer = layerMap.get(edge.to) ?? 0;
-
-      let x1;
-      let y1;
-      let x2;
-      let y2;
-      let pathData;
-
-      if (fromLayer === toLayer) {
-        const fromBeforeTo = fromRect.left <= toRect.left;
-        x1 = fromBeforeTo ? fromRect.right - canvasRect.left : fromRect.left - canvasRect.left;
-        y1 = fromRect.top - canvasRect.top + fromRect.height / 2;
-        x2 = fromBeforeTo ? toRect.left - canvasRect.left : toRect.right - canvasRect.left;
-        y2 = toRect.top - canvasRect.top + toRect.height / 2;
-        const curve = Math.max(26, Math.min(90, Math.abs(x2 - x1) * 0.28));
-        const c1x = fromBeforeTo ? x1 + curve : x1 - curve;
-        const c2x = fromBeforeTo ? x2 - curve : x2 + curve;
-        pathData = `M ${x1} ${y1} C ${c1x} ${y1}, ${c2x} ${y2}, ${x2} ${y2}`;
-      } else {
-        const fromAbove = fromLayer < toLayer;
-        x1 = fromRect.left - canvasRect.left + fromRect.width / 2;
-        y1 = fromAbove ? fromRect.bottom - canvasRect.top : fromRect.top - canvasRect.top;
-        x2 = toRect.left - canvasRect.left + toRect.width / 2;
-        y2 = fromAbove ? toRect.top - canvasRect.top : toRect.bottom - canvasRect.top;
-        const deltaY = y2 - y1;
-        const bend = Math.max(24, Math.min(64, Math.abs(deltaY) * 0.44));
-        const c1y = y1 + Math.sign(deltaY || 1) * bend;
-        const c2y = y2 - Math.sign(deltaY || 1) * bend;
-        pathData = `M ${x1} ${y1} C ${x1} ${c1y}, ${x2} ${c2y}, ${x2} ${y2}`;
-      }
-
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("d", pathData);
-      path.setAttribute("class", `genealogy-link priority-${edge.priority || 1}`);
-      svg.appendChild(path);
-    });
-  }
-
-  function drawAllGenealogyConnectors() {
-    if (!genealogySectionEl || genealogySectionEl.hidden || !state.genealogyVisible) return;
-    genealogyBodyEl?.querySelectorAll(".genealogy-tree").forEach((treeEl) => drawGenealogyConnectorsForTree(treeEl));
-  }
-
-  function renderGenealogy() {
-    if (!genealogySectionEl || !genealogyBodyEl || !genealogySummaryEl || !genealogyFallbackEl) return;
-
-    const current = getCurrentParagraph();
-    if (!current) {
-      genealogySectionEl.hidden = true;
-      return;
-    }
-
-    const refs = getEffectiveGenealogyRefs(current);
-    if (refs.length === 0) {
-      genealogySectionEl.hidden = true;
-      return;
-    }
-
-    genealogyBodyEl.innerHTML = "";
-    genealogyFallbackEl.hidden = true;
-    genealogyFallbackEl.textContent = "";
-
-    const contexts = refs
-      .map((ref) => buildGenealogyContext(state.genealogyTreeMap.get(ref.id), ref))
-      .filter(Boolean);
-
-    if (contexts.length === 0) {
-      genealogySectionEl.hidden = true;
-      return;
-    }
-
-    contexts.forEach((context, index) => {
-      genealogyBodyEl.appendChild(renderGenealogyContext(context, index));
-    });
-
-    const playerCount = new Set(contexts.flatMap((context) => context.nodes.map((node) => node.id))).size;
-    genealogySummaryEl.textContent = formatGenealogySummary(contexts.length, playerCount);
-    genealogySectionEl.hidden = false;
-
-    requestAnimationFrame(drawAllGenealogyConnectors);
-  }
-
   function formatTimelineSummary(entries, unit = null) {
     const spanCount = entries.filter((entry) => entry.type === "span").length;
     const pointCount = entries.filter((entry) => entry.type === "point").length;
@@ -1921,7 +1245,6 @@
     contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
 
     renderTimeline();
-    renderGenealogy();
     renderMedia();
   }
 
@@ -2177,32 +1500,6 @@
       timelineToggleBtn?.addEventListener("click", toggleTimelineVisibility);
       applyTimelineVisibility(false);
     }
-
-    if (currentCardEl && !genealogySectionEl) {
-      genealogySectionEl = document.createElement("section");
-      genealogySectionEl.id = "genealogySection";
-      genealogySectionEl.className = "genealogy-card card";
-      genealogySectionEl.hidden = true;
-      genealogySectionEl.innerHTML = `
-        <div class="genealogy-header">
-          <div class="genealogy-header-main">
-            <div class="eyebrow">Relational field</div>
-            <div class="genealogy-summary" id="genealogySummary"></div>
-          </div>
-          <button type="button" class="genealogy-toggle-btn" id="genealogyToggleBtn" aria-label="Hide genealogy" aria-pressed="true">Hide</button>
-        </div>
-        <div class="genealogy-body" id="genealogyBody"></div>
-        <div class="genealogy-fallback" id="genealogyFallback" hidden></div>
-      `;
-      const insertionTarget = mediaSectionEl || currentCardEl.nextSibling;
-      currentCardEl.parentNode.insertBefore(genealogySectionEl, insertionTarget);
-      genealogySummaryEl = genealogySectionEl.querySelector("#genealogySummary");
-      genealogyBodyEl = genealogySectionEl.querySelector("#genealogyBody");
-      genealogyFallbackEl = genealogySectionEl.querySelector("#genealogyFallback");
-      genealogyToggleBtn = genealogySectionEl.querySelector("#genealogyToggleBtn");
-      genealogyToggleBtn?.addEventListener("click", toggleGenealogyVisibility);
-      applyGenealogyVisibility(false);
-    }
   }
 
   function applyTimelineVisibility(persist = false) {
@@ -2234,41 +1531,6 @@
   function toggleTimelineVisibility() {
     state.timelineVisible = !state.timelineVisible;
     applyTimelineVisibility(true);
-  }
-
-  function applyGenealogyVisibility(persist = false) {
-    if (!genealogySectionEl) return;
-
-    genealogySectionEl.classList.toggle("genealogy-collapsed", !state.genealogyVisible);
-
-    if (genealogyToggleBtn) {
-      genealogyToggleBtn.textContent = state.genealogyVisible ? "Hide" : "Show";
-      genealogyToggleBtn.setAttribute(
-        "aria-label",
-        state.genealogyVisible ? "Hide genealogy" : "Show genealogy"
-      );
-      genealogyToggleBtn.setAttribute("aria-pressed", state.genealogyVisible ? "true" : "false");
-      genealogyToggleBtn.classList.toggle("is-collapsed", !state.genealogyVisible);
-    }
-
-    if (persist) {
-      localStorage.setItem(GENEALOGY_VISIBILITY_STORAGE_KEY, state.genealogyVisible ? "visible" : "hidden");
-    }
-
-    if (state.genealogyVisible) {
-      requestAnimationFrame(drawAllGenealogyConnectors);
-    }
-  }
-
-  function applySavedGenealogyVisibility() {
-    const savedVisibility = localStorage.getItem(GENEALOGY_VISIBILITY_STORAGE_KEY);
-    state.genealogyVisible = savedVisibility !== "hidden";
-    applyGenealogyVisibility(false);
-  }
-
-  function toggleGenealogyVisibility() {
-    state.genealogyVisible = !state.genealogyVisible;
-    applyGenealogyVisibility(true);
   }
 
   function isMobileLayout() {
@@ -2407,15 +1669,12 @@
     if (!isMobileLayout()) {
       closeSidebar();
     }
-    requestAnimationFrame(drawAllGenealogyConnectors);
   });
 
   async function init() {
     try {
       applySavedTheme();
       ensureEnhancedLayout();
-      applySavedTimelineVisibility();
-      applySavedGenealogyVisibility();
 
       const rawBookData = await loadBookData();
       indexBookData(rawBookData);
