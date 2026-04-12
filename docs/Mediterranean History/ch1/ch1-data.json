@@ -1,0 +1,1809 @@
+{
+  "title": "1 — A barbarian history",
+  "language": "en",
+  "sections": [
+    {
+      "id": "01.01",
+      "number": "01.01",
+      "title": "Kythera as Mediterranean Microcosm",
+      "paragraphs": [
+        {
+          "id": "01.01-p001",
+          "text": "On a hot morning on the east coast of Kythera, a narrow strip of sea glimmers below a sky so bright that the eye can barely endure it.\nThe place looks barren, almost forsaken, yet its stony surface preserves a dense record of human movement across thousands of years.",
+          "figures": [
+            {
+              "label": "Figure 1.1",
+              "caption": "A view over eastern Kythera and Avlemonas. The image makes clear how a seemingly spare coastal landscape could serve as a long-used anchorage and a crossroads of movement."
+            }
+          ],
+          "timeline": []
+        },
+        {
+          "id": "01.01-p002",
+          "text": "Archaeologists working there were collecting battered fragments of pottery from a site about three thousand five hundred years old.\nThe finds were modest in scale, but they revealed that this harsh corner of the island had once belonged to the wider Minoan world.\nPeople here cooked, stored goods, and probably worked a difficult landscape with terraces, while a nearby open-air shrine and the port of Kastri tied the area to larger networks of power, ritual, and exchange.",
+          "figures": [
+            {
+              "label": "Figure 1.1",
+              "caption": "The eastern coast of Kythera seen from above. It helps situate the Bronze Age activity, the nearby harbor, and the small but strategic coastal world described in the text."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Neolithic Kythera",
+              "start": -6500,
+              "end": -4000,
+              "display_date": "c. 6500-4000 BC",
+              "certainty": "approximate",
+              "caption": "Earlier small communities on Kythera form the deeper background behind the later Bronze Age activity."
+            },
+            {
+              "type": "span",
+              "label": "Minoan palatial period",
+              "start": -2000,
+              "end": -1450,
+              "display_date": "c. 2000-1450 BC",
+              "certainty": "approximate",
+              "caption": "The mature Cretan horizon in which Kythera could function as part of a wider Minoan network."
+            },
+            {
+              "type": "span",
+              "label": "Mycenaean Aegean",
+              "start": -1450,
+              "end": -1100,
+              "display_date": "c. 1450-1100 BC",
+              "certainty": "approximate",
+              "caption": "The later Bronze Age successor horizon that followed the peak Minoan phase."
+            },
+            {
+              "type": "point",
+              "label": "Kastri on Kythera",
+              "start": -1500,
+              "end": -1500,
+              "display_date": "c. 1500 BC",
+              "certainty": "approximate",
+              "caption": "The port-town of Kastri marks the phase of strong Cretan influence described in this paragraph."
+            }
+          ]
+        },
+        {
+          "id": "01.01-p003",
+          "text": "The traces went further back still.\nSmall scatters of pottery and obsidian showed that people had been living or passing through here in the Neolithic, already linked by sea to Melos, the nearest source of that volcanic glass.\nAn even earlier arrowhead hinted at hunting or fishing parties in the seventh millennium BC.\nSeen in this longer perspective, Kythera was not a lonely edge at all, but one station within a corridor running between the Peloponnese and Crete.",
+          "figures": [
+            {
+              "label": "Figure 1.1",
+              "caption": "The same Kytheran coastline viewed as part of a wider maritime corridor. The point is not scenery alone, but the island's position between larger lands and sea routes."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Mesolithic Mediterranean",
+              "start": -9000,
+              "end": -7000,
+              "display_date": "c. 9000-7000 BC",
+              "certainty": "approximate",
+              "caption": "This earlier horizon frames the first small crossings and visits that begin to make islands and straits historically active."
+            },
+            {
+              "type": "span",
+              "label": "Neolithic Kythera",
+              "start": -6500,
+              "end": -4000,
+              "display_date": "c. 6500-4000 BC",
+              "certainty": "approximate",
+              "caption": "Pottery scatters and obsidian place the island within a settled and connected Neolithic world."
+            },
+            {
+              "type": "span",
+              "label": "Bronze Age Aegean networks",
+              "start": -3200,
+              "end": -1200,
+              "display_date": "c. 3200-1200 BC",
+              "certainty": "approximate",
+              "caption": "Later maritime systems would intensify the corridor between the Peloponnese, Kythera, and Crete."
+            },
+            {
+              "type": "point",
+              "label": "Early arrowhead on Antidragonera",
+              "start": -7000,
+              "end": -7000,
+              "display_date": "c. 7000 BC",
+              "certainty": "approximate",
+              "caption": "This tiny find marks a very early human presence in the wider Kytheran seascape."
+            }
+          ]
+        },
+        {
+          "id": "01.01-p004",
+          "text": "That is why this small patch of land serves as a fitting prelude to the early Mediterranean as a whole.\nIt brings together difficult landscapes, fragile local settlements, seaborne connection, ritual life, and repeated reoccupation over immense stretches of time.\nIt also reminds us that the Mediterranean was not born as a finished historical world.\nIt had to be made, slowly, through countless acts of movement, adaptation, and exchange.",
+          "figures": [
+            {
+              "label": "Figure 1.1",
+              "caption": "This panorama turns a small corner of Kythera into a Mediterranean miniature. It shows how one place can gather anchorage, movement, and repeated habitation into a single view."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Palaeolithic Mediterranean",
+              "start": -50000,
+              "end": -10000,
+              "display_date": "c. 50,000-10,000 BC",
+              "certainty": "approximate",
+              "caption": "A very long human background before farming and before the sea became a dense medium of connection."
+            },
+            {
+              "type": "span",
+              "label": "Neolithic Mediterranean",
+              "start": -7000,
+              "end": -4000,
+              "display_date": "c. 7000-4000 BC",
+              "certainty": "approximate",
+              "caption": "Farming communities, island crossings, and small settled worlds begin to knit fragments together."
+            },
+            {
+              "type": "span",
+              "label": "Bronze and Iron Age Mediterranean",
+              "start": -3200,
+              "end": -500,
+              "display_date": "c. 3200-500 BC",
+              "certainty": "approximate",
+              "caption": "The sea becomes progressively more connected, institutionally complex, and historically legible."
+            }
+          ]
+        },
+        {
+          "id": "01.01-p005",
+          "text": "Three later arrivals on this same coast sharpen the warning.\nLord Elgin's shipwrecked cargo of marbles stands for the Western habit of seizing Mediterranean antiquity for its own purposes.\nGérard de Nerval's disappointed visit to Aphrodite's island stands for the tendency to romanticize the region and falsify it with fantasy.\nThe recent arrival of unnamed migrants from North Africa points to a third danger, the urge to avert our eyes from the parts of Mediterranean history that do not suit inherited cultural preferences.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "European appropriation of Mediterranean antiquity",
+              "start": 1800,
+              "end": 1900,
+              "display_date": "c. AD 1800-1900",
+              "certainty": "approximate",
+              "caption": "The nineteenth century turned Mediterranean antiquity into an object of collection, removal, and romantic projection."
+            },
+            {
+              "type": "span",
+              "label": "Contemporary Mediterranean migration",
+              "start": 1990,
+              "end": 2025,
+              "display_date": "c. AD 1990-2025",
+              "certainty": "approximate",
+              "caption": "Modern migration across the sea forms the later horizon behind the unnamed North African arrivals."
+            },
+            {
+              "type": "point",
+              "label": "Wreck of the Mentor",
+              "start": 1802,
+              "end": 1802,
+              "display_date": "1802",
+              "certainty": "secure",
+              "caption": "The loss of Elgin's ship stands for the modern seizure and relocation of Mediterranean antiquity."
+            },
+            {
+              "type": "point",
+              "label": "Nerval on Kythera",
+              "start": 1843,
+              "end": 1843,
+              "display_date": "1843",
+              "certainty": "secure",
+              "caption": "Nerval's visit turns the island into a test case for romantic projection and disappointment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01.02",
+      "number": "01.02",
+      "title": "Braudel, Connectivity, and the Corrupting Sea",
+      "paragraphs": [
+        {
+          "id": "01.02-p001",
+          "text": "Any serious Mediterranean history begins under the shadow of Fernand Braudel.\nHe gave the sea itself pride of place, treated geography, economy, and culture as deeper forces than event politics, and taught historians to think in different scales of time.\nHis work made it possible to see the Mediterranean as a coherent field rather than a mere fringe of separate continents.",
+          "figures": [
+            {
+              "label": "Figure 1.2",
+              "caption": "Fernand Braudel, the great historian who taught readers to see the Mediterranean as a large and coherent field shaped by deep structures and long durations."
+            }
+          ],
+          "timeline": []
+        },
+        {
+          "id": "01.02-p002",
+          "text": "More recently, Peregrine Horden and Nicholas Purcell pushed this vision further in The Corrupting Sea.\nFor them, the Mediterranean is shaped by three fundamentals.\nIts landscapes are fragmented into innumerable micro-regions.\nLife is governed by uncertainty, whether of rainfall, wind, harvest, earthquake, or eruption.\nAnd the central sea makes movement and communication unusually easy, so that people can link fragments, redistribute risk, and seize opportunities.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.02-p003",
+          "text": "From this combination arises a world of restless networks.\nMobility is not an optional extra but a condition of survival and advantage.\nCommunities, traders, migrants, raiders, patrons, and pilgrims all participate in shifting webs that expand, contract, and re-form without central design.\nThe Mediterranean is unified not by sameness, but by a patterned interplay of differences.\nIn that sense the sea corrupts.\nIt unsettles closed orders, disturbs self-sufficient systems, and repeatedly lets people, goods, and ideas slip across imposed boundaries.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.02-p004",
+          "text": "Yet Horden and Purcell chiefly describe the Mediterranean of the first millennium BC and long after.\nBy then the sea had already become explicit to its inhabitants as a connected world, and ancient maps could place it at the center of the known lands.\nThe deeper problem is to understand how such a world came into being in the first place.",
+          "figures": [
+            {
+              "label": "Figure 1.3",
+              "caption": "An approximate map of the world as seen from a Mediterranean standpoint around 500 BC. Its value lies in showing the sea already imagined as a central organizing space."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Bronze Age Mediterranean",
+              "start": -1600,
+              "end": -1200,
+              "display_date": "c. 1600-1200 BC",
+              "certainty": "approximate",
+              "caption": "This is the important predecessor horizon before the basin was explicitly imagined as one connected sea."
+            },
+            {
+              "type": "span",
+              "label": "First-millennium BC Mediterranean integration",
+              "start": -1000,
+              "end": -1,
+              "display_date": "c. 1000-1 BC",
+              "certainty": "approximate",
+              "caption": "By this span the Mediterranean is increasingly traversed, named, and thought as a larger field."
+            },
+            {
+              "type": "span",
+              "label": "Roman Mediterranean",
+              "start": -200,
+              "end": 400,
+              "display_date": "c. 200 BC-AD 400",
+              "certainty": "approximate",
+              "caption": "Rome gives one of the strongest later formulations of the sea as a single political world."
+            },
+            {
+              "type": "point",
+              "label": "Hecataean Mediterranean map",
+              "start": -500,
+              "end": -500,
+              "display_date": "c. 500 BC",
+              "certainty": "approximate",
+              "caption": "A Mediterranean-centered picture of the world makes the basin's conceptual centrality visible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01.03",
+      "number": "01.03",
+      "title": "Why the Early Mediterranean Matters",
+      "paragraphs": [
+        {
+          "id": "01.03-p001",
+          "text": "The story cannot be told simply by starting with the Classical Mediterranean and rowing backward into earlier ages.\nThat would tempt us to pick out only those features that later became important, while ignoring the many paths that did not lead to the familiar world.\nTo understand the Mediterranean historically, one must ask when its characteristic patterns first emerged, and under what conditions they spread.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Neolithic Mediterranean",
+              "start": -7000,
+              "end": -4000,
+              "display_date": "c. 7000-4000 BC",
+              "certainty": "approximate",
+              "caption": "One of the early horizons that would vanish from view if the story were told only backward from the Classical age."
+            },
+            {
+              "type": "span",
+              "label": "Bronze Age Mediterranean",
+              "start": -3200,
+              "end": -1200,
+              "display_date": "c. 3200-1200 BC",
+              "certainty": "approximate",
+              "caption": "A major formative field whose internal developments cannot be reduced to later Classical outcomes."
+            },
+            {
+              "type": "span",
+              "label": "Classical Mediterranean",
+              "start": -800,
+              "end": -146,
+              "display_date": "c. 800-146 BC",
+              "certainty": "approximate",
+              "caption": "The familiar world from which one is tempted to row backward, thereby distorting the earlier record."
+            }
+          ]
+        },
+        {
+          "id": "01.03-p002",
+          "text": "This is especially important because the Mediterranean did not always exist in the full historical sense.\nUntil people could cross its waters with some confidence, the sea was not yet a medium of connection.\nIt was only a body of water.\nWhat later became the Mediterranean world began as many separate streams of development, moving at different speeds and with different outcomes.\nSometimes they converged, sometimes they dried up, and often they produced emergent forms before anything like a full system appeared.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Palaeolithic Mediterranean",
+              "start": -50000,
+              "end": -10000,
+              "display_date": "c. 50,000-10,000 BC",
+              "certainty": "approximate",
+              "caption": "People lived around the basin long before the sea functioned as a reliable medium of connection."
+            },
+            {
+              "type": "span",
+              "label": "Mesolithic Mediterranean",
+              "start": -9000,
+              "end": -6000,
+              "display_date": "c. 9000-6000 BC",
+              "certainty": "approximate",
+              "caption": "In this intermediate horizon, island crossings begin to matter more, even before the later dense networks of farming and metal-age exchange."
+            },
+            {
+              "type": "span",
+              "label": "Connected Bronze and Iron Age Mediterranean",
+              "start": -3200,
+              "end": -500,
+              "display_date": "c. 3200-500 BC",
+              "certainty": "approximate",
+              "caption": "Only much later does the basin begin to resemble the historically connected Mediterranean familiar from written history."
+            }
+          ]
+        },
+        {
+          "id": "01.03-p003",
+          "text": "That early history matters for another reason as well.\nIt contains extraordinary human creativity within changing physical worlds.\nIt includes the emergence of our species, the spread of farming, the rise of navigation and exchange, the appearance of towns and states, and the growth of new habits of consumption, power, and belief.\nIt also matters because millions of people still invest this remote past with emotional and cultural significance in the present.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Homo sapiens in the Mediterranean",
+              "start": -45000,
+              "end": -10000,
+              "display_date": "c. 45,000-10,000 BC",
+              "certainty": "approximate",
+              "caption": "The long human background in which our own species occupies the basin before farming."
+            },
+            {
+              "type": "span",
+              "label": "Neolithic farming expansion",
+              "start": -7000,
+              "end": -4000,
+              "display_date": "c. 7000-4000 BC",
+              "certainty": "approximate",
+              "caption": "Farming, new settlement patterns, and growing maritime links reshape Mediterranean life."
+            },
+            {
+              "type": "span",
+              "label": "First towns and states",
+              "start": -3500,
+              "end": -1200,
+              "display_date": "c. 3500-1200 BC",
+              "certainty": "approximate",
+              "caption": "Urban life, political concentration, and large-scale exchange become increasingly visible."
+            }
+          ]
+        },
+        {
+          "id": "01.03-p004",
+          "text": "For such remote periods, written evidence grows sparse and then disappears.\nIf the deeper Mediterranean is to be written as history, archaeology must carry much of the burden.\nThat means an archaeology willing to draw on every useful science, to move across immense spans of time, and to recover patterns of life from material traces rather than from texts alone.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.04",
+      "number": "01.04",
+      "title": "Archaeology, Scale, and a Barbarian History",
+      "paragraphs": [
+        {
+          "id": "01.04-p001",
+          "text": "The difficulty is that Mediterranean archaeology has often become too specialized to sustain a wide view.\nThe flood of new data encourages narrow concentration on periods, regions, and techniques.\nNational and regional scholarship has also often preferred local trajectories, partly in reaction against older diffusionist habits that explained every major innovation as an import from Egypt or Mesopotamia.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.04-p002",
+          "text": "A close regional focus has real value.\nWithout it, large-scale history becomes smooth and unreal.\nYet pushed too far, it produces intellectual parochialism.\nOne sees the small patch of sky perfectly and misses the constellations.\nThe task is therefore to connect local processes to larger structures without flattening either.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.04-p003",
+          "text": "Genuinely pan-Mediterranean syntheses of the early basin remain rare.\nDavid Trump provided one concise survey in 1980.\nBraudel himself wrote a remarkable broad account of the ancient Mediterranean, though it remained unpublished for decades and was already dated in some of its assumptions.\nJean Guilaine carried the story powerfully through the Neolithic and early metal ages, but stopped before the whole arc had been completed.\nThe need for a new synthesis therefore remains pressing.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late twentieth-century Mediterranean syntheses",
+              "start": 1980,
+              "end": 1998,
+              "display_date": "1980-1998",
+              "certainty": "secure",
+              "caption": "This short sequence marks the main modern attempts to recover a basin-wide early Mediterranean history."
+            },
+            {
+              "type": "point",
+              "label": "Trump's Prehistory of the Mediterranean",
+              "start": 1980,
+              "end": 1980,
+              "display_date": "1980",
+              "certainty": "secure",
+              "caption": "A concise synthetic account that helped define the problem."
+            },
+            {
+              "type": "point",
+              "label": "Guilaine's La Mer Partagée",
+              "start": 1994,
+              "end": 1994,
+              "display_date": "1994",
+              "certainty": "secure",
+              "caption": "A strong thematic treatment of Mediterranean societies up to the early second millennium BC."
+            },
+            {
+              "type": "point",
+              "label": "Braudel's The Mediterranean in the Ancient World",
+              "start": 1998,
+              "end": 1998,
+              "display_date": "1998",
+              "certainty": "secure",
+              "caption": "A posthumously published ancient-world synthesis by Braudel himself."
+            }
+          ]
+        },
+        {
+          "id": "01.04-p004",
+          "text": "Other approaches also leave something essential out.\nContinental surveys divide the Mediterranean among Europe, Africa, and southwest Asia, and so break apart a world that often worked through the sea between them.\nWorld-systems models, for all their value, can overemphasize impulses from the Near East and leave too much of the basin in shadow until those impulses arrive.\nA truly Mediterranean history must be able to think both broadly and locally, by sea rather than by continental habit.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.04-p005",
+          "text": "What is needed, then, is a barbarian history.\nThat does not mean neglecting the great societies of the eastern basin.\nIt means refusing to let Greek and Roman prestige predetermine the whole story.\nThe early Mediterranean was polyglot, uneven, and full of societies that do not exist merely as preludes to Classical Greece.\nEven the Aegean should not be treated as though the Parthenon were already waiting at the starting line.",
+          "figures": [
+            {
+              "label": "Figure 1.4",
+              "caption": "An early first-millennium BC Sardinian bronze figurine recorded in an eighteenth-century engraving. It serves as a reminder that much of Mediterranean history lies outside the later Greek and Roman spotlight."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Early Mediterranean",
+              "start": -50000,
+              "end": -500,
+              "display_date": "c. 50,000-500 BC",
+              "certainty": "approximate",
+              "caption": "The broad field that this chapter insists must not be reduced to a prelude."
+            },
+            {
+              "type": "span",
+              "label": "Archaic and Classical Greece",
+              "start": -800,
+              "end": -323,
+              "display_date": "c. 800-323 BC",
+              "certainty": "approximate",
+              "caption": "The prestigious Aegean horizon that later historians too easily treat as the story's destination."
+            },
+            {
+              "type": "span",
+              "label": "Roman Mediterranean",
+              "start": -200,
+              "end": 400,
+              "display_date": "c. 200 BC-AD 400",
+              "certainty": "approximate",
+              "caption": "A later imperial world that often overshadows the older and more plural Mediterranean."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01.05",
+      "number": "01.05",
+      "title": "The Making of Mediterranean Archaeology",
+      "paragraphs": [
+        {
+          "id": "01.05-p001",
+          "text": "The Mediterranean is one of the richest regions in the world for early history, and one reason is simply the long and intense history of curiosity directed toward its remains.\nInterest in old things there goes back to antiquity itself, but the modern story begins more clearly with Renaissance savants and the antiquaries of the seventeenth and eighteenth centuries.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Ancient Mediterranean",
+              "start": -1000,
+              "end": 500,
+              "display_date": "c. 1000 BC-AD 500",
+              "certainty": "approximate",
+              "caption": "Curiosity about ruins and old things already belonged to the ancient world, long before archaeology became a discipline."
+            },
+            {
+              "type": "span",
+              "label": "Renaissance antiquarian recovery",
+              "start": 1400,
+              "end": 1600,
+              "display_date": "c. AD 1400-1600",
+              "certainty": "approximate",
+              "caption": "Humanist scholarship begins to gather, compare, and value antiquities in a recognizably new way."
+            },
+            {
+              "type": "span",
+              "label": "Antiquarian age",
+              "start": 1600,
+              "end": 1800,
+              "display_date": "c. AD 1600-1800",
+              "certainty": "approximate",
+              "caption": "Collectors and learned antiquaries prepare the ground for later archaeology."
+            }
+          ]
+        },
+        {
+          "id": "01.05-p002",
+          "text": "For a long time, Greek and Roman monuments dominated attention.\nThe Grand Tour, Neo-Classical taste, and the prestige of the classical past all encouraged collectors, excavators, and scholars to prize Mediterranean antiquities as trophies of civilization.\nThat legacy still matters.\nMediterranean archaeology remains unusually full of objects, museums, and beautiful survivals, and it has often been drawn toward possession, display, and admiration as much as explanation.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.05-p003",
+          "text": "Even before formal prehistory took shape, scholars had begun to notice that some Mediterranean artifacts belonged to worlds older than Greece and Rome.\nStone tools, bronze figurines, and Egyptian monuments all widened the historical field.\nThen, in the nineteenth and early twentieth centuries, the study of the early Mediterranean expanded rapidly as archaeology, geology, and evolutionary thinking changed the scale of the human past.\nThis was also the age of the great excavations at sites such as Troy, Knossos, Ugarit, Jericho, and Thapsos.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Antiquarian recognition of pre-Classical objects",
+              "start": 1550,
+              "end": 1800,
+              "display_date": "c. AD 1550-1800",
+              "certainty": "approximate",
+              "caption": "Older artifacts begin to be noticed as belonging to worlds before Greece and Rome."
+            },
+            {
+              "type": "span",
+              "label": "Formation of prehistoric archaeology",
+              "start": 1860,
+              "end": 1914,
+              "display_date": "c. AD 1860-1914",
+              "certainty": "approximate",
+              "caption": "Geology, evolution, and the new idea of prehistory reshape the scale of the human past."
+            },
+            {
+              "type": "span",
+              "label": "Great excavation age",
+              "start": 1870,
+              "end": 1939,
+              "display_date": "c. AD 1870-1939",
+              "certainty": "approximate",
+              "caption": "Large Mediterranean digs make the early past newly visible on a heroic scale."
+            }
+          ]
+        },
+        {
+          "id": "01.05-p004",
+          "text": "Those famous digs transformed knowledge, but they were often rough by modern standards.\nThey exposed palaces, towns, cemeteries, and stratified tells on a heroic scale, yet they also destroyed information that would now be recovered with much greater care.\nFigure 1.5 captures something of that older style.\nIt shows archaeology as spectacle, labor, and command, with heavy tools, large crews, and an almost theatrical confidence.",
+          "figures": [
+            {
+              "label": "Figure 1.5",
+              "caption": "A large early twentieth-century excavation at Ras Shamra. The image shows the older style of big dig, impressive in scale but far rougher in method than modern archaeology."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Great excavation age",
+              "start": 1870,
+              "end": 1939,
+              "display_date": "c. AD 1870-1939",
+              "certainty": "approximate",
+              "caption": "The old style of large, commanding excavations belongs chiefly to this phase."
+            },
+            {
+              "type": "point",
+              "label": "Schliemann at Troy",
+              "start": 1870,
+              "end": 1870,
+              "display_date": "1870s",
+              "certainty": "approximate",
+              "caption": "Troy becomes one of the emblematic early Mediterranean digs."
+            },
+            {
+              "type": "point",
+              "label": "Evans at Knossos",
+              "start": 1900,
+              "end": 1900,
+              "display_date": "1900",
+              "certainty": "secure",
+              "caption": "Knossos enters archaeology through a spectacular early twentieth-century excavation."
+            },
+            {
+              "type": "point",
+              "label": "French mission at Ugarit",
+              "start": 1929,
+              "end": 1929,
+              "display_date": "1929",
+              "certainty": "secure",
+              "caption": "Ras Shamra exemplifies the mature big-dig style captured in the figure."
+            }
+          ]
+        },
+        {
+          "id": "01.05-p005",
+          "text": "Much of this archaeology unfolded in colonial or quasi-colonial settings.\nBefore the Second World War, most Mediterranean archaeologists were foreign, often European, and they commonly worked within imperial structures or under strong foreign influence.\nYet the field was never made only by celebrated outsiders.\nIt also depended on local pioneers such as Christos Tsountas, Paolo Orsi, and Themistocles Zammit, whose work was often carried forward with fewer resources and far less glamour.\nFigure 1.6 is a useful reminder of that indigenous strand.",
+          "figures": [
+            {
+              "label": "Figure 1.6",
+              "caption": "Themistocles Zammit, a central figure in Maltese archaeology. His presence helps correct the usual focus on foreign excavators by highlighting indigenous scholarship within the Mediterranean."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Colonial Mediterranean archaeology",
+              "start": 1880,
+              "end": 1945,
+              "display_date": "c. AD 1880-1945",
+              "certainty": "approximate",
+              "caption": "Much fieldwork in the basin took place under imperial or quasi-colonial conditions."
+            },
+            {
+              "type": "span",
+              "label": "Levant mandate era",
+              "start": 1918,
+              "end": 1946,
+              "display_date": "c. AD 1918-1946",
+              "certainty": "secure",
+              "caption": "After the First World War, archaeology in the eastern Mediterranean was folded into mandate politics."
+            },
+            {
+              "type": "span",
+              "label": "Postwar decolonization",
+              "start": 1945,
+              "end": 1962,
+              "display_date": "c. AD 1945-1962",
+              "certainty": "approximate",
+              "caption": "This successor horizon transformed who excavated and under what political conditions."
+            }
+          ]
+        },
+        {
+          "id": "01.05-p006",
+          "text": "Since the nineteen fifties, the conditions of work have been transformed.\nArchaeology across the Mediterranean has increasingly become national, institutional, and often tied to rescue work in advance of modern development.\nThere are now far more archaeologists, many more women, and much more fieldwork.\nThe result is not exhaustion but abundance.\nNew discoveries continue to widen the picture, while national and regional traditions have also given Mediterranean archaeology a greater intellectual diversity than before.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "National archaeology after independence",
+              "start": 1950,
+              "end": 1970,
+              "display_date": "c. AD 1950-1970",
+              "certainty": "approximate",
+              "caption": "Archaeology increasingly becomes national, institutional, and locally administered."
+            },
+            {
+              "type": "span",
+              "label": "Rescue archaeology expansion",
+              "start": 1970,
+              "end": 2000,
+              "display_date": "c. AD 1970-2000",
+              "certainty": "approximate",
+              "caption": "Modern development drives a dramatic growth of salvage and preventive excavation."
+            },
+            {
+              "type": "span",
+              "label": "Plural Mediterranean archaeology",
+              "start": 2000,
+              "end": 2025,
+              "display_date": "c. AD 2000-2025",
+              "certainty": "approximate",
+              "caption": "The field becomes larger, more diverse, and intellectually less dependent on older outside centers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01.06",
+      "number": "01.06",
+      "title": "Preservation, Texts, and Visual Evidence",
+      "paragraphs": [
+        {
+          "id": "01.06-p001",
+          "text": "The Mediterranean is also favored by an unusual range of preservation conditions.\nMost archaeological records survive only as thin residues left after decay, breakage, reuse, and loss.\nHere, however, nature sometimes grants startling exceptions.\nWaterlogging, aridity, volcanic ash, and even ice can preserve whole capsules of ancient life and force us to abandon overly minimal views of the past.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.06-p002",
+          "text": "Shipwrecks and drowned settlements preserve waterlogged worlds.\nDry caves in Israel, southern Spain, and the Balearics keep fragile materials that would vanish elsewhere.\nVolcanic destruction created Bronze Age sites of astonishing completeness.\nAt Akrotiri on Thera, whole buildings survived beneath ash, while at Croce del Papa near Vesuvius even huts and trapped animals were preserved.\nFigures 1.7 and 1.8 show how dramatically such conditions can enlarge the evidence.",
+          "figures": [
+            {
+              "label": "Figure 1.7",
+              "caption": "Waterlogged wooden structures at La Draga in Catalonia. The site shows how unusual preservation can recover fragile parts of ancient life that normally disappear."
+            },
+            {
+              "label": "Figure 1.8",
+              "caption": "Akrotiri on Thera preserved beneath volcanic deposits. The image makes clear how ash can freeze an entire Bronze Age town in startling detail."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Neolithic drowned settlements",
+              "start": -7000,
+              "end": -4000,
+              "display_date": "c. 7000-4000 BC",
+              "certainty": "approximate",
+              "caption": "Waterlogged coastal settings preserve early villages and wooden structures that are usually lost."
+            },
+            {
+              "type": "span",
+              "label": "Bronze Age Mediterranean towns",
+              "start": -2000,
+              "end": -1100,
+              "display_date": "c. 2000-1100 BC",
+              "certainty": "approximate",
+              "caption": "This broader horizon contains the urban and proto-urban settings preserved by unusual catastrophe."
+            },
+            {
+              "type": "span",
+              "label": "Late Bronze Age Aegean eruption horizon",
+              "start": -1650,
+              "end": -1500,
+              "display_date": "c. 1650-1500 BC",
+              "certainty": "disputed",
+              "caption": "A narrower volcanic horizon frames Akrotiri and the dramatic preservation of Thera."
+            },
+            {
+              "type": "point",
+              "label": "Akrotiri eruption horizon",
+              "start": -1600,
+              "end": -1600,
+              "display_date": "c. 1600 BC",
+              "certainty": "disputed",
+              "caption": "The burial of Akrotiri beneath volcanic deposits created one of the great preserved Bronze Age time capsules."
+            }
+          ]
+        },
+        {
+          "id": "01.06-p003",
+          "text": "Texts and images add another kind of richness, though not without strict limits.\nWriting appears first in the eastern Mediterranean and the Aegean, not across the whole basin, and some scripts remain undeciphered.\nEven where writing survives, it is uneven in subject matter and social reach.\nThe Aegean tablets are mostly administrative.\nIn the east, written evidence soon ranges more widely across diplomacy, religion, law, royal display, and economic life.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Early eastern Mediterranean writing",
+              "start": -3200,
+              "end": -2000,
+              "display_date": "c. 3200-2000 BC",
+              "certainty": "approximate",
+              "caption": "Writing first takes root in the eastern literate worlds rather than across the whole basin."
+            },
+            {
+              "type": "span",
+              "label": "Aegean scripts",
+              "start": -1900,
+              "end": -1200,
+              "display_date": "c. 1900-1200 BC",
+              "certainty": "approximate",
+              "caption": "The Aegean enters the written world later and more narrowly than the Levant and Egypt."
+            },
+            {
+              "type": "span",
+              "label": "First-millennium Mediterranean alphabets",
+              "start": -1000,
+              "end": -1,
+              "display_date": "c. 1000-1 BC",
+              "certainty": "approximate",
+              "caption": "Writing becomes far more widely distributed around the basin in later periods."
+            }
+          ]
+        },
+        {
+          "id": "01.06-p004",
+          "text": "Yet texts are invaluable when handled with care.\nThey were not written for our convenience, and they often tell us as much about ideology and habit as about events.\nRamesses the Second could nearly lose a battle and still proclaim victory on stone.\nBut inscriptions, archives, and records can also reveal marriage politics, luxury values, production systems, and the submerged assumptions of ancient elites.\nFigure 1.9 makes the abundance of such written archives in parts of the eastern Mediterranean strikingly visible.",
+          "figures": [
+            {
+              "label": "Figure 1.9",
+              "caption": "Clay tablets from the archive of Ebla. They demonstrate the extraordinary density of written evidence available in some eastern Mediterranean settings."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Ebla archive horizon",
+              "start": -2500,
+              "end": -2300,
+              "display_date": "c. 2500-2300 BC",
+              "certainty": "approximate",
+              "caption": "One of the great early eastern archives, showing how dense written evidence can become."
+            },
+            {
+              "type": "span",
+              "label": "New Kingdom Egypt",
+              "start": -1550,
+              "end": -1070,
+              "display_date": "c. 1550-1070 BC",
+              "certainty": "approximate",
+              "caption": "The Egyptian imperial world provides the context for Ramesses the Second and his inscriptions."
+            },
+            {
+              "type": "point",
+              "label": "Battle of Qadesh",
+              "start": -1274,
+              "end": -1274,
+              "display_date": "1274 BC",
+              "certainty": "secure",
+              "caption": "A famous case in which royal inscriptional triumph outruns the likely military reality."
+            }
+          ]
+        },
+        {
+          "id": "01.06-p005",
+          "text": "Images deserve the same double response.\nThey are more widely distributed than texts, but they too must be read with caution.\nThey do not simply hand the past over to us.\nThey record ancient ways of seeing, selecting, and ordering, and their value lies partly in learning how to read those habits without mistaking them for transparent windows.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.07",
+      "number": "01.07",
+      "title": "Excavation, Survey, and the Underwater Frontier",
+      "paragraphs": [
+        {
+          "id": "01.07-p001",
+          "text": "Excavation remains central, but its form has changed.\nThe enormous dig of an earlier age has become rarer because careful recovery, recording, analysis, and publication are now far slower and more expensive.\nWhere large excavations still continue, they usually depend on exceptional funding or national prestige.\nEven so, one should not forget what is lost when truly major sites can only be sampled in fragments.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.07-p002",
+          "text": "At the same time, archaeology has gained by turning more seriously toward small sites and rescue digs.\nRural settlements, caves, ditches, and other modest traces have widened the questions that can be asked.\nWork done ahead of roads, housing estates, and other construction has revealed entire classes of settlements that were once barely visible.\nFigure 1.10 shows one such case, where the plan of a modern development overlies the remains of a large Neolithic village.",
+          "figures": [
+            {
+              "label": "Figure 1.10",
+              "caption": "Rescue archaeology at Villeneuve-Tolosane reveals a large Neolithic settlement beneath a modern housing layout. It shows how development-led excavation can uncover entire hidden landscapes."
+            }
+          ],
+          "timeline": []
+        },
+        {
+          "id": "01.07-p003",
+          "text": "Surface survey has been just as transformative.\nInstead of concentrating only on a few famous ruins, archaeologists now comb whole landscapes and track changing activity across valleys, islands, plains, cities, and uplands.\nThis method has turned apparent emptiness into inhabited terrain.\nIt has shown how densely Mediterranean countrysides could be filled with hamlets, work areas, paths, and shifting patterns of use.\nFigure 1.11 returns us to Kythera and to the patient, close walking that makes such lost landscapes reappear.",
+          "figures": [
+            {
+              "label": "Figure 1.11",
+              "caption": "Archaeologists surveying the uplands of Kythera. The image captures the slow, systematic walking that turns an apparently empty landscape into a dense record of past activity."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Early landscape survey",
+              "start": 1930,
+              "end": 1970,
+              "display_date": "c. AD 1930-1970",
+              "certainty": "approximate",
+              "caption": "The first large reconnaissance surveys begin to move archaeology beyond a few famous ruins."
+            },
+            {
+              "type": "span",
+              "label": "Intensive surface survey",
+              "start": 1970,
+              "end": 2000,
+              "display_date": "c. AD 1970-2000",
+              "certainty": "approximate",
+              "caption": "Closely spaced walking and denser collection radically enlarge what can be seen in a landscape."
+            },
+            {
+              "type": "point",
+              "label": "Kythera survey season",
+              "start": 2001,
+              "end": 2001,
+              "display_date": "2001",
+              "certainty": "secure",
+              "caption": "The fieldwork on Kythera belongs to the mature intensive-survey tradition."
+            }
+          ]
+        },
+        {
+          "id": "01.07-p004",
+          "text": "Survey also matters because it gives some sense of scale.\nWithout rough estimates of how many people lived in a region, and how populations rose or collapsed, history easily loses proportion.\nFor much of the Mediterranean past, especially outside the range of written fiscal records, those estimates depend on the number, size, and distribution of sites traced across the land.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Last Glacial Maximum",
+              "start": -22000,
+              "end": -18000,
+              "display_date": "c. 22,000-18,000 BC",
+              "certainty": "approximate",
+              "caption": "At the glacial peak, Mediterranean population may have been extremely sparse."
+            },
+            {
+              "type": "span",
+              "label": "Postglacial and Neolithic demographic recovery",
+              "start": -10000,
+              "end": -4000,
+              "display_date": "c. 10,000-4000 BC",
+              "certainty": "approximate",
+              "caption": "Population begins to recover as climates ease and farming spreads."
+            },
+            {
+              "type": "span",
+              "label": "Roman imperial Mediterranean",
+              "start": -27,
+              "end": 200,
+              "display_date": "27 BC-AD 200",
+              "certainty": "approximate",
+              "caption": "The later Roman horizon stands at the opposite extreme of demographic concentration and documentary visibility."
+            }
+          ]
+        },
+        {
+          "id": "01.07-p005",
+          "text": "A further frontier lies underwater.\nMaritime archaeology has long been one of the Mediterranean's most exciting strengths, from the early shipwreck excavations off the Turkish coast to newer work in deep water.\nThe Uluburun wreck revealed a cargo of extraordinary range and complexity.\nNow remote technologies are extending research far below ordinary diving depth and opening the possibility of finding ancient open-sea wrecks preserved from casual disturbance.\nFigure 1.12 belongs to that frontier.",
+          "figures": [
+            {
+              "label": "Figure 1.12",
+              "caption": "A diver raising cargo from the Uluburun wreck off southern Turkey. The scene represents the underwater frontier of Mediterranean archaeology and the recovery of long-distance maritime connections."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Bronze Age seafaring",
+              "start": -1600,
+              "end": -1200,
+              "display_date": "c. 1600-1200 BC",
+              "certainty": "approximate",
+              "caption": "The great wrecks belong to a mature phase of eastern Mediterranean maritime exchange."
+            },
+            {
+              "type": "point",
+              "label": "Uluburun wreck",
+              "start": -1300,
+              "end": -1300,
+              "display_date": "c. 1300 BC",
+              "certainty": "approximate",
+              "caption": "This wreck offers an extraordinarily rich picture of long-distance cargo and shipboard life."
+            },
+            {
+              "type": "point",
+              "label": "Cape Gelidonya wreck",
+              "start": -1200,
+              "end": -1200,
+              "display_date": "c. 1200 BC",
+              "certainty": "approximate",
+              "caption": "An early landmark in underwater excavation and a key wreck of the late Bronze Age."
+            }
+          ]
+        },
+        {
+          "id": "01.07-p006",
+          "text": "Underwater archaeology is not only about ships.\nIt also includes drowned villages, submerged caves, and ancient harbors reconstructed through coring and coastal study.\nTaken together, these lines of inquiry help recover the maritime dimension without which Mediterranean history would scarcely make sense.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Postglacial sea-level rise",
+              "start": -9000,
+              "end": -4000,
+              "display_date": "c. 9000-4000 BC",
+              "certainty": "approximate",
+              "caption": "Rising seas drowned caves, villages, and coastal settings around the Mediterranean."
+            },
+            {
+              "type": "point",
+              "label": "Cosquer cave last dry access",
+              "start": -7000,
+              "end": -7000,
+              "display_date": "c. 7000 BC",
+              "certainty": "approximate",
+              "caption": "The cave was last entered on foot before postglacial waters sealed it away."
+            },
+            {
+              "type": "point",
+              "label": "Deep-water cargo ships off Israel",
+              "start": -700,
+              "end": -700,
+              "display_date": "c. 700 BC",
+              "certainty": "approximate",
+              "caption": "These wrecks show that deep-water maritime archaeology is beginning to reach very early open-sea traffic."
+            },
+            {
+              "type": "point",
+              "label": "Deep-water merchantman off Cyprus",
+              "start": -250,
+              "end": -250,
+              "display_date": "c. 250 BC",
+              "certainty": "approximate",
+              "caption": "A later deep-water find shows how far below normal diving range early shipping can now be traced."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01.08",
+      "number": "01.08",
+      "title": "Archaeological Science and Its Limits",
+      "paragraphs": [
+        {
+          "id": "01.08-p001",
+          "text": "A final frontier lies in archaeological science.\nThe Mediterranean has become a privileged zone for many scientific techniques.\nThey can identify the origin of materials, reconstruct ancient technologies, detect residues in pottery, recover environmental evidence, and read life histories from bones and teeth.\nObsidian can sometimes be traced to its geological source.\nPottery fabrics can reveal where containers were made.\nOrganic residues can hint at oils, resins, alcohols, or foods once held in vessels.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.08-p002",
+          "text": "Other methods widen the field still further.\nEnvironmental archaeology studies seeds, pollen, charcoal, phytoliths, and animal bones in order to reconstruct diet, domestication, landscape, and economy.\nBioarchaeological work on skeletons can reveal health, labor, trauma, diet, and mobility.\nGenetic evidence has drawn particular attention, though it must be handled with caution, especially when patterns in living populations are projected backward into deep time.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.08-p003",
+          "text": "All of this has immense power, but science does not relieve archaeology of interpretation.\nIt is one thing to show that a material moved from one place to another.\nIt is another to explain why anyone wanted it, how it was acquired, what it was worth, who controlled it, and what social meaning it carried when it arrived.\nThose larger questions return us to human motives, institutions, and habits.\nScience sharpens the evidence.\nIt does not abolish the need for historical imagination.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.09",
+      "number": "01.09",
+      "title": "North Africa and the Southern Gap",
+      "paragraphs": [
+        {
+          "id": "01.09-p001",
+          "text": "The riches of Mediterranean archaeology are real, but they are very unevenly distributed.\nSome gaps are minor and will gradually be filled.\nOthers are more serious.\nOne gap, however, is so large that it threatens the balance of the whole field.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.09-p002",
+          "text": "That gap lies in Mediterranean North Africa.\nMinor shortages of evidence can be found in parts of Turkey, the southern Balkans, Albania, the former Yugoslavia, and Lebanon.\nBut west of Egypt, the dearth of information on early societies is of another order altogether.\nIt leaves the southern shore dangerously underrepresented in any account of the early Mediterranean.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.09-p003",
+          "text": "The contrast is striking because Africa lies so near.\nSaharan dust can drift north across the narrow middle sea and fall as red rain on Sicily, southern Italy, and even Greece.\nFigure 1.13 captures that physical closeness.\nYet in most modern writing, the southern flank from the late Palaeolithic to Phoenician and Greek settlement is still treated almost as a blank.",
+          "figures": [
+            {
+              "label": "Figure 1.13",
+              "caption": "A plume of Saharan dust drifting north across the central Mediterranean. The image makes the physical closeness of Africa to southern Europe vivid, even where archaeology often leaves the southern shore obscure."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Palaeolithic North Africa",
+              "start": -20000,
+              "end": -10000,
+              "display_date": "c. 20,000-10,000 BC",
+              "certainty": "approximate",
+              "caption": "The southern shore is visible here, but later long spans remain poorly documented."
+            },
+            {
+              "type": "span",
+              "label": "Phoenician settlement horizon",
+              "start": -900,
+              "end": -600,
+              "display_date": "c. 900-600 BC",
+              "certainty": "approximate",
+              "caption": "By this horizon, the southern Mediterranean re-enters many narratives more clearly."
+            },
+            {
+              "type": "span",
+              "label": "Greek Cyrenaica",
+              "start": -650,
+              "end": -300,
+              "display_date": "c. 650-300 BC",
+              "certainty": "approximate",
+              "caption": "Greek settlement in Cyrenaica is one of the later eastern openings through which North Africa becomes more legible."
+            }
+          ]
+        },
+        {
+          "id": "01.09-p004",
+          "text": "This neglect is disastrous for any serious Mediterranean history.\nThe fertile belt from Tunisia to the Atlantic makes up roughly a quarter of the basin's land.\nThe coast from Alexandria to Ceuta forms a major share of its shoreline.\nWhether this region followed the same rhythms as the rest of the basin or moved to a different pattern, its history cannot simply be skipped.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.09-p005",
+          "text": "The problem is not merely that nobody looked.\nUnder colonial rule a fair amount of archaeology was done in the Maghreb, and Gabriel Camps became an especially forceful defender of North African archaeology and Berber culture.\nIn Cyrenaica, British excavators opened the vast cave of Haua Fteah in the nineteen fifties and exposed a sequence running from the Palaeolithic to the Greek period.\nFigure 1.14 shows that great cavern, which still anchors the deep chronology of much of North Africa.",
+          "figures": [
+            {
+              "label": "Figure 1.14",
+              "caption": "The vast cave of Haua Fteah in Cyrenaica during excavation. It remains one of the key deep sequences for North African prehistory from the Palaeolithic to the Greek period."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "North African Palaeolithic",
+              "start": -50000,
+              "end": -10000,
+              "display_date": "c. 50,000-10,000 BC",
+              "certainty": "approximate",
+              "caption": "Haua Fteah matters because it preserves a very long prehistoric sequence on the southern shore."
+            },
+            {
+              "type": "span",
+              "label": "Epipalaeolithic and Neolithic North Africa",
+              "start": -10000,
+              "end": -3000,
+              "display_date": "c. 10,000-3000 BC",
+              "certainty": "approximate",
+              "caption": "The cave bridges the long transition from late foraging worlds toward later settled horizons."
+            },
+            {
+              "type": "span",
+              "label": "Greek Cyrenaica",
+              "start": -650,
+              "end": -300,
+              "display_date": "c. 650-300 BC",
+              "certainty": "approximate",
+              "caption": "Its sequence reaches down toward the historical horizon of Greek settlement in Cyrenaica."
+            }
+          ]
+        },
+        {
+          "id": "01.09-p006",
+          "text": "Earlier scholarship also spent much energy on supposed links across the sea.\nSome scholars imagined lost land bridges between Africa and Europe.\nOthers even proposed that important cultural impulses had moved from the Maghreb northward.\nWhen those theories were discredited in the nineteen thirties, chronology became sounder, but the intellectual bond between the two shores weakened as well.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.09-p007",
+          "text": "Political independence then changed the field again.\nForeign archaeologists became fewer, especially in Algeria, and many of those who remained concentrated either on human origins or on the grand Roman and later remains.\nArchaeology, burdened by its colonial past and competing with urgent modern priorities, struggled to become deeply rooted in local institutions.\nRecent work in Tunisia, Libya, and Morocco offers some encouragement, but compared with the rapid advances elsewhere in the Mediterranean, knowledge of the early southern flank west of Egypt has barely moved.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "North African independence wave",
+              "start": 1950,
+              "end": 1962,
+              "display_date": "c. AD 1950-1962",
+              "certainty": "approximate",
+              "caption": "Political independence reshaped who excavated, funded, and interpreted the region's past."
+            },
+            {
+              "type": "point",
+              "label": "Algerian independence",
+              "start": 1962,
+              "end": 1962,
+              "display_date": "1962",
+              "certainty": "secure",
+              "caption": "This was the climactic and bloodily contested turning point in the decolonization of the Maghreb."
+            },
+            {
+              "type": "span",
+              "label": "Postcolonial archaeological slowdown",
+              "start": 1960,
+              "end": 1990,
+              "display_date": "c. AD 1960-1990",
+              "certainty": "approximate",
+              "caption": "In much of Mediterranean North Africa, early-period archaeology failed to accelerate as it did elsewhere."
+            }
+          ]
+        },
+        {
+          "id": "01.09-p008",
+          "text": "Even so, the silence of the record may not be explained by neglect alone.\nThere are signs that parts of Mediterranean North Africa followed a different trajectory from the northern and eastern shores.\nIn Tunisia, recent survey has found very few sites older than the first millennium BC, even in areas that are otherwise well prospected.\nThat meagerness is so stark that it suggests not just missing evidence, but another historical pattern.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Pre-first-millennium BC North Africa",
+              "start": -3000,
+              "end": -1000,
+              "display_date": "c. 3000-1000 BC",
+              "certainty": "approximate",
+              "caption": "The striking scarcity of sites from this long span is one of the chapter's central puzzles."
+            },
+            {
+              "type": "span",
+              "label": "Phoenician and Greek settlement horizon",
+              "start": -900,
+              "end": -500,
+              "display_date": "c. 900-500 BC",
+              "certainty": "approximate",
+              "caption": "This is the later threshold after which the southern shore becomes easier to see in many narratives."
+            },
+            {
+              "type": "span",
+              "label": "Roman North Africa",
+              "start": -146,
+              "end": 400,
+              "display_date": "146 BC-AD 400",
+              "certainty": "approximate",
+              "caption": "By contrast, Roman-era site density in Tunisia is immensely more visible."
+            }
+          ]
+        },
+        {
+          "id": "01.09-p009",
+          "text": "One plausible explanation is that much of the North African littoral long faced south rather than north.\nPeople may have been oriented toward hunting, gathering, and later pastoral movement across the continental interior rather than toward maritime exchange within the Mediterranean.\nGeography may have reinforced this.\nA rugged mountain rim faced the sea, currents could be adverse, and the Sahara broke habitable zones into something like widely separated coastal islands.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Hunter-gatherer North Africa",
+              "start": -10000,
+              "end": -6000,
+              "display_date": "c. 10,000-6000 BC",
+              "certainty": "approximate",
+              "caption": "One possible southern trajectory centers on wild-resource use rather than early maritime entanglement."
+            },
+            {
+              "type": "span",
+              "label": "Saharan pastoral horizon",
+              "start": -6000,
+              "end": -1000,
+              "display_date": "c. 6000-1000 BC",
+              "certainty": "approximate",
+              "caption": "Mobile herding links Mediterranean Africa strongly to inland African worlds."
+            },
+            {
+              "type": "span",
+              "label": "Phoenician and Greek maritime world",
+              "start": -900,
+              "end": -500,
+              "display_date": "c. 900-500 BC",
+              "certainty": "approximate",
+              "caption": "This external horizon sharpens the contrast with a more south-facing North African trajectory."
+            }
+          ]
+        },
+        {
+          "id": "01.09-p010",
+          "text": "This does not make Mediterranean Africa less historical.\nIt means that its history may have been woven into larger African worlds as much as into the sea to its north.\nTo understand the early Mediterranean properly, one must sometimes move further into Africa rather than less.\nThe southern shore cannot be restored to the story merely by treating it as a weaker copy of the Levant or Europe.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.09-p011",
+          "text": "Egypt presents a different version of the same difficulty.\nThe Nile Delta is no neglected backwater, but much of its early archaeology lies buried beneath thick river silt and often below the water table.\nThat makes both discovery and excavation difficult.\nOnly a few windows have opened since the nineteen eighties, yet even these suggest that Delta communities could look very different from those of the Nile Valley and could stand closer to their Mediterranean neighbors.\nAny Mediterranean history of Egypt must therefore look at the country through this deltaic junction as well as through the long river corridor to the south.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.10",
+      "number": "01.10",
+      "title": "New Frameworks of Time and Climate",
+      "paragraphs": [
+        {
+          "id": "01.10-p001",
+          "text": "One of the great structural revolutions in early Mediterranean archaeology was chronological.\nRadiocarbon dating made it possible to build stand alone time frames for every part of the basin and to set local sequences within an absolute calendar.\nBefore that, much of the chronology had been tied, directly or indirectly, to Egyptian kings and to fragile chains of stylistic comparison.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Egyptian-based chronological framework",
+              "start": 1850,
+              "end": 1950,
+              "display_date": "c. AD 1850-1950",
+              "certainty": "approximate",
+              "caption": "For a long time Mediterranean chronology depended on Egyptian king lists and stylistic chains."
+            },
+            {
+              "type": "span",
+              "label": "Radiocarbon revolution",
+              "start": 1950,
+              "end": 1980,
+              "display_date": "c. AD 1950-1980",
+              "certainty": "approximate",
+              "caption": "Radiocarbon dating begins to give every region an independent absolute timescale."
+            },
+            {
+              "type": "span",
+              "label": "Calibrated radiocarbon era",
+              "start": 1980,
+              "end": 2025,
+              "display_date": "c. AD 1980-2025",
+              "certainty": "approximate",
+              "caption": "Calibration and refinement make the resulting chronological grid far more trustworthy."
+            }
+          ]
+        },
+        {
+          "id": "01.10-p002",
+          "text": "The consequences were immense.\nCalibrated radiocarbon dates lengthened many chronologies and altered key synchronisms.\nPhenomena once treated as delayed echoes of the east turned out to be earlier than expected or fully independent.\nThe great temples of Malta and some of the first megalithic tombs in the western Mediterranean, for example, proved to be older than the pyramids rather than imitations of them.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Western Mediterranean megalithic horizon",
+              "start": -4500,
+              "end": -2000,
+              "display_date": "c. 4500-2000 BC",
+              "certainty": "approximate",
+              "caption": "Megalithic tombs in the west belong to a long local tradition rather than a late eastern echo."
+            },
+            {
+              "type": "span",
+              "label": "Maltese Temple period",
+              "start": -3600,
+              "end": -2500,
+              "display_date": "c. 3600-2500 BC",
+              "certainty": "approximate",
+              "caption": "The great Maltese temples belong to a very early monumental horizon in the central Mediterranean."
+            },
+            {
+              "type": "span",
+              "label": "Egyptian pyramid age",
+              "start": -2600,
+              "end": -2500,
+              "display_date": "c. 2600-2500 BC",
+              "certainty": "approximate",
+              "caption": "The pyramids remain a major eastern landmark, but not the universal starting point once imagined."
+            }
+          ]
+        },
+        {
+          "id": "01.10-p003",
+          "text": "Radiocarbon also pushed secure dating far deeper into the past.\nIt opened a time scale that reaches tens of thousands of years before the first pharaohs.\nLater refinements, together with tree ring dating and other methods, now allow most of the early Mediterranean to be discussed in calendrical BC terms.\nThere are still serious arguments over some fine points, especially in the second millennium BC Aegean, but the larger chronological framework has been transformed.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Deep prehistoric Mediterranean",
+              "start": -50000,
+              "end": -7000,
+              "display_date": "c. 50,000-7000 BC",
+              "certainty": "approximate",
+              "caption": "Radiocarbon dating opens a secure chronology for periods far older than writing or dynasties."
+            },
+            {
+              "type": "span",
+              "label": "Neolithic and Bronze Age Mediterranean",
+              "start": -7000,
+              "end": -1000,
+              "display_date": "c. 7000-1000 BC",
+              "certainty": "approximate",
+              "caption": "The long middle stretch of Mediterranean prehistory can now be placed on an absolute timescale."
+            },
+            {
+              "type": "span",
+              "label": "Pharaonic Egypt",
+              "start": -3000,
+              "end": -30,
+              "display_date": "c. 3000-30 BC",
+              "certainty": "approximate",
+              "caption": "The older chronological system had leaned heavily on dynastic Egypt before scientific dating widened the frame."
+            }
+          ]
+        },
+        {
+          "id": "01.10-p004",
+          "text": "That transformation did more than correct dates.\nIt freed the central and western Mediterranean from an old habit that treated eastern priority as the default explanation for every major development.\nIt also helps loosen the grip of the inherited labels that have too often cramped interpretation.\nOnce chronology is better founded, historical periods can be used more critically rather than repeated as fixed containers.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.10-p005",
+          "text": "A second and still unfolding revolution concerns climate change.\nThe Mediterranean of the Pleistocene was plainly not the Mediterranean of today, and even the Holocene has been far from stable.\nResearch now draws on marine cores, ice cores, lake beds, pollen, shorelines, tree rings, cave deposits, and many other proxies.\nFigure 1.15 brings several of these climate records into a single frame and makes their jagged variability hard to ignore.",
+          "figures": [
+            {
+              "label": "Figure 1.15",
+              "caption": "Several climate records from around and beyond the Mediterranean set side by side. Their similar jagged patterns show that large environmental shifts were frequent and that the basin must be read within wider climatic change."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Late Pleistocene",
+              "start": -50000,
+              "end": -9600,
+              "display_date": "c. 50,000-9600 BC",
+              "certainty": "approximate",
+              "caption": "The Mediterranean of the ice age differed radically from the basin familiar today."
+            },
+            {
+              "type": "span",
+              "label": "Holocene",
+              "start": -9600,
+              "end": 2025,
+              "display_date": "c. 9600 BC-AD 2025",
+              "certainty": "approximate",
+              "caption": "The present interglacial is calmer than the Pleistocene, but far from uniform."
+            },
+            {
+              "type": "span",
+              "label": "Little Ice Age",
+              "start": 1300,
+              "end": 1850,
+              "display_date": "c. AD 1300-1850",
+              "certainty": "approximate",
+              "caption": "A well-known later oscillation reminds us that climate variation continued even within historic times."
+            }
+          ]
+        },
+        {
+          "id": "01.10-p006",
+          "text": "The broad lesson is that change has been normal.\nThe tempo could be rapid, and even the relatively calm Holocene contains wetter phases, drier phases, medium term oscillations, and a few severe short term events.\nThe environmental conditions that later made the Mediterranean seem like a naturally fragmented and uncertain world were not eternal.\nThey belong to a particular span within a much longer history of shifting regimes.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Early Holocene humid phase",
+              "start": -9600,
+              "end": -6000,
+              "display_date": "c. 9600-6000 BC",
+              "certainty": "approximate",
+              "caption": "A wetter predecessor regime shaped the basin very differently from later Mediterranean conditions."
+            },
+            {
+              "type": "span",
+              "label": "Late Holocene Mediterranean regime",
+              "start": -4000,
+              "end": 1850,
+              "display_date": "c. 4000 BC-AD 1850",
+              "certainty": "approximate",
+              "caption": "The familiar fragmented and uncertain Mediterranean belongs mainly to this long but not eternal phase."
+            },
+            {
+              "type": "span",
+              "label": "Modern warming transition",
+              "start": 1850,
+              "end": 2025,
+              "display_date": "c. AD 1850-2025",
+              "certainty": "approximate",
+              "caption": "The basin is now entering another environmental regime whose consequences are still unfolding."
+            }
+          ]
+        },
+        {
+          "id": "01.10-p007",
+          "text": "This does not mean that every coincidence between climate and human history proves causation.\nYet it does mean that climate can no longer be treated as a decorative backdrop.\nIt must be brought into the center of Mediterranean history as one active element among others.\nThe difficulty is to do so without collapsing into determinism.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.10-p008",
+          "text": "Climate does not dictate one necessary human response.\nIts effects depend on speed, scale, duration, and frequency, and also on what people perceive as danger or opportunity.\nA drought might ruin one community and strengthen another if control of food, labor, or ritual gives some groups unusual leverage.\nEnvironmental strain can provoke innovation, migration, conflict, intensified religion, or collapse, and neighboring societies may respond in very different ways.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.10-p009",
+          "text": "One final caution runs in the opposite direction.\nAs attention to environmental pressure has become more subtle, older claims about catastrophic human destruction of Mediterranean environments have begun to look too simple.\nThere are a few serious cases, but not many.\nThe deeper lesson is that neither climate nor human agency should be turned into a single master key.\nThe history of the Mediterranean was shaped by changing environments, but always through the selective responses of human societies.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.11",
+      "number": "01.11",
+      "title": "Archaeology Under Pressure",
+      "paragraphs": [
+        {
+          "id": "01.11-p001",
+          "text": "The early Mediterranean survives in one of the worst possible places for long term preservation.\nIts archaeological wealth lies across countries that are often economically strained and heavily pressed by modern demands.\nFor that reason, the past needs defenders no less urgently than the coastlines, wetlands, and landscapes around it.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p002",
+          "text": "The most universal danger comes from development.\nModern farming in long occupied lowlands has already destroyed countless sites without record.\nUrban growth continues over ancient centers, while mass tourism drives relentless construction along beaches, harbors, and coastal roads.\nFigure 1.16 makes that pressure visible in the built up coastline of southern Spain.",
+          "figures": [
+            {
+              "label": "Figure 1.16",
+              "caption": "Heavy development along the coast at Torremolinos in southern Spain. The image shows how mass tourism and construction can overwhelm both the shoreline and the archaeological record."
+            }
+          ],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p003",
+          "text": "These pressures fall most heavily on the narrow zone where land meets sea.\nThat coastal membrane is also where the struggle over pollution, sustainability, and ecological damage is most intense.\nArchaeology cannot defend itself there in isolation.\nIt has to make common cause with wider movements for conservation of landscape and water.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p004",
+          "text": "The scale of the pressure is hard to overstate.\nLarge stretches of the Mediterranean coast now lie under concrete or tarmac.\nSome islands receive numbers of visitors that far exceed their own populations.\nTourism may prevent abandonment and sustain local incomes, but it also accelerates the destruction of fragile settings that took millennia to form.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p005",
+          "text": "In such circumstances, even rescue archaeology can feel like a losing battle.\nWhen a famous site is at stake, public attention may secure planning, funding, and careful visitor management.\nAt Hal Saflieni on Malta, for example, access has been tightly controlled in order to preserve a highly vulnerable underground complex.\nFigure 1.18 shows that kind of deliberate management at work.",
+          "figures": [
+            {
+              "label": "Figure 1.18",
+              "caption": "Carefully managed access at the underground complex of Hal Saflieni on Malta. The arrangement shows how fragile sites can survive only through strict control, infrastructure, and public planning."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Maltese Temple period",
+              "start": -3600,
+              "end": -2500,
+              "display_date": "c. 3600-2500 BC",
+              "certainty": "approximate",
+              "caption": "Hal Saflieni belongs to the same broad monumental culture as prehistoric Malta's great temples."
+            },
+            {
+              "type": "span",
+              "label": "Saflieni phase",
+              "start": -3300,
+              "end": -2500,
+              "display_date": "c. 3300-2500 BC",
+              "certainty": "approximate",
+              "caption": "The hypogeum itself belongs within this narrower prehistoric horizon."
+            },
+            {
+              "type": "span",
+              "label": "Later Maltese prehistory",
+              "start": -2500,
+              "end": -1500,
+              "display_date": "c. 2500-1500 BC",
+              "certainty": "approximate",
+              "caption": "This successor span helps place the site within a longer island sequence rather than as an isolated monument."
+            }
+          ]
+        },
+        {
+          "id": "01.11-p006",
+          "text": "Far more often, however, the threatened place is little known, newly found, or judged expendable.\nThen the struggle may be only to document it before bulldozers arrive.\nWhat is hardest of all to preserve is not a single monument but a whole landscape, such as a city with its cemeteries, or a sanctuary within its broader setting.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p007",
+          "text": "The fate of Beirut after the civil war shows how severe the loss can be.\nDuring reconstruction, huge areas of the historic core were cleared without proper archaeological supervision.\nMap 1.17 makes the imbalance stark.\nLarge zones were rebuilt after excavation, but much else was destroyed with barely any record at all.",
+          "figures": [
+            {
+              "label": "Map 1.17",
+              "caption": "Central Beirut after the civil war, with zones excavated, zones bulldozed without archaeology, and areas where archaeologists came only after destruction. The map shows how rebuilding can preserve some memory while erasing far more."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Ancient and medieval Beirut",
+              "start": -2000,
+              "end": 1500,
+              "display_date": "c. 2000 BC-AD 1500",
+              "certainty": "approximate",
+              "caption": "The city whose layers were endangered in reconstruction had accumulated a very long urban history."
+            },
+            {
+              "type": "span",
+              "label": "Lebanese civil war",
+              "start": 1975,
+              "end": 1990,
+              "display_date": "AD 1975-1990",
+              "certainty": "secure",
+              "caption": "The war forms the immediate background to the destruction and rebuilding of central Beirut."
+            },
+            {
+              "type": "span",
+              "label": "Postwar reconstruction",
+              "start": 1990,
+              "end": 2000,
+              "display_date": "c. AD 1990-2000",
+              "certainty": "approximate",
+              "caption": "It was during reconstruction that much of the archaeological record was cleared or lost."
+            }
+          ]
+        },
+        {
+          "id": "01.11-p008",
+          "text": "This kind of erasure is not only physical.\nIt is a destruction of memory in a city already struggling to remember itself.\nWhat rises afterward may look new and prosperous, yet be severed from the strata that once gave it depth.\nA rebuilt city can become, in effect, a phoenix that has forgotten its own life before the fire.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p009",
+          "text": "A second danger comes from looting for the art market.\nClassical material has often suffered most, but older things have been plundered on a vast scale as well.\nCycladic marble figurines, Sardinian bronzes, and almost any object that can be sold for cash are drawn into this trade.\nFigure 1.19 stands for that mutilation of context.",
+          "figures": [
+            {
+              "label": "Figure 1.19",
+              "caption": "Fragments of Cycladic marble figurines dispersed after looting from Keros. Their beauty survives, but the archaeological setting that would have explained them has been broken apart."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Cycladic figurine horizon",
+              "start": -2800,
+              "end": -2300,
+              "display_date": "c. 2800-2300 BC",
+              "certainty": "approximate",
+              "caption": "The looted marble figures belong to the early Bronze Age Cyclades."
+            },
+            {
+              "type": "span",
+              "label": "Nuragic and early Iron Age Sardinia",
+              "start": -1200,
+              "end": -700,
+              "display_date": "c. 1200-700 BC",
+              "certainty": "approximate",
+              "caption": "Sardinian bronzes show that the trade reaches far beyond the Greek and Roman world."
+            },
+            {
+              "type": "span",
+              "label": "Modern antiquities market",
+              "start": 1800,
+              "end": 2025,
+              "display_date": "c. AD 1800-2025",
+              "certainty": "approximate",
+              "caption": "The ancient objects now circulate within a much later market of collectors, dealers, and museums."
+            }
+          ]
+        },
+        {
+          "id": "01.11-p010",
+          "text": "Looting does not merely remove beautiful objects.\nIt kills history by stripping things away from the settings that made them intelligible.\nOnce tombs, shrines, or settlement layers have been ransacked, the surviving objects become isolated trophies and the site itself is often ruined beyond repair.\nWhat is sold abroad is therefore only the visible fragment of a much larger destruction.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.11-p011",
+          "text": "Poverty at the source helps sustain this trade, but the problem does not end there.\nAs long as collectors, dealers, and museums continue to desire objects of dubious origin, the incentive remains.\nReal change will require pressure not only on those who dig illegally, but also on those who buy, display, and legitimize what has been stolen.\nThe market is not an aftereffect of looting.\nIt is one of its causes.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    },
+    {
+      "id": "01.12",
+      "number": "01.12",
+      "title": "The Past, Identity, and the Mediterranean Future",
+      "paragraphs": [
+        {
+          "id": "01.12-p001",
+          "text": "The early Mediterranean matters not only because its remains are threatened, but because its past is constantly drawn into present struggles.\nThat use is almost inevitable.\nThe deeper the past, the easier it is to bend toward imperial dreams, national myths, or sectarian claims.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p002",
+          "text": "The modern Mediterranean is no peaceful museum.\nIts recent history includes civil wars, occupations, expulsions, divided islands, refugees at sea, and economies under intense strain.\nFigure 1.20, with refugees crowded on a small boat bound for Lampedusa, shows that the sea is still a passage of risk, desperation, and unequal hope.",
+          "figures": [
+            {
+              "label": "Figure 1.20",
+              "caption": "North African refugees crowded onto a small boat reaching Lampedusa. The scene shows that the Mediterranean is still a corridor of dangerous movement, not merely a setting for leisure."
+            }
+          ],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p003",
+          "text": "In such a world, the past becomes politically useful.\nRulers, empires, colonial administrations, provinces, and nation states have all pressed archaeology into service.\nAncient places can be used to justify conquest, deepen local loyalties, weaken rival affiliations, or give new states a more ancient pedigree.\nThe distance of the past from the present is precisely what makes it so easy to manipulate.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p004",
+          "text": "Such manipulation has taken many forms.\nColonial powers could foster local archaeological identities in order to distract from more dangerous solidarities.\nNational movements could elevate one ancient inheritance above all others.\nRegional movements could turn old monuments into emblems of autonomy or grievance.\nThe Mediterranean has repeatedly used antiquity as a language for present ambitions.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p005",
+          "text": "For that reason, archaeology cannot withdraw from public debate without betraying part of its task.\nIt has to challenge crude uses of the past and to show that older societies were rarely as simple, pure, or neatly bounded as political myth prefers.\nA more accurate history does not erase attachment.\nIt makes attachment less violent and less false.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p006",
+          "text": "The word Mediterranean itself is not innocent.\nTo some it suggests cosmopolitan exchange, openness, and relief from narrow national identities.\nTo others it sounds like an outsider's stereotype, romantic when flattering and contemptuous when dismissive.\nThe same term can mean blue skies and hospitality, or corruption, weakness, and the need for external control.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p007",
+          "text": "Yet those competing meanings also reveal a desire for wider forms of belonging.\nSome invoke the Mediterranean to escape confinement within the nation.\nOthers use it to mark distance from surrounding continental worlds.\nNo single usage can claim final authority.\nWhat matters is that the term continues to invite thought about connections larger than the state and older than modern borders.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p008",
+          "text": "A long view of the early Mediterranean can contribute something valuable here.\nIt uncovers a world before monotheistic rivalry hardened the basin in later forms, and before national identities claimed to reach unchanged into remote antiquity.\nThat older world was not simple harmony.\nIt was a dense tapestry of shifting practices, contacts, and partial identities.",
+          "figures": [],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "Polytheistic Bronze and Iron Age Mediterranean",
+              "start": -3000,
+              "end": -300,
+              "display_date": "c. 3000-300 BC",
+              "certainty": "approximate",
+              "caption": "The long pre-monotheistic Mediterranean provides the wider field this paragraph wants to recover."
+            },
+            {
+              "type": "span",
+              "label": "Mediterranean monotheisms and late antiquity",
+              "start": 300,
+              "end": 700,
+              "display_date": "c. AD 300-700",
+              "certainty": "approximate",
+              "caption": "Later religious hardening belongs to a very different basin from the earlier one."
+            },
+            {
+              "type": "span",
+              "label": "Modern Mediterranean nation-states",
+              "start": 1800,
+              "end": 2025,
+              "display_date": "c. AD 1800-2025",
+              "certainty": "approximate",
+              "caption": "Modern national claims to remote antiquity are a much later overlay on the older world."
+            }
+          ]
+        },
+        {
+          "id": "01.12-p009",
+          "text": "As soon as texts and images become plentiful, one already finds peoples being represented as different, inferior, or threatening.\nFigure 1.21 shows this clearly in Egyptian royal art, where foreigners are displayed beneath the king's power.\nBut such images do not prove that the ancient Mediterranean was naturally divided into fixed and eternal blocks.\nThey show, rather, how early and how forcefully human beings tried to impose such blocks.",
+          "figures": [
+            {
+              "label": "Figure 1.21",
+              "caption": "Egyptian royal art depicting Levantines, Nubians, and Libyans beneath Ramesses the Second. It is a vivid example of how ancient power used visual stereotypes to define outsiders."
+            }
+          ],
+          "timeline": [
+            {
+              "type": "span",
+              "label": "New Kingdom Egypt",
+              "start": -1550,
+              "end": -1070,
+              "display_date": "c. 1550-1070 BC",
+              "certainty": "approximate",
+              "caption": "The depiction of foreigners belongs to the imperial horizon of New Kingdom Egypt."
+            },
+            {
+              "type": "span",
+              "label": "Ramesses the Second",
+              "start": -1279,
+              "end": -1213,
+              "display_date": "c. 1279-1213 BC",
+              "certainty": "secure",
+              "caption": "His reign is the specific royal frame for the image discussed here."
+            },
+            {
+              "type": "span",
+              "label": "Later Iron Age Mediterranean identities",
+              "start": -1000,
+              "end": -300,
+              "display_date": "c. 1000-300 BC",
+              "certainty": "approximate",
+              "caption": "Later ethnic and political identities become more explicit, but they do not simply confirm the older Egyptian stereotypes."
+            }
+          ]
+        },
+        {
+          "id": "01.12-p010",
+          "text": "The deeper reality is more fluid.\nCommunities, customs, and affiliations were continually made and remade through interaction.\nThe solid groups and boundaries inherited by later ages emerged only gradually, often late, and under pressures that can still be studied.\nThe early Mediterranean is therefore not a gallery of ready made nations.\nIt is a field of movement, convergence, friction, and recombination.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p011",
+          "text": "That vision can itself become too easy if turned into a cheerful celebration of mixture.\nMediterraneanization, if one may call it that, created winners and losers as well as connections.\nEvery widening network altered balances of power and left some people marginalized, displaced, or absorbed on unequal terms.\nA history of interaction that forgets this becomes as false as the nationalist stories it was meant to replace.",
+          "figures": [],
+          "timeline": []
+        },
+        {
+          "id": "01.12-p012",
+          "text": "Even so, the basin remains one of the best places in which to study how human worlds are made through mobility, encounter, imitation, resistance, and conflict.\nIts early history does not offer a simple lesson or a ready cure for the present.\nWhat it offers is a broader and more demanding perspective.\nTo ignore that past is to become poorer in judgment, and perhaps less capable of imagining a livable future around this sea.",
+          "figures": [],
+          "timeline": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sectionCount": 12,
+    "paragraphCount": 81,
+    "figureCount": 24,
+    "timelineItemCount": 119
+  }
+}
