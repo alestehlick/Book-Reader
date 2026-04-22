@@ -62,6 +62,11 @@
   let genealogyBodyEl = null;
   let genealogyFallbackEl = null;
   let genealogyToggleBtn = null;
+  let notesSectionEl = null;
+  let notesSummaryEl = null;
+  let notesBodyEl = null;
+  let notesFallbackEl = null;
+  let notesToggleBtn = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
@@ -71,6 +76,7 @@
   const THEME_STORAGE_KEY = "audio-reader-theme";
   const TIMELINE_VISIBILITY_STORAGE_KEY = "audio-reader-timeline-visible";
   const GENEALOGY_VISIBILITY_STORAGE_KEY = "audio-reader-genealogy-visible";
+  const NOTES_VISIBILITY_STORAGE_KEY = "audio-reader-notes-visible";
 
   const state = {
     book: null,
@@ -87,6 +93,7 @@
     autoplayRequested: false,
     timelineVisible: true,
     genealogyVisible: true,
+    notesVisible: true,
     genealogyTreeMap: new Map(),
   };
 
@@ -325,6 +332,7 @@
       videos,
       timeline,
       genealogy,
+      notes: normalizeNoteList(paragraph?.notes || paragraph?.scholarlyNotes || paragraph?.annotations || paragraph?.commentary),
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -336,7 +344,39 @@
     return Array.isArray(value) ? value.filter(Boolean) : [];
   }
 
-  
+  function normalizeNoteEntry(entry, index) {
+    if (!entry) return null;
+
+    if (typeof entry === "string") {
+      const text = entry.trim();
+      if (!text) return null;
+      return {
+        id: `note-${index + 1}`,
+        type: "note",
+        title: "",
+        text,
+      };
+    }
+
+    if (typeof entry !== "object") return null;
+
+    const text = String(entry.text || entry.body || entry.note || entry.content || "").trim();
+    if (!text) return null;
+
+    return {
+      id: String(entry.id || `note-${index + 1}`).trim(),
+      type: String(entry.type || entry.kind || "note").trim().toLowerCase(),
+      title: String(entry.title || entry.label || "").trim(),
+      text,
+    };
+  }
+
+  function normalizeNoteList(value) {
+    return normalizeMediaList(value)
+      .map((entry, index) => normalizeNoteEntry(entry, index))
+      .filter(Boolean);
+  }
+
   function normalizeGenealogyRef(entry, index) {
     if (!entry || typeof entry !== "object") return null;
 
@@ -1192,6 +1232,69 @@
 
     renderFigures(effectiveFigures);
     renderVideos(effectiveVideos);
+  }
+
+  function formatNotesSummary(noteCount) {
+    if (!Number.isFinite(noteCount) || noteCount <= 0) return "";
+    return `${noteCount} note${noteCount === 1 ? "" : "s"}`;
+  }
+
+  function noteTypeLabel(value) {
+    const raw = String(value || "note").trim();
+    if (!raw) return "Note";
+    return raw.replace(/[_-]+/g, " ").replace(/\w/g, (m) => m.toUpperCase());
+  }
+
+  function renderNotes() {
+    if (!notesSectionEl || !notesBodyEl || !notesSummaryEl || !notesFallbackEl) return;
+
+    const current = getCurrentParagraph();
+    if (!current) {
+      notesSectionEl.hidden = true;
+      return;
+    }
+
+    const notes = normalizeNoteList(current.notes);
+    if (notes.length === 0) {
+      notesSectionEl.hidden = true;
+      return;
+    }
+
+    notesBodyEl.innerHTML = "";
+    notesFallbackEl.hidden = true;
+    notesFallbackEl.textContent = "";
+
+    notes.forEach((note) => {
+      const article = document.createElement("article");
+      article.className = "note-item";
+
+      const top = document.createElement("div");
+      top.className = "note-item-top";
+
+      const typeBadge = document.createElement("span");
+      typeBadge.className = "note-type-badge";
+      typeBadge.textContent = noteTypeLabel(note.type);
+      top.appendChild(typeBadge);
+
+      article.appendChild(top);
+
+      if (note.title) {
+        const title = document.createElement("h3");
+        title.className = "note-item-title";
+        title.textContent = note.title;
+        article.appendChild(title);
+      }
+
+      const body = document.createElement("p");
+      body.className = "note-item-text";
+      body.textContent = note.text;
+      article.appendChild(body);
+
+      notesBodyEl.appendChild(article);
+    });
+
+    notesSummaryEl.textContent = formatNotesSummary(notes.length);
+    notesSectionEl.hidden = false;
   }
 
   function formatGenealogySummary(treeCount, playerCount) {
@@ -2067,6 +2170,7 @@
 
     renderTimeline();
     renderGenealogy();
+    renderNotes();
     renderMedia();
   }
 
@@ -2348,6 +2452,32 @@
       genealogyToggleBtn?.addEventListener("click", toggleGenealogyVisibility);
       applyGenealogyVisibility(false);
     }
+
+    if (currentCardEl && !notesSectionEl) {
+      notesSectionEl = document.createElement("section");
+      notesSectionEl.id = "notesSection";
+      notesSectionEl.className = "notes-card card";
+      notesSectionEl.hidden = true;
+      notesSectionEl.innerHTML = `
+        <div class="notes-header">
+          <div class="notes-header-main">
+            <div class="eyebrow">Scholarly notes</div>
+            <div class="notes-summary" id="notesSummary"></div>
+          </div>
+          <button type="button" class="notes-toggle-btn" id="notesToggleBtn" aria-label="Hide notes" aria-pressed="true">Hide</button>
+        </div>
+        <div class="notes-body" id="notesBody"></div>
+        <div class="notes-fallback" id="notesFallback" hidden></div>
+      `;
+      const insertionTarget = mediaSectionEl || currentCardEl.nextSibling;
+      currentCardEl.parentNode.insertBefore(notesSectionEl, insertionTarget);
+      notesSummaryEl = notesSectionEl.querySelector("#notesSummary");
+      notesBodyEl = notesSectionEl.querySelector("#notesBody");
+      notesFallbackEl = notesSectionEl.querySelector("#notesFallback");
+      notesToggleBtn = notesSectionEl.querySelector("#notesToggleBtn");
+      notesToggleBtn?.addEventListener("click", toggleNotesVisibility);
+      applyNotesVisibility(false);
+    }
   }
 
   function applyTimelineVisibility(persist = false) {
@@ -2414,6 +2544,37 @@
   function toggleGenealogyVisibility() {
     state.genealogyVisible = !state.genealogyVisible;
     applyGenealogyVisibility(true);
+  }
+
+  function applyNotesVisibility(persist = false) {
+    if (!notesSectionEl) return;
+
+    notesSectionEl.classList.toggle("notes-collapsed", !state.notesVisible);
+
+    if (notesToggleBtn) {
+      notesToggleBtn.textContent = state.notesVisible ? "Hide" : "Show";
+      notesToggleBtn.setAttribute(
+        "aria-label",
+        state.notesVisible ? "Hide notes" : "Show notes"
+      );
+      notesToggleBtn.setAttribute("aria-pressed", state.notesVisible ? "true" : "false");
+      notesToggleBtn.classList.toggle("is-collapsed", !state.notesVisible);
+    }
+
+    if (persist) {
+      localStorage.setItem(NOTES_VISIBILITY_STORAGE_KEY, state.notesVisible ? "visible" : "hidden");
+    }
+  }
+
+  function applySavedNotesVisibility() {
+    const savedVisibility = localStorage.getItem(NOTES_VISIBILITY_STORAGE_KEY);
+    state.notesVisible = savedVisibility !== "hidden";
+    applyNotesVisibility(false);
+  }
+
+  function toggleNotesVisibility() {
+    state.notesVisible = !state.notesVisible;
+    applyNotesVisibility(true);
   }
 
   function isMobileLayout() {
@@ -2561,6 +2722,7 @@
       ensureEnhancedLayout();
       applySavedTimelineVisibility();
       applySavedGenealogyVisibility();
+      applySavedNotesVisibility();
 
       const rawBookData = await loadBookData();
       indexBookData(rawBookData);
