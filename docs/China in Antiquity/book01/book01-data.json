@@ -3,8 +3,13 @@
   "language": "en",
   "sharedMaps": [
     {
-      "label": "WesternZhouMap",
-      "src": "maps/WesternZhouMap.png",
+      "label": "WesternZhou1",
+      "src": "maps/WesternZhou1.png",
+      "caption": ""
+    },
+    {
+      "label": "WesternZhou2",
+      "src": "maps/WesternZhou2.png",
       "caption": ""
     }
   ],
@@ -20,8 +25,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -63,8 +73,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -106,8 +121,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -149,8 +169,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -192,8 +217,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -235,8 +265,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -278,8 +313,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -328,8 +368,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -389,8 +434,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -450,8 +500,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -511,8 +566,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -572,8 +632,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -633,8 +698,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -694,8 +764,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -755,8 +830,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -829,8 +909,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -844,8 +929,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -859,8 +949,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -874,8 +969,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -889,8 +989,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -904,8 +1009,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -926,8 +1036,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -941,8 +1056,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -956,8 +1076,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -978,8 +1103,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -999,8 +1129,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1014,8 +1149,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1029,8 +1169,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1051,8 +1196,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1103,8 +1253,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1155,8 +1310,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1207,8 +1367,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1259,8 +1424,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1318,8 +1488,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1370,8 +1545,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1422,8 +1602,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1474,8 +1659,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1526,8 +1716,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1578,8 +1773,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1637,8 +1837,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1680,8 +1885,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1723,8 +1933,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1766,8 +1981,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1815,8 +2035,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1858,8 +2083,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1901,8 +2131,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -1951,8 +2186,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2003,8 +2243,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2055,8 +2300,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2107,8 +2357,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2165,8 +2420,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2217,8 +2477,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2269,8 +2534,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2321,8 +2591,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2380,8 +2655,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2432,8 +2712,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2490,8 +2775,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2549,8 +2839,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2601,8 +2896,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2653,8 +2953,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2705,8 +3010,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2764,8 +3074,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2816,8 +3131,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2868,8 +3188,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2920,8 +3245,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -2979,8 +3309,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3031,8 +3366,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3083,8 +3423,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3142,8 +3487,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3194,8 +3544,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3246,8 +3601,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3298,8 +3658,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3357,8 +3722,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3409,8 +3779,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3467,8 +3842,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3525,8 +3905,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3584,8 +3969,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3636,8 +4026,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3688,8 +4083,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3740,8 +4140,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3801,8 +4206,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3868,8 +4278,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3936,8 +4351,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -3999,8 +4419,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4042,8 +4467,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4105,8 +4535,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4163,8 +4598,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4215,8 +4655,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4267,8 +4712,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4335,8 +4785,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4404,8 +4859,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4471,8 +4931,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4544,8 +5009,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4613,8 +5083,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4681,8 +5156,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4751,8 +5231,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4812,8 +5297,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4883,8 +5373,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4926,8 +5421,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -4969,8 +5469,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5012,8 +5517,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5055,8 +5565,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5098,8 +5613,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5141,8 +5661,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5191,8 +5716,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5243,8 +5773,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5295,8 +5830,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5347,8 +5887,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5406,8 +5951,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5458,8 +6008,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5510,8 +6065,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5562,8 +6122,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5614,8 +6179,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5666,8 +6236,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5718,8 +6293,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5770,8 +6350,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5822,8 +6407,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5887,8 +6477,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5939,8 +6534,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -5997,8 +6597,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6049,8 +6654,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6101,8 +6711,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6153,8 +6768,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6212,8 +6832,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6264,8 +6889,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6316,8 +6946,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6368,8 +7003,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6420,8 +7060,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6472,8 +7117,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6524,8 +7174,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6576,8 +7231,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6628,8 +7288,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6680,8 +7345,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6732,8 +7402,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6791,8 +7466,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6834,8 +7514,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6884,8 +7569,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6927,8 +7617,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -6977,8 +7672,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7020,8 +7720,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7063,8 +7768,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7106,8 +7816,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7156,8 +7871,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7199,8 +7919,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7242,8 +7967,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7285,8 +8015,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7335,8 +8070,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7393,8 +8133,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7445,8 +8190,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7497,8 +8247,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7570,8 +8325,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7622,8 +8382,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7674,8 +8439,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7726,8 +8496,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -7778,8 +8553,13 @@
           "figures": [],
           "maps": [
             {
-              "label": "WesternZhouMap",
-              "src": "maps/WesternZhouMap.png",
+              "label": "WesternZhou1",
+              "src": "maps/WesternZhou1.png",
+              "caption": ""
+            },
+            {
+              "label": "WesternZhou2",
+              "src": "maps/WesternZhou2.png",
               "caption": ""
             }
           ],
@@ -8030,7 +8810,7 @@
     "sectionCount": 31,
     "paragraphCount": 155,
     "figureCount": 0,
-    "mapCount": 1,
+    "mapCount": 2,
     "timelineItemCount": 545,
     "genealogyReferenceCount": 13,
     "genealogyTreeCount": 3,
