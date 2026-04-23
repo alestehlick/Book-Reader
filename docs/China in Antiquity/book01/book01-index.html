@@ -6,6 +6,7 @@
   data-book-data-preference="js"
   data-audio-dirs="../audio/paragraphs"
   data-figures-dir="../figures"
+  data-maps-dir="../maps"
   data-videos-dir="../videos"
   data-video-extensions="webm"
 >
@@ -87,15 +88,33 @@
         <div id="currentParagraphText" class="current-paragraph-text">Loading…</div>
       </section>
 
-      <section id="mediaSection" class="card media-card" hidden>
+      <section id="figuresSection" class="card media-card" hidden>
         <div class="media-header">
-          <div class="eyebrow">Figures</div>
-          <div id="mediaSummary" class="media-summary"></div>
+          <div class="media-header-main">
+            <div class="eyebrow">Figures</div>
+            <div id="figuresSummary" class="media-summary"></div>
+          </div>
+          <button id="figuresToggleBtn" class="media-toggle-btn" type="button" aria-label="Hide figures" aria-pressed="true">Hide</button>
         </div>
 
         <section id="figureGroup" class="media-group" hidden>
           <div class="media-group-title">Figures</div>
           <div id="paragraphFigures" class="media-stack"></div>
+        </section>
+      </section>
+
+      <section id="mapsSection" class="card media-card maps-card" hidden>
+        <div class="media-header">
+          <div class="media-header-main">
+            <div class="eyebrow">Maps</div>
+            <div id="mapsSummary" class="media-summary"></div>
+          </div>
+          <button id="mapsToggleBtn" class="media-toggle-btn" type="button" aria-label="Hide maps" aria-pressed="true">Hide</button>
+        </div>
+
+        <section id="mapGroup" class="media-group" hidden>
+          <div class="media-group-title">Maps</div>
+          <div id="allMaps" class="media-stack"></div>
         </section>
       </section>
 

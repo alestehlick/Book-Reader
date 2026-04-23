@@ -1,6 +1,7 @@
 const BOOK_DATA = {
-  "title": "1 — The Beginnings",
+  "title": "Book I — The Beginnings",
   "language": "en",
+  "sharedMaps": [],
   "sections": [
     {
       "id": "01.01",
@@ -41,7 +42,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p002",
@@ -77,7 +79,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p003",
@@ -113,7 +116,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p004",
@@ -149,7 +153,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p005",
@@ -185,7 +190,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p006",
@@ -221,7 +227,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.01-p007",
@@ -257,7 +264,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -318,7 +326,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p002",
@@ -372,7 +381,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p003",
@@ -426,7 +436,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p004",
@@ -480,7 +491,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p005",
@@ -534,7 +546,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p006",
@@ -588,7 +601,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p007",
@@ -642,7 +656,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.02-p008",
@@ -702,7 +717,8 @@ const BOOK_DATA = {
               "title": "Rong, Di, and shifting identities",
               "text": "Modern scholarship is more cautious than older accounts about treating Rong, Di, Yi, and related labels as fixed ethnic blocs. In early sources they often function as shifting political or cultural designations, and backward identifications with later peoples such as the Xiongnu or Tungusic groups should be treated with care."
             }
-          ]
+          ],
+          "maps": []
         }
       ]
     },
@@ -717,7 +733,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.03-p002",
@@ -725,7 +742,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.03-p003",
@@ -733,7 +751,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.03-p004",
@@ -741,7 +760,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.03-p005",
@@ -749,7 +769,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.03-p006",
@@ -757,7 +778,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -772,7 +794,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.04-p002",
@@ -780,7 +803,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.04-p003",
@@ -788,7 +812,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -809,7 +834,8 @@ const BOOK_DATA = {
               "title": "Language classification",
               "text": "Maspero's Sino-Tai grouping is no longer standard. Chinese is now generally treated as part of Sino-Tibetan, while Tai-Kadai is usually classified separately; proposals for a deeper relationship remain debated."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.05-p002",
@@ -817,7 +843,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.05-p003",
@@ -825,7 +852,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.05-p004",
@@ -833,7 +861,8 @@ const BOOK_DATA = {
           "figures": [],
           "timeline": [],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -885,7 +914,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.06-p002",
@@ -930,7 +960,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.06-p003",
@@ -975,7 +1006,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.06-p004",
@@ -1020,7 +1052,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.06-p005",
@@ -1065,7 +1098,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -1117,7 +1151,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.07-p002",
@@ -1162,7 +1197,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.07-p003",
@@ -1207,7 +1243,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.07-p004",
@@ -1252,7 +1289,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.07-p005",
@@ -1297,7 +1335,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.07-p006",
@@ -1342,7 +1381,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -1385,7 +1425,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.08-p002",
@@ -1421,7 +1462,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.08-p003",
@@ -1457,7 +1499,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.08-p004",
@@ -1499,7 +1542,8 @@ const BOOK_DATA = {
               "title": "Yu and the flood tradition",
               "text": "The Yu flood cycle is not read today as straightforward event history. Many scholars treat it as layered cultural memory shaped by ecological crisis, hydraulic labor, and later state-building ideology."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.08-p005",
@@ -1535,7 +1579,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.08-p006",
@@ -1571,7 +1616,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.08-p007",
@@ -1607,7 +1653,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -1659,7 +1706,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p002",
@@ -1704,7 +1752,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p003",
@@ -1749,7 +1798,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p004",
@@ -1800,7 +1850,8 @@ const BOOK_DATA = {
               "title": "Xia and Erlitou",
               "text": "Modern archaeology has confirmed the importance of the Erlitou culture and site, but the equation of Erlitou with the Xia dynasty remains debated. The Xia remains much less securely documented than Shang, whose oracle bones provide direct written evidence."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.09-p005",
@@ -1845,7 +1896,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p006",
@@ -1890,7 +1942,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p007",
@@ -1935,7 +1988,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.09-p008",
@@ -1980,7 +2034,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2032,7 +2087,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.10-p002",
@@ -2083,7 +2139,8 @@ const BOOK_DATA = {
               "title": "Earliest secure Chinese writing",
               "text": "Later discoveries have strongly confirmed the central importance of the oracle-bone inscriptions. They remain the earliest secure large corpus of Chinese writing, and they already presuppose a substantial earlier development of the script."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.10-p003",
@@ -2128,7 +2185,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2180,7 +2238,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.11-p002",
@@ -2225,7 +2284,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.11-p003",
@@ -2270,7 +2330,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.11-p004",
@@ -2315,7 +2376,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2367,7 +2429,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.12-p002",
@@ -2412,7 +2475,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.12-p003",
@@ -2457,7 +2521,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.12-p004",
@@ -2502,7 +2567,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2554,7 +2620,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.13-p002",
@@ -2599,7 +2666,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.13-p003",
@@ -2644,7 +2712,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2696,7 +2765,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.14-p002",
@@ -2741,7 +2811,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.14-p003",
@@ -2786,7 +2857,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.14-p004",
@@ -2831,7 +2903,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -2883,7 +2956,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.15-p002",
@@ -2934,7 +3008,8 @@ const BOOK_DATA = {
               "title": "Shang chronology",
               "text": "Modern chronology usually places the Shang at about 1600 to 1046 BC, with the Anyang or late-Shang phase around 1250 to 1046 BC. Exact regnal dating remains debated, but the older very long traditional chronology is no longer followed."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.15-p003",
@@ -2985,7 +3060,8 @@ const BOOK_DATA = {
               "title": "Shang and Yin",
               "text": "Modern usage normally reserves Yinxu, the ruins of Yin, for the final Shang capital at Anyang and often uses Yin as a name for the late Shang phase rather than for the dynasty as a whole. For the dynasty in general, Shang is now preferred."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.15-p004",
@@ -3030,7 +3106,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -3082,7 +3159,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.16-p002",
@@ -3127,7 +3205,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.16-p003",
@@ -3172,7 +3251,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.16-p004",
@@ -3226,7 +3306,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.16-p005",
@@ -3286,7 +3367,8 @@ const BOOK_DATA = {
               "title": "The Zhou origin tradition",
               "text": "The move from Bin to Qi belongs to a real early Zhou memory, but its transmitted form is heavily literary and dynastic. Archaeology supports an early Zhou base in the Guanzhong region, yet the step-by-step ancestral narrative cannot be treated as simple chronicle."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.16-p006",
@@ -3340,7 +3422,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -3403,7 +3486,8 @@ const BOOK_DATA = {
               "title": "Conquest and enfeoffment",
               "text": "The Zhou conquest of Shang is securely historical, and modern chronologies usually place it around 1045 or 1046 BC. The broad pattern of post-conquest redistribution is credible, but the detailed apportionment preserved in later texts reflects retrospective political memory as well as early fact."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.17-p002",
@@ -3439,7 +3523,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.17-p003",
@@ -3488,7 +3573,8 @@ const BOOK_DATA = {
               }
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -3546,7 +3632,8 @@ const BOOK_DATA = {
               "title": "King Zhao and King Mu",
               "text": "Bronze inscriptions support the reality of major southern campaigns under King Zhao and help anchor this part of the narrative in history. The cycle of marvels attached to King Mu, however, is a much later legendary accretion and should not be read at face value."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.18-p002",
@@ -3591,7 +3678,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.18-p003",
@@ -3636,7 +3724,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.18-p004",
@@ -3690,7 +3779,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -3759,7 +3849,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.19-p002",
@@ -3819,7 +3910,8 @@ const BOOK_DATA = {
               "title": "Who were the Xianyun",
               "text": "The Xianyun are securely attested in Western Zhou inscriptions and poems, but their exact relation to the Quanrong or to much later steppe confederations remains uncertain. Older identifications with the Huns should therefore be treated cautiously."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.19-p003",
@@ -3885,7 +3977,8 @@ const BOOK_DATA = {
               }
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.19-p004",
@@ -3947,7 +4040,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.19-p005",
@@ -4001,7 +4095,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -4071,7 +4166,8 @@ const BOOK_DATA = {
               "title": "The fall of Western Zhou",
               "text": "Modern work ties the collapse of 771 BC not only to court intrigue but also to a longer northwestern military crisis, including warfare with the Xianyun and allied western groups. The old Bao Si anecdote survives as literary memory, but it is not the whole explanation."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.20-p002",
@@ -4125,7 +4221,8 @@ const BOOK_DATA = {
               ]
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.20-p003",
@@ -4182,7 +4279,8 @@ const BOOK_DATA = {
               }
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -4225,7 +4323,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p002",
@@ -4261,7 +4360,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p003",
@@ -4297,7 +4397,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p004",
@@ -4333,7 +4434,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p005",
@@ -4369,7 +4471,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p006",
@@ -4405,7 +4508,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.21-p007",
@@ -4441,7 +4545,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -4493,7 +4598,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.22-p002",
@@ -4538,7 +4644,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.22-p003",
@@ -4583,7 +4690,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.22-p004",
@@ -4628,7 +4736,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -4680,7 +4789,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p002",
@@ -4725,7 +4835,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p003",
@@ -4770,7 +4881,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p004",
@@ -4815,7 +4927,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p005",
@@ -4860,7 +4973,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p006",
@@ -4905,7 +5019,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p007",
@@ -4950,7 +5065,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p008",
@@ -4995,7 +5111,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.23-p009",
@@ -5046,7 +5163,8 @@ const BOOK_DATA = {
               "title": "Later symmetry and earlier practice",
               "text": "Modern study of bronze inscriptions confirms a substantial Western Zhou administrative apparatus, but the highly balanced six-ministry system of later ritual texts is partly schematic. Some of Maspero's reconstruction is plausible, yet the surviving contemporary evidence is more fragmentary than the transmitted manuals suggest."
             }
-          ]
+          ],
+          "maps": []
         }
       ]
     },
@@ -5098,7 +5216,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.24-p002",
@@ -5149,7 +5268,8 @@ const BOOK_DATA = {
               "title": "Administrative offices and bronze evidence",
               "text": "Excavated bronze inscriptions have strengthened the case that Western Zhou government already possessed real administrative offices rather than a purely ceremonial framework. Even so, the exact territorial grid and full hierarchy remain reconstructed rather than directly documented in complete form."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.24-p003",
@@ -5194,7 +5314,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.24-p004",
@@ -5239,7 +5360,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.24-p005",
@@ -5284,7 +5406,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.24-p006",
@@ -5329,7 +5452,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -5381,7 +5505,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p002",
@@ -5426,7 +5551,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p003",
@@ -5471,7 +5597,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p004",
@@ -5516,7 +5643,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p005",
@@ -5561,7 +5689,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p006",
@@ -5606,7 +5735,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p007",
@@ -5651,7 +5781,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p008",
@@ -5696,7 +5827,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p009",
@@ -5741,7 +5873,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p010",
@@ -5786,7 +5919,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.25-p011",
@@ -5831,7 +5965,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -5874,7 +6009,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.26-p002",
@@ -5910,7 +6046,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -5953,7 +6090,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.27-p002",
@@ -5989,7 +6127,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -6032,7 +6171,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.28-p002",
@@ -6068,7 +6208,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.28-p003",
@@ -6104,7 +6245,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.28-p004",
@@ -6140,7 +6282,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -6183,7 +6326,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.29-p002",
@@ -6219,7 +6363,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.29-p003",
@@ -6255,7 +6400,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.29-p004",
@@ -6291,7 +6437,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -6349,7 +6496,8 @@ const BOOK_DATA = {
               "title": "The Yugong and the Nine Provinces",
               "text": "The received Yugong should not be treated as a straightforward Western Zhou administrative document. Modern scholarship usually sees the extant text as later, with substantial Warring States shaping, even if it preserves older spatial and ideological traditions."
             }
-          ]
+          ],
+          "maps": []
         },
         {
           "id": "01.30-p002",
@@ -6394,7 +6542,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.30-p003",
@@ -6439,7 +6588,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.30-p004",
@@ -6498,7 +6648,8 @@ const BOOK_DATA = {
               }
             }
           ],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     },
@@ -6550,7 +6701,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.31-p002",
@@ -6595,7 +6747,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.31-p003",
@@ -6640,7 +6793,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.31-p004",
@@ -6685,7 +6839,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         },
         {
           "id": "01.31-p005",
@@ -6730,7 +6885,8 @@ const BOOK_DATA = {
             }
           ],
           "genealogy": [],
-          "notes": []
+          "notes": [],
+          "maps": []
         }
       ]
     }

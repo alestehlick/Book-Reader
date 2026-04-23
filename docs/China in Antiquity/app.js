@@ -38,10 +38,17 @@
   const nextParagraphTextEl = document.getElementById("nextParagraphText");
   const contextGridEl = document.getElementById("contextGrid");
 
-  const mediaSectionEl = document.getElementById("mediaSection");
-  const mediaSummaryEl = document.getElementById("mediaSummary");
+  const figuresSectionEl = document.getElementById("figuresSection");
+  const figuresSummaryEl = document.getElementById("figuresSummary");
   const figureGroupEl = document.getElementById("figureGroup");
   const paragraphFiguresEl = document.getElementById("paragraphFigures");
+  const figuresToggleBtn = document.getElementById("figuresToggleBtn");
+
+  const mapsSectionEl = document.getElementById("mapsSection");
+  const mapsSummaryEl = document.getElementById("mapsSummary");
+  const mapGroupEl = document.getElementById("mapGroup");
+  const allMapsEl = document.getElementById("allMaps");
+  const mapsToggleBtn = document.getElementById("mapsToggleBtn");
 
   const currentCardEl = currentParagraphTextEl?.closest(".current-card") || null;
 
@@ -57,26 +64,30 @@
   let timelinePointLabelsEl = null;
   let timelineFallbackEl = null;
   let timelineToggleBtn = null;
-  let genealogySectionEl = null;
-  let genealogySummaryEl = null;
-  let genealogyBodyEl = null;
-  let genealogyFallbackEl = null;
-  let genealogyToggleBtn = null;
   let notesSectionEl = null;
   let notesSummaryEl = null;
   let notesBodyEl = null;
   let notesFallbackEl = null;
   let notesToggleBtn = null;
+  let genealogySectionEl = null;
+  let genealogySummaryEl = null;
+  let genealogyBodyEl = null;
+  let genealogyFallbackEl = null;
+  let genealogyToggleBtn = null;
 
   const DEFAULT_AUDIO_DIRS = ["audio/paragraphs", "audio/paragraphs/s"];
   const DEFAULT_FIGURES_DIR = "figures";
   const DEFAULT_FIGURE_EXTENSIONS = ["png", "jpg", "jpeg"];
+  const DEFAULT_MAPS_DIR = "maps";
+  const DEFAULT_MAP_EXTENSIONS = ["png", "jpg", "jpeg"];
   const DEFAULT_VIDEOS_DIR = "videos";
   const DEFAULT_VIDEO_EXTENSIONS = ["webm", "mp4"];
   const THEME_STORAGE_KEY = "audio-reader-theme";
   const TIMELINE_VISIBILITY_STORAGE_KEY = "audio-reader-timeline-visible";
-  const GENEALOGY_VISIBILITY_STORAGE_KEY = "audio-reader-genealogy-visible";
   const NOTES_VISIBILITY_STORAGE_KEY = "audio-reader-notes-visible";
+  const GENEALOGY_VISIBILITY_STORAGE_KEY = "audio-reader-genealogy-visible";
+  const FIGURES_VISIBILITY_STORAGE_KEY = "audio-reader-figures-visible";
+  const MAPS_VISIBILITY_STORAGE_KEY = "audio-reader-maps-visible";
 
   const state = {
     book: null,
@@ -92,8 +103,10 @@
     currentAudioPath: "",
     autoplayRequested: false,
     timelineVisible: true,
-    genealogyVisible: true,
     notesVisible: true,
+    genealogyVisible: true,
+    figuresVisible: true,
+    mapsVisible: true,
     genealogyTreeMap: new Map(),
   };
 
@@ -167,6 +180,8 @@
     const audioDirs = parseDatasetList(getDatasetValue("audioDirs"));
     const figuresDir = normalizePath(getDatasetValue("figuresDir"));
     const figureExtensions = parseDatasetList(getDatasetValue("figureExtensions"));
+    const mapsDir = normalizePath(getDatasetValue("mapsDir"));
+    const mapExtensions = parseDatasetList(getDatasetValue("mapExtensions"));
     const videosDir = normalizePath(getDatasetValue("videosDir"));
     const videoExtensions = parseDatasetList(getDatasetValue("videoExtensions"));
 
@@ -174,6 +189,8 @@
       audioDirs: audioDirs.length > 0 ? audioDirs : [...DEFAULT_AUDIO_DIRS],
       figuresDir: figuresDir || DEFAULT_FIGURES_DIR,
       figureExtensions: figureExtensions.length > 0 ? figureExtensions : [...DEFAULT_FIGURE_EXTENSIONS],
+      mapsDir: mapsDir || DEFAULT_MAPS_DIR,
+      mapExtensions: mapExtensions.length > 0 ? mapExtensions : [...DEFAULT_MAP_EXTENSIONS],
       videosDir: videosDir || DEFAULT_VIDEOS_DIR,
       videoExtensions: videoExtensions.length > 0 ? videoExtensions : [...DEFAULT_VIDEO_EXTENSIONS],
     };
@@ -224,9 +241,12 @@
     currentParagraphTextEl.innerHTML = `<p>${escapeHtml(message)}</p>`;
     previousParagraphTextEl.textContent = "—";
     nextParagraphTextEl.textContent = "—";
-    mediaSectionEl.hidden = true;
-    figureGroupEl.hidden = true;
+    if (figuresSectionEl) figuresSectionEl.hidden = true;
+    if (figureGroupEl) figureGroupEl.hidden = true;
+    if (mapsSectionEl) mapsSectionEl.hidden = true;
+    if (mapGroupEl) mapGroupEl.hidden = true;
     if (timelineSectionEl) timelineSectionEl.hidden = true;
+    if (notesSectionEl) notesSectionEl.hidden = true;
     if (genealogySectionEl) genealogySectionEl.hidden = true;
     contextGridEl.style.display = "none";
   }
@@ -315,7 +335,9 @@
   }
 
   function normalizeParagraph(paragraph, section, paragraphIndex) {
-    const figures = Array.isArray(paragraph?.figures) ? paragraph.figures : [];
+    const rawFigures = normalizeMediaList(paragraph?.figures);
+    const rawMaps = normalizeMediaList(paragraph?.maps);
+    const { figures, maps } = splitVisualEntries(rawFigures, rawMaps);
     const videos = Array.isArray(paragraph?.videos) ? paragraph.videos : [];
     const timeline = normalizeMediaList(
       paragraph?.timeline || paragraph?.chronology || paragraph?.temporal || paragraph?.timelineItems
@@ -323,16 +345,18 @@
     const genealogy = normalizeMediaList(
       paragraph?.genealogy || paragraph?.genealogyRefs || paragraph?.genealogyItems || paragraph?.genealogies || paragraph?.treeRefs
     );
+    const notes = normalizeMediaList(paragraph?.notes || paragraph?.annotations || paragraph?.commentary);
 
     return {
       ...paragraph,
       id: String(paragraph?.id || `${section?.number || section?.id || "00.00"}-p${String(paragraphIndex + 1).padStart(3, "0")}`),
       text: String(paragraph?.text || ""),
       figures,
+      maps,
       videos,
       timeline,
       genealogy,
-      notes: normalizeNoteList(paragraph?.notes || paragraph?.scholarlyNotes || paragraph?.annotations || paragraph?.commentary),
+      notes,
       sectionId: String(section?.id || ""),
       sectionNumber: String(section?.number || section?.id || ""),
       sectionTitle: String(section?.title || ""),
@@ -344,39 +368,87 @@
     return Array.isArray(value) ? value.filter(Boolean) : [];
   }
 
-  function normalizeNoteEntry(entry, index) {
-    if (!entry) return null;
-
+  function entryLooksLikeMap(entry) {
     if (typeof entry === "string") {
-      const text = entry.trim();
-      if (!text) return null;
+      const raw = normalizePath(entry);
+      if (!raw) return false;
+      const lowered = raw.toLowerCase();
+      if (lowered.includes("/maps/") || lowered.startsWith("maps/")) return true;
+      const base = lowered.split("/").pop() || lowered;
+      return /^map(?:[\s._-]*\d|$)/i.test(base);
+    }
+
+    if (!entry || typeof entry !== "object") return false;
+
+    const kind = String(entry.kind || entry.type || "").trim().toLowerCase();
+    if (kind === "map") return true;
+
+    const candidates = [
+      entry.label,
+      entry.title,
+      entry.name,
+      entry.src,
+      entry.path,
+      entry.file,
+      entry.filename,
+      entry.image,
+    ];
+
+    return candidates.some((value) => {
+      const raw = normalizePath(value || "");
+      if (!raw) return false;
+      const lowered = raw.toLowerCase();
+      if (lowered.includes("/maps/") || lowered.startsWith("maps/")) return true;
+      const base = lowered.split("/").pop() || lowered;
+      return /^map(?:[\s._-]*\d|$)/i.test(base);
+    });
+  }
+
+  function splitVisualEntries(figures, maps = []) {
+    const explicitFigures = normalizeMediaList(figures);
+    const explicitMaps = normalizeMediaList(maps);
+
+    if (explicitMaps.length > 0) {
       return {
-        id: `note-${index + 1}`,
-        type: "note",
-        title: "",
-        text,
+        figures: explicitFigures,
+        maps: explicitMaps,
       };
     }
 
-    if (typeof entry !== "object") return null;
+    const realFigures = [];
+    const realMaps = [];
 
-    const text = String(entry.text || entry.body || entry.note || entry.content || "").trim();
-    if (!text) return null;
+    explicitFigures.forEach((entry) => {
+      if (entryLooksLikeMap(entry)) {
+        realMaps.push(entry);
+      } else {
+        realFigures.push(entry);
+      }
+    });
 
     return {
-      id: String(entry.id || `note-${index + 1}`).trim(),
-      type: String(entry.type || entry.kind || "note").trim().toLowerCase(),
-      title: String(entry.title || entry.label || "").trim(),
-      text,
+      figures: realFigures,
+      maps: realMaps,
     };
   }
 
-  function normalizeNoteList(value) {
-    return normalizeMediaList(value)
-      .map((entry, index) => normalizeNoteEntry(entry, index))
-      .filter(Boolean);
+  function dedupeRawEntries(entries) {
+    const seen = new Set();
+    return normalizeMediaList(entries).filter((entry) => {
+      const key = (() => {
+        try {
+          return JSON.stringify(entry, Object.keys(entry || {}).sort());
+        } catch (error) {
+          return String(entry);
+        }
+      })();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   }
 
+  
   function normalizeGenealogyRef(entry, index) {
     if (!entry || typeof entry !== "object") return null;
 
@@ -731,6 +803,7 @@
       title: String(book?.title || "Untitled Book"),
       language: String(book?.language || "en"),
       sharedFigures: normalizeMediaList(book?.sharedFigures),
+      sharedMaps: normalizeMediaList(book?.sharedMaps || book?.maps),
       sharedVideos: normalizeMediaList(book?.sharedVideos),
       sharedTimeline: normalizeMediaList(book?.sharedTimeline || book?.timeline),
       sharedGenealogy: normalizeMediaList(book?.sharedGenealogy || book?.genealogyRefs),
@@ -741,6 +814,7 @@
         number: String(section?.number || section?.id || `Section ${index + 1}`),
         title: String(section?.title || ""),
         sharedFigures: normalizeMediaList(section?.sharedFigures),
+        sharedMaps: normalizeMediaList(section?.sharedMaps || section?.maps),
         sharedVideos: normalizeMediaList(section?.sharedVideos),
         sharedTimeline: normalizeMediaList(section?.sharedTimeline || section?.timeline),
         sharedGenealogy: normalizeMediaList(section?.sharedGenealogy || section?.genealogyRefs),
@@ -760,6 +834,12 @@
         state.flatParagraphs.push(normalizeParagraph(paragraph, section, pIndex));
       });
     });
+
+    state.book.sharedMaps = dedupeRawEntries([
+      ...state.book.sharedMaps,
+      ...state.book.sections.flatMap((section) => section.sharedMaps),
+      ...state.flatParagraphs.flatMap((paragraph) => paragraph.maps),
+    ]);
 
     state.activeSectionId = state.book.sections[0]?.id ?? null;
   }
@@ -849,6 +929,51 @@
     return null;
   }
 
+
+
+  function resolveMapEntry(rawEntry, index) {
+    if (!rawEntry) return null;
+
+    if (typeof rawEntry === "string") {
+      const cleaned = normalizePath(rawEntry);
+      const srcCandidates = resolveNamedMediaSources(cleaned, MEDIA_CONFIG.mapsDir, MEDIA_CONFIG.mapExtensions);
+      const src = srcCandidates[0] || "";
+
+      return {
+        src,
+        srcCandidates,
+        label: `Map ${index + 1}` ,
+        caption: "",
+        alt: `Map ${index + 1}` ,
+      };
+    }
+
+    if (typeof rawEntry === "object") {
+      const label = String(rawEntry.label || rawEntry.title || rawEntry.name || "").trim();
+      const caption = String(rawEntry.caption || rawEntry.description || "").trim();
+      const alt = String(rawEntry.alt || label || `Map ${index + 1}`).trim();
+
+      const explicitPath = normalizePath(
+        rawEntry.src || rawEntry.path || rawEntry.file || rawEntry.filename || rawEntry.image || ""
+      );
+
+      const srcCandidates = explicitPath
+        ? resolveNamedMediaSources(explicitPath, MEDIA_CONFIG.mapsDir, MEDIA_CONFIG.mapExtensions)
+        : (label ? resolveNamedMediaSources(label, MEDIA_CONFIG.mapsDir, MEDIA_CONFIG.mapExtensions) : []);
+      const src = srcCandidates[0] || "";
+
+      return {
+        src,
+        srcCandidates,
+        label,
+        caption,
+        alt,
+      };
+    }
+
+    return null;
+  }
+
   function resolveNamedMediaSources(rawValue, baseDir, defaultExtensions) {
     const cleaned = normalizePath(rawValue);
     if (!cleaned) return [];
@@ -917,6 +1042,21 @@
     });
   }
 
+  function dedupeResolvedMaps(entries) {
+    const seen = new Set();
+
+    return entries.filter((item) => {
+      if (!item || !item.src) return false;
+      const sourceKey = Array.isArray(item.srcCandidates) && item.srcCandidates.length > 0
+        ? item.srcCandidates.join("|")
+        : item.src;
+      const key = `${sourceKey}::${item.label || ""}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function getEffectiveFigureEntries(paragraph) {
     const section = getSectionById(paragraph?.sectionId);
     const rawEntries = [
@@ -944,6 +1084,20 @@
       rawEntries
         .map((entry, index) => resolveVideoEntry(entry, index))
         .filter((item) => item && Array.isArray(item.sources) && item.sources.length > 0)
+    );
+  }
+
+  function getAvailableMapEntries() {
+    const rawEntries = dedupeRawEntries([
+      ...normalizeMediaList(state.book?.sharedMaps),
+      ...normalizeMediaList(state.book?.sections).flatMap((section) => normalizeMediaList(section?.sharedMaps)),
+      ...normalizeMediaList(state.flatParagraphs).flatMap((paragraph) => normalizeMediaList(paragraph?.maps)),
+    ]);
+
+    return dedupeResolvedMaps(
+      rawEntries
+        .map((entry, index) => resolveMapEntry(entry, index))
+        .filter((item) => item && item.src)
     );
   }
 
@@ -1201,14 +1355,150 @@
     return parts.join(" • ");
   }
 
-  function renderMedia() {
+  function formatMapsSummary(mapCount) {
+    return `${mapCount} map${mapCount === 1 ? "" : "s"}`;
+  }
+
+  function formatNotesSummary(noteCount) {
+    return `${noteCount} note${noteCount === 1 ? "" : "s"}`;
+  }
+
+  function renderMaps(entries) {
+    if (!allMapsEl) return;
+
+    entries.forEach((mapData, index) => {
+      if (!mapData || !mapData.src) return;
+
+      const wrapper = document.createElement("article");
+      wrapper.className = "media-figure-card";
+
+      const figure = document.createElement("figure");
+      figure.className = "media-figure";
+
+      const img = document.createElement("img");
+      img.className = "media-figure-image";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.alt = mapData.alt || mapData.label || `Map ${index + 1}`;
+
+      const srcCandidates = uniqueStrings(
+        Array.isArray(mapData.srcCandidates) && mapData.srcCandidates.length > 0
+          ? mapData.srcCandidates
+          : [mapData.src]
+      );
+      let candidateIndex = 0;
+
+      const loadCandidate = () => {
+        img.src = toSafeUrl(srcCandidates[candidateIndex] || mapData.src);
+      };
+
+      img.addEventListener("error", () => {
+        candidateIndex += 1;
+
+        if (candidateIndex < srcCandidates.length) {
+          loadCandidate();
+          return;
+        }
+
+        wrapper.replaceWith(createMissingMediaCard(`Could not load map file: ${mapData.src}`));
+      });
+
+      loadCandidate();
+
+      figure.appendChild(img);
+      appendMediaCaption(figure, mapData.label, mapData.caption);
+
+      wrapper.appendChild(figure);
+      allMapsEl.appendChild(wrapper);
+    });
+  }
+
+  function normalizeNoteEntry(entry, index) {
+    if (!entry) return null;
+
+    if (typeof entry === "string") {
+      const text = entry.trim();
+      if (!text) return null;
+      return {
+        type: "note",
+        title: `Note ${index + 1}`,
+        text,
+      };
+    }
+
+    if (typeof entry !== "object") return null;
+
+    const textValue = String(entry.text || entry.body || entry.note || "").trim();
+    if (!textValue) return null;
+
+    return {
+      type: String(entry.type || "note").trim().toLowerCase() || "note",
+      title: String(entry.title || `Note ${index + 1}`).trim() || `Note ${index + 1}`,
+      text: textValue,
+    };
+  }
+
+  function renderNotes() {
+    if (!notesSectionEl || !notesBodyEl || !notesSummaryEl || !notesFallbackEl) return;
+
+    const current = getCurrentParagraph();
+    if (!current) {
+      notesSectionEl.hidden = true;
+      return;
+    }
+
+    const notes = normalizeMediaList(current.notes)
+      .map((entry, index) => normalizeNoteEntry(entry, index))
+      .filter(Boolean);
+
+    if (notes.length === 0) {
+      notesSectionEl.hidden = true;
+      return;
+    }
+
+    notesBodyEl.innerHTML = "";
+    notesFallbackEl.hidden = true;
+    notesFallbackEl.textContent = "";
+
+    notes.forEach((note) => {
+      const item = document.createElement("article");
+      item.className = "note-item";
+
+      const header = document.createElement("div");
+      header.className = "note-item-header";
+
+      const badge = document.createElement("span");
+      badge.className = "note-type-badge";
+      badge.textContent = note.type.replace(/[-_]/g, " ");
+
+      const title = document.createElement("div");
+      title.className = "note-title";
+      title.textContent = note.title;
+
+      header.append(badge, title);
+
+      const body = document.createElement("div");
+      body.className = "note-text";
+      body.textContent = note.text;
+
+      item.append(header, body);
+      notesBodyEl.appendChild(item);
+    });
+
+    notesSummaryEl.textContent = formatNotesSummary(notes.length);
+    notesSectionEl.hidden = false;
+  }
+
+  function renderFigureMedia() {
     const current = getCurrentParagraph();
 
+    if (!paragraphFiguresEl || !figuresSummaryEl || !figuresSectionEl || !figureGroupEl) return;
+
     paragraphFiguresEl.innerHTML = "";
-    mediaSummaryEl.textContent = "";
+    figuresSummaryEl.textContent = "";
 
     if (!current) {
-      mediaSectionEl.hidden = true;
+      figuresSectionEl.hidden = true;
       figureGroupEl.hidden = true;
       return;
     }
@@ -1221,80 +1511,36 @@
     const totalCount = figureCount + videoCount;
 
     if (totalCount === 0) {
-      mediaSectionEl.hidden = true;
+      figuresSectionEl.hidden = true;
       figureGroupEl.hidden = true;
       return;
     }
 
-    mediaSectionEl.hidden = false;
+    figuresSectionEl.hidden = false;
     figureGroupEl.hidden = false;
-    mediaSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
+    figuresSummaryEl.textContent = formatMediaSummary(figureCount, videoCount);
 
     renderFigures(effectiveFigures);
     renderVideos(effectiveVideos);
   }
 
-  function formatNotesSummary(noteCount) {
-    if (!Number.isFinite(noteCount) || noteCount <= 0) return "";
-    return `${noteCount} note${noteCount === 1 ? "" : "s"}`;
-  }
+  function renderMapMedia() {
+    if (!mapsSectionEl || !mapGroupEl || !allMapsEl || !mapsSummaryEl) return;
 
-  function noteTypeLabel(value) {
-    const raw = String(value || "note").trim();
-    if (!raw) return "Note";
-    return raw.replace(/[_-]+/g, " ").replace(/\w/g, (m) => m.toUpperCase());
-  }
+    allMapsEl.innerHTML = "";
+    mapsSummaryEl.textContent = "";
 
-  function renderNotes() {
-    if (!notesSectionEl || !notesBodyEl || !notesSummaryEl || !notesFallbackEl) return;
-
-    const current = getCurrentParagraph();
-    if (!current) {
-      notesSectionEl.hidden = true;
+    const availableMaps = getAvailableMapEntries();
+    if (availableMaps.length === 0) {
+      mapsSectionEl.hidden = true;
+      mapGroupEl.hidden = true;
       return;
     }
 
-    const notes = normalizeNoteList(current.notes);
-    if (notes.length === 0) {
-      notesSectionEl.hidden = true;
-      return;
-    }
-
-    notesBodyEl.innerHTML = "";
-    notesFallbackEl.hidden = true;
-    notesFallbackEl.textContent = "";
-
-    notes.forEach((note) => {
-      const article = document.createElement("article");
-      article.className = "note-item";
-
-      const top = document.createElement("div");
-      top.className = "note-item-top";
-
-      const typeBadge = document.createElement("span");
-      typeBadge.className = "note-type-badge";
-      typeBadge.textContent = noteTypeLabel(note.type);
-      top.appendChild(typeBadge);
-
-      article.appendChild(top);
-
-      if (note.title) {
-        const title = document.createElement("h3");
-        title.className = "note-item-title";
-        title.textContent = note.title;
-        article.appendChild(title);
-      }
-
-      const body = document.createElement("p");
-      body.className = "note-item-text";
-      body.textContent = note.text;
-      article.appendChild(body);
-
-      notesBodyEl.appendChild(article);
-    });
-
-    notesSummaryEl.textContent = formatNotesSummary(notes.length);
-    notesSectionEl.hidden = false;
+    mapsSectionEl.hidden = false;
+    mapGroupEl.hidden = false;
+    mapsSummaryEl.textContent = formatMapsSummary(availableMaps.length);
+    renderMaps(availableMaps);
   }
 
   function formatGenealogySummary(treeCount, playerCount) {
@@ -2141,7 +2387,11 @@
       currentParagraphTextEl.textContent = "No paragraph found.";
       previousParagraphTextEl.textContent = "—";
       nextParagraphTextEl.textContent = "—";
-      mediaSectionEl.hidden = true;
+      if (figuresSectionEl) figuresSectionEl.hidden = true;
+      if (mapsSectionEl) mapsSectionEl.hidden = true;
+      if (notesSectionEl) notesSectionEl.hidden = true;
+      if (genealogySectionEl) genealogySectionEl.hidden = true;
+      if (timelineSectionEl) timelineSectionEl.hidden = true;
       return;
     }
 
@@ -2169,9 +2419,10 @@
     contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
 
     renderTimeline();
-    renderGenealogy();
     renderNotes();
-    renderMedia();
+    renderGenealogy();
+    renderFigureMedia();
+    renderMapMedia();
   }
 
   function renderMeta() {
@@ -2427,32 +2678,6 @@
       applyTimelineVisibility(false);
     }
 
-    if (currentCardEl && !genealogySectionEl) {
-      genealogySectionEl = document.createElement("section");
-      genealogySectionEl.id = "genealogySection";
-      genealogySectionEl.className = "genealogy-card card";
-      genealogySectionEl.hidden = true;
-      genealogySectionEl.innerHTML = `
-        <div class="genealogy-header">
-          <div class="genealogy-header-main">
-            <div class="eyebrow">Relational field</div>
-            <div class="genealogy-summary" id="genealogySummary"></div>
-          </div>
-          <button type="button" class="genealogy-toggle-btn" id="genealogyToggleBtn" aria-label="Hide genealogy" aria-pressed="true">Hide</button>
-        </div>
-        <div class="genealogy-body" id="genealogyBody"></div>
-        <div class="genealogy-fallback" id="genealogyFallback" hidden></div>
-      `;
-      const insertionTarget = mediaSectionEl || currentCardEl.nextSibling;
-      currentCardEl.parentNode.insertBefore(genealogySectionEl, insertionTarget);
-      genealogySummaryEl = genealogySectionEl.querySelector("#genealogySummary");
-      genealogyBodyEl = genealogySectionEl.querySelector("#genealogyBody");
-      genealogyFallbackEl = genealogySectionEl.querySelector("#genealogyFallback");
-      genealogyToggleBtn = genealogySectionEl.querySelector("#genealogyToggleBtn");
-      genealogyToggleBtn?.addEventListener("click", toggleGenealogyVisibility);
-      applyGenealogyVisibility(false);
-    }
-
     if (currentCardEl && !notesSectionEl) {
       notesSectionEl = document.createElement("section");
       notesSectionEl.id = "notesSection";
@@ -2469,7 +2694,7 @@
         <div class="notes-body" id="notesBody"></div>
         <div class="notes-fallback" id="notesFallback" hidden></div>
       `;
-      const insertionTarget = mediaSectionEl || currentCardEl.nextSibling;
+      const insertionTarget = figuresSectionEl || currentCardEl.nextSibling;
       currentCardEl.parentNode.insertBefore(notesSectionEl, insertionTarget);
       notesSummaryEl = notesSectionEl.querySelector("#notesSummary");
       notesBodyEl = notesSectionEl.querySelector("#notesBody");
@@ -2477,6 +2702,32 @@
       notesToggleBtn = notesSectionEl.querySelector("#notesToggleBtn");
       notesToggleBtn?.addEventListener("click", toggleNotesVisibility);
       applyNotesVisibility(false);
+    }
+
+    if (currentCardEl && !genealogySectionEl) {
+      genealogySectionEl = document.createElement("section");
+      genealogySectionEl.id = "genealogySection";
+      genealogySectionEl.className = "genealogy-card card";
+      genealogySectionEl.hidden = true;
+      genealogySectionEl.innerHTML = `
+        <div class="genealogy-header">
+          <div class="genealogy-header-main">
+            <div class="eyebrow">Relational field</div>
+            <div class="genealogy-summary" id="genealogySummary"></div>
+          </div>
+          <button type="button" class="genealogy-toggle-btn" id="genealogyToggleBtn" aria-label="Hide genealogy" aria-pressed="true">Hide</button>
+        </div>
+        <div class="genealogy-body" id="genealogyBody"></div>
+        <div class="genealogy-fallback" id="genealogyFallback" hidden></div>
+      `;
+      const insertionTarget = figuresSectionEl || currentCardEl.nextSibling;
+      currentCardEl.parentNode.insertBefore(genealogySectionEl, insertionTarget);
+      genealogySummaryEl = genealogySectionEl.querySelector("#genealogySummary");
+      genealogyBodyEl = genealogySectionEl.querySelector("#genealogyBody");
+      genealogyFallbackEl = genealogySectionEl.querySelector("#genealogyFallback");
+      genealogyToggleBtn = genealogySectionEl.querySelector("#genealogyToggleBtn");
+      genealogyToggleBtn?.addEventListener("click", toggleGenealogyVisibility);
+      applyGenealogyVisibility(false);
     }
   }
 
@@ -2509,6 +2760,37 @@
   function toggleTimelineVisibility() {
     state.timelineVisible = !state.timelineVisible;
     applyTimelineVisibility(true);
+  }
+
+  function applyNotesVisibility(persist = false) {
+    if (!notesSectionEl) return;
+
+    notesSectionEl.classList.toggle("notes-collapsed", !state.notesVisible);
+
+    if (notesToggleBtn) {
+      notesToggleBtn.textContent = state.notesVisible ? "Hide" : "Show";
+      notesToggleBtn.setAttribute(
+        "aria-label",
+        state.notesVisible ? "Hide notes" : "Show notes"
+      );
+      notesToggleBtn.setAttribute("aria-pressed", state.notesVisible ? "true" : "false");
+      notesToggleBtn.classList.toggle("is-collapsed", !state.notesVisible);
+    }
+
+    if (persist) {
+      localStorage.setItem(NOTES_VISIBILITY_STORAGE_KEY, state.notesVisible ? "visible" : "hidden");
+    }
+  }
+
+  function applySavedNotesVisibility() {
+    const savedVisibility = localStorage.getItem(NOTES_VISIBILITY_STORAGE_KEY);
+    state.notesVisible = savedVisibility !== "hidden";
+    applyNotesVisibility(false);
+  }
+
+  function toggleNotesVisibility() {
+    state.notesVisible = !state.notesVisible;
+    applyNotesVisibility(true);
   }
 
   function applyGenealogyVisibility(persist = false) {
@@ -2546,35 +2828,66 @@
     applyGenealogyVisibility(true);
   }
 
-  function applyNotesVisibility(persist = false) {
-    if (!notesSectionEl) return;
+  function applyFiguresVisibility(persist = false) {
+    if (!figuresSectionEl) return;
 
-    notesSectionEl.classList.toggle("notes-collapsed", !state.notesVisible);
+    figuresSectionEl.classList.toggle("media-collapsed", !state.figuresVisible);
 
-    if (notesToggleBtn) {
-      notesToggleBtn.textContent = state.notesVisible ? "Hide" : "Show";
-      notesToggleBtn.setAttribute(
+    if (figuresToggleBtn) {
+      figuresToggleBtn.textContent = state.figuresVisible ? "Hide" : "Show";
+      figuresToggleBtn.setAttribute(
         "aria-label",
-        state.notesVisible ? "Hide notes" : "Show notes"
+        state.figuresVisible ? "Hide figures" : "Show figures"
       );
-      notesToggleBtn.setAttribute("aria-pressed", state.notesVisible ? "true" : "false");
-      notesToggleBtn.classList.toggle("is-collapsed", !state.notesVisible);
+      figuresToggleBtn.setAttribute("aria-pressed", state.figuresVisible ? "true" : "false");
+      figuresToggleBtn.classList.toggle("is-collapsed", !state.figuresVisible);
     }
 
     if (persist) {
-      localStorage.setItem(NOTES_VISIBILITY_STORAGE_KEY, state.notesVisible ? "visible" : "hidden");
+      localStorage.setItem(FIGURES_VISIBILITY_STORAGE_KEY, state.figuresVisible ? "visible" : "hidden");
     }
   }
 
-  function applySavedNotesVisibility() {
-    const savedVisibility = localStorage.getItem(NOTES_VISIBILITY_STORAGE_KEY);
-    state.notesVisible = savedVisibility !== "hidden";
-    applyNotesVisibility(false);
+  function applySavedFiguresVisibility() {
+    const savedVisibility = localStorage.getItem(FIGURES_VISIBILITY_STORAGE_KEY);
+    state.figuresVisible = savedVisibility !== "hidden";
+    applyFiguresVisibility(false);
   }
 
-  function toggleNotesVisibility() {
-    state.notesVisible = !state.notesVisible;
-    applyNotesVisibility(true);
+  function toggleFiguresVisibility() {
+    state.figuresVisible = !state.figuresVisible;
+    applyFiguresVisibility(true);
+  }
+
+  function applyMapsVisibility(persist = false) {
+    if (!mapsSectionEl) return;
+
+    mapsSectionEl.classList.toggle("media-collapsed", !state.mapsVisible);
+
+    if (mapsToggleBtn) {
+      mapsToggleBtn.textContent = state.mapsVisible ? "Hide" : "Show";
+      mapsToggleBtn.setAttribute(
+        "aria-label",
+        state.mapsVisible ? "Hide maps" : "Show maps"
+      );
+      mapsToggleBtn.setAttribute("aria-pressed", state.mapsVisible ? "true" : "false");
+      mapsToggleBtn.classList.toggle("is-collapsed", !state.mapsVisible);
+    }
+
+    if (persist) {
+      localStorage.setItem(MAPS_VISIBILITY_STORAGE_KEY, state.mapsVisible ? "visible" : "hidden");
+    }
+  }
+
+  function applySavedMapsVisibility() {
+    const savedVisibility = localStorage.getItem(MAPS_VISIBILITY_STORAGE_KEY);
+    state.mapsVisible = savedVisibility !== "hidden";
+    applyMapsVisibility(false);
+  }
+
+  function toggleMapsVisibility() {
+    state.mapsVisible = !state.mapsVisible;
+    applyMapsVisibility(true);
   }
 
   function isMobileLayout() {
@@ -2689,6 +3002,8 @@
   toggleSidebarBtn.addEventListener("click", toggleSidebar);
   sidebarBackdropEl.addEventListener("click", closeSidebar);
   themeToggleBtn.addEventListener("click", toggleTheme);
+  figuresToggleBtn?.addEventListener("click", toggleFiguresVisibility);
+  mapsToggleBtn?.addEventListener("click", toggleMapsVisibility);
 
   document.addEventListener("keydown", async (event) => {
     if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement) {
@@ -2721,8 +3036,10 @@
       applySavedTheme();
       ensureEnhancedLayout();
       applySavedTimelineVisibility();
-      applySavedGenealogyVisibility();
       applySavedNotesVisibility();
+      applySavedGenealogyVisibility();
+      applySavedFiguresVisibility();
+      applySavedMapsVisibility();
 
       const rawBookData = await loadBookData();
       indexBookData(rawBookData);
