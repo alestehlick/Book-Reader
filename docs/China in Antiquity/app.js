@@ -53,6 +53,8 @@
   const currentCardEl = currentParagraphTextEl?.closest(".current-card") || null;
 
   let rewindBtn = null;
+  let forwardBtn = null;
+  let speedSelect = null;
   let playerAudioRowEl = null;
   let timelineSectionEl = null;
   let timelineSummaryEl = null;
@@ -88,6 +90,8 @@
   const GENEALOGY_VISIBILITY_STORAGE_KEY = "audio-reader-genealogy-visible";
   const FIGURES_VISIBILITY_STORAGE_KEY = "audio-reader-figures-visible";
   const MAPS_VISIBILITY_STORAGE_KEY = "audio-reader-maps-visible";
+  const POSITION_STORAGE_KEY = "history-reader-position";
+  const RATE_STORAGE_KEY = "history-reader-playback-rate";
 
   const state = {
     book: null,
@@ -108,6 +112,10 @@
     figuresVisible: true,
     mapsVisible: true,
     genealogyTreeMap: new Map(),
+    mapCatalog: new Map(),
+    timelineCatalog: new Map(),
+    resumeSeconds: 0,
+    lastPositionSave: 0,
   };
 
   function getDataConfig() {
@@ -272,24 +280,16 @@
   }
 
   async function readBookDataFromJsFile(url) {
-    const response = await fetch(url, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`Failed to fetch JS data: ${response.status} ${response.statusText}`);
-    }
-
-    const source = await response.text();
-
-    const factory = new Function(
-      `${source}\n;return (typeof BOOK_DATA !== "undefined" ? BOOK_DATA : (typeof window !== "undefined" && window.BOOK_DATA && typeof window.BOOK_DATA === "object" ? window.BOOK_DATA : null));`
-    );
-
-    const data = factory();
-
-    if (!data || typeof data !== "object") {
-      throw new Error(`The JS data file did not expose BOOK_DATA: ${url}`);
-    }
-
-    window.BOOK_DATA = data;
+    await new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = url;
+      script.async = true;
+      script.onload = resolve;
+      script.onerror = () => reject(new Error(`Failed to load JS data: ${url}`));
+      document.head.appendChild(script);
+    });
+    const data = getGlobalBookData();
+    if (!data) throw new Error(`The JS data file did not expose BOOK_DATA: ${url}`);
     return data;
   }
 
@@ -355,6 +355,8 @@
       maps,
       videos,
       timeline,
+      mapRefs: normalizeMediaList(paragraph?.mapRefs),
+      timelineRefs: normalizeMediaList(paragraph?.timelineRefs),
       genealogy,
       notes,
       sectionId: String(section?.id || ""),
@@ -798,6 +800,14 @@
     const rawSections = Array.isArray(book?.sections) ? book.sections : [];
 
     const normalizedGenealogy = normalizeGenealogyData(book?.genealogy || book?.genealogies || {});
+    const mapCatalogEntries = normalizeMediaList(book?.catalogs?.maps);
+    const timelineCatalogEntries = normalizeMediaList(book?.catalogs?.timeline);
+    state.mapCatalog = new Map(
+      mapCatalogEntries.filter((item) => item?.id).map((item) => [String(item.id), item])
+    );
+    state.timelineCatalog = new Map(
+      timelineCatalogEntries.filter((item) => item?.id).map((item) => [String(item.id), item])
+    );
 
     state.book = {
       title: String(book?.title || "Untitled Book"),
@@ -835,11 +845,7 @@
       });
     });
 
-    state.book.sharedMaps = dedupeRawEntries([
-      ...state.book.sharedMaps,
-      ...state.book.sections.flatMap((section) => section.sharedMaps),
-      ...state.flatParagraphs.flatMap((paragraph) => paragraph.maps),
-    ]);
+    state.book.sharedMaps = dedupeRawEntries(state.book.sharedMaps);
 
     state.activeSectionId = state.book.sections[0]?.id ?? null;
   }
@@ -960,6 +966,9 @@
       const srcCandidates = explicitPath
         ? resolveNamedMediaSources(explicitPath, MEDIA_CONFIG.mapsDir, MEDIA_CONFIG.mapExtensions)
         : (label ? resolveNamedMediaSources(label, MEDIA_CONFIG.mapsDir, MEDIA_CONFIG.mapExtensions) : []);
+      if (rawEntry.fallbackSrc) {
+        srcCandidates.push(normalizePath(rawEntry.fallbackSrc));
+      }
       const src = srcCandidates[0] || "";
 
       return {
@@ -1087,11 +1096,15 @@
     );
   }
 
-  function getAvailableMapEntries() {
-    const rawEntries = dedupeRawEntries([
+  function getEffectiveMapEntries(paragraph) {
+    const section = getSectionById(paragraph?.sectionId);
+    const referenced = normalizeMediaList(paragraph?.mapRefs)
+      .map((ref) => state.mapCatalog.get(String(ref)))
+      .filter(Boolean);
+    const rawEntries = dedupeRawEntries(referenced.length > 0 ? referenced : [
       ...normalizeMediaList(state.book?.sharedMaps),
-      ...normalizeMediaList(state.book?.sections).flatMap((section) => normalizeMediaList(section?.sharedMaps)),
-      ...normalizeMediaList(state.flatParagraphs).flatMap((paragraph) => normalizeMediaList(paragraph?.maps)),
+      ...normalizeMediaList(section?.sharedMaps),
+      ...normalizeMediaList(paragraph?.maps),
     ]);
 
     return dedupeResolvedMaps(
@@ -1115,7 +1128,10 @@
 
   function getEffectiveTimelineEntries(paragraph) {
     const section = getSectionById(paragraph?.sectionId);
-    const rawEntries = [
+    const referenced = normalizeMediaList(paragraph?.timelineRefs)
+      .map((ref) => state.timelineCatalog.get(String(ref)))
+      .filter(Boolean);
+    const rawEntries = referenced.length > 0 ? referenced : [
       ...normalizeMediaList(state.book?.sharedTimeline),
       ...normalizeMediaList(section?.sharedTimeline),
       ...normalizeMediaList(paragraph?.timeline),
@@ -1201,7 +1217,10 @@
     });
 
     document.querySelectorAll(".section-link").forEach((el) => {
-      el.classList.toggle("active", el.dataset.sectionId === state.activeSectionId);
+      const active = el.dataset.sectionId === state.activeSectionId;
+      el.classList.toggle("active", active);
+      if (active) el.setAttribute("aria-current", "true");
+      else el.removeAttribute("aria-current");
     });
   }
 
@@ -1363,6 +1382,26 @@
     return `${noteCount} note${noteCount === 1 ? "" : "s"}`;
   }
 
+  function openImageViewer(src, alt) {
+    let dialog = document.getElementById("imageViewer");
+    if (!dialog) {
+      dialog = document.createElement("dialog");
+      dialog.id = "imageViewer";
+      dialog.className = "image-viewer";
+      dialog.innerHTML = `<button type="button" class="image-viewer-close" aria-label="Close enlarged map">×</button><img alt="" />`;
+      dialog.querySelector(".image-viewer-close")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      document.body.appendChild(dialog);
+    }
+    const image = dialog.querySelector("img");
+    image.src = src;
+    image.alt = alt || "Enlarged map";
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+  }
+
   function renderMaps(entries) {
     if (!allMapsEl) return;
 
@@ -1405,8 +1444,19 @@
 
       loadCandidate();
 
+      img.tabIndex = 0;
+      img.setAttribute("role", "button");
+      img.setAttribute("aria-label", `Enlarge map ${index + 1}`);
+      const enlarge = () => openImageViewer(img.src, img.alt);
+      img.addEventListener("click", enlarge);
+      img.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          enlarge();
+        }
+      });
+
       figure.appendChild(img);
-      appendMediaCaption(figure, mapData.label, mapData.caption);
 
       wrapper.appendChild(figure);
       allMapsEl.appendChild(wrapper);
@@ -1530,7 +1580,7 @@
     allMapsEl.innerHTML = "";
     mapsSummaryEl.textContent = "";
 
-    const availableMaps = getAvailableMapEntries();
+    const availableMaps = getEffectiveMapEntries(getCurrentParagraph());
     if (availableMaps.length === 0) {
       mapsSectionEl.hidden = true;
       mapGroupEl.hidden = true;
@@ -2416,7 +2466,7 @@
     previousParagraphTextEl.textContent = previous ? collapseWhitespace(previous.text) : "—";
     nextParagraphTextEl.textContent = next ? collapseWhitespace(next.text) : "—";
 
-    contextGridEl.style.display = state.oneParagraphMode ? "none" : "grid";
+    contextGridEl.style.display = "none";
 
     renderTimeline();
     renderNotes();
@@ -2432,6 +2482,49 @@
     state.activeSectionId = current.sectionId;
     updateSectionHighlight();
     renderTextAndMedia();
+  }
+
+  function positionStorageKey() {
+    return `${POSITION_STORAGE_KEY}:${window.location.pathname}`;
+  }
+
+  function savePosition(force = false) {
+    const now = Date.now();
+    if (!force && now - state.lastPositionSave < 2000) return;
+    const paragraph = getCurrentParagraph();
+    if (!paragraph) return;
+    state.lastPositionSave = now;
+    localStorage.setItem(positionStorageKey(), JSON.stringify({
+      paragraphId: paragraph.id,
+      seconds: Number.isFinite(audio.currentTime) ? Math.floor(audio.currentTime) : 0,
+    }));
+  }
+
+  function getInitialPosition() {
+    const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    if (hashId) {
+      const hashIndex = state.flatParagraphs.findIndex((paragraph) => paragraph.id === hashId);
+      if (hashIndex >= 0) return { index: hashIndex, seconds: 0 };
+    }
+    try {
+      const saved = JSON.parse(localStorage.getItem(positionStorageKey()) || "null");
+      const savedIndex = state.flatParagraphs.findIndex((paragraph) => paragraph.id === saved?.paragraphId);
+      if (savedIndex >= 0) return { index: savedIndex, seconds: Number(saved.seconds) || 0 };
+    } catch (error) {
+      console.warn("Could not restore the saved reading position.", error);
+    }
+    return { index: findFirstPlayableIndex(), seconds: 0 };
+  }
+
+  function updateMediaSession() {
+    if (!("mediaSession" in navigator)) return;
+    const paragraph = getCurrentParagraph();
+    if (!paragraph) return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: `Paragraph ${paragraph.paragraphNumber}`,
+      artist: `${paragraph.sectionNumber} — ${paragraph.sectionTitle}`,
+      album: state.book?.title || "History Reader",
+    });
   }
 
   function clearAudioElement() {
@@ -2475,13 +2568,19 @@
     updatePlayPauseButton();
   }
 
-  async function loadParagraph(index, autoplay = false) {
+  async function loadParagraph(index, autoplay = false, resumeSeconds = 0) {
     if (index < 0 || index >= state.flatParagraphs.length) return;
 
     state.currentIndex = index;
     const paragraph = getCurrentParagraph();
+    state.resumeSeconds = Math.max(0, Number(resumeSeconds) || 0);
+    window.history.replaceState(null, "", `#${encodeURIComponent(paragraph.id)}`);
 
     renderMeta();
+    updateMediaSession();
+    localStorage.setItem(positionStorageKey(), JSON.stringify({ paragraphId: paragraph.id, seconds: state.resumeSeconds }));
+    prevBtn.disabled = state.currentIndex === 0;
+    nextBtn.disabled = state.currentIndex === state.flatParagraphs.length - 1;
 
     if (progressBar) {
       progressBar.value = "0";
@@ -2510,14 +2609,14 @@
     }
 
     await loadAudioCandidate(0, autoplay);
+    prevBtn.disabled = state.currentIndex === 0;
+    nextBtn.disabled = state.currentIndex === state.flatParagraphs.length - 1;
   }
 
   function updatePlayPauseButton() {
     const hasAudio = state.currentAudioCandidates.length > 0;
     playPauseBtn.textContent = hasAudio && !audio.paused ? "Pause" : "Play";
-    if (rewindBtn) {
-      rewindBtn.disabled = !hasAudio;
-    }
+    updateAudioMetaControls();
   }
 
   async function togglePlayPause() {
@@ -2566,23 +2665,28 @@
   }
 
   function applyTheme(theme, persist = false) {
-    const useDark = theme !== "light";
-    document.body.classList.toggle("dark", useDark);
-    document.documentElement.style.colorScheme = useDark ? "dark" : "light";
+    const selected = ["dark", "paper", "sepia"].includes(theme) ? theme : "dark";
+    document.body.dataset.theme = selected;
+    document.documentElement.style.colorScheme = selected === "dark" ? "dark" : "light";
+    if (themeToggleBtn) {
+      themeToggleBtn.setAttribute("aria-label", `Theme: ${selected}. Change theme`);
+      themeToggleBtn.title = `Theme: ${selected}`;
+    }
 
     if (persist) {
-      localStorage.setItem(THEME_STORAGE_KEY, useDark ? "dark" : "light");
+      localStorage.setItem(THEME_STORAGE_KEY, selected);
     }
   }
 
   function applySavedTheme() {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    applyTheme(savedTheme === "light" ? "light" : "dark", false);
+    applyTheme(savedTheme || "dark", false);
   }
 
   function toggleTheme() {
-    const willBeDark = !document.body.classList.contains("dark");
-    applyTheme(willBeDark ? "dark" : "light", true);
+    const themes = ["dark", "paper", "sepia"];
+    const current = themes.indexOf(document.body.dataset.theme || "dark");
+    applyTheme(themes[(current + 1) % themes.length], true);
   }
 
   function rewindAudio(seconds = 10) {
@@ -2590,9 +2694,16 @@
     audio.currentTime = Math.max(0, (Number.isFinite(audio.currentTime) ? audio.currentTime : 0) - seconds);
   }
 
+  function forwardAudio(seconds = 10) {
+    if (!state.currentAudioCandidates.length) return;
+    const duration = Number.isFinite(audio.duration) ? audio.duration : Number.POSITIVE_INFINITY;
+    audio.currentTime = Math.min(duration, (Number.isFinite(audio.currentTime) ? audio.currentTime : 0) + seconds);
+  }
+
   function updateAudioMetaControls() {
-    if (!rewindBtn) return;
-    rewindBtn.disabled = state.currentAudioCandidates.length === 0 || !state.currentAudioPath;
+    const disabled = state.currentAudioCandidates.length === 0 || !state.currentAudioPath;
+    if (rewindBtn) rewindBtn.disabled = disabled;
+    if (forwardBtn) forwardBtn.disabled = disabled;
   }
 
   function ensureEnhancedLayout() {
@@ -2619,6 +2730,30 @@
       rewindBtn.setAttribute("aria-label", "Rewind audio by ten seconds");
       rewindBtn.addEventListener("click", () => rewindAudio(10));
 
+      forwardBtn = document.createElement("button");
+      forwardBtn.type = "button";
+      forwardBtn.className = "control-btn player-rewind-btn";
+      forwardBtn.textContent = "+10";
+      forwardBtn.setAttribute("aria-label", "Forward audio by ten seconds");
+      forwardBtn.addEventListener("click", () => forwardAudio(10));
+
+      speedSelect = document.createElement("select");
+      speedSelect.className = "speed-select";
+      speedSelect.setAttribute("aria-label", "Playback speed");
+      [0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2].forEach((rate) => {
+        const option = document.createElement("option");
+        option.value = String(rate);
+        option.textContent = `${rate}×`;
+        speedSelect.appendChild(option);
+      });
+      const savedRate = Number(localStorage.getItem(RATE_STORAGE_KEY));
+      audio.playbackRate = savedRate >= 0.75 && savedRate <= 2 ? savedRate : 1;
+      speedSelect.value = String(audio.playbackRate);
+      speedSelect.addEventListener("change", () => {
+        audio.playbackRate = Number(speedSelect.value) || 1;
+        localStorage.setItem(RATE_STORAGE_KEY, String(audio.playbackRate));
+      });
+
       const timeMeta = document.createElement("div");
       timeMeta.className = "player-audio-meta";
 
@@ -2630,13 +2765,13 @@
         timeMeta.append(currentTimeLabel, separator, durationLabel);
       }
 
-      playerAudioRowEl.append(rewindBtn, timeMeta);
+      playerAudioRowEl.append(rewindBtn, forwardBtn, speedSelect, timeMeta);
       bottomRow.appendChild(playerAudioRowEl);
     }
 
     if (progressWrapEl) {
-      progressWrapEl.hidden = true;
-      progressWrapEl.setAttribute("aria-hidden", "true");
+      progressWrapEl.hidden = false;
+      progressWrapEl.removeAttribute("aria-hidden");
     }
 
     if (currentCardEl && !timelineSectionEl) {
@@ -2664,7 +2799,7 @@
         </div>
         <div class="timeline-fallback" id="timelineFallback" hidden></div>
       `;
-      currentCardEl.parentNode.insertBefore(timelineSectionEl, currentCardEl);
+      currentCardEl.parentNode.insertBefore(timelineSectionEl, currentCardEl.nextSibling);
       timelineSummaryEl = timelineSectionEl.querySelector("#timelineSummary");
       timelineRailEl = timelineSectionEl.querySelector("#timelineRail");
       timelineGridEl = timelineSectionEl.querySelector("#timelineGrid");
@@ -2898,12 +3033,15 @@
     if (!isMobileLayout()) return;
     sidebarEl.classList.add("open");
     sidebarBackdropEl.hidden = false;
+    toggleSidebarBtn.setAttribute("aria-expanded", "true");
+    sidebarEl.querySelector("button, a")?.focus();
   }
 
   function closeSidebar() {
     if (!isMobileLayout()) return;
     sidebarEl.classList.remove("open");
     sidebarBackdropEl.hidden = true;
+    toggleSidebarBtn.setAttribute("aria-expanded", "false");
   }
 
   function toggleSidebar() {
@@ -2917,10 +3055,15 @@
     }
 
     document.body.classList.toggle("sidebar-collapsed");
+    toggleSidebarBtn.setAttribute("aria-expanded", String(!document.body.classList.contains("sidebar-collapsed")));
   }
 
   audio.addEventListener("loadedmetadata", () => {
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    if (state.resumeSeconds > 0 && duration > 0) {
+      audio.currentTime = Math.min(state.resumeSeconds, Math.max(0, duration - 1));
+      state.resumeSeconds = 0;
+    }
     if (durationLabel) {
       durationLabel.textContent = formatTime(duration);
     }
@@ -2942,6 +3085,14 @@
         progressBar.value = String((currentTime / duration) * 100);
       } else {
         progressBar.value = "0";
+      }
+    }
+    savePosition(false);
+    if ("mediaSession" in navigator && duration > 0) {
+      try {
+        navigator.mediaSession.setPositionState({ duration, playbackRate: audio.playbackRate, position: Math.min(currentTime, duration) });
+      } catch (error) {
+        // Older Safari versions expose Media Session without position state.
       }
     }
   });
@@ -3031,6 +3182,8 @@
     requestAnimationFrame(drawAllGenealogyConnectors);
   });
 
+  window.addEventListener("pagehide", () => savePosition(true));
+
   async function init() {
     try {
       applySavedTheme();
@@ -3055,8 +3208,17 @@
       state.continuous = continuousToggle.checked;
       state.oneParagraphMode = oneParagraphToggle.checked;
 
-      const firstIndex = findFirstPlayableIndex();
-      await loadParagraph(firstIndex, false);
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.setActionHandler("play", () => audio.play());
+        navigator.mediaSession.setActionHandler("pause", () => audio.pause());
+        navigator.mediaSession.setActionHandler("previoustrack", () => goToPreviousParagraph(false));
+        navigator.mediaSession.setActionHandler("nexttrack", () => goToNextParagraph(false));
+        navigator.mediaSession.setActionHandler("seekbackward", (details) => rewindAudio(details.seekOffset || 10));
+        navigator.mediaSession.setActionHandler("seekforward", (details) => forwardAudio(details.seekOffset || 10));
+      }
+
+      const initial = getInitialPosition();
+      await loadParagraph(initial.index, false, initial.seconds);
       requestAnimationFrame(drawAllGenealogyConnectors);
       if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(() => requestAnimationFrame(drawAllGenealogyConnectors)).catch(() => {});

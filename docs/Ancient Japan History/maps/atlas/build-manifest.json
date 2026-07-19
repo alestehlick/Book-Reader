@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "vectorArchive": "ancient-japan-vector.pmtiles",
+  "terrain": {
+    "template": "terrain/{z}/{x}/{y}.webp",
+    "minZoom": 3,
+    "maxZoom": 8,
+    "tiles": 489,
+    "bytes": 749870
+  },
+  "artifacts": [
+    {
+      "path": "ancient-japan-vector.pmtiles",
+      "bytes": 3993694,
+      "sha256": "ccd3dba9b3b4cf1bd6a14cc52aa408792c9cc58fedcaa5f4d578062c6ff243e8"
+    },
+    {
+      "path": "presets.json",
+      "bytes": 23097,
+      "sha256": "f16271fd1150019653051625ca56cdd58ba177a480846b941ea1c3547eef4072"
+    },
+    {
+      "path": "ancient-japan-style.json",
+      "bytes": 15995,
+      "sha256": "61a9e5f09a1641ddb80af95863b6c50da68d7caca1eec308896ae67af5f60795"
+    }
+  ]
+}

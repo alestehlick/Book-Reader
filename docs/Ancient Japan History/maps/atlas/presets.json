@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 1,
+  "atlas": "ancient-japan",
+  "presets": {
+    "1a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "1a",
+      "period": "jomon",
+      "sitePeriods": [
+        "jomon",
+        "yayoi"
+      ],
+      "date": -300,
+      "accent": "#80634E",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            127.0,
+            29.0
+          ],
+          [
+            143.5,
+            43.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch01a_earliest_societies_internal",
+        "plateLabel": "MAP 1A",
+        "note": "Sites are selected study anchors; prehistoric shorelines and regional chronologies varied."
+      }
+    },
+    "1b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "1b",
+      "period": "yayoi",
+      "sitePeriods": [
+        "yayoi"
+      ],
+      "date": 150,
+      "accent": "#B69149",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch01b_earliest_societies_east_asia",
+        "plateLabel": "MAP 1B",
+        "note": "Wa is retained as an external collective label, not a modern national boundary."
+      }
+    },
+    "2a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "2a",
+      "period": "kofun",
+      "sitePeriods": [
+        "kofun"
+      ],
+      "date": 500,
+      "accent": "#76505F",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.2
+          ],
+          [
+            139.8,
+            37.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch02a_yamato_internal",
+        "plateLabel": "MAP 2A",
+        "note": "Interpretive regions show shifting networks of monuments and allegiance, not fixed frontiers."
+      }
+    },
+    "2b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "2b",
+      "period": "kofun",
+      "sitePeriods": [
+        "kofun",
+        "asuka"
+      ],
+      "date": 525,
+      "accent": "#76505F",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            29.0
+          ],
+          [
+            141.0,
+            43.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch02b_yamato_east_asia",
+        "plateLabel": "MAP 2B",
+        "note": "Sea routes are schematic corridors; relations changed repeatedly during the fourth to sixth centuries."
+      }
+    },
+    "3a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "3a",
+      "period": "asuka",
+      "sitePeriods": [
+        "asuka"
+      ],
+      "date": 680,
+      "accent": "#A64B3C",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            134.1,
+            33.35
+          ],
+          [
+            137.25,
+            36.05
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch03a_reform_internal",
+        "plateLabel": "MAP 3A",
+        "note": "Campaign lines reconstruct strategic direction from the narrative; they are not surveyed tracks."
+      }
+    },
+    "3b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "3b",
+      "period": "asuka",
+      "sitePeriods": [
+        "asuka"
+      ],
+      "date": 668,
+      "accent": "#A64B3C",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            121.0,
+            30.0
+          ],
+          [
+            139.5,
+            43.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch03b_reform_east_asia",
+        "plateLabel": "MAP 3B",
+        "note": "Polity labels and routes summarize a rapidly changing 660s political field."
+      }
+    },
+    "4a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "4a",
+      "period": "nara",
+      "sitePeriods": [
+        "asuka",
+        "nara"
+      ],
+      "date": 750,
+      "accent": "#B69149",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.2
+          ],
+          [
+            142.0,
+            41.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch04a_nara_internal",
+        "plateLabel": "MAP 4A",
+        "note": "Province boundaries use a later historical proxy; ancient limits and effective control were less exact."
+      }
+    },
+    "4b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "4b",
+      "period": "nara",
+      "sitePeriods": [
+        "nara",
+        "early_heian"
+      ],
+      "date": 760,
+      "accent": "#B69149",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            143.0,
+            45.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch04b_nara_east_asia",
+        "plateLabel": "MAP 4B",
+        "note": "Mission routes indicate broad corridors; individual embassies followed different courses."
+      }
+    },
+    "5a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "5a",
+      "period": "yayoi",
+      "sitePeriods": [
+        "jomon",
+        "yayoi",
+        "kofun"
+      ],
+      "date": 300,
+      "accent": "#B69149",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.0
+          ],
+          [
+            141.0,
+            40.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch05a_continent_internal",
+        "plateLabel": "MAP 5A",
+        "note": "Material distributions were asynchronous; arrows express transmission and exchange, not a single migration."
+      }
+    },
+    "5b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "5b",
+      "period": "yayoi",
+      "sitePeriods": [
+        "yayoi",
+        "kofun"
+      ],
+      "date": 300,
+      "accent": "#B69149",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch05b_continent_east_asia",
+        "plateLabel": "MAP 5B",
+        "note": "This is a relational field across many centuries, not a snapshot of one political moment."
+      }
+    },
+    "6a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "6a",
+      "period": "asuka",
+      "sitePeriods": [
+        "asuka",
+        "nara"
+      ],
+      "date": 700,
+      "accent": "#334D6D",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            134.25,
+            33.2
+          ],
+          [
+            137.35,
+            36.15
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch06a_kami_internal",
+        "plateLabel": "MAP 6A",
+        "note": "Sacred landscapes overlap political geography but cannot be reduced to state institutions."
+      }
+    },
+    "6b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "6b",
+      "period": "nara",
+      "sitePeriods": [
+        "asuka",
+        "nara",
+        "early_heian"
+      ],
+      "date": 775,
+      "accent": "#334D6D",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            29.8
+          ],
+          [
+            141.2,
+            40.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch06b_kami_archipelago",
+        "plateLabel": "MAP 6B",
+        "note": "Selected sites represent distinct traditions and changing court relationships, not a unified early Shinto system."
+      }
+    },
+    "7a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "7a",
+      "period": "nara",
+      "sitePeriods": [
+        "asuka",
+        "nara"
+      ],
+      "date": 750,
+      "accent": "#A64B3C",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            134.2,
+            33.2
+          ],
+          [
+            137.3,
+            36.15
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch07a_buddhism_internal",
+        "plateLabel": "MAP 7A",
+        "note": "Temple locations distinguish court foundations, provincial institutions, and mountain practice."
+      }
+    },
+    "7b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "7b",
+      "period": "asuka",
+      "sitePeriods": [
+        "asuka",
+        "nara"
+      ],
+      "date": 650,
+      "accent": "#A64B3C",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch07b_buddhism_east_asia",
+        "plateLabel": "MAP 7B",
+        "note": "The route is schematic and emphasizes multiple stages of transmission and patronage."
+      }
+    },
+    "8a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "8a",
+      "period": "nara",
+      "sitePeriods": [
+        "nara"
+      ],
+      "date": 760,
+      "accent": "#B69149",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.0
+          ],
+          [
+            142.0,
+            41.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch08a_nara_economy_internal",
+        "plateLabel": "MAP 8A",
+        "note": "Roads and transport corridors are generalized; administration and landholding varied sharply by region."
+      }
+    },
+    "8b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "8b",
+      "period": "nara",
+      "sitePeriods": [
+        "nara",
+        "early_heian"
+      ],
+      "date": 760,
+      "accent": "#B69149",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch08b_nara_economy_maritime",
+        "plateLabel": "MAP 8B",
+        "note": "The map emphasizes movement of envoys, texts, goods, and people rather than modern borders."
+      }
+    },
+    "9a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "9a",
+      "period": "nara",
+      "sitePeriods": [
+        "kofun",
+        "asuka",
+        "nara"
+      ],
+      "date": 775,
+      "accent": "#76505F",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.2
+          ],
+          [
+            140.8,
+            38.3
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch09a_culture_internal",
+        "plateLabel": "MAP 9A",
+        "note": "Inscription findspots and court centers show where literacy became materially visible."
+      }
+    },
+    "9b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "9b",
+      "period": "asuka",
+      "sitePeriods": [
+        "asuka",
+        "nara"
+      ],
+      "date": 700,
+      "accent": "#76505F",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch09b_culture_east_asia",
+        "plateLabel": "MAP 9B",
+        "note": "Cultural transmission depended on diplomats, immigrants, monks, artisans, and multilingual courts."
+      }
+    },
+    "10a": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "10a",
+      "period": "nara",
+      "sitePeriods": [
+        "kofun",
+        "asuka",
+        "nara"
+      ],
+      "date": 790,
+      "accent": "#334D6D",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            128.0,
+            30.0
+          ],
+          [
+            141.2,
+            40.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch10a_memory_internal",
+        "plateLabel": "MAP 10A",
+        "note": "The map separates material traces from later court narratives and ritual memory."
+      }
+    },
+    "10b": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "10b",
+      "period": "yayoi",
+      "sitePeriods": [
+        "yayoi",
+        "kofun",
+        "asuka",
+        "nara"
+      ],
+      "date": 700,
+      "accent": "#334D6D",
+      "showProvinces": false,
+      "view": {
+        "bounds": [
+          [
+            120.5,
+            27.0
+          ],
+          [
+            142.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "ch10b_sources_east_asia",
+        "plateLabel": "MAP 10B",
+        "note": "External testimony and retrospective court history are different source traditions and are mapped as such."
+      }
+    },
+    "21": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "21",
+      "period": "early_heian",
+      "sitePeriods": [
+        "early_heian"
+      ],
+      "date": 850,
+      "accent": "#334D6D",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            126.0,
+            27.5
+          ],
+          [
+            144.5,
+            44.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "early_heian_overview",
+        "plateLabel": "HEIAN I",
+        "note": "The northern frontier was mobile and contested; campaign lines indicate direction rather than exact tracks."
+      }
+    },
+    "22": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "22",
+      "period": "middle_heian",
+      "sitePeriods": [
+        "middle_heian"
+      ],
+      "date": 1000,
+      "accent": "#76505F",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            126.0,
+            27.5
+          ],
+          [
+            144.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "middle_heian_overview",
+        "plateLabel": "HEIAN II",
+        "note": "Court, temple, estate, and warrior power formed overlapping networks rather than exclusive territories."
+      }
+    },
+    "23": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "plate": "23",
+      "period": "late_heian",
+      "sitePeriods": [
+        "late_heian"
+      ],
+      "date": 1184,
+      "accent": "#A64B3C",
+      "showProvinces": true,
+      "view": {
+        "bounds": [
+          [
+            126.0,
+            27.5
+          ],
+          [
+            144.0,
+            44.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "slug": "late_heian_overview",
+        "plateLabel": "HEIAN III",
+        "note": "Warrior and maritime zones overlap; campaign routes summarize the 1180-1185 sequence."
+      }
+    }
+  }
+}

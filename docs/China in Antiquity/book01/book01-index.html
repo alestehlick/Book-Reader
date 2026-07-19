@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  data-book-js="book01-data.js"
-  data-book-json="book01-data.json"
+  data-book-js="book01-data-v2.js"
+  data-book-json="book01-data-v2.json"
   data-book-data-preference="js"
   data-audio-dirs="../audio/paragraphs"
   data-figures-dir="../figures"
@@ -14,14 +14,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>1 — The Beginnings</title>
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=2" />
 </head>
-<body class="dark">
+<body data-theme="dark">
   <div class="app-shell">
     <aside class="sidebar" id="sidebar" aria-label="Sections panel">
       <div class="sidebar-header">
         <a class="home-link" href="../index.html">← China in Antiquity</a>
-        <div class="eyebrow">Audio Reader</div>
+        <div class="eyebrow">Read and listen</div>
         <h1 id="bookTitle">Loading…</h1>
       </div>
 
@@ -35,7 +35,7 @@
 
     <main class="main-panel">
       <header class="topbar card">
-        <button id="toggleSidebarBtn" class="icon-btn" type="button" aria-label="Toggle sections panel">
+        <button id="toggleSidebarBtn" class="icon-btn" type="button" aria-label="Open sections" aria-expanded="false" aria-controls="sidebar">
           ☰
         </button>
 
@@ -68,14 +68,11 @@
             <span>Continuous playback</span>
           </label>
 
-          <label class="toggle-item">
-            <input id="oneParagraphToggle" type="checkbox" checked />
-            <span>One-paragraph mode</span>
-          </label>
+          <input id="oneParagraphToggle" type="checkbox" checked hidden />
         </div>
 
         <div class="progress-wrap">
-          <input id="progressBar" type="range" min="0" max="100" value="0" step="0.1" />
+          <input id="progressBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Audio position" />
           <div class="progress-times">
             <span id="currentTimeLabel">0:00</span>
             <span id="durationLabel">0:00</span>
@@ -134,6 +131,7 @@
 
   <audio id="audioPlayer" preload="metadata"></audio>
 
-  <script src="../app.js"></script>
+  <script src="book01-data-v2.js"></script>
+  <script src="../app.js?v=2"></script>
 </body>
 </html>

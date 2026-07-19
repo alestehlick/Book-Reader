@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/history-reader-v2.schema.json",
+  "title": "History Reader chapter, schema v2 with audited illustrations",
+  "type": "object",
+  "required": ["schemaVersion", "id", "title", "language", "catalogs", "sections"],
+  "$defs": {
+    "illustrationRef": {
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {
+          "type": "object",
+          "required": ["id", "role"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "role": {"enum": ["primary", "supporting"]}
+          }
+        }
+      ]
+    },
+    "illustration": {
+      "type": "object",
+      "required": [
+        "id", "src", "alt", "category", "historicalStatus", "evidenceLevel",
+        "generated", "status", "rights", "audit"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "src": {"type": "string", "minLength": 1},
+        "fallbackSrc": {"type": "string"},
+        "alt": {"type": "string", "minLength": 1},
+        "caption": {"type": "string"},
+        "category": {
+          "enum": ["object", "geography", "people", "occasion", "culture", "myth-religion"]
+        },
+        "historicalStatus": {
+          "enum": [
+            "contemporary-evidence", "archaeological-evidence", "documented-landscape",
+            "scholarly-reconstruction", "ai-reconstruction", "later-depiction",
+            "mythic-interpretation"
+          ]
+        },
+        "evidenceLevel": {"enum": ["documented", "reconstructed", "interpretive"]},
+        "generated": {"type": "boolean"},
+        "status": {"enum": ["planned", "sourced", "generated", "review", "approved", "rejected"]},
+        "sourceUrl": {"type": "string"},
+        "rights": {
+          "type": "object",
+          "required": ["status", "license"],
+          "properties": {
+            "status": {"type": "string", "minLength": 1},
+            "license": {"type": "string", "minLength": 1},
+            "credit": {"type": "string"},
+            "institution": {"type": "string"},
+            "accessedAt": {"type": "string"}
+          }
+        },
+        "evidence": {
+          "type": "object",
+          "properties": {
+            "brief": {"type": "string"},
+            "sources": {"type": "array", "items": {"type": "string"}},
+            "uncertainties": {"type": "array", "items": {"type": "string"}},
+            "exclusions": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "generation": {
+          "type": "object",
+          "properties": {
+            "model": {"type": "string"},
+            "promptFile": {"type": "string"},
+            "promptHash": {"type": "string"}
+          }
+        },
+        "audit": {
+          "type": "object",
+          "required": ["historical", "visual", "rights", "reviewedBy", "reviewedAt"],
+          "properties": {
+            "historical": {"enum": ["pending", "approved", "rejected"]},
+            "visual": {"enum": ["pending", "approved", "rejected"]},
+            "rights": {"enum": ["pending", "approved", "rejected"]},
+            "reviewedBy": {"type": "string"},
+            "reviewedAt": {"type": "string"},
+            "notes": {"type": "string"}
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "schemaVersion": {"const": 2},
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "language": {"type": "string", "minLength": 2},
+    "illustrationPolicy": {
+      "type": "object",
+      "properties": {
+        "required": {"type": "boolean"},
+        "minimumPerParagraph": {"type": "integer", "minimum": 0, "maximum": 6},
+        "maximumPerParagraph": {"type": "integer", "minimum": 1, "maximum": 6},
+        "defaultStrategy": {"type": "string"},
+        "requireAudit": {"type": "boolean"}
+      }
+    },
+    "catalogs": {
+      "type": "object",
+      "required": ["maps", "timeline"],
+      "properties": {
+        "maps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id"],
+            "properties": {
+              "id": {"type": "string"},
+              "type": {"type": "string", "enum": ["image", "interactive"]},
+              "src": {"type": "string"},
+              "fallbackSrc": {"type": "string"},
+              "style": {"type": "string"},
+              "archive": {"type": "string"},
+              "localArchive": {"type": "string"},
+              "terrainTiles": {"type": "string"},
+              "localTerrainTiles": {"type": "string"},
+              "plate": {"type": "string"},
+              "period": {"type": ["string", "null"]},
+              "sitePeriods": {"type": "array", "items": {"type": "string"}, "maxItems": 3},
+              "date": {"type": ["integer", "null"]},
+              "accent": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+              "showProvinces": {"type": "boolean"},
+              "view": {
+                "type": "object",
+                "required": ["bounds", "minZoom", "maxZoom"],
+                "properties": {
+                  "bounds": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": {"type": "number"}
+                    }
+                  },
+                  "minZoom": {"type": "number", "minimum": 0, "maximum": 22},
+                  "maxZoom": {"type": "number", "minimum": 0, "maximum": 22}
+                }
+              }
+            },
+            "anyOf": [
+              {"required": ["src"]},
+              {"required": ["type", "style", "archive", "terrainTiles", "plate", "view"]}
+            ]
+          }
+        },
+        "timeline": {"type": "array", "items": {"type": "object", "required": ["id"]}},
+        "illustrations": {"type": "array", "items": {"$ref": "#/$defs/illustration"}}
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "number", "title", "paragraphs"],
+        "properties": {
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "text", "mapRefs", "timelineRefs"],
+              "properties": {
+                "id": {"type": "string", "pattern": "^[0-9]{2}\\.[0-9]{2}-p[0-9]{3}$"},
+                "text": {"type": "string", "minLength": 1},
+                "mapRefs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+                "timelineRefs": {"type": "array", "items": {"type": "string"}},
+                "illustrationRefs": {"type": "array", "items": {"$ref": "#/$defs/illustrationRef"}}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

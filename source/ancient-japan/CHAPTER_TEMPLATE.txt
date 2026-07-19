@@ -1,0 +1,13 @@
+CHAPTER XX - Chapter Title
+CONTENTS
+SECTION XX.01 - First Section
+SECTION XX.02 - Second Section
+
+SECTION XX.01 - First Section
+One TTS-ready sentence appears on each line.
+No sentence line may exceed two hundred and thirty characters.
+
+A blank line creates the next paragraph and therefore the next synchronized audio track.
+
+SECTION XX.02 - Second Section
+Continue the finished narration here.

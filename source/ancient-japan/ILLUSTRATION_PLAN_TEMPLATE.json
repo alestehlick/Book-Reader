@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "chapterId": "ancient-japan-chapter-XX",
+  "policy": {
+    "required": true,
+    "minimumPerParagraph": 1,
+    "maximumPerParagraph": 4,
+    "defaultStrategy": "ai-first-when-source-is-not-straightforward-and-clean",
+    "requireAudit": true
+  },
+  "assets": [
+    {
+      "id": "xx-example-reconstruction-01",
+      "src": "illustrations/xx-example-reconstruction-01.webp",
+      "alt": "Concise description of what is visibly depicted.",
+      "caption": "One restrained sentence explaining the image and its evidentiary status.",
+      "category": "culture",
+      "historicalStatus": "ai-reconstruction",
+      "evidenceLevel": "interpretive",
+      "generated": true,
+      "status": "review",
+      "rights": {
+        "status": "project-generated",
+        "license": "project-generated",
+        "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
+      },
+      "evidence": {
+        "brief": "State the date, place, environment, material culture, people, action, and limits of inference.",
+        "sources": [
+          "Full citation or stable URL for the principal archaeological or scholarly source."
+        ],
+        "uncertainties": [
+          "State every visually material uncertainty rather than silently resolving it."
+        ],
+        "exclusions": [
+          "List anachronistic objects, architecture, clothing, motifs, behaviors, and visual conventions to exclude."
+        ]
+      },
+      "generation": {
+        "model": "Record the image model and version.",
+        "promptFile": "illustration-prompts/xx-example-reconstruction-01.txt",
+        "promptHash": ""
+      },
+      "audit": {
+        "historical": "pending",
+        "visual": "pending",
+        "rights": "pending",
+        "reviewedBy": "",
+        "reviewedAt": "",
+        "notes": ""
+      }
+    }
+  ],
+  "paragraphs": {
+    "XX.01-p001": [
+      {
+        "id": "xx-example-reconstruction-01",
+        "role": "primary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "version": 8,
+  "name": "Ancient Japan Study Atlas",
+  "metadata": {
+    "reader:purpose": "Zoom-aware historical study atlas",
+    "reader:projection-policy": "North-up, two-dimensional, maximum zoom limited by evidence resolution"
+  },
+  "sources": {
+    "terrain": {
+      "type": "raster",
+      "tiles": ["__TERRAIN_TILES__"],
+      "tileSize": 256,
+      "minzoom": 3,
+      "maxzoom": 8,
+      "bounds": [120.0, 20.0, 146.0, 50.0],
+      "attribution": "Terrain: Copernicus DEM and GEBCO"
+    },
+    "atlas": {
+      "type": "vector",
+      "url": "pmtiles://__ATLAS_ARCHIVE__",
+      "attribution": "GSHHG; MLIT; Ancient Japan Study Atlas; province proxy: CODH (CC BY-NC)"
+    }
+  },
+  "layers": [
+    {
+      "id": "paper-sea",
+      "type": "background",
+      "paint": {"background-color": "#d9e4e4"}
+    },
+    {
+      "id": "terrain-relief",
+      "type": "raster",
+      "source": "terrain",
+      "paint": {
+        "raster-opacity": 0.94,
+        "raster-saturation": -0.08,
+        "raster-contrast": 0.05,
+        "raster-fade-duration": 0
+      }
+    },
+    {
+      "id": "land-wash",
+      "type": "fill",
+      "source": "atlas",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "#c8bd80",
+        "fill-opacity": 0.1
+      }
+    },
+    {
+      "id": "historical-regions",
+      "type": "fill",
+      "source": "atlas",
+      "source-layer": "historical_regions",
+      "filter": ["==", ["get", "period"], "__PERIOD__"],
+      "paint": {
+        "fill-color": "__ACCENT__",
+        "fill-opacity": [
+          "match", ["get", "confidence"],
+          "high", 0.22,
+          "medium", 0.16,
+          "low", 0.1,
+          0.14
+        ]
+      }
+    },
+    {
+      "id": "historical-region-boundaries",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "historical_regions",
+      "filter": ["==", ["get", "period"], "__PERIOD__"],
+      "paint": {
+        "line-color": "__ACCENT__",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 8, 2.1],
+        "line-opacity": 0.7,
+        "line-dasharray": [3, 2]
+      }
+    },
+    {
+      "id": "ritsuryo-provinces-fill",
+      "type": "fill",
+      "source": "atlas",
+      "source-layer": "ritsuryo_provinces",
+      "minzoom": 5,
+      "layout": {"visibility": "none"},
+      "filter": [
+        "all",
+        ["<=", ["get", "valid_from"], "__MAP_DATE__"],
+        [">=", ["get", "valid_to"], "__MAP_DATE__"]
+      ],
+      "paint": {"fill-color": "#b69149", "fill-opacity": 0.055}
+    },
+    {
+      "id": "ritsuryo-provinces-line",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "ritsuryo_provinces",
+      "minzoom": 5,
+      "layout": {"visibility": "none"},
+      "filter": [
+        "all",
+        ["<=", ["get", "valid_from"], "__MAP_DATE__"],
+        [">=", ["get", "valid_to"], "__MAP_DATE__"]
+      ],
+      "paint": {
+        "line-color": "#6f5d40",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.55, 9, 1.3],
+        "line-opacity": 0.54,
+        "line-dasharray": [2, 2]
+      }
+    },
+    {
+      "id": "lakes",
+      "type": "fill",
+      "source": "atlas",
+      "source-layer": "lakes",
+      "minzoom": 5,
+      "paint": {
+        "fill-color": "#cfe7f0",
+        "fill-opacity": 0.92,
+        "fill-outline-color": "#2a93ca"
+      }
+    },
+    {
+      "id": "rivers-glow",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "rivers_primary",
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#b8dce8",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1.4, 9, 4.2],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "rivers",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "rivers_primary",
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#1f8cc8",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.65, 9, 2],
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "historical-routes",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "historical_routes",
+      "filter": [">=", ["index-of", "__PERIOD__", ["coalesce", ["get", "period"], ""]], 0],
+      "paint": {
+        "line-color": "#a64b3c",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.4, 9, 3.2],
+        "line-opacity": [
+          "match", ["get", "confidence"],
+          "high", 0.88,
+          "medium", 0.72,
+          "low", 0.52,
+          0.64
+        ],
+        "line-dasharray": [4, 2]
+      }
+    },
+    {
+      "id": "chapter-routes",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "chapter_routes",
+      "filter": [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0],
+      "paint": {
+        "line-color": "#a64b3c",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.8, 9, 4.4],
+        "line-opacity": 0.86,
+        "line-dasharray": [2, 1.5]
+      }
+    },
+    {
+      "id": "coastline",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "land",
+      "paint": {
+        "line-color": "#35575d",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.55, 9, 1.7],
+        "line-opacity": 0.86
+      }
+    },
+    {
+      "id": "historical-sites-halo",
+      "type": "circle",
+      "source": "atlas",
+      "source-layer": "historical_sites",
+      "filter": [
+        "any",
+        [">=", ["index-of", "__SITE_PERIOD_1__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_2__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_3__", ["coalesce", ["get", "periods"], ""]], 0]
+      ],
+      "paint": {
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 4.2, 9, 9],
+        "circle-color": "rgba(236,228,210,0.92)"
+      }
+    },
+    {
+      "id": "historical-sites",
+      "type": "circle",
+      "source": "atlas",
+      "source-layer": "historical_sites",
+      "filter": [
+        "any",
+        [">=", ["index-of", "__SITE_PERIOD_1__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_2__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_3__", ["coalesce", ["get", "periods"], ""]], 0]
+      ],
+      "paint": {
+        "circle-radius": [
+          "interpolate", ["linear"], ["zoom"],
+          4, ["match", ["get", "tier"], 1, 3.6, 2, 2.8, 2.2],
+          9, ["match", ["get", "tier"], 1, 7, 2, 5.5, 4.5]
+        ],
+        "circle-color": "__ACCENT__",
+        "circle-stroke-color": "#3d3026",
+        "circle-stroke-width": 0.8
+      }
+    },
+    {
+      "id": "study-sites-halo",
+      "type": "circle",
+      "source": "atlas",
+      "source-layer": "study_labels",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0],
+        ["!", ["in", ["get", "category"], ["literal", ["plain", "mountain", "pass", "bay", "sea", "region", "external_polity", "annotation"]]]]
+      ],
+      "paint": {
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 4.8, 9, 8.5],
+        "circle-color": "rgba(236,228,210,0.94)"
+      }
+    },
+    {
+      "id": "study-sites",
+      "type": "circle",
+      "source": "atlas",
+      "source-layer": "study_labels",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0],
+        ["!", ["in", ["get", "category"], ["literal", ["plain", "mountain", "pass", "bay", "sea", "region", "external_polity", "annotation"]]]]
+      ],
+      "paint": {
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 3, 9, 5.5],
+        "circle-color": "__ACCENT__",
+        "circle-stroke-color": "#3d3026",
+        "circle-stroke-width": 0.8
+      }
+    },
+    {
+      "id": "region-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "historical_regions",
+      "filter": ["==", ["get", "period"], "__PERIOD__"],
+      "layout": {
+        "text-field": ["coalesce", ["get", "map_label"], ["get", "name_en"]],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 14, 8, 22],
+        "text-letter-spacing": 0.08,
+        "text-transform": "uppercase",
+        "text-allow-overlap": false,
+        "text-padding": 8
+      },
+      "paint": {
+        "text-color": "#3f3228",
+        "text-halo-color": "rgba(236,228,210,0.88)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "reference-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "reference_labels",
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          3, ["match", ["get", "label_type"], "sea", 15, 12],
+          8, ["match", ["get", "label_type"], "sea", 23, 18]
+        ],
+        "text-letter-spacing": 0.1,
+        "text-allow-overlap": false,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#31596b",
+        "text-halo-color": "rgba(228,236,233,0.9)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "river-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "rivers_primary",
+      "minzoom": 6,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 520,
+        "text-field": [
+          "match", ["get", "name_ja"],
+          "石狩川", "Ishikari River",
+          "天塩川", "Teshio River",
+          "十勝川", "Tokachi River",
+          "北上川", "Kitakami River",
+          "最上川", "Mogami River",
+          "阿武隈川", "Abukuma River",
+          "利根川", "Tone River",
+          "荒川", "Ara River",
+          "信濃川", "Shinano River",
+          "富士川", "Fuji River",
+          "木曽川", "Kiso River",
+          "淀川", "Yodo River",
+          "吉野川", "Yoshino River",
+          "太田川", "Ota River",
+          "筑後川", "Chikugo River",
+          "球磨川", "Kuma River",
+          "大和川", "Yamato River",
+          "木津川", "Kizu River",
+          "佐保川", "Saho River",
+          "多摩川", "Tama River",
+          "天竜川", "Tenryu River",
+          "九頭竜川", "Kuzuryu River",
+          "神通川", "Jinzu River",
+          ""
+        ],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 6, 13, 9, 17],
+        "text-allow-overlap": false,
+        "text-padding": 4,
+        "text-max-angle": 30
+      },
+      "paint": {
+        "text-color": "#1e72a1",
+        "text-halo-color": "rgba(236,228,210,0.9)",
+        "text-halo-width": 1.8
+      }
+    },
+    {
+      "id": "study-physical-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "study_labels",
+      "filter": [
+        "all",
+        [
+          "any",
+          ["==", ["get", "plates"], "all"],
+          [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0]
+        ],
+        ["in", ["get", "category"], ["literal", ["plain", "mountain", "pass", "bay", "sea", "region"]]]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          3, ["match", ["get", "rank"], 1, 15, 12],
+          9, ["match", ["get", "rank"], 1, 21, 17]
+        ],
+        "text-letter-spacing": ["match", ["get", "category"], "sea", 0.09, "bay", 0.06, 0.02],
+        "text-allow-overlap": false,
+        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-radial-offset": 0.45,
+        "text-padding": 5,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": [
+          "match", ["get", "category"],
+          "sea", "#31596b",
+          "bay", "#31596b",
+          "mountain", "#6e4d36",
+          "#453b31"
+        ],
+        "text-halo-color": "rgba(236,228,210,0.92)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "study-polity-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "study_labels",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0],
+        ["==", ["get", "category"], "external_polity"]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 16, 8, 23],
+        "text-letter-spacing": 0.09,
+        "text-transform": "uppercase",
+        "text-allow-overlap": false,
+        "text-padding": 8,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#334d6d",
+        "text-halo-color": "rgba(236,228,210,0.92)",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "study-site-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "study_labels",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        [">=", ["index-of", "__PLATE__", ["coalesce", ["get", "plates"], ""]], 0],
+        ["!", ["in", ["get", "category"], ["literal", ["plain", "mountain", "pass", "bay", "sea", "region", "external_polity", "annotation"]]]]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 14, 9, 19],
+        "text-variable-anchor": ["top", "bottom", "left", "right"],
+        "text-radial-offset": 0.8,
+        "text-allow-overlap": false,
+        "text-padding": 5,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#332b25",
+        "text-halo-color": "rgba(236,228,210,0.94)",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "historical-site-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "historical_sites",
+      "minzoom": 5,
+      "filter": [
+        "any",
+        [">=", ["index-of", "__SITE_PERIOD_1__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_2__", ["coalesce", ["get", "periods"], ""]], 0],
+        [">=", ["index-of", "__SITE_PERIOD_3__", ["coalesce", ["get", "periods"], ""]], 0]
+      ],
+      "layout": {
+        "text-field": ["coalesce", ["get", "map_label"], ["get", "name_en"]],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          5, ["match", ["get", "tier"], 1, 15, 13],
+          9, ["match", ["get", "tier"], 1, 20, 17]
+        ],
+        "text-variable-anchor": ["top", "bottom", "left", "right"],
+        "text-radial-offset": 0.85,
+        "text-allow-overlap": false,
+        "text-padding": 5,
+        "symbol-sort-key": ["coalesce", ["get", "tier"], 5]
+      },
+      "paint": {
+        "text-color": "#332b25",
+        "text-halo-color": "rgba(236,228,210,0.94)",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "ritsuryo-province-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ritsuryo_province_labels",
+      "minzoom": 6,
+      "layout": {
+        "visibility": "none",
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 6, 12, 9, 17],
+        "text-allow-overlap": false,
+        "text-padding": 4
+      },
+      "paint": {
+        "text-color": "#5c4b39",
+        "text-halo-color": "rgba(236,228,210,0.9)",
+        "text-halo-width": 1.6
+      }
+    }
+  ]
+}

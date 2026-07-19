@@ -1,0 +1,68 @@
+{
+  "id": "ancient-japan-chapter-01",
+  "title": "Chapter 1 — The Earliest Societies in the Japanese Archipelago",
+  "language": "en",
+  "manuscript": "../source/ancient-japan/ch01-manuscript.txt",
+  "sectionMetadata": "../source/ancient-japan/ch01-section-metadata.json",
+  "outputJson": "../docs/Ancient Japan History/ch01/ch01-data.json",
+  "outputJs": "../docs/Ancient Japan History/ch01/ch01-data.js",
+  "webAtlasPresets": "../docs/Ancient Japan History/maps/atlas/presets.json",
+  "audioDir": "../docs/Ancient Japan History/audio/paragraphs",
+  "validationReport": "../docs/Ancient Japan History/ch01/validation.json",
+  "audioProfile": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "integratedLoudness": -19,
+    "truePeak": -1.5,
+    "sampleRate": 24000,
+    "bitrate": "64k"
+  },
+  "maps": [
+    {
+      "id": "map-1a",
+      "preset": "1a",
+      "src": "maps/Map_1a.webp",
+      "fallbackSrc": "maps/Map_1a.png",
+      "standing": true
+    },
+    {
+      "id": "map-1b",
+      "preset": "1b",
+      "src": "maps/Map_1b.webp",
+      "fallbackSrc": "maps/Map_1b.png",
+      "standing": true
+    }
+  ],
+  "genealogy": {
+    "trees": [
+      {
+        "id": "AJ1-mythic-line",
+        "title": "The Retrospective Imperial Genealogy",
+        "nodes": [
+          {"id": "amaterasu", "name": "Amaterasu", "type": "deity", "display_date": "mythic"},
+          {"id": "ninigi", "name": "Ninigi", "type": "deity", "display_date": "mythic descendant"},
+          {"id": "jimmu", "name": "Jimmu", "type": "retrospective first sovereign", "display_date": "traditional accession 660 BC"}
+        ],
+        "edges": [
+          {"from": "amaterasu", "to": "ninigi", "relation": "ancestor-of"},
+          {"from": "ninigi", "to": "jimmu", "relation": "ancestor-of"}
+        ]
+      },
+      {
+        "id": "AJ1-yamatai-succession",
+        "title": "The Yamatai Succession in the Wei Account",
+        "nodes": [
+          {"id": "himiko", "name": "Himiko", "type": "ruler", "display_date": "d. ca. AD 247–248"},
+          {"id": "himiko-brother", "name": "Himiko's younger brother", "type": "political assistant", "display_date": "third century AD"},
+          {"id": "male-successor", "name": "Unnamed male successor", "type": "disputed ruler", "display_date": "third century AD"},
+          {"id": "iyo", "name": "Iyo or Toyo", "type": "female successor", "display_date": "third century AD"}
+        ],
+        "edges": [
+          {"from": "himiko", "to": "himiko-brother", "relation": "sibling"},
+          {"from": "himiko", "to": "male-successor", "relation": "succeeded-by"},
+          {"from": "male-successor", "to": "iyo", "relation": "succeeded-by"}
+        ]
+      }
+    ]
+  }
+}
