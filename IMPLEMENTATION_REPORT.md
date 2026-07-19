@@ -17,6 +17,17 @@ static WebP/PNG plates remain automatic fallbacks and retain the same Map key.
 
 ## Ancient Japan, Chapter 1
 
+### Editorial status correction
+
+Chapter 1 is a functioning reader, audio, and map-atlas pilot, not a finished
+production benchmark. Its 25,517-word supplied OCR was reduced to 4,563 words
+and organized as sixteen sections of exactly four paragraphs. It has no
+illustration plan or approved illustrations, and its timeline is assigned by
+section rather than selected independently for each paragraph. It must be
+rebuilt from the verified OCR, source-audit ledger, paragraph-level timeline,
+and approved illustration plan before being described as a completed chapter.
+The manifest is therefore explicitly labelled `releaseMode: "pilot"`.
+
 - 16 sections, 64 synchronized paragraphs, and 4,563 words.
 - 42.47 minutes of low masculine narration at an unhurried 107 words per minute.
 - Voice profile: `bm_lewis`, generation speed 0.88, mono 24 kHz, 64 kbps MP3.
@@ -27,7 +38,8 @@ static WebP/PNG plates remain automatic fallbacks and retain the same Map key.
   and a 0.72 MiB relief pyramid of 489 WebP tiles; the original WebP/PNG plates
   remain fallbacks, and both presets are referenced by every paragraph.
 - JSON and JavaScript are mechanically generated from the same canonical data.
-- Final validation: zero errors and zero warnings.
+- Technical validation: zero errors and zero warnings under the former
+  permissive pilot rules; this does not certify editorial completeness.
 
 The rewrite corrects several claims that have changed since the supplied survey
 was written. It treats the first secure occupation as roughly 38,000 years ago,

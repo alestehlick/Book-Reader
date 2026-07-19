@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "visualPagesVerified": false,
+  "allSourceRangesAccountedFor": false,
+  "minimumRetainedWordRatio": 0.35,
+  "approvedBelowMinimum": false,
+  "belowMinimumRationale": "",
+  "coverage": [
+    {
+      "sourceRange": "PDF pp. XX-YY; OCR lines AAA-BBB",
+      "outputSections": ["XX.01"],
+      "substanceRetained": [
+        "State the principal claim, evidence, and qualification carried into the finished narration."
+      ],
+      "omittedAs": [],
+      "supplementalSources": []
+    }
+  ]
+}

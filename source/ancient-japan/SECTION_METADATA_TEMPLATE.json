@@ -1,14 +1,23 @@
 {
-  "XX.01": {
+  "XX.01-p001": {
     "timeline": [
       {
-        "type": "span",
-        "label": "Event or period",
+        "type": "point",
+        "label": "Paragraph's focal event",
         "start": -100,
-        "end": 100,
-        "display_date": "100 BC–AD 100",
+        "end": -100,
+        "display_date": "ca. 100 BC",
         "certainty": "approximate",
-        "caption": "A concise evidentiary explanation."
+        "caption": "A concise evidentiary explanation linked to this exact paragraph."
+      },
+      {
+        "type": "span",
+        "label": "Useful adjacent horizon",
+        "start": -200,
+        "end": 0,
+        "display_date": "ca. 200 BC to AD 1",
+        "certainty": "approximate",
+        "caption": "A nearby period that clarifies chronology or contrast without repeating the section's entire timeline."
       }
     ],
     "genealogy": [],

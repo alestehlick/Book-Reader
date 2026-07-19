@@ -9,8 +9,11 @@
     "illustrationReferences": 0,
     "audioFiles": 64,
     "errors": 0,
-    "warnings": 0
+    "warnings": 1,
+    "releaseMode": "pilot"
   },
   "errors": [],
-  "warnings": []
+  "warnings": [
+    "Pilot release has no source OCR audit and is not certified as editorially complete."
+  ]
 }

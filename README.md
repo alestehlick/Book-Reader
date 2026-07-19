@@ -54,6 +54,34 @@ For each chapter duplicate `config/chapter-template.json`,
 `source/ancient-japan/ILLUSTRATION_PLAN_TEMPLATE.json`. Use
 `ILLUSTRATION_AUDIT_CHECKLIST.md` for the independent audit pass.
 
+## Production safeguards
+
+New chapters use `releaseMode: "production"`. Before prose begins, create a
+verified raw OCR in the matching `H:/Ancient Japan History/chXX/` folder and a
+`chXX-source-audit.json` ledger from `SOURCE_AUDIT_TEMPLATE.json`. The source
+audit records page/OCR coverage, retained substance, legitimate omissions, and
+all material supplemental research. It prevents an attractive but silently
+abridged rewrite from passing as a completed chapter.
+
+Production release requires `sourceOcr`, `sourceAudit`, and an
+`illustrationPlan`; it also rejects a section whose paragraphs all reuse the
+same non-empty timeline references. Run the full gate in this order:
+
+`python tools/history_reader.py audit-source --manifest config/chXX.json`
+
+`python tools/history_reader.py audit-illustrations --manifest config/chXX.json`
+
+`python tools/history_reader.py release --manifest config/chXX.json`
+
+`releaseMode: "pilot"` is permitted for technical experiments only. It is not
+a content-complete chapter and must not be treated as a production benchmark.
+
+Timeline metadata is keyed by paragraph id. Each event uses `start` and `end`
+(identical for a point) and exactly one certainty value: `secure`,
+`approximate`, `disputed`, or `traditional`. A paragraph normally shows only
+the focal event or period plus useful adjacent context; it does not inherit an
+entire section's date list.
+
 The standard long-listening voice is `bm_lewis`: masculine, low, and played at
 0.88 generation speed. The web reader then offers 0.75×–2× playback without
 requiring a separate listening mode.

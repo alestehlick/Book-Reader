@@ -2,6 +2,8 @@
   "id": "ancient-japan-chapter-01",
   "title": "Chapter 1 — The Earliest Societies in the Japanese Archipelago",
   "language": "en",
+  "releaseMode": "pilot",
+  "editorialStatus": "rebuild-required-before-production",
   "manuscript": "../source/ancient-japan/ch01-manuscript.txt",
   "sectionMetadata": "../source/ancient-japan/ch01-section-metadata.json",
   "outputJson": "../docs/Ancient Japan History/ch01/ch01-data.json",

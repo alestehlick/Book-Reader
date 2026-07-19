@@ -44,6 +44,10 @@ ILLUSTRATION_HISTORICAL_STATUSES = {
 ILLUSTRATION_EVIDENCE_LEVELS = {"documented", "reconstructed", "interpretive"}
 ILLUSTRATION_ROLES = {"primary", "supporting"}
 APPROVED_AUDIT_VALUE = "approved"
+TIMELINE_TYPES = {"span", "point"}
+TIMELINE_CERTAINTIES = {"secure", "approximate", "disputed", "traditional"}
+PRODUCTION_RELEASE_MODE = "production"
+DEFAULT_MINIMUM_SOURCE_RETENTION = 0.35
 
 
 class BuildError(RuntimeError):
@@ -162,6 +166,153 @@ def normalize_illustration_plan(plan: dict[str, Any]) -> tuple[dict[str, Any], l
     return policy, assets, assignments
 
 
+def resolve_manifest_path(root: Path, value: str) -> Path:
+    path = Path(str(value))
+    return (path if path.is_absolute() else root / path).resolve()
+
+
+def word_count(value: str) -> int:
+    return len(re.findall(r"\b[\w'’-]+\b", value))
+
+
+def normalize_timeline_event(raw_event: dict[str, Any]) -> dict[str, Any]:
+    """Normalize legacy point dates into the documented start/end schema."""
+    event = dict(raw_event)
+    event_type = str(event.get("type", "")).strip().lower()
+    if event_type not in TIMELINE_TYPES:
+        return event
+
+    if event_type == "point":
+        point = event.get("start", event.get("date"))
+        event["start"] = point
+        event["end"] = event.get("end", point)
+        event.pop("date", None)
+    else:
+        event["start"] = event.get("start")
+        event["end"] = event.get("end")
+    return event
+
+
+def validate_timeline_event(event: dict[str, Any], prefix: str) -> list[str]:
+    errors: list[str] = []
+    event_type = event.get("type")
+    if event_type not in TIMELINE_TYPES:
+        errors.append(f"{prefix}: type must be span or point")
+    for field in ("label", "display_date", "caption"):
+        if not str(event.get(field, "")).strip():
+            errors.append(f"{prefix}: {field} is required")
+    certainty = event.get("certainty")
+    if certainty not in TIMELINE_CERTAINTIES:
+        errors.append(
+            f"{prefix}: certainty must be one of {', '.join(sorted(TIMELINE_CERTAINTIES))}"
+        )
+    for field in ("start", "end"):
+        value = event.get(field)
+        if value is not None and (not isinstance(value, (int, float)) or isinstance(value, bool)):
+            errors.append(f"{prefix}: {field} must be a number or null")
+    if event_type == "point" and event.get("start") != event.get("end"):
+        errors.append(f"{prefix}: a point must use the same start and end year")
+    return errors
+
+
+def release_mode(manifest: dict[str, Any]) -> str:
+    return str(manifest.get("releaseMode", "pilot")).strip().lower() or "pilot"
+
+
+def validate_source_audit(
+    manifest: dict[str, Any],
+    manifest_root: Path,
+    sections: list[dict[str, Any]],
+) -> tuple[list[str], list[str], dict[str, Any]]:
+    """Check the documentary accounting that protects against silent abridgement."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    production = release_mode(manifest) == PRODUCTION_RELEASE_MODE
+    summary: dict[str, Any] = {"releaseMode": release_mode(manifest)}
+    source_ocr_value = manifest.get("sourceOcr")
+    source_audit_value = manifest.get("sourceAudit")
+    if not source_ocr_value or not source_audit_value:
+        if production:
+            errors.append("Production release requires sourceOcr and sourceAudit in the manifest.")
+        else:
+            warnings.append("Pilot release has no source OCR audit and is not certified as editorially complete.")
+        return errors, warnings, summary
+
+    source_ocr = resolve_manifest_path(manifest_root, str(source_ocr_value))
+    source_audit = resolve_manifest_path(manifest_root, str(source_audit_value))
+    if not source_ocr.is_file():
+        errors.append(f"Source OCR not found: {source_ocr}")
+        return errors, warnings, summary
+    if not source_audit.is_file():
+        errors.append(f"Source audit not found: {source_audit}")
+        return errors, warnings, summary
+
+    audit = read_json(source_audit)
+    source_words = word_count(source_ocr.read_text(encoding="utf-8-sig"))
+    manuscript_words = sum(word_count(paragraph.get("text", "")) for section in sections for paragraph in section["paragraphs"])
+    retention = manuscript_words / source_words if source_words else 0.0
+    summary.update({
+        "sourceOcr": str(source_ocr),
+        "sourceWords": source_words,
+        "manuscriptWords": manuscript_words,
+        "retentionRatio": round(retention, 4),
+    })
+
+    if not bool(audit.get("visualPagesVerified")):
+        errors.append("Source audit must confirm visual verification of pages against the OCR.")
+    if not bool(audit.get("allSourceRangesAccountedFor")):
+        errors.append("Source audit must account for every substantive source range.")
+    coverage = audit.get("coverage")
+    if not isinstance(coverage, list) or not coverage:
+        errors.append("Source audit requires a non-empty coverage ledger.")
+    else:
+        known_sections = {section["id"] for section in sections}
+        covered_sections: set[str] = set()
+        for index, entry in enumerate(coverage, 1):
+            prefix = f"source audit coverage {index}"
+            if not isinstance(entry, dict):
+                errors.append(f"{prefix}: entry must be an object")
+                continue
+            if not str(entry.get("sourceRange", "")).strip():
+                errors.append(f"{prefix}: sourceRange is required")
+            output_sections = entry.get("outputSections")
+            if not isinstance(output_sections, list) or not output_sections:
+                errors.append(f"{prefix}: outputSections is required")
+            else:
+                for section_id in output_sections:
+                    section_id = str(section_id)
+                    if section_id not in known_sections:
+                        errors.append(f"{prefix}: unknown output section {section_id}")
+                    else:
+                        covered_sections.add(section_id)
+            if not isinstance(entry.get("substanceRetained"), list) or not entry["substanceRetained"]:
+                errors.append(f"{prefix}: substanceRetained must identify the retained arguments or evidence")
+            if not isinstance(entry.get("omittedAs"), list):
+                errors.append(f"{prefix}: omittedAs must be a list, even when empty")
+        missing_sections = sorted(known_sections - covered_sections)
+        if missing_sections:
+            errors.append("Source audit does not cover output section(s): " + ", ".join(missing_sections))
+
+    minimum = audit.get("minimumRetainedWordRatio", DEFAULT_MINIMUM_SOURCE_RETENTION)
+    if not isinstance(minimum, (int, float)) or isinstance(minimum, bool) or not 0 < minimum <= 1:
+        errors.append("Source audit minimumRetainedWordRatio must be a number greater than 0 and no more than 1.")
+        minimum = DEFAULT_MINIMUM_SOURCE_RETENTION
+    summary["minimumRetentionRatio"] = minimum
+    if retention < minimum:
+        approval = audit.get("approvedBelowMinimum")
+        rationale = str(audit.get("belowMinimumRationale", "")).strip()
+        if approval is True and rationale:
+            warnings.append(
+                f"Source retention is {retention:.1%}, below the stated {minimum:.1%} floor, under explicit recorded approval."
+            )
+        else:
+            errors.append(
+                f"Source retention is {retention:.1%}, below the stated {minimum:.1%} floor. "
+                "A production chapter may not be silently abridged."
+            )
+    return errors, warnings, summary
+
+
 def migrate_v1(data: dict[str, Any], book_id: str | None = None, prefer_webp: bool = False) -> dict[str, Any]:
     map_catalog: list[dict[str, Any]] = []
     timeline_catalog: list[dict[str, Any]] = []
@@ -186,7 +337,7 @@ def migrate_v1(data: dict[str, Any], book_id: str | None = None, prefer_webp: bo
         return map_key_to_id[key]
 
     def timeline_ref(item: dict[str, Any]) -> str:
-        clean = dict(item)
+        clean = normalize_timeline_event(item)
         clean.pop("id", None)
         key = canonical(clean)
         if key not in timeline_key_to_id:
@@ -325,7 +476,7 @@ def build_from_manifest(manifest_path: Path) -> dict[str, Any]:
     used_timeline_ids: set[str] = set()
     for paragraph_meta in [*section_metadata.values(), *metadata.values()]:
         for event in paragraph_meta.get("timeline", []):
-            clean = dict(event)
+            clean = normalize_timeline_event(event)
             requested_id = clean.pop("id", None)
             key = canonical(clean)
             if key in timeline_by_key:
@@ -341,7 +492,7 @@ def build_from_manifest(manifest_path: Path) -> dict[str, Any]:
             paragraph["mapRefs"] = item_meta.get("mapRefs", standing_refs)
             paragraph["timelineRefs"] = []
             for event in item_meta.get("timeline", []):
-                clean = dict(event)
+                clean = normalize_timeline_event(event)
                 clean.pop("id", None)
                 paragraph["timelineRefs"].append(timeline_by_key[canonical(clean)])
             if illustration_policy:
@@ -532,7 +683,13 @@ def validate_illustrations(
     }
 
 
-def validate(data: dict[str, Any], base_dir: Path | None = None, audio_dir: Path | None = None) -> ValidationResult:
+def validate(
+    data: dict[str, Any],
+    base_dir: Path | None = None,
+    audio_dir: Path | None = None,
+    *,
+    editorial_rules: bool = False,
+) -> ValidationResult:
     errors: list[str] = []
     warnings: list[str] = []
     paragraphs = [p for _, p in iter_paragraphs(data)]
@@ -545,7 +702,18 @@ def validate(data: dict[str, Any], base_dir: Path | None = None, audio_dir: Path
 
     catalogs = data.get("catalogs", {})
     maps = {item.get("id"): item for item in catalogs.get("maps", [])}
-    timeline = {item.get("id"): item for item in catalogs.get("timeline", [])}
+    raw_timeline = [item for item in catalogs.get("timeline", []) if isinstance(item, dict)]
+    timeline = {item.get("id"): item for item in raw_timeline}
+    timeline_ids = [str(item.get("id", "")).strip() for item in raw_timeline]
+    duplicate_timeline_ids = [key for key, count in Counter(timeline_ids).items() if key and count > 1]
+    if duplicate_timeline_ids:
+        errors.append("Duplicate timeline ids: " + ", ".join(duplicate_timeline_ids))
+    for event in raw_timeline:
+        event_id = str(event.get("id", "unknown"))
+        if not event_id:
+            errors.append("One or more timeline events have no id.")
+        errors.extend(validate_timeline_event(event, f"timeline {event_id}"))
+
     for paragraph in paragraphs:
         pid = paragraph.get("id", "unknown")
         refs = paragraph.get("mapRefs", [])
@@ -554,7 +722,15 @@ def validate(data: dict[str, Any], base_dir: Path | None = None, audio_dir: Path
         for ref in refs:
             if ref not in maps:
                 errors.append(f"{pid}: unknown map reference {ref}")
-        for ref in paragraph.get("timelineRefs", []):
+        timeline_refs = paragraph.get("timelineRefs", [])
+        if not isinstance(timeline_refs, list):
+            errors.append(f"{pid}: timelineRefs must be a list")
+            timeline_refs = []
+        if len(timeline_refs) > 5:
+            errors.append(f"{pid}: has {len(timeline_refs)} timeline events (maximum 5)")
+        if len(timeline_refs) != len(set(timeline_refs)):
+            errors.append(f"{pid}: duplicate timeline references")
+        for ref in timeline_refs:
             if ref not in timeline:
                 errors.append(f"{pid}: unknown timeline reference {ref}")
         for sentence in paragraph.get("text", "").splitlines():
@@ -562,6 +738,21 @@ def validate(data: dict[str, Any], base_dir: Path | None = None, audio_dir: Path
                 errors.append(f"{pid}: sentence line is {len(sentence)} characters (maximum 230)")
         if not paragraph.get("text", "").strip():
             errors.append(f"{pid}: empty text")
+
+    if editorial_rules:
+        for section in data.get("sections", []):
+            section_paragraphs = section.get("paragraphs", [])
+            if len(section_paragraphs) < 3:
+                continue
+            signatures = {
+                tuple(paragraph.get("timelineRefs", []))
+                for paragraph in section_paragraphs
+            }
+            if len(signatures) == 1 and next(iter(signatures), ()):
+                errors.append(
+                    f"{section.get('id', 'unknown')}: every paragraph repeats the same timeline references; "
+                    "production timelines must be selected at paragraph level."
+                )
 
     missing_media: list[str] = []
     if base_dir:
@@ -677,11 +868,28 @@ def command_release(args: argparse.Namespace) -> int:
     output_json = (root / manifest["outputJson"]).resolve()
     audio_dir = (root / manifest["audioDir"]).resolve() if manifest.get("audioDir") else None
     report_path = (root / manifest["validationReport"]).resolve() if manifest.get("validationReport") else output_json.with_name("validation.json")
-    result = validate(data, output_json.parent, audio_dir)
-    report = {"summary": result.summary, "errors": result.errors, "warnings": result.warnings}
+    production = release_mode(manifest) == PRODUCTION_RELEASE_MODE
+    result = validate(data, output_json.parent, audio_dir, editorial_rules=production)
+    errors = list(result.errors)
+    warnings = list(result.warnings)
+    source_errors, source_warnings, source_summary = validate_source_audit(
+        manifest, root, data.get("sections", [])
+    )
+    errors.extend(source_errors)
+    warnings.extend(source_warnings)
+    if production and not manifest.get("illustrationPlan"):
+        errors.append("Production release requires an illustrationPlan.")
+    summary = {
+        **result.summary,
+        **source_summary,
+        "releaseMode": release_mode(manifest),
+        "errors": len(errors),
+        "warnings": len(warnings),
+    }
+    report = {"summary": summary, "errors": errors, "warnings": warnings}
     write_json(report_path, report)
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    return 1 if result.errors else 0
+    return 1 if errors else 0
 
 
 def command_illustration_audit(args: argparse.Namespace) -> int:
@@ -692,6 +900,8 @@ def command_illustration_audit(args: argparse.Namespace) -> int:
     output_json = (root / manifest["outputJson"]).resolve()
     paragraphs = [paragraph for _, paragraph in iter_paragraphs(data)]
     errors, warnings, summary = validate_illustrations(data, paragraphs, output_json.parent)
+    if release_mode(manifest) == PRODUCTION_RELEASE_MODE and not manifest.get("illustrationPlan"):
+        errors.append("Production release requires an illustrationPlan.")
     report = {
         "summary": {**summary, "errors": len(errors), "warnings": len(warnings)},
         "errors": errors,
@@ -702,6 +912,26 @@ def command_illustration_audit(args: argparse.Namespace) -> int:
         report_path = Path(report_value)
         if not report_path.is_absolute():
             report_path = (root / report_path).resolve()
+        write_json(report_path, report)
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+    return 1 if errors else 0
+
+
+def command_source_audit(args: argparse.Namespace) -> int:
+    manifest_path = Path(args.manifest).resolve()
+    manifest = read_json(manifest_path)
+    data = build_from_manifest(manifest_path)
+    errors, warnings, summary = validate_source_audit(
+        manifest, manifest_path.parent, data.get("sections", [])
+    )
+    report = {
+        "summary": {**summary, "errors": len(errors), "warnings": len(warnings)},
+        "errors": errors,
+        "warnings": warnings,
+    }
+    report_value = args.report or manifest.get("sourceAuditReport")
+    if report_value:
+        report_path = resolve_manifest_path(manifest_path.parent, str(report_value))
         write_json(report_path, report)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 1 if errors else 0
@@ -769,6 +999,14 @@ def build_parser() -> argparse.ArgumentParser:
     illustration_audit.add_argument("--manifest", required=True)
     illustration_audit.add_argument("--report")
     illustration_audit.set_defaults(func=command_illustration_audit)
+
+    source_audit = sub.add_parser(
+        "audit-source",
+        help="verify OCR coverage, source accounting, and retention before production release",
+    )
+    source_audit.add_argument("--manifest", required=True)
+    source_audit.add_argument("--report")
+    source_audit.set_defaults(func=command_source_audit)
 
     check = sub.add_parser("validate", help="validate a built chapter")
     check.add_argument("--input", required=True)

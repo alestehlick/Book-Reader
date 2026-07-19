@@ -141,22 +141,24 @@
     ],
     "timeline": [
       {
-        "id": "event-38b305b759",
+        "id": "event-981cc44422",
         "type": "point",
         "label": "Kojiki completed",
-        "date": 712,
         "display_date": "AD 712",
         "certainty": "secure",
-        "caption": "A court compilation of myth, genealogy, and remembered tradition."
+        "caption": "A court compilation of myth, genealogy, and remembered tradition.",
+        "start": 712,
+        "end": 712
       },
       {
-        "id": "event-8307fceda8",
+        "id": "event-d1809f0d88",
         "type": "point",
         "label": "Nihon Shoki completed",
-        "date": 720,
         "display_date": "AD 720",
         "certainty": "secure",
-        "caption": "The court's chronicle framed the prehistoric past from an eighth-century political world."
+        "caption": "The court's chronicle framed the prehistoric past from an eighth-century political world.",
+        "start": 720,
+        "end": 720
       },
       {
         "id": "event-223ce36a66",
@@ -169,22 +171,24 @@
         "caption": "Secure evidence appears in the main islands and Ryukyu chain during this broad interval."
       },
       {
-        "id": "event-7f036503ff",
+        "id": "event-0674f578e3",
         "type": "point",
         "label": "Paleolithic hoax exposed",
-        "date": 2000,
         "display_date": "AD 2000",
         "certainty": "secure",
-        "caption": "Exposure of planted artifacts forced reassessment of claims for much earlier occupation."
+        "caption": "Exposure of planted artifacts forced reassessment of claims for much earlier occupation.",
+        "start": 2000,
+        "end": 2000
       },
       {
-        "id": "event-5fbd9d8306",
+        "id": "event-d3daf4ab91",
         "type": "point",
         "label": "Aira eruption",
-        "date": -28000,
         "display_date": "ca. 30,000 years ago",
         "certainty": "approximate",
-        "caption": "The eruption left a widespread ash marker and transformed southern environments."
+        "caption": "The eruption left a widespread ash marker and transformed southern environments.",
+        "start": -28000,
+        "end": -28000
       },
       {
         "id": "event-e064649c20",
@@ -197,13 +201,14 @@
         "caption": "Regional stone industries and mobile lifeways developed across the archipelago."
       },
       {
-        "id": "event-0471099822",
+        "id": "event-074c1cbc1c",
         "type": "point",
         "label": "Odai Yamamoto I pottery",
-        "date": -14500,
         "display_date": "ca. 16,500 years ago",
-        "certainty": "high",
-        "caption": "Calibrated residue dates place pottery production in the closing Pleistocene."
+        "certainty": "approximate",
+        "caption": "Calibrated residue dates place pottery production in the closing Pleistocene.",
+        "start": -14500,
+        "end": -14500
       },
       {
         "id": "event-cf42a83706",
@@ -246,23 +251,23 @@
         "caption": "Many regions show denser settlement and intensified woodland and aquatic resource use."
       },
       {
-        "id": "event-5de572a2ab",
+        "id": "event-b2a35c32bc",
         "type": "span",
         "label": "Long-distance Jomon exchange",
         "start": -10000,
         "end": -900,
         "display_date": "throughout the Jomon sequence",
-        "certainty": "broad",
+        "certainty": "approximate",
         "caption": "Obsidian, jade, asphalt, amber, and shell moved through overlapping regional networks."
       },
       {
-        "id": "event-f0bebb98ae",
+        "id": "event-7b56ea546a",
         "type": "span",
         "label": "Dogu traditions",
         "start": -10000,
         "end": -300,
         "display_date": "ca. 10,000–300 BC, regionally",
-        "certainty": "broad",
+        "certainty": "approximate",
         "caption": "Clay figurines varied substantially across time and place."
       },
       {
@@ -276,13 +281,14 @@
         "caption": "Settlement contraction and new ritual and exchange patterns unfolded unevenly."
       },
       {
-        "id": "event-23726f95cb",
+        "id": "event-0b2cb4314e",
         "type": "point",
         "label": "Wet-rice farming in northern Kyushu",
-        "date": -950,
         "display_date": "by the tenth century BC",
-        "certainty": "high",
-        "caption": "AMS dating places early paddy agriculture centuries earlier than the older conventional chronology."
+        "certainty": "approximate",
+        "caption": "AMS dating places early paddy agriculture centuries earlier than the older conventional chronology.",
+        "start": -950,
+        "end": -950
       },
       {
         "id": "event-e8c2c9f9ee",
@@ -325,60 +331,64 @@
         "caption": "Weapon-shaped bronzes, dotaku bells, and mirrors marked changing ritual and political networks."
       },
       {
-        "id": "event-16fe18ceb9",
+        "id": "event-8a5ec331b6",
         "type": "span",
         "label": "Yayoi migration and admixture",
         "start": -950,
         "end": 300,
         "display_date": "from the first millennium BC",
-        "certainty": "broad",
+        "certainty": "approximate",
         "caption": "Population movement and mixture continued at different rates and extended into the Kofun age."
       },
       {
-        "id": "event-e05c85c337",
+        "id": "event-c46ec45ddf",
         "type": "point",
         "label": "Na embassy to Later Han",
-        "date": 57,
         "display_date": "AD 57",
-        "certainty": "secure text",
-        "caption": "The Later Han history records an embassy and an imperial seal."
+        "certainty": "secure",
+        "caption": "The Later Han history records an embassy and an imperial seal.",
+        "start": 57,
+        "end": 57
       },
       {
-        "id": "event-b2ee31c2c7",
+        "id": "event-007b5c0ea5",
         "type": "point",
         "label": "Wa embassy",
-        "date": 107,
         "display_date": "AD 107",
-        "certainty": "secure text",
-        "caption": "A second recorded embassy reached the Later Han court."
+        "certainty": "secure",
+        "caption": "A second recorded embassy reached the Later Han court.",
+        "start": 107,
+        "end": 107
       },
       {
-        "id": "event-45f355c1ab",
+        "id": "event-49c2a9678d",
         "type": "span",
         "label": "Wei account of Wa",
         "start": 220,
         "end": 265,
         "display_date": "third century AD",
-        "certainty": "secure text",
+        "certainty": "secure",
         "caption": "The dynastic history describes many Wa polities and the federation of Yamatai."
       },
       {
-        "id": "event-7c18bc3cff",
+        "id": "event-855fc98b77",
         "type": "point",
         "label": "Himiko's embassy to Wei",
-        "date": 238,
         "display_date": "AD 238",
-        "certainty": "secure text",
-        "caption": "Yamatai entered a formal diplomatic relationship with the Wei court."
+        "certainty": "secure",
+        "caption": "Yamatai entered a formal diplomatic relationship with the Wei court.",
+        "start": 238,
+        "end": 238
       },
       {
-        "id": "event-293e89192f",
+        "id": "event-f3e1071557",
         "type": "point",
         "label": "Death of Himiko",
-        "date": 248,
         "display_date": "ca. AD 247–248",
         "certainty": "approximate",
-        "caption": "The account reports burial, disorder, and a later female succession."
+        "caption": "The account reports burial, disorder, and a later female succession.",
+        "start": 248,
+        "end": 248
       },
       {
         "id": "event-510a3bdcb6",
@@ -407,8 +417,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-38b305b759",
-            "event-8307fceda8"
+            "event-981cc44422",
+            "event-d1809f0d88"
           ],
           "genealogy": [
             {
@@ -430,8 +440,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-38b305b759",
-            "event-8307fceda8"
+            "event-981cc44422",
+            "event-d1809f0d88"
           ],
           "genealogy": [
             {
@@ -453,8 +463,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-38b305b759",
-            "event-8307fceda8"
+            "event-981cc44422",
+            "event-d1809f0d88"
           ],
           "genealogy": [
             {
@@ -476,8 +486,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-38b305b759",
-            "event-8307fceda8"
+            "event-981cc44422",
+            "event-d1809f0d88"
           ],
           "genealogy": [
             {
@@ -507,7 +517,7 @@
           ],
           "timelineRefs": [
             "event-223ce36a66",
-            "event-7f036503ff"
+            "event-0674f578e3"
           ]
         },
         {
@@ -519,7 +529,7 @@
           ],
           "timelineRefs": [
             "event-223ce36a66",
-            "event-7f036503ff"
+            "event-0674f578e3"
           ]
         },
         {
@@ -531,7 +541,7 @@
           ],
           "timelineRefs": [
             "event-223ce36a66",
-            "event-7f036503ff"
+            "event-0674f578e3"
           ]
         },
         {
@@ -543,7 +553,7 @@
           ],
           "timelineRefs": [
             "event-223ce36a66",
-            "event-7f036503ff"
+            "event-0674f578e3"
           ]
         }
       ]
@@ -561,7 +571,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5fbd9d8306",
+            "event-d3daf4ab91",
             "event-e064649c20"
           ]
         },
@@ -573,7 +583,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5fbd9d8306",
+            "event-d3daf4ab91",
             "event-e064649c20"
           ]
         },
@@ -585,7 +595,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5fbd9d8306",
+            "event-d3daf4ab91",
             "event-e064649c20"
           ]
         },
@@ -597,7 +607,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5fbd9d8306",
+            "event-d3daf4ab91",
             "event-e064649c20"
           ]
         }
@@ -616,7 +626,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-0471099822",
+            "event-074c1cbc1c",
             "event-cf42a83706"
           ]
         },
@@ -628,7 +638,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-0471099822",
+            "event-074c1cbc1c",
             "event-cf42a83706"
           ]
         },
@@ -640,7 +650,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-0471099822",
+            "event-074c1cbc1c",
             "event-cf42a83706"
           ]
         },
@@ -652,7 +662,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-0471099822",
+            "event-074c1cbc1c",
             "event-cf42a83706"
           ]
         }
@@ -824,7 +834,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5de572a2ab"
+            "event-b2a35c32bc"
           ]
         },
         {
@@ -835,7 +845,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5de572a2ab"
+            "event-b2a35c32bc"
           ]
         },
         {
@@ -846,7 +856,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5de572a2ab"
+            "event-b2a35c32bc"
           ]
         },
         {
@@ -857,7 +867,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-5de572a2ab"
+            "event-b2a35c32bc"
           ]
         }
       ]
@@ -875,7 +885,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-f0bebb98ae"
+            "event-7b56ea546a"
           ]
         },
         {
@@ -886,7 +896,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-f0bebb98ae"
+            "event-7b56ea546a"
           ]
         },
         {
@@ -897,7 +907,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-f0bebb98ae"
+            "event-7b56ea546a"
           ]
         },
         {
@@ -908,7 +918,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-f0bebb98ae"
+            "event-7b56ea546a"
           ]
         }
       ]
@@ -977,7 +987,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-23726f95cb",
+            "event-0b2cb4314e",
             "event-e8c2c9f9ee"
           ]
         },
@@ -989,7 +999,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-23726f95cb",
+            "event-0b2cb4314e",
             "event-e8c2c9f9ee"
           ]
         },
@@ -1001,7 +1011,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-23726f95cb",
+            "event-0b2cb4314e",
             "event-e8c2c9f9ee"
           ]
         },
@@ -1013,7 +1023,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-23726f95cb",
+            "event-0b2cb4314e",
             "event-e8c2c9f9ee"
           ]
         }
@@ -1138,7 +1148,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-16fe18ceb9"
+            "event-8a5ec331b6"
           ]
         },
         {
@@ -1149,7 +1159,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-16fe18ceb9"
+            "event-8a5ec331b6"
           ]
         },
         {
@@ -1160,7 +1170,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-16fe18ceb9"
+            "event-8a5ec331b6"
           ]
         },
         {
@@ -1171,7 +1181,7 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-16fe18ceb9"
+            "event-8a5ec331b6"
           ]
         }
       ]
@@ -1189,9 +1199,9 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-e05c85c337",
-            "event-b2ee31c2c7",
-            "event-45f355c1ab"
+            "event-c46ec45ddf",
+            "event-007b5c0ea5",
+            "event-49c2a9678d"
           ]
         },
         {
@@ -1202,9 +1212,9 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-e05c85c337",
-            "event-b2ee31c2c7",
-            "event-45f355c1ab"
+            "event-c46ec45ddf",
+            "event-007b5c0ea5",
+            "event-49c2a9678d"
           ]
         },
         {
@@ -1215,9 +1225,9 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-e05c85c337",
-            "event-b2ee31c2c7",
-            "event-45f355c1ab"
+            "event-c46ec45ddf",
+            "event-007b5c0ea5",
+            "event-49c2a9678d"
           ]
         },
         {
@@ -1228,9 +1238,9 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-e05c85c337",
-            "event-b2ee31c2c7",
-            "event-45f355c1ab"
+            "event-c46ec45ddf",
+            "event-007b5c0ea5",
+            "event-49c2a9678d"
           ]
         }
       ]
@@ -1248,8 +1258,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-7c18bc3cff",
-            "event-293e89192f",
+            "event-855fc98b77",
+            "event-f3e1071557",
             "event-510a3bdcb6"
           ],
           "genealogy": [
@@ -1276,8 +1286,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-7c18bc3cff",
-            "event-293e89192f",
+            "event-855fc98b77",
+            "event-f3e1071557",
             "event-510a3bdcb6"
           ],
           "genealogy": [
@@ -1304,8 +1314,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-7c18bc3cff",
-            "event-293e89192f",
+            "event-855fc98b77",
+            "event-f3e1071557",
             "event-510a3bdcb6"
           ],
           "genealogy": [
@@ -1332,8 +1342,8 @@
             "map-1b"
           ],
           "timelineRefs": [
-            "event-7c18bc3cff",
-            "event-293e89192f",
+            "event-855fc98b77",
+            "event-f3e1071557",
             "event-510a3bdcb6"
           ],
           "genealogy": [

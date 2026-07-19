@@ -20,7 +20,7 @@
   },
   "01.04": {
     "timeline": [
-      {"type": "point", "label": "Odai Yamamoto I pottery", "date": -14500, "display_date": "ca. 16,500 years ago", "certainty": "high", "caption": "Calibrated residue dates place pottery production in the closing Pleistocene."},
+      {"type": "point", "label": "Odai Yamamoto I pottery", "date": -14500, "display_date": "ca. 16,500 years ago", "certainty": "approximate", "caption": "Calibrated residue dates place pottery production in the closing Pleistocene."},
       {"type": "span", "label": "Incipient Jomon", "start": -14500, "end": -10000, "display_date": "ca. 14,500–10,000 BC", "certainty": "approximate", "caption": "Pottery and new subsistence practices spread unevenly before the Holocene."}
     ]
   },
@@ -41,12 +41,12 @@
   },
   "01.08": {
     "timeline": [
-      {"type": "span", "label": "Long-distance Jomon exchange", "start": -10000, "end": -900, "display_date": "throughout the Jomon sequence", "certainty": "broad", "caption": "Obsidian, jade, asphalt, amber, and shell moved through overlapping regional networks."}
+      {"type": "span", "label": "Long-distance Jomon exchange", "start": -10000, "end": -900, "display_date": "throughout the Jomon sequence", "certainty": "approximate", "caption": "Obsidian, jade, asphalt, amber, and shell moved through overlapping regional networks."}
     ]
   },
   "01.09": {
     "timeline": [
-      {"type": "span", "label": "Dogu traditions", "start": -10000, "end": -300, "display_date": "ca. 10,000–300 BC, regionally", "certainty": "broad", "caption": "Clay figurines varied substantially across time and place."}
+      {"type": "span", "label": "Dogu traditions", "start": -10000, "end": -300, "display_date": "ca. 10,000–300 BC, regionally", "certainty": "approximate", "caption": "Clay figurines varied substantially across time and place."}
     ]
   },
   "01.10": {
@@ -56,7 +56,7 @@
   },
   "01.11": {
     "timeline": [
-      {"type": "point", "label": "Wet-rice farming in northern Kyushu", "date": -950, "display_date": "by the tenth century BC", "certainty": "high", "caption": "AMS dating places early paddy agriculture centuries earlier than the older conventional chronology."},
+      {"type": "point", "label": "Wet-rice farming in northern Kyushu", "date": -950, "display_date": "by the tenth century BC", "certainty": "approximate", "caption": "AMS dating places early paddy agriculture centuries earlier than the older conventional chronology."},
       {"type": "span", "label": "Agricultural dispersal", "start": -950, "end": -200, "display_date": "ca. tenth–second centuries BC", "certainty": "approximate", "caption": "Farming spread east at different rates while mixed economies continued."}
     ]
   },
@@ -73,19 +73,19 @@
   },
   "01.14": {
     "timeline": [
-      {"type": "span", "label": "Yayoi migration and admixture", "start": -950, "end": 300, "display_date": "from the first millennium BC", "certainty": "broad", "caption": "Population movement and mixture continued at different rates and extended into the Kofun age."}
+      {"type": "span", "label": "Yayoi migration and admixture", "start": -950, "end": 300, "display_date": "from the first millennium BC", "certainty": "approximate", "caption": "Population movement and mixture continued at different rates and extended into the Kofun age."}
     ]
   },
   "01.15": {
     "timeline": [
-      {"type": "point", "label": "Na embassy to Later Han", "date": 57, "display_date": "AD 57", "certainty": "secure text", "caption": "The Later Han history records an embassy and an imperial seal."},
-      {"type": "point", "label": "Wa embassy", "date": 107, "display_date": "AD 107", "certainty": "secure text", "caption": "A second recorded embassy reached the Later Han court."},
-      {"type": "span", "label": "Wei account of Wa", "start": 220, "end": 265, "display_date": "third century AD", "certainty": "secure text", "caption": "The dynastic history describes many Wa polities and the federation of Yamatai."}
+      {"type": "point", "label": "Na embassy to Later Han", "date": 57, "display_date": "AD 57", "certainty": "secure", "caption": "The Later Han history records an embassy and an imperial seal."},
+      {"type": "point", "label": "Wa embassy", "date": 107, "display_date": "AD 107", "certainty": "secure", "caption": "A second recorded embassy reached the Later Han court."},
+      {"type": "span", "label": "Wei account of Wa", "start": 220, "end": 265, "display_date": "third century AD", "certainty": "secure", "caption": "The dynastic history describes many Wa polities and the federation of Yamatai."}
     ]
   },
   "01.16": {
     "timeline": [
-      {"type": "point", "label": "Himiko's embassy to Wei", "date": 238, "display_date": "AD 238", "certainty": "secure text", "caption": "Yamatai entered a formal diplomatic relationship with the Wei court."},
+      {"type": "point", "label": "Himiko's embassy to Wei", "date": 238, "display_date": "AD 238", "certainty": "secure", "caption": "Yamatai entered a formal diplomatic relationship with the Wei court."},
       {"type": "point", "label": "Death of Himiko", "date": 248, "display_date": "ca. AD 247–248", "certainty": "approximate", "caption": "The account reports burial, disorder, and a later female succession."},
       {"type": "span", "label": "Earliest keyhole-mound horizon", "start": 250, "end": 300, "display_date": "later third century AD", "certainty": "approximate", "caption": "Large standardized mounds signal the political transformation developed in the next chapter."}
     ],
