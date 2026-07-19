@@ -1,0 +1,3482 @@
+{
+  "02.01-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      },
+      {
+        "type": "span",
+        "label": "Yamato or Kofun political formation",
+        "start": 250,
+        "end": 600,
+        "display_date": "ca. AD 250–600",
+        "certainty": "approximate",
+        "caption": "Monumental tomb networks and court alliances developed before codified government."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Yamato or Kofun political formation",
+        "start": 250,
+        "end": 600,
+        "display_date": "ca. AD 250–600",
+        "certainty": "approximate",
+        "caption": "Monumental tomb networks and court alliances developed before codified government."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.01-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Later Han ends",
+        "start": 220,
+        "end": 220,
+        "display_date": "AD 220",
+        "certainty": "secure",
+        "caption": "The end of Han opened a long age of competing Chinese courts."
+      },
+      {
+        "type": "span",
+        "label": "Western Jin",
+        "start": 265,
+        "end": 317,
+        "display_date": "AD 265–317",
+        "certainty": "secure",
+        "caption": "This dynasty briefly reunified China before collapsing during early Yamato growth."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Western Jin",
+        "start": 265,
+        "end": 317,
+        "display_date": "AD 265–317",
+        "certainty": "secure",
+        "caption": "This dynasty briefly reunified China before collapsing during early Yamato growth."
+      },
+      {
+        "type": "point",
+        "label": "Goguryeo destroys Lelang",
+        "start": 313,
+        "end": 313,
+        "display_date": "AD 313",
+        "certainty": "secure",
+        "caption": "The fall of the commandery transformed the politics of the Korean Peninsula."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Goguryeo destroys Lelang",
+        "start": 313,
+        "end": 313,
+        "display_date": "AD 313",
+        "certainty": "secure",
+        "caption": "The fall of the commandery transformed the politics of the Korean Peninsula."
+      },
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "point",
+        "label": "Later Han ends",
+        "start": 220,
+        "end": 220,
+        "display_date": "AD 220",
+        "certainty": "secure",
+        "caption": "The end of Han opened a long age of competing Chinese courts."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Later Han ends",
+        "start": 220,
+        "end": 220,
+        "display_date": "AD 220",
+        "certainty": "secure",
+        "caption": "The end of Han opened a long age of competing Chinese courts."
+      },
+      {
+        "type": "span",
+        "label": "Western Jin",
+        "start": 265,
+        "end": 317,
+        "display_date": "AD 265–317",
+        "certainty": "secure",
+        "caption": "This dynasty briefly reunified China before collapsing during early Yamato growth."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.02-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Western Jin",
+        "start": 265,
+        "end": 317,
+        "display_date": "AD 265–317",
+        "certainty": "secure",
+        "caption": "This dynasty briefly reunified China before collapsing during early Yamato growth."
+      },
+      {
+        "type": "point",
+        "label": "Goguryeo destroys Lelang",
+        "start": 313,
+        "end": 313,
+        "display_date": "AD 313",
+        "certainty": "secure",
+        "caption": "The fall of the commandery transformed the politics of the Korean Peninsula."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Late Yayoi elite mounds",
+        "start": 100,
+        "end": 250,
+        "display_date": "ca. AD 100–250",
+        "certainty": "approximate",
+        "caption": "Regional knoll and ditched burials preceded the mature royal kofun."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Early keyhole-kofun horizon",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Large standardized keyhole mounds distinguish the first royal cluster."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early keyhole-kofun horizon",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Large standardized keyhole mounds distinguish the first royal cluster."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Late Yayoi elite mounds",
+        "start": 100,
+        "end": 250,
+        "display_date": "ca. AD 100–250",
+        "certainty": "approximate",
+        "caption": "Regional knoll and ditched burials preceded the mature royal kofun."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Late Yayoi elite mounds",
+        "start": 100,
+        "end": 250,
+        "display_date": "ca. AD 100–250",
+        "certainty": "approximate",
+        "caption": "Regional knoll and ditched burials preceded the mature royal kofun."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Early keyhole-kofun horizon",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Large standardized keyhole mounds distinguish the first royal cluster."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early keyhole-kofun horizon",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Large standardized keyhole mounds distinguish the first royal cluster."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.03-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Late Yayoi elite mounds",
+        "start": 100,
+        "end": 250,
+        "display_date": "ca. AD 100–250",
+        "certainty": "approximate",
+        "caption": "Regional knoll and ditched burials preceded the mature royal kofun."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.04-p009": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.05-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Court chronicles compiled",
+        "start": 712,
+        "end": 720,
+        "display_date": "AD 712–720",
+        "certainty": "secure",
+        "caption": "The Kojiki and Nihon Shoki reshape much earlier traditions from an eighth-century court."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Court chronicles compiled",
+        "start": 712,
+        "end": 720,
+        "display_date": "AD 712–720",
+        "certainty": "secure",
+        "caption": "The Kojiki and Nihon Shoki reshape much earlier traditions from an eighth-century court."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Court chronicles compiled",
+        "start": 712,
+        "end": 720,
+        "display_date": "AD 712–720",
+        "certainty": "secure",
+        "caption": "The Kojiki and Nihon Shoki reshape much earlier traditions from an eighth-century court."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Court chronicles compiled",
+        "start": 712,
+        "end": 720,
+        "display_date": "AD 712–720",
+        "certainty": "secure",
+        "caption": "The Kojiki and Nihon Shoki reshape much earlier traditions from an eighth-century court."
+      },
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Early Yamato emergence",
+        "start": 250,
+        "end": 300,
+        "display_date": "later third century AD",
+        "certainty": "approximate",
+        "caption": "Large standardized tombs mark a new center in southeastern Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.05-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-early-royal-memory",
+        "caption": "A later court genealogy used here as remembered political theology, not contemporary proof of each reign.",
+        "active": [
+          "sujin",
+          "suinin",
+          "keiko"
+        ]
+      }
+    ]
+  },
+  "02.06-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.06-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "span",
+        "label": "Shiki royal mound sequence",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Successive great tombs concentrated at the southeastern edge of the Nara basin."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p002": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "point",
+        "label": "Sword inscription recognized",
+        "start": 1873,
+        "end": 1873,
+        "display_date": "AD 1873",
+        "certainty": "secure",
+        "caption": "An Isonokami priest identified gold-inlaid characters beneath corrosion."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Sword inscription recognized",
+        "start": 1873,
+        "end": 1873,
+        "display_date": "AD 1873",
+        "certainty": "secure",
+        "caption": "An Isonokami priest identified gold-inlaid characters beneath corrosion."
+      },
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "point",
+        "label": "Sword inscription recognized",
+        "start": 1873,
+        "end": 1873,
+        "display_date": "AD 1873",
+        "certainty": "secure",
+        "caption": "An Isonokami priest identified gold-inlaid characters beneath corrosion."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Sword inscription recognized",
+        "start": 1873,
+        "end": 1873,
+        "display_date": "AD 1873",
+        "certainty": "secure",
+        "caption": "An Isonokami priest identified gold-inlaid characters beneath corrosion."
+      },
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.07-p009": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "point",
+        "label": "Baekje attacks Goguryeo's capital",
+        "start": 371,
+        "end": 371,
+        "display_date": "AD 371",
+        "certainty": "secure",
+        "caption": "Baekje forces killed the Goguryeo king during intense fourth-century rivalry."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "span",
+        "label": "Okinoshima ritual deposits",
+        "start": 350,
+        "end": 900,
+        "display_date": "fourth–ninth centuries AD",
+        "certainty": "approximate",
+        "caption": "Offerings accompanied changing maritime exchange and safety rituals."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Okinoshima ritual deposits",
+        "start": 350,
+        "end": 900,
+        "display_date": "fourth–ninth centuries AD",
+        "certainty": "approximate",
+        "caption": "Offerings accompanied changing maritime exchange and safety rituals."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Seven-Branched Sword date",
+        "start": 369,
+        "end": 369,
+        "display_date": "commonly read as AD 369",
+        "certainty": "disputed",
+        "caption": "The damaged inscription is commonly read as a Baekje-made gift to a Wa ruler."
+      },
+      {
+        "type": "span",
+        "label": "Okinoshima ritual deposits",
+        "start": 350,
+        "end": 900,
+        "display_date": "fourth–ninth centuries AD",
+        "certainty": "approximate",
+        "caption": "Offerings accompanied changing maritime exchange and safety rituals."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.08-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Okinoshima ritual deposits",
+        "start": 350,
+        "end": 900,
+        "display_date": "fourth–ninth centuries AD",
+        "certainty": "approximate",
+        "caption": "Offerings accompanied changing maritime exchange and safety rituals."
+      },
+      {
+        "type": "point",
+        "label": "Gwanggaeto Stele erected",
+        "start": 414,
+        "end": 414,
+        "display_date": "AD 414",
+        "certainty": "secure",
+        "caption": "The memorial records warfare involving Wa but presents Goguryeo's triumphal perspective."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.09-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.09-p009": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Saki royal mound sequence",
+        "start": 350,
+        "end": 400,
+        "display_date": "ca. AD 350–400",
+        "certainty": "approximate",
+        "caption": "The principal burial focus shifted north within the Nara basin."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-jingu-ojin-line",
+        "caption": "The chronicle line makes Jingū and maritime divine aid the bridge to Ōjin's branch.",
+        "active": [
+          "jingu",
+          "ojin",
+          "nintoku"
+        ]
+      }
+    ]
+  },
+  "02.10-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p003": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.10-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p002": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      },
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      },
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      },
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.11-p008": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Sixth-century reorganization",
+        "start": 500,
+        "end": 593,
+        "display_date": "sixth century AD",
+        "certainty": "approximate",
+        "caption": "Military reverses and regional conflict accelerated estate, record, and office reforms."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p001": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      },
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      },
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p005": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      },
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      },
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      },
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p009": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Kawachi–Izumi monumental phase",
+        "start": 400,
+        "end": 500,
+        "display_date": "fifth century AD",
+        "certainty": "approximate",
+        "caption": "Mozu and Furuichi became the main royal tomb landscapes."
+      },
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.12-p010": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Growth of court occupational groups",
+        "start": 400,
+        "end": 600,
+        "display_date": "fifth–sixth centuries AD",
+        "certainty": "approximate",
+        "caption": "Hereditary service communities supplied military, craft, ritual, and administrative skills."
+      },
+      {
+        "type": "point",
+        "label": "Inariyama sword inscription",
+        "start": 471,
+        "end": 471,
+        "display_date": "usually dated AD 471",
+        "certainty": "disputed",
+        "caption": "The inscription links an eastern sword-bearing leader to a great king."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "First recorded Southern Song mission",
+        "start": 421,
+        "end": 421,
+        "display_date": "AD 421",
+        "certainty": "secure",
+        "caption": "The mission begins the recorded sequence associated with the Five Kings of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "point",
+        "label": "Goguryeo captures Hanseong",
+        "start": 475,
+        "end": 475,
+        "display_date": "AD 475",
+        "certainty": "secure",
+        "caption": "Baekje lost its capital and king but survived after moving south."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Goguryeo captures Hanseong",
+        "start": 475,
+        "end": 475,
+        "display_date": "AD 475",
+        "certainty": "secure",
+        "caption": "Baekje lost its capital and king but survived after moving south."
+      },
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      },
+      {
+        "type": "point",
+        "label": "First recorded Southern Song mission",
+        "start": 421,
+        "end": 421,
+        "display_date": "AD 421",
+        "certainty": "secure",
+        "caption": "The mission begins the recorded sequence associated with the Five Kings of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "First recorded Southern Song mission",
+        "start": 421,
+        "end": 421,
+        "display_date": "AD 421",
+        "certainty": "secure",
+        "caption": "The mission begins the recorded sequence associated with the Five Kings of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p006": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      },
+      {
+        "type": "point",
+        "label": "Goguryeo captures Hanseong",
+        "start": 475,
+        "end": 475,
+        "display_date": "AD 475",
+        "certainty": "secure",
+        "caption": "Baekje lost its capital and king but survived after moving south."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Goguryeo captures Hanseong",
+        "start": 475,
+        "end": 475,
+        "display_date": "AD 475",
+        "certainty": "secure",
+        "caption": "Baekje lost its capital and king but survived after moving south."
+      },
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Wa memorial to Southern Song",
+        "start": 478,
+        "end": 478,
+        "display_date": "AD 478",
+        "certainty": "secure",
+        "caption": "A Wa ruler requested high military authority in a rhetorically expansive memorial."
+      },
+      {
+        "type": "point",
+        "label": "First recorded Southern Song mission",
+        "start": 421,
+        "end": 421,
+        "display_date": "AD 421",
+        "certainty": "secure",
+        "caption": "The mission begins the recorded sequence associated with the Five Kings of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.13-p009": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "First recorded Southern Song mission",
+        "start": 421,
+        "end": 421,
+        "display_date": "AD 421",
+        "certainty": "secure",
+        "caption": "The mission begins the recorded sequence associated with the Five Kings of Wa."
+      },
+      {
+        "type": "span",
+        "label": "Missions of the Five Kings of Wa",
+        "start": 421,
+        "end": 478,
+        "display_date": "AD 421–478",
+        "certainty": "secure",
+        "caption": "Southern Song records ten missions from five rulers of Wa."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.14-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Keitai enthroned",
+        "start": 507,
+        "end": 507,
+        "display_date": "AD 507",
+        "certainty": "secure",
+        "caption": "A collateral ruler's accession exposed the importance of regional and maternal alliances."
+      },
+      {
+        "type": "point",
+        "label": "Baekje receives Gaya districts",
+        "start": 512,
+        "end": 512,
+        "display_date": "AD 512",
+        "certainty": "secure",
+        "caption": "The Yamato court accepted Baekje's request amid ministerial dispute."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p002": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje receives Gaya districts",
+        "start": 512,
+        "end": 512,
+        "display_date": "AD 512",
+        "certainty": "secure",
+        "caption": "The Yamato court accepted Baekje's request amid ministerial dispute."
+      },
+      {
+        "type": "point",
+        "label": "Iwai rebellion",
+        "start": 527,
+        "end": 527,
+        "display_date": "AD 527",
+        "certainty": "secure",
+        "caption": "The Tsukushi leader blocked mobilization for a peninsular expedition."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Iwai rebellion",
+        "start": 527,
+        "end": 527,
+        "display_date": "AD 527",
+        "certainty": "secure",
+        "caption": "The Tsukushi leader blocked mobilization for a peninsular expedition."
+      },
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      },
+      {
+        "type": "point",
+        "label": "Silla absorbs Daegaya",
+        "start": 562,
+        "end": 562,
+        "display_date": "AD 562",
+        "certainty": "secure",
+        "caption": "The fall of a major Gaya polity completed Silla's progressive expansion across the confederated field."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Silla absorbs Daegaya",
+        "start": 562,
+        "end": 562,
+        "display_date": "AD 562",
+        "certainty": "secure",
+        "caption": "The fall of a major Gaya polity completed Silla's progressive expansion across the confederated field."
+      },
+      {
+        "type": "point",
+        "label": "Keitai enthroned",
+        "start": 507,
+        "end": 507,
+        "display_date": "AD 507",
+        "certainty": "secure",
+        "caption": "A collateral ruler's accession exposed the importance of regional and maternal alliances."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Keitai enthroned",
+        "start": 507,
+        "end": 507,
+        "display_date": "AD 507",
+        "certainty": "secure",
+        "caption": "A collateral ruler's accession exposed the importance of regional and maternal alliances."
+      },
+      {
+        "type": "point",
+        "label": "Baekje receives Gaya districts",
+        "start": 512,
+        "end": 512,
+        "display_date": "AD 512",
+        "certainty": "secure",
+        "caption": "The Yamato court accepted Baekje's request amid ministerial dispute."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje receives Gaya districts",
+        "start": 512,
+        "end": 512,
+        "display_date": "AD 512",
+        "certainty": "secure",
+        "caption": "The Yamato court accepted Baekje's request amid ministerial dispute."
+      },
+      {
+        "type": "point",
+        "label": "Iwai rebellion",
+        "start": 527,
+        "end": 527,
+        "display_date": "AD 527",
+        "certainty": "secure",
+        "caption": "The Tsukushi leader blocked mobilization for a peninsular expedition."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.14-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Iwai rebellion",
+        "start": 527,
+        "end": 527,
+        "display_date": "AD 527",
+        "certainty": "secure",
+        "caption": "The Tsukushi leader blocked mobilization for a peninsular expedition."
+      },
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-keitai-succession",
+        "caption": "This simplified succession view highlights collateral descent and competing royal branches.",
+        "active": [
+          "keitai",
+          "ankan",
+          "senka",
+          "kimmei"
+        ]
+      }
+    ]
+  },
+  "02.15-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Kasuya estate transferred",
+        "start": 528,
+        "end": 528,
+        "display_date": "AD 528",
+        "certainty": "secure",
+        "caption": "Iwai's son surrendered a strategic estate after the rebellion."
+      },
+      {
+        "type": "span",
+        "label": "Strategic royal-estate expansion",
+        "start": 535,
+        "end": 556,
+        "display_date": "ca. AD 535–556",
+        "certainty": "approximate",
+        "caption": "The court established or reorganized estates in Kyushu, the Kantō, and Kibi."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Strategic royal-estate expansion",
+        "start": 535,
+        "end": 556,
+        "display_date": "ca. AD 535–556",
+        "certainty": "approximate",
+        "caption": "The court established or reorganized estates in Kyushu, the Kantō, and Kibi."
+      },
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      },
+      {
+        "type": "span",
+        "label": "Court household registration",
+        "start": 540,
+        "end": 569,
+        "display_date": "AD 540–569",
+        "certainty": "approximate",
+        "caption": "Chronicle notices show registration spreading from specialist groups to estate cultivators."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p004": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Court household registration",
+        "start": 540,
+        "end": 569,
+        "display_date": "AD 540–569",
+        "certainty": "approximate",
+        "caption": "Chronicle notices show registration spreading from specialist groups to estate cultivators."
+      },
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      },
+      {
+        "type": "point",
+        "label": "Kasuya estate transferred",
+        "start": 528,
+        "end": 528,
+        "display_date": "AD 528",
+        "certainty": "secure",
+        "caption": "Iwai's son surrendered a strategic estate after the rebellion."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Kasuya estate transferred",
+        "start": 528,
+        "end": 528,
+        "display_date": "AD 528",
+        "certainty": "secure",
+        "caption": "Iwai's son surrendered a strategic estate after the rebellion."
+      },
+      {
+        "type": "span",
+        "label": "Strategic royal-estate expansion",
+        "start": 535,
+        "end": 556,
+        "display_date": "ca. AD 535–556",
+        "certainty": "approximate",
+        "caption": "The court established or reorganized estates in Kyushu, the Kantō, and Kibi."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p007": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Strategic royal-estate expansion",
+        "start": 535,
+        "end": 556,
+        "display_date": "ca. AD 535–556",
+        "certainty": "approximate",
+        "caption": "The court established or reorganized estates in Kyushu, the Kantō, and Kibi."
+      },
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Kimmei's policy conference",
+        "start": 540,
+        "end": 540,
+        "display_date": "AD 540",
+        "certainty": "secure",
+        "caption": "Court leaders rejected an immediate new war and shifted influence from Ōtomo to Soga."
+      },
+      {
+        "type": "span",
+        "label": "Court household registration",
+        "start": 540,
+        "end": 569,
+        "display_date": "AD 540–569",
+        "certainty": "approximate",
+        "caption": "Chronicle notices show registration spreading from specialist groups to estate cultivators."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.15-p009": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Court household registration",
+        "start": 540,
+        "end": 569,
+        "display_date": "AD 540–569",
+        "certainty": "approximate",
+        "caption": "Chronicle notices show registration spreading from specialist groups to estate cultivators."
+      },
+      {
+        "type": "point",
+        "label": "Taihō Code promulgated",
+        "start": 701,
+        "end": 701,
+        "display_date": "AD 701",
+        "certainty": "secure",
+        "caption": "Later codified offices reorganized institutions with much older roots."
+      }
+    ],
+    "genealogy": []
+  },
+  "02.16-p001": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje moves its capital to Sabi",
+        "start": 538,
+        "end": 538,
+        "display_date": "AD 538",
+        "certainty": "secure",
+        "caption": "The new capital era intensified diplomatic and learned exchange with Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Traditional dates for Buddhist presentation",
+        "start": 538,
+        "end": 552,
+        "display_date": "AD 538 or 552",
+        "certainty": "disputed",
+        "caption": "Later sources preserve two dates for a formal Baekje presentation to the Yamato court."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p002": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Traditional dates for Buddhist presentation",
+        "start": 538,
+        "end": 552,
+        "display_date": "AD 538 or 552",
+        "certainty": "disputed",
+        "caption": "Later sources preserve two dates for a formal Baekje presentation to the Yamato court."
+      },
+      {
+        "type": "point",
+        "label": "Soga no Iname dies",
+        "start": 570,
+        "end": 570,
+        "display_date": "AD 570",
+        "certainty": "secure",
+        "caption": "Umako inherited the leading Soga office and its marriage strategy."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p003": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Soga no Iname dies",
+        "start": 570,
+        "end": 570,
+        "display_date": "AD 570",
+        "certainty": "secure",
+        "caption": "Umako inherited the leading Soga office and its marriage strategy."
+      },
+      {
+        "type": "point",
+        "label": "Bidatsu dies",
+        "start": 585,
+        "end": 585,
+        "display_date": "AD 585",
+        "certainty": "secure",
+        "caption": "His death reopened succession and factional conflict."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p004": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Bidatsu dies",
+        "start": 585,
+        "end": 585,
+        "display_date": "AD 585",
+        "certainty": "secure",
+        "caption": "His death reopened succession and factional conflict."
+      },
+      {
+        "type": "point",
+        "label": "Mononobe no Moriya defeated",
+        "start": 587,
+        "end": 587,
+        "display_date": "AD 587",
+        "certainty": "secure",
+        "caption": "Umako's coalition broke the leading military opposition to Soga policy."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p005": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Mononobe no Moriya defeated",
+        "start": 587,
+        "end": 587,
+        "display_date": "AD 587",
+        "certainty": "secure",
+        "caption": "Umako's coalition broke the leading military opposition to Soga policy."
+      },
+      {
+        "type": "point",
+        "label": "Sushun assassinated",
+        "start": 592,
+        "end": 592,
+        "display_date": "AD 592",
+        "certainty": "secure",
+        "caption": "Umako removed a king who had turned against him."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p006": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Sushun assassinated",
+        "start": 592,
+        "end": 592,
+        "display_date": "AD 592",
+        "certainty": "secure",
+        "caption": "Umako removed a king who had turned against him."
+      },
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p007": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Suiko enthroned",
+        "start": 593,
+        "end": 593,
+        "display_date": "AD 593",
+        "certainty": "secure",
+        "caption": "Her enthronement marks the transition from Yamato disruption to the Asuka reform court."
+      },
+      {
+        "type": "point",
+        "label": "Baekje moves its capital to Sabi",
+        "start": 538,
+        "end": 538,
+        "display_date": "AD 538",
+        "certainty": "secure",
+        "caption": "The new capital era intensified diplomatic and learned exchange with Yamato."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p008": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Baekje moves its capital to Sabi",
+        "start": 538,
+        "end": 538,
+        "display_date": "AD 538",
+        "certainty": "secure",
+        "caption": "The new capital era intensified diplomatic and learned exchange with Yamato."
+      },
+      {
+        "type": "span",
+        "label": "Traditional dates for Buddhist presentation",
+        "start": 538,
+        "end": 552,
+        "display_date": "AD 538 or 552",
+        "certainty": "disputed",
+        "caption": "Later sources preserve two dates for a formal Baekje presentation to the Yamato court."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p009": {
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Traditional dates for Buddhist presentation",
+        "start": 538,
+        "end": 552,
+        "display_date": "AD 538 or 552",
+        "certainty": "disputed",
+        "caption": "Later sources preserve two dates for a formal Baekje presentation to the Yamato court."
+      },
+      {
+        "type": "point",
+        "label": "Soga no Iname dies",
+        "start": 570,
+        "end": 570,
+        "display_date": "AD 570",
+        "certainty": "secure",
+        "caption": "Umako inherited the leading Soga office and its marriage strategy."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  },
+  "02.16-p010": {
+    "timeline": [
+      {
+        "type": "point",
+        "label": "Soga no Iname dies",
+        "start": 570,
+        "end": 570,
+        "display_date": "AD 570",
+        "certainty": "secure",
+        "caption": "Umako inherited the leading Soga office and its marriage strategy."
+      },
+      {
+        "type": "point",
+        "label": "Bidatsu dies",
+        "start": 585,
+        "end": 585,
+        "display_date": "AD 585",
+        "certainty": "secure",
+        "caption": "His death reopened succession and factional conflict."
+      }
+    ],
+    "genealogy": [
+      {
+        "id": "AJ2-soga-inlaw-network",
+        "caption": "Maternal and marriage links explain Soga leverage; the diagram does not imply uncontested succession.",
+        "active": [
+          "iname",
+          "kimmei",
+          "bidatsu",
+          "yomei",
+          "sushun",
+          "suiko",
+          "umako"
+        ]
+      }
+    ]
+  }
+}

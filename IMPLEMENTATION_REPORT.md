@@ -1,4 +1,4 @@
-# History Reader optimization and Chapter 1 delivery
+# History Reader optimization and Chapters 1–2 production delivery
 
 ## Delivered result
 
@@ -17,29 +17,21 @@ static WebP/PNG plates remain automatic fallbacks and retain the same Map key.
 
 ## Ancient Japan, Chapter 1
 
-### Editorial status correction
+Chapter 1 has been rebuilt as a source-audited production chapter from the
+verified OCR. Its sections and paragraphs follow the material rather than a
+fixed four-paragraph pattern.
 
-Chapter 1 is a functioning reader, audio, and map-atlas pilot, not a finished
-production benchmark. Its 25,517-word supplied OCR was reduced to 4,563 words
-and organized as sixteen sections of exactly four paragraphs. It has no
-illustration plan or approved illustrations, and its timeline is assigned by
-section rather than selected independently for each paragraph. It must be
-rebuilt from the verified OCR, source-audit ledger, paragraph-level timeline,
-and approved illustration plan before being described as a completed chapter.
-The manifest is therefore explicitly labelled `releaseMode: "pilot"`.
-
-- 16 sections, 64 synchronized paragraphs, and 4,563 words.
-- 42.47 minutes of low masculine narration at an unhurried 107 words per minute.
-- Voice profile: `bm_lewis`, generation speed 0.88, mono 24 kHz, 64 kbps MP3.
-- 64 of 64 audio filenames validated; 19.48 MiB total.
-- Sample loudness is approximately -20 LUFS with peaks near -1.5 dBTP.
-- 26 deduplicated timeline events and two relational/genealogical views.
+- 16 sections, 116 synchronized paragraphs, and 9,864 manuscript words from a
+  25,517-word primary OCR (38.66 percent retained, above the 35 percent gate).
+- 64 deduplicated timeline events selected for paragraph-level contrast.
+- 13 approved WebP illustrations with evidence, uncertainty, rights, and audit
+  records, plus 116 synchronized audio files.
 - Two Chapter 1 map presets linked to a 3.81 MiB, eleven-layer PMTiles archive
   and a 0.72 MiB relief pyramid of 489 WebP tiles; the original WebP/PNG plates
   remain fallbacks, and both presets are referenced by every paragraph.
 - JSON and JavaScript are mechanically generated from the same canonical data.
-- Technical validation: zero errors and zero warnings under the former
-  permissive pilot rules; this does not certify editorial completeness.
+- Production source, illustration, and release validation: zero errors and zero
+  warnings.
 
 The rewrite corrects several claims that have changed since the supplied survey
 was written. It treats the first secure occupation as roughly 38,000 years ago,
@@ -48,6 +40,28 @@ early paddy agriculture to about the tenth century BC, and describes population
 history through regional migration and admixture rather than bounded races.
 The supporting primary research is recorded in
 `source/ancient-japan/ch01-research-notes.md`.
+
+## Ancient Japan, Chapter 2
+
+Chapter 2 uses the corrected `ch2 - raw OCR.txt` as its primary textual source,
+with the 55-page PDF rendered and inspected as a visual control. The chapter is
+not abridged into uniform blocks: its sixteen sections contain six to ten
+paragraphs according to the material.
+
+- 16 sections, 134 synchronized paragraphs, and 9,798 manuscript words from a
+  24,196-word primary OCR (40.49 percent retained, above the 35 percent gate).
+- 39 deduplicated timeline events, with two varied adjacent or contrasting
+  events attached to each paragraph rather than one repeated section set.
+- 21 audited WebP illustrations; multi-person scenes pass a dedicated
+  face-diversity gate against twin-like faces, cloned extras, mirrored bodies,
+  and repeated templates.
+- Two Chapter 2 atlas presets, `2a` and `2b`, are referenced by every paragraph.
+  Clean 3000-pixel WebP plates provide automatic fallback without the printed
+  title/provenance footer.
+- 134 synchronized MP3 files are present; the reader remains compatible with a
+  user-supplied replacement audio batch using the same paragraph filenames.
+- Production source, illustration, and release validation: zero errors and zero
+  warnings.
 
 ## China in Antiquity migration
 
@@ -82,8 +96,9 @@ The supporting primary research is recorded in
 - JavaScript data loading no longer evaluates downloaded source with
   `new Function`; chapter JavaScript is loaded as a normal static script.
 - Versioned CSS and JavaScript URLs reduce stale GitHub Pages caching.
-- Browser tests passed for Ancient Japan at iPad mini and desktop dimensions and
-  for the migrated China book, with no console errors.
+- Browser tests passed for Ancient Japan at iPad mini dimensions, including
+  paragraph/audio coupling, manual Next navigation, illustration loading,
+  scalable-map initialization, immediate WebP fallback, and the map legend.
 
 ## Scalable Ancient Japan atlas
 
@@ -124,6 +139,10 @@ The supporting primary research is recorded in
   validator rejects incomplete evidence briefs, missing sources and exclusions,
   ambiguous rights, unapproved audits, bad references, excessive density,
   missing alt text, and missing web files.
+- Multi-person generation now assigns distinct facial geometry, age, build,
+  hairline or hairstyle, expression, gaze, and pose before rendering. The audit
+  rejects twin-like or cloned people rather than accepting superficial costume
+  variation.
 - `audit-illustrations` provides a dedicated pre-release gate, while `release`
   repeats the checks as part of complete chapter validation.
 - The iPad reader presents one clean primary image and a horizontally swipeable
@@ -146,8 +165,8 @@ The supporting primary research is recorded in
    reconstructions.
 5. Perform the independent historical, visual, and rights audit, optimize the
    approved web derivatives, and bind them to paragraph ids.
-6. Select the chapter's standing atlas presets and add section-level
-   timeline/genealogy metadata to one manifest.
+6. Select the chapter's standing atlas presets and add paragraph-level
+   timeline metadata plus chapter-level genealogy data to one manifest.
 7. If GIS content changed, run `build_web_atlas.py`; audit the resulting presets
    and zoom levels against the QGIS atlas specification.
 8. Build JSON and JavaScript together with the generic builder.

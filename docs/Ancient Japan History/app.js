@@ -1967,7 +1967,10 @@
 
   async function initializeInteractiveMap(wrapper, mapData, index) {
     let map = null;
+    let failed = false;
     const failToFallback = (error) => {
+      if (failed) return;
+      failed = true;
       console.warn("Interactive atlas fallback", error);
       if (map) {
         state.activeMapInstances.delete(map);
@@ -2046,7 +2049,12 @@
         canvas.setAttribute("aria-busy", "false");
       });
       map.on("error", (event) => {
-        console.warn("MapLibre atlas resource error", event.error || event);
+        const error = event.error || event;
+        console.warn("MapLibre atlas resource error", error);
+        const message = String(error?.message || error || "");
+        if (/pmtiles|content-length|byte serving|failed to fetch|networkerror/i.test(message)) {
+          failToFallback(error);
+        }
       });
     } catch (error) {
       failToFallback(error);
@@ -3748,6 +3756,15 @@
 
   audio.addEventListener("ended", async () => {
     updatePlayPauseButton();
+
+    // Some WebKit builds can deliver a queued `ended` event after manual
+    // navigation has already replaced the audio source. Only advance when the
+    // currently loaded file itself has genuinely reached its end.
+    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    const currentTime = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+    if (!audio.ended || duration <= 0 || currentTime < Math.max(0, duration - 0.25)) {
+      return;
+    }
 
     if (state.continuous && state.currentIndex < state.flatParagraphs.length - 1) {
       await goToNextParagraph(true);

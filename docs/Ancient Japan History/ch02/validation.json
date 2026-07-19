@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "schemaVersion": 2,
+    "sections": 16,
+    "paragraphs": 134,
+    "maps": 2,
+    "timelineEvents": 39,
+    "illustrations": 21,
+    "illustrationReferences": 21,
+    "audioFiles": 134,
+    "errors": 0,
+    "warnings": 0,
+    "releaseMode": "production",
+    "sourceOcr": "H:\\Ancient Japan History\\ch2\\ch2 - raw OCR.txt",
+    "sourceWords": 24196,
+    "manuscriptWords": 9798,
+    "retentionRatio": 0.4049,
+    "minimumRetentionRatio": 0.35
+  },
+  "errors": [],
+  "warnings": []
+}

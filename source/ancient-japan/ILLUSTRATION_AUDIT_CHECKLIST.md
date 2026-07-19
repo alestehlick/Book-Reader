@@ -18,6 +18,7 @@ No image may be marked `approved` until all three audit fields are approved.
 - It has documentary legibility, natural materials, restrained light, and an austere palette.
 - It contains no fantasy glow, anime conventions, generic exoticism, excessive monumentality, modern cosmetics, or decorative pseudo-history.
 - Anatomy, hands, faces, tools, joinery, perspective, inscriptions, repeated people, and background structures have been inspected closely.
+- Every multi-person scene has independently designed, readily distinguishable faces, ages, builds, hairlines or hairstyles, expressions, gazes, and poses; no twin-like faces, cloned extras, mirrored bodies, or repeated facial templates remain.
 - The primary subject remains legible after conversion to the web derivative.
 - The alt text describes what is visibly present; the caption states the historical status without pretending certainty.
 
