@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "chapterId": "ancient-japan-chapter-01",
+  "visualPagesVerified": true,
+  "visualVerification": {
+    "source": "H:/Ancient Japan History/ch1/ch1.pdf and the thirty paired-page WebP exports",
+    "method": "Full contact-sheet review plus direct inspection of the opening, Middle Jomon, Yayoi burial, and final summary spreads; OCR checked for headings, chronology, maps, quotations, and material claims."
+  },
+  "allSourceRangesAccountedFor": true,
+  "minimumRetainedWordRatio": 0.35,
+  "approvedBelowMinimum": false,
+  "belowMinimumRationale": "",
+  "coverage": [
+    {
+      "sourceRange": "PDF pp. 48-50; OCR opening through the pre-Jomon heading",
+      "outputSections": ["01.01"],
+      "substanceRetained": [
+        "The distinction between retrospective court chronicles, Chinese external testimony, and archaeology.",
+        "The caution against treating Jomon, Yayoi, or later Yamato as a ready-made national identity."
+      ],
+      "omittedAs": ["Bibliographic apparatus", "The source's dated racial ranking language"],
+      "supplementalSources": ["ch01-research-notes.md: modern treatment of evidence categories and population history."]
+    },
+    {
+      "sourceRange": "PDF pp. 50-53; OCR Late Paleolithic geography, fauna, loam, Iwajuku, and Kanto occupation",
+      "outputSections": ["01.02", "01.03"],
+      "substanceRetained": [
+        "Changing straits, continental connections, volcanic deposits, repeated Kanto occupation, stone procurement, and ecological change.",
+        "The source's insistence that early occupation claims require securely associated artifacts and dates."
+      ],
+      "omittedAs": ["Long species catalogues", "Full bibliography and obsolete site claims"],
+      "supplementalSources": ["ch01-research-notes.md: secure occupation after reassessment of the Early Paleolithic record."]
+    },
+    {
+      "sourceRange": "PDF pp. 53-58; OCR final Paleolithic, Mesolithic, cave sequences, bow and arrow, pottery, and microblades",
+      "outputSections": ["01.03", "01.04"],
+      "substanceRetained": [
+        "Environmental warming, changes in prey, composite and projectile technologies, early pottery, cave sequences, and northern Asian microblade connections.",
+        "The relationship between containers, food processing, and repeated use of places."
+      ],
+      "omittedAs": ["Individual uncalibrated measurements and footnotes"],
+      "supplementalSources": ["ch01-research-notes.md: Odai Yamamoto I chronology."]
+    },
+    {
+      "sourceRange": "PDF pp. 58-63; OCR Earliest Jomon, Natsushima, Hanawadai, regional pottery, site distribution, and Map 1.1",
+      "outputSections": ["01.04", "01.05"],
+      "substanceRetained": [
+        "Jomon as a regional chronological convention, coastal adaptation, shell middens, small communities, and regional ceramic variation.",
+        "The environmental and chronological diversity obscured by a single national sequence."
+      ],
+      "omittedAs": ["Exact outdated population totals", "Map labels reproduced in the web atlas instead"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 63-66; OCR Early Jomon warming, Minabori, Torihama, storage, wood, basketry, lacquer, and plants",
+      "outputSections": ["01.05", "01.06"],
+      "substanceRetained": [
+        "Sea-level change, Early Jomon villages, storage, house construction, Torihama's perishable materials, and the question of plant management."
+      ],
+      "omittedAs": ["Specialist botanical nomenclature where it does not change the argument"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 66-70; OCR Middle Jomon mountains, nuts and roots, pit dwellings, population concentration, pottery, and exchange",
+      "outputSections": ["01.06", "01.07", "01.08"],
+      "substanceRetained": [
+        "Central-mountain settlement, nut and root processing, storage, house rebuilding, hearths, regional pottery, and obsidian exchange.",
+        "The source's competing explanations for Middle Jomon concentration, presented as hypotheses rather than facts."
+      ],
+      "omittedAs": ["Detailed cultivar/species lists", "Site-by-site catalogue material"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 70-75; OCR figurines, stone objects, ritual houses, Late Jomon coast, fishing, canoes, and seasonal subsistence",
+      "outputSections": ["01.07", "01.08", "01.09"],
+      "substanceRetained": [
+        "Managed food systems, seasonal coastal work, watercraft, figurines, ritual deposits, and the limits of interpretation."
+      ],
+      "omittedAs": ["The source's unsupported fixed readings of fertility and gender symbols"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 75-81; OCR Late and Final Jomon pottery, cemeteries, stone circles, regional contraction, and continental contacts",
+      "outputSections": ["01.09", "01.10"],
+      "substanceRetained": [
+        "Mortuary practice, ritual landscapes, changing settlement patterns, regional contraction, and selective continental connections."
+      ],
+      "omittedAs": ["Exhaustive artifact typologies", "Claims that make climate a single universal cause"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 81-86; OCR early Yayoi cultivation, paddies, settlements, defense, burial, and Map 1.2",
+      "outputSections": ["01.11", "01.12"],
+      "substanceRetained": [
+        "Rice cultivation, water control, settlement organization, storage, violence, burial differentiation, and the regional nature of the Yayoi transition."
+      ],
+      "omittedAs": ["The former conventional date for the beginning of rice cultivation", "Map labels reproduced in the web atlas instead"],
+      "supplementalSources": ["ch01-research-notes.md: tenth-century BC chronology for northern Kyushu rice cultivation."]
+    },
+    {
+      "sourceRange": "PDF pp. 86-94; OCR Yayoi burials, bronze weapons, bells, workshops, mirrors, and regional ritual distributions",
+      "outputSections": ["01.12", "01.13"],
+      "substanceRetained": [
+        "Burial differentiation, metal production and circulation, dotaku, weapon-shaped bronzes, mirrors, ritual deposition, and regional political fields."
+      ],
+      "omittedAs": ["Long mold and alloy technical lists", "Claims that stylistic zones were fixed ethnic territories"],
+      "supplementalSources": []
+    },
+    {
+      "sourceRange": "PDF pp. 94-99; OCR Chinese accounts, Himiko, Yamatai itinerary, customs, and trade",
+      "outputSections": ["01.15", "01.16"],
+      "substanceRetained": [
+        "Chinese court framing, Wa polities, Yamatai, Himiko, the disputed route, divination, weaving, and the convergence of diplomacy and local hierarchy."
+      ],
+      "omittedAs": ["The source's certainty about the location of Yamatai", "Sensational casualty and attendant numbers treated as uncorroborated court reporting"],
+      "supplementalSources": ["ch01-research-notes.md: Chinese testimony kept distinct from contemporary archaeological evidence."]
+    },
+    {
+      "sourceRange": "PDF pp. 99-103; OCR trade, tools, salt, language hypotheses, skeletal discussion, population, and late Yayoi leadership",
+      "outputSections": ["01.13", "01.14", "01.15", "01.16"],
+      "substanceRetained": [
+        "The breadth of Yayoi exchange, regional craft and transport, the limits of linguistic inference, social differentiation, and the political importance of regional centers."
+      ],
+      "omittedAs": ["Racial typologies and typological physical rankings", "Unsupported language-origin conclusions"],
+      "supplementalSources": ["ch01-research-notes.md: ancient genomic evidence and regional admixture framework."]
+    },
+    {
+      "sourceRange": "PDF pp. 103-107; OCR Izumo, Kojindani, Tsukushi, court myth, Sujin, and the source conclusion",
+      "outputSections": ["01.13", "01.16"],
+      "substanceRetained": [
+        "Izumo's material power, Kōjindani, regional political competition, the distinction between court myth and archaeology, and the threshold to Kofun and Yamato."
+      ],
+      "omittedAs": ["Later shrine architectural history", "The source's retrospective certainty about individual rulers"],
+      "supplementalSources": []
+    }
+  ]
+}

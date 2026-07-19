@@ -2,18 +2,21 @@
   "summary": {
     "schemaVersion": 2,
     "sections": 16,
-    "paragraphs": 64,
+    "paragraphs": 116,
     "maps": 2,
-    "timelineEvents": 26,
-    "illustrations": 0,
-    "illustrationReferences": 0,
-    "audioFiles": 64,
+    "timelineEvents": 64,
+    "illustrations": 13,
+    "illustrationReferences": 13,
+    "audioFiles": 116,
     "errors": 0,
-    "warnings": 1,
-    "releaseMode": "pilot"
+    "warnings": 0,
+    "releaseMode": "production",
+    "sourceOcr": "H:\\Ancient Japan History\\ch1\\ch1 - raw OCR.txt",
+    "sourceWords": 25517,
+    "manuscriptWords": 9864,
+    "retentionRatio": 0.3866,
+    "minimumRetentionRatio": 0.35
   },
   "errors": [],
-  "warnings": [
-    "Pilot release has no source OCR audit and is not certified as editorially complete."
-  ]
+  "warnings": []
 }

@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "releaseMode": "production",
+    "sourceOcr": "H:\\Ancient Japan History\\ch1\\ch1 - raw OCR.txt",
+    "sourceWords": 25517,
+    "manuscriptWords": 9864,
+    "retentionRatio": 0.3866,
+    "minimumRetentionRatio": 0.35,
+    "errors": 0,
+    "warnings": 0
+  },
+  "errors": [],
+  "warnings": []
+}

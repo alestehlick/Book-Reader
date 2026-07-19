@@ -42,6 +42,33 @@ Modern genetic evidence adds another history, one of population movement and mix
 No single archive cancels the others, and none should be turned into a simple origin story for a modern nation.
 Together they reveal an archipelago repeatedly made by movement across water.
 
+The older survey behind this chapter also offers a useful warning about historical vocabulary.
+Its period names were built from pottery, tools, dwellings, burials, and subsistence traces, not from ancient political boundaries.
+Jomon originally described cord-marked pottery, while Yayoi took its name from a place where a distinctive ceramic tradition was recognized.
+Neither word was the name of a people acting with one collective will.
+Paleolithic and Mesolithic are useful comparative terms, but they too describe archaeological arrangements rather than identities recovered from self-description.
+The chapter therefore moves between material cultures, places, and relations without treating any of them as a ready-made nation.
+
+The source survey proposed a long sequence from widely mobile bands through ceramic foragers and regional Jomon communities to agricultural Yayoi societies with growing social difference.
+That sequence remains useful when it is treated as a map of changing practices rather than a ladder of human advancement.
+Geography, plants, animals, shoreline change, and contacts with the continent shaped possibilities at every stage.
+They did not dictate a single outcome.
+The later Yamato state emerged from this field of regional histories, not from an empty archipelago waiting for a court to unify it.
+
+This distinction also changes how the chapter uses myth.
+The Kojiki and Nihon Shoki are not discarded because they are retrospective.
+They are read closely as explanations of power, ancestry, difference, and rightful rule composed in a later courtly world.
+Their stories about Jimmu, hostile peoples, and the counsel of kami preserve political imagination rather than a chronicle of prehistory.
+Archaeology and external testimony answer different questions.
+Holding those forms of evidence apart is the condition for bringing them into a meaningful conversation.
+An Ice Age crossing was never simply a walk across a dry land bridge.
+Sea level was lower, but channels, island chains, currents, weather, and the capacity to plan a passage still mattered.
+The source's discussion of the Ryukyu islands and the southern approaches therefore expands the question beyond one northern route.
+It asks whether communities could read coasts, provision a journey, and move between visible islands.
+Secure evidence cannot identify every vessel or party.
+It does make repeated access to difficult landscapes more plausible than an image of accidental drift.
+That is why the first crossings belong to the social history of skill as much as to the geography of exposure.
+
 SECTION 01.02 - The First Crossings
 The earliest secure archaeological traces of modern humans in the main islands date to roughly thirty-eight thousand years ago.
 Claims for a much earlier occupation once attracted great attention, but the Paleolithic hoax exposed in 2000 forced a severe reexamination of sites and methods.
@@ -66,6 +93,33 @@ They learned volcanic landscapes, river terraces, coasts, forests, and cold gras
 Their descendants were not isolated from the continent forever, nor can every later inhabitant be traced to a single founding band.
 Movement continued in both directions across the northern, western, and southern seas.
 The earliest history of the islands is thus already an East Asian and maritime history.
+
+The physical geography of the ice-age archipelago must therefore be described with care.
+Lower seas enlarged land areas and narrowed some crossings, but they did not make every route equally easy or certain.
+The source survey emphasized changing connections through the Tsushima, Tsugaru, Soya, and Ryukyu regions.
+Modern reconstructions likewise show different northern, western, and southern pathways rather than one continuous bridge across all of East Asia.
+For people, animals, and materials, a strait could be a barrier, a seasonal hazard, or a corridor depending on weather, craft, knowledge, and social ties.
+Each crossing was an achievement, not merely a consequence of a line on a paleogeographic map.
+
+The history of evidence is part of this chapter's history.
+The recognition of Paleolithic Japan accelerated after stone artifacts were found below Jomon layers at Iwajuku in the late 1940s.
+That discovery made the preceramic past archaeologically visible and encouraged large-scale regional research.
+The later exposure of fabricated finds made the discipline test associations, dates, and manufacturing traces more severely.
+The result is not a smaller past.
+It is a more honest one, in which the strength of a claim depends on the context that carries it.
+
+The original discussion of land bridges and early occupations should thus be read as a history of questions as well as answers.
+Some propositions once printed as likely have since been narrowed or rejected.
+Others, such as the importance of changing coastlines and the regional character of Paleolithic evidence, have gained support.
+The chapter does not hide this revision.
+It makes the uncertainty visible so that a reader can distinguish a secure occupation, a plausible route, and an abandoned claim.
+The late-Paleolithic sequence also records a changing technical repertoire rather than one unchanging stone age.
+Large tools, blades, points, and smaller inserts occur in different combinations as environments and tasks shifted.
+Some tools travelled as finished objects, while others were made and repaired near sources of suitable stone.
+Microscopic use traces and broken pieces can sometimes distinguish cutting, scraping, drilling, or hunting-related work.
+They cannot restore every gesture of a camp.
+Yet the pattern of procurement, reduction, and discard reveals planning over distances and repeated decisions about risk.
+The people of the Ice Age were skilled makers whose material choices linked mobility to particular landscapes.
 
 SECTION 01.03 - Life in the Late Ice Age
 Paleolithic communities moved through territories larger than any surviving camp.
@@ -92,6 +146,31 @@ These resemblances do not prove that whole peoples moved whenever a tool changed
 Objects can travel through exchange, imitation, marriage, or the relocation of a few skilled makers.
 The archaeological record shows contact and choice more securely than it shows named populations.
 
+The source gives unusual weight to the Kanto loam deposits because their stacked volcanic layers preserve long sequences of occupation.
+Ash, soil, and changing plant remains can provide the environmental setting that isolated stone tools cannot.
+In southern Kanto, repeated habitation around rivers, springs, gravel beds, and mountain margins suggests that people returned to places with dependable water, workable stone, and varied food.
+The record is still partial, because wood, fiber, hide, and most plant processing survive poorly.
+Yet fire-reddened stones, transported obsidian, and repeated tool assemblages make seasonal knowledge visible.
+They show communities planning beyond the moment of a hunt.
+
+The animals of the older source must also be read as environmental evidence rather than as a menu copied whole into human meals.
+Elephants, giant deer, bears, deer, boar, and smaller animals occupied shifting habitats as temperature and vegetation changed.
+The presence of their bones at particular sites can show encounters, but not every relationship between people and prey.
+Large animals disappeared from many regions as warming, habitat contraction, and human hunting altered the ecological field.
+Later foragers inherited a world in which smaller game, fish, shellfish, nuts, and plants demanded different skills and more varied schedules.
+
+The Kanto record also retains a material history of fire.
+Clusters of reddened and cracked river stones occur with occupation debris and indicate cooking practices beyond what stone points alone could show.
+Heated stones, hearths, and repeated camp use enlarge the archaeological picture from hunting episodes to domestic routines.
+The evidence is modest, but it carries a large implication.
+Paleolithic communities organized food, warmth, work, and return around places that accumulated memory through repeated use.
+Pottery did not arrive as a simple badge of farming or permanent settlement.
+Small early vessels could travel with mobile groups and make new kinds of cooking possible without replacing hunting, fishing, or gathering.
+Charred residues and vessel forms may suggest repeated processing of particular foods, but their readings remain partial.
+A pot preserves heat, smoke, repair, and use better than it preserves a complete menu.
+This is one reason the source treats the earliest ceramic sequence as a technical and social transformation rather than a sudden civilization threshold.
+Its importance lies in how containers changed daily options while older forms of movement continued.
+
 SECTION 01.04 - Pottery at the Edge of the Pleistocene
 At Odai Yamamoto I in northern Honshu, charred residue on pottery has been dated to roughly sixteen thousand five hundred years ago.
 Other early vessels across East Asia show that pottery was not simply invented after farming or permanent village life.
@@ -116,6 +195,25 @@ New plants, fish runs, shellfish beds, and woodland animals supported more conce
 The bow became prominent, pit dwellings more visible, and ceramic traditions more varied.
 These changes unfolded over millennia and at different tempos.
 The Jomon world emerged through accumulated experiments in mobility, food, storage, social ties, and ritual.
+
+The source's early cave sequences are especially valuable because they show changes in tools, animal remains, and pottery through successive layers.
+At Kamikuroiwa in Shikoku, for example, the changing mix of spear points, arrowheads, and animal bones helps trace an adjustment from hunting larger prey toward a broader pursuit of smaller animals.
+Such sequences should not be made to tell a simple story of progress.
+They document practical responses to a warming landscape in which former prey, forest cover, and travel routes no longer had the same value.
+The bow and arrow were consequential not because they made people modern, but because they enlarged the range of viable hunting strategies.
+
+The earliest pottery was also part of an East Asian conversation without being reducible to an import from one place.
+The source noted that early ceramic dates and forms in Kyushu, Shikoku, and Honshu required careful comparison with continental finds.
+Modern dating has moved the oldest secure Japanese examples farther back than the survey's chronology allowed.
+What remains important is the question the source posed: how did containers, cooking, storage, and repeated use of particular places change the rhythm of life?
+Pottery makes that question materially visible even when the people who made it left no written explanation.
+
+The archaeological transition from the final Paleolithic to the earliest ceramic traditions is therefore best approached through several linked changes.
+Warming altered forests and animals.
+The bow and arrow broadened hunting strategies.
+Containers enlarged the possibilities for boiling, storing, and processing foods.
+Repeated occupation became more visible at some sites, even though mobility remained important.
+None of these changes had the same tempo in every part of the archipelago, but together they created the conditions from which the many Jomon histories developed.
 
 SECTION 01.05 - Many Jomon Worlds
 The Jomon period endured for more than ten thousand years in much of the main archipelago.
@@ -142,6 +240,32 @@ Such counts do not translate neatly into a census, because one group could leave
 Even so, they show that the density of life shifted dramatically over time.
 The long Jomon sequence was dynamic, not a changeless age before history.
 
+The source survey is strongest when it lets environmental variation explain why the same broad Jomon label covered so many different lives.
+Warm currents and cold currents met along the Pacific coast, creating unusually productive marine zones.
+Rising seas drowned old valleys, turned some former inland locations into estuaries, and moved shellfish beds across the map.
+In the central mountains, overlapping harvests of chestnuts, walnuts, acorns, and horse chestnuts supported another kind of concentration.
+The best places were not simply rich by nature.
+They were places where communities learned the timing, processing, storage, and social protection of particular resources.
+
+The familiar chronological sequence is therefore an aid to comparison, not a national clock.
+An Earliest or Middle Jomon date in one region need not imply identical tools, houses, diets, or social arrangements elsewhere.
+The source itself repeatedly noticed overlap, local ceramic sequences, and unequal site density.
+Modern calibration has made the absolute dates still more nuanced.
+The reader should keep the regional map in view whenever a period name appears.
+What matters is not an abstract stage, but the combination of people, materials, waters, and seasonal work at a particular place.
+
+The names used for pottery styles preserve the history of archaeology as well as the ancient record.
+Katsusaka, Otamadai, Kasori, Kurohama, and other labels derive from excavated places and help scholars compare form, firing, temper, and decoration.
+They become misleading only when they are treated as tribes with fixed borders.
+In the source, each style is evidence of regional learning and contact.
+In this reconstruction, it remains exactly that: a precise way to describe material change without inventing a political map.
+Waterlogged sites sharpen the contrast between what ordinarily survives and what once filled Jomon houses.
+At places such as Torihama, wood, fibre, lacquered objects, baskets, cordage, and plant remains preserve parts of household work that dry sites usually lose.
+They show skilled woodworking, careful storage, and the long preparation of food and materials.
+They also caution against treating stone and pottery as the whole of a community's technology.
+Perishable tools connected people to forests, wetlands, shorelines, and seasonal schedules.
+The settlement record becomes richer when its vanished organic infrastructure is kept in view.
+
 SECTION 01.06 - Houses, Settlements, and Memory
 Pit dwellings were built by setting a floor below ground level and raising a roof on posts.
 Their shapes, hearths, and rebuilding histories varied, but many formed clusters around open spaces.
@@ -167,6 +291,29 @@ Authority may have depended on age, ritual knowledge, skill, generosity, or the 
 Leadership could be real without becoming an office inherited through a state.
 The evidence invites a spectrum of arrangements rather than a choice between equality and kingship.
 
+The earlier source records Early Jomon villages with houses arranged around open areas and with storage pits carefully lined for keeping food dry.
+At Minabori, successive rebuilding retained a common spatial plan, suggesting that shared space itself had become part of settlement life.
+At Torihama, exceptionally wet conditions preserved oars, baskets, bows, adzes, wooden bowls, cordage, and early lacquer.
+These fragile materials correct an archaeology that otherwise privileges stone and pottery.
+They reveal households working with timber, reeds, fibers, watercraft, and containers in ways that made a place durable.
+
+The source also described Middle Jomon central-mountain settlements where houses were repeatedly rebuilt, hearths moved, and particular stones or ritual objects carried into a new dwelling.
+Such acts make best sense as social memory rather than as mere repair.
+A house could hold stories of deaths, changes of fortune, marriage, labor, and ritual obligations.
+When a household shifted a few meters, it did not necessarily sever its relationship to the old place.
+Architecture preserved continuity by giving people a material way to remember, alter, and renew their ties to one another.
+
+Scale must be handled with the same caution.
+Large post settings, long buildings, and broad settlement plans show that groups could mobilize substantial labor.
+They do not automatically reveal a palace, a chief, or a single command structure.
+The source's detailed house plans are most valuable when they bring us back to ordinary constraints: roof support, drainage, fire, storage, sleeping space, and repair.
+The built environment made collective life possible before it announced a hierarchy.
+
+At the largest sites, durable settlement did not mean that every household lived there permanently or at the same scale.
+People could return for ceremonies, exchange, seasonal work, or kinship obligations while maintaining smaller places elsewhere.
+This helps explain why a site can look monumental without functioning as a later town.
+The source's settlement evidence asks us to imagine networks of residence and return, not a simple march from camp to city.
+
 SECTION 01.07 - A Managed Abundance
 Jomon subsistence is often called hunting and gathering, but the phrase can sound more passive than the evidence allows.
 People burned vegetation, tended useful trees, scheduled harvests, processed toxins, stored food, and reshaped habitats around settlements.
@@ -190,6 +337,25 @@ Fishing technologies included hooks, harpoons, nets, weirs, dugout canoes, and k
 Some communities pursued offshore species; others concentrated on rivers, bays, or shell beds.
 Dogs assisted hunting and sometimes received careful burial, suggesting relationships beyond simple utility.
 Food linked people to animals, plants, waters, and places through customary obligations we can only partly recover.
+
+The older survey gives the labor of plant food a central place, and it deserves to remain there.
+Acorns could require long leaching to remove bitterness.
+Chestnuts, walnuts, roots, and bulbs had to be harvested in sequence, protected from pests, dried or processed, and carried through winter.
+Grinding stones, storage pits, charred fragments, and the location of settlements near springs all point toward this work.
+The source speculated about cultivation in several Jomon contexts.
+That question remains debated, but the evidence clearly shows management and deep practical knowledge rather than casual collection.
+
+The year could move from spring shellfish gathering to summer fishing, autumn nut harvests, and winter hunting, while each region followed its own version of that calendar.
+Late Jomon middens preserve large fishhooks, detachable harpoon heads, net weights, and evidence for coastal and riverine fishing.
+Dugout canoes and paddles make water an ordinary route rather than a marginal edge.
+Even toxic plants could enter a skilled repertoire when carefully prepared or used for hunting.
+Subsistence was a collection of techniques learned across generations, held in bodies and places as much as in tools.
+
+The source's detailed food record also gives the reader a way to resist a misleading contrast between abundance and hardship.
+Rich coasts, forests, and rivers offered many resources, but each demanded exact knowledge and substantial labor.
+Food could be seasonal, difficult to preserve, or dangerous to prepare.
+Children, elders, and adults all participated in social worlds structured by this work, though the tools rarely identify every contribution.
+What survives in middens and pits is only the durable fraction of a much larger economy of care, skill, and coordination.
 Abundance was produced by attention, not granted automatically by nature.
 
 SECTION 01.08 - Exchange Without a State
@@ -217,6 +383,32 @@ Marriage linked communities biologically and politically long before written tre
 News about harvests, conflict, dangerous routes, and ceremonies followed the same paths as valued goods.
 The archipelago was socially connected at many scales, even though no center controlled the whole.
 
+The source's long-distance materials let us see exchange without assuming a market or a state.
+Obsidian from mountain and island sources reached distant camps in both Paleolithic and Jomon contexts.
+Jade from the Itoigawa region, asphalt, amber, shell, mica-tempered clay, and distinctive pottery styles make later networks visible in different ways.
+Some goods may have passed through many hands, while others traveled with the people who made them.
+Either possibility required relationships maintained across considerable distance.
+
+Exchange mattered not only because it supplied objects but because it linked knowledge.
+The movement of a potter, a spouse, a visiting hunting party, or a gift could carry recipes, tool forms, ornaments, stories, and obligations.
+The source's discussion of mica-tempered Otamadai pottery is a good example.
+Its distribution raises questions about clay sources, technical preference, and social links, but it does not provide a final answer about marriage or rank.
+That restraint is essential.
+Material connections show contact clearly while leaving the exact terms of relationship open to argument.
+
+Travel through these networks was not necessarily easy or safe.
+An island source of obsidian demanded navigation or passage through several partners.
+A mountain source required knowledge of terrain and a reason to carry heavy stone far from its origin.
+Such journeys likely joined subsistence, obligation, alliance, and ceremony.
+The best archaeological question is therefore not simply how far an object traveled.
+It is what durable relationships made that travel worthwhile.
+Exchange depended on knowledge as much as on the movement of rare things.
+People had to recognize usable stone, know landing places, maintain paths, host visitors, and judge obligations over time.
+An obsidian source or a jade-working locality was therefore embedded in social relationships rather than standing outside them as a natural resource alone.
+The source's long lists of materials are most valuable when read this way.
+They document a web of practical acquaintance among communities that remained politically diverse.
+Long-distance contact could create prestige, but it also made ordinary tools and craft skills possible far from their source.
+
 SECTION 01.09 - Bodies, Ritual, and Belonging
 Jomon graves usually occur within or near places of living.
 The dead were flexed, extended, placed in pits or jars, sometimes sprinkled with pigment, and occasionally accompanied by ornaments or tools.
@@ -241,6 +433,20 @@ Ceremony may have gathered dispersed communities and helped negotiate marriage, 
 Ritual was not a decorative layer placed over subsistence.
 It organized relations among households and between humans and a more-than-human world.
 Those relations helped communities endure without becoming identical to later shrines, clans, or imperial rites.
+
+The source survey recorded figurines, stone phalli, lamps, unusual deposits, and houses with concentrations of objects that were plainly not ordinary refuse.
+It sometimes attached precise meanings to them that cannot now be sustained.
+The stronger lesson is that repeated arrangements of material, bodies, fire, and place made ritual a visible part of social life.
+At Shakado, many figurines were deposited as fragments.
+At other sites, figurines and lamps appeared together, while standing stones marked particular locations.
+These patterns establish importance without allowing us to narrate a single lost ceremony as if it had been observed.
+
+Mortuary evidence demands the same discipline.
+Burials in or beside settlements joined the dead to familiar ground, but preservation is uneven and grave goods never provide a full social census.
+Some bodies show trauma, illness, dental modification, or demanding labor.
+Those traces can illuminate experience without reducing people to specimens or assigning a fixed ethnic type.
+The source's language about "races" and universal fertility cults belongs to its own scholarly moment.
+The chapter retains its evidence while replacing those categories with questions about affiliation, care, status, age, and uncertainty.
 
 SECTION 01.10 - Contraction and Regional Change
 After the Middle Jomon peak, many areas of central and northeastern Honshu show fewer or smaller settlements.
@@ -267,6 +473,30 @@ Some combined them with older practices for centuries, while others resisted or 
 What later archaeologists group as Jomon and Yayoi overlapped in time and space.
 The boundary is a useful pattern in evidence, not a line ancient people crossed in a single step.
 
+The source describes a marked Late and Final Jomon reorganization after the great Middle Jomon concentrations of the central mountains.
+It connects smaller or redistributed settlements with changing climate, resource pressure, and growing ritual investment.
+Those factors may have mattered, but no single explanation should carry every region.
+Population estimates derived from site counts are rough, and a smaller visible settlement need not mean a simpler social world.
+What is clear is that communities altered their places, networks, and ceremonial practices over a long interval.
+
+The Late Jomon record also preserves remarkable coastal skill.
+Middens around bays and river mouths contain evidence for fish, shellfish, porpoise, salmon, trout, deer, boar, and seasonally organized work.
+The source notes six-meter dugout canoes and large fishing gear in some regions.
+Such evidence makes it impossible to imagine the sea only as a barrier between isolated populations.
+It was a source of food, a route for movement, and a medium through which regional worlds remained connected even as their local histories diverged.
+
+Ritual practice may have become more prominent precisely because communities were managing change rather than withdrawing from it.
+The source observes stone circles, communal open spaces, cemeteries, figurines, and specialized deposits in later Jomon contexts.
+These are not signs that subsistence had failed and religion began.
+They suggest that social coordination, grief, memory, and seasonal renewal were being worked out through more visible collective forms.
+The archaeological record allows that conclusion while withholding the words that participants used for their rites.
+
+The later Jomon record also cautions against calling every striking object an emblem of political rank.
+A stone circle, a cemetery, or a cache could create a shared public field without placing one household above all others.
+Ritual could authorize leadership, but it could also bind dispersed families together and manage obligations that no permanent authority controlled.
+The evidence supports seriousness and coordination.
+It does not permit a ready-made state to be projected into every ceremonial landscape.
+
 SECTION 01.11 - Rice Comes Through the Straits
 Irrigated rice cultivation began in northern Kyushu by about the tenth century BC, earlier than the chronology once used in many surveys.
 The first secure paddies, field channels, tools, and associated pottery belong to a system already developed through East Asian farming histories.
@@ -291,6 +521,30 @@ Foraging, fishing, and hunting continued within farming communities, while dry-f
 The Yayoi economy was never rice alone.
 Its novelty lay in the growing weight of cultivated harvests and the institutions built around land and water.
 
+The older source carefully followed the first visible infrastructure of cultivation.
+At northern Kyushu sites, wet fields, channels, wooden implements, storage, and pottery occur together with evidence for continuing fishing and hunting.
+The contemporary chronology has changed, moving the beginning of rice cultivation earlier than the survey's old date.
+The social problem remains the same.
+A cultivated field needs coordinated timing, repair, claims on labor, and rules for a harvest that can be stored, shared, seized, or offered.
+
+That is why the Yayoi transition must not be presented as a miraculous arrival of rice.
+The crops had long continental histories, and their movement across the straits involved people, techniques, and established maritime contacts.
+Communities in northern Kyushu could combine new practices with local knowledge and with older foodways.
+Farther east and north, adoption proceeded at different tempos and under different conditions.
+Agriculture changed the balance of livelihood and authority, but it did not erase the diverse worlds already present in the archipelago.
+
+In the source, material links across the straits appear in crops, tools, pottery, metal, and forms of settlement.
+They should be understood as evidence for extended interaction, not as a command that every community became culturally identical.
+Rice cultivation could coexist with fishing, hunting, gathering, and regional craft traditions.
+The transition was gradual enough to generate mixed landscapes and mixed practices.
+That unevenness is one reason why the archaeological boundary between Jomon and Yayoi can never be a simple border on a map.
+The first paddies required a coordinated landscape of bunds, water channels, tools, seed, labor, and stored grain.
+Their significance was not confined to a new staple food.
+They altered seasonal rhythms, claims on lowland space, and the value of organizing work among households.
+Even so, rice was never the whole economy of early Yayoi communities.
+Fishing grounds, shellfish beds, woods, upland plants, and craft production continued to matter, especially where cultivation spread slowly.
+The chapter therefore follows a transformation in combinations of livelihood, not a replacement of one people by a monoculture.
+
 SECTION 01.12 - The Yayoi Village
 Many Yayoi settlements combined pit dwellings with raised-floor storehouses and carefully divided work areas.
 Some stood beside paddies on low plains; others occupied defensible uplands.
@@ -314,7 +568,27 @@ Burial expressed increasing difference.
 Northern Kyushu communities used jar coffins, wooden coffins, stone settings, and graves supplied in sharply unequal ways.
 Some individuals received bronze mirrors, weapons, ornaments, or other scarce goods, while neighboring burials remained plain.
 Such contrasts suggest hereditary advantage and emerging rank in certain regions.
+
+The source survey's villages show how the material organization of everyday life became increasingly consequential.
+Moats and palisades could mark defense, but they could also direct movement and separate spaces of storage, work, ceremony, and residence.
+Raised-floor storehouses protected grain and made accumulated food visible.
+Wooden tools, paddies, ditches, and burials preserve a landscape shaped collectively yet not necessarily equally.
+The question is not whether every enclosed settlement was a miniature state.
+It is how cooperation, risk, and access to stored resources gave some households or leaders new leverage.
+
+Yayoi violence is clearest when different forms of evidence converge.
+Trauma on bodies, weapons, burned structures, and defensive works can indicate conflict, but none should be made to speak alone.
+The source connected conflict to land, water, metal, and regional competition.
+Those are plausible stakes in a world of intensifying cultivation and exchange.
+They do not license a story of constant warfare.
+Communities also depended on marriages, trade, shared rituals, and seasonal cooperation across the very boundaries that could sometimes become dangerous.
 They do not imply one uniform class system across the Yayoi world.
+The archaeological signs of conflict likewise need to be held beside the signs of cooperation.
+Palisades, ditches, weapons, burned structures, and injuries can indicate danger, but they do not yield a continuous narrative of war.
+Fortification could also regulate access, protect stores, distinguish ritual space, or respond to episodic insecurity.
+Burial difference and prestige goods point to unequal influence, yet local status was made through relations of kinship, labor, ceremony, and exchange.
+The Yayoi village was not a miniature state waiting only for a king.
+It was a changing social field in which new concentrations of wealth and authority remained locally negotiated.
 
 SECTION 01.13 - Metal, Prestige, and Sacred Power
 Bronze and iron reached the archipelago through continental networks, but their histories diverged.
@@ -340,6 +614,26 @@ Their gleaming surfaces, foreign inscriptions, and association with elite graves
 Control over imported iron, bronze, beads, and prestige objects helped leaders convert external relationships into local standing.
 Continental diplomacy and village hierarchy were becoming parts of the same system.
 
+The source follows bronze production closely enough to make its social scale tangible.
+Weapon-shaped bronzes and bells required imported or recycled metal, molds, skilled casting, transport, and decisions about deposition.
+Their large caches were not casual losses.
+At Kōjindani in Izumo, the discovery of hundreds of bronze swords alongside spears and bells transformed the archaeological standing of the region.
+The cache does not identify a named kingdom, but it makes concentrated resources and organized ritual impossible to ignore.
+
+The images on some dotaku are equally important.
+They show animals, hunting, fishing, storehouses, rice processing, and human figures in small relief scenes.
+Their meanings remain uncertain, and the bells were not simple illustrated documents.
+Yet they connect ritual sound and display to the seasonal activities on which communities depended.
+When bells or weapons were buried on hillsides away from settlements, the act linked cultivated landscapes, valued metal, and collective ceremony.
+The material record preserves that relationship even when the words and songs of the rite have vanished.
+
+Metal also altered the practical economy.
+Iron could be remade, sharpened, and used in woodworking, agriculture, and other daily tasks, although early access was limited.
+The source follows the circulation of tools, stone reapers, salt, cloth, wood, and shell ornaments alongside the more spectacular bronzes.
+That wider exchange kept villages and regional centers connected through work as well as prestige.
+No single material explains Yayoi society.
+The historical change lies in the growing density of routes, dependencies, and opportunities for control.
+
 SECTION 01.14 - Migration and Admixture
 The Yayoi transformation involved the movement of people as well as ideas.
 Skeletal differences in northern Kyushu, archaeological links across the straits, and ancient DNA all support migration from continental East Asia through the Korean Peninsula.
@@ -362,6 +656,31 @@ Ainu, Ryukyuan, and mainland Japanese people retain different proportions and hi
 Genes do not carry language, political loyalty, or culture as a package.
 They can estimate biological relationships among sampled people, but samples remain scarce and uneven.
 The strongest conclusion is plural formation: the archipelago's people were repeatedly remade through continuity and arrival.
+
+The source survey devoted a great deal of attention to skeletal measurements and proposed sharp biological categories that modern scholarship no longer accepts.
+Its underlying problem, however, remains fundamental: how did migration, diet, disease, marriage, and local continuity interact through the Yayoi centuries?
+Ancient genomic work, archaeology, and skeletal study now answer with different kinds of evidence.
+They agree that movement through the Korean Peninsula mattered, but they also show survival, mixture, and regional variation.
+The best account is not a replacement story.
+It is a history of unequal encounters between communities whose descendants could belong to new social worlds.
+
+This correction changes the ethical as well as the technical language of the chapter.
+People in the Jomon and Yayoi worlds were not preliminary versions of a later national type.
+They made choices within relationships that included newcomers, neighbors, ancestors, animals, places, and external powers.
+Their biological histories cannot settle questions of language, political allegiance, or cultural value.
+The source's archaeological observations remain useful when detached from racial ranking and placed within a history of plural formation.
+
+Language is another field where the source raises questions that its evidence cannot conclusively settle.
+Japanese and Koreanic histories, coastal contacts, and later linguistic differences belong to a long and unresolved discussion.
+Archaeology can trace material connections and movement without assigning a language to every pot, skeleton, or field system.
+For this chapter, it is enough to recognize that migration, communication, and local continuity were intertwined.
+The precise linguistic pathways remain a matter for carefully bounded argument rather than an origin myth.
+Genetic evidence is powerful precisely because it is not a complete historical narrative by itself.
+It can identify broad patterns of relatedness and mixture across sampled individuals and populations.
+It cannot directly reveal the language a person spoke, the community they joined, or the political meaning of an ancestor.
+Its strongest use is therefore in conversation with settlement evidence, burial context, diet, craft networks, and documented movement across the straits.
+Read together, these archives support a history of repeated contact and admixture.
+They do not support a neat story in which one bounded population simply replaced another everywhere at once.
 
 SECTION 01.15 - The Communities Called Wa
 Chinese texts bring a few communities of the archipelago into written history.
@@ -388,6 +707,30 @@ Some details can be compared with archaeology, while others resist identificatio
 The famous route to Yamatai cannot be plotted by treating every figure as a modern survey measurement.
 Written testimony opens a narrow window, shaped by the frame of the observer.
 
+The Chinese accounts preserve a thick, if uneven, description of social differentiation in late Yayoi Wa.
+They mention titles, mourning, divination through burned bone, weaving, abstainers who accompanied voyages, and varied practices of rank and marriage.
+Some details can be placed beside archaeology.
+Burned bones with pits occur at Yayoi sites, wooden objects show textile production, and the absence of certain utensils may make other observations plausible.
+Other details belong to the ethnographic conventions and political interests of the compilers.
+The proper method is comparison, not automatic confirmation.
+
+The source's account of travel to Yamatai also explains why the location remains disputed.
+Itinerary, direction, distance, and travel days do not translate easily into a modern map, especially across water and through reports mediated by officials.
+Northern Kyushu and the Nara basin have both attracted strong arguments.
+No solution should be made a hidden premise for the chapter.
+The important historical fact is that third-century observers described many Wa polities and a prominent federation, not a fully unified Japan.
+
+The court record of Wa is particularly illuminating when set beside the source's evidence for trade.
+Rice, salt, stone tools, iron, cloth, wood, and ornaments moved between places whose local resources differed.
+External embassies therefore belonged to a broader landscape of exchange rather than floating above it.
+An envoy could carry a local leader's claims across the sea because villages, craftspeople, and maritime routes already sustained complex regional connections.
+Chinese dynastic histories are indispensable but selective witnesses.
+They record what a court wished to know about tribute, distance, order, and the marvels of foreign communities.
+Their chronology is firmer for an embassy than for the internal geography or social texture of every polity named in passing.
+The text can therefore illuminate the political horizon in which Yamatai became visible without deciding every modern dispute about its location.
+Archaeology supplies a different scale of evidence: settlements, graves, craft, fields, routes, and regional change.
+The chapter keeps both archives in view, while refusing to make either one speak with a certainty it does not possess.
+
 SECTION 01.16 - Himiko and the Threshold of Yamato
 According to the Wei history, prolonged warfare among the countries of Wa ended when they agreed to set a woman named Himiko over them.
 She was said to serve spiritual powers, to remain secluded, and to communicate through a male attendant.
@@ -412,3 +755,41 @@ That Kofun transformation belongs to the next chapter, as does the firmer appear
 Here the threshold is enough.
 Across tens of thousands of years, communities had navigated, exchanged, settled, farmed, fought, mixed, and negotiated ever wider alliances.
 Japan did not awaken fully formed; a new political order gathered slowly from an ancient maritime world.
+
+The source's discussion of Izumo and Tsukushi reinforces that final point.
+Izumo's exceptional bronze deposits and its later place in court myths suggest a powerful regional history that cannot be reduced to Yamato's retrospective story.
+Northern Kyushu remained deeply connected to the peninsula and to the material routes of bronze, iron, and agriculture.
+Kinki developed advantages of its own through settlement, exchange, and coalition.
+The emergence of a Yamato-centered order required negotiation, rivalry, appropriation, and remembered resistance among such regions.
+
+The chronicles later transformed these contested relationships into genealogies, conquests, and agreements among deities and rulers.
+They are vital evidence for how a court explained authority, but they cannot replace the archaeology of regional communities.
+The Chinese record offers another external frame, while material evidence traces longer patterns that no court recorded.
+Keeping these archives distinct does not fragment the story.
+It allows the chapter to end where the evidence is richest: with several historical worlds converging, but not yet one nation complete.
+
+This is why the last pages should not be read as a preface that hurries past the people of the chapter.
+Paleolithic foragers, Jomon communities, and Yayoi villagers were not simply waiting to become subjects of a court.
+They made the ecological knowledge, routes, technologies, rituals, and regional alliances through which later states had to operate.
+The Yamato story begins from their worlds, but it does not contain all of them.
+
+The final transition must remain a threshold rather than a conclusion written backward from the court state.
+Large mounds, elite objects, regional alliances, Chinese diplomacy, and later genealogies point toward a new political scale.
+They do not erase the autonomy or historical depth of the communities from which that scale emerged.
+The next chapter can follow the formation of Yamato more closely.
+This one has established the older archipelago that made such formation possible and kept its alternatives alive.
+
+The source associates the late Yayoi political field with several regions rather than one inevitable center.
+Northern Kyushu, the Inland Sea routes, Izumo, and the Kinki basin all possessed different combinations of agricultural wealth, access to metals, maritime contact, and ceremonial authority.
+Their relations could be competitive, negotiated, or remembered through later myths of conquest and accommodation.
+The early mound horizon did not suddenly dissolve this regional complexity.
+It reorganized it around wider elite connections whose local foundations remained diverse.
+
+For that reason, a reader should resist the temptation to identify every prestigious grave good or large mound with a completed imperial system.
+Archaeology can show new scales of alliance and display.
+It cannot turn the uncertain names of Chinese accounts or later chronicles into labels on every site.
+The historical achievement of the third century was the creation of new possibilities for coordination, rivalry, and remembered descent.
+Its outcome, like its geography, remained contested.
+
+That caution is not an evasion.
+It is the discipline required when material evidence, external reports, and retrospective court stories illuminate the same transformation from different distances.
