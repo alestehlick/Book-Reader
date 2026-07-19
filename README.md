@@ -69,14 +69,18 @@ The same rule applies to illustrations. `catalogs.illustrations` stores each
 audited asset once, while `illustrationRefs` binds it to one or more paragraphs.
 The reader displays a clean primary image followed by a swipeable supporting
 gallery. Evidence, uncertainty, credit, and license information remain in a
-collapsed panel; maps remain clean and are repeated for every paragraph.
+collapsed panel; maps remain clean and are repeated for every paragraph. A
+small touch-friendly **Map key** opens only on request and explains the marks
+and line styles actually used by that preset, including when its static fallback
+plate is shown.
 
 ## Media standards
 
 - Maps: authoritative QGIS/GIS sources remain outside the web package. Publish
   one multi-layer PMTiles archive, WebP terrain tiles, and chapter presets,
   with the original WebP/PNG plates retained as automatic fallbacks. No title,
-  caption, or explanatory panel is added to the map surface.
+  caption, or permanent explanatory panel is added to the map surface. Each
+  preset includes a compact, on-demand Map key for its marks and line styles.
 - Illustrations: archival master and prompt/evidence records retained outside
   Git; sRGB WebP quality 84, normally no wider than 2000 pixels, lazy-loaded
   after the primary image.

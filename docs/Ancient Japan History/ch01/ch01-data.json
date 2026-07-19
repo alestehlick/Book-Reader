@@ -21,6 +21,33 @@
         "date": -300,
         "accent": "#80634E",
         "showProvinces": false,
+        "legend": [
+          {
+            "symbol": "terrain",
+            "label": "Relief and water",
+            "detail": "Terrain and water orient the view; neither marks a historical boundary."
+          },
+          {
+            "symbol": "site",
+            "label": "Selected sites and study places",
+            "detail": "Dots are chapter-selected archaeological, historical, or thematic anchors."
+          },
+          {
+            "symbol": "region",
+            "label": "Approximate historical zone",
+            "detail": "Tint and dashed edge mark an interpretive extent, not a fixed frontier."
+          },
+          {
+            "symbol": "route",
+            "label": "Route or connection",
+            "detail": "Dashed cinnabar lines mark schematic historical or chapter-specific connections."
+          },
+          {
+            "symbol": "river",
+            "label": "Major river",
+            "detail": "Blue lines appear as the map is enlarged."
+          }
+        ],
         "view": {
           "bounds": [
             [
@@ -60,6 +87,33 @@
         "date": 150,
         "accent": "#B69149",
         "showProvinces": false,
+        "legend": [
+          {
+            "symbol": "terrain",
+            "label": "Relief and water",
+            "detail": "Terrain and water orient the view; neither marks a historical boundary."
+          },
+          {
+            "symbol": "site",
+            "label": "Selected sites and study places",
+            "detail": "Dots are chapter-selected archaeological, historical, or thematic anchors."
+          },
+          {
+            "symbol": "region",
+            "label": "Approximate historical zone",
+            "detail": "Tint and dashed edge mark an interpretive extent, not a fixed frontier."
+          },
+          {
+            "symbol": "route",
+            "label": "Route or connection",
+            "detail": "Dashed cinnabar lines mark schematic historical or chapter-specific connections."
+          },
+          {
+            "symbol": "river",
+            "label": "Major river",
+            "detail": "Blue lines appear as the map is enlarged."
+          }
+        ],
         "view": {
           "bounds": [
             [

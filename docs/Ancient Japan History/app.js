@@ -1765,6 +1765,8 @@
     }
     const wrapper = document.createElement("article");
     wrapper.className = "media-figure-card";
+    const shell = document.createElement("div");
+    shell.className = "static-map-shell";
     const figure = document.createElement("figure");
     figure.className = "media-figure";
     const img = document.createElement("img");
@@ -1790,6 +1792,10 @@
       }
       wrapper.replaceWith(createMissingMediaCard(`Could not load map file: ${mapData.src}`));
     });
+    const key = createInteractiveMapKey(mapData, index);
+    img.addEventListener("load", () => {
+      if (key) key.hidden = false;
+    });
     loadCandidate();
 
     img.tabIndex = 0;
@@ -1804,7 +1810,9 @@
       }
     });
     figure.appendChild(img);
-    wrapper.appendChild(figure);
+    shell.appendChild(figure);
+    if (key) shell.appendChild(key);
+    wrapper.appendChild(shell);
     return wrapper;
   }
 
@@ -1829,6 +1837,106 @@
       content.appendChild(detail);
     });
     return content;
+  }
+
+  function mapLegendEntries(mapData) {
+    const supplied = Array.isArray(mapData.legend) ? mapData.legend : [];
+    const fallback = [
+      {
+        symbol: "terrain",
+        label: "Relief and water",
+        detail: "Terrain and water orient the view; neither marks a historical boundary.",
+      },
+      {
+        symbol: "site",
+        label: "Selected sites and study places",
+        detail: "Dots are chapter-selected archaeological, historical, or thematic anchors.",
+      },
+      {
+        symbol: "region",
+        label: "Approximate historical zone",
+        detail: "Tint and dashed edge mark an interpretive extent, not a fixed frontier.",
+      },
+      {
+        symbol: "route",
+        label: "Route or connection",
+        detail: "Dashed cinnabar lines mark schematic historical or chapter-specific connections.",
+      },
+      {
+        symbol: "river",
+        label: "Major river",
+        detail: "Blue lines appear as the map is enlarged.",
+      },
+    ];
+    const source = supplied.length > 0 ? supplied : fallback;
+    const supportedSymbols = new Set(["site", "region", "route", "river", "province", "terrain"]);
+    return source
+      .filter((entry) => entry && typeof entry === "object" && String(entry.label || "").trim())
+      .map((entry) => ({
+        symbol: supportedSymbols.has(entry.symbol) ? entry.symbol : "site",
+        label: String(entry.label).trim(),
+        detail: String(entry.detail || "").trim(),
+      }));
+  }
+
+  function createInteractiveMapKey(mapData, index) {
+    const entries = mapLegendEntries(mapData);
+    if (entries.length === 0) return null;
+
+    const key = document.createElement("aside");
+    key.className = "interactive-map-key";
+    key.setAttribute("aria-label", "Map key");
+    key.hidden = true;
+    key.style.setProperty("--map-key-accent", mapData.accent || "#80634E");
+    const panelId = `map-key-${mapData.id || index + 1}`.replace(/[^a-zA-Z0-9_-]/g, "-");
+    const toggle = document.createElement("button");
+    toggle.className = "interactive-map-key-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", panelId);
+    toggle.textContent = "Map key";
+
+    const panel = document.createElement("div");
+    panel.className = "interactive-map-key-panel";
+    panel.id = panelId;
+    panel.hidden = true;
+    panel.setAttribute("aria-label", "Map key");
+    entries.forEach((entry) => {
+      const row = document.createElement("div");
+      row.className = "atlas-legend-row";
+      const symbol = document.createElement("span");
+      symbol.className = `atlas-legend-symbol atlas-legend-symbol-${entry.symbol}`;
+      symbol.setAttribute("aria-hidden", "true");
+      const copy = document.createElement("div");
+      const label = document.createElement("div");
+      label.className = "atlas-legend-label";
+      label.textContent = entry.label;
+      copy.appendChild(label);
+      if (entry.detail) {
+        const detail = document.createElement("div");
+        detail.className = "atlas-legend-detail";
+        detail.textContent = entry.detail;
+        copy.appendChild(detail);
+      }
+      row.append(symbol, copy);
+      panel.appendChild(row);
+    });
+
+    const setOpen = (open) => {
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.textContent = open ? "Close key" : "Map key";
+    };
+    toggle.addEventListener("click", () => setOpen(panel.hidden));
+    key.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !panel.hidden) {
+        event.preventDefault();
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    key.append(toggle, panel);
+    return key;
   }
 
   function bindInteractiveMapPopups(map, maplibregl) {
@@ -1881,6 +1989,7 @@
       const canvas = wrapper.querySelector(".interactive-map-canvas");
       const status = wrapper.querySelector(".interactive-map-status");
       const reset = wrapper.querySelector(".interactive-map-reset");
+      const key = wrapper.querySelector(".interactive-map-key");
       const bounds = mapData.view?.bounds;
       const minZoom = Number(mapData.view?.minZoom ?? 3);
       const maxZoom = Number(mapData.view?.maxZoom ?? 9);
@@ -1933,6 +2042,7 @@
         bindInteractiveMapPopups(map, maplibregl);
         status.hidden = true;
         reset.hidden = false;
+        if (key) key.hidden = false;
         canvas.setAttribute("aria-busy", "false");
       });
       map.on("error", (event) => {
@@ -1964,6 +2074,8 @@
     reset.textContent = "↺";
     reset.setAttribute("aria-label", "Reset map to the paragraph view");
     shell.append(canvas, status, reset);
+    const key = createInteractiveMapKey(mapData, index);
+    if (key) shell.appendChild(key);
     wrapper.appendChild(shell);
 
     const start = () => initializeInteractiveMap(wrapper, mapData, index);

@@ -127,6 +127,19 @@
               "date": {"type": ["integer", "null"]},
               "accent": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
               "showProvinces": {"type": "boolean"},
+              "legend": {
+                "type": "array",
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "required": ["symbol", "label"],
+                  "properties": {
+                    "symbol": {"type": "string", "enum": ["site", "region", "route", "river", "province", "terrain"]},
+                    "label": {"type": "string", "minLength": 1, "maxLength": 90},
+                    "detail": {"type": "string", "maxLength": 220}
+                  }
+                }
+              },
               "view": {
                 "type": "object",
                 "required": ["bounds", "minZoom", "maxZoom"],

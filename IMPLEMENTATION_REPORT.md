@@ -10,9 +10,10 @@ speed remain available without moving away from the paragraph.
 Every paragraph contains references to both standing chapter maps. The reader
 therefore displays the relevant pair again for every paragraph, while each map
 preset and shared atlas asset is stored only once. The maps carry no added
-title, caption, provenance panel, or appended explanatory block. They are now
-zoomable, with labels and features that adapt to scale; static WebP/PNG plates
-remain automatic fallbacks.
+title, caption, provenance panel, or appended explanatory block. A compact
+Map key opens only when requested and identifies the visible marks and line
+styles. The maps are zoomable, with labels and features that adapt to scale;
+static WebP/PNG plates remain automatic fallbacks and retain the same Map key.
 
 ## Ancient Japan, Chapter 1
 
@@ -88,6 +89,9 @@ The supporting primary research is recorded in
 - Touch controls are at least 44 CSS pixels, rotation and pitch are disabled,
   cooperative gestures prevent accidental page trapping, and maps fit the
   generous iPad mini reading layout.
+- Every atlas preset supplies a context-aware legend. The closed key leaves the
+  geography unobscured; its symbols match relief, site dots, interpretive
+  regions, schematic routes, rivers, and—where enabled—province boundaries.
 - Same-site static assets work on Cloudflare Pages with no service or database.
   An optional R2 publisher is supplied if later chapters make the atlas too
   large for the normal Pages deployment.
@@ -114,7 +118,8 @@ The supporting primary research is recorded in
   supporting gallery. Evidence, uncertainty, credit, and license information
   remain collapsed; audio continues in the same read-and-listen view.
 - Maps remain unchanged: the relevant pair is reproduced for every paragraph
-  without visible titles, captions, provenance panels, or overlays.
+  without visible titles, captions, or provenance panels. The only map control
+  added to the surface is the compact, optional Map key.
 
 ## The optimized chapter workflow
 

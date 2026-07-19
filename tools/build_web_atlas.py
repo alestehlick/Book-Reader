@@ -345,6 +345,41 @@ def build_presets(gis_root: Path, output_dir: Path) -> Path:
     for spec in specs:
         west, south, east, north = spec["extent"]
         key = str(spec["study_key"])
+        legend = [
+            {
+                "symbol": "terrain",
+                "label": "Relief and water",
+                "detail": "Terrain and water orient the view; neither marks a historical boundary.",
+            },
+            {
+                "symbol": "site",
+                "label": "Selected sites and study places",
+                "detail": "Dots are chapter-selected archaeological, historical, or thematic anchors.",
+            },
+            {
+                "symbol": "region",
+                "label": "Approximate historical zone",
+                "detail": "Tint and dashed edge mark an interpretive extent, not a fixed frontier.",
+            },
+            {
+                "symbol": "route",
+                "label": "Route or connection",
+                "detail": "Dashed cinnabar lines mark schematic historical or chapter-specific connections.",
+            },
+            {
+                "symbol": "river",
+                "label": "Major river",
+                "detail": "Blue lines appear as the map is enlarged.",
+            },
+        ]
+        if bool(spec["provinces"]):
+            legend.append(
+                {
+                    "symbol": "province",
+                    "label": "Province boundary",
+                    "detail": "A later historical proxy, shown only as an administrative guide.",
+                }
+            )
         presets[key] = {
             "type": "interactive",
             "style": "../maps/atlas/ancient-japan-style.json",
@@ -358,6 +393,7 @@ def build_presets(gis_root: Path, output_dir: Path) -> Path:
             "date": spec["date"],
             "accent": spec["accent"],
             "showProvinces": bool(spec["provinces"]),
+            "legend": legend,
             "view": {
                 "bounds": [[west, south], [east, north]],
                 "minZoom": 3,
