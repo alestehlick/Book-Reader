@@ -3,7 +3,7 @@
     "schemaVersion": 2,
     "sections": 16,
     "paragraphs": 116,
-    "maps": 2,
+    "maps": 10,
     "timelineEvents": 64,
     "illustrations": 13,
     "illustrationReferences": 13,
@@ -15,7 +15,8 @@
     "sourceWords": 25517,
     "manuscriptWords": 9864,
     "retentionRatio": 0.3866,
-    "minimumRetentionRatio": 0.35
+    "minimumRetentionRatio": 0.35,
+    "mapRefreshErrors": 0
   },
   "errors": [],
   "warnings": []

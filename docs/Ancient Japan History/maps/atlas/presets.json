@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "atlas": "ancient-japan",
   "presets": {
     "1a": {
@@ -1477,6 +1477,616 @@
         "slug": "late_heian_overview",
         "plateLabel": "HEIAN III",
         "note": "Warrior and maritime zones overlap; campaign routes summarize the 1180-1185 sequence."
+      }
+    },
+    "1-islands": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-islands",
+      "showProvinces": false,
+      "scene": "islands",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -20000,
+      "accent": "#566675",
+      "alt": "Scalable map of the changing Pleistocene archipelago and its principal crossing corridors.",
+      "view": {
+        "bounds": [
+          [
+            119.0,
+            26.7
+          ],
+          [
+            145.0,
+            46.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and submerged margin",
+          "detail": "Modern terrain provides orientation; the routes summarize changing Pleistocene approaches."
+        },
+        {
+          "symbol": "gateway",
+          "label": "Maritime or landward gateway",
+          "detail": "Gateways mark broad approaches, not surveyed points of entry."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Reconstructed movement corridor",
+          "detail": "Dashed lines show plausible corridors whose use and chronology varied."
+        }
+      ],
+      "metadata": {
+        "slug": "1-islands",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Islands emerging",
+        "evidenceFrame": "archaeological and geological synthesis"
+      }
+    },
+    "1-paleolithic": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-paleolithic",
+      "showProvinces": false,
+      "scene": "paleolithic",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -28000,
+      "accent": "#566675",
+      "alt": "Scalable map of Paleolithic sites, volcanic landscapes, stone sources, and early pottery locations.",
+      "view": {
+        "bounds": [
+          [
+            126.5,
+            30.5
+          ],
+          [
+            143.5,
+            43.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "settlement",
+          "label": "Occupation or excavation site",
+          "detail": "Large symbols are principal paragraph anchors; smaller symbols provide comparison."
+        },
+        {
+          "symbol": "production",
+          "label": "Stone or ceramic evidence",
+          "detail": "The hexagon identifies a source, workshop, or technically important find."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Movement or exchange corridor",
+          "detail": "Dashed lines are schematic and do not represent a single journey."
+        },
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain explains access and movement but does not mark a historical boundary."
+        }
+      ],
+      "metadata": {
+        "slug": "1-paleolithic",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Paleolithic movement",
+        "evidenceFrame": "archaeological evidence"
+      }
+    },
+    "1-jomon-coasts": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-jomon-coasts",
+      "showProvinces": false,
+      "scene": "jomon-coasts",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -5000,
+      "accent": "#9A6044",
+      "alt": "Scalable map of Early Jomon coastal settlements, shell mounds, villages, and plant-use sites.",
+      "view": {
+        "bounds": [
+          [
+            127.5,
+            30.5
+          ],
+          [
+            143.5,
+            42.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "settlement",
+          "label": "Settlement or shell-mound site",
+          "detail": "Symbol size and label prominence express importance to the current passage."
+        },
+        {
+          "symbol": "zone",
+          "label": "Broad archaeological concentration",
+          "detail": "A soft tint indicates a long-lived cultural field rather than a bounded people."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Coastal connection",
+          "detail": "The route summarizes repeated travel and exchange, not a permanent road."
+        },
+        {
+          "symbol": "terrain",
+          "label": "Coast, relief, and water",
+          "detail": "The physical base remains deliberately quieter than the historical layer."
+        }
+      ],
+      "metadata": {
+        "slug": "1-jomon-coasts",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Jomon coasts",
+        "evidenceFrame": "archaeological and environmental evidence"
+      }
+    },
+    "1-jomon-highlands": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-jomon-highlands",
+      "showProvinces": false,
+      "scene": "jomon-highlands",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -3000,
+      "accent": "#9A6044",
+      "alt": "Scalable close map of the Middle Jomon highlands, springs, obsidian routes, and principal settlements.",
+      "view": {
+        "bounds": [
+          [
+            136.7,
+            34.5
+          ],
+          [
+            140.5,
+            37.5
+          ]
+        ],
+        "minZoom": 4,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "settlement",
+          "label": "Highland settlement",
+          "detail": "Filled circles identify settlement anchors; size expresses narrative importance."
+        },
+        {
+          "symbol": "production",
+          "label": "Craft or material source",
+          "detail": "Hexagons identify places important for pottery, obsidian, or specialized production."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Exchange connection",
+          "detail": "Dashed umber lines show generalized movement between mountain and plain."
+        },
+        {
+          "symbol": "zone",
+          "label": "Highland concentration",
+          "detail": "The zone is interpretive and changes across the long Middle Jomon sequence."
+        }
+      ],
+      "metadata": {
+        "slug": "1-jomon-highlands",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Middle Jomon highlands",
+        "evidenceFrame": "archaeological synthesis"
+      }
+    },
+    "1-late-jomon": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-late-jomon",
+      "showProvinces": false,
+      "scene": "late-jomon",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -800,
+      "accent": "#9A6044",
+      "alt": "Scalable map of Late and Final Jomon coastal networks, northern concentrations, ritual places, and exchange.",
+      "view": {
+        "bounds": [
+          [
+            126.0,
+            30.0
+          ],
+          [
+            144.0,
+            44.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "settlement",
+          "label": "Settlement or gathering place",
+          "detail": "Principal sites are labeled first; contextual sites appear during enlargement."
+        },
+        {
+          "symbol": "burial",
+          "label": "Mortuary or ceremonial place",
+          "detail": "Diamonds distinguish cemeteries, stone circles, and enduring ritual grounds."
+        },
+        {
+          "symbol": "zone",
+          "label": "Regional concentration",
+          "detail": "Translucent fields summarize distributions rather than political borders."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Exchange network",
+          "detail": "Dashed lines indicate repeated movement of materials and knowledge."
+        }
+      ],
+      "metadata": {
+        "slug": "1-late-jomon",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Late and Final Jomon",
+        "evidenceFrame": "archaeological synthesis"
+      }
+    },
+    "1-rice": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-rice",
+      "showProvinces": false,
+      "scene": "rice",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": -700,
+      "accent": "#B8893F",
+      "alt": "Scalable map of the Korean Strait, the northern Kyushu rice core, and uneven eastward adoption.",
+      "view": {
+        "bounds": [
+          [
+            126.5,
+            29.5
+          ],
+          [
+            139.2,
+            37.2
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "gateway",
+          "label": "Strait gateway",
+          "detail": "Gateway symbols emphasize Tsushima, Iki, and northern Kyushu without drawing a political boundary."
+        },
+        {
+          "symbol": "settlement",
+          "label": "Agricultural community",
+          "detail": "Sites combine fields, settlement, storage, burial, or mixed subsistence in different proportions."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Phased adoption corridor",
+          "detail": "The broad dashed line records uneven movement over centuries, not one advancing front."
+        },
+        {
+          "symbol": "zone",
+          "label": "Early rice core or transition",
+          "detail": "Tint indicates an archaeological concentration whose dates vary by region."
+        }
+      ],
+      "metadata": {
+        "slug": "1-rice",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Rice through the straits",
+        "evidenceFrame": "archaeological and environmental evidence"
+      }
+    },
+    "1-yayoi": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-yayoi",
+      "showProvinces": false,
+      "scene": "yayoi",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": 50,
+      "accent": "#B8893F",
+      "alt": "Scalable map of Yayoi settlements, cemeteries, defended villages, fields, and regional centers.",
+      "view": {
+        "bounds": [
+          [
+            129.0,
+            30.5
+          ],
+          [
+            141.0,
+            38.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "settlement",
+          "label": "Settlement",
+          "detail": "Circles identify villages and habitation sites; scale reflects relevance to the passage."
+        },
+        {
+          "symbol": "burial",
+          "label": "Cemetery or elite burial",
+          "detail": "Diamonds distinguish mortuary evidence from habitation."
+        },
+        {
+          "symbol": "production",
+          "label": "Production or storage center",
+          "detail": "Hexagons identify craft, agricultural, or material-production evidence."
+        },
+        {
+          "symbol": "zone",
+          "label": "Regional development",
+          "detail": "Soft areas show overlapping archaeological patterns rather than fixed polities."
+        }
+      ],
+      "metadata": {
+        "slug": "1-yayoi",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Yayoi landscapes",
+        "evidenceFrame": "archaeological evidence"
+      }
+    },
+    "1-bronze": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-bronze",
+      "showProvinces": false,
+      "scene": "bronze",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": 150,
+      "accent": "#B8893F",
+      "alt": "Scalable map of Yayoi bronze workshops, caches, weapon concentrations, bell concentrations, and maritime metal supply.",
+      "view": {
+        "bounds": [
+          [
+            128.5,
+            31.0
+          ],
+          [
+            139.0,
+            37.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "production",
+          "label": "Workshop or bronze cache",
+          "detail": "Hexagons distinguish production and deliberate deposition from ordinary settlement."
+        },
+        {
+          "symbol": "zone",
+          "label": "Overlapping bronze concentration",
+          "detail": "The fields are diachronic distributions, not rival states with fixed borders."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Metal-supply connection",
+          "detail": "Dashed lines summarize maritime acquisition and inland recasting."
+        },
+        {
+          "symbol": "settlement",
+          "label": "Supporting settlement",
+          "detail": "Smaller neutral anchors provide geographical orientation."
+        }
+      ],
+      "metadata": {
+        "slug": "1-bronze",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Bronze geographies",
+        "evidenceFrame": "archaeological and scientific evidence"
+      }
+    },
+    "1-wa": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-wa",
+      "showProvinces": false,
+      "scene": "wa",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": 240,
+      "accent": "#53648A",
+      "alt": "Scalable map of Daifang, the Korean Strait, the securely identifiable northern Kyushu stages, and disputed continuations toward Yamatai.",
+      "view": {
+        "bounds": [
+          [
+            123.5,
+            29.0
+          ],
+          [
+            138.0,
+            40.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "political",
+          "label": "Recorded center or country",
+          "detail": "Squares identify places named or anchored by the continental written record."
+        },
+        {
+          "symbol": "gateway",
+          "label": "Maritime stage",
+          "detail": "Gateways mark the comparatively secure first stages through Tsushima and Iki."
+        },
+        {
+          "symbol": "route-secure",
+          "label": "Comparatively secure itinerary",
+          "detail": "The solid indigo route follows stages that can be placed with reasonable confidence."
+        },
+        {
+          "symbol": "route-inferred",
+          "label": "Disputed continuation",
+          "detail": "Fading dashed branches visualize uncertainty and do not locate Yamatai."
+        },
+        {
+          "symbol": "zone",
+          "label": "Candidate field",
+          "detail": "Very pale fields represent major hypotheses, never an asserted capital."
+        }
+      ],
+      "metadata": {
+        "slug": "1-wa",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Wa in the East Asian field",
+        "evidenceFrame": "external written testimony and archaeology"
+      }
+    },
+    "1-memory": {
+      "type": "interactive",
+      "style": "../maps/atlas/ancient-japan-style.json",
+      "archive": "ancient-japan-vector.pmtiles",
+      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "sprite": "ch01-symbols",
+      "localSprite": "../maps/atlas/ch01-symbols",
+      "plate": "1-memory",
+      "showProvinces": false,
+      "scene": "memory",
+      "period": "__chapter1_scene__",
+      "sitePeriods": [],
+      "date": 275,
+      "accent": "#76566E",
+      "alt": "Scalable map distinguishing the traditional Jimmu itinerary from archaeological regional centers at the threshold of Yamato.",
+      "view": {
+        "bounds": [
+          [
+            128.5,
+            30.2
+          ],
+          [
+            138.0,
+            37.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "legend": [
+        {
+          "symbol": "route-traditional",
+          "label": "Retrospective court itinerary",
+          "detail": "The dotted plum route belongs to later tradition and is not a securely dated campaign."
+        },
+        {
+          "symbol": "production",
+          "label": "Archaeological concentration",
+          "detail": "Hexagons identify caches or material centers independently of the chronicles."
+        },
+        {
+          "symbol": "political",
+          "label": "Emerging regional center",
+          "detail": "Squares locate broad political landscapes without naming a completed state."
+        },
+        {
+          "symbol": "zone",
+          "label": "Converging regional field",
+          "detail": "Soft fields emphasize several centers rather than an inevitable national core."
+        }
+      ],
+      "metadata": {
+        "slug": "1-memory",
+        "plateLabel": "",
+        "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+        "title": "Memory and regional convergence",
+        "evidenceFrame": "archaeology distinguished from retrospective tradition"
       }
     }
   }

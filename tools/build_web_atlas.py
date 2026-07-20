@@ -40,7 +40,7 @@ class AtlasBuildError(RuntimeError):
 
 
 def read_json(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def write_json(path: Path, value: Any) -> None:
@@ -129,8 +129,23 @@ def csv_wkt_vrt_layer(name: str, source: Path) -> str:
   </OGRVRTLayer>"""
 
 
-def build_vrt(gis_root: Path, temp_dir: Path) -> tuple[Path, dict[str, dict[str, Any]]]:
+def csv_polygon_vrt_layer(name: str, source: Path) -> str:
+    return f"""  <OGRVRTLayer name=\"{html.escape(name)}\">
+    <SrcDataSource relativeToVRT=\"0\">{html.escape(str(source))}</SrcDataSource>
+    <SrcLayer>{html.escape(source.stem)}</SrcLayer>
+    <GeometryType>wkbPolygon</GeometryType>
+    <LayerSRS>EPSG:4326</LayerSRS>
+    <GeometryField encoding=\"WKT\" field=\"wkt\"/>
+  </OGRVRTLayer>"""
+
+
+def build_vrt(
+    gis_root: Path,
+    reader_root: Path,
+    temp_dir: Path,
+) -> tuple[Path, dict[str, dict[str, Any]]]:
     rebuild = gis_root / "rebuild_v2"
+    map_data = reader_root / "tools" / "map_data"
     sources = {
         "land": require_file(gis_root / "base" / "readonly" / "land_high.fgb", "coastline layer"),
         "reference_labels": require_file(gis_root / "base" / "readonly" / "reference_labels.fgb", "reference labels"),
@@ -143,6 +158,9 @@ def build_vrt(gis_root: Path, temp_dir: Path) -> tuple[Path, dict[str, dict[str,
         "province_labels": require_file(gis_root / "historical" / "readonly" / "ritsuryo_province_labels.fgb", "province labels"),
         "study_labels": require_file(rebuild / "data" / "study_labels.csv", "study labels"),
         "chapter_routes": require_file(rebuild / "data" / "chapter_routes.csv", "chapter routes"),
+        "ch01_features": require_file(map_data / "ch01-features.csv", "Chapter 1 semantic features"),
+        "ch01_routes": require_file(map_data / "ch01-routes.csv", "Chapter 1 narrative routes"),
+        "ch01_regions": require_file(map_data / "ch01-regions.csv", "Chapter 1 interpretive regions"),
     }
 
     layers = [
@@ -168,6 +186,9 @@ def build_vrt(gis_root: Path, temp_dir: Path) -> tuple[Path, dict[str, dict[str,
         ogr_vrt_layer("ritsuryo_province_labels", sources["province_labels"], "ritsuryo_province_labels"),
         csv_point_vrt_layer("study_labels", sources["study_labels"]),
         csv_wkt_vrt_layer("chapter_routes", sources["chapter_routes"]),
+        csv_point_vrt_layer("ch01_features", sources["ch01_features"]),
+        csv_wkt_vrt_layer("ch01_routes", sources["ch01_routes"]),
+        csv_polygon_vrt_layer("ch01_regions", sources["ch01_regions"]),
     ]
     vrt = temp_dir / "ancient-japan-web-atlas.vrt"
     vrt.write_text("<OGRVRTDataSource>\n" + "\n".join(layers) + "\n</OGRVRTDataSource>\n", encoding="utf-8")
@@ -184,12 +205,21 @@ def build_vrt(gis_root: Path, temp_dir: Path) -> tuple[Path, dict[str, dict[str,
         "ritsuryo_province_labels": {"minzoom": 5, "maxzoom": 9, "description": "English province labels"},
         "study_labels": {"minzoom": 3, "maxzoom": 9, "description": "Corpus-linked English study labels"},
         "chapter_routes": {"minzoom": 3, "maxzoom": 9, "description": "Chapter-linked schematic movement corridors"},
+        "ch01_features": {"minzoom": 3, "maxzoom": 9, "description": "Chapter 1 prose-linked semantic features"},
+        "ch01_routes": {"minzoom": 3, "maxzoom": 9, "description": "Chapter 1 evidence-aware narrative routes"},
+        "ch01_regions": {"minzoom": 3, "maxzoom": 9, "description": "Chapter 1 interpretive distributions and candidate fields"},
     }
     return vrt, config
 
 
-def build_vector_archive(gis_root: Path, qgis_root: Path, output_dir: Path, temp_dir: Path) -> Path:
-    vrt, layer_config = build_vrt(gis_root, temp_dir)
+def build_vector_archive(
+    gis_root: Path,
+    reader_root: Path,
+    qgis_root: Path,
+    output_dir: Path,
+    temp_dir: Path,
+) -> Path:
+    vrt, layer_config = build_vrt(gis_root, reader_root, temp_dir)
     conf = temp_dir / "pmtiles-layers.json"
     write_json(conf, layer_config)
     temporary_archive = temp_dir / "ancient-japan-vector.pmtiles"
@@ -268,7 +298,7 @@ def build_terrain_tiles(gis_root: Path, qgis_root: Path, output_dir: Path, temp_
             "-overwrite",
             "-t_srs", "EPSG:3857",
             "-te_srs", "EPSG:4326",
-            "-te", "120", "26.5", "145", "45.5",
+            "-te", "118.5", "25.5", "148", "46.5",
             "-tr", "450", "450",
             "-r", "bilinear",
             "-dstalpha",
@@ -338,7 +368,7 @@ def extract_qgis_map_specs(builder_path: Path) -> list[dict[str, Any]]:
     return specs
 
 
-def build_presets(gis_root: Path, output_dir: Path) -> Path:
+def build_presets(gis_root: Path, reader_root: Path, output_dir: Path) -> Path:
     builder = require_file(gis_root / "rebuild_v2" / "scripts" / "build_qgis_atlas_v2.py", "QGIS atlas builder")
     specs = extract_qgis_map_specs(builder)
     presets: dict[str, Any] = {}
@@ -405,11 +435,40 @@ def build_presets(gis_root: Path, output_dir: Path) -> Path:
                 "note": spec["note"],
             },
         }
+
+    chapter_scene_catalog = read_json(
+        require_file(
+            reader_root / "tools" / "map_data" / "ch01-scenes.json",
+            "Chapter 1 scene catalog",
+        )
+    )
+    for key, raw_scene in chapter_scene_catalog.get("scenes", {}).items():
+        scene = dict(raw_scene)
+        scene_metadata = dict(scene.pop("metadata", {}))
+        presets[str(key)] = {
+            "type": "interactive",
+            "style": "../maps/atlas/ancient-japan-style.json",
+            "archive": "ancient-japan-vector.pmtiles",
+            "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
+            "terrainTiles": "terrain/{z}/{x}/{y}.webp",
+            "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+            "sprite": "ch01-symbols",
+            "localSprite": "../maps/atlas/ch01-symbols",
+            "plate": str(key),
+            "showProvinces": False,
+            **scene,
+            "metadata": {
+                "slug": str(key),
+                "plateLabel": "",
+                "note": "Scene filters and visual hierarchy are derived from the Chapter 1 prose.",
+                **scene_metadata,
+            },
+        }
     output = output_dir / "presets.json"
     write_json(
         output,
         {
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "atlas": "ancient-japan",
             "presets": presets,
         },
@@ -419,7 +478,15 @@ def build_presets(gis_root: Path, output_dir: Path) -> Path:
 
 def build_manifest(output_dir: Path, archive: Path | None, terrain: Path | None, presets: Path) -> Path:
     artifacts: list[dict[str, Any]] = []
-    for item in [archive, presets, output_dir / "ancient-japan-style.json"]:
+    for item in [
+        archive,
+        presets,
+        output_dir / "ancient-japan-style.json",
+        output_dir / "ch01-symbols.png",
+        output_dir / "ch01-symbols.json",
+        output_dir / "ch01-symbols@2x.png",
+        output_dir / "ch01-symbols@2x.json",
+    ]:
         if item and item.is_file():
             artifacts.append(
                 {
@@ -458,6 +525,11 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def build_ch01_sprites(reader_root: Path, output_dir: Path) -> None:
+    builder = require_file(reader_root / "tools" / "build_ch01_sprites.py", "Chapter 1 sprite builder")
+    run([sys.executable, str(builder), "--output", str(output_dir)])
+
+
 def main() -> int:
     args = parse_args()
     gis_root = require_dir(args.gis_root.resolve(), "GIS root")
@@ -473,7 +545,7 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="ancient-japan-web-atlas-") as raw_temp:
         temp_dir = Path(raw_temp)
         if not args.skip_vector:
-            archive = build_vector_archive(gis_root, qgis_root, output_dir, temp_dir)
+            archive = build_vector_archive(gis_root, reader_root, qgis_root, output_dir, temp_dir)
         elif (output_dir / "ancient-japan-vector.pmtiles").is_file():
             archive = output_dir / "ancient-japan-vector.pmtiles"
         if not args.skip_terrain:
@@ -481,7 +553,8 @@ def main() -> int:
         elif (output_dir / "terrain").is_dir():
             terrain = output_dir / "terrain"
 
-    presets = build_presets(gis_root, output_dir)
+    build_ch01_sprites(reader_root, output_dir)
+    presets = build_presets(gis_root, reader_root, output_dir)
     manifest = build_manifest(output_dir, archive, terrain, presets)
     print(f"atlas: ready — {manifest}")
     return 0

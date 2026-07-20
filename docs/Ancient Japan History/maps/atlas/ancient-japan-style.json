@@ -5,6 +5,7 @@
     "reader:purpose": "Zoom-aware historical study atlas",
     "reader:projection-policy": "North-up, two-dimensional, maximum zoom limited by evidence resolution"
   },
+  "sprite": "__SPRITE_URL__",
   "sources": {
     "terrain": {
       "type": "raster",
@@ -12,7 +13,7 @@
       "tileSize": 256,
       "minzoom": 3,
       "maxzoom": 8,
-      "bounds": [120.0, 20.0, 146.0, 50.0],
+      "bounds": [118.5, 25.5, 148.0, 46.5],
       "attribution": "Terrain: Copernicus DEM and GEBCO"
     },
     "atlas": {
@@ -25,16 +26,16 @@
     {
       "id": "paper-sea",
       "type": "background",
-      "paint": {"background-color": "#d9e4e4"}
+      "paint": {"background-color": "#557a82"}
     },
     {
       "id": "terrain-relief",
       "type": "raster",
       "source": "terrain",
       "paint": {
-        "raster-opacity": 0.94,
-        "raster-saturation": -0.08,
-        "raster-contrast": 0.05,
+        "raster-opacity": 0.89,
+        "raster-saturation": -0.16,
+        "raster-contrast": -0.02,
         "raster-fade-duration": 0
       }
     },
@@ -191,6 +192,309 @@
       }
     },
     {
+      "id": "ch01-regions",
+      "type": "fill",
+      "source": "atlas",
+      "source-layer": "ch01_regions",
+      "filter": [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+      "paint": {
+        "fill-color": [
+          "match", ["get", "period_family"],
+          "paleolithic", "#566675",
+          "jomon", "#9A6044",
+          "yayoi", "#B8893F",
+          "record", "#53648A",
+          "traditional", "#76566E",
+          "#70685D"
+        ],
+        "fill-opacity": [
+          "match", ["get", "certainty"],
+          "secure", 0.17,
+          "approximate", 0.12,
+          "disputed", 0.07,
+          0.1
+        ]
+      }
+    },
+    {
+      "id": "ch01-region-boundaries",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "ch01_regions",
+      "filter": [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+      "paint": {
+        "line-color": [
+          "match", ["get", "period_family"],
+          "paleolithic", "#566675",
+          "jomon", "#9A6044",
+          "yayoi", "#B8893F",
+          "record", "#53648A",
+          "traditional", "#76566E",
+          "#70685D"
+        ],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.7, 9, 1.8],
+        "line-opacity": ["match", ["get", "certainty"], "disputed", 0.35, 0.55],
+        "line-dasharray": [2, 2]
+      }
+    },
+    {
+      "id": "ch01-routes-inferred",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "ch01_routes",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["!=", ["get", "certainty"], "secure"],
+        ["!=", ["get", "certainty"], "traditional"]
+      ],
+      "paint": {
+        "line-color": [
+          "match", ["get", "route_family"],
+          "movement", "#566675",
+          "exchange", "#8A5A3D",
+          "diffusion", "#B8893F",
+          "record", "#53648A",
+          "traditional", "#76566E",
+          "#70685D"
+        ],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.5, 9, 3.7],
+        "line-opacity": ["match", ["get", "certainty"], "disputed", 0.48, 0.72],
+        "line-dasharray": [3, 2]
+      }
+    },
+    {
+      "id": "ch01-routes-secure",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "ch01_routes",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["==", ["get", "certainty"], "secure"]
+      ],
+      "paint": {
+        "line-color": [
+          "match", ["get", "route_family"],
+          "movement", "#566675",
+          "exchange", "#8A5A3D",
+          "diffusion", "#B8893F",
+          "record", "#53648A",
+          "traditional", "#76566E",
+          "#70685D"
+        ],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.6, 9, 4],
+        "line-opacity": 0.88
+      }
+    },
+    {
+      "id": "ch01-routes-traditional",
+      "type": "line",
+      "source": "atlas",
+      "source-layer": "ch01_routes",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["==", ["get", "certainty"], "traditional"]
+      ],
+      "paint": {
+        "line-color": "#76566E",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 2.2, 9, 4.8],
+        "line-opacity": 0.88,
+        "line-dasharray": [1, 1.7]
+      }
+    },
+    {
+      "id": "ch01-focus-halo",
+      "type": "circle",
+      "source": "atlas",
+      "source-layer": "ch01_features",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "focus_scenes"], ""]], 0],
+        ["!=", ["get", "category"], "landscape"]
+      ],
+      "paint": {
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 7, 9, 16],
+        "circle-color": "rgba(241,235,221,0.34)",
+        "circle-stroke-color": "rgba(241,235,221,0.92)",
+        "circle-stroke-width": 2,
+        "circle-blur": 0.22
+      }
+    },
+    {
+      "id": "ch01-feature-symbols",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_features",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["!=", ["get", "category"], "landscape"]
+      ],
+      "layout": {
+        "icon-image": [
+          "concat",
+          ["coalesce", ["get", "period_family"], "neutral"],
+          "-",
+          ["coalesce", ["get", "category"], "settlement"]
+        ],
+        "icon-size": [
+          "interpolate", ["linear"], ["zoom"],
+          3, ["match", ["get", "rank"], 1, 0.64, 2, 0.52, 0.43],
+          9, ["match", ["get", "rank"], 1, 1.08, 2, 0.88, 0.7]
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true
+      },
+      "paint": {
+        "icon-opacity": [
+          "match", ["get", "certainty"],
+          "secure", 0.98,
+          "approximate", 0.82,
+          "disputed", 0.58,
+          0.86
+        ]
+      }
+    },
+    {
+      "id": "ch01-region-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_regions",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["!=", ["literal", "__SCENE__"], ["literal", "memory"]]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 12, 9, 17],
+        "text-letter-spacing": 0.06,
+        "text-transform": "uppercase",
+        "text-allow-overlap": false,
+        "text-padding": 8,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#453A31",
+        "text-halo-color": "rgba(239,233,219,0.9)",
+        "text-halo-width": 1.8
+      }
+    },
+    {
+      "id": "ch01-landscape-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_features",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["==", ["get", "category"], "landscape"]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 11, 9, 16],
+        "text-letter-spacing": 0.08,
+        "text-allow-overlap": false,
+        "text-padding": 6,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#57483B",
+        "text-opacity": 0.74,
+        "text-halo-color": "rgba(239,233,219,0.92)",
+        "text-halo-width": 1.6
+      }
+    },
+    {
+      "id": "ch01-focus-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_features",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "focus_scenes"], ""]], 0],
+        ["!=", ["get", "category"], "landscape"]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Arial Unicode MS Regular", "Noto Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 13, 9, 18],
+        "text-variable-anchor": ["top", "bottom", "left", "right"],
+        "text-radial-offset": 0.95,
+        "text-allow-overlap": false,
+        "text-padding": 5,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#2F2924",
+        "text-halo-color": "rgba(247,241,228,0.96)",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "ch01-context-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_features",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["<", ["get", "rank"], 3],
+        ["!=", ["get", "category"], "landscape"]
+      ],
+      "layout": {
+        "text-field": ["get", "map_label"],
+        "text-font": ["Arial Unicode MS Regular", "Noto Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 5, 12, 9, 16],
+        "text-variable-anchor": ["top", "bottom", "left", "right"],
+        "text-radial-offset": 0.85,
+        "text-allow-overlap": false,
+        "text-padding": 5,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 5]
+      },
+      "paint": {
+        "text-color": "#4C433B",
+        "text-opacity": 0.86,
+        "text-halo-color": "rgba(247,241,228,0.94)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "ch01-route-labels",
+      "type": "symbol",
+      "source": "atlas",
+      "source-layer": "ch01_routes",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["==", ["get", "rank"], 1]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 420,
+        "text-field": ["get", "map_label"],
+        "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 12, 9, 16],
+        "text-letter-spacing": 0.03,
+        "text-max-angle": 30,
+        "text-allow-overlap": false,
+        "text-padding": 5
+      },
+      "paint": {
+        "text-color": "#4A4037",
+        "text-halo-color": "rgba(247,241,228,0.95)",
+        "text-halo-width": 2
+      }
+    },
+    {
       "id": "historical-sites-halo",
       "type": "circle",
       "source": "atlas",
@@ -291,8 +595,8 @@
         "text-font": ["Georgia", "Palatino Linotype", "Times New Roman"],
         "text-size": [
           "interpolate", ["linear"], ["zoom"],
-          3, ["match", ["get", "label_type"], "sea", 15, 12],
-          8, ["match", ["get", "label_type"], "sea", 23, 18]
+          3, ["match", ["get", "label_type"], "sea", 12, 9],
+          8, ["match", ["get", "label_type"], "sea", 18, 13]
         ],
         "text-letter-spacing": 0.1,
         "text-allow-overlap": false,
@@ -300,8 +604,9 @@
       },
       "paint": {
         "text-color": "#31596b",
+        "text-opacity": 0.68,
         "text-halo-color": "rgba(228,236,233,0.9)",
-        "text-halo-width": 2
+        "text-halo-width": 1.7
       }
     },
     {
@@ -359,6 +664,7 @@
       "source-layer": "study_labels",
       "filter": [
         "all",
+        ["==", ["literal", "__SCENE__"], ["literal", "__scene_not_used__"]],
         [
           "any",
           ["==", ["get", "plates"], "all"],

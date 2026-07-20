@@ -6,24 +6,44 @@
     "template": "terrain/{z}/{x}/{y}.webp",
     "minZoom": 3,
     "maxZoom": 8,
-    "tiles": 489,
-    "bytes": 749870
+    "tiles": 586,
+    "bytes": 852866
   },
   "artifacts": [
     {
       "path": "ancient-japan-vector.pmtiles",
-      "bytes": 3993694,
-      "sha256": "ccd3dba9b3b4cf1bd6a14cc52aa408792c9cc58fedcaa5f4d578062c6ff243e8"
+      "bytes": 4203566,
+      "sha256": "4d3b4c389213bdbd4c4b2f6118c4bc0adbda8eee3a9b28876eb347aca6a194b9"
     },
     {
       "path": "presets.json",
-      "bytes": 46655,
-      "sha256": "536d0f4a0056a548ce956db918850ddd9ad2596093fd034dc53533327e09adf5"
+      "bytes": 68037,
+      "sha256": "d62ed9c9145a674e29e46dbee21b8b028464c2ecd105497bccfda65f79789000"
     },
     {
       "path": "ancient-japan-style.json",
-      "bytes": 15995,
-      "sha256": "61a9e5f09a1641ddb80af95863b6c50da68d7caca1eec308896ae67af5f60795"
+      "bytes": 25829,
+      "sha256": "e8a56adc5988a6bc0e52bdd908f6792947df800a00e75c6009da77a97d38db56"
+    },
+    {
+      "path": "ch01-symbols.png",
+      "bytes": 11482,
+      "sha256": "77f5a887c60a2aeb3cd287ef4b6a35094ca755ee95aaeb41bd54872fe3dd3495"
+    },
+    {
+      "path": "ch01-symbols.json",
+      "bytes": 4207,
+      "sha256": "459988291c9a7fa34fb091f7a5cafda657e5af4e4646225a3d12cc19706c89d2"
+    },
+    {
+      "path": "ch01-symbols@2x.png",
+      "bytes": 22580,
+      "sha256": "51ba348d977e264ff70e53446fb77450ac71d562cc8b7e258853ec124141e96b"
+    },
+    {
+      "path": "ch01-symbols@2x.json",
+      "bytes": 4229,
+      "sha256": "a010d9148d1d638edd96bdb95c26aa446f08e10eac5887dc37a4265e81f4f8c0"
     }
   ]
 }

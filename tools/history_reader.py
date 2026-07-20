@@ -860,6 +860,53 @@ def command_build(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_refresh_maps(args: argparse.Namespace) -> int:
+    """Replace only map catalogs and references in an already built chapter."""
+    manifest_path = Path(args.manifest).resolve()
+    manifest = read_json(manifest_path)
+    root = manifest_path.parent
+    output_json = (root / manifest["outputJson"]).resolve()
+    output_js = (root / manifest["outputJs"]).resolve()
+    input_json = Path(args.input).resolve() if args.input else output_json
+    data = read_json(input_json)
+
+    maps = expand_manifest_maps(manifest, root)
+    standing_refs = [item["id"] for item in maps if item.get("standing", True)]
+    section_metadata: dict[str, Any] = {}
+    paragraph_metadata: dict[str, Any] = {}
+    if manifest.get("sectionMetadata"):
+        section_metadata = read_json((root / manifest["sectionMetadata"]).resolve())
+    if manifest.get("paragraphMetadata"):
+        paragraph_metadata = read_json((root / manifest["paragraphMetadata"]).resolve())
+
+    for section in data.get("sections", []):
+        section_refs = section_metadata.get(section.get("id", ""), {}).get("mapRefs", standing_refs)
+        for paragraph in section.get("paragraphs", []):
+            paragraph_refs = paragraph_metadata.get(paragraph.get("id", ""), {}).get("mapRefs", section_refs)
+            paragraph["mapRefs"] = list(dict.fromkeys(str(item) for item in paragraph_refs if str(item)))
+
+    data.setdefault("catalogs", {})["maps"] = maps
+    result = validate(data, output_json.parent)
+    report = {"summary": result.summary, "errors": result.errors, "warnings": result.warnings}
+    if result.errors:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 1
+
+    write_json(output_json, data)
+    write_js(output_js, data)
+    validation_value = manifest.get("validationReport")
+    if validation_value:
+        validation_path = (root / validation_value).resolve()
+        if validation_path.is_file():
+            release_report = read_json(validation_path)
+            release_summary = release_report.setdefault("summary", {})
+            release_summary["maps"] = len(maps)
+            release_summary["mapRefreshErrors"] = 0
+            write_json(validation_path, release_report)
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+    return 0
+
+
 def command_release(args: argparse.Namespace) -> int:
     manifest_path = Path(args.manifest).resolve()
     manifest = read_json(manifest_path)
@@ -987,6 +1034,14 @@ def build_parser() -> argparse.ArgumentParser:
     build = sub.add_parser("build", help="build JSON and JS from a chapter manifest")
     build.add_argument("--manifest", required=True)
     build.set_defaults(func=command_build)
+
+    refresh_maps = sub.add_parser(
+        "refresh-maps",
+        help="refresh map catalogs and paragraph references without rebuilding prose",
+    )
+    refresh_maps.add_argument("--manifest", required=True)
+    refresh_maps.add_argument("--input", help="existing chapter JSON; defaults to the manifest output")
+    refresh_maps.set_defaults(func=command_refresh_maps)
 
     release = sub.add_parser("release", help="build and fully validate a manifest-defined chapter")
     release.add_argument("--manifest", required=True)

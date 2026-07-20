@@ -1,0 +1,242 @@
+{
+  "paleolithic-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "paleolithic-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 0,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "paleolithic-production": {
+    "width": 32,
+    "height": 32,
+    "x": 0,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "paleolithic-political": {
+    "width": 32,
+    "height": 32,
+    "x": 0,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "paleolithic-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 0,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "jomon-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 32,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "jomon-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 32,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "jomon-production": {
+    "width": 32,
+    "height": 32,
+    "x": 32,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "jomon-political": {
+    "width": 32,
+    "height": 32,
+    "x": 32,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "jomon-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 32,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "yayoi-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 64,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "yayoi-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 64,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "yayoi-production": {
+    "width": 32,
+    "height": 32,
+    "x": 64,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "yayoi-political": {
+    "width": 32,
+    "height": 32,
+    "x": 64,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "yayoi-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 64,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "record-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 96,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "record-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 96,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "record-production": {
+    "width": 32,
+    "height": 32,
+    "x": 96,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "record-political": {
+    "width": 32,
+    "height": 32,
+    "x": 96,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "record-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 96,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "traditional-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 128,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "traditional-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 128,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "traditional-production": {
+    "width": 32,
+    "height": 32,
+    "x": 128,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "traditional-political": {
+    "width": 32,
+    "height": 32,
+    "x": 128,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "traditional-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 128,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "neutral-settlement": {
+    "width": 32,
+    "height": 32,
+    "x": 160,
+    "y": 0,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "neutral-burial": {
+    "width": 32,
+    "height": 32,
+    "x": 160,
+    "y": 32,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "neutral-production": {
+    "width": 32,
+    "height": 32,
+    "x": 160,
+    "y": 64,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "neutral-political": {
+    "width": 32,
+    "height": 32,
+    "x": 160,
+    "y": 96,
+    "pixelRatio": 1,
+    "visible": true
+  },
+  "neutral-gateway": {
+    "width": 32,
+    "height": 32,
+    "x": 160,
+    "y": 128,
+    "pixelRatio": 1,
+    "visible": true
+  }
+}

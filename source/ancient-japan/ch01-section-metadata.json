@@ -1,94 +1,18 @@
 {
-  "01.01": {
-    "timeline": [
-      {"type": "point", "label": "Kojiki completed", "date": 712, "display_date": "AD 712", "certainty": "secure", "caption": "A court compilation of myth, genealogy, and remembered tradition."},
-      {"type": "point", "label": "Nihon Shoki completed", "date": 720, "display_date": "AD 720", "certainty": "secure", "caption": "The court's chronicle framed the prehistoric past from an eighth-century political world."}
-    ],
-    "genealogy": [{"id": "AJ1-mythic-line", "caption": "This is a retrospective court genealogy, not a contemporary record of prehistoric succession.", "active": ["amaterasu", "ninigi", "jimmu"]}]
-  },
-  "01.02": {
-    "timeline": [
-      {"type": "span", "label": "Earliest secure occupation", "start": -38000, "end": -35000, "display_date": "ca. 38,000–35,000 years ago", "certainty": "approximate", "caption": "Secure evidence appears in the main islands and Ryukyu chain during this broad interval."},
-      {"type": "point", "label": "Paleolithic hoax exposed", "date": 2000, "display_date": "AD 2000", "certainty": "secure", "caption": "Exposure of planted artifacts forced reassessment of claims for much earlier occupation."}
-    ]
-  },
-  "01.03": {
-    "timeline": [
-      {"type": "point", "label": "Aira eruption", "date": -28000, "display_date": "ca. 30,000 years ago", "certainty": "approximate", "caption": "The eruption left a widespread ash marker and transformed southern environments."},
-      {"type": "span", "label": "Late Paleolithic", "start": -38000, "end": -14500, "display_date": "ca. 38,000–14,500 years ago", "certainty": "approximate", "caption": "Regional stone industries and mobile lifeways developed across the archipelago."}
-    ]
-  },
-  "01.04": {
-    "timeline": [
-      {"type": "point", "label": "Odai Yamamoto I pottery", "date": -14500, "display_date": "ca. 16,500 years ago", "certainty": "approximate", "caption": "Calibrated residue dates place pottery production in the closing Pleistocene."},
-      {"type": "span", "label": "Incipient Jomon", "start": -14500, "end": -10000, "display_date": "ca. 14,500–10,000 BC", "certainty": "approximate", "caption": "Pottery and new subsistence practices spread unevenly before the Holocene."}
-    ]
-  },
-  "01.05": {
-    "timeline": [
-      {"type": "span", "label": "Jomon sequence", "start": -14500, "end": -900, "display_date": "ca. 14,500 BC–regional first millennium BC endings", "certainty": "approximate", "caption": "Dates and period boundaries differ by region."}
-    ]
-  },
-  "01.06": {
-    "timeline": [
-      {"type": "span", "label": "Sannai Maruyama occupation", "start": -3900, "end": -2200, "display_date": "ca. 3900–2200 BC", "certainty": "approximate", "caption": "Repeated construction formed a durable settlement and gathering place in northern Honshu."}
-    ]
-  },
-  "01.07": {
-    "timeline": [
-      {"type": "span", "label": "Early to Middle Jomon growth", "start": -5000, "end": -2500, "display_date": "ca. 5000–2500 BC", "certainty": "approximate", "caption": "Many regions show denser settlement and intensified woodland and aquatic resource use."}
-    ]
-  },
-  "01.08": {
-    "timeline": [
-      {"type": "span", "label": "Long-distance Jomon exchange", "start": -10000, "end": -900, "display_date": "throughout the Jomon sequence", "certainty": "approximate", "caption": "Obsidian, jade, asphalt, amber, and shell moved through overlapping regional networks."}
-    ]
-  },
-  "01.09": {
-    "timeline": [
-      {"type": "span", "label": "Dogu traditions", "start": -10000, "end": -300, "display_date": "ca. 10,000–300 BC, regionally", "certainty": "approximate", "caption": "Clay figurines varied substantially across time and place."}
-    ]
-  },
-  "01.10": {
-    "timeline": [
-      {"type": "span", "label": "Late and Final Jomon reorganization", "start": -2500, "end": -900, "display_date": "ca. 2500–900 BC, regionally", "certainty": "approximate", "caption": "Settlement contraction and new ritual and exchange patterns unfolded unevenly."}
-    ]
-  },
-  "01.11": {
-    "timeline": [
-      {"type": "point", "label": "Wet-rice farming in northern Kyushu", "date": -950, "display_date": "by the tenth century BC", "certainty": "approximate", "caption": "AMS dating places early paddy agriculture centuries earlier than the older conventional chronology."},
-      {"type": "span", "label": "Agricultural dispersal", "start": -950, "end": -200, "display_date": "ca. tenth–second centuries BC", "certainty": "approximate", "caption": "Farming spread east at different rates while mixed economies continued."}
-    ]
-  },
-  "01.12": {
-    "timeline": [
-      {"type": "span", "label": "Yayoi period", "start": -950, "end": 250, "display_date": "ca. tenth century BC–third century AD, regionally", "certainty": "approximate", "caption": "Agricultural villages, hierarchy, exchange, and conflict developed unevenly."},
-      {"type": "span", "label": "Yoshinogari growth", "start": -400, "end": 250, "display_date": "ca. fourth century BC–third century AD", "certainty": "approximate", "caption": "Successive phases created a major enclosed center in northern Kyushu."}
-    ]
-  },
-  "01.13": {
-    "timeline": [
-      {"type": "span", "label": "Bronze ritual traditions", "start": -400, "end": 200, "display_date": "ca. fourth century BC–second century AD", "certainty": "approximate", "caption": "Weapon-shaped bronzes, dotaku bells, and mirrors marked changing ritual and political networks."}
-    ]
-  },
-  "01.14": {
-    "timeline": [
-      {"type": "span", "label": "Yayoi migration and admixture", "start": -950, "end": 300, "display_date": "from the first millennium BC", "certainty": "approximate", "caption": "Population movement and mixture continued at different rates and extended into the Kofun age."}
-    ]
-  },
-  "01.15": {
-    "timeline": [
-      {"type": "point", "label": "Na embassy to Later Han", "date": 57, "display_date": "AD 57", "certainty": "secure", "caption": "The Later Han history records an embassy and an imperial seal."},
-      {"type": "point", "label": "Wa embassy", "date": 107, "display_date": "AD 107", "certainty": "secure", "caption": "A second recorded embassy reached the Later Han court."},
-      {"type": "span", "label": "Wei account of Wa", "start": 220, "end": 265, "display_date": "third century AD", "certainty": "secure", "caption": "The dynastic history describes many Wa polities and the federation of Yamatai."}
-    ]
-  },
-  "01.16": {
-    "timeline": [
-      {"type": "point", "label": "Himiko's embassy to Wei", "date": 238, "display_date": "AD 238", "certainty": "secure", "caption": "Yamatai entered a formal diplomatic relationship with the Wei court."},
-      {"type": "point", "label": "Death of Himiko", "date": 248, "display_date": "ca. AD 247–248", "certainty": "approximate", "caption": "The account reports burial, disorder, and a later female succession."},
-      {"type": "span", "label": "Earliest keyhole-mound horizon", "start": 250, "end": 300, "display_date": "later third century AD", "certainty": "approximate", "caption": "Large standardized mounds signal the political transformation developed in the next chapter."}
-    ],
-    "genealogy": [{"id": "AJ1-yamatai-succession", "caption": "The links reproduce only the succession and kinship stated by the Wei account.", "active": ["himiko", "himiko-brother", "male-successor", "iyo"], "row_anchor": {"himiko-brother": "himiko"}}]
-  }
+  "01.01": {"mapRefs": ["map-1-memory"]},
+  "01.02": {"mapRefs": ["map-1-islands"]},
+  "01.03": {"mapRefs": ["map-1-paleolithic"]},
+  "01.04": {"mapRefs": ["map-1-paleolithic"]},
+  "01.05": {"mapRefs": ["map-1-jomon-coasts"]},
+  "01.06": {"mapRefs": ["map-1-jomon-coasts"]},
+  "01.07": {"mapRefs": ["map-1-jomon-highlands"]},
+  "01.08": {"mapRefs": ["map-1-late-jomon"]},
+  "01.09": {"mapRefs": ["map-1-late-jomon"]},
+  "01.10": {"mapRefs": ["map-1-late-jomon"]},
+  "01.11": {"mapRefs": ["map-1-rice"]},
+  "01.12": {"mapRefs": ["map-1-yayoi"]},
+  "01.13": {"mapRefs": ["map-1-bronze"]},
+  "01.14": {"mapRefs": ["map-1-rice"]},
+  "01.15": {"mapRefs": ["map-1-wa"]},
+  "01.16": {"mapRefs": ["map-1-wa"]}
 }

@@ -9,38 +9,73 @@
   "sourceAuditReport": "../docs/Ancient Japan History/ch01/source-audit.json",
   "manuscript": "../source/ancient-japan/ch01-manuscript.txt",
   "paragraphMetadata": "../source/ancient-japan/ch01-paragraph-metadata.json",
+  "sectionMetadata": "../source/ancient-japan/ch01-section-metadata.json",
   "illustrationPlan": "../source/ancient-japan/ch01-illustrations.json",
   "outputJson": "../docs/Ancient Japan History/ch01/ch01-data.json",
   "outputJs": "../docs/Ancient Japan History/ch01/ch01-data.js",
   "webAtlasPresets": "../docs/Ancient Japan History/maps/atlas/presets.json",
-  "audioDir": "../docs/Ancient Japan History/audio/ch01-paragraphs",
   "validationReport": "../docs/Ancient Japan History/ch01/validation.json",
   "illustrationAuditReport": "../docs/Ancient Japan History/ch01/illustration-audit.json",
-  "audioProfile": {
-    "engine": "windows-sapi-fallback",
-    "voice": "Microsoft David Desktop",
-    "rate": -1,
-    "pitch": 0.93,
-    "speed": 0.88,
-    "integratedLoudness": -19,
-    "truePeak": -1.5,
-    "sampleRate": 24000,
-    "bitrate": "64k"
-  },
   "maps": [
     {
-      "id": "map-1a",
-      "preset": "1a",
-      "src": "maps/Map_1a.webp",
-      "fallbackSrc": "maps/Map_1a.png",
-      "standing": true
+      "id": "map-1-islands",
+      "preset": "1-islands",
+      "src": "maps/scenes/1-islands.webp",
+      "standing": false
     },
     {
-      "id": "map-1b",
-      "preset": "1b",
-      "src": "maps/Map_1b.webp",
-      "fallbackSrc": "maps/Map_1b.png",
-      "standing": true
+      "id": "map-1-paleolithic",
+      "preset": "1-paleolithic",
+      "src": "maps/scenes/1-paleolithic.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-jomon-coasts",
+      "preset": "1-jomon-coasts",
+      "src": "maps/scenes/1-jomon-coasts.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-jomon-highlands",
+      "preset": "1-jomon-highlands",
+      "src": "maps/scenes/1-jomon-highlands.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-late-jomon",
+      "preset": "1-late-jomon",
+      "src": "maps/scenes/1-late-jomon.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-rice",
+      "preset": "1-rice",
+      "src": "maps/scenes/1-rice.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-yayoi",
+      "preset": "1-yayoi",
+      "src": "maps/scenes/1-yayoi.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-bronze",
+      "preset": "1-bronze",
+      "src": "maps/scenes/1-bronze.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-wa",
+      "preset": "1-wa",
+      "src": "maps/scenes/1-wa.webp",
+      "standing": false
+    },
+    {
+      "id": "map-1-memory",
+      "preset": "1-memory",
+      "src": "maps/scenes/1-memory.webp",
+      "standing": false
     }
   ],
   "genealogy": {

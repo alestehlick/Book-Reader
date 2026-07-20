@@ -364,6 +364,8 @@
     const tokens = {
       __ATLAS_ARCHIVE__: resolveAtlasAsset(mapData.archive, mapData.localArchive),
       __TERRAIN_TILES__: resolveAtlasAsset(mapData.terrainTiles, mapData.localTerrainTiles),
+      __SPRITE_URL__: resolveAtlasAsset(mapData.sprite, mapData.localSprite),
+      __SCENE__: String(mapData.scene || "__scene_not_used__"),
       __PLATE__: String(mapData.plate || ""),
       __PERIOD__: String(mapData.period || impossiblePeriod),
       __SITE_PERIOD_1__: String(periods[0] || impossiblePeriod),
@@ -1825,17 +1827,40 @@
     title.textContent = name;
     content.appendChild(title);
 
+    const readableDetail = (value) => String(value || "")
+      .replaceAll("_", " ")
+      .replace(/\b\w/g, (letter) => letter.toUpperCase())
+      .trim();
+    const evidenceLabels = {
+      archaeology: "Archaeological evidence",
+      archaeological: "Archaeological evidence",
+      external_record: "Continental written record",
+      geographical: "Geographic context",
+      text_record: "Continental written record",
+      tradition: "Retrospective tradition",
+      retrospective_tradition: "Retrospective tradition",
+      interpretive: "Interpretive reconstruction",
+    };
+    const evidence = String(properties.evidence || "").trim();
     const detailValues = uniqueStrings([
-      properties.kind || properties.category || properties.route_type || "",
-      properties.periods || properties.period || "",
+      properties.date_label || properties.periods || properties.period || properties.period_family || "",
+      properties.kind || properties.category || properties.route_family || properties.route_type || "",
+      evidenceLabels[evidence] || evidence,
       properties.certainty || properties.confidence || "",
-    ].map((item) => String(item || "").replaceAll("_", " ").trim()));
-    detailValues.slice(0, 3).forEach((value) => {
+    ].map(readableDetail));
+    detailValues.slice(0, 4).forEach((value) => {
       const detail = document.createElement("div");
       detail.className = "atlas-popup-detail";
       detail.textContent = value;
       content.appendChild(detail);
     });
+    const noteText = String(properties.note || "").trim();
+    if (noteText) {
+      const note = document.createElement("p");
+      note.className = "atlas-popup-note";
+      note.textContent = noteText;
+      content.appendChild(note);
+    }
     return content;
   }
 
@@ -1869,7 +1894,11 @@
       },
     ];
     const source = supplied.length > 0 ? supplied : fallback;
-    const supportedSymbols = new Set(["site", "region", "route", "river", "province", "terrain"]);
+    const supportedSymbols = new Set([
+      "site", "settlement", "burial", "production", "political", "gateway",
+      "region", "zone", "route", "route-secure", "route-inferred", "route-traditional",
+      "river", "province", "terrain",
+    ]);
     return source
       .filter((entry) => entry && typeof entry === "object" && String(entry.label || "").trim())
       .map((entry) => ({
@@ -1941,6 +1970,11 @@
 
   function bindInteractiveMapPopups(map, maplibregl) {
     const layers = [
+      "ch01-feature-symbols",
+      "ch01-routes-secure",
+      "ch01-routes-inferred",
+      "ch01-routes-traditional",
+      "ch01-regions",
       "historical-sites",
       "study-sites",
       "historical-routes",
