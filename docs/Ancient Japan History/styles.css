@@ -1307,6 +1307,15 @@ img {
   cursor: zoom-in;
 }
 
+.illustration-caption {
+  margin: 0;
+  padding: 14px 16px 2px;
+  color: var(--text-soft);
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.52;
+}
+
 .illustration-footer {
   display: grid;
   gap: 12px;

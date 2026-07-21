@@ -13,8 +13,8 @@
   "artifacts": [
     {
       "path": "ancient-japan-vector.pmtiles",
-      "bytes": 13141004,
-      "sha256": "70192542c2abb877219062c23a1a42949b2b17793ed68afeb957bf56c3cd565c"
+      "bytes": 13225774,
+      "sha256": "d0897bc97044b327135dfd95ae7940b6dbf99476d145b46b3767936184d91cee"
     },
     {
       "path": "presets.json",
@@ -28,18 +28,18 @@
     },
     {
       "path": "ch01-features.geojson",
-      "bytes": 27207,
-      "sha256": "31acc21012100705b96e202235297a105f112be0e13bc65d9009d6fc3001b282"
+      "bytes": 28578,
+      "sha256": "df7cd09243d3b001c20250eb4365c4914dcfe44b64295ae46ae9fc2cc5194ea4"
     },
     {
       "path": "ch01-regions.geojson",
-      "bytes": 5937,
-      "sha256": "1f874b7fbab78f16d10927017f440943e7cb2691fc34d61c16956ce800b06793"
+      "bytes": 6139,
+      "sha256": "144e8a4eb0b517f098bdb063af1eaa252754907d6520d957aefd029a6f538d6e"
     },
     {
       "path": "ch01-routes.geojson",
-      "bytes": 5721,
-      "sha256": "dbbf3d91bc3207f1120f573585b80c99e2bfbe156acdf3c86eb7dc194d1732f2"
+      "bytes": 8396,
+      "sha256": "893ca9d68ea118888bc3205b85b4923c07960c7f9d2c52e52f2424acc5ea8cd3"
     }
   ]
 }

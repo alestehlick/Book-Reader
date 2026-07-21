@@ -1555,13 +1555,6 @@
 
     const body = document.createElement("div");
     body.className = "illustration-details-body";
-    if (item.caption) {
-      const caption = document.createElement("p");
-      caption.className = "illustration-detail-caption";
-      caption.textContent = item.caption;
-      body.appendChild(caption);
-    }
-
     const evidence = item.evidence && typeof item.evidence === "object" ? item.evidence : {};
     if (evidence.brief) {
       const brief = document.createElement("p");
@@ -1640,6 +1633,12 @@
       loadCandidate();
 
       card.appendChild(img);
+      if (item.caption) {
+        const caption = document.createElement("p");
+        caption.className = "illustration-caption";
+        caption.textContent = item.caption;
+        card.appendChild(caption);
+      }
       appendIllustrationDetails(card, item);
       rail.appendChild(card);
     });
