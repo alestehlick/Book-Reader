@@ -12,7 +12,7 @@
       "tiles": ["__TERRAIN_TILES__"],
       "tileSize": 256,
       "minzoom": 3,
-      "maxzoom": 8,
+      "maxzoom": 10,
       "bounds": [118.5, 25.5, 148.0, 46.5],
       "attribution": "Terrain: Copernicus DEM and GEBCO"
     },
@@ -20,6 +20,18 @@
       "type": "vector",
       "url": "pmtiles://__ATLAS_ARCHIVE__",
       "attribution": "GSHHG; MLIT; Ancient Japan Study Atlas; province proxy: CODH (CC BY-NC)"
+    },
+    "ch01-features": {
+      "type": "geojson",
+      "data": "__CH01_FEATURES__"
+    },
+    "ch01-routes": {
+      "type": "geojson",
+      "data": "__CH01_ROUTES__"
+    },
+    "ch01-regions": {
+      "type": "geojson",
+      "data": "__CH01_REGIONS__"
     }
   },
   "layers": [
@@ -36,7 +48,8 @@
         "raster-opacity": 0.82,
         "raster-saturation": -0.2,
         "raster-contrast": -0.04,
-        "raster-fade-duration": 0
+        "raster-fade-duration": 0,
+        "raster-resampling": "linear"
       }
     },
     {
@@ -194,8 +207,7 @@
     {
       "id": "ch01-regions",
       "type": "fill",
-      "source": "atlas",
-      "source-layer": "ch01_regions",
+      "source": "ch01-regions",
       "filter": [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
       "paint": {
         "fill-color": [
@@ -219,8 +231,7 @@
     {
       "id": "ch01-region-boundaries",
       "type": "line",
-      "source": "atlas",
-      "source-layer": "ch01_regions",
+      "source": "ch01-regions",
       "filter": [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
       "paint": {
         "line-color": [
@@ -240,8 +251,7 @@
     {
       "id": "ch01-routes-inferred",
       "type": "line",
-      "source": "atlas",
-      "source-layer": "ch01_routes",
+      "source": "ch01-routes",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -266,8 +276,7 @@
     {
       "id": "ch01-routes-secure",
       "type": "line",
-      "source": "atlas",
-      "source-layer": "ch01_routes",
+      "source": "ch01-routes",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -290,8 +299,7 @@
     {
       "id": "ch01-routes-traditional",
       "type": "line",
-      "source": "atlas",
-      "source-layer": "ch01_routes",
+      "source": "ch01-routes",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -307,8 +315,7 @@
     {
       "id": "ch01-focus-halo",
       "type": "circle",
-      "source": "atlas",
-      "source-layer": "ch01_features",
+      "source": "ch01-features",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -324,10 +331,38 @@
       }
     },
     {
+      "id": "ch01-feature-markers",
+      "type": "circle",
+      "source": "ch01-features",
+      "filter": [
+        "all",
+        [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
+        ["!=", ["get", "category"], "landscape"]
+      ],
+      "paint": {
+        "circle-radius": [
+          "interpolate", ["linear"], ["zoom"],
+          3, ["match", ["get", "rank"], 1, 4.8, 2, 3.8, 3.1],
+          11, ["match", ["get", "rank"], 1, 9.5, 2, 7.4, 5.8]
+        ],
+        "circle-color": [
+          "match", ["get", "period_family"],
+          "paleolithic", "#566675",
+          "jomon", "#9A6044",
+          "yayoi", "#B8893F",
+          "record", "#53648A",
+          "traditional", "#76566E",
+          "#70685D"
+        ],
+        "circle-opacity": ["match", ["get", "certainty"], "disputed", 0.58, "approximate", 0.78, 0.92],
+        "circle-stroke-color": "#F7F1E4",
+        "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 11, 2.3]
+      }
+    },
+    {
       "id": "ch01-feature-symbols",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_features",
+      "source": "ch01-features",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -361,8 +396,7 @@
     {
       "id": "ch01-region-labels",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_regions",
+      "source": "ch01-regions",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -387,8 +421,7 @@
     {
       "id": "ch01-landscape-labels",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_features",
+      "source": "ch01-features",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -413,8 +446,7 @@
     {
       "id": "ch01-focus-labels",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_features",
+      "source": "ch01-features",
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -440,9 +472,8 @@
     {
       "id": "ch01-context-labels",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_features",
-      "minzoom": 5,
+      "source": "ch01-features",
+      "minzoom": 3.5,
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],
@@ -469,9 +500,8 @@
     {
       "id": "ch01-route-labels",
       "type": "symbol",
-      "source": "atlas",
-      "source-layer": "ch01_routes",
-      "minzoom": 4,
+      "source": "ch01-routes",
+      "minzoom": 3.5,
       "filter": [
         "all",
         [">=", ["index-of", "__SCENE__", ["coalesce", ["get", "scenes"], ""]], 0],

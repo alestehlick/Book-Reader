@@ -5,25 +5,41 @@
   "terrain": {
     "template": "terrain/{z}/{x}/{y}.webp",
     "minZoom": 3,
-    "maxZoom": 8,
-    "tiles": 489,
-    "bytes": 727080
+    "maxZoom": 10,
+    "pixelSizeMetres": 110,
+    "tiles": 6643,
+    "bytes": 14546190
   },
   "artifacts": [
     {
       "path": "ancient-japan-vector.pmtiles",
-      "bytes": 4161691,
-      "sha256": "b411ceb0cf87e6cc57eb74fa01d9bc6c204b1747461b0214645669083eab2bd4"
+      "bytes": 13141004,
+      "sha256": "70192542c2abb877219062c23a1a42949b2b17793ed68afeb957bf56c3cd565c"
     },
     {
       "path": "presets.json",
-      "bytes": 67931,
-      "sha256": "0ab480a321c8523bb7843aba206624ff9c4e2683c4ad1cc11d74e6645970a7f6"
+      "bytes": 79547,
+      "sha256": "a321ff85a2b3371bcad653e2c8970c118feecfd58bbfe28e5bfda15e9a07ba8e"
     },
     {
       "path": "ancient-japan-style.json",
-      "bytes": 25828,
-      "sha256": "01b36fa5554c78581f4e277c4f928718e94f0e7649cd72f621efb0167e33c773"
+      "bytes": 26772,
+      "sha256": "7891b9788cabfa3d2747845463aec90100a85543a189ef10ef68d3f800507490"
+    },
+    {
+      "path": "ch01-features.geojson",
+      "bytes": 27207,
+      "sha256": "31acc21012100705b96e202235297a105f112be0e13bc65d9009d6fc3001b282"
+    },
+    {
+      "path": "ch01-routes.geojson",
+      "bytes": 5721,
+      "sha256": "dbbf3d91bc3207f1120f573585b80c99e2bfbe156acdf3c86eb7dc194d1732f2"
+    },
+    {
+      "path": "ch01-regions.geojson",
+      "bytes": 5937,
+      "sha256": "1f874b7fbab78f16d10927017f440943e7cb2691fc34d61c16956ce800b06793"
     }
   ]
 }

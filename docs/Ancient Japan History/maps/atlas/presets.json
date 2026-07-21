@@ -9,6 +9,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "1a",
       "period": "jomon",
       "sitePeriods": [
@@ -57,7 +63,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch01a_earliest_societies_internal",
@@ -72,6 +78,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "1b",
       "period": "yayoi",
       "sitePeriods": [
@@ -119,7 +131,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch01b_earliest_societies_east_asia",
@@ -134,6 +146,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "2a",
       "period": "kofun",
       "sitePeriods": [
@@ -181,7 +199,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch02a_yamato_internal",
@@ -196,6 +214,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "2b",
       "period": "kofun",
       "sitePeriods": [
@@ -244,7 +268,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch02b_yamato_east_asia",
@@ -259,6 +283,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "3a",
       "period": "asuka",
       "sitePeriods": [
@@ -306,7 +336,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch03a_reform_internal",
@@ -321,6 +351,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "3b",
       "period": "asuka",
       "sitePeriods": [
@@ -368,7 +404,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch03b_reform_east_asia",
@@ -383,6 +419,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "4a",
       "period": "nara",
       "sitePeriods": [
@@ -436,7 +478,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch04a_nara_internal",
@@ -451,6 +493,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "4b",
       "period": "nara",
       "sitePeriods": [
@@ -499,7 +547,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch04b_nara_east_asia",
@@ -514,6 +562,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "5a",
       "period": "yayoi",
       "sitePeriods": [
@@ -563,7 +617,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch05a_continent_internal",
@@ -578,6 +632,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "5b",
       "period": "yayoi",
       "sitePeriods": [
@@ -626,7 +686,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch05b_continent_east_asia",
@@ -641,6 +701,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "6a",
       "period": "asuka",
       "sitePeriods": [
@@ -689,7 +755,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch06a_kami_internal",
@@ -704,6 +770,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "6b",
       "period": "nara",
       "sitePeriods": [
@@ -753,7 +825,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch06b_kami_archipelago",
@@ -768,6 +840,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "7a",
       "period": "nara",
       "sitePeriods": [
@@ -821,7 +899,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch07a_buddhism_internal",
@@ -836,6 +914,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "7b",
       "period": "asuka",
       "sitePeriods": [
@@ -884,7 +968,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch07b_buddhism_east_asia",
@@ -899,6 +983,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "8a",
       "period": "nara",
       "sitePeriods": [
@@ -951,7 +1041,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch08a_nara_economy_internal",
@@ -966,6 +1056,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "8b",
       "period": "nara",
       "sitePeriods": [
@@ -1014,7 +1110,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch08b_nara_economy_maritime",
@@ -1029,6 +1125,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "9a",
       "period": "nara",
       "sitePeriods": [
@@ -1078,7 +1180,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch09a_culture_internal",
@@ -1093,6 +1195,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "9b",
       "period": "asuka",
       "sitePeriods": [
@@ -1141,7 +1249,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch09b_culture_east_asia",
@@ -1156,6 +1264,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "10a",
       "period": "nara",
       "sitePeriods": [
@@ -1205,7 +1319,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch10a_memory_internal",
@@ -1220,6 +1334,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "10b",
       "period": "yayoi",
       "sitePeriods": [
@@ -1270,7 +1390,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "ch10b_sources_east_asia",
@@ -1285,6 +1405,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "21",
       "period": "early_heian",
       "sitePeriods": [
@@ -1337,7 +1463,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "early_heian_overview",
@@ -1352,6 +1478,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "22",
       "period": "middle_heian",
       "sitePeriods": [
@@ -1404,7 +1536,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "middle_heian_overview",
@@ -1419,6 +1551,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "23",
       "period": "late_heian",
       "sitePeriods": [
@@ -1471,7 +1609,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "slug": "late_heian_overview",
@@ -1486,6 +1624,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-islands",
       "scene": "islands",
       "period": "chapter-01",
@@ -1536,7 +1680,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Islands Emerging",
@@ -1554,6 +1698,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-paleolithic",
       "scene": "paleolithic",
       "period": "chapter-01",
@@ -1604,7 +1754,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Paleolithic Movement",
@@ -1623,6 +1773,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-jomon-coasts",
       "scene": "jomon-coasts",
       "period": "chapter-01",
@@ -1673,7 +1829,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Jomon Coasts",
@@ -1692,6 +1848,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-jomon-highlands",
       "scene": "jomon-highlands",
       "period": "chapter-01",
@@ -1742,7 +1904,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "The Middle Jomon Highlands",
@@ -1761,6 +1923,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-late-jomon",
       "scene": "late-jomon",
       "period": "chapter-01",
@@ -1811,7 +1979,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Late And Final Jomon Networks",
@@ -1832,6 +2000,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-rice",
       "scene": "rice",
       "period": "chapter-01",
@@ -1882,7 +2056,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Rice Through The Straits",
@@ -1903,6 +2077,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-yayoi",
       "scene": "yayoi",
       "period": "chapter-01",
@@ -1953,7 +2133,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Yayoi Landscapes",
@@ -1974,6 +2154,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-bronze",
       "scene": "bronze",
       "period": "chapter-01",
@@ -2024,7 +2210,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Bronze Geographies",
@@ -2044,6 +2230,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-wa",
       "scene": "wa",
       "period": "chapter-01",
@@ -2094,7 +2286,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Wa And The Road To Yamatai",
@@ -2115,6 +2307,12 @@
       "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
       "terrainTiles": "terrain/{z}/{x}/{y}.webp",
       "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch01-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+      "chapterRoutes": "ch01-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+      "chapterRegions": "ch01-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
       "plate": "map-1-memory",
       "scene": "memory",
       "period": "chapter-01",
@@ -2165,7 +2363,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 9
+        "maxZoom": 10
       },
       "metadata": {
         "title": "Memory And Regional Convergence",

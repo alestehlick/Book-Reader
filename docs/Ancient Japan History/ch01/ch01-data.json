@@ -17,7 +17,7 @@
         "plate": "1-islands",
         "showProvinces": false,
         "scene": "islands",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -20000,
         "accent": "#566675",
@@ -34,7 +34,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -68,7 +68,13 @@
         "fallback": "../maps/scenes/1-islands.webp",
         "sections": [
           "01.02"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -82,7 +88,7 @@
         "plate": "1-paleolithic",
         "showProvinces": false,
         "scene": "paleolithic",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -28000,
         "accent": "#566675",
@@ -99,7 +105,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -139,7 +145,13 @@
         "sections": [
           "01.03",
           "01.04"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -153,7 +165,7 @@
         "plate": "1-jomon-coasts",
         "showProvinces": false,
         "scene": "jomon-coasts",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -5000,
         "accent": "#9A6044",
@@ -170,7 +182,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -210,7 +222,13 @@
         "sections": [
           "01.05",
           "01.06"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -224,7 +242,7 @@
         "plate": "1-jomon-highlands",
         "showProvinces": false,
         "scene": "jomon-highlands",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -3000,
         "accent": "#9A6044",
@@ -241,7 +259,7 @@
             ]
           ],
           "minZoom": 4,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -281,7 +299,13 @@
         "sections": [
           "01.07",
           "01.08"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -295,7 +319,7 @@
         "plate": "1-late-jomon",
         "showProvinces": false,
         "scene": "late-jomon",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -800,
         "accent": "#9A6044",
@@ -312,7 +336,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -354,7 +378,13 @@
           "01.10",
           "01.11",
           "01.12"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -368,7 +398,7 @@
         "plate": "1-rice",
         "showProvinces": false,
         "scene": "rice",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": -700,
         "accent": "#B8893F",
@@ -385,7 +415,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -427,7 +457,13 @@
           "01.14",
           "01.15",
           "01.16"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -441,7 +477,7 @@
         "plate": "1-yayoi",
         "showProvinces": false,
         "scene": "yayoi",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": 50,
         "accent": "#B8893F",
@@ -458,7 +494,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -500,7 +536,13 @@
           "01.18",
           "01.19",
           "01.20"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -514,7 +556,7 @@
         "plate": "1-bronze",
         "showProvinces": false,
         "scene": "bronze",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": 150,
         "accent": "#B8893F",
@@ -531,7 +573,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -572,7 +614,13 @@
           "01.21",
           "01.22",
           "01.23"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -586,7 +634,7 @@
         "plate": "1-wa",
         "showProvinces": false,
         "scene": "wa",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": 240,
         "accent": "#53648A",
@@ -603,7 +651,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -650,7 +698,13 @@
           "01.25",
           "01.26",
           "01.27"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       },
       {
         "type": "interactive",
@@ -664,7 +718,7 @@
         "plate": "1-memory",
         "showProvinces": false,
         "scene": "memory",
-        "period": "__chapter1_scene__",
+        "period": "chapter-01",
         "sitePeriods": [],
         "date": 275,
         "accent": "#76566E",
@@ -681,7 +735,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 9
+          "maxZoom": 10
         },
         "legend": [
           {
@@ -725,7 +779,13 @@
           "01.30",
           "01.31",
           "01.32"
-        ]
+        ],
+        "chapterFeatures": "ch01-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
+        "chapterRoutes": "ch01-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch01-routes.geojson",
+        "chapterRegions": "ch01-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch01-regions.geojson"
       }
     ],
     "timeline": [
@@ -1362,576 +1422,279 @@
     ],
     "illustrations": [
       {
-        "id": "01-court-chronicle",
-        "src": "illustrations/01-court-chronicle.webp",
-        "alt": "Nara-period court scribes working with scrolls and wooden tablets in an austere daylight room.",
-        "caption": "Interpretive reconstruction of the eighth-century court world that produced the later chronicles; it is not a scene from prehistory.",
-        "category": "culture",
+        "id": "CH01-IMG-001",
+        "src": "illustrations/ch01-img001-kanto-paleolithic-camp.webp",
+        "alt": "A small mobile group has paused on a wind-exposed river terrace. One adult strikes a stone core beside flakes; another lifts heated river stones with wooden tongs from a shallow fire; two others sort plant foods and repair a light hunting point. No large kill is staged.",
+        "caption": "Open the archaeological sequence with a materially credible Upper Paleolithic camp rather than a generic mammoth hunt. The image establishes mobility, stone procurement, cooking, cold-period vegetation, and the uncertainty of clothing and shelters.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of the eighth-century court world that produced the later chronicles; it is not a scene from prehistory.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "Court dress, room arrangement, and writing materials are reconstructed; the people are anonymous."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "d02bfcb7b2bcdb288ed0c0527488e2166ed8f382c1ec48a70f31d428c3aba45d"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "02-paleolithic-kanto",
-        "src": "illustrations/02-paleolithic-kanto.webp",
-        "alt": "A late-Paleolithic family knaps stone tools beside a hearth on a cold river terrace.",
-        "caption": "Interpretive reconstruction of a late-Pleistocene task area and mobile camp in the archipelago.",
-        "category": "people",
+        "id": "CH01-IMG-002",
+        "src": "illustrations/ch01-img002-kamikuroiwa-hunting-transition.webp",
+        "alt": "At the mouth of a shallow rock shelter, a hunter quietly fits a small stone point to a light wooden shaft while another checks a simple bowstring. A younger person returns with a hare and a few birds; deer tracks cross damp ground beyond.",
+        "caption": "Show the Mesolithic transition through one observable hunting episode: lighter projectiles, smaller game, a rock-shelter base, and a warming forest. This avoids presenting bow adoption as a single miraculous invention.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of a late-Pleistocene task area and mobile camp in the archipelago.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "Exact clothing, household composition, and any one site's view are not recoverable from the archaeological record."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "3c0d01d70e2dadd7b43f409b09a13dfb5264c958cac24d8d3a8dd65a4d3f263a"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "03-earliest-pottery",
-        "src": "illustrations/03-earliest-pottery.webp",
-        "alt": "Two people cook in a simple early pot beside a rock shelter and stone tools at twilight.",
-        "caption": "Interpretive reconstruction of early pottery use at the end of the Pleistocene.",
-        "category": "culture",
+        "id": "CH01-IMG-003",
+        "src": "illustrations/ch01-img003-earliest-pottery-cave.webp",
+        "alt": "Near a cave mouth, one adult supports a small round-bottomed vessel in soft earth beside a low fire while another crushes and adds fibrous plants. A third person prepares clay coils and presses a simple raised ridge into the surface.",
+        "caption": "Make the earliest pottery materially intelligible as small, fragile, low-fired vessels used in a marginal southern environment, while distinguishing secure objects from uncertain invention narratives.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of early pottery use at the end of the Pleistocene.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The image does not claim a specific site, household, recipe, or date for the vessel."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "0fca8625f633405000bf2b0dd2557a2091b83e0f20ed86650521ac7dd8fb73e1"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "01-jomon-coastal-community",
-        "src": "illustrations/01-jomon-coastal-community.webp",
-        "alt": "A Jomon coastal community repairs nets and prepares food beside pit dwellings and a sheltered bay.",
-        "caption": "Interpretive reconstruction of recurring coastal work and settlement, not a portrait of a named community.",
-        "category": "people",
+        "id": "CH01-IMG-004",
+        "src": "illustrations/ch01-img004-earliest-jomon-coast.webp",
+        "alt": "A household-sized group works on higher ground above an inward-moving bay. Two people gather oysters and clams at the tidal edge; others tend an outdoor hearth beside three small pit dwellings and upright pointed vessels. A small dog sniffs among discarded shells.",
+        "caption": "Establish the first coastal communities through a small settlement, shifting shoreline, shellfish collection, dogs, and pointed vessels, without turning the scene into a large mature Jomon village.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of recurring coastal work and settlement, not a portrait of a named community.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The mix of tasks and exact architecture are reconstructed from regional evidence."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "0ab432faad54250d7ce01e406afa733e2418363bfa9c3bb230e6c82aa957b7c7"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "05-middle-jomon-mountain",
-        "src": "illustrations/05-middle-jomon-mountain.webp",
-        "alt": "A Middle Jomon mountain village with pit dwellings, chestnut processing, baskets, and a stream.",
-        "caption": "Interpretive reconstruction of a central-Japan settlement and its woodland setting.",
-        "category": "geography",
+        "id": "CH01-IMG-005",
+        "src": "illustrations/ch01-img005-minabori-village-center.webp",
+        "alt": "During a light rain, residents repair a drainage ditch around one low pit dwelling while another household opens only the top layer of a leaf-lined nut storage pit. Smoke escapes from an interior hearth; the shared center remains open and trampled.",
+        "caption": "Show the Early Jomon shift toward durable domestic space: houses arranged around an open center, interior hearths, drainage, storage pits, and flat-bottomed pottery.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of a central-Japan settlement and its woodland setting.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "Village scale, season, and the arrangement of activities remain reconstructive choices."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "7be58cd1fcccea0306efc146593f729aeb9ab0e08897f836f50fac6b55767736"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "08-jomon-coastal-exchange",
-        "src": "illustrations/08-jomon-coastal-exchange.webp",
-        "alt": "People load obsidian, shell, and fibre bundles into a dugout canoe on a rocky Jomon shore.",
-        "caption": "Interpretive reconstruction of maritime exchange through which materials moved between regions.",
-        "category": "occasion",
+        "id": "CH01-IMG-006",
+        "src": "illustrations/ch01-img006-torihama-wetland-craft.webp",
+        "alt": "On a damp riverbank platform, one person hollows and smooths a wooden bowl with an adze, another weaves a reed basket, and a third applies a thin red lacquer layer to a comb beneath a small shelter. Nearby, gourds, nuts, fish, and cordage are being sorted.",
+        "caption": "Reveal the breadth of Early Jomon material life at a waterlogged site: woodworking, basketry, lacquer, fishing, plant foods, and possible tending of useful plants.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for objects; MODERATE for scene",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of maritime exchange through which materials moved between regions.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "It illustrates recurrent exchange rather than a documented voyage or a single trade authority."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "6215552598501cf280933fa9e8f70022afc8175449638d9009ca287b7f9fd46f"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "09-jomon-ritual-figurine",
-        "src": "illustrations/09-jomon-ritual-figurine.webp",
-        "alt": "A community places a clay figurine and ornaments near a hearth outside a Jomon house at dusk.",
-        "caption": "Interpretive reconstruction of a possible ritual context; the figurine's exact meaning is unknown.",
-        "category": "myth-religion",
+        "id": "CH01-IMG-007",
+        "src": "illustrations/ch01-img007-yatsugatake-highland-village.webp",
+        "alt": "In early autumn, several households process chestnuts and acorns around a spring-fed village. One person leaches bitter nuts in running water, another carries a basket from the forest, and a family works around a central hearth inside a round pit dwelling.",
+        "caption": "Present the Middle Jomon highland florescence as an integrated seasonal system of springs, nut processing, obsidian routes, substantial houses, and the central hearth.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of a possible ritual context; the figurine's exact meaning is unknown.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "No fixed fertility, deity, gender, or ceremonial reading is asserted."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "007441175ef0a5e124e511be0820c413a1e4bc64754cc7811b0ab4ae93ed9a1a"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "11-yayoi-rice-paddies",
-        "src": "illustrations/11-yayoi-rice-paddies.webp",
-        "alt": "Villagers tend small wet-rice paddies below modest thatched houses and raised granaries in northern Kyushu.",
-        "caption": "Interpretive reconstruction of early Yayoi paddy cultivation and water management.",
-        "category": "culture",
+        "id": "CH01-IMG-008",
+        "src": "illustrations/ch01-img008-katsusaka-pottery-workshop.webp",
+        "alt": "A highland potter builds a thick-walled Katsusaka jar with modeled ridges while a visitor or exchange partner unwraps a smaller glittering mica-tempered Otamadai vessel. Nearby, a second worker incises a rim and another tends an open firing bed.",
+        "caption": "Show Middle Jomon pottery variation and exchange through skilled work rather than isolated hero objects. The image contrasts highland Katsusaka forms with mica-tempered Otamadai vessels without pretending both were made by one identical community.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of early Yayoi paddy cultivation and water management.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The scene is not a complete model of every Yayoi settlement or farming calendar."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "0451a0b21f81a9e3bfa2b355b179449746911bebc3e08eb44ec244155dc1820d"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "12-yayoi-fortified-village",
-        "src": "illustrations/12-yayoi-fortified-village.webp",
-        "alt": "People work inside and beside a timber-palisaded Yayoi village with ditch, storehouses, and fields.",
-        "caption": "Interpretive reconstruction of a defended village and settlement differentiation in the Yayoi period.",
-        "category": "occasion",
+        "id": "CH01-IMG-009",
+        "src": "illustrations/ch01-img009-shakado-figurine-breaking.webp",
+        "alt": "At the edge of a communal work area, an older adult holds a clay figurine over a folded hide while another person uses a stone to break one limb deliberately. Fragments from earlier acts lie sorted in shallow baskets; two observers prepare a small lamp and ordinary vessel.",
+        "caption": "Represent Jomon ritual through an observable act—handling and deliberate breaking of clay figurines—without inventing doctrine, supernatural energy, or a formal priesthood.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of a defended village and settlement differentiation in the Yayoi period.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "Palisades and ditches varied greatly; this is not a claim about a single named site."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "206d03959dcf570fd9c2f9f5e93b9b8b7ab671dd3b6e694441bc23f8e890e574"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "13-yayoi-dotaku",
-        "src": "illustrations/13-yayoi-dotaku.webp",
-        "alt": "A large bronze dotaku stands beside ceramic vessels, a clay mould, and a charcoal-fired craft setting.",
-        "caption": "Interpretive reconstruction of Bronze Age craft and ritual display in western Japan.",
-        "category": "object",
+        "id": "CH01-IMG-010",
+        "src": "illustrations/ch01-img010-highland-abandonment-rain.webp",
+        "alt": "After prolonged rain, residents remove hearth stones and useful timbers from a damp, partly abandoned house. Others bind baskets and carry tools downhill along a muddy track; rotten nuts and waterlogged storage show ecological stress without melodrama.",
+        "caption": "Visualize the contraction of the highland world without depicting a single catastrophic collapse. The scene emphasizes repeated wet seasons, failed storage, dismantling, and movement toward lower valleys.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "LOW to MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of Bronze Age craft and ritual display in western Japan.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The use of individual bells and the exact relation of making to ceremony remain debated."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "00fe9a1d9cbdd59476f0a076b91bed398133b237cd6a7debf6bcb90eeb2bd52c"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "14-yayoi-strait-contact",
-        "src": "illustrations/14-yayoi-strait-contact.webp",
-        "alt": "A small coastal boat carrying pottery and bundles approaches northern Kyushu across the Korea Strait.",
-        "caption": "Interpretive reconstruction of recurrent cross-strait contact, not a literal image of a single migration event.",
-        "category": "geography",
+        "id": "CH01-IMG-011",
+        "src": "illustrations/ch01-img011-late-jomon-coastal-season.webp",
+        "alt": "In spring, a dugout canoe returns through shallow water with fish while people on the mudflat gather shellfish. On the terrace, others open clams, mend nets or lines, and smoke fish; a hunter repairs a simple bow away from the main group.",
+        "caption": "Show Late Jomon seasonal coastal life through coordinated but non-specialized marine work: clamming, canoe return, fish processing, hunting gear, and restrained pottery.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of recurrent cross-strait contact, not a literal image of a single migration event.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "Passengers, boat design, cargo, and route are reconstructed from indirect evidence."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "8d37e55a419da8724979490262c3471ae11dfc5eed9303605757df3f6b2622f6"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "15-wa-embassy",
-        "src": "illustrations/15-wa-embassy.webp",
-        "alt": "Anonymous visitors from Wa present gifts to a Later Han official in a coastal reception hall.",
-        "caption": "Interpretive reconstruction of a court-recorded diplomatic encounter; no portrait or exact scene survives.",
-        "category": "occasion",
+        "id": "CH01-IMG-012",
+        "src": "illustrations/ch01-img012-oyu-stone-circle-gathering.webp",
+        "alt": "People arrive in small groups at one concentric stone circle during a cool autumn gathering. Some carry baskets of salmon and nuts; others place or adjust small stones at a radial setting. A burial or offering is suggested only by a covered shallow pit, not shown explicitly.",
+        "caption": "Represent the Oyu stone circles as a carefully built communal landscape connected to gathering and exchange, while avoiding an unsupported astronomical ceremony.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for layout; MODERATE for activity",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction of a court-recorded diplomatic encounter; no portrait or exact scene survives.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The identity of individuals, setting, gifts, and choreography are reconstructed around the written record."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "fcf855f696b0c1c5361748280d53f47827c15a7588028e92e9a7fecec122787c"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
       },
       {
-        "id": "16-third-century-leadership",
-        "src": "illustrations/16-third-century-leadership.webp",
-        "alt": "An anonymous high-status woman is partly visible behind a screen in a third-century Wa compound.",
-        "caption": "Interpretive reconstruction cautiously linked to the period of Himiko, not a likeness or a documented palace.",
-        "category": "people",
+        "id": "CH01-IMG-013",
+        "src": "illustrations/ch01-img013-korekawa-lacquer-work.webp",
+        "alt": "Beside a wet disposal and working area, two specialists apply red lacquer to a wooden comb and a basketry vessel while others polish small bowls and inspect a hollow figurine. Finished objects dry under a shaded rack away from dust.",
+        "caption": "Show the technical assurance of northern Latest Jomon craft through red lacquer on wood, basketry, and household vessels, with ritual objects present but not dominating.",
         "historicalStatus": "ai-reconstruction",
-        "evidenceLevel": "reconstructed",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for objects; MODERATE for workshop",
         "generated": true,
-        "status": "approved",
-        "rights": {
-          "status": "project-generated",
-          "license": "OpenAI image-generation output for this project",
-          "credit": "Interpretive reconstruction generated for the Ancient Japan History reader."
-        },
-        "evidence": {
-          "brief": "Interpretive reconstruction cautiously linked to the period of Himiko, not a likeness or a documented palace.",
-          "sources": [
-            "H:/Ancient Japan History/ch1/ch1 - raw OCR.txt (primary chapter OCR, visually checked against the PDF)",
-            "H:/Ancient Japan History/ch1/ch1.pdf (pages matched to the primary OCR)"
-          ],
-          "uncertainties": [
-            "The compound, ruler's appearance, and rituals are not directly known and must not be read as a portrait."
-          ],
-          "exclusions": [
-            "No labels or readable writing.",
-            "No later imperial, samurai, Buddhist, or modern material culture.",
-            "No claim to a named person, exact event, or fixed ethnic appearance."
-          ]
-        },
-        "generation": {
-          "model": "OpenAI image generation",
-          "promptFile": "ch01-image-prompts.md",
-          "promptHash": "97d4fee389b8cf334d2e4658a98c5044185b4a18e8f495c44d46e3e843e91bbc"
-        },
-        "audit": {
-          "historical": "approved",
-          "visual": "approved",
-          "rights": "approved",
-          "reviewedBy": "Codex source-led production audit",
-          "reviewedAt": "2026-07-19",
-          "notes": "Reviewed for historically material anachronisms, visual legibility, and project-generation rights before publication."
-        }
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-014",
+        "src": "illustrations/ch01-img014-itazuke-early-rice-field.webp",
+        "alt": "Adults and a child work barefoot in a small irrigated paddy beside the Mikasa River. One uses a wooden rake, another sets stakes and clears a shallow water channel, while people on firmer ground carry harvested wild plants, fish, and grain toward a mixed working area with Yusu and early Yayoi pottery.",
+        "caption": "Make the Jomon-Yayoi transition visible as mixed production rather than abrupt replacement: wet paddy work, older pottery traditions, stone tools, wooden implements, gathering, and maritime influence.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for paddy and tools; MODERATE for people and superstructure",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-015",
+        "src": "illustrations/ch01-img015-itazuke-jar-burial.webp",
+        "alt": "At the edge of a defined cemetery, four adults carefully lower a large joined jar burial into an angled pit while a child watches from beside smaller single jars. Nearby rectangular pits and a covered wooden coffin area show varied burial forms.",
+        "caption": "Show the agricultural community's distinct cemetery and the practical, socially meaningful labor of jar burial without sensationalizing the dead.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for burial forms; MODERATE for ceremony",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-016",
+        "src": "illustrations/ch01-img016-doigahama-cemetery-difference.webp",
+        "alt": "A burial party prepares an extended east-oriented grave in sandy ground. In the middle distance, a small central stone cist receives jasper and shell ornaments, while simpler graves extend outward with fewer goods.",
+        "caption": "Visualize emerging social difference through cemetery organization, body orientation, central cists, and selective ornaments rather than by inventing a king or noble court.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for grave arrangement; MODERATE for social reading",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-017",
+        "src": "illustrations/ch01-img017-yayoi-iron-woodworking.webp",
+        "alt": "A craft group shapes a long granary slat and a wooden rake. One worker uses a small iron-edged adze mounted in a wooden handle; another planes a board; a smith at a tiny sheltered hearth reheats and repairs an edge rather than smelting ore from scratch.",
+        "caption": "Show how scarce iron transformed work by enabling precision in wood, while avoiding an unsupported large iron industry or a simple 'Iron replaces wood' narrative.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-018",
+        "src": "illustrations/ch01-img018-toro-irrigation-repair.webp",
+        "alt": "After heavy water flow, villagers repair a breached paddy bank and clear a wooden sluice. Others carry grain toward a raised storehouse, inspect a well, and stabilize posts around a shallow oval house.",
+        "caption": "Depict mature Yayoi collective management through an ordinary irrigation repair at Toro, integrating paddies, ditches, houses, raised storage, flood risk, and shared labor.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + DOCUMENTED RECONSTRUCTION",
+        "confidence": "HIGH for site plan; MODERATE for living scene",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-019",
+        "src": "illustrations/ch01-img019-defended-plateau-village.webp",
+        "alt": "At dawn after an alarm, residents carry grain jars toward deep storage shafts while others repair a ditch and extinguish a small house fire near the enclosure edge. Two armed lookouts watch the route below; no battle is underway.",
+        "caption": "Show conflict as a pressure on settlement form, storage, and community obligation rather than as a cinematic battlefield.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-020",
+        "src": "illustrations/ch01-img020-yasunagata-bronze-casting.webp",
+        "alt": "A team prepares to pour a small bronze bell or weapon form. Two heavy stone mold halves are aligned in a shallow working pit; one worker operates bellows while another steadies a small crucible with wooden and clay supports. Finished pieces and failed cast fragments are few and scattered.",
+        "caption": "Make bronze production physically credible: heavy molds, alloy preparation, bellows, risk, flaws, and specialist cooperation. The image separates craft evidence from later political interpretation.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for molds and debris; MODERATE for furnace arrangement",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-021",
+        "src": "illustrations/ch01-img021-sakuragaoka-bronze-burial.webp",
+        "alt": "On a wooded ridge, a group lowers several bronze bells and ceremonial halberds into a prepared pit lined with mats. Others carry additional objects uphill wrapped in fiber cloth. The deposit is orderly but not yet fully covered.",
+        "caption": "Show public surrender of scarce metal through a plausible burial act at Sakuragaoka, while leaving motive—offering, concealment, boundary rite, or periodic retrieval—unresolved.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for objects; MODERATE for deposition scene",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-022",
+        "src": "illustrations/ch01-img022-himiko-secluded-authority.webp",
+        "alt": "Inside a large but non-palatial compound, Himiko sits partly screened in a dim inner space with several female attendants. Her brother or male intermediary receives tribute bundles and relays words to visitors in an outer area guarded by armed men. Himiko is seen in profile or three-quarter shadow, not as a definitive portrait.",
+        "caption": "Offer a cautious reconstruction of Himiko's authority from contemporary Chinese testimony: seclusion, female attendants, armed guards, and a male intermediary. It must not become an authentic portrait or fantasy queen scene.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "CONTEMPORARY TEXTUAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "LOW to MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-023",
+        "src": "illustrations/ch01-img023-jimmu-court-memory.webp",
+        "alt": "A small migrating war-band pauses at a mountain pass after failing to enter the Kinki directly. The leader later called Jimmu kneels with companions near a simple offering of food and branches while scouts study the eastern route. No kami is shown physically.",
+        "caption": "Represent Jimmu as retrospective court memory rather than documentary history. The image shows ritualized travel and consultation in a plausible late Yayoi landscape while visibly avoiding supernatural proof or an authentic portrait.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "RETROSPECTIVE TEXTUAL + LITERARY OR MYTHIC + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "LOW",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-024",
+        "src": "illustrations/ch01-img024-kojindani-bronze-deposition.webp",
+        "alt": "On a steep south-facing slope, coordinated workers place uniform bronze swords in four ordered rows within an oblong pit. A cloth or mat covering is being drawn over completed rows; a second small team prepares bells and spearheads at a nearby spot.",
+        "caption": "Present Izumo's material power through the extraordinary ordered deposition at Kojindani, while refusing to identify the actors with mythic rulers or to treat the cache as a direct illustration of Okuni Nushi.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for arrangement; MODERATE for deposition action",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH01-IMG-025",
+        "src": "illustrations/ch01-img025-nara-keyhole-mound-emergence.webp",
+        "alt": "Hundreds of workers are not shown; instead, a manageable section of a vast earthwork is under construction. Teams carry baskets of soil up temporary ramps, compact a terrace, set wooden markers, and coordinate drainage around the developing keyhole-shaped mound. The full outline is only partly visible from a nearby rise.",
+        "caption": "Close the chapter at the threshold of the Kofun age by showing the new scale of coordinated labor and monumentality in the Nara basin, without identifying a specific tomb occupant or turning construction into royal propaganda.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "DIRECT MATERIAL + ARCHAEOLOGICAL SYNTHESIS",
+        "confidence": "HIGH for mound form and scale; MODERATE for construction scene",
+        "generated": true,
+        "status": "approved"
       }
     ]
   },
@@ -2098,6 +1861,12 @@
             "event-traditional-expedition-of-jimmu",
             "event-compilation-of-the-kojiki-and-nihon-shoki"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-023",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-memory"
           ],
@@ -2114,6 +1883,12 @@
             {
               "label": "Map 1b",
               "caption": "The map places Wa, Yamatai, and the emerging Yamato center within the wider archipelago and the continental record."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-023",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2311,6 +2086,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-001",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-paleolithic"
           ],
@@ -2331,6 +2112,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-001",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2358,6 +2145,12 @@
           "timelineRefs": [
             "event-late-glacial-warming-and-settlement-growth"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-001",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-paleolithic"
           ],
@@ -2378,6 +2171,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-001",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2412,6 +2211,12 @@
           "timelineRefs": [
             "event-mesolithic-transition"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-002",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-paleolithic"
           ],
@@ -2434,6 +2239,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-002",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-paleolithic"
           ],
@@ -2454,6 +2265,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-002",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2481,6 +2298,12 @@
           "timelineRefs": [
             "event-earliest-pottery-horizon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-003",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-paleolithic"
           ],
@@ -2501,6 +2324,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-003",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2583,6 +2412,12 @@
           "timelineRefs": [
             "event-earliest-jomon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-004",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-coasts"
           ],
@@ -2605,6 +2440,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-004",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-coasts"
           ],
@@ -2625,6 +2466,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-004",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2659,6 +2506,12 @@
           "timelineRefs": [
             "event-early-jomon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-005",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-coasts"
           ],
@@ -2679,6 +2532,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-005",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2703,6 +2562,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-005",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-coasts"
           ],
@@ -2725,6 +2590,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-006",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-coasts"
           ],
@@ -2745,6 +2616,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-006",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2779,6 +2656,12 @@
           "timelineRefs": [
             "event-middle-jomon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-007",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-highlands"
           ],
@@ -2799,6 +2682,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-007",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2823,6 +2712,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-007",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-highlands"
           ],
@@ -2845,6 +2740,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-007",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-highlands"
           ],
@@ -2865,6 +2766,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-007",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2899,6 +2806,12 @@
           "timelineRefs": [
             "event-middle-jomon-material-florescence"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-008",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-highlands"
           ],
@@ -2919,6 +2832,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-008",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -2943,6 +2862,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-009",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-jomon-highlands"
           ],
@@ -2963,6 +2888,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-009",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3041,6 +2972,12 @@
           "timelineRefs": [
             "event-highland-decline"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-010",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3061,6 +2998,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-010",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3087,6 +3030,12 @@
           ],
           "timelineRefs": [
             "event-late-jomon"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-010",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-late-jomon"
@@ -3120,6 +3069,12 @@
           "timelineRefs": [
             "event-late-jomon-coastal-expansion"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-011",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3140,6 +3095,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-011",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3164,6 +3125,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-011",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3184,6 +3151,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-011",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3218,6 +3191,12 @@
           "timelineRefs": [
             "event-late-and-latest-jomon-ritual-landscapes"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-009",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3238,6 +3217,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-009",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3309,6 +3294,12 @@
           "timelineRefs": [
             "event-oyu-stone-circles"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-012",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3329,6 +3320,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-012",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3363,6 +3360,12 @@
           "timelineRefs": [
             "event-latest-jomon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-013",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3385,6 +3388,12 @@
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-013",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -3405,6 +3414,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-013",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3439,6 +3454,12 @@
           "timelineRefs": [
             "event-early-rice-cultivation-in-northern-kyushu"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3459,6 +3480,12 @@
             {
               "label": "Map 1.1",
               "caption": "The source map surveys Paleolithic and Jomon sites across the archipelago; its OCR labels remain provisional because the image was not visually checked."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3507,6 +3534,12 @@
           ],
           "timelineRefs": [
             "event-jomon-yayoi-transition"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-rice"
@@ -3563,6 +3596,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3583,6 +3622,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3634,6 +3679,12 @@
           ],
           "timelineRefs": [
             "event-early-to-middle-yayoi-expansion"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-rice"
@@ -3689,6 +3740,12 @@
           "timelineRefs": [
             "event-early-yayoi-mixed-agriculture"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3709,6 +3766,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3765,6 +3828,12 @@
           "timelineRefs": [
             "event-itazuke-agricultural-settlement"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3785,6 +3854,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-014",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3812,6 +3887,12 @@
           "timelineRefs": [
             "event-itazuke-cemetery"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-015",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3834,6 +3915,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-015",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-rice"
           ],
@@ -3854,6 +3941,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-015",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -3885,6 +3978,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-016",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -3909,6 +4008,12 @@
           ],
           "timelineRefs": [
             "event-doigahama-cemetery"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-016",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-yayoi"
@@ -3935,6 +4040,12 @@
           "timelineRefs": [
             "event-spread-of-square-moated-graves"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-016",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -3957,6 +4068,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-016",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -3977,6 +4094,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-016",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4011,6 +4134,12 @@
           "timelineRefs": [
             "event-earliest-secure-iron-horizon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-017",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4033,6 +4162,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-017",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4053,6 +4188,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-017",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4080,6 +4221,12 @@
           "timelineRefs": [
             "event-late-yayoi-iron-expansion"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-017",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4100,6 +4247,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-017",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4134,6 +4287,12 @@
           "timelineRefs": [
             "event-toro-settlement"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-018",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4154,6 +4313,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-018",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4178,6 +4343,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-018",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4200,6 +4371,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-018",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4220,6 +4397,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-018",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4254,6 +4437,12 @@
           "timelineRefs": [
             "event-yayoi-warfare-and-defended-settlement"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-019",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4274,6 +4463,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-019",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4298,6 +4493,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-019",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-yayoi"
           ],
@@ -4318,6 +4519,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-019",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4352,6 +4559,12 @@
           "timelineRefs": [
             "event-yayoi-bronze-ritual-economy"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4372,6 +4585,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4399,6 +4618,12 @@
           "timelineRefs": [
             "event-local-bronze-weapon-casting"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4419,6 +4644,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4453,6 +4684,12 @@
           "timelineRefs": [
             "event-early-bell-casting"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4478,6 +4715,12 @@
           "timelineRefs": [
             "event-technical-development-of-bronze-bells"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4498,6 +4741,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4522,6 +4771,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4542,6 +4797,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-020",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4573,6 +4834,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4598,6 +4865,12 @@
           "timelineRefs": [
             "event-wado-copper-notice"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4618,6 +4891,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4642,6 +4921,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -4662,6 +4947,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-021",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4696,6 +4987,12 @@
           "timelineRefs": [
             "event-late-yayoi",
             "event-wei-history-account-of-wa"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-wa"
@@ -4735,6 +5032,12 @@
           "timelineRefs": [
             "event-himiko"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-wa"
           ],
@@ -4755,6 +5058,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -4798,6 +5107,12 @@
           ],
           "timelineRefs": [
             "event-reported-death-of-himiko"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-wa"
@@ -4922,6 +5237,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -5165,6 +5486,12 @@
           "timelineRefs": [
             "event-traditional-expedition-of-jimmu"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-023",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-memory"
           ],
@@ -5189,6 +5516,12 @@
           ],
           "timelineRefs": [
             "event-rise-of-a-kinki-power-center"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-023",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-memory"
@@ -5220,6 +5553,12 @@
                 "amaterasu",
                 "jimmu"
               ]
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-023",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -5261,6 +5600,12 @@
               ]
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-memory"
           ],
@@ -5286,6 +5631,12 @@
           "timelineRefs": [
             "event-kojindani-bronze-deposition"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -5308,6 +5659,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -5328,6 +5685,12 @@
             {
               "label": "Map 1.2",
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -5408,6 +5771,12 @@
               ]
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -5444,6 +5813,12 @@
           ],
           "timelineRefs": [
             "event-compilation-of-izumo-submission-traditions"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-024",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-memory"
@@ -5523,6 +5898,12 @@
           "timelineRefs": [
             "event-himiko"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-wa"
           ],
@@ -5556,6 +5937,12 @@
                 "jingu",
                 "ojin"
               ]
+            }
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-022",
+              "role": "primary"
             }
           ],
           "mapRefs": [
@@ -5593,6 +5980,12 @@
           "timelineRefs": [
             "event-sujin-in-received-chronology"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-025",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-memory"
           ],
@@ -5627,6 +6020,12 @@
           ],
           "timelineRefs": [
             "event-emergence-of-keyhole-tombs"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-025",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-1-memory"
@@ -5685,6 +6084,12 @@
           "timelineRefs": [
             "event-jomon-sequence"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-010",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-late-jomon"
           ],
@@ -5732,6 +6137,12 @@
               "caption": "The source map locates major Yayoi sites and the broad concentration zones of bronze weapons and bells; its OCR labels remain provisional."
             }
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-025",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-bronze"
           ],
@@ -5757,6 +6168,12 @@
           "timelineRefs": [
             "event-yamato-and-early-kofun-horizon"
           ],
+          "illustrationRefs": [
+            {
+              "id": "CH01-IMG-025",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-1-memory"
           ],
@@ -5771,7 +6188,8 @@
       "text": "H:\\Ancient Japan History\\ch01\\ch01_text.txt",
       "mediaMapping": "H:\\Ancient Japan History\\ch01\\ch01_media_mapping.txt",
       "genealogy": "H:\\Ancient Japan History\\ch01\\ch01_genealogy.txt",
-      "mapMapping": "H:\\Ancient Japan History\\gis\\documentation\\ch01_map_mapping.txt"
+      "mapMapping": "H:\\Ancient Japan History\\gis\\documentation\\ch01_map_mapping.txt",
+      "illustrationPlan": "H:\\Ancient Japan History\\ch01\\illustrations\\ch01_image_prompts.txt"
     }
   }
 }

@@ -269,13 +269,16 @@
     return cleanBase ? `${cleanBase}/${cleanLeaf}` : cleanLeaf;
   }
 
-  function resolveAtlasAsset(remotePath, localPath) {
+  function resolveAtlasAsset(remotePath, localPath, versioned = true) {
     const config = getMapRuntimeConfig();
     const configuredBase = String(config.assetBaseUrl || "").trim();
     const selected = configuredBase
       ? joinUrl(configuredBase, remotePath)
       : (localPath || remotePath);
-    return toAbsoluteUrl(selected);
+    const absolute = toAbsoluteUrl(selected);
+    const version = String(config.assetVersion || "").trim();
+    if (!versioned || !version || !absolute) return absolute;
+    return `${absolute}${absolute.includes("?") ? "&" : "?"}v=${encodeURIComponent(version)}`;
   }
 
   function loadStylesheetOnce(url) {
@@ -356,7 +359,7 @@
 
   async function loadInteractiveMapStyle(mapData) {
     const styleUrl = toAbsoluteUrl(mapData.style);
-    const response = await fetch(styleUrl, { cache: "force-cache" });
+    const response = await fetch(styleUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`Map style returned ${response.status}`);
     const style = await response.json();
     const periods = asArray(mapData.sitePeriods).filter(Boolean);
@@ -364,7 +367,19 @@
     const tokens = {
       __ATLAS_ARCHIVE__: resolveAtlasAsset(mapData.archive, mapData.localArchive),
       __TERRAIN_TILES__: resolveAtlasAsset(mapData.terrainTiles, mapData.localTerrainTiles),
-      __SPRITE_URL__: resolveAtlasAsset(mapData.sprite, mapData.localSprite),
+      __SPRITE_URL__: resolveAtlasAsset(mapData.sprite, mapData.localSprite, false),
+      __CH01_FEATURES__: resolveAtlasAsset(
+        mapData.chapterFeatures || "ch01-features.geojson",
+        mapData.localChapterFeatures || "../maps/atlas/ch01-features.geojson"
+      ),
+      __CH01_ROUTES__: resolveAtlasAsset(
+        mapData.chapterRoutes || "ch01-routes.geojson",
+        mapData.localChapterRoutes || "../maps/atlas/ch01-routes.geojson"
+      ),
+      __CH01_REGIONS__: resolveAtlasAsset(
+        mapData.chapterRegions || "ch01-regions.geojson",
+        mapData.localChapterRegions || "../maps/atlas/ch01-regions.geojson"
+      ),
       __SCENE__: String(mapData.scene || "__scene_not_used__"),
       __PLATE__: String(mapData.plate || ""),
       __PERIOD__: String(mapData.period || impossiblePeriod),
@@ -2029,7 +2044,7 @@
       const key = wrapper.querySelector(".interactive-map-key");
       const bounds = mapData.view?.bounds;
       const minZoom = Number(mapData.view?.minZoom ?? 3);
-      const maxZoom = Number(mapData.view?.maxZoom ?? 9);
+      const maxZoom = Number(mapData.view?.maxZoom ?? 10);
 
       map = new maplibregl.Map({
         container: canvas,

@@ -10,6 +10,7 @@
  */
 window.ANCIENT_JAPAN_MAP_CONFIG = Object.freeze({
   assetBaseUrl: "",
+  assetVersion: "2026-07-21-hq2",
   maplibreVersion: "5.24.0",
   pmtilesVersion: "4.4.1",
   maplibreJs: "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js",
