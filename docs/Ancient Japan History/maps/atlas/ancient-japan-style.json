@@ -23,15 +23,15 @@
     },
     "ch01-features": {
       "type": "geojson",
-      "data": "__CH01_FEATURES__"
+      "data": "__CHAPTER_FEATURES__"
     },
     "ch01-routes": {
       "type": "geojson",
-      "data": "__CH01_ROUTES__"
+      "data": "__CHAPTER_ROUTES__"
     },
     "ch01-regions": {
       "type": "geojson",
-      "data": "__CH01_REGIONS__"
+      "data": "__CHAPTER_REGIONS__"
     }
   },
   "layers": [

@@ -368,15 +368,15 @@
       __ATLAS_ARCHIVE__: resolveAtlasAsset(mapData.archive, mapData.localArchive),
       __TERRAIN_TILES__: resolveAtlasAsset(mapData.terrainTiles, mapData.localTerrainTiles),
       __SPRITE_URL__: resolveAtlasAsset(mapData.sprite, mapData.localSprite, false),
-      __CH01_FEATURES__: resolveAtlasAsset(
+      __CHAPTER_FEATURES__: resolveAtlasAsset(
         mapData.chapterFeatures || "ch01-features.geojson",
         mapData.localChapterFeatures || "../maps/atlas/ch01-features.geojson"
       ),
-      __CH01_ROUTES__: resolveAtlasAsset(
+      __CHAPTER_ROUTES__: resolveAtlasAsset(
         mapData.chapterRoutes || "ch01-routes.geojson",
         mapData.localChapterRoutes || "../maps/atlas/ch01-routes.geojson"
       ),
-      __CH01_REGIONS__: resolveAtlasAsset(
+      __CHAPTER_REGIONS__: resolveAtlasAsset(
         mapData.chapterRegions || "ch01-regions.geojson",
         mapData.localChapterRegions || "../maps/atlas/ch01-regions.geojson"
       ),

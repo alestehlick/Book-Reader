@@ -18,13 +18,13 @@
     },
     {
       "path": "presets.json",
-      "bytes": 79547,
-      "sha256": "a321ff85a2b3371bcad653e2c8970c118feecfd58bbfe28e5bfda15e9a07ba8e"
+      "bytes": 79578,
+      "sha256": "41a81f1f74451cff4d244548e2d0f607f8689c03163e39541fe94382b9b07aaf"
     },
     {
       "path": "ancient-japan-style.json",
-      "bytes": 26772,
-      "sha256": "7891b9788cabfa3d2747845463aec90100a85543a189ef10ef68d3f800507490"
+      "bytes": 26781,
+      "sha256": "2eb97a8a35450b9fda5da504157ec68b3cfdc3701e425baa1d9168377945e0e9"
     },
     {
       "path": "ch01-features.geojson",
@@ -32,14 +32,14 @@
       "sha256": "31acc21012100705b96e202235297a105f112be0e13bc65d9009d6fc3001b282"
     },
     {
-      "path": "ch01-routes.geojson",
-      "bytes": 5721,
-      "sha256": "dbbf3d91bc3207f1120f573585b80c99e2bfbe156acdf3c86eb7dc194d1732f2"
-    },
-    {
       "path": "ch01-regions.geojson",
       "bytes": 5937,
       "sha256": "1f874b7fbab78f16d10927017f440943e7cb2691fc34d61c16956ce800b06793"
+    },
+    {
+      "path": "ch01-routes.geojson",
+      "bytes": 5721,
+      "sha256": "dbbf3d91bc3207f1120f573585b80c99e2bfbe156acdf3c86eb7dc194d1732f2"
     }
   ]
 }
