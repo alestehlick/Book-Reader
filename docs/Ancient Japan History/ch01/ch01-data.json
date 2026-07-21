@@ -61,7 +61,7 @@
           "evidenceFrame": "archaeological and geological synthesis"
         },
         "id": "map-1-islands",
-        "src": "maps/scenes/1-islands.webp",
+        "src": "../maps/scenes/1-islands.webp",
         "standing": false
       },
       {
@@ -125,7 +125,7 @@
           "evidenceFrame": "archaeological evidence"
         },
         "id": "map-1-paleolithic",
-        "src": "maps/scenes/1-paleolithic.webp",
+        "src": "../maps/scenes/1-paleolithic.webp",
         "standing": false
       },
       {
@@ -189,7 +189,7 @@
           "evidenceFrame": "archaeological and environmental evidence"
         },
         "id": "map-1-jomon-coasts",
-        "src": "maps/scenes/1-jomon-coasts.webp",
+        "src": "../maps/scenes/1-jomon-coasts.webp",
         "standing": false
       },
       {
@@ -253,7 +253,7 @@
           "evidenceFrame": "archaeological synthesis"
         },
         "id": "map-1-jomon-highlands",
-        "src": "maps/scenes/1-jomon-highlands.webp",
+        "src": "../maps/scenes/1-jomon-highlands.webp",
         "standing": false
       },
       {
@@ -317,7 +317,7 @@
           "evidenceFrame": "archaeological synthesis"
         },
         "id": "map-1-late-jomon",
-        "src": "maps/scenes/1-late-jomon.webp",
+        "src": "../maps/scenes/1-late-jomon.webp",
         "standing": false
       },
       {
@@ -381,7 +381,7 @@
           "evidenceFrame": "archaeological and environmental evidence"
         },
         "id": "map-1-rice",
-        "src": "maps/scenes/1-rice.webp",
+        "src": "../maps/scenes/1-rice.webp",
         "standing": false
       },
       {
@@ -445,7 +445,7 @@
           "evidenceFrame": "archaeological evidence"
         },
         "id": "map-1-yayoi",
-        "src": "maps/scenes/1-yayoi.webp",
+        "src": "../maps/scenes/1-yayoi.webp",
         "standing": false
       },
       {
@@ -509,7 +509,7 @@
           "evidenceFrame": "archaeological and scientific evidence"
         },
         "id": "map-1-bronze",
-        "src": "maps/scenes/1-bronze.webp",
+        "src": "../maps/scenes/1-bronze.webp",
         "standing": false
       },
       {
@@ -578,7 +578,7 @@
           "evidenceFrame": "external written testimony and archaeology"
         },
         "id": "map-1-wa",
-        "src": "maps/scenes/1-wa.webp",
+        "src": "../maps/scenes/1-wa.webp",
         "standing": false
       },
       {
@@ -642,7 +642,7 @@
           "evidenceFrame": "archaeology distinguished from retrospective tradition"
         },
         "id": "map-1-memory",
-        "src": "maps/scenes/1-memory.webp",
+        "src": "../maps/scenes/1-memory.webp",
         "standing": false
       }
     ],

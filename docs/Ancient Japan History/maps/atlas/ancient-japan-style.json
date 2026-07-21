@@ -26,16 +26,16 @@
     {
       "id": "paper-sea",
       "type": "background",
-      "paint": {"background-color": "#557a82"}
+      "paint": {"background-color": "#cfe8f3"}
     },
     {
       "id": "terrain-relief",
       "type": "raster",
       "source": "terrain",
       "paint": {
-        "raster-opacity": 0.89,
-        "raster-saturation": -0.16,
-        "raster-contrast": -0.02,
+        "raster-opacity": 0.82,
+        "raster-saturation": -0.2,
+        "raster-contrast": -0.04,
         "raster-fade-duration": 0
       }
     },
