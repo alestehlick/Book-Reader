@@ -1483,8 +1483,7 @@
       {
         "id": "G1.1",
         "title": "Yamatai Household and Succession Field",
-        "status": "external written testimony",
-        "note": "The Chinese account explicitly identifies only the sibling relation between Himiko and her unnamed brother. It does not state that either later ruler was related to Himiko.",
+        "caption": "Evidence status: external written testimony. The Chinese account explicitly identifies only the sibling relation between Himiko and her unnamed brother. It does not state that either later ruler was related to Himiko.",
         "nodes": [
           {
             "id": "himiko",
@@ -1537,8 +1536,7 @@
       {
         "id": "G1.2",
         "title": "Traditional Sacred Descent of Yamato and Izumo",
-        "status": "retrospective court tradition",
-        "note": "This tree records relationships as arranged in the Kojiki and Nihon Shoki. All ancestral and dynastic edges are compressed traditional lines, not immediate parent-child claims unless the relation explicitly says mother-of or siblings. The connections from Amaterasu to Jimmu, from Susa no O to Okuni Nushi, and from Jimmu through Sujin to Jingu abbreviate long received sequences whose intervening figures are omitted. Jingu and Ojin are included only to clarify later attempts to relate Himiko to imperial tradition.",
+        "caption": "Evidence status: retrospective court tradition. This tree records relationships as arranged in the Kojiki and Nihon Shoki. All ancestral and dynastic edges are compressed traditional lines, not immediate parent-child claims unless the relation explicitly says mother-of or siblings. The connections from Amaterasu to Jimmu, from Susa no O to Okuni Nushi, and from Jimmu through Sujin to Jingu abbreviate long received sequences whose intervening figures are omitted. Jingu and Ojin are included only to clarify later attempts to relate Himiko to imperial tradition.",
         "nodes": [
           {
             "id": "amaterasu",
@@ -6135,7 +6133,7 @@
       "genealogy": "H:\\Ancient Japan History\\ch01\\ch01_genealogy.txt",
       "mapMapping": "H:\\Ancient Japan History\\gis\\documentation\\ch01_map_mapping.txt",
       "illustrationMapping": "H:\\Ancient Japan History\\ch01\\ch01_illustrations_map.txt",
-      "illustrationPlan": "H:\\Ancient Japan History\\ch01\\illustrations\\ch01_image_prompts.txt"
+      "illustrationPlan": "H:\\Ancient Japan History\\ch01\\ch01_image_prompts.txt"
     }
   }
 }
