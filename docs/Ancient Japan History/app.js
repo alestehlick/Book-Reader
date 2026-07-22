@@ -814,7 +814,11 @@
   function niceTimelineUnit(spread) {
     const safeSpread = Number.isFinite(spread) && spread > 0 ? spread : 1;
     const candidates = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000];
-    const target = Math.max(10, safeSpread / 8);
+    // Choose the smallest clean unit that can contain the evidence in the
+    // ten-unit rail. Margins are then placed where the rounded endpoints
+    // permit them; forcing a full unit at both ends wastes half of a
+    // deep-prehistory timeline on empty millennia.
+    const target = Math.max(10, safeSpread / 10);
     return candidates.find((value) => value >= target) || candidates[candidates.length - 1];
   }
 

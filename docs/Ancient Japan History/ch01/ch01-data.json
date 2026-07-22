@@ -790,634 +790,414 @@
     ],
     "timeline": [
       {
-        "type": "span",
-        "label": "Traditional expedition of Jimmu",
-        "start": null,
-        "end": null,
-        "display_date": "traditional court chronology",
+        "type": "point",
+        "label": "Traditional accession of Jimmu",
+        "start": "-660",
+        "end": "-660",
+        "display_date": "Traditional date: 660 BC",
         "certainty": "traditional",
-        "caption": "The expedition belongs to retrospective dynastic tradition rather than secure contemporary history.",
-        "id": "event-traditional-expedition-of-jimmu"
+        "caption": "This is the received court date, not a securely dated archaeological event or contemporary historical report.",
+        "id": "event-traditional-accession-of-jimmu"
       },
       {
-        "type": "span",
-        "label": "Compilation of the Kojiki and Nihon Shoki",
+        "type": "point",
+        "label": "Kojiki completed",
         "start": 712,
-        "end": 720,
-        "display_date": "AD 712-720",
+        "end": 712,
+        "display_date": "AD 712",
         "certainty": "secure",
-        "caption": "The surviving court narratives were compiled centuries after the early events they arrange.",
-        "id": "event-compilation-of-the-kojiki-and-nihon-shoki"
+        "caption": "The surviving court narrative was compiled many centuries after the world it retrospectively orders.",
+        "id": "event-kojiki-completed"
+      },
+      {
+        "type": "point",
+        "label": "Nihon Shoki completed",
+        "start": 720,
+        "end": 720,
+        "display_date": "AD 720",
+        "certainty": "secure",
+        "caption": "The official chronicle was presented in 720 and constructed a continuous dynastic past.",
+        "id": "event-nihon-shoki-completed"
+      },
+      {
+        "type": "point",
+        "label": "King of Na in Wa receives a Han seal",
+        "start": 57,
+        "end": 57,
+        "display_date": "AD 57",
+        "certainty": "secure",
+        "caption": "The Later Han record provides an early fixed point for diplomatic contact with a polity in Wa.",
+        "id": "event-king-of-na-in-wa-receives-a-han-seal"
+      },
+      {
+        "type": "point",
+        "label": "Wa embassy recorded at the Han court",
+        "start": 107,
+        "end": 107,
+        "display_date": "AD 107",
+        "certainty": "secure",
+        "caption": "A second Han notice confirms continued diplomacy without implying a unified Japanese state.",
+        "id": "event-wa-embassy-recorded-at-the-han-court"
       },
       {
         "type": "span",
-        "label": "Chinese records of Wa",
-        "start": 57,
-        "end": 297,
-        "display_date": "first to third centuries AD",
+        "label": "Himiko's rule in Yamatai",
+        "start": 180,
+        "end": 248,
+        "display_date": "ca. AD 180–248",
+        "certainty": "approximate",
+        "caption": "The Chinese account places Himiko after civil conflict and before her reported death around 248.",
+        "id": "event-himiko-s-rule-in-yamatai"
+      },
+      {
+        "type": "point",
+        "label": "Himiko's embassy reaches Wei",
+        "start": 239,
+        "end": 239,
+        "display_date": "AD 239",
         "certainty": "secure",
-        "caption": "Continental histories preserve successive written witnesses to communities called Wa.",
-        "id": "event-chinese-records-of-wa"
+        "caption": "The embassy supplies the clearest fixed date in the narrative of Yamatai's foreign relations.",
+        "id": "event-himiko-s-embassy-reaches-wei"
+      },
+      {
+        "type": "span",
+        "label": "Compilation of the Wei account of Wa",
+        "start": 280,
+        "end": 297,
+        "display_date": "ca. AD 280–297",
+        "certainty": "approximate",
+        "caption": "Chen Shou compiled the Records of the Three Kingdoms after the events it describes, but within the same century.",
+        "id": "event-compilation-of-the-wei-account-of-wa"
       },
       {
         "type": "span",
         "label": "Late Pleistocene",
-        "start": -50000,
-        "end": -10000,
-        "display_date": "roughly 50,000-10,000 BC",
+        "start": "-50000",
+        "end": "-9700",
+        "display_date": "ca. 50,000–9700 BC",
         "certainty": "approximate",
-        "caption": "Falling and rising sea levels repeatedly altered the continental shelf and island boundaries.",
+        "caption": "The climatic parent horizon includes the colder landscapes and changing sea levels within which Paleolithic settlement developed.",
         "id": "event-late-pleistocene"
       },
       {
         "type": "span",
-        "label": "Tachikawa Loam occupation sequence",
-        "start": -35000,
-        "end": -10000,
-        "display_date": "roughly 35,000-10,000 BC",
+        "label": "Upper Paleolithic in Japan",
+        "start": "-36000",
+        "end": "-14000",
+        "display_date": "ca. 36,000–14,000 BC",
         "certainty": "approximate",
-        "caption": "Volcanic deposits in southern Kanto preserve a deep sequence of climate and habitation.",
-        "id": "event-tachikawa-loam-occupation-sequence"
+        "caption": "A widespread and secure archaeological record is visible by roughly 38,000 years ago; local sequences and end dates vary.",
+        "id": "event-upper-paleolithic-in-japan"
       },
       {
         "type": "span",
-        "label": "Upper Paleolithic in the archipelago",
-        "start": -28000,
-        "end": -10500,
-        "display_date": "about 28,000-10,500 BC",
+        "label": "Last Glacial Maximum",
+        "start": "-24000",
+        "end": "-17000",
+        "display_date": "ca. 24,000–17,000 BC",
         "certainty": "approximate",
-        "caption": "Widespread and regionally varied Paleolithic occupation is secure within this broad span.",
-        "id": "event-upper-paleolithic-in-the-archipelago"
+        "caption": "Peak glacial conditions provide the environmental contrast for later warming, forest expansion, and changing mobility.",
+        "id": "event-last-glacial-maximum"
       },
       {
         "type": "span",
-        "label": "Recognition of Iwajuku",
-        "start": 1947,
-        "end": 1949,
-        "display_date": "AD 1947-1949",
-        "certainty": "secure",
-        "caption": "Discovery and excavation at Iwajuku established a preceramic Paleolithic culture.",
-        "id": "event-recognition-of-iwajuku"
-      },
-      {
-        "type": "span",
-        "label": "Late-glacial warming and settlement growth",
-        "start": -20000,
-        "end": -15000,
-        "display_date": "roughly 20,000-15,000 BC",
+        "label": "Incipient Jomon (Mesolithic transition)",
+        "start": "-14550",
+        "end": "-9350",
+        "display_date": "ca. 14,550–9350 BC",
         "certainty": "approximate",
-        "caption": "Vegetation expanded, large game declined, and sites became larger and more numerous.",
-        "id": "event-late-glacial-warming-and-settlement-growth"
+        "caption": "Pottery and changing lifeways overlap the late-glacial transition; the phase is archaeological, not a single archipelago-wide revolution.",
+        "id": "event-incipient-jomon-mesolithic-transition"
       },
       {
         "type": "span",
-        "label": "Mesolithic transition",
-        "start": -10500,
-        "end": -7500,
-        "display_date": "about 10,500-7500 BC",
+        "label": "Early Holocene",
+        "start": "-9700",
+        "end": "-5000",
+        "display_date": "ca. 9700–5000 BC",
         "certainty": "approximate",
-        "caption": "Rapid warming, rising seas, and new hunting and food-processing techniques define this transitional span.",
-        "id": "event-mesolithic-transition"
-      },
-      {
-        "type": "span",
-        "label": "Earliest pottery horizon",
-        "start": -10750,
-        "end": -9000,
-        "display_date": "roughly 10,750-9000 BC in the cited chronology",
-        "certainty": "disputed",
-        "caption": "The very early radiocarbon dates require calibration and remain debated.",
-        "id": "event-earliest-pottery-horizon"
+        "caption": "Rapid warming, rising seas, and expanding temperate forests transformed the resource landscape after the Pleistocene.",
+        "id": "event-early-holocene"
       },
       {
         "type": "point",
-        "label": "Morse excavates Omori",
+        "label": "Morse excavates the Omori shell mounds",
         "start": 1877,
         "end": 1877,
         "display_date": "AD 1877",
         "certainty": "secure",
-        "caption": "The Omori shell-mound excavation gave the Jomon period its enduring name.",
-        "id": "event-morse-excavates-omori"
+        "caption": "Morse's excavation and publication helped establish the cord-marked pottery category later called Jomon.",
+        "id": "event-morse-excavates-the-omori-shell-mounds"
       },
       {
         "type": "point",
-        "label": "Yamanouchi formalizes the Jomon sequence",
+        "label": "Yamanouchi systematizes the Jomon sequence",
         "start": 1937,
         "end": 1937,
-        "display_date": "about AD 1937",
+        "display_date": "AD 1937",
         "certainty": "secure",
-        "caption": "The five-stage ceramic chronology organized regional pottery into a common sequence.",
-        "id": "event-yamanouchi-formalizes-the-jomon-sequence"
+        "caption": "Yamanouchi Sugao's typological work gave the long Jomon sequence a more systematic chronological structure.",
+        "id": "event-yamanouchi-systematizes-the-jomon-sequence"
+      },
+      {
+        "type": "point",
+        "label": "Scientific excavation at Iwajuku",
+        "start": 1949,
+        "end": 1949,
+        "display_date": "AD 1949",
+        "certainty": "secure",
+        "caption": "The excavation established a human occupation beneath the pottery-bearing layers and transformed Japanese Paleolithic archaeology.",
+        "id": "event-scientific-excavation-at-iwajuku"
       },
       {
         "type": "span",
-        "label": "Earliest Jomon",
-        "start": -7500,
-        "end": -5000,
-        "display_date": "about 7500-5000 BC",
+        "label": "Initial Jomon",
+        "start": "-9350",
+        "end": "-5150",
+        "display_date": "ca. 9350–5150 BC",
         "certainty": "approximate",
-        "caption": "Coastal foods, shell mounds, small settlements, and regional pottery mark this stage.",
-        "id": "event-earliest-jomon"
+        "caption": "Long regional sequences of pottery, settlement, and subsistence developed after the Incipient phase.",
+        "id": "event-initial-jomon"
       },
       {
         "type": "span",
         "label": "Early Jomon",
-        "start": -5000,
-        "end": -3500,
-        "display_date": "about 5000-3500 BC",
+        "start": "-5150",
+        "end": "-3450",
+        "display_date": "ca. 5150–3450 BC",
         "certainty": "approximate",
-        "caption": "Marine transgression, population growth, and more substantial villages characterize the stage.",
+        "caption": "Marine transgression and increasingly substantial settlements frame the Early Jomon in many regions.",
         "id": "event-early-jomon"
       },
       {
         "type": "span",
         "label": "Middle Jomon",
-        "start": -3500,
-        "end": -2400,
-        "display_date": "about 3500-2400 BC",
+        "start": "-3450",
+        "end": "-2450",
+        "display_date": "ca. 3450–2450 BC",
         "certainty": "approximate",
-        "caption": "Large highland settlements flourished in central and eastern Japan.",
+        "caption": "Large highland settlements and elaborate material traditions flourished especially in central and eastern Honshu.",
         "id": "event-middle-jomon"
       },
       {
         "type": "span",
-        "label": "Middle Jomon material florescence",
-        "start": -3500,
-        "end": -2400,
-        "display_date": "about 3500-2400 BC",
-        "certainty": "approximate",
-        "caption": "Pottery, exchange, ritual objects, and settled labor reached exceptional density in the highlands.",
-        "id": "event-middle-jomon-material-florescence"
-      },
-      {
-        "type": "point",
-        "label": "Highland decline",
-        "start": -2400,
-        "end": -2400,
-        "display_date": "around 2400 BC",
-        "certainty": "approximate",
-        "caption": "Environmental deterioration is associated with the contraction of Middle Jomon highland settlement.",
-        "id": "event-highland-decline"
-      },
-      {
-        "type": "span",
         "label": "Late Jomon",
-        "start": -2400,
-        "end": -1000,
-        "display_date": "about 2400-1000 BC",
+        "start": "-2450",
+        "end": "-1250",
+        "display_date": "ca. 2450–1250 BC",
         "certainty": "approximate",
-        "caption": "Population redistributed toward coasts, valleys, western regions, and the north.",
+        "caption": "Settlement and ritual landscapes shifted after the Middle Jomon florescence, with strong regional variation.",
         "id": "event-late-jomon"
       },
       {
         "type": "span",
-        "label": "Late Jomon coastal expansion",
-        "start": -2400,
-        "end": -1000,
-        "display_date": "about 2400-1000 BC",
+        "label": "Final Jomon",
+        "start": "-1250",
+        "end": "-450",
+        "display_date": "ca. 1250–450 BC",
         "certainty": "approximate",
-        "caption": "Large shell mounds and intensified marine subsistence characterize many communities.",
-        "id": "event-late-jomon-coastal-expansion"
+        "caption": "This broad framework is not a uniform end date: farming began earlier in northern Kyushu while Jomon traditions continued elsewhere.",
+        "id": "event-final-jomon"
       },
       {
         "type": "span",
-        "label": "Late and Latest Jomon ritual landscapes",
-        "start": -2400,
-        "end": -300,
-        "display_date": "about 2400-300 BC",
+        "label": "Initial and Early Yayoi (northern Kyushu)",
+        "start": "-900",
+        "end": "-400",
+        "display_date": "ca. 900–400 BC",
         "certainty": "approximate",
-        "caption": "Communal spaces, cemeteries, stone circles, and exchange developed unevenly across this long span.",
-        "id": "event-late-and-latest-jomon-ritual-landscapes"
+        "caption": "Wet-rice farming began in northern Kyushu in the tenth to ninth centuries BC; the transition reached other regions later.",
+        "id": "event-initial-and-early-yayoi-northern-kyushu"
       },
       {
         "type": "span",
-        "label": "Oyu stone circles",
-        "start": -2000,
-        "end": -1000,
-        "display_date": "Late Jomon, approximate",
+        "label": "Middle Yayoi",
+        "start": "-400",
+        "end": 50,
+        "display_date": "ca. 400 BC–AD 50",
         "certainty": "approximate",
-        "caption": "The circles belong broadly to the later Jomon ceremonial landscape.",
-        "id": "event-oyu-stone-circles"
-      },
-      {
-        "type": "span",
-        "label": "Latest Jomon",
-        "start": -1000,
-        "end": -300,
-        "display_date": "about 1000-300 BC",
-        "certainty": "approximate",
-        "caption": "Settlement contracted while northern ritual and lacquer traditions remained vigorous.",
-        "id": "event-latest-jomon"
-      },
-      {
-        "type": "span",
-        "label": "Early rice cultivation in northern Kyushu",
-        "start": -1000,
-        "end": -500,
-        "display_date": "during the later first millennium BC",
-        "certainty": "disputed",
-        "caption": "Rice evidence predates the conventional Yayoi boundary, though individual dates and identifications remain debated.",
-        "id": "event-early-rice-cultivation-in-northern-kyushu"
-      },
-      {
-        "type": "span",
-        "label": "Jomon-Yayoi transition",
-        "start": -500,
-        "end": -300,
-        "display_date": "roughly fifth to third centuries BC",
-        "certainty": "approximate",
-        "caption": "Agriculture spread regionally before a uniform archaeological boundary can be drawn.",
-        "id": "event-jomon-yayoi-transition"
-      },
-      {
-        "type": "span",
-        "label": "Yayoi period",
-        "start": -300,
-        "end": 300,
-        "display_date": "about 300 BC-AD 300",
-        "certainty": "approximate",
-        "caption": "Rice agriculture, metallurgy, larger settlements, warfare, and federation developed unevenly across the archipelago.",
-        "id": "event-yayoi-period"
+        "caption": "Agriculture, continental exchange, metallurgy, and new burial forms expanded unevenly across western and central Japan.",
+        "id": "event-middle-yayoi"
       },
       {
         "type": "point",
-        "label": "Toro discovery",
+        "label": "Yayoi-type pottery found at Mukogaoka",
+        "start": 1884,
+        "end": 1884,
+        "display_date": "AD 1884",
+        "certainty": "secure",
+        "caption": "A pottery vessel found in the Yayoi district eventually lent its name to a distinct archaeological period.",
+        "id": "event-yayoi-type-pottery-found-at-mukogaoka"
+      },
+      {
+        "type": "point",
+        "label": "Toro settlement discovered",
         "start": 1943,
         "end": 1943,
         "display_date": "AD 1943",
         "certainty": "secure",
-        "caption": "The discovery of Toro transformed understanding of mature Yayoi village life.",
-        "id": "event-toro-discovery"
+        "caption": "Construction exposed the waterlogged remains of a mature rice-farming settlement.",
+        "id": "event-toro-settlement-discovered"
       },
       {
         "type": "point",
-        "label": "Han establishes Lelang",
-        "start": -108,
-        "end": -108,
-        "display_date": "108 BC",
+        "label": "Major excavations begin at Toro",
+        "start": 1947,
+        "end": 1947,
+        "display_date": "AD 1947",
         "certainty": "secure",
-        "caption": "The commandery became an important distribution and diplomatic center in northern Korea.",
-        "id": "event-han-establishes-lelang"
+        "caption": "Postwar excavation made Toro central to the archaeological definition of Yayoi village life.",
+        "id": "event-major-excavations-begin-at-toro"
       },
       {
         "type": "span",
-        "label": "Early to Middle Yayoi expansion",
-        "start": -300,
-        "end": 200,
-        "display_date": "roughly third century BC to second century AD",
-        "certainty": "approximate",
-        "caption": "Ongagawa pottery and rice agriculture moved eastward through the Inland Sea and beyond.",
-        "id": "event-early-to-middle-yayoi-expansion"
-      },
-      {
-        "type": "span",
-        "label": "Early Yayoi mixed agriculture",
-        "start": -300,
-        "end": 100,
-        "display_date": "roughly third century BC to first century AD",
-        "certainty": "approximate",
-        "caption": "Wet paddies, dry fields, fishing, and gathering coexisted during the first agricultural expansion.",
-        "id": "event-early-yayoi-mixed-agriculture"
-      },
-      {
-        "type": "span",
-        "label": "Itazuke agricultural settlement",
-        "start": -300,
-        "end": 200,
-        "display_date": "Early to Middle Yayoi",
-        "certainty": "approximate",
-        "caption": "The site preserves the transition from Latest Jomon pottery to established Yayoi farming.",
-        "id": "event-itazuke-agricultural-settlement"
-      },
-      {
-        "type": "span",
-        "label": "Itazuke cemetery",
-        "start": -300,
-        "end": 200,
-        "display_date": "Early to Middle Yayoi",
-        "certainty": "approximate",
-        "caption": "Jar burials and wooden coffins developed beside the agricultural settlement.",
-        "id": "event-itazuke-cemetery"
-      },
-      {
-        "type": "span",
-        "label": "Doigahama cemetery",
-        "start": -100,
-        "end": 1,
-        "display_date": "late Early Yayoi, approximate",
-        "certainty": "approximate",
-        "caption": "Burial sectors and grave goods reveal differentiated communities in western Honshu.",
-        "id": "event-doigahama-cemetery"
-      },
-      {
-        "type": "span",
-        "label": "Spread of square-moated graves",
-        "start": -100,
-        "end": 200,
-        "display_date": "Middle Yayoi, approximate",
-        "certainty": "approximate",
-        "caption": "Square and rectangular burial precincts expanded especially in the Kinki and eastward.",
-        "id": "event-spread-of-square-moated-graves"
-      },
-      {
-        "type": "point",
-        "label": "Earliest secure iron horizon",
-        "start": -150,
-        "end": -150,
-        "display_date": "about second century BC",
-        "certainty": "approximate",
-        "caption": "The oldest widely accepted iron finds belong around this period.",
-        "id": "event-earliest-secure-iron-horizon"
-      },
-      {
-        "type": "span",
-        "label": "Late Yayoi iron expansion",
-        "start": 100,
-        "end": 300,
-        "display_date": "roughly second to third centuries AD",
-        "certainty": "approximate",
-        "caption": "Iron entered a broad range of agricultural, craft, fishing, and military work.",
-        "id": "event-late-yayoi-iron-expansion"
-      },
-      {
-        "type": "span",
-        "label": "Toro settlement",
-        "start": 100,
-        "end": 300,
-        "display_date": "Late Yayoi, approximate",
-        "certainty": "approximate",
-        "caption": "The preserved village belongs to the mature rice-farming landscape of eastern Honshu.",
-        "id": "event-toro-settlement"
-      },
-      {
-        "type": "span",
-        "label": "Yayoi warfare and defended settlement",
-        "start": 1,
-        "end": 300,
-        "display_date": "roughly first to third centuries AD",
-        "certainty": "approximate",
-        "caption": "Weapons, injuries, moats, and high settlements intensify toward the end of Yayoi.",
-        "id": "event-yayoi-warfare-and-defended-settlement"
-      },
-      {
-        "type": "span",
-        "label": "Yayoi bronze ritual economy",
-        "start": -100,
-        "end": 300,
-        "display_date": "roughly first century BC to third century AD",
-        "certainty": "approximate",
-        "caption": "Weapons, mirrors, and bells became major signs of authority and ceremony.",
-        "id": "event-yayoi-bronze-ritual-economy"
-      },
-      {
-        "type": "span",
-        "label": "Local bronze weapon casting",
-        "start": -100,
-        "end": 100,
-        "display_date": "roughly first century BC to first century AD",
-        "certainty": "approximate",
-        "caption": "Continental weapon forms were copied and enlarged in northern Kyushu.",
-        "id": "event-local-bronze-weapon-casting"
-      },
-      {
-        "type": "span",
-        "label": "Early bell casting",
-        "start": 1,
-        "end": 200,
-        "display_date": "Middle Yayoi, approximate",
-        "certainty": "approximate",
-        "caption": "Small bells and molds show that casting knowledge circulated before the later concentration zones were fixed.",
-        "id": "event-early-bell-casting"
-      },
-      {
-        "type": "span",
-        "label": "Technical development of bronze bells",
-        "start": 100,
-        "end": 300,
-        "display_date": "roughly second to third centuries AD",
-        "certainty": "approximate",
-        "caption": "Bells became taller, thinner, cleaner, and more standardized.",
-        "id": "event-technical-development-of-bronze-bells"
-      },
-      {
-        "type": "point",
-        "label": "Wado copper notice",
-        "start": 708,
-        "end": 708,
-        "display_date": "AD 708",
+        "label": "Eastern Zhou",
+        "start": "-770",
+        "end": "-256",
+        "display_date": "770–256 BC",
         "certainty": "secure",
-        "caption": "The court celebrated refined or Japanese copper through the new era name Wado.",
-        "id": "event-wado-copper-notice"
+        "caption": "The long weakening of Zhou authority forms the earlier continental horizon for intensified mobility and conflict.",
+        "id": "event-eastern-zhou"
+      },
+      {
+        "type": "span",
+        "label": "Qin empire",
+        "start": "-221",
+        "end": "-206",
+        "display_date": "221–206 BC",
+        "certainty": "secure",
+        "caption": "Qin unification was brief but transformed the political geography of East Asia.",
+        "id": "event-qin-empire"
+      },
+      {
+        "type": "span",
+        "label": "Western Han",
+        "start": "-202",
+        "end": 9,
+        "display_date": "202 BC–AD 9",
+        "certainty": "secure",
+        "caption": "Western Han expansion reorganized continental and peninsular exchange networks.",
+        "id": "event-western-han"
+      },
+      {
+        "type": "span",
+        "label": "Eastern Han",
+        "start": 25,
+        "end": 220,
+        "display_date": "AD 25–220",
+        "certainty": "secure",
+        "caption": "Eastern Han sources contain early written notices of Wa and its envoys.",
+        "id": "event-eastern-han"
+      },
+      {
+        "type": "span",
+        "label": "Lelang Commandery",
+        "start": "-108",
+        "end": 313,
+        "display_date": "108 BC–AD 313",
+        "certainty": "secure",
+        "caption": "The commandery in northern Korea became a durable node linking Chinese states, peninsular communities, and the archipelago.",
+        "id": "event-lelang-commandery"
       },
       {
         "type": "span",
         "label": "Late Yayoi",
-        "start": 100,
-        "end": 300,
-        "display_date": "roughly second to third centuries AD",
+        "start": 50,
+        "end": 250,
+        "display_date": "ca. AD 50–250",
         "certainty": "approximate",
-        "caption": "Federated polities, hierarchy, warfare, and ritual bronzes define the horizon described by the Chinese record.",
+        "caption": "Regional centers, defended settlements, bronze ritual systems, and the polities described in Chinese records belong to this broad horizon.",
         "id": "event-late-yayoi"
       },
       {
-        "type": "point",
-        "label": "Wei history account of Wa",
-        "start": 297,
-        "end": 297,
-        "display_date": "AD 297",
-        "certainty": "secure",
-        "caption": "The date fixes the surviving written witness, not every event it reports.",
-        "id": "event-wei-history-account-of-wa"
+        "type": "span",
+        "label": "Early Kofun horizon",
+        "start": 250,
+        "end": 350,
+        "display_date": "ca. AD 250–350",
+        "certainty": "approximate",
+        "caption": "Standardized monumental keyhole tombs spread from the mid-third century and mark a new scale of political integration.",
+        "id": "event-early-kofun-horizon"
       },
       {
         "type": "span",
-        "label": "Himiko",
-        "start": 183,
-        "end": 248,
-        "display_date": "approximately AD 183-248",
+        "label": "Itazuke early paddy horizon",
+        "start": "-900",
+        "end": "-700",
+        "display_date": "ca. ninth–eighth centuries BC",
         "certainty": "approximate",
-        "caption": "Chinese histories place Himiko within the first half of the third century.",
-        "id": "event-himiko"
+        "caption": "The earliest farming horizon is placed within northern Kyushu's long Jomon–Yayoi transition; exact site phases remain debated.",
+        "id": "event-itazuke-early-paddy-horizon"
+      },
+      {
+        "type": "span",
+        "label": "Toro settlement horizon",
+        "start": 50,
+        "end": 200,
+        "display_date": "ca. first–second centuries AD",
+        "certainty": "approximate",
+        "caption": "Toro belongs within mature eastern Yayoi rice agriculture rather than at the beginning of the northern Kyushu transition.",
+        "id": "event-toro-settlement-horizon"
+      },
+      {
+        "type": "point",
+        "label": "Wado copper discovery reported",
+        "start": 708,
+        "end": 708,
+        "display_date": "AD 708",
+        "certainty": "secure",
+        "caption": "The much later copper notice cannot by itself identify the ore sources of Yayoi bronze production.",
+        "id": "event-wado-copper-discovery-reported"
+      },
+      {
+        "type": "span",
+        "label": "Cao Wei dynasty",
+        "start": 220,
+        "end": 266,
+        "display_date": "AD 220–266",
+        "certainty": "secure",
+        "caption": "Himiko's diplomacy was conducted with the Wei court during China's Three Kingdoms period.",
+        "id": "event-cao-wei-dynasty"
       },
       {
         "type": "point",
         "label": "Reported death of Himiko",
         "start": 248,
         "end": 248,
-        "display_date": "about AD 248",
+        "display_date": "ca. AD 248",
         "certainty": "approximate",
-        "caption": "The account associates her death with monumental burial and a succession crisis.",
+        "caption": "The account associates her death with renewed disorder and a large burial mound.",
         "id": "event-reported-death-of-himiko"
       },
       {
         "type": "span",
-        "label": "Recorded route to Yamatai",
-        "start": 220,
-        "end": 297,
-        "display_date": "third century AD witness",
-        "certainty": "secure",
-        "caption": "The route belongs to the Chinese diplomatic geography preserved in the Wei history.",
-        "id": "event-recorded-route-to-yamatai"
-      },
-      {
-        "type": "span",
-        "label": "Compilation of the Kojiki and Nihon Shoki",
-        "start": 712,
-        "end": 720,
-        "display_date": "AD 712-720",
-        "certainty": "secure",
-        "caption": "The court genealogies were written centuries after Himiko.",
-        "id": "event-compilation-of-the-kojiki-and-nihon-shoki"
-      },
-      {
-        "type": "span",
-        "label": "Middle to Late Yayoi social differentiation",
-        "start": -100,
-        "end": 300,
-        "display_date": "roughly first century BC to third century AD",
-        "certainty": "approximate",
-        "caption": "Houses, coffins, ornaments, and exchange goods reveal increasing inequality.",
-        "id": "event-middle-to-late-yayoi-social-differentiation"
-      },
-      {
-        "type": "span",
-        "label": "Early and Middle Yayoi population mixing",
-        "start": -300,
-        "end": 200,
-        "display_date": "roughly third century BC to second century AD",
-        "certainty": "approximate",
-        "caption": "Skeletal evidence shows continuity, regional difference, and new ancestry without total replacement.",
-        "id": "event-early-and-middle-yayoi-population-mixing"
-      },
-      {
-        "type": "span",
-        "label": "Late Yayoi population growth",
-        "start": 100,
-        "end": 300,
-        "display_date": "roughly second to third centuries AD",
-        "certainty": "approximate",
-        "caption": "Dense agricultural settlement expanded especially in the Kinki and other favorable regions.",
-        "id": "event-late-yayoi-population-growth"
-      },
-      {
-        "type": "span",
-        "label": "Traditional expedition of Jimmu",
-        "start": null,
-        "end": null,
-        "display_date": "traditional court chronology",
-        "certainty": "traditional",
-        "caption": "The route belongs to retrospective court memory and has no secure historical date.",
-        "id": "event-traditional-expedition-of-jimmu"
-      },
-      {
-        "type": "span",
-        "label": "Rise of a Kinki power center",
-        "start": 100,
-        "end": 300,
-        "display_date": "roughly second to third centuries AD",
-        "certainty": "approximate",
-        "caption": "Archaeology reveals growing settlement, warfare, and political concentration in the Kinki.",
-        "id": "event-rise-of-a-kinki-power-center"
-      },
-      {
-        "type": "span",
-        "label": "Kojindani bronze deposition",
-        "start": -100,
+        "label": "Kojindani bronze deposition horizon",
+        "start": "-100",
         "end": 100,
-        "display_date": "late Yayoi, approximate",
+        "display_date": "ca. first century BC–first century AD",
         "certainty": "approximate",
-        "caption": "The cache belongs broadly to the late Yayoi bronze world, though its precise date remains debated.",
-        "id": "event-kojindani-bronze-deposition"
+        "caption": "The cache belongs broadly to the Middle–Late Yayoi bronze world; its precise deposition date is not securely fixed.",
+        "id": "event-kojindani-bronze-deposition-horizon"
       },
       {
         "type": "span",
-        "label": "Traditional myths of Izumo submission",
-        "start": null,
-        "end": null,
-        "display_date": "retrospective sacred chronology",
+        "label": "Traditional reign of Sujin",
+        "start": "-97",
+        "end": "-30",
+        "display_date": "Traditional chronology: 97–30 BC",
         "certainty": "traditional",
-        "caption": "The myths arrange regional rivalry within a sacred order rather than secure contemporary time.",
-        "id": "event-traditional-myths-of-izumo-submission"
+        "caption": "The received reign dates are a court chronology and do not securely date the ruler or an associated tomb.",
+        "id": "event-traditional-reign-of-sujin"
       },
       {
         "type": "span",
-        "label": "Compilation of Izumo submission traditions",
-        "start": 712,
-        "end": 720,
-        "display_date": "AD 712-720",
-        "certainty": "secure",
-        "caption": "The Kojiki and Nihon Shoki preserve the court form of these traditions.",
-        "id": "event-compilation-of-izumo-submission-traditions"
-      },
-      {
-        "type": "span",
-        "label": "Himiko",
-        "start": 183,
-        "end": 248,
-        "display_date": "approximately AD 183-248",
-        "certainty": "approximate",
-        "caption": "Female ritual rule is securely reported for third-century Yamatai, though its location is disputed.",
-        "id": "event-himiko"
-      },
-      {
-        "type": "span",
-        "label": "Sujin in received chronology",
-        "start": null,
-        "end": null,
-        "display_date": "traditional and disputed chronology",
-        "certainty": "disputed",
-        "caption": "The ruler is important in court tradition, but his dates and historicity cannot be secured.",
-        "id": "event-sujin-in-received-chronology"
-      },
-      {
-        "type": "span",
-        "label": "Emergence of keyhole tombs",
+        "label": "Standardized keyhole kofun",
         "start": 250,
         "end": 350,
-        "display_date": "late third to early fourth century AD",
+        "display_date": "ca. AD 250–350",
         "certainty": "approximate",
-        "caption": "Monumental keyhole tombs mark the transition into the Kofun age.",
-        "id": "event-emergence-of-keyhole-tombs"
-      },
-      {
-        "type": "span",
-        "label": "Upper Paleolithic",
-        "start": -28000,
-        "end": -10500,
-        "display_date": "about 28,000-10,500 BC",
-        "certainty": "approximate",
-        "caption": "Widespread mobile settlement forms the chapter’s earliest secure archaeological horizon.",
-        "id": "event-upper-paleolithic"
-      },
-      {
-        "type": "span",
-        "label": "Jomon sequence",
-        "start": -7500,
-        "end": -300,
-        "display_date": "about 7500-300 BC",
-        "certainty": "approximate",
-        "caption": "Regional hunting, fishing, gathering, settlement, craft, and ritual changed over several millennia.",
-        "id": "event-jomon-sequence"
-      },
-      {
-        "type": "span",
-        "label": "Jomon-Yayoi agricultural transition",
-        "start": -500,
-        "end": -300,
-        "display_date": "roughly fifth to third centuries BC",
-        "certainty": "approximate",
-        "caption": "Rice cultivation began before the conventional Yayoi boundary was complete.",
-        "id": "event-jomon-yayoi-agricultural-transition"
-      },
-      {
-        "type": "span",
-        "label": "Yamato and early Kofun horizon",
-        "start": 250,
-        "end": 350,
-        "display_date": "late third to early fourth century AD",
-        "certainty": "approximate",
-        "caption": "A Nara-basin center and monumental tombs mark a new scale of political power.",
-        "id": "event-yamato-and-early-kofun-horizon"
+        "caption": "Large standardized keyhole tombs provide an archaeological horizon for emerging Yamato power in the late third and early fourth centuries.",
+        "id": "event-standardized-keyhole-kofun"
       }
     ],
     "illustrations": [
@@ -1858,8 +1638,9 @@
             }
           ],
           "timelineRefs": [
-            "event-traditional-expedition-of-jimmu",
-            "event-compilation-of-the-kojiki-and-nihon-shoki"
+            "event-traditional-accession-of-jimmu",
+            "event-kojiki-completed",
+            "event-nihon-shoki-completed"
           ],
           "illustrationRefs": [
             {
@@ -1910,7 +1691,11 @@
             }
           ],
           "timelineRefs": [
-            "event-chinese-records-of-wa"
+            "event-king-of-na-in-wa-receives-a-han-seal",
+            "event-wa-embassy-recorded-at-the-han-court",
+            "event-himiko-s-rule-in-yamatai",
+            "event-himiko-s-embassy-reaches-wei",
+            "event-compilation-of-the-wei-account-of-wa"
           ],
           "mapRefs": [
             "map-1-wa"
@@ -1960,7 +1745,11 @@
             }
           ],
           "timelineRefs": [
-            "event-late-pleistocene"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-last-glacial-maximum",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "mapRefs": [
             "map-1-islands"
@@ -2029,7 +1818,10 @@
             }
           ],
           "timelineRefs": [
-            "event-tachikawa-loam-occupation-sequence"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-last-glacial-maximum",
+            "event-incipient-jomon-mesolithic-transition"
           ],
           "mapRefs": [
             "map-1-islands"
@@ -2061,8 +1853,11 @@
             }
           ],
           "timelineRefs": [
-            "event-upper-paleolithic-in-the-archipelago",
-            "event-recognition-of-iwajuku"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-last-glacial-maximum",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "mapRefs": [
             "map-1-paleolithic"
@@ -2143,7 +1938,11 @@
             }
           ],
           "timelineRefs": [
-            "event-late-glacial-warming-and-settlement-growth"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-last-glacial-maximum",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "illustrationRefs": [
             {
@@ -2209,7 +2008,10 @@
             }
           ],
           "timelineRefs": [
-            "event-mesolithic-transition"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "illustrationRefs": [
             {
@@ -2296,7 +2098,10 @@
             }
           ],
           "timelineRefs": [
-            "event-earliest-pottery-horizon"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "illustrationRefs": [
             {
@@ -2362,8 +2167,9 @@
             }
           ],
           "timelineRefs": [
-            "event-morse-excavates-omori",
-            "event-yamanouchi-formalizes-the-jomon-sequence"
+            "event-morse-excavates-the-omori-shell-mounds",
+            "event-yamanouchi-systematizes-the-jomon-sequence",
+            "event-scientific-excavation-at-iwajuku"
           ],
           "mapRefs": [
             "map-1-jomon-coasts"
@@ -2410,7 +2216,10 @@
             }
           ],
           "timelineRefs": [
-            "event-earliest-jomon"
+            "event-incipient-jomon-mesolithic-transition",
+            "event-initial-jomon",
+            "event-early-jomon",
+            "event-middle-jomon"
           ],
           "illustrationRefs": [
             {
@@ -2504,7 +2313,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-jomon"
+            "event-incipient-jomon-mesolithic-transition",
+            "event-initial-jomon",
+            "event-early-jomon",
+            "event-middle-jomon"
           ],
           "illustrationRefs": [
             {
@@ -2654,7 +2466,9 @@
             }
           ],
           "timelineRefs": [
-            "event-middle-jomon"
+            "event-early-jomon",
+            "event-middle-jomon",
+            "event-late-jomon"
           ],
           "illustrationRefs": [
             {
@@ -2804,7 +2618,9 @@
             }
           ],
           "timelineRefs": [
-            "event-middle-jomon-material-florescence"
+            "event-early-jomon",
+            "event-middle-jomon",
+            "event-late-jomon"
           ],
           "illustrationRefs": [
             {
@@ -2970,7 +2786,9 @@
             }
           ],
           "timelineRefs": [
-            "event-highland-decline"
+            "event-early-jomon",
+            "event-middle-jomon",
+            "event-late-jomon"
           ],
           "illustrationRefs": [
             {
@@ -3029,7 +2847,9 @@
             }
           ],
           "timelineRefs": [
-            "event-late-jomon"
+            "event-middle-jomon",
+            "event-late-jomon",
+            "event-final-jomon"
           ],
           "illustrationRefs": [
             {
@@ -3067,7 +2887,9 @@
             }
           ],
           "timelineRefs": [
-            "event-late-jomon-coastal-expansion"
+            "event-middle-jomon",
+            "event-late-jomon",
+            "event-final-jomon"
           ],
           "illustrationRefs": [
             {
@@ -3189,7 +3011,9 @@
             }
           ],
           "timelineRefs": [
-            "event-late-and-latest-jomon-ritual-landscapes"
+            "event-middle-jomon",
+            "event-late-jomon",
+            "event-final-jomon"
           ],
           "illustrationRefs": [
             {
@@ -3292,7 +3116,9 @@
             }
           ],
           "timelineRefs": [
-            "event-oyu-stone-circles"
+            "event-middle-jomon",
+            "event-late-jomon",
+            "event-final-jomon"
           ],
           "illustrationRefs": [
             {
@@ -3342,7 +3168,7 @@
       "paragraphs": [
         {
           "id": "01.12-p001",
-          "text": "The Latest Jomon is conventionally placed between about 1000 and 300 BC, though the boundary is least secure in Kyushu, where rice cultivation had already begun. Settlement contracted sharply across the archipelago, and more than half of known sites lay in Tohoku. Northern communities continued to draw on horse chestnuts, walnuts, deer, salmon, and other marine foods, sometimes while managing useful plants and disturbing nearby forests.",
+          "text": "In a widely used calibrated chronology, the Final (or Latest) Jomon spans roughly 1250 to 450 BC, though its regional boundaries vary sharply—most of all in northern Kyushu, where wet-rice cultivation had begun by the tenth to ninth centuries BC. Settlement contracted sharply across the archipelago, and more than half of known sites lay in Tohoku. Northern communities continued to draw on horse chestnuts, walnuts, deer, salmon, and other marine foods, sometimes while managing useful plants and disturbing nearby forests.",
           "figures": [
             {
               "label": "Map 1a",
@@ -3358,7 +3184,10 @@
             }
           ],
           "timelineRefs": [
-            "event-latest-jomon"
+            "event-late-jomon",
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi"
           ],
           "illustrationRefs": [
             {
@@ -3452,7 +3281,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-rice-cultivation-in-northern-kyushu"
+            "event-late-jomon",
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi"
           ],
           "illustrationRefs": [
             {
@@ -3533,7 +3365,10 @@
             }
           ],
           "timelineRefs": [
-            "event-jomon-yayoi-transition"
+            "event-late-jomon",
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi"
           ],
           "illustrationRefs": [
             {
@@ -3571,8 +3406,9 @@
             }
           ],
           "timelineRefs": [
-            "event-yayoi-period",
-            "event-toro-discovery"
+            "event-yayoi-type-pottery-found-at-mukogaoka",
+            "event-toro-settlement-discovered",
+            "event-major-excavations-begin-at-toro"
           ],
           "mapRefs": [
             "map-1-rice"
@@ -3653,7 +3489,11 @@
             }
           ],
           "timelineRefs": [
-            "event-han-establishes-lelang"
+            "event-eastern-zhou",
+            "event-qin-empire",
+            "event-western-han",
+            "event-eastern-han",
+            "event-lelang-commandery"
           ],
           "mapRefs": [
             "map-1-rice"
@@ -3678,7 +3518,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-to-middle-yayoi-expansion"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -3738,7 +3581,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-yayoi-mixed-agriculture"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -3826,7 +3672,10 @@
             }
           ],
           "timelineRefs": [
-            "event-itazuke-agricultural-settlement"
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-itazuke-early-paddy-horizon",
+            "event-middle-yayoi"
           ],
           "illustrationRefs": [
             {
@@ -3885,7 +3734,10 @@
             }
           ],
           "timelineRefs": [
-            "event-itazuke-cemetery"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4007,7 +3859,10 @@
             }
           ],
           "timelineRefs": [
-            "event-doigahama-cemetery"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4038,7 +3893,10 @@
             }
           ],
           "timelineRefs": [
-            "event-spread-of-square-moated-graves"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4132,7 +3990,10 @@
             }
           ],
           "timelineRefs": [
-            "event-earliest-secure-iron-horizon"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4219,7 +4080,10 @@
             }
           ],
           "timelineRefs": [
-            "event-late-yayoi-iron-expansion"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4285,7 +4149,11 @@
             }
           ],
           "timelineRefs": [
-            "event-toro-settlement"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-toro-settlement-horizon",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4435,7 +4303,10 @@
             }
           ],
           "timelineRefs": [
-            "event-yayoi-warfare-and-defended-settlement"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4557,7 +4428,10 @@
             }
           ],
           "timelineRefs": [
-            "event-yayoi-bronze-ritual-economy"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4616,7 +4490,10 @@
             }
           ],
           "timelineRefs": [
-            "event-local-bronze-weapon-casting"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4682,7 +4559,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-bell-casting"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4713,7 +4593,10 @@
             }
           ],
           "timelineRefs": [
-            "event-technical-development-of-bronze-bells"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -4863,7 +4746,10 @@
             }
           ],
           "timelineRefs": [
-            "event-wado-copper-notice"
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon",
+            "event-wado-copper-discovery-reported"
           ],
           "illustrationRefs": [
             {
@@ -4985,8 +4871,11 @@
             }
           ],
           "timelineRefs": [
-            "event-late-yayoi",
-            "event-wei-history-account-of-wa"
+            "event-king-of-na-in-wa-receives-a-han-seal",
+            "event-wa-embassy-recorded-at-the-han-court",
+            "event-himiko-s-rule-in-yamatai",
+            "event-himiko-s-embassy-reaches-wei",
+            "event-compilation-of-the-wei-account-of-wa"
           ],
           "illustrationRefs": [
             {
@@ -5030,7 +4919,11 @@
             }
           ],
           "timelineRefs": [
-            "event-himiko"
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-cao-wei-dynasty",
+            "event-himiko-s-embassy-reaches-wei",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -5091,7 +4984,7 @@
           "genealogy": [
             {
               "id": "G1.1",
-              "caption": "The tree separates Himiko’s known sibling relation from two successors whose kinship is not stated.",
+              "caption": "The tree separates Himiko's known sibling relation from two successors whose kinship is not stated.",
               "active": [
                 "himiko",
                 "himiko_brother",
@@ -5106,7 +4999,10 @@
             }
           ],
           "timelineRefs": [
-            "event-reported-death-of-himiko"
+            "event-himiko-s-rule-in-yamatai",
+            "event-himiko-s-embassy-reaches-wei",
+            "event-reported-death-of-himiko",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -5144,7 +5040,10 @@
             }
           ],
           "timelineRefs": [
-            "event-recorded-route-to-yamatai"
+            "event-himiko-s-rule-in-yamatai",
+            "event-cao-wei-dynasty",
+            "event-himiko-s-embassy-reaches-wei",
+            "event-compilation-of-the-wei-account-of-wa"
           ],
           "mapRefs": [
             "map-1-wa"
@@ -5215,7 +5114,10 @@
             }
           ],
           "timelineRefs": [
-            "event-compilation-of-the-kojiki-and-nihon-shoki"
+            "event-himiko-s-rule-in-yamatai",
+            "event-compilation-of-the-wei-account-of-wa",
+            "event-kojiki-completed",
+            "event-nihon-shoki-completed"
           ],
           "mapRefs": [
             "map-1-wa"
@@ -5275,7 +5177,10 @@
             }
           ],
           "timelineRefs": [
-            "event-middle-to-late-yayoi-social-differentiation"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "mapRefs": [
             "map-1-yayoi"
@@ -5395,7 +5300,10 @@
             }
           ],
           "timelineRefs": [
-            "event-early-and-middle-yayoi-population-mixing"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "mapRefs": [
             "map-1-rice"
@@ -5442,7 +5350,10 @@
             }
           ],
           "timelineRefs": [
-            "event-late-yayoi-population-growth"
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "mapRefs": [
             "map-1-memory"
@@ -5484,7 +5395,10 @@
             }
           ],
           "timelineRefs": [
-            "event-traditional-expedition-of-jimmu"
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-traditional-accession-of-jimmu",
+            "event-middle-yayoi"
           ],
           "illustrationRefs": [
             {
@@ -5515,7 +5429,9 @@
             }
           ],
           "timelineRefs": [
-            "event-rise-of-a-kinki-power-center"
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -5629,7 +5545,10 @@
             }
           ],
           "timelineRefs": [
-            "event-kojindani-bronze-deposition"
+            "event-middle-yayoi",
+            "event-kojindani-bronze-deposition-horizon",
+            "event-late-yayoi",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -5735,7 +5654,9 @@
             }
           ],
           "timelineRefs": [
-            "event-traditional-myths-of-izumo-submission"
+            "event-kojindani-bronze-deposition-horizon",
+            "event-kojiki-completed",
+            "event-nihon-shoki-completed"
           ],
           "mapRefs": [
             "map-1-memory"
@@ -5812,7 +5733,9 @@
             }
           ],
           "timelineRefs": [
-            "event-compilation-of-izumo-submission-traditions"
+            "event-kojindani-bronze-deposition-horizon",
+            "event-kojiki-completed",
+            "event-nihon-shoki-completed"
           ],
           "illustrationRefs": [
             {
@@ -5874,7 +5797,7 @@
           "genealogy": [
             {
               "id": "G1.1",
-              "caption": "The tree shows female rule in Yamatai through Himiko’s political household.",
+              "caption": "The tree shows female rule in Yamatai through Himiko's political household.",
               "active": [
                 "himiko",
                 "himiko_brother"
@@ -5896,7 +5819,10 @@
             }
           ],
           "timelineRefs": [
-            "event-himiko"
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-reported-death-of-himiko",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
@@ -5978,7 +5904,10 @@
             }
           ],
           "timelineRefs": [
-            "event-sujin-in-received-chronology"
+            "event-traditional-reign-of-sujin",
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-standardized-keyhole-kofun"
           ],
           "illustrationRefs": [
             {
@@ -6011,7 +5940,7 @@
           "genealogy": [
             {
               "id": "G1.2",
-              "caption": "The tree keeps Sujin’s traditional position distinct from the archaeological dating of keyhole tombs.",
+              "caption": "The tree keeps Sujin's traditional position distinct from the archaeological dating of keyhole tombs.",
               "active": [
                 "jimmu",
                 "sujin"
@@ -6019,7 +5948,9 @@
             }
           ],
           "timelineRefs": [
-            "event-emergence-of-keyhole-tombs"
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-standardized-keyhole-kofun"
           ],
           "illustrationRefs": [
             {
@@ -6057,7 +5988,11 @@
             }
           ],
           "timelineRefs": [
-            "event-upper-paleolithic"
+            "event-late-pleistocene",
+            "event-upper-paleolithic-in-japan",
+            "event-last-glacial-maximum",
+            "event-incipient-jomon-mesolithic-transition",
+            "event-early-holocene"
           ],
           "mapRefs": [
             "map-1-paleolithic"
@@ -6082,7 +6017,12 @@
             }
           ],
           "timelineRefs": [
-            "event-jomon-sequence"
+            "event-incipient-jomon-mesolithic-transition",
+            "event-initial-jomon",
+            "event-early-jomon",
+            "event-middle-jomon",
+            "event-late-jomon",
+            "event-final-jomon"
           ],
           "illustrationRefs": [
             {
@@ -6113,7 +6053,10 @@
             }
           ],
           "timelineRefs": [
-            "event-jomon-yayoi-agricultural-transition"
+            "event-late-jomon",
+            "event-final-jomon",
+            "event-initial-and-early-yayoi-northern-kyushu",
+            "event-middle-yayoi"
           ],
           "mapRefs": [
             "map-1-rice"
@@ -6166,7 +6109,9 @@
             }
           ],
           "timelineRefs": [
-            "event-yamato-and-early-kofun-horizon"
+            "event-late-yayoi",
+            "event-himiko-s-rule-in-yamatai",
+            "event-early-kofun-horizon"
           ],
           "illustrationRefs": [
             {
