@@ -17,6 +17,7 @@ window.ANCIENT_JAPAN_MAP_CONFIG = Object.freeze({
   maplibreCss: "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css",
   pmtilesJs: "https://unpkg.com/pmtiles@4.4.1/dist/pmtiles.js",
   cooperativeGestures: true,
+  directTouchNavigation: true,
   maxPixelRatio: 2,
   attribution: "Ancient Japan Study Atlas",
 });

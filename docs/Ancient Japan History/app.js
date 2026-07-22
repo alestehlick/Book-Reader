@@ -100,6 +100,7 @@
     maplibreCss: "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css",
     pmtilesJs: "https://unpkg.com/pmtiles@4.4.1/dist/pmtiles.js",
     cooperativeGestures: true,
+    directTouchNavigation: true,
     maxPixelRatio: 2,
     attribution: "Ancient Japan Study Atlas",
   });
@@ -1779,12 +1780,69 @@
     else dialog.setAttribute("open", "");
   }
 
+  function createMapPresentation(mapData, index, interactive = false) {
+    const title = String(mapData.title || mapData.label || `Map ${index + 1}`).trim();
+    const subtitle = String(mapData.subtitle || "").trim();
+    const captionText = String(
+      mapData.caption || mapData.description || mapData.metadata?.note || mapData.alt || ""
+    ).trim();
+    const evidenceText = String(mapData.evidence || mapData.metadata?.note || "").trim();
+    const titleId = `map-title-${mapData.id || index + 1}`.replace(/[^a-zA-Z0-9_-]/g, "-");
+
+    const header = document.createElement("header");
+    header.className = "map-study-header";
+    const eyebrow = document.createElement("div");
+    eyebrow.className = "map-study-eyebrow";
+    eyebrow.textContent = interactive ? "Interactive study map" : "Study map";
+    const heading = document.createElement("h3");
+    heading.className = "map-study-title";
+    heading.id = titleId;
+    heading.textContent = title;
+    header.append(eyebrow, heading);
+    if (subtitle) {
+      const subtitleEl = document.createElement("p");
+      subtitleEl.className = "map-study-subtitle";
+      subtitleEl.textContent = subtitle;
+      header.appendChild(subtitleEl);
+    }
+    if (interactive) {
+      const hint = document.createElement("p");
+      hint.className = "map-study-interaction";
+      const touchDevice = Number(navigator.maxTouchPoints || 0) > 0 || window.matchMedia("(pointer: coarse)").matches;
+      hint.textContent = touchDevice
+        ? "Move with one finger · Pinch to zoom · Tap a symbol for details"
+        : "Drag to explore · Scroll with Ctrl or use the controls to zoom · Select a symbol for details";
+      header.appendChild(hint);
+    }
+
+    const footer = document.createElement("div");
+    footer.className = "map-study-caption";
+    if (captionText) {
+      const caption = document.createElement("p");
+      caption.className = "map-study-caption-text";
+      caption.textContent = captionText;
+      footer.appendChild(caption);
+    }
+    if (evidenceText && evidenceText !== captionText) {
+      const evidence = document.createElement("p");
+      evidence.className = "map-study-evidence";
+      const evidenceLabel = document.createElement("strong");
+      evidenceLabel.textContent = "Evidence and limits. ";
+      evidence.append(evidenceLabel, document.createTextNode(evidenceText));
+      footer.appendChild(evidence);
+    }
+
+    return { header, footer, titleId };
+  }
+
   function createStaticMapCard(mapData, index) {
     if (!mapData?.src) {
       return createMissingMediaCard("No static map fallback is available.");
     }
     const wrapper = document.createElement("article");
-    wrapper.className = "media-figure-card";
+    wrapper.className = "media-figure-card map-study-card";
+    const presentation = createMapPresentation(mapData, index, false);
+    wrapper.setAttribute("aria-labelledby", presentation.titleId);
     const shell = document.createElement("div");
     shell.className = "static-map-shell";
     const figure = document.createElement("figure");
@@ -1832,7 +1890,7 @@
     figure.appendChild(img);
     shell.appendChild(figure);
     if (key) shell.appendChild(key);
-    wrapper.appendChild(shell);
+    wrapper.append(presentation.header, shell, presentation.footer);
     return wrapper;
   }
 
@@ -2045,9 +2103,14 @@
       const status = wrapper.querySelector(".interactive-map-status");
       const reset = wrapper.querySelector(".interactive-map-reset");
       const key = wrapper.querySelector(".interactive-map-key");
+      const shell = wrapper.querySelector(".interactive-map-shell");
       const bounds = mapData.view?.bounds;
       const minZoom = Number(mapData.view?.minZoom ?? 3);
       const maxZoom = Number(mapData.view?.maxZoom ?? 10);
+      const directTouchNavigation = config.directTouchNavigation !== false && (
+        Number(navigator.maxTouchPoints || 0) > 0 || window.matchMedia("(pointer: coarse)").matches
+      );
+      shell?.classList.toggle("is-direct-touch", directTouchNavigation);
 
       map = new maplibregl.Map({
         container: canvas,
@@ -2058,7 +2121,7 @@
         maxZoom,
         maxBounds: [[118.5, 24], [149, 48.5]],
         attributionControl: false,
-        cooperativeGestures: config.cooperativeGestures !== false,
+        cooperativeGestures: directTouchNavigation ? false : config.cooperativeGestures !== false,
         dragRotate: false,
         pitchWithRotate: false,
         touchPitch: false,
@@ -2068,11 +2131,21 @@
       state.activeMapInstances.add(map);
       map.touchZoomRotate?.disableRotation();
       map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: false }), "top-right");
-      map.addControl(new maplibregl.FullscreenControl(), "top-right");
+      const fullscreenControl = new maplibregl.FullscreenControl({ container: shell });
+      map.addControl(fullscreenControl, "top-right");
+      map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
       map.addControl(
         new maplibregl.AttributionControl({ compact: true, customAttribution: config.attribution }),
         "bottom-right"
       );
+
+      const setFullscreenState = (active) => {
+        shell?.classList.toggle("is-map-fullscreen", active);
+        wrapper.classList.toggle("has-fullscreen-map", active);
+        window.setTimeout(() => map?.resize(), 40);
+      };
+      fullscreenControl.on?.("fullscreenstart", () => setFullscreenState(true));
+      fullscreenControl.on?.("fullscreenend", () => setFullscreenState(false));
 
       const resetView = (duration = 0) => {
         if (Array.isArray(bounds) && bounds.length === 2) {
@@ -2115,7 +2188,9 @@
 
   function createInteractiveMapCard(mapData, index) {
     const wrapper = document.createElement("article");
-    wrapper.className = "media-figure-card interactive-map-card";
+    wrapper.className = "media-figure-card interactive-map-card map-study-card";
+    const presentation = createMapPresentation(mapData, index, true);
+    wrapper.setAttribute("aria-labelledby", presentation.titleId);
     const shell = document.createElement("div");
     shell.className = "interactive-map-shell";
     const canvas = document.createElement("div");
@@ -2136,7 +2211,7 @@
     shell.append(canvas, status, reset);
     const key = createInteractiveMapKey(mapData, index);
     if (key) shell.appendChild(key);
-    wrapper.appendChild(shell);
+    wrapper.append(presentation.header, shell, presentation.footer);
 
     const start = () => initializeInteractiveMap(wrapper, mapData, index);
     if ("IntersectionObserver" in window) {
