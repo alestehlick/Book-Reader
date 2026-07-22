@@ -7,13 +7,7 @@
     "maps": [
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-islands",
         "showProvinces": false,
         "scene": "islands",
@@ -34,7 +28,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -77,17 +71,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Pleistocene shelves, straits, animal ranges, and the first crossing corridors",
         "caption": "Lower Pleistocene sea levels broadened coastal plains and altered the shape of the archipelago, but they did not erase every strait. The marked corridors frame the plausible northern, western, and southern approaches by which people, animals, and materials could move; they are comparative pathways, not a claim for one proven migration route.",
-        "evidence": "Geological and archaeological synthesis; corridors are approximate."
+        "evidence": "Geological and archaeological synthesis; corridors are approximate.",
+        "sceneTiles": "qgis-scenes/ch01/islands/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/islands/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          118.5,
+          24.0,
+          149.0,
+          48.5
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-paleolithic",
         "showProvinces": false,
         "scene": "paleolithic",
@@ -108,7 +104,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -157,17 +153,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Occupation sites, volcanic landscapes, obsidian travel, and the Mesolithic turn",
         "caption": "Selected occupation sites place Paleolithic communities within volcanic, coastal, and upland environments rather than along a single advancing frontier. Obsidian connections reveal movement across considerable distances, while the earliest pottery locations mark a later technological transition whose timing and regional meaning were uneven.",
-        "evidence": "Archaeological evidence; disputed early claims are marked separately."
+        "evidence": "Archaeological evidence; disputed early claims are marked separately.",
+        "sceneTiles": "qgis-scenes/ch01/paleolithic/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/paleolithic/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          123.44,
+          27.75,
+          146.56,
+          45.75
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-jomon-coasts",
         "showProvinces": false,
         "scene": "jomon-coasts",
@@ -188,7 +186,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -237,17 +235,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Shoreline change, shell mounds, durable villages, and plant-rich economies",
         "caption": "Postglacial sea rise created bays, inlets, and productive shorelines around which many Early Jomon communities established durable settlements. Shell mounds and plant-use sites show that coastal abundance belonged to mixed economies joining fishing, gathering, woodland management, craft, and inland exchange.",
-        "evidence": "Archaeological and environmental evidence; modern coasts provide orientation only."
+        "evidence": "Archaeological and environmental evidence; modern coasts provide orientation only.",
+        "sceneTiles": "qgis-scenes/ch01/jomon-coasts/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/jomon-coasts/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          124.62,
+          27.86,
+          146.38,
+          45.14
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-jomon-highlands",
         "showProvinces": false,
         "scene": "jomon-highlands",
@@ -268,7 +268,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -317,17 +317,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Springs, forest harvests, obsidian, pottery, ritual, and mountain-plain exchange",
         "caption": "The close view reveals why the central highlands could sustain unusually large Middle Jomon settlements: reliable springs, forest harvests, workable terraces, and access to obsidian sources converged within a compact landscape. Connection lines summarize repeated exchange between mountains and plains rather than surveyed roads.",
-        "evidence": "Archaeological synthesis; exchange lines summarize repeated movement."
+        "evidence": "Archaeological synthesis; exchange lines summarize repeated movement.",
+        "sceneTiles": "qgis-scenes/ch01/jomon-highlands/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/jomon-highlands/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          136.016,
+          33.84,
+          141.184,
+          38.16
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-late-jomon",
         "showProvinces": false,
         "scene": "late-jomon",
@@ -348,7 +350,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -399,17 +401,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Highland contraction, renewed coasts, seasonal travel, northern craft, and ritual places",
         "caption": "As many central highland settlements contracted, population and activity became more prominent along coasts, lower valleys, and the richly connected north. The map brings seasonal movement, craft centers, ritual places, and exchange into one field so that change appears as regional reorganization rather than a uniform collapse.",
-        "evidence": "Archaeological synthesis; concentration fields are not political borders."
+        "evidence": "Archaeological synthesis; concentration fields are not political borders.",
+        "sceneTiles": "qgis-scenes/ch01/late-jomon/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/late-jomon/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          122.76,
+          26.81,
+          147.24,
+          47.69
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-rice",
         "showProvinces": false,
         "scene": "rice",
@@ -430,7 +434,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -481,17 +485,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Northern Kyushu gateways, early fields, mixed subsistence, and uneven eastward adoption",
         "caption": "Wet-rice cultivation first became established in northern Kyushu through maritime connections across the Korean Strait, then moved eastward through communities that adopted and adapted it at different rates. The mapped sequence emphasizes mixed subsistence and local choice; it does not depict a single wave replacing the archipelago's existing population.",
-        "evidence": "Archaeological and environmental evidence; diffusion was phased and uneven."
+        "evidence": "Archaeological and environmental evidence; diffusion was phased and uneven.",
+        "sceneTiles": "qgis-scenes/ch01/rice/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/rice/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          124.214,
+          27.806,
+          141.486,
+          38.894
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-yayoi",
         "showProvinces": false,
         "scene": "yayoi",
@@ -512,7 +518,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -563,17 +569,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Villages, fields, burials, iron tools, managed water, defended places, and hierarchy",
         "caption": "Settlements, paddies, cemeteries, production places, and defended sites show how agriculture reorganized land, water, labor, and social difference. Their distribution reveals several regional trajectories operating at once, from northern Kyushu and the Inland Sea to Kinki and the eastern plains, without implying fixed political borders.",
-        "evidence": "Archaeological evidence; regional patterns overlap in time and space."
+        "evidence": "Archaeological evidence; regional patterns overlap in time and space.",
+        "sceneTiles": "qgis-scenes/ch01/yayoi/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/yayoi/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          126.84,
+          28.85,
+          143.16,
+          39.65
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-bronze",
         "showProvinces": false,
         "scene": "bronze",
@@ -594,7 +602,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -644,17 +652,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Weapons, bells, foundries, ritual deposits, maritime supply, and overlapping regional power",
         "caption": "Bronze workshops and ritual deposits expose overlapping material geographies: weapons and mirrors were especially prominent in parts of the west, while bells became more concentrated farther east. The patterns changed through time, and the maritime links indicate channels of metal, technique, and exchange rather than territories controlled by a single authority.",
-        "evidence": "Archaeological and scientific evidence; distribution fields are diachronic."
+        "evidence": "Archaeological and scientific evidence; distribution fields are diachronic.",
+        "sceneTiles": "qgis-scenes/ch01/bronze/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/bronze/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          126.61,
+          29.68,
+          140.89,
+          38.32
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-wa",
         "showProvinces": false,
         "scene": "wa",
@@ -675,7 +685,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -731,17 +741,19 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Daifang, the Korean Strait, secure northern Kyushu stages, and disputed continuations",
         "caption": "The route begins with the continental and island stages described in the Chinese account and separates comparatively secure northern Kyushu identifications from the disputed journey beyond them. Competing continuations are shown to make the Yamatai problem spatially intelligible; the map deliberately does not select one location as established.",
-        "evidence": "External written testimony and archaeology; the location of Yamatai is not asserted."
+        "evidence": "External written testimony and archaeology; the location of Yamatai is not asserted.",
+        "sceneTiles": "qgis-scenes/ch01/wa/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/wa/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          120.89,
+          26.47,
+          140.61,
+          43.03
+        ]
       },
       {
         "type": "interactive",
-        "style": "../maps/atlas/ancient-japan-style.json",
-        "archive": "ancient-japan-vector.pmtiles",
-        "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-        "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-        "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
-        "sprite": "ch01-symbols",
-        "localSprite": "../maps/atlas/ch01-symbols",
+        "style": "../maps/atlas/qgis-scene-style.json",
         "plate": "1-memory",
         "showProvinces": false,
         "scene": "memory",
@@ -762,7 +774,7 @@
             ]
           ],
           "minZoom": 3,
-          "maxZoom": 10
+          "maxZoom": 9
         },
         "legend": [
           {
@@ -815,7 +827,15 @@
         "localChapterRegions": "../maps/atlas/ch01-regions.geojson",
         "subtitle": "Jimmu's traditional itinerary, Izumo, Kibi, northern Kyushu, Kinki, and the Yamato threshold",
         "caption": "This final field places the traditional Jimmu itinerary beside the independently visible regional centers of northern Kyushu, Izumo, Kibi, Kinki, and early Yamato. Their juxtaposition clarifies how later court memory organized a diverse political landscape, while keeping sacred narrative distinct from archaeological evidence for movement, alliance, and emerging power.",
-        "evidence": "Archaeology is kept distinct from retrospective court tradition."
+        "evidence": "Archaeology is kept distinct from retrospective court tradition.",
+        "sceneTiles": "qgis-scenes/ch01/memory/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/memory/{z}/{x}/{y}.webp",
+        "renderBounds": [
+          126.79,
+          28.704,
+          139.71,
+          38.496
+        ]
       }
     ],
     "timeline": [

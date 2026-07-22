@@ -359,7 +359,11 @@
   }
 
   async function loadInteractiveMapStyle(mapData) {
-    const styleUrl = toAbsoluteUrl(mapData.style);
+    const styleBaseUrl = toAbsoluteUrl(mapData.style);
+    const styleVersion = String(getMapRuntimeConfig().assetVersion || "").trim();
+    const styleUrl = styleVersion
+      ? `${styleBaseUrl}${styleBaseUrl.includes("?") ? "&" : "?"}v=${encodeURIComponent(styleVersion)}`
+      : styleBaseUrl;
     const response = await fetch(styleUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`Map style returned ${response.status}`);
     const style = await response.json();
@@ -368,6 +372,8 @@
     const tokens = {
       __ATLAS_ARCHIVE__: resolveAtlasAsset(mapData.archive, mapData.localArchive),
       __TERRAIN_TILES__: resolveAtlasAsset(mapData.terrainTiles, mapData.localTerrainTiles),
+      __QGIS_SCENE_TILES__: resolveAtlasAsset(mapData.sceneTiles, mapData.localSceneTiles),
+      __QGIS_SCENE_BOUNDS__: asArray(mapData.renderBounds),
       __SPRITE_URL__: resolveAtlasAsset(mapData.sprite, mapData.localSprite, false),
       __CHAPTER_FEATURES__: resolveAtlasAsset(
         mapData.chapterFeatures || "ch01-features.geojson",
@@ -2046,6 +2052,9 @@
 
   function bindInteractiveMapPopups(map, maplibregl) {
     const layers = [
+      "chapter-feature-hit",
+      "chapter-route-hit",
+      "chapter-region-hit",
       "ch01-feature-symbols",
       "ch01-routes-secure",
       "ch01-routes-inferred",
@@ -2105,6 +2114,7 @@
       const key = wrapper.querySelector(".interactive-map-key");
       const shell = wrapper.querySelector(".interactive-map-shell");
       const bounds = mapData.view?.bounds;
+      const renderBounds = asArray(mapData.renderBounds);
       const minZoom = Number(mapData.view?.minZoom ?? 3);
       const maxZoom = Number(mapData.view?.maxZoom ?? 10);
       const directTouchNavigation = config.directTouchNavigation !== false && (
@@ -2119,7 +2129,9 @@
         zoom: minZoom,
         minZoom,
         maxZoom,
-        maxBounds: [[118.5, 24], [149, 48.5]],
+        maxBounds: renderBounds.length === 4
+          ? [[renderBounds[0], renderBounds[1]], [renderBounds[2], renderBounds[3]]]
+          : [[118.5, 24], [149, 48.5]],
         attributionControl: false,
         cooperativeGestures: directTouchNavigation ? false : config.cooperativeGestures !== false,
         dragRotate: false,

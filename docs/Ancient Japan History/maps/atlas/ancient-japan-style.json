@@ -13,7 +13,7 @@
       "tileSize": 256,
       "minzoom": 3,
       "maxzoom": 10,
-      "bounds": [118.5, 25.5, 148.0, 46.5],
+      "bounds": [120.0, 26.5, 145.0, 45.5],
       "attribution": "Terrain: Copernicus DEM and GEBCO"
     },
     "atlas": {

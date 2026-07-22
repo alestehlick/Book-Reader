@@ -1619,11 +1619,9 @@
     },
     "map-1-islands": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/islands/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/islands/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -1641,6 +1639,12 @@
       "date": -20000,
       "accent": "#5F7882",
       "showProvinces": false,
+      "renderBounds": [
+        118.5,
+        24.0,
+        149.0,
+        48.5
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -1680,7 +1684,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Islands Emerging",
@@ -1693,11 +1697,9 @@
     },
     "map-1-paleolithic": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/paleolithic/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/paleolithic/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -1715,6 +1717,12 @@
       "date": -28000,
       "accent": "#65717A",
       "showProvinces": false,
+      "renderBounds": [
+        123.44,
+        27.75,
+        146.56,
+        45.75
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -1754,7 +1762,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Paleolithic Movement",
@@ -1768,11 +1776,9 @@
     },
     "map-1-jomon-coasts": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/jomon-coasts/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/jomon-coasts/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -1790,6 +1796,12 @@
       "date": -5000,
       "accent": "#9A654B",
       "showProvinces": false,
+      "renderBounds": [
+        124.62,
+        27.86,
+        146.38,
+        45.14
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -1829,7 +1841,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Jomon Coasts",
@@ -1843,11 +1855,9 @@
     },
     "map-1-jomon-highlands": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/jomon-highlands/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/jomon-highlands/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -1865,6 +1875,12 @@
       "date": -3000,
       "accent": "#A36C4D",
       "showProvinces": false,
+      "renderBounds": [
+        136.016,
+        33.84,
+        141.184,
+        38.16
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -1904,7 +1920,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "The Middle Jomon Highlands",
@@ -1918,11 +1934,9 @@
     },
     "map-1-late-jomon": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/late-jomon/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/late-jomon/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -1940,6 +1954,12 @@
       "date": -800,
       "accent": "#8C674F",
       "showProvinces": false,
+      "renderBounds": [
+        122.76,
+        26.81,
+        147.24,
+        47.69
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -1979,7 +1999,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Late And Final Jomon Networks",
@@ -1995,11 +2015,9 @@
     },
     "map-1-rice": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/rice/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/rice/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -2017,6 +2035,12 @@
       "date": -700,
       "accent": "#B18A45",
       "showProvinces": false,
+      "renderBounds": [
+        124.214,
+        27.806,
+        141.486,
+        38.894
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -2056,7 +2080,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Rice Through The Straits",
@@ -2072,11 +2096,9 @@
     },
     "map-1-yayoi": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/yayoi/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/yayoi/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -2094,6 +2116,12 @@
       "date": 50,
       "accent": "#B18A45",
       "showProvinces": false,
+      "renderBounds": [
+        126.84,
+        28.85,
+        143.16,
+        39.65
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -2133,7 +2161,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Yayoi Landscapes",
@@ -2149,11 +2177,9 @@
     },
     "map-1-bronze": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/bronze/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/bronze/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -2171,6 +2197,12 @@
       "date": 150,
       "accent": "#A8753F",
       "showProvinces": false,
+      "renderBounds": [
+        126.61,
+        29.68,
+        140.89,
+        38.32
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -2210,7 +2242,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Bronze Geographies",
@@ -2225,11 +2257,9 @@
     },
     "map-1-wa": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/wa/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/wa/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -2247,6 +2277,12 @@
       "date": 240,
       "accent": "#596B91",
       "showProvinces": false,
+      "renderBounds": [
+        120.89,
+        26.47,
+        140.61,
+        43.03
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -2286,7 +2322,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Wa And The Road To Yamatai",
@@ -2302,11 +2338,9 @@
     },
     "map-1-memory": {
       "type": "interactive",
-      "style": "../maps/atlas/ancient-japan-style.json",
-      "archive": "ancient-japan-vector.pmtiles",
-      "localArchive": "../maps/atlas/ancient-japan-vector.pmtiles",
-      "terrainTiles": "terrain/{z}/{x}/{y}.webp",
-      "localTerrainTiles": "../maps/atlas/terrain/{z}/{x}/{y}.webp",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch01/memory/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch01/memory/{z}/{x}/{y}.webp",
       "chapterFeatures": "ch01-features.geojson",
       "localChapterFeatures": "../maps/atlas/ch01-features.geojson",
       "chapterRoutes": "ch01-routes.geojson",
@@ -2324,6 +2358,12 @@
       "date": 275,
       "accent": "#79596F",
       "showProvinces": false,
+      "renderBounds": [
+        126.79,
+        28.704,
+        139.71,
+        38.496
+      ],
       "legend": [
         {
           "symbol": "terrain",
@@ -2363,7 +2403,7 @@
           ]
         ],
         "minZoom": 3,
-        "maxZoom": 10
+        "maxZoom": 9
       },
       "metadata": {
         "title": "Memory And Regional Convergence",

@@ -10,6 +10,16 @@
     "tiles": 6643,
     "bytes": 14546190
   },
+  "qgisScenes": {
+    "chapter": "ch01",
+    "template": "qgis-scenes/ch01/<scene>/{z}/{x}/{y}.webp",
+    "minZoom": 3,
+    "maxZoom": 9,
+    "tilePixels": 512,
+    "displayTileSize": 256,
+    "tiles": 15413,
+    "bytes": 241860144
+  },
   "artifacts": [
     {
       "path": "ancient-japan-vector.pmtiles",
@@ -18,13 +28,13 @@
     },
     {
       "path": "presets.json",
-      "bytes": 79578,
-      "sha256": "41a81f1f74451cff4d244548e2d0f607f8689c03163e39541fe94382b9b07aaf"
+      "bytes": 79668,
+      "sha256": "b7ca6f0011f82e2a1b8e8c61cb891acd9aa38548d8882274615cae3f9eb0e8fc"
     },
     {
       "path": "ancient-japan-style.json",
       "bytes": 26781,
-      "sha256": "2eb97a8a35450b9fda5da504157ec68b3cfdc3701e425baa1d9168377945e0e9"
+      "sha256": "478637332025844087b906694176480b3d308f8cd19ebd2412b5f8ae647822a8"
     },
     {
       "path": "ch01-features.geojson",
