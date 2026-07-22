@@ -1562,6 +1562,30 @@ img {
   touch-action: none;
 }
 
+html.has-map-fullscreen,
+body.has-map-fullscreen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+body.has-map-fullscreen {
+  position: fixed;
+  inset: 0;
+}
+
+.interactive-map-shell.is-touch-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+}
+
 .interactive-map-shell.is-map-fullscreen .interactive-map-reset,
 .interactive-map-shell:fullscreen .interactive-map-reset,
 .interactive-map-shell:-webkit-full-screen .interactive-map-reset {

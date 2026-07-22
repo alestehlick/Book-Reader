@@ -2143,8 +2143,6 @@
       state.activeMapInstances.add(map);
       map.touchZoomRotate?.disableRotation();
       map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: false }), "top-right");
-      const fullscreenControl = new maplibregl.FullscreenControl({ container: shell });
-      map.addControl(fullscreenControl, "top-right");
       map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-right");
       map.addControl(
         new maplibregl.AttributionControl({ compact: true, customAttribution: config.attribution }),
@@ -2156,8 +2154,106 @@
         wrapper.classList.toggle("has-fullscreen-map", active);
         window.setTimeout(() => map?.resize(), 40);
       };
-      fullscreenControl.on?.("fullscreenstart", () => setFullscreenState(true));
-      fullscreenControl.on?.("fullscreenend", () => setFullscreenState(false));
+      const blockFullscreenPageGesture = (event) => {
+        if (!shell?.classList.contains("is-map-fullscreen")) return;
+        if (event.cancelable) event.preventDefault();
+      };
+      shell?.addEventListener("touchmove", blockFullscreenPageGesture, { capture: true, passive: false });
+
+      if (directTouchNavigation) {
+        let touchFullscreenActive = false;
+        let fullscreenButton = null;
+        let fullscreenPlaceholder = null;
+        let savedScrollX = 0;
+        let savedScrollY = 0;
+
+        const syncTouchFullscreenButton = () => {
+          if (!fullscreenButton) return;
+          fullscreenButton.classList.toggle("maplibregl-ctrl-fullscreen", !touchFullscreenActive);
+          fullscreenButton.classList.toggle("maplibregl-ctrl-shrink", touchFullscreenActive);
+          const label = touchFullscreenActive ? "Exit fullscreen" : "Enter fullscreen";
+          fullscreenButton.setAttribute("aria-label", label);
+          fullscreenButton.title = label;
+          fullscreenButton.setAttribute("aria-pressed", String(touchFullscreenActive));
+        };
+
+        const exitTouchFullscreen = () => {
+          if (!touchFullscreenActive) return;
+          touchFullscreenActive = false;
+          shell?.classList.remove("is-touch-fullscreen");
+          setFullscreenState(false);
+          document.documentElement.classList.remove("has-map-fullscreen");
+          document.body.classList.remove("has-map-fullscreen");
+          if (fullscreenPlaceholder?.isConnected) fullscreenPlaceholder.replaceWith(shell);
+          fullscreenPlaceholder = null;
+          syncTouchFullscreenButton();
+          window.scrollTo(savedScrollX, savedScrollY);
+          window.setTimeout(() => map?.resize(), 80);
+        };
+
+        const enterTouchFullscreen = () => {
+          if (touchFullscreenActive) return;
+          savedScrollX = window.scrollX;
+          savedScrollY = window.scrollY;
+          fullscreenPlaceholder = document.createComment("interactive map fullscreen position");
+          shell?.before(fullscreenPlaceholder);
+          if (shell) document.body.appendChild(shell);
+          document.documentElement.classList.add("has-map-fullscreen");
+          document.body.classList.add("has-map-fullscreen");
+          shell?.classList.add("is-touch-fullscreen");
+          touchFullscreenActive = true;
+          setFullscreenState(true);
+          syncTouchFullscreenButton();
+          window.setTimeout(() => map?.resize(), 80);
+        };
+
+        const toggleTouchFullscreen = () => {
+          if (touchFullscreenActive) exitTouchFullscreen();
+          else enterTouchFullscreen();
+        };
+        const handleTouchFullscreenKey = (event) => {
+          if (event.key === "Escape" && touchFullscreenActive) exitTouchFullscreen();
+        };
+        const resizeTouchFullscreen = () => {
+          if (touchFullscreenActive) window.setTimeout(() => map?.resize(), 40);
+        };
+        document.addEventListener("keydown", handleTouchFullscreenKey);
+        window.addEventListener("orientationchange", resizeTouchFullscreen);
+        window.visualViewport?.addEventListener("resize", resizeTouchFullscreen);
+
+        const touchFullscreenControl = {
+          onAdd() {
+            const container = document.createElement("div");
+            container.className = "maplibregl-ctrl maplibregl-ctrl-group";
+            fullscreenButton = document.createElement("button");
+            fullscreenButton.type = "button";
+            fullscreenButton.addEventListener("click", toggleTouchFullscreen);
+            container.appendChild(fullscreenButton);
+            syncTouchFullscreenButton();
+            this.container = container;
+            return container;
+          },
+          onRemove() {
+            exitTouchFullscreen();
+            fullscreenButton?.removeEventListener("click", toggleTouchFullscreen);
+            this.container?.remove();
+            fullscreenButton = null;
+            document.removeEventListener("keydown", handleTouchFullscreenKey);
+            window.removeEventListener("orientationchange", resizeTouchFullscreen);
+            window.visualViewport?.removeEventListener("resize", resizeTouchFullscreen);
+            shell?.removeEventListener("touchmove", blockFullscreenPageGesture, { capture: true });
+          },
+        };
+        map.addControl(touchFullscreenControl, "top-right");
+      } else {
+        const fullscreenControl = new maplibregl.FullscreenControl({ container: shell });
+        map.addControl(fullscreenControl, "top-right");
+        fullscreenControl.on?.("fullscreenstart", () => setFullscreenState(true));
+        fullscreenControl.on?.("fullscreenend", () => setFullscreenState(false));
+        map.once("remove", () => {
+          shell?.removeEventListener("touchmove", blockFullscreenPageGesture, { capture: true });
+        });
+      }
 
       const resetView = (duration = 0) => {
         if (Array.isArray(bounds) && bounds.length === 2) {
