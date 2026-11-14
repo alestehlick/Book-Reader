@@ -2,6 +2,29 @@
   "use strict";
 
   const byId = (id) => document.getElementById(id);
+  const themeButton = byId("theme-button");
+  const themeKey = "ancient-japan-ch01-theme";
+  function setTheme(theme) {
+    const dark = theme !== "light";
+    document.documentElement.dataset.theme = dark ? "dark" : "light";
+    themeButton.setAttribute("aria-pressed", String(dark));
+    themeButton.title = dark ? "Switch to light theme" : "Switch to dark theme";
+  }
+  try {
+    setTheme(localStorage.getItem(themeKey));
+  } catch {
+    setTheme("dark");
+  }
+  themeButton.addEventListener("click", () => {
+    const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    setTheme(theme);
+    try {
+      localStorage.setItem(themeKey, theme);
+    } catch {
+      // The theme can still be changed for this visit.
+    }
+  });
+
   const chapter = byId("chapter");
   const book = window.BOOK_DATA;
   const guide = window.CHAPTER_GUIDE;

@@ -103,6 +103,7 @@ body.dialog-open { overflow: hidden; }
 }
 .masthead-contents { display: none; }
 .masthead-button:hover { color: #ffdaaa; }
+.masthead-actions .theme-button { justify-content: center; min-width: 32px; font-size: 21px; line-height: 1; }
 .masthead-button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
 .reading-progress { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #c7aa79; transform: scaleX(0); transform-origin: left; }
 
@@ -373,4 +374,38 @@ body.audio-open .chapter-layout { padding-bottom: 144px; }
   .masthead-actions { gap: 6px; }
   .masthead-button svg { display: none; }
 }
+
+:root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --paper: #181815;
+  --panel: #242521;
+  --ink: #e5dcc8;
+  --soft: #bcb4a2;
+  --rule: #4a463b;
+  --green: #b8ccba;
+  --rust: #dda280;
+  --dark-hover: #31362d;
+}
+:root:not([data-theme="light"]) .section-heading h2 { color: #e7dcc0; }
+:root:not([data-theme="light"]) .atlas-sidebar-card,
+:root:not([data-theme="light"]) .editorial-image.object-photo,
+:root:not([data-theme="light"]) .image-button,
+:root:not([data-theme="light"]) .plate,
+:root:not([data-theme="light"]) .read-next,
+:root:not([data-theme="light"]) .atlas-selector select {
+  background: var(--panel);
+  border-color: var(--rule);
+}
+:root:not([data-theme="light"]) .read-next { color: var(--green); }
+:root:not([data-theme="light"]) .atlas-sidebar-button:hover,
+:root:not([data-theme="light"]) .read-next:hover,
+:root:not([data-theme="light"]) .dialog-close:hover,
+:root:not([data-theme="light"]) .atlas-tab:hover,
+:root:not([data-theme="light"]) .atlas-tab[aria-pressed="true"],
+:root:not([data-theme="light"]) .place-button:hover,
+:root:not([data-theme="light"]) .place-button[aria-pressed="true"] { background: var(--dark-hover); }
+:root:not([data-theme="light"]) .atlas-tab[aria-pressed="true"],
+:root:not([data-theme="light"]) .place-button { border-color: var(--rule); }
+#atlas-map { color-scheme: light; color: #242c25; }
+#atlas-map .atlas-site, .atlas-reset { color: #242c25; color-scheme: light; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
