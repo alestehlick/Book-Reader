@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "chapter_02_routes",
+"xy_coordinate_resolution": 1e-05,
+"features": [
+{ "type": "Feature", "properties": { "id": "c2-naniwa-opening", "map_label": "Bay approaches", "route_family": "maritime", "evidence": "geographic interpretation", "certainty": "approximate", "rank": 2, "scenes": "bay", "focus_scenes": "", "note": "Shows how Naniwa faces the bay and the Inland Sea. The early entrance channels are not mapped." }, "geometry": { "type": "LineString", "coordinates": [ [ 135.468, 34.683 ], [ 135.3, 34.625 ], [ 135.14, 34.51 ], [ 135.02, 34.335 ] ] } },
+{ "type": "Feature", "properties": { "id": "c2-crossing-iki", "map_label": "Island crossing", "route_family": "maritime", "evidence": "geographic interpretation", "certainty": "approximate", "rank": 2, "scenes": "strait", "focus_scenes": "strait", "note": "An indicative crossing via Iki and Tsushima. The bends are schematic." }, "geometry": { "type": "LineString", "coordinates": [ [ 130.379, 33.625 ], [ 129.82, 33.82 ], [ 129.42, 34.08 ], [ 129.322, 34.397 ], [ 129.03, 34.96 ], [ 128.87373, 35.23726 ] ] } },
+{ "type": "Feature", "properties": { "id": "c2-crossing-oki", "map_label": "Munakata approach", "route_family": "maritime", "evidence": "ritual geography", "certainty": "approximate", "rank": 1, "scenes": "strait", "focus_scenes": "strait", "note": "Approximate approach from the Munakata coast via Oshima. Ships’ tracks are unknown." }, "geometry": { "type": "LineString", "coordinates": [ [ 130.48611, 33.8175 ], [ 130.43167, 33.89722 ], [ 130.372, 33.98 ], [ 130.10556, 34.245 ] ] } }
+]
+}

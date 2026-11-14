@@ -1,4 +1,9 @@
 window.CHAPTER_GUIDE = {
+  "next": {
+    "href": "../ch02/ch02-index.html",
+    "label": "Chapter Two",
+    "title": "What a King Leaves Behind"
+  },
   "cover": "CH01-IMG-026",
   "audioDir": "../audio/ch01-narration",
   "sections": {

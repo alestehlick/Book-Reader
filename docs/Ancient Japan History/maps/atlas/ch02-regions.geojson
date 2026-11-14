@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "chapter_02_regions",
+"xy_coordinate_resolution": 1e-05,
+"features": [
+{ "type": "Feature", "properties": { "id": "c2-tsukushi-plain", "map_label": "Tsukushi Plain", "period_family": "kofun", "evidence": "topography", "certainty": "approximate", "rank": 2, "scenes": "iwai", "focus_scenes": "", "note": "Broad lowland drawn for orientation. This is not a political border." }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 130.13, 33.17 ], [ 130.22, 33.09 ], [ 130.41, 33.1 ], [ 130.56, 33.2 ], [ 130.56, 33.29 ], [ 130.46, 33.35 ], [ 130.35, 33.32 ], [ 130.24, 33.27 ], [ 130.13, 33.17 ] ] ] } }
+]
+}

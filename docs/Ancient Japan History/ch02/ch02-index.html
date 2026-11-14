@@ -1,107 +1,155 @@
-<!DOCTYPE html>
-<html
-  lang="en"
-  data-book-js="ch02-data.js"
-  data-book-json="ch02-data.json"
-  data-book-data-preference="js"
-  data-audio-dirs="../audio/ch02-paragraphs"
-  data-figures-dir="../figures"
-  data-illustrations-dir="illustrations"
-  data-maps-dir="maps"
-  data-videos-dir="../videos"
-  data-video-extensions="webm"
->
+<!doctype html>
+<html lang="en" data-chapter="ch02">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#120d0a" />
-  <title>Chapter 2 — The Yamato Kingdom</title>
-  <link rel="stylesheet" href="../styles.css?v=10" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d2521">
+  <meta name="description" content="Yamato from the first great burial mounds to the founding of Asukadera, with eight interactive historical maps.">
+  <title>What a King Leaves Behind · Ancient Japan</title>
+  <link rel="stylesheet" href="../ch01/assets/leaflet.css">
+  <link rel="stylesheet" href="../ch01/chapter.css?v=20261114-theme">
+  <link rel="stylesheet" href="chapter02.css?v=20261114-final">
+  <script defer src="../ch01/assets/leaflet.js"></script>
+  <script defer src="ch02-data.js?v=20261114-reader2"></script>
+  <script defer src="ch02-guide.js?v=20261114-reader2"></script>
+  <script defer src="../ch01/chapter.js?v=20261114-reader2"></script>
 </head>
-<body data-theme="dark">
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Sections panel">
-      <div class="sidebar-header">
-        <a class="home-link" href="../index.html">← Ancient Japan History</a>
-        <div class="eyebrow">Read and listen</div>
-        <h1 id="bookTitle">Loading…</h1>
-      </div>
-      <div class="sidebar-section">
-        <div class="eyebrow">Sections</div>
-        <nav id="sectionsNav" class="sections-nav" aria-label="Chapter sections"></nav>
-      </div>
-    </aside>
+<body>
+  <a href="#read" class="skip-link">Skip to the chapter</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="library-link" href="../index.html">Ancient Japan <span>History</span></a>
+      <nav class="masthead-actions" aria-label="Reader controls">
+        <button type="button" class="masthead-button masthead-contents" id="contents-button" aria-haspopup="dialog" aria-controls="contents-dialog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Contents</span>
+        </button>
+        <button type="button" class="masthead-button" data-open-atlas aria-haspopup="dialog" aria-controls="atlas-dialog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2V6Zm6-2v14m6-12v14"/></svg>
+          <span>Atlas</span>
+        </button>
+        <button type="button" class="masthead-button" id="listen-button" aria-expanded="false" aria-controls="listen-player">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 1 1 16 0v1M4 13h3v6H6a2 2 0 0 1-2-2v-4Zm16 0h-3v6h1a2 2 0 0 0 2-2v-4Z"/></svg>
+          <span>Listen</span>
+        </button>
+        <button type="button" class="masthead-button theme-button" id="theme-button" aria-label="Dark theme" aria-pressed="true" title="Switch to light theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
 
-    <div id="sidebarBackdrop" class="sidebar-backdrop" hidden></div>
+  <main>
+    <header class="hero" aria-labelledby="chapter-title">
+      <img class="hero-image" src="illustrations/ch02-miwa-cover.webp" alt="" fetchpriority="high">
+      <div class="hero-inner">
+        <p class="hero-label">Chapter Two <span></span> The Yamato Kingdom</p>
+        <h1 id="chapter-title">What a King<br>Leaves Behind</h1>
+        <p class="hero-intro">From the tombs under Mount Miwa to the first great temple at Asuka.</p>
+        <a class="hero-read" href="#read">Start reading <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-caption">Below Mount Miwa · Reconstruction</p>
+    </header>
 
-    <main class="main-panel">
-      <header class="topbar card">
-        <button id="toggleSidebarBtn" class="icon-btn" type="button" aria-label="Open sections" aria-expanded="false" aria-controls="sidebar">☰</button>
-        <div class="topbar-center">
-          <div class="eyebrow">Now reading</div>
-          <div id="nowReadingTitle" class="topbar-title">—</div>
+    <div class="chapter-layout" id="read">
+      <aside class="contents-sidebar" aria-label="Contents">
+        <h2 class="sidebar-label">In this chapter</h2>
+        <nav id="chapter-contents" aria-label="Chapter sections"></nav>
+        <a class="sidebar-sources" href="#sources">Sources and image credits</a>
+      </aside>
+      <article id="chapter" class="chapter" aria-label="Chapter Two">
+        <noscript><p><a href="ch02-data.json">Read the chapter text</a>. The atlas and audio controls use JavaScript.</p></noscript>
+      </article>
+      <aside class="chapter-atlas" aria-label="Chapter atlas">
+        <div class="atlas-sidebar-card">
+          <button type="button" class="atlas-sidebar-button" data-open-atlas="map-2-miwa" aria-haspopup="dialog">
+            <img src="../maps/scenes/2-miwa.webp" alt="" width="400" height="270" loading="lazy">
+            <span class="atlas-sidebar-text">
+              <span class="sidebar-label">Chapter atlas</span>
+              <strong>From Miwa to the sea</strong>
+              <span>Explore eight maps <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
         </div>
-        <button id="themeToggleBtn" class="icon-btn" type="button" aria-label="Change theme">◐</button>
+      </aside>
+    </div>
+  </main>
+
+  <aside class="listen-player" id="listen-player" aria-label="Narration controls" hidden>
+    <div class="listen-inner">
+      <button class="player-icon player-play" type="button" id="play-audio" aria-label="Play narration">▶</button>
+      <div class="listen-track">
+        <button class="listen-title" type="button" id="audio-location" title="Show the narrated passage"></button>
+        <input type="range" id="audio-seek" min="0" max="100" value="0" step="0.1" aria-label="Position in this passage">
+        <span class="listen-time" id="audio-time">0:00</span>
+      </div>
+      <div class="listen-options">
+        <button type="button" class="player-icon" id="previous-audio" aria-label="Previous passage">‹</button>
+        <button type="button" class="player-icon" id="next-audio" aria-label="Next passage">›</button>
+        <select id="audio-speed" aria-label="Narration speed">
+          <option value="0.85">0.85×</option>
+          <option value="1" selected>1×</option>
+          <option value="1.15">1.15×</option>
+          <option value="1.3">1.3×</option>
+          <option value="1.5">1.5×</option>
+          <option value="1.75">1.75×</option>
+        </select>
+        <button type="button" class="player-icon" id="close-audio" aria-label="Close narrator">×</button>
+      </div>
+      <audio id="narration" preload="none"></audio>
+    </div>
+    <p class="listen-error" id="audio-status" role="status" hidden></p>
+  </aside>
+
+  <dialog class="contents-dialog" id="contents-dialog" aria-labelledby="contents-title">
+    <header class="dialog-heading">
+      <h2 id="contents-title">In this chapter</h2>
+      <button type="button" class="dialog-close" data-close-dialog aria-label="Close contents" autofocus>×</button>
+    </header>
+    <nav id="mobile-contents" aria-label="Chapter sections"></nav>
+    <a class="sidebar-sources" href="#sources">Sources and image credits</a>
+  </dialog>
+
+  <dialog class="atlas-dialog" id="atlas-dialog" aria-labelledby="atlas-title">
+    <div class="atlas-dialog-body">
+      <header class="atlas-dialog-header">
+        <div>
+          <p class="sidebar-label">Chapter atlas</p>
+          <h2 id="atlas-title">From Miwa to the sea</h2>
+        </div>
+        <button type="button" class="dialog-close" data-close-dialog aria-label="Close atlas" autofocus>×</button>
       </header>
-
-      <section class="card player-card" aria-label="Paragraph audio">
-        <div class="player-meta">
-          <div class="eyebrow" id="playerSectionLabel">Section — Paragraph</div>
-          <h2 id="playerParagraphLabel" class="player-paragraph-label">—</h2>
-          <div id="playerTimeRange" class="time-range">0:00</div>
-        </div>
-        <div class="player-controls-row">
-          <button id="prevBtn" class="control-btn" type="button">Previous</button>
-          <button id="playPauseBtn" class="control-btn primary" type="button">Play</button>
-          <button id="nextBtn" class="control-btn" type="button">Next</button>
-        </div>
-        <div class="toggle-row">
-          <label class="toggle-item">
-            <input id="continuousToggle" type="checkbox" checked />
-            <span>Continuous playback</span>
+      <div class="atlas-workspace">
+        <nav id="atlas-list" class="atlas-list" aria-label="Chapter maps"></nav>
+        <div class="atlas-main">
+          <label class="atlas-selector" for="atlas-select">
+            <span>Map</span>
+            <select id="atlas-select"></select>
           </label>
-          <input id="oneParagraphToggle" type="checkbox" checked hidden />
-        </div>
-        <div class="progress-wrap">
-          <input id="progressBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Audio position" />
-          <div class="progress-times">
-            <span id="currentTimeLabel">0:00</span>
-            <span id="durationLabel">0:00</span>
+          <div class="atlas-stage">
+            <div id="atlas-map" role="region" aria-label="Interactive terrain map"></div>
+            <img class="atlas-fallback" id="atlas-fallback" alt="" hidden>
+            <button type="button" id="atlas-reset" class="atlas-reset">Reset view</button>
+          </div>
+          <div class="atlas-description">
+            <p class="atlas-places" id="atlas-places" aria-label="Places on this map"></p>
+            <p class="place-summary" id="atlas-place" role="status" hidden></p>
+            <p class="atlas-caption" id="atlas-caption"></p>
+            <p class="atlas-evidence" id="atlas-evidence"></p>
+            <a class="plate-link" id="atlas-plate" target="_blank" rel="noopener">Open the full map image ↗</a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </dialog>
 
-      <section class="card current-card">
-        <div class="eyebrow">Current paragraph</div>
-        <div id="currentParagraphText" class="current-paragraph-text">Loading…</div>
-      </section>
-
-      <section id="figuresSection" class="card media-card" hidden>
-        <div class="media-header">
-          <div class="media-header-main"><div class="eyebrow">Illustrations</div><div id="figuresSummary" class="media-summary"></div></div>
-          <button id="figuresToggleBtn" class="media-toggle-btn" type="button" aria-label="Hide illustrations" aria-pressed="true">Hide</button>
-        </div>
-        <section id="figureGroup" class="media-group" hidden><div id="paragraphFigures" class="media-stack"></div></section>
-      </section>
-
-      <section id="mapsSection" class="card media-card maps-card" hidden>
-        <div class="media-header">
-          <div class="media-header-main"><div class="eyebrow">Maps</div><div id="mapsSummary" class="media-summary"></div></div>
-          <button id="mapsToggleBtn" class="media-toggle-btn" type="button" aria-label="Hide maps" aria-pressed="true">Hide</button>
-        </div>
-        <section id="mapGroup" class="media-group" hidden><div id="allMaps" class="media-stack"></div></section>
-      </section>
-
-      <section id="contextGrid" class="context-grid" hidden>
-        <article class="card context-card"><div class="eyebrow">Previous</div><div id="previousParagraphText" class="context-text">—</div></article>
-        <article class="card context-card"><div class="eyebrow">Next</div><div id="nextParagraphText" class="context-text">—</div></article>
-      </section>
-    </main>
-  </div>
-
-  <audio id="audioPlayer" preload="metadata"></audio>
-  <script src="../map-runtime-config.js?v=6"></script>
-  <script src="ch02-data.js"></script>
-  <script src="../app.js?v=20"></script>
+  <dialog class="image-dialog" id="image-dialog" aria-label="Illustration">
+    <button type="button" class="dialog-close" data-close-dialog aria-label="Close illustration" autofocus>×</button>
+    <figure>
+      <img id="enlarged-image" alt="">
+      <figcaption id="enlarged-caption"></figcaption>
+    </figure>
+  </dialog>
 </body>
 </html>

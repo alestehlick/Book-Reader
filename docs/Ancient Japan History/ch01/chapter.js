@@ -2,8 +2,9 @@
   "use strict";
 
   const byId = (id) => document.getElementById(id);
+  const chapterId = document.documentElement.dataset.chapter || "ch01";
   const themeButton = byId("theme-button");
-  const themeKey = "ancient-japan-ch01-theme";
+  const themeKey = `ancient-japan-${chapterId}-theme`;
   function setTheme(theme) {
     const dark = theme !== "light";
     document.documentElement.dataset.theme = dark ? "dark" : "light";
@@ -30,7 +31,7 @@
   const guide = window.CHAPTER_GUIDE;
   if (!book?.sections?.length || !guide) {
     const fallback = document.createElement("a");
-    fallback.href = "ch01-data.json";
+    fallback.href = `${chapterId}-data.json`;
     fallback.textContent = "Open the chapter text";
     chapter.append(fallback);
     return;
@@ -191,6 +192,8 @@
       "same-clan": "belonged to the same clan as",
       "ancestor-of": "is a traditional ancestor of",
       "mother-of": "is the mother of",
+      "father-of": "is the father of",
+      "spouse-of": "is a consort of",
       "traditional-predecessor-to": "precedes in the traditional line",
       "received-dynastic-predecessor-of": "precedes in the received dynastic line",
       "traditional-ancestor-of": "is a traditional ancestor of",
@@ -247,14 +250,17 @@
     chapter.append(sectionNode);
   }
 
-  const next = element("a", "read-next");
-  next.href = "../ch02/ch02-index.html";
-  const nextText = element("span");
-  nextText.append(element("span", "sidebar-label", "Chapter Two"), element("strong", "", "The Yamato Kingdom"));
-  const nextArrow = element("span", "", "→");
-  nextArrow.setAttribute("aria-hidden", "true");
-  next.append(nextText, nextArrow);
-  chapter.append(next, renderStudyNotes(), renderTimeline());
+  if (guide.next) {
+    const next = element("a", "read-next");
+    next.href = guide.next.href;
+    const nextText = element("span");
+    nextText.append(element("span", "sidebar-label", guide.next.label), element("strong", "", guide.next.title));
+    const nextArrow = element("span", "", "→");
+    nextArrow.setAttribute("aria-hidden", "true");
+    next.append(nextText, nextArrow);
+    chapter.append(next);
+  }
+  chapter.append(renderStudyNotes(), renderTimeline());
 
   const tileNode = byId("atlas-map");
   const fallbackMap = byId("atlas-fallback");
@@ -590,7 +596,7 @@
     readingFrame = 0;
   }
 
-  const positionKey = "ancient-japan-ch01-reading-passage";
+  const positionKey = `ancient-japan-${chapterId}-reading-passage`;
   function saveReadingPosition() {
     if (chapter.getBoundingClientRect().top > 200) return;
     try {

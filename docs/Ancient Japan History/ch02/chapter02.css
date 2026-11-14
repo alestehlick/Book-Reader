@@ -1,0 +1,24 @@
+.object-photo .image-button img {
+  background: #23332b;
+}
+
+.image-button img {
+  display: block;
+  object-fit: contain;
+}
+
+:root[data-theme="light"] .object-photo .image-button img {
+  background: #e8e0cf;
+}
+
+#atlas-map img.leaflet-tile {
+  mix-blend-mode: normal;
+  width: 257px !important;
+  height: 257px !important;
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    object-position: 68% 51%;
+  }
+}
