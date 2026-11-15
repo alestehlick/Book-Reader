@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "chapter_03_routes",
+"xy_coordinate_resolution": 1e-05,
+"features": [
+{ "type": "Feature", "properties": { "id": "c3-oama-east", "map_label": "Yoshino towards Mino", "route_family": "overland", "evidence": "later chronicle", "certainty": "approximate", "rank": 1, "scenes": "jinshin", "focus_scenes": "jinshin", "note": "Approximate sequence through Yoshino and Iga to Ise and Mino. Bends do not assert a recovered road." }, "geometry": { "type": "LineString", "coordinates": [ [ 135.89, 34.387 ], [ 135.97, 34.455 ], [ 136.105, 34.627 ], [ 136.21, 34.665 ], [ 136.29, 34.74 ], [ 136.5, 34.8 ], [ 136.514, 34.929 ], [ 136.64, 35.06 ], [ 136.62, 35.2 ], [ 136.461, 35.361 ] ] } },
+{ "type": "Feature", "properties": { "id": "c3-oama-west", "map_label": "Fuwa towards Otsu", "route_family": "overland", "evidence": "later chronicle", "certainty": "approximate", "rank": 2, "scenes": "jinshin", "focus_scenes": "jinshin", "note": "The westward advance south of Lake Biwa is schematic." }, "geometry": { "type": "LineString", "coordinates": [ [ 136.461, 35.361 ], [ 136.343, 35.33 ], [ 136.233, 35.22 ], [ 136.16, 35.11 ], [ 136.052, 35.05 ], [ 135.911, 34.961 ], [ 135.872, 34.987 ], [ 135.858, 35.0225 ] ] } },
+{ "type": "Feature", "properties": { "id": "c3-yamato-front", "map_label": "From Ise towards Yamato", "route_family": "overland", "evidence": "later chronicle", "certainty": "approximate", "rank": 2, "scenes": "jinshin", "focus_scenes": "jinshin", "note": "The fighting in Yamato is summarized by direction only." }, "geometry": { "type": "LineString", "coordinates": [ [ 136.514, 34.929 ], [ 136.395, 34.856 ], [ 136.297, 34.829 ], [ 136.198, 34.729 ], [ 136.105, 34.627 ], [ 136.001, 34.585 ], [ 135.907, 34.545 ], [ 135.82028, 34.47194 ] ] } }
+]
+}

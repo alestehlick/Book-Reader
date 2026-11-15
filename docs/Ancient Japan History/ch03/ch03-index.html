@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-chapter="ch03">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d2521">
+  <meta name="description" content="A reading chapter on seventh-century Japan, from the halls at Asuka to the far shores of Baekje and the road at Fuwa.">
+  <title>The Far Shore · Ancient Japan</title>
+  <link rel="stylesheet" href="../ch01/assets/leaflet.css">
+  <link rel="stylesheet" href="../ch01/chapter.css?v=20261115.2">
+  <link rel="stylesheet" href="chapter03.css?v=20261115">
+  <script defer src="../ch01/assets/leaflet.js"></script>
+  <script defer src="ch03-data.js?v=20261115.2"></script>
+  <script defer src="ch03-guide.js?v=20261115.2"></script>
+  <script defer src="../ch01/chapter.js?v=20261115.2"></script>
+</head>
+<body>
+  <a href="#read" class="skip-link">Skip to the chapter</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="library-link" href="../index.html">Ancient Japan <span>History</span></a>
+      <nav class="masthead-actions" aria-label="Reader controls">
+        <button type="button" class="masthead-button masthead-contents" id="contents-button" aria-haspopup="dialog" aria-controls="contents-dialog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Contents</span>
+        </button>
+        <button type="button" class="masthead-button" data-open-atlas aria-haspopup="dialog" aria-controls="atlas-dialog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2V6Zm6-2v14m6-12v14"/></svg>
+          <span>Atlas</span>
+        </button>
+        <button type="button" class="masthead-button" id="listen-button" aria-expanded="false" aria-controls="listen-player">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 1 1 16 0v1M4 13h3v6H6a2 2 0 0 1-2-2v-4Zm16 0h-3v6h1a2 2 0 0 0 2-2v-4Z"/></svg>
+          <span>Listen</span>
+        </button>
+        <button type="button" class="masthead-button text-size-button" id="text-size-button" aria-label="Text size" aria-haspopup="dialog" aria-controls="text-size-dialog" title="Text size">Aa</button>
+        <button type="button" class="masthead-button theme-button" id="theme-button" aria-label="Dark theme" aria-pressed="true" title="Switch to light theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <header class="hero" aria-labelledby="chapter-title">
+      <img class="hero-image" src="illustrations/ch03-asuka-cover.webp" alt="" fetchpriority="high">
+      <div class="hero-inner">
+        <p class="hero-label">Chapter Three <span></span> The Century of Reform</p>
+        <h1 id="chapter-title">The Far Shore</h1>
+        <p class="hero-intro">A tiled roof above Asuka. A kingdom across the water. A road to the new capital.</p>
+        <a class="hero-read" href="#read">Start reading <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-caption">The first temple roofs at Asuka · Reconstruction</p>
+    </header>
+
+    <div class="chapter-layout" id="read">
+      <aside class="contents-sidebar" aria-label="Contents">
+        <h2 class="sidebar-label">In this chapter</h2>
+        <nav id="chapter-contents" aria-label="Chapter sections"></nav>
+        <a class="sidebar-sources" href="#sources">Sources and image credits</a>
+      </aside>
+      <article id="chapter" class="chapter" aria-label="Chapter Three">
+        <noscript><p><a href="ch03-data.json">Read the chapter text</a>. The atlas and audio controls use JavaScript.</p></noscript>
+      </article>
+      <aside class="chapter-atlas" aria-label="Chapter atlas">
+        <div class="atlas-sidebar-card">
+          <button type="button" class="atlas-sidebar-button" data-open-atlas="map-3-temples" aria-haspopup="dialog">
+            <img src="../maps/scenes/3-temples.webp" alt="" width="400" height="270" loading="lazy">
+            <span class="atlas-sidebar-text">
+              <span class="sidebar-label">Chapter atlas</span>
+              <strong>From Asuka to the far shore</strong>
+              <span>Explore 9 maps <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <aside class="listen-player" id="listen-player" aria-label="Narration controls" hidden>
+    <div class="listen-inner">
+      <button class="player-icon player-play" type="button" id="play-audio" aria-label="Play narration">▶</button>
+      <div class="listen-track">
+        <button class="listen-title" type="button" id="audio-location" title="Show the narrated passage"></button>
+        <input type="range" id="audio-seek" min="0" max="100" value="0" step="0.1" aria-label="Position in this passage">
+        <span class="listen-time" id="audio-time">0:00</span>
+      </div>
+      <div class="listen-options">
+        <button type="button" class="player-icon" id="previous-audio" aria-label="Previous passage">‹</button>
+        <button type="button" class="player-icon" id="next-audio" aria-label="Next passage">›</button>
+        <select id="audio-speed" aria-label="Narration speed">
+          <option value="0.85">0.85×</option>
+          <option value="1" selected>1×</option>
+          <option value="1.15">1.15×</option>
+          <option value="1.3">1.3×</option>
+          <option value="1.5">1.5×</option>
+          <option value="1.75">1.75×</option>
+        </select>
+        <button type="button" class="player-icon" id="close-audio" aria-label="Close narrator">×</button>
+      </div>
+      <audio id="narration" preload="none"></audio>
+    </div>
+    <p class="listen-error" id="audio-status" role="status" hidden></p>
+  </aside>
+
+  <dialog class="contents-dialog text-size-dialog" id="text-size-dialog" aria-labelledby="text-size-title">
+    <header class="dialog-heading">
+      <h2 id="text-size-title">Text size</h2>
+      <button type="button" class="dialog-close" data-close-dialog aria-label="Close text size">×</button>
+    </header>
+    <div class="text-size-options" role="group" aria-label="Reading size" id="text-size-options">
+      <button type="button" data-size="100" aria-pressed="true" autofocus>100%</button>
+      <button type="button" data-size="115" aria-pressed="false">115%</button>
+      <button type="button" data-size="130" aria-pressed="false">130%</button>
+      <button type="button" data-size="150" aria-pressed="false">150%</button>
+      <button type="button" data-size="175" aria-pressed="false">175%</button>
+      <button type="button" data-size="200" aria-pressed="false">200%</button>
+    </div>
+  </dialog>
+
+  <dialog class="contents-dialog" id="contents-dialog" aria-labelledby="contents-title">
+    <header class="dialog-heading">
+      <h2 id="contents-title">In this chapter</h2>
+      <button type="button" class="dialog-close" data-close-dialog aria-label="Close contents" autofocus>×</button>
+    </header>
+    <nav id="mobile-contents" aria-label="Chapter sections"></nav>
+    <a class="sidebar-sources" href="#sources">Sources and image credits</a>
+  </dialog>
+
+  <dialog class="atlas-dialog" id="atlas-dialog" aria-labelledby="atlas-title">
+    <div class="atlas-dialog-body">
+      <header class="atlas-dialog-header">
+        <div>
+          <p class="sidebar-label">Chapter atlas</p>
+          <h2 id="atlas-title">From Asuka to the far shore</h2>
+        </div>
+        <button type="button" class="dialog-close" data-close-dialog aria-label="Close atlas" autofocus>×</button>
+      </header>
+      <div class="atlas-workspace">
+        <nav id="atlas-list" class="atlas-list" aria-label="Chapter maps"></nav>
+        <div class="atlas-main">
+          <label class="atlas-selector" for="atlas-select">
+            <span>Map</span>
+            <select id="atlas-select"></select>
+          </label>
+          <div class="atlas-stage">
+            <div id="atlas-map" role="region" aria-label="Interactive terrain map"></div>
+            <img class="atlas-fallback" id="atlas-fallback" alt="" hidden>
+            <button type="button" id="atlas-reset" class="atlas-reset">Reset view</button>
+          </div>
+          <div class="atlas-description">
+            <p class="atlas-places" id="atlas-places" aria-label="Places on this map"></p>
+            <p class="place-summary" id="atlas-place" role="status" hidden></p>
+            <p class="atlas-caption" id="atlas-caption"></p>
+            <p class="atlas-evidence" id="atlas-evidence"></p>
+            <a class="plate-link" id="atlas-plate" target="_blank" rel="noopener">Open the full map image ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="image-dialog" id="image-dialog" aria-label="Illustration">
+    <button type="button" class="dialog-close" data-close-dialog aria-label="Close illustration" autofocus>×</button>
+    <figure>
+      <img id="enlarged-image" alt="">
+      <figcaption id="enlarged-caption"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

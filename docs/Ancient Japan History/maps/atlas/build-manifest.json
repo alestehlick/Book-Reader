@@ -11,14 +11,14 @@
     "bytes": 14546190
   },
   "qgisScenes": {
-    "chapter": "ch02",
-    "template": "qgis-scenes/ch02/<scene>/{z}/{x}/{y}.webp",
+    "chapter": "ch03",
+    "template": "qgis-scenes/ch03/<scene>/{z}/{x}/{y}.webp",
     "minZoom": 3,
-    "maxZoom": 9,
+    "maxZoom": 11,
     "tilePixels": 512,
     "displayTileSize": 256,
-    "tiles": 3677,
-    "bytes": 69989634
+    "tiles": 5835,
+    "bytes": 123502508
   },
   "chapterScenes": {
     "ch01": {
@@ -40,6 +40,16 @@
       "displayTileSize": 256,
       "tiles": 3677,
       "bytes": 69989634
+    },
+    "ch03": {
+      "chapter": "ch03",
+      "template": "qgis-scenes/ch03/<scene>/{z}/{x}/{y}.webp",
+      "minZoom": 3,
+      "maxZoom": 11,
+      "tilePixels": 512,
+      "displayTileSize": 256,
+      "tiles": 5835,
+      "bytes": 123502508
     }
   },
   "artifacts": [
@@ -50,8 +60,8 @@
     },
     {
       "path": "presets.json",
-      "bytes": 99355,
-      "sha256": "502534bd80e2ddc3bfe2109d13fa6f8c2298164aadb7e6b46fc60655d9c8f572"
+      "bytes": 121898,
+      "sha256": "f64e36d33410eefe048ddf16cfa2d687780563cf06042d7c371c21dce912d68b"
     },
     {
       "path": "ancient-japan-style.json",
@@ -87,6 +97,21 @@
       "path": "ch02-routes.geojson",
       "bytes": 1603,
       "sha256": "1706ef89a9d7c5fa5812ae09f344d51cbf1b682c3e5a542f3a76393b6a657fda"
+    },
+    {
+      "path": "ch03-features.geojson",
+      "bytes": 16985,
+      "sha256": "be754e4220d32f529e8ae52c46fb1dfde21eaa7155da7d8f77394a19c06a6f76"
+    },
+    {
+      "path": "ch03-regions.geojson",
+      "bytes": 681,
+      "sha256": "0aa270c790f17bceb434534c7dfc65a8c5bb0781598e3c4b5eb695bfb16e25ce"
+    },
+    {
+      "path": "ch03-routes.geojson",
+      "bytes": 1799,
+      "sha256": "8f5a7b145183eae71dc6b135ff5ed0819b91885331851fb208046dad83d32aff"
     }
   ]
 }

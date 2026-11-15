@@ -655,9 +655,9 @@
       },
       {
         "id": "CH02-IMG-002",
-        "src": "illustrations/ch02-miwa-legend.webp",
-        "alt": "The princess Momoso beside an open comb box in the light of dawn.",
-        "caption": "Momoso’s encounter with the god of Miwa, drawn from the later court legend.",
+        "src": "illustrations/ch02-momoso-box.webp",
+        "alt": "A hand lifts a dark wooden lid, revealing a small pale snake beside a comb.",
+        "caption": "Momoso lifts the lid of the comb box at dawn. An illustration of the episode as told in the later court legend.",
         "historicalStatus": "mythic-reconstruction",
         "evidenceBasis": "LATER COURT TRADITION",
         "confidence": "MODERATE",
@@ -686,6 +686,32 @@
         "generated": false,
         "credit": "Isonokami Shrine treasure catalogue, 1930 · Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven-Branched_Sword.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH02-IMG-016",
+        "src": "illustrations/ch02-stele.webp",
+        "alt": "A man stands beside the tall, irregular shaft of the Gwanggaeto Stele in an early photograph.",
+        "caption": "The Gwanggaeto Stele near Ji’an, in a photograph published in 1903. The figure beside it gives the height of a surface covered in writing.",
+        "historicalStatus": "archive-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "The Landmarks and Ruins of Joseon, 1903 · Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gwanggaeto_Stele_1903.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH02-IMG-017",
+        "src": "illustrations/ch02-okin-water.webp",
+        "alt": "The steep and solitary green island of Okinoshima rising above dark blue water.",
+        "caption": "Okinoshima from the sea. The climb from rock to wooded summit begins almost at the water.",
+        "historicalStatus": "site-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Indiana jo · CC BY-SA 4.0 · resized",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okinoshima_viewing_03.jpg",
         "status": "approved"
       },
       {
@@ -726,7 +752,7 @@
       {
         "id": "CH02-IMG-008",
         "src": "illustrations/ch02-naniwa.webp",
-        "alt": "Low wooden boats under oars approach a broad landing by a populated shore.",
+        "alt": "Traders and boat crews handle jars, baskets and textiles at a crowded timber landing.",
         "caption": "An early landing at Naniwa imagined from the harbor’s geography and the kinds of goods that passed through it.",
         "historicalStatus": "ai-reconstruction",
         "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
@@ -763,7 +789,7 @@
       {
         "id": "CH02-IMG-011",
         "src": "illustrations/ch02-eda-funayama.webp",
-        "alt": "Old close photograph of a narrow iron sword edge with worn characters in silver.",
+        "alt": "A 1930 photograph showing narrow views of the blade and the weathered silver inscription.",
         "caption": "Worn silver characters on the Eda Funayama sword, taken from a 1930 photograph of the original.",
         "historicalStatus": "artifact-photo",
         "evidenceBasis": "DIRECT MATERIAL",
@@ -771,17 +797,6 @@
         "generated": false,
         "credit": "Photograph by Gotō Shuichi, 1930 · Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inscription_of_Iron_sword_with_silver_inlay_inscription_(Tokyo_National_Museum).jpg",
-        "status": "approved"
-      },
-      {
-        "id": "CH02-IMG-012",
-        "src": "illustrations/ch02-iwatoyama.webp",
-        "alt": "A weathered stone human figure at the foot of a grassy mound above a plain.",
-        "caption": "An imagined stone figure at the mound’s edge. The position and surroundings are reconstructed.",
-        "historicalStatus": "ai-reconstruction",
-        "evidenceBasis": "ARCHAEOLOGICAL SYNTHESIS",
-        "confidence": "MODERATE",
-        "generated": true,
         "status": "approved"
       },
       {
@@ -1040,6 +1055,12 @@
             "event-date-commonly-read-on-the-seven-branched-sword",
             "event-baekje-s-attack-on-goguryeo-at-pyongyang",
             "event-gwanggaeto-stele-erected"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH02-IMG-016",
+              "role": "primary"
+            }
           ]
         },
         {
@@ -1064,6 +1085,12 @@
             "event-offerings-on-okinoshima",
             "event-furuichi-and-mozu-great-mounds",
             "event-completion-of-the-nihon-shoki"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH02-IMG-017",
+              "role": "primary"
+            }
           ],
           "mapRefs": [
             "map-2-strait"
@@ -1181,6 +1208,12 @@
         {
           "id": "02.05-p003",
           "text": "Inariyama lies in the eastern plain, in ancient Musashi. To see how far this kind of service could reach, travel back along the Inland Sea on the map and all the way down to Eda Funayama in Kyushu. A long blade with silver lettering came out of that mound. The silver is damaged. Its inscription names a man who served at court, and what survives of the ruler's name can be read as Wakatakeru. The title of great king comes through. A man at either end of the islands could go to his grave with a claim to have served at the same court. Between them lay country where the king's reach may have depended on a fresh bargain with each chief.",
+          "illustrationRefs": [
+            {
+              "id": "CH02-IMG-011",
+              "role": "primary"
+            }
+          ],
           "mapRefs": [
             "map-2-swords"
           ],
@@ -1188,13 +1221,7 @@
         },
         {
           "id": "02.05-p004",
-          "text": "Owake used a word for rank in the name he left on the blade. Omi belonged to the hereditary titles called kabane, as did muraji, another high title. If you had a following of your own and the king endorsed your rank, the endorsement could outlive the man who made the bargain. The line of descent, the title and work for the king could now strengthen one another. An uji, often translated as a clan, got some of its life from a shared ancestor and rites. It could contain households brought together by allegiance or work as well as blood. Early officials drew on the power a house already had and gave its head another reason to use it on their behalf.",
-          "illustrationRefs": [
-            {
-              "id": "CH02-IMG-011",
-              "role": "primary"
-            }
-          ]
+          "text": "Owake used a word for rank in the name he left on the blade. Omi belonged to the hereditary titles called kabane, as did muraji, another high title. If you had a following of your own and the king endorsed your rank, the endorsement could outlive the man who made the bargain. The line of descent, the title and work for the king could now strengthen one another. An uji, often translated as a clan, got some of its life from a shared ancestor and rites. It could contain households brought together by allegiance or work as well as blood. Early officials drew on the power a house already had and gave its head another reason to use it on their behalf."
         },
         {
           "id": "02.05-p005",
@@ -1265,7 +1292,7 @@
           "text": "At Iwatoyama in northern Kyushu, stone figures once stood near the grave of the man the court called a rebel. Human figures and animals were carved in stone here, where the great graves around Osaka commonly used clay. An early gazetteer of Chikugo, preserved in quotations, describes rows of stone men and shields, and a space beside the mound like a court where judgments could be made. In it a stone magistrate stood over an accused man. The stolen boars were there too, in stone. The excavated mound has an enclosure on the northeast, where the story puts that curious trial.",
           "illustrationRefs": [
             {
-              "id": "CH02-IMG-012",
+              "id": "CH02-IMG-013",
               "role": "primary"
             }
           ]
@@ -1290,12 +1317,6 @@
             "event-keitai-s-accession",
             "event-iwai-blocks-the-expedition",
             "event-grain-reserve-at-nanotsu"
-          ],
-          "illustrationRefs": [
-            {
-              "id": "CH02-IMG-013",
-              "role": "primary"
-            }
           ]
         },
         {

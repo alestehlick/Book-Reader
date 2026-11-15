@@ -3042,6 +3042,716 @@
         ],
         "evidence": "The temple site is known from excavation. Iware is shown as a district because early palace sites are not fixed to exact points."
       }
+    },
+    "map-3-temples": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/temples/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/temples/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-temples",
+      "scene": "temples",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 610,
+      "accent": "#7D6050",
+      "showProvinces": false,
+      "renderBounds": [
+        135.371,
+        34.219,
+        136.259,
+        34.856
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            135.665,
+            34.415
+          ],
+          [
+            135.965,
+            34.66
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 12
+      },
+      "metadata": {
+        "title": "From Asuka To Ikaruga",
+        "subtitle": "Asukadera, Ikaruga and the older mound country",
+        "sections": [
+          "03.01",
+          "03.03"
+        ],
+        "evidence": "The excavated temple and grave sites are marked. The Asuka Palace point locates the complex and its successive phases, with no exact location assigned to the killing of 645."
+      },
+      "nativeMaxZoom": 11
+    },
+    "map-3-sui": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/sui/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/sui/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-sui",
+      "scene": "sui",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 607,
+      "accent": "#5D708C",
+      "showProvinces": false,
+      "renderBounds": [
+        105.5,
+        26.754,
+        142.49,
+        44.646
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            107.4,
+            29.4
+          ],
+          [
+            137.65,
+            42.0
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "title": "A Message To The Sui",
+        "subtitle": "Yamato, the Korean kingdoms and the Sui capitals",
+        "sections": [
+          "03.02"
+        ],
+        "evidence": "The capitals are identified by region or excavated locality. No route from a particular embassy has been reconstructed."
+      }
+    },
+    "map-3-naniwa": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/naniwa/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/naniwa/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-naniwa",
+      "scene": "naniwa",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 651,
+      "accent": "#8B6D44",
+      "showProvinces": false,
+      "renderBounds": [
+        134.2772,
+        33.99,
+        136.8228,
+        35.16
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            135.12,
+            34.35
+          ],
+          [
+            135.98,
+            34.8
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 11
+      },
+      "metadata": {
+        "title": "The Court Moves To The Bay",
+        "subtitle": "Naniwa’s palace, Asuka and the road through the basin",
+        "sections": [
+          "03.04"
+        ],
+        "evidence": "Archaeology distinguishes the early palace from its later successor on the same ground. Modern coasts orient the view."
+      },
+      "nativeMaxZoom": 10
+    },
+    "map-3-baekje": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/baekje/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/baekje/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-baekje",
+      "scene": "baekje",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 663,
+      "accent": "#805A61",
+      "showProvinces": false,
+      "renderBounds": [
+        122.696,
+        30.899,
+        133.454,
+        42.401
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            124.0,
+            32.6
+          ],
+          [
+            132.15,
+            40.7
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "title": "The Last Crossing To Baekje",
+        "subtitle": "From Sabi to the lower Geum and the shores of Kyushu",
+        "sections": [
+          "03.05"
+        ],
+        "evidence": "The shaded coastal area locates a widely discussed setting for Baekgang. The precise battlefield and ancient channels are uncertain."
+      }
+    },
+    "map-3-estuary": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/estuary/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/estuary/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-estuary",
+      "scene": "estuary",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 663,
+      "accent": "#805A61",
+      "showProvinces": false,
+      "renderBounds": [
+        125.4968,
+        35.378,
+        127.9832,
+        36.912
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            126.32,
+            35.85
+          ],
+          [
+            127.16,
+            36.44
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 11
+      },
+      "metadata": {
+        "title": "Where The Geum Meets The Sea",
+        "subtitle": "The bends below Sabi and the tidal coast",
+        "sections": [
+          "03.05"
+        ],
+        "evidence": "The blue line follows the modern river. The shaded area gives the general setting of Baekgang, whose precise position remains disputed. Modern embankments and reclamation have changed the mouth."
+      },
+      "nativeMaxZoom": 10
+    },
+    "map-3-forts": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/forts/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/forts/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-forts",
+      "scene": "forts",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 667,
+      "accent": "#786247",
+      "showProvinces": false,
+      "renderBounds": [
+        127.616,
+        32.1483,
+        137.384,
+        36.0817
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            128.8,
+            32.73
+          ],
+          [
+            136.2,
+            35.5
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 9
+      },
+      "metadata": {
+        "title": "A Chain Of High Ground",
+        "subtitle": "Kaneda and the defenses from the strait to Yamato",
+        "sections": [
+          "03.06"
+        ],
+        "evidence": "Selected forts and historical districts are marked. The early Nagato fort remains unlocated and no continuous wall crossed the islands."
+      }
+    },
+    "map-3-mizuki": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/mizuki/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/mizuki/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-mizuki",
+      "scene": "mizuki",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 665,
+      "accent": "#5C7463",
+      "showProvinces": false,
+      "renderBounds": [
+        129.9572,
+        33.1962,
+        131.0228,
+        33.8878
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            130.31,
+            33.409
+          ],
+          [
+            130.67,
+            33.675
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 12
+      },
+      "metadata": {
+        "title": "A Wall Across The Plain",
+        "subtitle": "Mizuki, the Dazaifu basin and its mountain forts",
+        "sections": [
+          "03.06"
+        ],
+        "evidence": "The line simplifies the alignment of the surviving earthwork. The Dazaifu point locates the government site known from later archaeology."
+      },
+      "nativeMaxZoom": 11
+    },
+    "map-3-otsu": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/otsu/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/otsu/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-otsu",
+      "scene": "otsu",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 669,
+      "accent": "#596F7D",
+      "showProvinces": false,
+      "renderBounds": [
+        134.7082,
+        34.412,
+        137.4018,
+        35.998
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            135.6,
+            34.9
+          ],
+          [
+            136.51,
+            35.51
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 11
+      },
+      "metadata": {
+        "title": "The Court By Lake Biwa",
+        "subtitle": "Otsu, the lake exit and the settled country of Omi",
+        "sections": [
+          "03.06"
+        ],
+        "evidence": "Otsu is plotted at the excavated Nishikori site. The Kamo marker indicates the broad district where the annals place a group of refugees in 669."
+      },
+      "nativeMaxZoom": 10
+    },
+    "map-3-jinshin": {
+      "type": "interactive",
+      "style": "../maps/atlas/qgis-scene-style.json",
+      "sceneTiles": "qgis-scenes/ch03/jinshin/{z}/{x}/{y}.webp",
+      "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/jinshin/{z}/{x}/{y}.webp",
+      "chapterFeatures": "ch03-features.geojson",
+      "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+      "chapterRoutes": "ch03-routes.geojson",
+      "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+      "chapterRegions": "ch03-regions.geojson",
+      "localChapterRegions": "../maps/atlas/ch03-regions.geojson",
+      "plate": "map-3-jinshin",
+      "scene": "jinshin",
+      "period": "chapter-03",
+      "sitePeriods": [
+        "__none__",
+        "__none__",
+        "__none__"
+      ],
+      "date": 672,
+      "accent": "#8B654F",
+      "showProvinces": false,
+      "renderBounds": [
+        134.464,
+        33.131,
+        138.016,
+        36.654
+      ],
+      "legend": [
+        {
+          "symbol": "terrain",
+          "label": "Relief and water",
+          "detail": "Terrain and water orient the view."
+        },
+        {
+          "symbol": "site",
+          "label": "Selected evidence",
+          "detail": "Symbols mark chapter-linked places and material evidence."
+        },
+        {
+          "symbol": "region",
+          "label": "Interpretive field",
+          "detail": "Tint and dashed edges show approximate areas, not fixed borders."
+        },
+        {
+          "symbol": "route",
+          "label": "Movement or connection",
+          "detail": "Line style distinguishes secure, inferred, disputed, and traditional paths."
+        },
+        {
+          "symbol": "river",
+          "label": "Major river",
+          "detail": "Blue lines appear as the map is enlarged."
+        }
+      ],
+      "view": {
+        "bounds": [
+          [
+            135.64,
+            34.215
+          ],
+          [
+            136.84,
+            35.57
+          ]
+        ],
+        "minZoom": 3,
+        "maxZoom": 11
+      },
+      "metadata": {
+        "title": "The Road At Fuwa",
+        "subtitle": "Yoshino, the eastern approaches and the war of 672",
+        "sections": [
+          "03.07",
+          "03.08"
+        ],
+        "evidence": "The movement is sketched through broad waypoints in the Nihon Shoki. Seta marks the excavated older crossing area rather than the present bridge."
+      },
+      "nativeMaxZoom": 10
     }
   }
 }

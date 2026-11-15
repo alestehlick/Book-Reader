@@ -1,0 +1,1376 @@
+{
+  "schemaVersion": 2,
+  "id": "ancient-japan-chapter-03",
+  "title": "Chapter 3 — The Far Shore",
+  "language": "en",
+  "catalogs": {
+    "maps": [
+      {
+        "id": "map-3-temples",
+        "title": "From Asuka to Ikaruga",
+        "subtitle": "Asukadera, Ikaruga and the older mound country",
+        "caption": "Begin in Asuka. Then cross the basin to Ikaruga, where the early temple stood a short walk from an older tomb rich in gilt-bronze fittings.",
+        "evidence": "The excavated temple and grave sites are marked. The Asuka Palace point locates the complex and its successive phases, with no exact location assigned to the killing of 645.",
+        "alt": "Relief of the Nara Basin with Asukadera, the Asuka Palace site, Ishibutai and the Ikaruga sites.",
+        "accent": "#7D6050",
+        "scene": "temples",
+        "date": 610,
+        "sections": [
+          "03.01",
+          "03.03"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-temples.webp",
+        "fallback": "../maps/scenes/3-temples.webp",
+        "sceneTiles": "qgis-scenes/ch03/temples/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/temples/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/01_temples.qgz",
+        "renderBounds": [
+          135.371,
+          34.219,
+          136.259,
+          34.856
+        ],
+        "view": {
+          "bounds": [
+            [
+              135.665,
+              34.415
+            ],
+            [
+              135.965,
+              34.66
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 12
+        },
+        "nativeMaxZoom": 11,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-sui",
+        "title": "A message to the Sui",
+        "subtitle": "Yamato, the Korean kingdoms and the Sui capitals",
+        "caption": "Measure the distance from Asuka and Naniwa to the Sui capitals. Baekje and Goguryeo occupy a different position along the way, close enough to feel the new empire's pressure.",
+        "evidence": "The capitals are identified by region or excavated locality. No route from a particular embassy has been reconstructed.",
+        "alt": "East Asia with the Sui capitals, the Korean kingdoms and Yamato.",
+        "accent": "#5D708C",
+        "scene": "sui",
+        "date": 607,
+        "sections": [
+          "03.02"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-sui.webp",
+        "fallback": "../maps/scenes/3-sui.webp",
+        "sceneTiles": "qgis-scenes/ch03/sui/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/sui/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/02_sui.qgz",
+        "renderBounds": [
+          105.5,
+          26.754,
+          142.49,
+          44.646
+        ],
+        "view": {
+          "bounds": [
+            [
+              107.4,
+              29.4
+            ],
+            [
+              137.65,
+              42.0
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 9
+        },
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-naniwa",
+        "title": "The court moves to the bay",
+        "subtitle": "Naniwa’s palace, Asuka and the road through the basin",
+        "caption": "Naniwa's palace stood above the old port on the Uemachi upland. Compare it with the temples and palaces farther into the Nara Basin. The court went west in 645 and some of it went east again in 653.",
+        "evidence": "Archaeology distinguishes the early palace from its later successor on the same ground. Modern coasts orient the view.",
+        "alt": "Osaka Bay and the Nara Basin with the early palace at Naniwa and the Asuka sites.",
+        "accent": "#8B6D44",
+        "scene": "naniwa",
+        "date": 651,
+        "sections": [
+          "03.04"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-naniwa.webp",
+        "fallback": "../maps/scenes/3-naniwa.webp",
+        "sceneTiles": "qgis-scenes/ch03/naniwa/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/naniwa/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/03_naniwa.qgz",
+        "renderBounds": [
+          134.2772,
+          33.99,
+          136.8228,
+          35.16
+        ],
+        "view": {
+          "bounds": [
+            [
+              135.12,
+              34.35
+            ],
+            [
+              135.98,
+              34.8
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 11
+        },
+        "nativeMaxZoom": 10,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-baekje",
+        "title": "The last crossing to Baekje",
+        "subtitle": "From Sabi to the lower Geum and the shores of Kyushu",
+        "caption": "Find Sabi inland on the Geum, then follow the river towards the tidal coast. On the far side of the strait is the Kyushu shore where the Yamato court assembled men and supplies.",
+        "evidence": "The shaded coastal area locates a widely discussed setting for Baekgang. The precise battlefield and ancient channels are uncertain.",
+        "alt": "Map of the Korean Peninsula across the strait from Kyushu, with the lower Geum and the Baekje capital Sabi.",
+        "accent": "#805A61",
+        "scene": "baekje",
+        "date": 663,
+        "sections": [
+          "03.05"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-baekje.webp",
+        "fallback": "../maps/scenes/3-baekje.webp",
+        "sceneTiles": "qgis-scenes/ch03/baekje/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/baekje/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/04_baekje.qgz",
+        "renderBounds": [
+          122.696,
+          30.899,
+          133.454,
+          42.401
+        ],
+        "view": {
+          "bounds": [
+            [
+              124.0,
+              32.6
+            ],
+            [
+              132.15,
+              40.7
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 9
+        },
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-estuary",
+        "title": "Where the Geum meets the sea",
+        "subtitle": "The bends below Sabi and the tidal coast",
+        "caption": "Follow the Geum from the bend by Sabi down to the tidal shallows. The hills lose their height as the river reaches the coast.",
+        "evidence": "The blue line follows the modern river. The shaded area gives the general setting of Baekgang, whose precise position remains disputed. Modern embankments and reclamation have changed the mouth.",
+        "alt": "Relief detail of the lower Geum from Sabi to the sea, with a shaded area around the broad vicinity of Baekgang.",
+        "accent": "#805A61",
+        "scene": "estuary",
+        "date": 663,
+        "sections": [
+          "03.05"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-estuary.webp",
+        "fallback": "../maps/scenes/3-estuary.webp",
+        "sceneTiles": "qgis-scenes/ch03/estuary/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/estuary/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/05_estuary.qgz",
+        "renderBounds": [
+          125.4968,
+          35.378,
+          127.9832,
+          36.912
+        ],
+        "view": {
+          "bounds": [
+            [
+              126.32,
+              35.85
+            ],
+            [
+              127.16,
+              36.44
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 11
+        },
+        "nativeMaxZoom": 10,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-forts",
+        "title": "A chain of high ground",
+        "subtitle": "Kaneda and the defenses from the strait to Yamato",
+        "caption": "From Tsushima, look east to the narrow entrance of the Inland Sea. Several heights then look out over the water before the last screen of mountains towards Yamato.",
+        "evidence": "Selected forts and historical districts are marked. The early Nagato fort remains unlocated and no continuous wall crossed the islands.",
+        "alt": "Northern Kyushu and the Inland Sea with Kaneda on Tsushima, Yashima and Mount Takayasu.",
+        "accent": "#786247",
+        "scene": "forts",
+        "date": 667,
+        "sections": [
+          "03.06"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-forts.webp",
+        "fallback": "../maps/scenes/3-forts.webp",
+        "sceneTiles": "qgis-scenes/ch03/forts/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/forts/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/06_forts.qgz",
+        "renderBounds": [
+          127.616,
+          32.1483,
+          137.384,
+          36.0817
+        ],
+        "view": {
+          "bounds": [
+            [
+              128.8,
+              32.73
+            ],
+            [
+              136.2,
+              35.5
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 9
+        },
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-mizuki",
+        "title": "A wall across the plain",
+        "subtitle": "Mizuki, the Dazaifu basin and its mountain forts",
+        "caption": "The short brown line is the main Mizuki embankment, about 1.2 kilometres long. Follow it across the low pass inland from Hakata Bay, then look for the fort sites above and below the basin.",
+        "evidence": "The line simplifies the alignment of the surviving earthwork. The Dazaifu point locates the government site known from later archaeology.",
+        "alt": "Close relief map of the Dazaifu basin, Mizuki earthwork and Ono and Kii mountain forts.",
+        "accent": "#5C7463",
+        "scene": "mizuki",
+        "date": 665,
+        "sections": [
+          "03.06"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-mizuki.webp",
+        "fallback": "../maps/scenes/3-mizuki.webp",
+        "sceneTiles": "qgis-scenes/ch03/mizuki/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/mizuki/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/07_mizuki.qgz",
+        "renderBounds": [
+          129.9572,
+          33.1962,
+          131.0228,
+          33.8878
+        ],
+        "view": {
+          "bounds": [
+            [
+              130.31,
+              33.409
+            ],
+            [
+              130.67,
+              33.675
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 12
+        },
+        "nativeMaxZoom": 11,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-otsu",
+        "title": "The court by Lake Biwa",
+        "subtitle": "Otsu, the lake exit and the settled country of Omi",
+        "caption": "Otsu stood on the west shore, above the narrow southern reach of Lake Biwa. The lake connects the new court with the east and north. The water leaves it at Seta.",
+        "evidence": "Otsu is plotted at the excavated Nishikori site. The Kamo marker indicates the broad district where the annals place a group of refugees in 669.",
+        "alt": "Lake Biwa and its southern outflow at Seta, with the Otsu court and an approximate settlement region.",
+        "accent": "#596F7D",
+        "scene": "otsu",
+        "date": 669,
+        "sections": [
+          "03.06"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-otsu.webp",
+        "fallback": "../maps/scenes/3-otsu.webp",
+        "sceneTiles": "qgis-scenes/ch03/otsu/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/otsu/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/08_otsu.qgz",
+        "renderBounds": [
+          134.7082,
+          34.412,
+          137.4018,
+          35.998
+        ],
+        "view": {
+          "bounds": [
+            [
+              135.6,
+              34.9
+            ],
+            [
+              136.51,
+              35.51
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 11
+        },
+        "nativeMaxZoom": 10,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      },
+      {
+        "id": "map-3-jinshin",
+        "title": "The road at Fuwa",
+        "subtitle": "Yoshino, the eastern approaches and the war of 672",
+        "caption": "Start in the narrow Yoshino valley. Across the eastern hills is Iga, and beyond it Ise. Fuwa gives the eastern road an entrance to Omi. The advance on Otsu came from farther east than the court.",
+        "evidence": "The movement is sketched through broad waypoints in the Nihon Shoki. Seta marks the excavated older crossing area rather than the present bridge.",
+        "alt": "Central Honshu with the Yoshino valley, Iga, Ise, Fuwa and the southern shore of Lake Biwa.",
+        "accent": "#8B654F",
+        "scene": "jinshin",
+        "date": 672,
+        "sections": [
+          "03.07",
+          "03.08"
+        ],
+        "type": "interactive",
+        "style": "../maps/atlas/qgis-scene-style.json",
+        "src": "../maps/scenes/3-jinshin.webp",
+        "fallback": "../maps/scenes/3-jinshin.webp",
+        "sceneTiles": "qgis-scenes/ch03/jinshin/{z}/{x}/{y}.webp",
+        "localSceneTiles": "../maps/atlas/qgis-scenes/ch03/jinshin/{z}/{x}/{y}.webp",
+        "project": "projects/chapter-03/09_jinshin.qgz",
+        "renderBounds": [
+          134.464,
+          33.131,
+          138.016,
+          36.654
+        ],
+        "view": {
+          "bounds": [
+            [
+              135.64,
+              34.215
+            ],
+            [
+              136.84,
+              35.57
+            ]
+          ],
+          "minZoom": 3,
+          "maxZoom": 11
+        },
+        "nativeMaxZoom": 10,
+        "period": "chapter-03",
+        "chapterFeatures": "ch03-features.geojson",
+        "localChapterFeatures": "../maps/atlas/ch03-features.geojson",
+        "chapterRoutes": "ch03-routes.geojson",
+        "localChapterRoutes": "../maps/atlas/ch03-routes.geojson",
+        "chapterRegions": "ch03-regions.geojson",
+        "localChapterRegions": "../maps/atlas/ch03-regions.geojson"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "span",
+        "label": "Asukadera rises",
+        "start": 588,
+        "end": 596,
+        "certainty": "traditional",
+        "caption": "The annals give the arrival of the specialists, the placing of the relics and the opening of the precinct.",
+        "id": "event-asukadera-rises"
+      },
+      {
+        "type": "point",
+        "label": "The fire at Ikaruga",
+        "start": 670,
+        "end": 670,
+        "certainty": "traditional",
+        "caption": "The annals record the destruction of the earlier temple. The western precinct at Hōryūji belongs to a later building phase.",
+        "id": "event-the-fire-at-ikaruga"
+      },
+      {
+        "type": "point",
+        "label": "The Sui unite China",
+        "start": 589,
+        "end": 589,
+        "certainty": "secure",
+        "caption": "The fall of the southern Chen creates a single court for the territories that had been under rival dynasties.",
+        "id": "event-the-sui-unite-china"
+      },
+      {
+        "type": "point",
+        "label": "First mission of Wa in the Book of Sui",
+        "start": 600,
+        "end": 600,
+        "certainty": "secure",
+        "caption": "The Book of Sui records the mission. The Nihon Shoki begins its surviving account with the later mission.",
+        "id": "event-first-mission-of-wa-in-the-book-of-sui"
+      },
+      {
+        "type": "span",
+        "label": "Ono no Imoko’s embassy and Pei Shiqing’s return mission",
+        "start": 607,
+        "end": 608,
+        "certainty": "secure",
+        "caption": "The two annals give differing accounts of the exchange.",
+        "id": "event-ono-no-imoko-s-embassy-and-pei-shiqing-s-return-mission"
+      },
+      {
+        "type": "point",
+        "label": "Twelve cap grades",
+        "start": 603,
+        "end": 603,
+        "certainty": "traditional",
+        "caption": "Personal ranks recorded by the Nihon Shoki stood beside inherited titles.",
+        "id": "event-twelve-cap-grades"
+      },
+      {
+        "type": "point",
+        "label": "Date assigned to the Seventeen Injunctions",
+        "start": 604,
+        "end": 604,
+        "certainty": "disputed",
+        "caption": "The chronicle’s attribution to Shōtoku and the dating of parts of the text are debated.",
+        "id": "event-date-assigned-to-the-seventeen-injunctions"
+      },
+      {
+        "type": "point",
+        "label": "First recorded embassy from Yamato to the Tang",
+        "start": 630,
+        "end": 630,
+        "certainty": "secure",
+        "caption": "A Tang envoy reached Japan in 632.",
+        "id": "event-first-recorded-embassy-from-yamato-to-the-tang"
+      },
+      {
+        "type": "span",
+        "label": "Suiko dies and the court chooses Jomei",
+        "start": 628,
+        "end": 629,
+        "certainty": "secure",
+        "caption": "The succession after Suiko put Emishi’s preferred claimant on the throne.",
+        "id": "event-suiko-dies-and-the-court-chooses-jomei"
+      },
+      {
+        "type": "point",
+        "label": "The death of Prince Yamashiro",
+        "start": 643,
+        "end": 643,
+        "certainty": "traditional",
+        "caption": "The later court chronicle makes Iruka responsible for the attack on the household at Ikaruga.",
+        "id": "event-the-death-of-prince-yamashiro"
+      },
+      {
+        "type": "point",
+        "label": "Iruka killed at Asuka",
+        "start": 645,
+        "end": 645,
+        "certainty": "secure",
+        "caption": "The chronicle’s dramatized account places the killing in the sixth month.",
+        "id": "event-iruka-killed-at-asuka"
+      },
+      {
+        "type": "point",
+        "label": "Ishikawa Maro’s death at Yamadadera",
+        "start": 649,
+        "end": 649,
+        "certainty": "traditional",
+        "caption": "The surviving cloister timbers belong to the temple the Soga patron founded.",
+        "id": "event-ishikawa-maro-s-death-at-yamadadera"
+      },
+      {
+        "type": "point",
+        "label": "The court moves to Naniwa",
+        "start": 645,
+        "end": 645,
+        "certainty": "secure",
+        "caption": "Early and later palace phases have been distinguished beneath Osaka.",
+        "id": "event-the-court-moves-to-naniwa"
+      },
+      {
+        "type": "point",
+        "label": "New-year reform edict",
+        "start": 646,
+        "end": 646,
+        "certainty": "traditional",
+        "caption": "The text in the Nihon Shoki includes terms from a later phase of district organization.",
+        "id": "event-new-year-reform-edict"
+      },
+      {
+        "type": "point",
+        "label": "Saimei returns to power",
+        "start": 655,
+        "end": 655,
+        "certainty": "secure",
+        "caption": "The former empress Kōgyoku returned to the throne following Kōtoku’s death.",
+        "id": "event-saimei-returns-to-power"
+      },
+      {
+        "type": "point",
+        "label": "Death of Prince Arima",
+        "start": 658,
+        "end": 658,
+        "certainty": "traditional",
+        "caption": "Two verses in the Man’yōshū are ascribed to him. The annals tell of his removal to Kii.",
+        "id": "event-death-of-prince-arima"
+      },
+      {
+        "type": "point",
+        "label": "Sabi falls",
+        "start": 660,
+        "end": 660,
+        "certainty": "secure",
+        "caption": "Tang and Silla forces overthrew Baekje’s court. The restoration movement persisted.",
+        "id": "event-sabi-falls"
+      },
+      {
+        "type": "point",
+        "label": "Defeat at Baekgang",
+        "start": 663,
+        "end": 663,
+        "certainty": "secure",
+        "caption": "The confrontation is securely attested. The precise location and counts of ships and men are uncertain.",
+        "id": "event-defeat-at-baekgang"
+      },
+      {
+        "type": "span",
+        "label": "Mizuki and the mountain forts",
+        "start": 664,
+        "end": 665,
+        "certainty": "secure",
+        "caption": "The annals put the main earthwork in 664 and Ōno and Kii in 665.",
+        "id": "event-mizuki-and-the-mountain-forts"
+      },
+      {
+        "type": "point",
+        "label": "Fall of Goguryeo",
+        "start": 668,
+        "end": 668,
+        "certainty": "secure",
+        "caption": "Tang and Silla forces took Pyongyang. Silla later resisted Tang control of the peninsula.",
+        "id": "event-fall-of-goguryeo"
+      },
+      {
+        "type": "span",
+        "label": "Court at Ōtsu and Tenji’s enthronement",
+        "start": 667,
+        "end": 668,
+        "certainty": "secure",
+        "caption": "The move preceded Tenji’s formal enthronement by a year.",
+        "id": "event-court-at-tsu-and-tenji-s-enthronement"
+      },
+      {
+        "type": "point",
+        "label": "The household register of 670",
+        "start": 670,
+        "end": 670,
+        "certainty": "secure",
+        "caption": "Later government treated it as an authoritative record. The original is lost.",
+        "id": "event-the-household-register-of-670"
+      },
+      {
+        "type": "point",
+        "label": "The Jinshin War",
+        "start": 672,
+        "end": 672,
+        "certainty": "secure",
+        "caption": "Fuwa and Seta are among the locations named in the surviving chronicle.",
+        "id": "event-the-jinshin-war"
+      },
+      {
+        "type": "point",
+        "label": "Tenmu takes the throne",
+        "start": 673,
+        "end": 673,
+        "certainty": "secure",
+        "caption": "The court returned to Asuka following the fighting of 672.",
+        "id": "event-tenmu-takes-the-throne"
+      },
+      {
+        "type": "span",
+        "label": "Inscribed fragment at Asukaike",
+        "start": 651,
+        "end": 700,
+        "certainty": "approximate",
+        "caption": "The dated deposit preserved wooden tablet 244. The context of the characters 天皇 remains uncertain.",
+        "display_date": "Second half of the seventh century",
+        "id": "event-inscribed-fragment-at-asukaike"
+      },
+      {
+        "type": "point",
+        "label": "Jitō’s move to Fujiwara",
+        "start": 694,
+        "end": 694,
+        "certainty": "secure",
+        "caption": "Archaeology recovers much of the planned capital in the basin north of Asuka.",
+        "id": "event-jit-s-move-to-fujiwara"
+      }
+    ],
+    "illustrations": [
+      {
+        "id": "CH03-IMG-001",
+        "src": "illustrations/ch03-asuka-cover.webp",
+        "alt": "The low roofs and pagoda of an early Buddhist precinct below a wooded slope at sunset.",
+        "caption": "From the fields above Asuka, the first tiled temple roofs. An imagined evening around the end of the sixth century.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "ARCHAEOLOGICAL AND HISTORICAL SYNTHESIS",
+        "confidence": "MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-002",
+        "src": "illustrations/ch03-fujinoki.webp",
+        "alt": "A curved gold-colored saddle fitting with dense ornament and dark gaps in its surface.",
+        "caption": "The gilt-bronze fitting from the front of a saddle in the Fujinoki tomb. Look for the worked designs on the thin curved metal.",
+        "historicalStatus": "artifact-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Saigen Jiro · Kashihara Archaeological Institute Museum · Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%97%A4%E3%83%8E%E6%9C%A8%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F_%E9%9E%8D%E9%87%91%E5%85%B7%E5%89%8D%E8%BC%AA.JPG",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-003",
+        "src": "illustrations/ch03-horyuji.webp",
+        "alt": "The wooden Golden Hall and five-story pagoda face an open court at Hōryūji.",
+        "caption": "The hall and pagoda at Hōryūji. The buildings standing today belong to the rebuilding after the fire recorded in 670.",
+        "historicalStatus": "site-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Saigen Jiro · CC0 1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horyu-ji,_kondou_and_tou.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-004",
+        "src": "illustrations/ch03-tigress.webp",
+        "alt": "In an early photograph of the dark painted panel, the same prince appears at different heights above and beside the tigress.",
+        "caption": "The Tamamushi Shrine at Hōryūji, in a 1915 photograph of the panel of the hungry tigress. Look from the top of the cliff down towards the animals.",
+        "historicalStatus": "artifact-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Japanese Temples and their Treasures, 1915 · Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horyuji_Monastery_Painting_on_the_Tamamushi_Shrine_(Feeding_the_Tigress)_(197).jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-005",
+        "src": "illustrations/ch03-yamada-wood.webp",
+        "alt": "A run of dark wooden slats and beams held between smooth red-brown supports in the museum.",
+        "caption": "The dark wood of Yamadadera’s eastern cloister survived after the building fell. The Asuka Historical Museum mounts it between modern supports.",
+        "historicalStatus": "artifact-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "さぱしあ · CC BY-SA 3.0 · resized",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yamada-dera_Temple_east_ambulatory_remains.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-006",
+        "src": "illustrations/ch03-naniwa-palace.webp",
+        "alt": "Open archaeological grounds above a busy road in the middle of Osaka.",
+        "caption": "The palace site on the Uemachi upland in modern Osaka. Remains of the seventh-century palace lie beneath and around foundations of its eighth-century successor.",
+        "historicalStatus": "site-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Saigen Jiro · CC0 1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naniwa-no-miya-ato,_zenkei.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-007",
+        "src": "illustrations/ch03-brush.webp",
+        "alt": "A hand holds a brush beside wooden tags, a shallow inkstone and coiled cord.",
+        "caption": "An imagined writing bench with strips of wood for labels. In the ground, their brush marks and cut notches can survive after the goods are long gone.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "ARCHAEOLOGICAL AND HISTORICAL SYNTHESIS",
+        "confidence": "MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-008",
+        "src": "illustrations/ch03-estuary.webp",
+        "alt": "Reeds and a weathered plank lie at the edge of a wide, silvery estuary.",
+        "caption": "The ebb after the crossing. An imagined tidal shore in the lower Geum country.",
+        "historicalStatus": "ai-reconstruction",
+        "evidenceBasis": "ARCHAEOLOGICAL AND HISTORICAL SYNTHESIS",
+        "confidence": "MODERATE",
+        "generated": true,
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-009",
+        "src": "illustrations/ch03-mizuki.webp",
+        "alt": "A long line of trees follows a low green embankment beyond the cultivated ground.",
+        "caption": "Mizuki seen across the low ground today. Trees follow the surviving earthwork.",
+        "historicalStatus": "site-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Saigen Jiro · CC0 1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mizuki_zenkei.JPG",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-010",
+        "src": "illustrations/ch03-otsu.webp",
+        "alt": "Low posts on a small excavated plot, surrounded by modern houses at the foot of hills.",
+        "caption": "At Nishikori in Ōtsu, markers pick out the excavated post positions of a building in the palace district. The houses are the present neighborhood.",
+        "historicalStatus": "site-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Saigen Jiro · CC0 1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omi_Otsu-no-miya,_dairi-seiden-ato.jpg",
+        "status": "approved"
+      },
+      {
+        "id": "CH03-IMG-011",
+        "src": "illustrations/ch03-asukaike.webp",
+        "alt": "A narrow piece of dark wood with two bold brush characters near its upper end and the edge broken below.",
+        "caption": "One side of wooden tablet 244 from Asukaike, dated within the second half of the seventh century. The top bears 天皇. The words around it are fragmentary.",
+        "historicalStatus": "artifact-photo",
+        "evidenceBasis": "DIRECT MATERIAL",
+        "confidence": "HIGH",
+        "generated": false,
+        "credit": "Nara National Research Institute for Cultural Properties · Wooden Tablet Database · No. 244",
+        "sourceUrl": "https://mokkanko.nabunken.go.jp/en/5BASNL36000101",
+        "status": "approved"
+      }
+    ]
+  },
+  "genealogy": {
+    "trees": [
+      {
+        "id": "G3.1",
+        "title": "The household divided between Ōtsu and Yoshino",
+        "caption": "Kōgyoku took the throne twice. She is known as Saimei for her second reign. Her sons later ruled as Tenji and Tenmu.",
+        "nodes": [
+          {
+            "id": "jomei",
+            "name": "Jomei"
+          },
+          {
+            "id": "saimei",
+            "name": "Kōgyoku / Saimei"
+          },
+          {
+            "id": "kotoku",
+            "name": "Kōtoku"
+          },
+          {
+            "id": "tenji",
+            "name": "Naka no Ōe / Tenji"
+          },
+          {
+            "id": "tenmu",
+            "name": "Ōama / Tenmu"
+          },
+          {
+            "id": "otomo",
+            "name": "Prince Ōtomo"
+          },
+          {
+            "id": "jito",
+            "name": "Uno no Sarara / Jitō"
+          },
+          {
+            "id": "arima",
+            "name": "Prince Arima"
+          }
+        ],
+        "edges": [
+          {
+            "from": "jomei",
+            "to": "saimei",
+            "relation": "spouse-of"
+          },
+          {
+            "from": "saimei",
+            "to": "kotoku",
+            "relation": "sibling-of"
+          },
+          {
+            "from": "jomei",
+            "to": "tenji",
+            "relation": "father-of"
+          },
+          {
+            "from": "saimei",
+            "to": "tenji",
+            "relation": "mother-of"
+          },
+          {
+            "from": "jomei",
+            "to": "tenmu",
+            "relation": "father-of"
+          },
+          {
+            "from": "saimei",
+            "to": "tenmu",
+            "relation": "mother-of"
+          },
+          {
+            "from": "tenji",
+            "to": "otomo",
+            "relation": "father-of"
+          },
+          {
+            "from": "tenji",
+            "to": "jito",
+            "relation": "father-of"
+          },
+          {
+            "from": "tenmu",
+            "to": "jito",
+            "relation": "spouse-of"
+          },
+          {
+            "from": "kotoku",
+            "to": "arima",
+            "relation": "father-of"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "03.01",
+      "number": "03.01",
+      "title": "That Roof Above the Fields",
+      "paragraphs": [
+        {
+          "id": "03.01-p001",
+          "text": "The horse bell under the pagoda at Asuka had belonged to a world in which men put good things into the earth for the dead. Above it the carpenters raised a pillar. From the nearest fields, the people who had watched the work could now see tiled roofs keeping their level against the hills. At the ends of the eaves were tiles stamped with lotus petals. To make those tiles in quantity, the workers needed a kiln of a kind already used in Baekje. The hands that knew what to do with the clay, and the men who knew where to set a pillar of that weight, had crossed the same sea as the relics. You could look up from an old field and see how far a thing had come.",
+          "timelineRefs": [
+            "event-asukadera-rises"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-001",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "03.01-p002",
+          "text": "Three halls faced the pagoda. In time there were temples at the port of Naniwa and at Ikaruga, where the prince we call Shōtoku made his residence northwest of Asuka. Take the map as far as Ikaruga and look just west of the temple. The low round Fujinoki mound was there already. The people who opened its stone coffin found two bodies. In the chamber were heavy gilded ornaments for a horse, with openwork fine enough to let light through. One of the saddles bears the figure of an elephant. Whoever chose it for the tomb had an acquaintance with images and patterns that had come from much farther away than any horse that had ridden across this basin.",
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-002",
+              "role": "primary"
+            }
+          ],
+          "mapRefs": [
+            "map-3-temples"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.01-p003",
+          "text": "The great houses still buried their own dead. They began to build temples for them as well. The oldest phase of the temple at Naniwa, later Shitennōji, had its tower and halls in a line. At Ikaruga the original buildings burned in 670 according to the chronicle. The wooden hall and pagoda you can see at Hōryūji today belong to the rebuilding. There is something easy to miss about the first temples if you come to them through photographs of monuments. A hall gave people a fixed place to go while they were alive. A nun could learn to recite a text there. A priest could arrive from Goguryeo, stay for years and teach in more than one house. An art for which a lord once had to send away acquired people and rooms of its own.",
+          "timelineRefs": [
+            "event-the-fire-at-ikaruga"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-003",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "03.01-p004",
+          "text": "At Hōryūji there is a small shrine called the Tamamushi. Its name comes from the iridescent wings of beetles once set under the metal fittings. You have to come close to see what a cabinet that looks like a temple can do. On a painted panel a prince offers himself to a hungry tigress. He appears more than once, taking off his outer clothes, dropping from the cliff and lying with the animals below. There is so much room in the dark around him that you can follow each appearance without crowding the next. The carpenter who made the little roof and the artist who put a mountain on the side were working in the same country of new halls and very old graves. Under the lamps one surface would have caught the light that disappeared into another.",
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-004",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "03.01-p005",
+          "text": "The temples prospered in a court still run in large measure by the families that founded them. Suiko had her uncle Umako, and the prince at Ikaruga had his own following. What we know about their division of work comes chiefly from a history written under later rulers and from what became a rich tradition about Shōtoku. Early sources can establish the existence of the prince. How much business he personally decided is harder to get at. The roofs, the carved figures, and the slabs of stone set to hold their pillars are a little easier to question. They give us an idea of how much experience had arrived in a few decades, and of the trouble it would have taken to find more of it."
+        }
+      ]
+    },
+    {
+      "id": "03.02",
+      "number": "03.02",
+      "title": "The Country of the Rising Sun",
+      "paragraphs": [
+        {
+          "id": "03.02-p001",
+          "text": "There was a new court to send to. In 589 the Sui conquered the last of the southern dynasties and brought China under one ruler again. The first emperor had a capital at Daxing, the city later known under the Tang as Chang’an. His successor developed a second capital at Luoyang. Seen from Yamato, both were far inland. Seen from Goguryeo, Sui power was approaching along a land frontier. The Sui went to war with Goguryeo and failed repeatedly. Three great campaigns in the 610s helped exhaust the dynasty. Someone in Yamato deciding whether it was safe to fight Silla had to pay attention to how much of the large army to the west was still occupied in the north.",
+          "timelineRefs": [
+            "event-the-sui-unite-china"
+          ],
+          "mapRefs": [
+            "map-3-sui"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.02-p002",
+          "text": "The court on the islands had its own quarrel with Silla over the country of the former Gaya polities. It raised forces in the 590s and again around 600. The Japanese chronicle gives itself a victory, the surrender of forts and promises of tribute. In the same account Silla was back as soon as the forces from Yamato were gone. At about that time men from Wa appeared before the Sui emperor. The Book of Sui places the first embassy in 600. The Nihon Shoki leaves it out. The Chinese account gives a description of Japanese customs and has the ruler describe a relationship to Heaven and the sun that the Chinese emperor found strange. The envoy had gone to ask for a hearing and discovered that even the proper hour of the ruler’s business could become a matter another sovereign felt entitled to correct.",
+          "timelineRefs": [
+            "event-first-mission-of-wa-in-the-book-of-sui"
+          ]
+        },
+        {
+          "id": "03.02-p003",
+          "text": "The embassy of 607 carried a greeting that sounds bolder still in the Chinese record. “The Son of Heaven where the sun rises” addressed the Son of Heaven where it sets. The Sui emperor was displeased, according to the account. Yet when the envoy, Ono no Imoko, came home, an official of the Sui came with him. Pei Shiqing went through the kingdom of Baekje, reached Naniwa and was received at Asuka. Read the accounts on either side and the words used at the reception belong to two different descriptions of the same world. Each gives its own sovereign the place it thought fitting. Both had reasons to have the meeting. The envoys had information that a court could make use of the moment they sat down.",
+          "timelineRefs": [
+            "event-ono-no-imoko-s-embassy-and-pei-shiqing-s-return-mission"
+          ]
+        },
+        {
+          "id": "03.02-p004",
+          "text": "A different piece of continental knowledge was now visible on a man’s head. In 603 the Japanese court created twelve grades of caps and ranks. The virtues supplying their names, from virtue itself to knowledge, would have been recognizable to a reader of Chinese classics. The practice of setting a man’s place by his cap had close parallels in the peninsula. A house could still hand down its title from one generation to the next. A cap grade could be granted to the person who had done the work. The chronicle remembers Imoko at a higher rank on his return. It also remembers a promotion for the craftsman who cast a great Buddha for Asuka. At court there was now a way to show that either man had earned standing of his own.",
+          "timelineRefs": [
+            "event-twelve-cap-grades"
+          ]
+        },
+        {
+          "id": "03.02-p005",
+          "text": "The Seventeen Injunctions, put under the year 604 and attributed to Shōtoku in the chronicle, tell officials to listen to one another, honor the Buddhist Three Treasures and leave farmers alone at the time of sowing and harvest. They also tell them to obey the ruler and charge them with giving public business priority over their interests. Some of the offices and language look more at home in later decades. A version of the text may have been amended as people came to know better the kinds of office it describes. Its admonitions are worth hearing in the life of the court. It takes only a few words to order a man to consult his fellows before he acts, when they may be cousins with rival claims on almost every field he can see.",
+          "timelineRefs": [
+            "event-date-assigned-to-the-seventeen-injunctions"
+          ]
+        },
+        {
+          "id": "03.02-p006",
+          "text": "On Pei’s return in 608 more students went with him. Several stayed in China long enough to see the end of the Sui and the rise of the Tang. After twenty years a book remembered from the time of their departure might be older than the man sent to greet them. What the students had seen was the ordinary operation of an empire. Men like Takamuko no Kuromaro and the priest Min could report how offices worked and what books an official had reason to study. In 630 Yamato sent a mission to the Tang. An envoy of that dynasty reached Japan by way of Silla in 632, and men who had studied in China came home in that company. Asuka now had people who could explain a Chinese practice from years of having watched it. It also had old houses that expected to choose the next ruler.",
+          "timelineRefs": [
+            "event-first-recorded-embassy-from-yamato-to-the-tang"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.03",
+      "number": "03.03",
+      "title": "The Trembling Reader",
+      "paragraphs": [
+        {
+          "id": "03.03-p001",
+          "text": "At Suiko’s death in 628 the candidates included her great-nephew Prince Tamura and Prince Yamashiro, the son of Shōtoku. Both had strong claims measured in family ties. Umako’s son Soga no Emishi backed Tamura, who took the throne as Jomei. The chronicle says that men argued over what Suiko had said in her last illness. No one had a final way to settle the meaning of her words. A man who insisted on Yamashiro’s version faced Emishi’s displeasure. Tamura became emperor and Shōtoku’s son remained at Ikaruga, near buildings his father had made famous.",
+          "timelineRefs": [
+            "event-suiko-dies-and-the-court-chooses-jomei"
+          ]
+        },
+        {
+          "id": "03.03-p002",
+          "text": "When Jomei died in 641 the choice was open once more. His widow took the throne as Kōgyoku, and Emishi’s son Iruka had a large part in government. In 643 Iruka had men sent to Ikaruga against Yamashiro. The prince and members of his family died. The chronicle, compiled under the dynasty that defeated this branch of the Soga, gives Iruka the vices of a man on his way to ruin. What it says about the disappearance of the family at Ikaruga matters without any judgment of his face or habits. There would be no third occasion on which somebody could propose Shōtoku’s son for the throne.",
+          "timelineRefs": [
+            "event-the-death-of-prince-yamashiro"
+          ]
+        },
+        {
+          "id": "03.03-p003",
+          "text": "Men around Jomei’s son, Prince Naka no Ōe, began to act together. There was Nakatomi no Kamatari, said to have studied with the priest Min, and there was Soga no Ishikawa Maro, a man of another branch of the house whose head they meant to kill. On a day in the sixth month of 645 the empress was receiving memorials in the palace. Ishikawa Maro was reading them out. In the Nihon Shoki his hands began to shake and the words came indistinctly. Iruka noticed and asked why. The reader put it down to the honor of standing in the presence of the empress. In the time it took him to get through that answer, the plot was already nearly visible."
+        },
+        {
+          "id": "03.03-p004",
+          "text": "Naka no Ōe rushed at Iruka when the men expected to strike hesitated. Iruka, wounded, called on the empress to say what his offense was. She asked what was happening, then withdrew. For all the purposes of the later chronicle, it leaves the sovereign in the room long enough to hear the man’s question. Iruka died there. His father Emishi took his own life the following day. The annals remember books burning with the house, including a history said to have been compiled under Shōtoku and Umako, and a man rescuing one work from the fire. None of those books can be laid beside the account we have to see what the earlier men made of their own government.",
+          "timelineRefs": [
+            "event-iruka-killed-at-asuka"
+          ]
+        },
+        {
+          "id": "03.03-p005",
+          "text": "Kōgyoku yielded the throne to her brother, Kōtoku. Naka no Ōe became crown prince, and Kamatari became one of the new regime’s most influential advisers. Ishikawa Maro took high office. Men who had spent years in China were asked to advise on affairs of state. It was the year Tang forces moved across the Liao River against Goguryeo. An empire whose books the Japanese court wanted to read was proving what it could send across a frontier. In the months after the killing, the new rulers announced a new era, Taika, and took the court towards the port of Naniwa.",
+          "genealogy": [
+            {
+              "id": "G3.1",
+              "active": [
+                "saimei",
+                "kotoku",
+                "tenji"
+              ],
+              "caption": "Kōtoku followed his sister Kōgyoku on the throne. Her son Naka no Ōe became crown prince."
+            }
+          ]
+        },
+        {
+          "id": "03.03-p006",
+          "text": "The Soga still had daughters in the royal family and men at court. Ishikawa Maro, who had stood reading in the audience hall, was himself accused of disloyalty a few years later. He fled to the temple he was building at Yamadadera and died there. The annals say the accusation was later seen to be false. One part of the excavated temple preserves fallen woodwork where the structures of a seventh-century cloister can be seen at an almost intimate distance. In a generation that proposed to set men in office by the service they had rendered, work as public as a new temple was still a thing a family might have to leave behind in a morning.",
+          "timelineRefs": [
+            "event-ishikawa-maro-s-death-at-yamadadera"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-005",
+              "role": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.04",
+      "number": "03.04",
+      "title": "Counting the Fields",
+      "paragraphs": [
+        {
+          "id": "03.04-p001",
+          "text": "Climb from the water to the Uemachi upland and Naniwa changes character. The place traders and envoys had approached by boat became a place where long ranks of officials could stand in a court. The early palace survives under remains of a later one, as two patterns of foundations and postholes. Excavation has found a long enclosed government court and groups of large storehouses. This was the country of the giant mounds along Osaka Bay. Their builders had known how to clear and organize an expanse of ground. The court the archaeologists uncovered was laid out for men who had to come back to the same space every working day.",
+          "timelineRefs": [
+            "event-the-court-moves-to-naniwa"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-006",
+              "role": "primary"
+            }
+          ],
+          "mapRefs": [
+            "map-3-naniwa"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.04-p002",
+          "text": "The first orders out of the new court told inspectors to watch what chiefs were doing in the provinces. An annal has the emperor tell his officials to go gently in calling people out to work and puts a limit on the company a provincial inspector could take with him. There was even a means for someone whose complaint had been ignored to have it reach the center. The complaint the court wished to hear, more than any other, was that another lord had used power the sovereign wished to use himself. A great house that collected produce and labor could keep some of it before anyone at the palace saw the share due to the court."
+        },
+        {
+          "id": "03.04-p003",
+          "text": "In the new-year edict the Nihon Shoki dates to 646, the court claims the land and the people another lord had called his own. It proposed to organize districts below provinces, survey the land, register households and assign new taxes and services. The great houses received households to support their rank, or allowances from the goods collected. Many of the people the court expected to carry this out were people who had managed the older estates. Even the words the copy of the edict uses for a district cause a difficulty. Wooden documents found in the ground use an older term through much of the seventh century. Some of the language in the copy comes from the better established system the compilers of the chronicle knew in their own lifetime.",
+          "timelineRefs": [
+            "event-new-year-reform-edict"
+          ]
+        },
+        {
+          "id": "03.04-p004",
+          "text": "What could it mean to survey a field? The edict gives a unit of land in paces and sets out what a piece of ground of that size should yield in tax. Fifty households were supposed to make a village with a headman. The headman had to see to planting as well as collecting what was owed. A village now mattered to the men working there as a place where water had to be shared and to a distant man as a count of households expected to deliver so many sheaves or so much cloth. Long after the order, ends of inscribed wooden tags survive in ditches. The notch held a cord. With it a bale or bundle could keep the name of its place of origin for the whole journey to a storehouse.",
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-007",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "03.04-p005",
+          "text": "The edict on burials brought the new distinction of ranks into the grave. The width a family could claim for a burial chamber depended on the dead man’s place at court. The order set limits on the effort a family could demand for the mound, down to the number of days the work ought to take, and forbade the sacrifice of attendants. The same reign revised the public scale of ranks more than once. Naka no Ōe is said to have handed back a large number of royal estates and service households, declaring that a country could no more have two rulers than heaven two suns. It was a persuasive thing for the greatest prince to say while he still stood beside the throne."
+        },
+        {
+          "id": "03.04-p006",
+          "text": "The reformers also set senior priests over temple affairs. A hall built for a family’s dead could now supply rites and learned men for a wider government. The center could count monks, oversee conduct and give certain temples its favor. It was using an idea old Soga no Iname would have recognized, about the value of men who could read books no one else at court could yet read. One of the questions was where such a court should sit. When news from the other shore began to come faster, some of the men who had brought it to the bay left again for Asuka. Kōtoku stayed behind."
+        }
+      ]
+    },
+    {
+      "id": "03.05",
+      "number": "03.05",
+      "title": "The Last Ships of Baekje",
+      "paragraphs": [
+        {
+          "id": "03.05-p001",
+          "text": "In the early 650s Japan sent men to the Tang in groups that took different roads over the sea. One party went by way of Silla. Another set out across the East China Sea and lost almost everyone aboard, according to the Japanese account. A sinking could take the men a court had selected for what they were going to learn, along with the records of what they had been sent to say. In 653 Naka no Ōe and several leading figures left Naniwa despite the emperor’s objections. Kōtoku died there the following year. In 655 the woman who had watched Iruka fall took the throne again, this time known to history as Saimei. Her palace was inland, in Asuka.",
+          "timelineRefs": [
+            "event-saimei-returns-to-power"
+          ]
+        },
+        {
+          "id": "03.05-p002",
+          "text": "The builders used stone in extraordinary quantities. The chronicle complains about a canal cut to carry the stone by boat and about the number of men the work consumed. It puts similar complaints in the mouth of Soga no Akae, speaking to the late Kōtoku’s young son, Prince Arima. Akae reported their conversation to the court, and in 658 the prince was taken to Kii and killed. Two poems in the Man’yōshū are ascribed to him. In one, at Iwashiro on the shore of Kii, he ties the branches of a pine and hopes he will live to see them again. In the other, he has to eat from leaves, thinking of the vessel he would have used at home. These are very small things to have left of someone a court decided was dangerous.",
+          "genealogy": [
+            {
+              "id": "G3.1",
+              "active": [
+                "kotoku",
+                "arima",
+                "saimei"
+              ],
+              "caption": "Arima was the son of Kōtoku, who had died in 654. His aunt was on the throne as Saimei."
+            }
+          ],
+          "timelineRefs": [
+            "event-death-of-prince-arima"
+          ]
+        },
+        {
+          "id": "03.05-p003",
+          "text": "In China, the Japanese envoy Iki no Hakatoko kept a record of what happened to his party. In an audience with Emperor Gaozong they had been asked about journeys and campaigns off the Japanese court’s northern shore. Then the envoys were detained. Hakatoko says they were made to stay because the emperor meant to send an army east. In 660 the Tang came across the Yellow Sea and Silla advanced from the peninsula. King Uija of Baekje surrendered. Sabi, where Baekje’s craftsmen and scholars had set out for Japan for generations, was now in other hands. The detained envoys were released after the fall of the capital.",
+          "timelineRefs": [
+            "event-sabi-falls"
+          ],
+          "mapRefs": [
+            "map-3-baekje"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.05-p004",
+          "text": "Baekje still had people willing to fight in its name. Among the leaders were the commander Boksin and a monk, Dochim. They asked for the return of Prince Buyeo Pung, who was living in Japan, and for men to bring him back in a position to rule. Saimei traveled towards the strait to oversee the expedition. She died in Kyushu in 661. Naka no Ōe continued the preparations and sent Pung back. For a while the restoration forces held ground. Then they began to kill their own leaders. Dochim was killed by Boksin. The prince in turn had Boksin put to death. The envoys asking for help had been right about how much the court in Yamato had to lose. By the time its largest effort was made, the people on the other bank with whom it meant to act were already divided."
+        },
+        {
+          "id": "03.05-p005",
+          "text": "Between the capital at Sabi and the Yellow Sea lies the country of the lower Geum. Channels cross a low coast that has been substantially altered since the seventh century. Somewhere in this country in 663 Tang ships met the relief force from Japan. The exact position remains uncertain. The Japanese chronicle remembers the boats crowding in water where they could no longer turn easily and men going overboard. The Chinese history has hundreds of Japanese ships in flames. The reports agree on the catastrophe without giving a dependable count of hulls or men. Pung escaped to Goguryeo. At the strongholds of the restoration movement the fighting was soon over.",
+          "timelineRefs": [
+            "event-defeat-at-baekgang"
+          ],
+          "mapRefs": [
+            "map-3-estuary"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.05-p006",
+          "text": "Take another look at the mouth of the river before you follow anyone home. Here the tide would have gone in and out again. Some people left in vessels that could still float. Some of the families that had to go were still in Korea when the Japanese army sailed away. The news that a country no longer existed outran people who had come from it. It reached the other side of the sea, where there were still temples built by the men of that country, and where their skills were more urgently wanted than ever.",
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-008",
+              "role": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.06",
+      "number": "03.06",
+      "title": "A Wall Across the Plain",
+      "paragraphs": [
+        {
+          "id": "03.06-p001",
+          "text": "Look at the west of the archipelago from the sea. The close approach to northern Kyushu is just as short for an enemy as it had been for a man bringing a petition or a relic. The court put soldiers and signal fires in the west. On Tsushima there was a fort at Kaneda on a height above a sheltered bay. Farther east the builders fortified Yashima, high above the water towards the eastern Inland Sea. Mount Takayasu stood close to the entrance to Yamato itself. Japan’s rulers knew the course that heavy cargo and men took inland from the sea because it was the course along which so much they already possessed had come.",
+          "mapRefs": [
+            "map-3-forts"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.06-p002",
+          "text": "Near the inland end of the plain below Hakata Bay, the old line at Mizuki is still visible as earth thrown up across low ground. The chronicle puts it in 664, the year after the defeat. There was a moat and provision for water. The men who built it had to join a low ground of fields and streams to the high ground that enclosed it. Forts at Ōno and Kii, recorded the next year, took in the slopes on either side of the inland basin. Baekje men are named in the work. The refugees had seen defensive lines built, tested and broken in their own country. The court was asking them to use what they had learned on a new shore.",
+          "timelineRefs": [
+            "event-mizuki-and-the-mountain-forts"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-009",
+              "role": "primary"
+            }
+          ],
+          "mapRefs": [
+            "map-3-mizuki"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.06-p003",
+          "text": "Off the coast the situation was changing again. Tang officials came from occupied Baekje. At first an envoy with less than the authority of a man sent directly by the emperor waited in Kyushu. A later delegation presented sealed business the court was prepared to transact and was admitted. In 668 Tang and Silla took Pyongyang and ended the kingdom of Goguryeo. Having used Tang’s strength to defeat its neighbors, Silla resisted being placed under Tang control. By 676 it had driven the Tang out of much of its peninsula base. In the years when officials in Japan were looking for sails offshore, the strength of the order they feared turned out to be a question between their former enemies.",
+          "timelineRefs": [
+            "event-fall-of-goguryeo"
+          ]
+        },
+        {
+          "id": "03.06-p004",
+          "text": "The annals can put bodies of refugees into a sentence with a number. One entry places four hundred from Baekje in Ōmi in 665. Another promises support for the larger group settled the following year. Later, seventy former Baekje officials received ranks. The lists name men who knew medicine, Chinese texts, the building of forts and how offices should be ordered. People came from Goguryeo too, in the aftermath of its fall, and continued coming long after the first crisis. There were arrivals who had held office under a king with no court left to return to, and many whose names no Japanese writer troubled to preserve. Some of those families had to do again what the immigrants of earlier centuries had done, make a place to sleep and a claim to food out of work they knew how to do."
+        },
+        {
+          "id": "03.06-p005",
+          "text": "In 667 Naka no Ōe moved his court to Ōtsu by Lake Biwa. The first buildings associated with it have been found on the western shore at Nishikori. In that country the roads east and north were nearer. At the bottom of the lake the water passed out at Seta. From a boat crossing the lake a person could see hills behind the court, and get a sense of how different the country was from Asuka, where a palace stands in a small patch of valleys with no water of that size anywhere in sight. Tenji, as the prince was called after he took the throne in 668, had set up his seat where men elsewhere in the islands had particular reasons to watch it.",
+          "timelineRefs": [
+            "event-court-at-tsu-and-tenji-s-enthronement"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-010",
+              "role": "primary"
+            }
+          ],
+          "mapRefs": [
+            "map-3-otsu"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.06-p006",
+          "text": "His government revised ranks, named men to offices and ordered the making of a household register in 670. Later ages treated the register as an authoritative record of descent as well as of the households the court had been able to count. There are accounts that a body of law was put together at Ōmi under Kamatari. No copy survives and even the status of the Ōmi code as a completed work is disputed. The households claimed by the register were real. They would furnish soldiers if called upon by the right person. There would soon be two people who could say they had a right to call.",
+          "timelineRefs": [
+            "event-the-household-register-of-670"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.07",
+      "number": "03.07",
+      "title": "The Road at Fuwa",
+      "paragraphs": [
+        {
+          "id": "03.07-p001",
+          "text": "When Tenji grew ill in 671 he had made his son Ōtomo chancellor. He called for his younger brother, Prince Ōama. In the version preserved by the court that Ōama would establish, the emperor offered him the affairs of state. Ōama said he was ill, turned the offer aside and asked to go to Yoshino to live as a Buddhist. His wife, Princess Uno no Sarara, was Tenji’s daughter. She went into the mountains with him. Look south of Asuka on the map until the land falls into the valley of the Yoshino River. You are close to the country that had raised most of the men who mattered in the quarrel, and away from the court that would decide what to do with them.",
+          "genealogy": [
+            {
+              "id": "G3.1",
+              "active": [
+                "tenji",
+                "tenmu",
+                "otomo",
+                "jito"
+              ],
+              "caption": "Ōtomo and Jitō were children of Tenji. Jitō married Tenji’s brother Ōama, later Tenmu."
+            }
+          ],
+          "mapRefs": [
+            "map-3-jinshin"
+          ],
+          "mapPlacement": "after-paragraph"
+        },
+        {
+          "id": "03.07-p002",
+          "text": "Before Tenji died, Ōtomo and his ministers are said to have taken an oath before an image of the Buddha. The Nihon Shoki gives the name of sovereign to Ōama almost as soon as Tenji is gone and calls the other men the people at the capital. The ceremony in which Ōtomo himself might have become sovereign is missing. He was given the name Emperor Kōbun much later. A person taking orders at Ōtsu in the meantime had to decide whose authority those orders carried. Some such people had been made officials by Tenji and owed their places to his household."
+        },
+        {
+          "id": "03.07-p003",
+          "text": "In the summer of 672 Ōama sent word from Yoshino to have men raised in Mino and the Fuwa road closed. He and his household went through the hills into Iga, then towards Ise and the east. The map marks the order in which places turn up in the annals. Fuwa lies where a road from the eastern country reaches the basin east of Lake Biwa. Holding it cut off men the Ōtsu court had hoped to call. The story is full of messengers who have to reach others in the right order, and local heads who have to be willing to act once the messages reach them. An emperor’s right to be heard came down, in places, to what a man would do after he recognized the voice of a rider at the door.",
+          "timelineRefs": [
+            "event-the-jinshin-war"
+          ]
+        },
+        {
+          "id": "03.07-p004",
+          "text": "The west could not be counted on by either side. The commander at the distant Tsukushi defenses is said to have declined to empty his posts for a struggle at court. What would happen if a foreign force came while his men were away? It was less than a decade since the ships had burned at Baekgang. In Yamato there was fighting around the old centers. To the northeast, men loyal to Ōama came down towards the southern end of Lake Biwa. The last stand near the crossing at Seta was the defense of a place where water could reduce the approach of a great army to the width of a bridge. Ōtomo’s side failed there. He took his own life."
+        },
+        {
+          "id": "03.07-p005",
+          "text": "Ōama returned to Asuka. In 673 he formally took the throne as Tenmu. At Kiyomihara the palace had to be built in country familiar to the families on both sides. Princess Uno had been the daughter of one sovereign and was now the wife of another. She would also rule in her own name as Jitō. There was no agreement made at a prince’s funeral that could settle these ties once and for all. The work of sending an official into a province, fixing his rank and finding enough men to make his orders count had to begin again with the ruler who survived.",
+          "timelineRefs": [
+            "event-tenmu-takes-the-throne"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.08",
+      "number": "03.08",
+      "title": "What the Ditch Kept",
+      "paragraphs": [
+        {
+          "id": "03.08-p001",
+          "text": "In a ditch at Asuka, preservation took a homely turn. Wet soil kept strips of wood on which the brush had left its marks. Some were small enough to have hung from a single load. On one fragment of the later seventh century you can read the characters for tennō, the word that would endure as the title of the emperor. Too little of the writing survives to tell us what the person with the brush meant by it here. Earlier, the words for great king were inlaid in gold on a sword and taken into a tomb. These two characters lasted on a splinter thrown away in Asuka. The names men gave to power could survive by chances they had never provided for.",
+          "timelineRefs": [
+            "event-inscribed-fragment-at-asukaike"
+          ],
+          "illustrationRefs": [
+            {
+              "id": "CH03-IMG-011",
+              "role": "primary"
+            }
+          ]
+        },
+        {
+          "id": "03.08-p002",
+          "text": "The plan to give the country enduring laws outlasted both Tenji and Tenmu. The court under Tenmu and then Jitō had offices, grading systems and a code of administration to complete. Jitō moved into the planned capital at Fujiwara in 694, a little north of Asuka. Its palace lay on ground that once was fields and could become fields again. In the new layout a person walking to an office took his bearings from streets and gates built in long straight lines. A workman leaving the edge of the palace could still look out and see the old hills of Yamato around them.",
+          "timelineRefs": [
+            "event-jit-s-move-to-fujiwara"
+          ]
+        },
+        {
+          "id": "03.08-p003",
+          "text": "And there is the pine at Iwashiro. A young man, in a poem, has bent one living branch towards another and asked for time enough to come back. No field survey remembers the place where his hands touched it. The strip of wood in the ditch and the poem reached us by different chances. The court could draw a straighter road and send a clerk farther along it. There was always someone the road could take away."
+        }
+      ]
+    }
+  ],
+  "compiler": {
+    "chapter": "ch03",
+    "sources": {
+      "text": "H:\\Ancient Japan History\\ch03\\ch03_text.txt",
+      "mediaMapping": "H:\\Ancient Japan History\\ch03\\ch03_media_mapping.txt",
+      "genealogy": "H:\\Ancient Japan History\\ch03\\ch03_genealogy.txt",
+      "mapMapping": "H:\\Ancient Japan History\\gis\\documentation\\ch03_map_mapping.txt",
+      "illustrationMapping": "H:\\Ancient Japan History\\ch03\\ch03_illustrations_map.txt",
+      "illustrationPlan": "H:\\Ancient Japan History\\ch03\\ch03_image_prompts.txt"
+    }
+  }
+}

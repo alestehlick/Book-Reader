@@ -67,6 +67,45 @@
     document.body.classList.add("dialog-open");
   }
 
+  const textSizeDialog = byId("text-size-dialog");
+  if (textSizeDialog) {
+    const sizeKey = "ancient-japan-text-size";
+    const choices = [...textSizeDialog.querySelectorAll("[data-size]")];
+    const defaultSize = choices[0];
+    function setTextSize(choice, keepPosition = false) {
+      const root = document.documentElement;
+      const readingLine = byId("reading-progress").getBoundingClientRect().bottom + 16;
+      const anchor = keepPosition && passageNodes.find(({ node }) => node.getBoundingClientRect().bottom > readingLine)?.node;
+      const before = anchor && anchor.getBoundingClientRect();
+      const offset = before ? Math.max(0, (readingLine - before.top) / before.height) : 0;
+      root.style.setProperty("--reading-scale", Number(choice.dataset.size) / 100);
+      choices.forEach((option) => option.setAttribute("aria-pressed", String(option === choice)));
+      if (before) {
+        const after = anchor.getBoundingClientRect();
+        const change = after.top - before.top + (after.height - before.height) * offset;
+        window.scrollBy({ top: change, behavior: "instant" });
+      }
+    }
+    try {
+      const saved = localStorage.getItem(sizeKey);
+      setTextSize(choices.find((choice) => choice.dataset.size === saved) || defaultSize);
+    } catch {
+      setTextSize(defaultSize);
+    }
+    byId("text-size-button").addEventListener("click", () => {
+      showDialog(textSizeDialog);
+      textSizeDialog.querySelector("[aria-pressed=true]").focus();
+    });
+    choices.forEach((choice) => choice.addEventListener("click", () => {
+      setTextSize(choice, true);
+      try {
+        localStorage.setItem(sizeKey, choice.dataset.size);
+      } catch {
+        // The size still applies while this page is open.
+      }
+    }));
+  }
+
   document.querySelectorAll("dialog").forEach((dialog) => {
     dialog.addEventListener("close", () => {
       if (!document.querySelector("dialog[open]")) document.body.classList.remove("dialog-open");
@@ -109,7 +148,7 @@
   }
 
   function renderImage(image) {
-    const objectPhoto = image.historicalStatus === "artifact-photo";
+    const objectPhoto = ["artifact-photo", "archive-photo", "replica-photo"].includes(image.historicalStatus);
     const figure = element("figure", objectPhoto ? "editorial-image object-photo" : "editorial-image");
     const button = element("button", "image-button");
     button.type = "button";
@@ -320,6 +359,7 @@
     if (!terrain) {
       terrain = L.map(tileNode, {
         fadeAnimation: false,
+        zoomAnimation: false,
         zoomSnap: 0.25,
         zoomDelta: 0.5,
         minZoom: 3,
@@ -332,6 +372,8 @@
       L.control.scale({ imperial: false, position: "bottomright" }).addTo(terrain);
       terrain.on("click", openMapSite);
     }
+    terrain.setMaxBounds(null);
+    terrain.stop();
     terrain.closePopup();
     if (tiles) terrain.removeLayer(tiles);
     if (focusMarker) {
@@ -340,20 +382,19 @@
     }
     const [west, south, east, north] = map.renderBounds;
     const area = [[south, west], [north, east]];
-    terrain.stop();
     terrain.setMinZoom(map.view.minZoom);
     terrain.setMaxZoom(map.view.maxZoom);
-    terrain.setMaxBounds(L.latLngBounds(area).pad(0.11));
     terrain.invalidateSize({ pan: false });
     terrain.fitBounds(dialogMapBounds(map), { animate: false, padding: [13, 13] });
     mapResetZoom = terrain.getZoom();
     terrain.setMinZoom(Math.max(map.view.minZoom, mapResetZoom - 0.75));
+    terrain.setMaxBounds(L.latLngBounds(area));
     let loadedAny = false;
     let failedAny = false;
     tiles = L.tileLayer(map.localSceneTiles, {
       tileSize: 256,
       minNativeZoom: 3,
-      maxNativeZoom: 9,
+      maxNativeZoom: map.nativeMaxZoom || 9,
       bounds: area,
       noWrap: true,
       attribution: "Ancient Japan Study Atlas · QGIS",
@@ -382,9 +423,9 @@
     if (place.outline) {
       focusMarker = L.geoJSON(place.outline, {
         interactive: false,
-        style: { color: "#713b55", weight: 2.5, dashArray: "5 6", fillOpacity: 0.09 },
+        style: place.outlineStyle || { color: "#713b55", weight: 2.5, dashArray: "5 6", fillOpacity: 0.09 },
       }).addTo(terrain);
-      terrain.fitBounds(place.bounds, { animate: !prefersReducedMotion, padding: [26, 26], maxZoom: 7.5 });
+      terrain.fitBounds(place.bounds, { animate: !prefersReducedMotion, padding: [26, 26], maxZoom: place.outlineMaxZoom || 7.5 });
       return;
     }
     focusMarker = L.circleMarker([place.lat, place.lon], {
@@ -395,7 +436,8 @@
       fillOpacity: 0.18,
       interactive: false,
     }).addTo(terrain);
-    terrain.setView([place.lat, place.lon], Math.min(8.5, Math.max(mapResetZoom, place.zoom)), {
+    const zoom = Math.max(mapResetZoom, Math.min(terrain.getMaxZoom(), place.zoom));
+    terrain.setView([place.lat, place.lon], zoom, {
       animate: !prefersReducedMotion,
     });
   }
@@ -441,10 +483,8 @@
   atlasDialog.addEventListener("close", () => {
     mapVersion += 1;
     if (terrain) {
-      terrain.remove();
-      terrain = null;
-      tiles = null;
-      focusMarker = null;
+      terrain.closePopup();
+      terrain.stop();
     }
   });
   document.addEventListener("click", (event) => {

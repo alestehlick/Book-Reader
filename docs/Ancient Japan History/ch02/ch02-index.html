@@ -7,12 +7,12 @@
   <meta name="description" content="Yamato from the first great burial mounds to the founding of Asukadera, with eight interactive historical maps.">
   <title>What a King Leaves Behind · Ancient Japan</title>
   <link rel="stylesheet" href="../ch01/assets/leaflet.css">
-  <link rel="stylesheet" href="../ch01/chapter.css?v=20261114-theme">
+  <link rel="stylesheet" href="../ch01/chapter.css?v=20261115.2">
   <link rel="stylesheet" href="chapter02.css?v=20261114-final">
   <script defer src="../ch01/assets/leaflet.js"></script>
-  <script defer src="ch02-data.js?v=20261114-reader2"></script>
-  <script defer src="ch02-guide.js?v=20261114-reader2"></script>
-  <script defer src="../ch01/chapter.js?v=20261114-reader2"></script>
+  <script defer src="ch02-data.js?v=20261115"></script>
+  <script defer src="ch02-guide.js?v=20261115"></script>
+  <script defer src="../ch01/chapter.js?v=20261115.2"></script>
 </head>
 <body>
   <a href="#read" class="skip-link">Skip to the chapter</a>
@@ -32,6 +32,7 @@
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 1 1 16 0v1M4 13h3v6H6a2 2 0 0 1-2-2v-4Zm16 0h-3v6h1a2 2 0 0 0 2-2v-4Z"/></svg>
           <span>Listen</span>
         </button>
+        <button type="button" class="masthead-button text-size-button" id="text-size-button" aria-label="Text size" aria-haspopup="dialog" aria-controls="text-size-dialog" title="Text size">Aa</button>
         <button type="button" class="masthead-button theme-button" id="theme-button" aria-label="Dark theme" aria-pressed="true" title="Switch to light theme">
           <span aria-hidden="true">◐</span>
         </button>
@@ -101,6 +102,21 @@
     </div>
     <p class="listen-error" id="audio-status" role="status" hidden></p>
   </aside>
+
+  <dialog class="contents-dialog text-size-dialog" id="text-size-dialog" aria-labelledby="text-size-title">
+    <header class="dialog-heading">
+      <h2 id="text-size-title">Text size</h2>
+      <button type="button" class="dialog-close" data-close-dialog aria-label="Close text size">×</button>
+    </header>
+    <div class="text-size-options" role="group" aria-label="Reading size" id="text-size-options">
+      <button type="button" data-size="100" aria-pressed="true" autofocus>100%</button>
+      <button type="button" data-size="115" aria-pressed="false">115%</button>
+      <button type="button" data-size="130" aria-pressed="false">130%</button>
+      <button type="button" data-size="150" aria-pressed="false">150%</button>
+      <button type="button" data-size="175" aria-pressed="false">175%</button>
+      <button type="button" data-size="200" aria-pressed="false">200%</button>
+    </div>
+  </dialog>
 
   <dialog class="contents-dialog" id="contents-dialog" aria-labelledby="contents-title">
     <header class="dialog-heading">

@@ -2,9 +2,9 @@ window.CHAPTER_GUIDE = {
   "cover": "CH02-IMG-001",
   "audioDir": "../audio/ch02-narration",
   "next": {
-    "href": "../index.html",
-    "label": "Ancient Japan History",
-    "title": "Back to the library"
+    "href": "../ch03/ch03-index.html",
+    "label": "Chapter Three",
+    "title": "The Far Shore"
   },
   "sections": {
     "02.01": "The eastern Nara Basin",
@@ -736,6 +736,14 @@ window.CHAPTER_GUIDE = {
       209,
       1360
     ],
+    "CH02-IMG-016": [
+      388,
+      524
+    ],
+    "CH02-IMG-017": [
+      1280,
+      849
+    ],
     "CH02-IMG-005": [
       1536,
       1024
@@ -763,10 +771,6 @@ window.CHAPTER_GUIDE = {
     "CH02-IMG-011": [
       911,
       2120
-    ],
-    "CH02-IMG-012": [
-      1448,
-      1086
     ],
     "CH02-IMG-013": [
       1155,
@@ -892,6 +896,11 @@ window.CHAPTER_GUIDE = {
       "Atlas",
       "GEBCO’s relief and bathymetric grid",
       "https://www.gebco.net/data-products/gridded-bathymetry-data"
+    ],
+    [
+      "Image license",
+      "Creative Commons Attribution–ShareAlike 4.0",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
     ]
   ]
 };

@@ -1028,17 +1028,25 @@ window.CHAPTER_GUIDE = {
       1536,
       1024
     ],
+    "CH01-IMG-031": [
+      687,
+      900
+    ],
     "CH01-IMG-007": [
       1536,
       1024
     ],
-    "CH01-IMG-013": [
-      1448,
-      1086
-    ],
     "CH01-IMG-029": [
       1050,
       1400
+    ],
+    "CH01-IMG-032": [
+      1280,
+      960
+    ],
+    "CH01-IMG-033": [
+      960,
+      1337
     ],
     "CH01-IMG-027": [
       1448,
@@ -1059,6 +1067,10 @@ window.CHAPTER_GUIDE = {
     "CH01-IMG-020": [
       1536,
       1024
+    ],
+    "CH01-IMG-034": [
+      1800,
+      898
     ],
     "CH01-IMG-023": [
       1536,
@@ -1205,6 +1217,21 @@ window.CHAPTER_GUIDE = {
       "Aerial photograph",
       "Andonyama aerial photograph, provenance and reuse terms",
       "https://commons.wikimedia.org/wiki/File:Andonyama_001.jpg"
+    ],
+    [
+      "The Queen Few People Saw",
+      "The original gold seal of Na in the Fukuoka City Museum collection",
+      "https://jmapps.ne.jp/fukuokacity/det.html?data_id=391"
+    ],
+    [
+      "Image licenses",
+      "Creative Commons Attribution–ShareAlike 3.0",
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    [
+      "Image licenses",
+      "Creative Commons Attribution–ShareAlike 4.0",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
     ]
   ]
 };
